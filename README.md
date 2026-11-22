@@ -10,59 +10,37 @@ up to 120 s after Jack reaches the end of the pier, every bite and what it catch
 expects, lets you line it up with the dog on your TV, and tells you when to press B and when to let go.
 
 > **Test build.** Automated tests ran in Chrome / Chromium only. Firefox and Safari have not been through them. Nothing
-> has been verified on a real console by anyone but the author. Please report what you see (section 12).
+> has been verified on a real console by anyone but the author. Please report what you see (section 11).
 
 ---
 
 ## Contents
 1. [Quick start](#1-quick-start)
-2. [Putting it on GitHub Pages](#2-putting-it-on-github-pages)
-3. [Setting up the game file](#3-setting-up-the-game-file)
-4. [The route](#4-the-route)
-5. [One-time setup in the app](#5-one-time-setup-in-the-app)
-6. [Layer 1 — the histogram and its cast suggestion](#6-layer-1--the-histogram-and-its-cast-suggestion)
-7. [Layer 2 — find your dog and tune it to your N64](#7-layer-2--find-your-dog-and-tune-it-to-your-n64)
-8. [Layer 3 — Freestyle: choose your own cast](#8-layer-3--freestyle-choose-your-own-cast)
-9. [Ending an attempt, results and reports](#9-ending-an-attempt-results-and-reports)
-10. [Practice drills](#10-practice-drills)
-11. [Every setting, explained](#11-every-setting-explained)
-12. [Keys, limits and feedback](#12-keys-limits-and-feedback)
+2. [Setting up the game file](#2-setting-up-the-game-file)
+3. [The route](#3-the-route)
+4. [What the app starts with](#4-what-the-app-starts-with)
+5. [Layer 1 — the histogram and its cast suggestion](#5-layer-1--the-histogram-and-its-cast-suggestion)
+6. [Layer 2 — find your dog and tune it to your N64](#6-layer-2--find-your-dog-and-tune-it-to-your-n64)
+7. [Layer 3 — Freestyle: choose your own cast](#7-layer-3--freestyle-choose-your-own-cast)
+8. [Ending an attempt, results and reports](#8-ending-an-attempt-results-and-reports)
+9. [Practice drills](#9-practice-drills)
+10. [Every setting, explained](#10-every-setting-explained)
+11. [Keys, limits and feedback](#11-keys-limits-and-feedback)
 
 ---
 
 ## 1. Quick start
 1. Open the page in a **desktop browser with a keyboard** (Chrome recommended for now). It is about 29 MB and takes a
    few seconds to load.
-2. Make the game file described in section 3 (or get a copy of one).
-3. Nothing to set up: the page opens ready (section 5).
-4. Play: walk the route (section 4) and **tap Space once the moment Jack stops at the end of the pier**. Click the dog
-   card that matches your TV, tune it with **[ ]**, and cast on one of its bars (sections 7–8). Cast and reel on the
+2. Make the game file described in section 2 (or get a copy of one).
+3. Nothing to set up: the page opens ready (section 4).
+4. Play: walk the route (section 3) and **tap Space once the moment Jack stops at the end of the pier**. Click the dog
+   card that matches your TV, tune it with **[ ]**, and cast on one of its bars (sections 6–7). Cast and reel on the
    controller; the keyboard is only for the tool.
 
 ---
 
-## 2. Putting it on GitHub Pages
-- `index.html` is about 28 MiB. GitHub's **upload-by-browser limit is 25 MiB per file**, so drag-and-drop on github.com
-  will refuse it. Push it with git instead (the command-line limit is 100 MiB per file; git warns above 50 MiB):
-  ```
-  git clone https://github.com/<you>/<repo>.git
-  cd <repo>
-  cp /path/to/index.html /path/to/README.md .
-  git add index.html README.md
-  git commit -m "HM64 Power Nut tool v31.27"
-  git push
-  ```
-  GitHub Desktop works too.
-- Repository → Settings → Pages → Source: deploy from the branch, folder `/ (root)`. The site is then at
-  `https://<you>.github.io/<repo>/`.
-- Settings, practice data and attempt history are stored **in each visitor's own browser**, for that site. Nothing is
-  shared between testers. Clearing the browser's site data resets the tool.
-- The page also works as a local file: download `index.html` and double-click it. A local copy keeps its own settings,
-  separate from the website's.
-
----
-
-## 3. Setting up the game file
+## 2. Setting up the game file
 The lab's tables were made on one specific kind of morning. Your file has to put the game in the same position, or the
 tool's dog lines will not match your game.
 
@@ -84,40 +62,40 @@ tool's dog lines will not match your game.
 
 **Is my file right?** The dog's exact spot matters: the lab found that what counts is which 32-unit tile of the beach
 the dog stands on, and a different tile shifts every dog line. You can't see tiles, so use the tool's own
-check. After a few attempts in which you tapped Space at a bite (sections 6 and 9), open Setup & review → L5 →
+check. After a few attempts in which you tapped Space at a bite (sections 5 and 8), open Setup & review → L5 →
 **"Is the app working?"**. If your bite taps keep fitting "no dog line" (shown as **off the tables**), your file, your
 menu speed or your route does not match the lab's, and the tool's advice will not apply.
 
 ---
 
-## 4. The route
+## 3. The route
 Everything from power-on to the end of the pier decides which dog line you get, so the route is played **as fast as
 possible** with the same turns every time. Small hesitations are expected: the tables cover a range of human timings.
 
-### 4.1 Power-on and menus
+### 3.1 Power-on and menus
 Turn the console on and **mash Start, then A**, through the title screen and the diary, to load your file as fast as
 you can. (The tables start from power-on; whether pressing Reset instead gives the same start has not been checked.) The tables cover loading up to **4 game frames (about 0.13 s) later than the fastest
 possible**.
 
-### 4.2 Sparrows at the door
+### 3.2 Sparrows at the door
 As Jack walks out of the house, look at the door: **two sparrows by the door** mean your menus were 5–6 frames late.
 That morning has its own table. Tick **Sparrows at the door** on the page (or press **S**) before the pier. No sparrows
 by the door: leave it unticked. (Sparrows also appear on some slower mornings that no table covers.)
 
-### 4.3 General path (one held direction per screen)
+### 3.3 General path (one held direction per screen)
 - **House:** hold **up-left** through the fade-in, cut **down-left** around the table, then **down** out of the door.
 - **Farm:** hold **left** to the exit.
 - **Crossroads:** **left**, then cut **down-left**.
 - **Ranch:** hold **down-right** to the beach. Keep holding it through the black screen into the beach.
 
-### 4.4 The beach: the zigzag
+### 3.4 The beach: the zigzag
 The beach is three legs and two turns. Never stop and never walk straight down.
 1. **Down-right** (held from the ranch, through the fade-in). Jack starts moving about a second after the beach
    appears.
 2. **First cut, down-left:** the moment Jack clears the **small wall**, on that game frame or the next. This is the
    "tight first turn". Then **hug the back wall** going down-left.
    - Turned a little late (Jack drifts off the wall)? Correct by pressing up a moment and carry on. It costs up to half
-     a second, and the tables cover it: those are the **Small fix** and **Big fix** presets (section 6).
+     a second, and the tables cover it: those are the **Small fix** and **Big fix** presets (section 5).
 3. **Second cut, down-right, onto the pier:** anywhere across the pier's width. Where you cut decides where Jack stops
    at the end: **Early** = near edge, **Middle**, **Late** = far edge. All of them are in the tables.
    - Cut outside the pier's window (too early or too late) and Jack does not make it onto the pier. That attempt is not
@@ -125,7 +103,7 @@ The beach is three legs and two turns. Never stop and never walk straight down.
 4. **Hold down-right** until Jack stops at the water at the end of the pier. He is now facing the sea, ready to cast.
    This moment is **READY**.
 
-### 4.5 Space at the end of the pier (the control)
+### 3.5 Space at the end of the pier (the control)
 **Tap Space once, the moment Jack stops at the water.** That one tap starts the tool's stopwatch. Everything after it,
 including the dog cards, the cast cue and the bite calls, counts from that tap. The tool allows for your reaction time
 and learns your personal delay from your bite taps over time.
@@ -133,7 +111,7 @@ and learns your personal delay from your bite taps over time.
 From here the hands are split: the **controller** casts (B) and reels; the **keyboard** is for the tool (Space taps,
 the dog keys).
 
-### 4.6 Stay awake
+### 3.6 Stay awake
 Jack lies down after **40 s** with no input. A red **WAKE JACK** line crosses the histogram 33.4 s after READY (and
 every 33.4 s after that) while you are still waiting to cast. When it reaches the white line, push the stick
 **down-right once**. That resets the nap timer and does not change the dog or the bites (measured in the lab). Never
@@ -141,14 +119,14 @@ push the stick after you have cast; fishing keeps him awake.
 
 ---
 
-## 5. What the app starts with
+## 4. What the app starts with
 A fresh browser opens ready, on the **Lucky Timer** tab:
-- Route **Beach-lineup2 · dog on the beach** (the file in section 3), **Sparrows at the door** off.
+- Route **Beach-lineup2 · dog on the beach** (the file in section 2), **Sparrows at the door** off.
 - Start: **one Space tap when Jack stops at the end of the pier**. With this start the app offers no taps on the way in
   and hides **Pier only**; both come back only if you choose the fade-in start in Setup & review → L2.
 - **Dog-watch on**, **5 dog cards**, the most likely dog **on the right**.
-- **Freestyle on**: you choose the cast from your dog's bars (section 8). Switch it off (**Ctrl** or the box) for the
-  app's own cast suggestion (section 6).
+- **Freestyle on**: you choose the cast from your dog's bars (section 7). Switch it off (**Ctrl** or the box) for the
+  app's own cast suggestion (section 5).
 - Dog-watch animation keys: numpad **0** idle · **1** sit · **2** stand · **4** walk · **5** run · **6** sleep · **7** sniff ·
   **8** bark · **9** shoulder, plus **R** rollover · **F** flapper · **G** good-boy · **O** mess · **B** wiggle-bum.
 - Front panels: picture of Jack · Lucky plan · dog-watch (drag the •••• grips to reorder).
@@ -156,11 +134,17 @@ A fresh browser opens ready, on the **Lucky Timer** tab:
 Everything can be changed, and the browser remembers your changes. If you opened an earlier build on the same site, its
 stored settings win over these defaults; change them by hand, or clear the site's data in the browser to start fresh.
 
-The **Lucky Timer** tab (footer) is the tool. The **Dog reference** tab is a printable manual method (section 11).
+Your settings, practice data and attempt history are stored **in your own browser**, for this site. Nothing is sent
+anywhere or shared with other players. Clearing the browser's site data resets the tool.
+
+The page also works offline: save it with your browser (File → Save Page As…) and open the saved file. A saved copy
+keeps its own settings, separate from the website's.
+
+The **Lucky Timer** tab (footer) is the tool. The **Dog reference** tab is a printable manual method (section 10).
 
 ---
 
-## 6. Layer 1 — the histogram and its cast suggestion
+## 5. Layer 1 — the histogram and its cast suggestion
 This is the app's own cast suggestion: the best cast for "any dog this route can produce". It shows while
 **Freestyle is off** (it is on by default: press **Ctrl** or untick the box).
 
@@ -197,7 +181,7 @@ depends on the presets).
 
 ---
 
-## 7. Layer 2 — find your dog and tune it to your N64
+## 6. Layer 2 — find your dog and tune it to your N64
 Once you have tapped Space at the end of the pier, the **dog-watch** panel opens with **cards**. Each card plays what
 one dog line's dog is doing *right now*, with its share of the likelihood (e.g. "17 % L5 +3").
 - "**+3**" means three "sister" lines have become the very same dog by now; they are shown on one card.
@@ -231,7 +215,7 @@ and then part, so a card parting early just means "not this exact frame".
 
 ---
 
-## 8. Layer 3 — Freestyle: choose your own cast
+## 7. Layer 3 — Freestyle: choose your own cast
 Freestyle is a separate mode for when your dog is chosen and tuned: **you** choose when to cast, from your dog's own
 Power Nut frames. No reflex correction is needed, because the dog on screen and the dog on your TV are in step.
 
@@ -250,7 +234,7 @@ attempt. Beside the box, pick the target: **Power Nut** (default), or large / me
   catch can be reeled in. Once you pass a bar, its thread's top stays on the white line and the thread swings upright.
   **When it stands straight up, let go of B** (only if you cast on that bar). The lamp says it too: **GREEN THREAD · LET
   GO IN 1.2 s → LET GO NOW**.
-- **WAKE JACK** lines keep coming every 33.4 s until you cast (section 4.6).
+- **WAKE JACK** lines keep coming every 33.4 s until you cast (section 3.6).
 
 **How to play it:**
 - Watch the countdown, **press B on a bar**, ideally a double.
@@ -268,7 +252,7 @@ spread of ±150 ms and about **47 %** at ±60 ms. In other words, steadier hands
 
 ---
 
-## 9. Ending an attempt, results and reports
+## 8. Ending an attempt, results and reports
 - **H** = caught the Power Nut · **M** = caught a fish / missed · **E** = empty line · **Esc** = stop without logging.
 - **Bite taps** (Space at a bite while holding B) are what the tool learns from: your reaction, your clock, which dog
   lines you really land on. They are stored even when you press Esc.
@@ -278,7 +262,7 @@ spread of ±150 ms and about **47 %** at ±60 ms. In other words, steadier hands
 
 ---
 
-## 10. Practice drills
+## 9. Practice drills
 Under the picture of Jack:
 - **Cast + bite practice:** the whole motion as on the N64. The histogram counts down to CAST, you press Space (or a
   controller button on a USB pad) on the cue and **keep holding**, Jack casts, a bite comes 1.4–5.2 s later, and you
@@ -290,14 +274,14 @@ Under the picture of Jack:
 
 ---
 
-## 11. Every setting, explained
+## 10. Every setting, explained
 
 ### Front page
 | Control | What it does |
 |---|---|
 | **Start / Stop**, **▶ Preview a lucky attempt** | Start / stop by mouse (Space starts, Esc stops); Preview plays an attempt's cues with no console. |
 | **Power Nut (H) · Fish / missed (M) · Empty line (E)** | Log the result (the same as the keys). |
-| **Sparrows at the door** (S) | Use the table for mornings with two sparrows at the house door (section 4.2). |
+| **Sparrows at the door** (S) | Use the table for mornings with two sparrows at the house door (section 3.2). |
 | **Pier only** (X) | Only shown with the fade-in start: a one-attempt override that makes the next (or last) Space the end-of-pier tap. Hidden (and X does nothing) with the default one-tap start, which already is that tap. |
 | **Freestyle** box, **key** button, target menu | Freestyle mode on / off, change its key (default Ctrl), target Power Nut / large / medium / small fish. |
 | **Dog-watch** panel: [ earlier · later ] · zero · Clear my pick · Undo × | Tune the dog cards by a frame, back to zero, drop your chosen dog, undo removed cards. |
@@ -305,8 +289,8 @@ Under the picture of Jack:
 | → most likely dog on the left / in the middle / on the right | Where the top card (and the chosen, large dog) sits (default right). |
 | → **Mouseover forecast** (off) | Hover a card to list that dog's next moves with countdowns. |
 | → **No missed turns once I start** + late arrows allowed up to … ms | Strict arrow logging: once you start keying, every turn must be keyed (late entries allowed up to the limit). Lines that don't show your sequence drop out. |
-| **Lucky plan** panel | See section 6 (presets, Cast at … − + best, Auto ✓ / Back to best, the last attempt in a few lines). |
-| **Cast + bite practice**, **Bite practice** | Section 10. |
+| **Lucky plan** panel | See section 5 (presets, Cast at … − + best, Auto ✓ / Back to best, the last attempt in a few lines). |
+| **Cast + bite practice**, **Bite practice** | Section 9. |
 
 ### Setup & review (the fold at the bottom)
 **L1 · Plan details**
@@ -324,7 +308,7 @@ Under the picture of Jack:
 | **Start the stopwatch** | **"when Jack stops at the dock end (READY)"** (default): one Space tap, nothing on the way in. The other option, "when the beach starts to fade in", is a multi-tap start for experienced runners with slightly higher odds (11.6 % vs 11.0 %); choosing it brings back the tap strategies and **Pier only**. |
 | **Start key** | Space by default. |
 
-**L4 · Attempts**: section 9.
+**L4 · Attempts**: section 8.
 
 **L5 · Your timing**
 | Fold | What it does |
@@ -340,11 +324,11 @@ Under the picture of Jack:
 ### ⚙ Settings → Lucky Timer tab
 | Setting | What it does |
 |---|---|
-| **Route (save / dog spot)** | Which lab table to use: **Beach-lineup2** for the file in section 3. The others are older saves and routes. |
+| **Route (save / dog spot)** | Which lab table to use: **Beach-lineup2** for the file in section 2. The others are older saves and routes. |
 | **Watch the dog at the dock end** | Turns the dog-watch panel (cards) on. |
 | **Facing keys** arrow keys / W A S D | Keys for the dog's facing. |
 | **Hands on B (stop logging) before the cast (s)** | Dog-watch logging closes this long before the cast (default 2 s). |
-| **Dog-watch keys** | Reassign the animation keys (defaults in section 5) and the earlier / later card keys. Keys the tool itself uses are refused. **Reset these keys** returns to the defaults. |
+| **Dog-watch keys** | Reassign the animation keys (defaults in section 4) and the earlier / later card keys. Keys the tool itself uses are refused. **Reset these keys** returns to the defaults. |
 | **Release line** | Show the pink release line (normal mode: best blind release; Freestyle: the middle of your marked cast's window). |
 | **Cast tap** + precision | Optional: also tap Space when you press B, so the tool knows your real cast time. |
 | **Glow around the screen edge** | The lamp's colour around the whole screen edge, for the corner of your eye. In Freestyle it also covers the LAST DOUBLE pulse. |
@@ -363,13 +347,13 @@ A manual method for when the live tool is not wanted: what the dog is doing as J
 which line you are likely on → how long to wait before casting (best-odds and quick casts per behaviour), the
 "harbinger" behaviours that give a line away, and a simple Space stopwatch (Space when Jack stops, Esc to stop; click
 a cast time in the tables to count down to it). Tabs: **First 10 seconds, by line** · **As you stop** · **Harbingers**.
-Its own settings: **Table** (Beach-lineup2 for the file in section 3), **Sparrows at the door** (S), **How exact is your
+Its own settings: **Table** (Beach-lineup2 for the file in section 2), **Sparrows at the door** (S), **How exact is your
 cast?** (±100 / 150 / 200 / 300 ms), **Aim for** best odds or a quick cast of **at least** n %, and **Your reaction when
 Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper copy.
 
 ---
 
-## 12. Keys, limits and feedback
+## 11. Keys, limits and feedback
 
 ### Keys
 | Key | When | Does |
@@ -380,7 +364,7 @@ Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper 
 | **B** (controller) | — | cast, hold, let go. The tool never sees it |
 | **Ctrl** | any time | Freestyle on / off (changeable) |
 | **S** / **X** | before the pier | sparrows at the door / pier-only override (X: fade-in start only) |
-| **Arrows** (or WASD), **Numpad 0–9**, **R F G O B** | dog-watch | dog facing / long animations (section 5) |
+| **Arrows** (or WASD), **Numpad 0–9**, **R F G O B** | dog-watch | dog facing / long animations (section 4) |
 | **[ ]**, **Shift + [ ]** | dog chosen | move the dog 1 / 10 game frames |
 | **Enter** | after the cast | lock the frame of the card you are tuning |
 | **Backspace** | — | undo: the chosen dog, a removed card, the last arrow, a Freestyle cast mark |
@@ -393,7 +377,7 @@ Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper 
   hardware randomness), but two things are open: whether a console steps the game at exactly the emulator's rate
   between the beach fade-in and the cast, and whether a person can match a card to one game frame by eye on a TV.
 - **Two hands:** Space (keyboard) and B (controller) are different hands; how far apart they land is not measured.
-- **One setup:** one save (section 3), one route (section 4), NTSC USA timing (16.715 ms per video frame).
+- **One setup:** one save (section 2), one route (section 3), NTSC USA timing (16.715 ms per video frame).
 
 ### Feedback that helps
 Your browser and system; what you did; what you expected; what happened. **Copy report** from the attempt list
