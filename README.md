@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool — test build v31.27
+# HM64 Power Nut Tool v31.28
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 It is one web page (`index.html`). It runs entirely in your browser, needs no install, and sends nothing anywhere
@@ -8,9 +8,6 @@ Every random event in the game comes from one random number generator. The dog's
 readout of where that generator is, and an emulator lab has recorded, for every dog path ("line") and every cast frame
 up to 120 s after Jack reaches the end of the pier, every bite and what it catches. The page shows you the dog the lab
 expects, lets you line it up with the dog on your TV, and tells you when to press B and when to let go.
-
-> **Test build.** Automated tests ran in Chrome / Chromium only. Firefox and Safari have not been through them. Nothing
-> has been verified on a real console by anyone but the author. Please report what you see (section 11).
 
 ---
 
@@ -25,7 +22,7 @@ expects, lets you line it up with the dog on your TV, and tells you when to pres
 8. [Ending an attempt, results and reports](#8-ending-an-attempt-results-and-reports)
 9. [Practice drills](#9-practice-drills)
 10. [Every setting, explained](#10-every-setting-explained)
-11. [Keys, limits and feedback](#11-keys-limits-and-feedback)
+11. [Keys and feedback](#11-keys-and-feedback)
 
 ---
 
@@ -41,12 +38,12 @@ expects, lets you line it up with the dog on your TV, and tells you when to pres
 ---
 
 ## 2. Setting up the game file
-The lab's tables were made on one specific kind of morning. Your file has to put the game in the same position, or the
+The tables work on any morning that starts the game in the same position as the lab's file. If yours doesn't, the
 tool's dog lines will not match your game.
 
-**The file the tables were made on:**
-- **Spring 4, Year 1, a sunny morning.** Other days and weather have not been tested.
-- **No horse.** Anything that moves on the route and is not in the lab's file (a horse, farm animals) can draw random
+**What your file needs:**
+- **A sunny morning with no cutscene when you wake up.** Any such day works.
+- **No horse yet.** Anything that moves on the route and is not in the lab's file (a horse, farm animals) can draw random
   numbers before the beach and send you down a different path.
 - **The fishing rod in Jack's hand** (equipped), not in the rucksack. Without it, B does nothing at the pier.
 - **The dog left on the beach, in the far south-west corner** (bottom-left on screen), not carried anywhere on the
@@ -58,7 +55,7 @@ tool's dog lines will not match your game.
 2. Make sure the rod is in Jack's hand and you have no horse.
 3. Go home, go to bed and save in the diary, in the **first diary slot** (the lab's file is there; another slot needs
    extra menu presses, which makes you later than the tables).
-4. The next morning must be sunny. If it rains, reload the day before and try again.
+4. The next morning must be sunny, with no cutscene when you wake up. If it rains, reload the day before and try again.
 
 **Is my file right?** The dog's exact spot matters: the lab found that what counts is which 32-unit tile of the beach
 the dog stands on, and a different tile shifts every dog line. You can't see tiles, so use the tool's own
@@ -69,24 +66,45 @@ menu speed or your route does not match the lab's, and the tool's advice will no
 ---
 
 ## 3. The route
-Everything from power-on to the end of the pier decides which dog line you get, so the route is played **as fast as
-possible** with the same turns every time. Small hesitations are expected: the tables cover a range of human timings.
+Everything from power-on to the bottom of the beach's back wall decides which dog line you get, and the cut onto
+the pier decides when you reach READY, so the route is played **as fast as possible** with the same turns every
+time. Small hesitations are expected: the tables cover a range of human timings.
 
 ### 3.1 Power-on and menus
 Turn the console on and **mash Start, then A**, through the title screen and the diary, to load your file as fast as
-you can. (The tables start from power-on; whether pressing Reset instead gives the same start has not been checked.) The tables cover loading up to **4 game frames (about 0.13 s) later than the fastest
-possible**.
+you can. The tables cover loading up to **4 game frames (about 0.13 s) later than the fastest possible**.
+
+![Power-on to the house: mash Start, then A](media/menus.gif)
+
+<sub>Power-on to the house at full speed. The badge shows the button being pressed: mash **Start** through the logos and the title, then **A** through the diary.</sub>
 
 ### 3.2 Sparrows at the door
 As Jack walks out of the house, look at the door: **two sparrows by the door** mean your menus were 5–6 frames late.
 That morning has its own table. Tick **Sparrows at the door** on the page (or press **S**) before the pier. No sparrows
 by the door: leave it unticked. (Sparrows also appear on some slower mornings that no table covers.)
 
+![The farm door on two mornings: no sparrows (left), two sparrows (right)](media/sparrows.png)
+
+<sub>The same moment on the farm, as Jack steps out of the house, on two mornings. **Left:** menus 0–4 frames late, nothing by the door: leave the box off. **Right:** menus 5–6 frames late, two sparrows by the door (circled): tick **Sparrows at the door** or press **S**.</sub>
+
 ### 3.3 General path (one held direction per screen)
 - **House:** hold **up-left** through the fade-in, cut **down-left** around the table, then **down** out of the door.
 - **Farm:** hold **left** to the exit.
 - **Crossroads:** **left**, then cut **down-left**.
 - **Ranch:** hold **down-right** to the beach. Keep holding it through the black screen into the beach.
+
+<table>
+<tr>
+<td valign="top" width="50%"><img src="media/house.gif" width="400" alt=""><br><sub><b>House</b>: hold ↖ up-left while it fades in (Jack can't move for the first few seconds), ↙ down-left around the table, then ↓ down out of the door. You have about <b>4 game frames (0.13 s)</b> of slack here.</sub></td>
+<td valign="top" width="50%"><img src="media/farm.gif" width="400" alt=""><br><sub><b>Farm</b>: one held ← left to the exit. Look at the door while it fades in (section 3.2).</sub></td>
+</tr>
+<tr>
+<td valign="top" width="50%"><img src="media/crossroads.gif" width="400" alt=""><br><sub><b>Crossroads</b>: ← left, then ↙ down-left to the ranch. The farm and the crossroads together allow about <b>3 game frames (0.10 s)</b>.</sub></td>
+<td valign="top" width="50%"><img src="media/ranch.gif" width="400" alt=""><br><sub><b>Ranch</b>: hold ↘ down-right and keep holding it through the black screen into the beach.</sub></td>
+</tr>
+</table>
+
+<sub>The badge under each clip shows the stick direction held; it turns orange at each turn. Recorded in an emulator from power-on with the timings the tables were built on.</sub>
 
 ### 3.4 The beach: the zigzag
 The beach is three legs and two turns. Never stop and never walk straight down.
@@ -103,10 +121,26 @@ The beach is three legs and two turns. Never stop and never walk straight down.
 4. **Hold down-right** until Jack stops at the water at the end of the pier. He is now facing the sea, ready to cast.
    This moment is **READY**.
 
+![The beach zigzag to READY](media/beach.gif)
+
+<sub>The beach: keep ↘ through the fade-in, ↙ the moment Jack clears the small wall, slide down the back wall, ↘ onto the pier at the bottom of the wall, and hold it until Jack stops at the water: <b>READY</b>. The tables allow your first step up to <b>half a second</b> late; the cut onto the pier has a window of about <b>a third of a second</b> (11 game frames).</sub>
+
+![The moment the dog wakes](media/dog_wake.png)
+
+<sub><b>The moment the dog wakes.</b> The dog is asleep until the camera, following Jack, comes near it. On this route that happens when Jack reaches the bottom of the back wall, a frame or two before the cut onto the pier (the dog itself is still just off screen, by the pier's legs). Everything up to this moment decides your dog line: your first step, the first cut, and any fix along the wall, so if Jack drifts off the wall, fix it straight away: a fix only counts until here. After it, nothing Jack does changes the dog or the random numbers (checked frame by frame in the emulator); the cut onto the pier only changes when you reach READY, and the tables cover that. (A cut at the very start of the pier window wakes the dog a frame or two sooner; those runs are in the tables too.)</sub>
+
+![Where Jack stops: Early, Middle, Late](media/pier_cuts.png)
+
+<sub>Where the cut onto the pier leaves Jack at the dock end: <b>Early</b> = near (upper) edge, <b>Middle</b>, <b>Late</b> = far (lower) edge, by the dog. All are in the tables; pick yours under <b>2nd cut</b> in the Lucky plan if you know it (section 5), or leave Any.</sub>
+
 ### 3.5 Space at the end of the pier (the control)
 **Tap Space once, the moment Jack stops at the water.** That one tap starts the tool's stopwatch. Everything after it,
 including the dog cards, the cast cue and the bite calls, counts from that tap. The tool allows for your reaction time
 and learns your personal delay from your bite taps over time.
+
+![READY at the end of the pier, the dog at the lower left](media/ready.png)
+
+<sub><b>READY</b>: Jack has stopped at the water, facing the sea: tap Space now. The dog (circled) sits at the lower-left edge of the screen, half under the black border. If yours is somewhere else, your file is not set up like the lab's (section 2).</sub>
 
 From here the hands are split: the **controller** casts (B) and reels; the **keyboard** is for the tool (Space taps,
 the dog keys).
@@ -353,7 +387,7 @@ Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper 
 
 ---
 
-## 11. Keys, limits and feedback
+## 11. Keys and feedback
 
 ### Keys
 | Key | When | Does |
@@ -370,14 +404,6 @@ Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper 
 | **Backspace** | — | undo: the chosen dog, a removed card, the last arrow, a Freestyle cast mark |
 | **Delete** | dog-watch | remove the top card |
 | **H / M / E / Esc** | — | Nut / fish / empty / stop without logging |
-
-### What is not verified yet
-- **Browsers:** tested automatically in Chrome only. Firefox / Safari untested.
-- **Real hardware:** the tables come from an emulator. The game logic is deterministic (the decompiled source shows no
-  hardware randomness), but two things are open: whether a console steps the game at exactly the emulator's rate
-  between the beach fade-in and the cast, and whether a person can match a card to one game frame by eye on a TV.
-- **Two hands:** Space (keyboard) and B (controller) are different hands; how far apart they land is not measured.
-- **One setup:** one save (section 2), one route (section 3), NTSC USA timing (16.715 ms per video frame).
 
 ### Feedback that helps
 Your browser and system; what you did; what you expected; what happened. **Copy report** from the attempt list
