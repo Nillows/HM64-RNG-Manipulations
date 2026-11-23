@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.0
+# HM64 Power Nut Tool v32.1
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: pick the morning you play (sunny / rainy) and your game file (horse or
@@ -8,8 +8,9 @@ requests). Save a page (right-click its link in the hub → *Save link as…*) a
 
 <img src="media/hub.png" width="620" alt="The hub: sunny and rainy mornings, each game file with its pages">
 
-<sub><b>The hub.</b> Ready today: <b>Sunny → No horse</b>. <b>Sunny → Horse</b> is being collected; rainy mornings, a
-marriage and a baby come later, each with its own tables.</sub>
+<sub><b>The hub.</b> Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>. Rainy mornings (horse / no horse) are
+being collected; a marriage and a baby come later, each with its own tables. Every page is beach-lineup2: the dog left
+in the far south-west corner of the beach; you pick your tables by your game file.</sub>
 
 Every random event in the game comes from one random number generator. The dog's behaviour on the beach is a
 readout of where that generator is, and an emulator lab has recorded, for every dog path ("line") and every cast frame
@@ -36,8 +37,8 @@ expects, lets you line it up with the dog on your TV, and tells you when to pres
 ---
 
 ## 1. Quick start
-1. Open the hub in a **desktop browser with a keyboard** (Chrome recommended for now) and pick **Sunny → No horse →
-   Lucky Timer**. The page is about 29 MB and takes a few seconds to load.
+1. Open the hub in a **desktop browser with a keyboard** (Chrome recommended for now) and pick your morning and file,
+   e.g. **Sunny → No horse → Lucky Timer**. A page is 24–28 MB and takes a few seconds to load.
 2. Make the game file described in section 2 (or get a copy of one).
 3. Nothing to set up: the page opens ready (section 4).
 4. Play: walk the route (section 3) and **tap Space once the moment Jack stops at the end of the pier**. Click the dog
@@ -83,7 +84,8 @@ fraction of a second.</sub>
 ---
 
 ## 2. Setting up the game file
-This is the file for **Sunny → No horse** in the hub; other game files get their own tables and their own list there.
+This is the file for **Sunny → No horse** in the hub. **Sunny → Horse** is the same file with the horse (see below);
+other game files get their own tables and their own list there.
 
 The tables work on any morning that starts the game in the same position as the lab's file. If yours doesn't, the
 tool's dog lines will not match your game.
@@ -103,6 +105,12 @@ tool's dog lines will not match your game.
 3. Go home, go to bed and save in the diary, in the **first diary slot** (the lab's file is there; another slot needs
    extra menu presses, which makes you later than the tables).
 4. The next morning must be sunny, with no cutscene when you wake up. If it rains, reload the day before and try again.
+
+**With a horse (Sunny → Horse).** The same file and the same route, with two differences. Owning the horse changes the
+random numbers at the ranch on the way whether or not you see it, so a file with a horse needs the horse tables, not
+the no-horse ones. And the horse must stay out of sight: leave it on the farm far from the house door, where it never
+comes on screen while Jack walks from the door to the farm exit (a horse on screen draws more random numbers and can
+get in the way). The lab's file has the pony, not yet grown; a grown horse has not been tested.
 
 **Is my file right?** The dog's exact spot matters: the lab found that what counts is which 32-unit tile of the beach
 the dog stands on, and a different tile shifts every dog line. You can't see tiles, so use the tool's own
