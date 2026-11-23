@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v31.28
+# HM64 Power Nut Tool v31.30
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 It is one web page (`index.html`). It runs entirely in your browser, needs no install, and sends nothing anywhere
@@ -12,6 +12,8 @@ expects, lets you line it up with the dog on your TV, and tells you when to pres
 ---
 
 ## Contents
+**Only want a stopwatch? Start with [Optimal Blind Casting](#optimal-blind-casting).**
+
 1. [Quick start](#1-quick-start)
 2. [Setting up the game file](#2-setting-up-the-game-file)
 3. [The route](#3-the-route)
@@ -34,6 +36,42 @@ expects, lets you line it up with the dog on your TV, and tells you when to pres
 4. Play: walk the route (section 3) and **tap Space once the moment Jack stops at the end of the pier**. Click the dog
    card that matches your TV, tune it with **[ ]**, and cast on one of its bars (sections 6–7). Cast and reel on the
    controller; the keyboard is only for the tool.
+
+No tool at all? [Optimal Blind Casting](#optimal-blind-casting) below tells you, from what the dog does in the first 10 s, when to cast.
+
+---
+
+## Optimal Blind Casting
+No live tool needed, only a stopwatch and your eyes. Start the stopwatch the moment Jack stops at the end of the pier
+(where you would tap Space, section 3.5) and watch the dog for 10 seconds. If it starts one of these, press **B at the
+time shown — anywhere within half a second of it** — and let go of B as the line says.
+
+- If you see **wiggle-bum** facing **↙ down-left** at **0.5–2 s**, cast at **62.4 s** for **28%** (1 in 3.6) — let go at the 1st bite · push ↘ at 33 s.
+- If you see **flapper** facing **↙ down-left** at **4–6 s**, cast at **62.4 s** for **27%** (1 in 3.7) — let go at the 1st bite · push ↘ at 33 s.
+- If you see **flapper** facing **↙ down-left** at **2–4 s**, cast at **22.2 s** for **12%** (1 in 8.3) — let go at the 1st bite.
+- If you see **sit** facing **↗ up-right** at **8–10 s**, cast at **22.2 s** for **13%** (1 in 7.9) — let go at the 1st bite.
+- If you see **rollover** facing **↙ down-left** at **8–10 s**, cast at **30.2 s** for **12%** (1 in 8.5) — hold the 1st bite, let go at the 2nd.
+- If you see **smell** facing **→ right** at **2–4 s**, cast at **61.5 s** for **30%** (1 in 3.3) — let go at the 1st bite · push ↘ at 33 s.
+- If you see **shoulder-sitting** facing **→ right** at **6–8 s**, cast at **61.5 s** for **30%** (1 in 3.3) — let go at the 1st bite · push ↘ at 33 s.
+- If you see **run** facing **↘ down-right** at **2–4 s**, cast at **12.8 s** for **13%** (1 in 7.6) — hold the 1st bite, let go at the 2nd.
+- If you see **walk** facing **↘ down-right** at **4–6 s**, cast at **12.8 s** for **13%** (1 in 7.6) — hold the 1st bite, let go at the 2nd.
+- If you see **none of these** by 10 s, cast at **63.0 s** for **8.7%** (1 in 12) — let go at the 1st bite · push ↘ at 33 s.
+- Not watching the dog at all: cast at **63.0 s** for **10%** (1 in 9.8) — let go at the 1st bite · push ↘ at 33 s.
+
+**Push ↘ at 33 s:** a cast after 40 s needs one push of the stick **down-right** at about 33 s, or Jack lies down at
+40 s (section 3.6). Never push after you have cast. **Hold the 1st bite, let go at the 2nd** = keep B held through the
+first bite and let go when the second one comes.
+
+The odds are the share of the lab's arrivals on this route (the file in section 2, no sparrows at the door) that show
+the sign and land the Power Nut with B pressed anywhere in that second; 1 in 51 (2%) is the game's base chance per
+catch. Emulator data. With **sparrows at the door** (section 3.2) the dog lines are different: use the app's list with the
+Sparrows box ticked.
+
+<img src="media/app_blind.png" width="700" alt="The Optimal Blind Casting tab of the Dog reference">
+
+<sub><b>The same list in the app</b>: the first tab of the <b>Dog reference</b> (footer). Space starts its stopwatch when
+Jack stops; click a row and it counts down to that cast. The Harbingers tab has the same signs with a cast aimed to a
+fraction of a second.</sub>
 
 ---
 
@@ -183,7 +221,8 @@ anywhere or shared with other players. Clearing the browser's site data resets t
 The page also works offline: save it with your browser (File → Save Page As…) and open the saved file. A saved copy
 keeps its own settings, separate from the website's.
 
-The **Lucky Timer** tab (footer) is the tool. The **Dog reference** tab is a printable manual method (section 10).
+The **Lucky Timer** tab (footer) is the tool. The **Dog reference** tab is a printable manual method; its first tab is
+[Optimal Blind Casting](#optimal-blind-casting) (more in section 10).
 
 ---
 
@@ -453,14 +492,17 @@ Mostly settings of the older "Dog Oracle" page, which this build no longer shows
 A manual method for when the live tool is not wanted: what the dog is doing as Jack stops at the end of the pier →
 which line you are likely on → how long to wait before casting (best-odds and quick casts per behaviour), the
 "harbinger" behaviours that give a line away, and a simple Space stopwatch (Space when Jack stops, Esc to stop; click
-a cast time in the tables to count down to it). Tabs: **First 10 seconds, by line** · **As you stop** · **Harbingers**.
+a cast time in the tables to count down to it). Tabs: **Optimal Blind Casting** (the list above, first) · **First 10
+seconds, by line** · **As you stop** · **Harbingers**. Casts reach 75 s after Jack stops (the Power Nut ends there); a
+cast after 40 s says so and needs the push ↘ at about 33 s (a cast after 73 s a second one at about 67 s); the
+stopwatch shows PUSH THE STICK ↘ NOW at those moments.
 Its own settings: **Table** (Beach-lineup2 for the file in section 2), **Sparrows at the door** (S), **How exact is your
 cast?** (±100 / 150 / 200 / 300 ms), **Aim for** best odds or a quick cast of **at least** n %, and **Your reaction when
 Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper copy.
 
 <img src="media/app_dogref.png" width="700" alt="The Dog reference tab">
 
-<sub><b>The Dog reference tab</b>, the manual method, on its first tab.</sub>
+<sub><b>The Dog reference tab</b>, the manual method, on its first tab (Optimal Blind Casting).</sub>
 
 ---
 
