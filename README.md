@@ -87,6 +87,10 @@ by the door: leave it unticked. (Sparrows also appear on some slower mornings th
 
 <sub>The same moment on the farm, as Jack steps out of the house, on two mornings. **Left:** menus 0–4 frames late, nothing by the door: leave the box off. **Right:** menus 5–6 frames late, two sparrows by the door (circled): tick **Sparrows at the door** or press **S**.</sub>
 
+![The app with Sparrows at the door off and on](media/app_sparrows.png)
+
+<sub><b>What the box changes in the app.</b> The sparrow mornings have their own table (menus 5–6 frames late, so the whole route runs a little later and the dog lines differ). Same page, same file: with the box off the best cast is <b>20.07 s</b> after READY at <b>11.0 %</b>; ticked (or <b>S</b>), the histogram is redrawn from the sparrow table and the best cast moves to <b>22.06 s</b> at <b>11.5 %</b>. A wrong box means the wrong table, so check the door every attempt.</sub>
+
 ### 3.3 General path (one held direction per screen)
 - **House:** hold **up-left** through the fade-in, cut **down-left** around the table, then **down** out of the door.
 - **Farm:** hold **left** to the exit.
@@ -154,6 +158,11 @@ push the stick after you have cast; fishing keeps him awake.
 ---
 
 ## 4. What the app starts with
+
+![The Lucky Timer front page with numbered areas](media/app_front.png)
+
+<sub><b>A fresh browser, nothing changed.</b> ① the histogram (section 5) · ② the lamp with its countdown, the stopwatch, Start and ▶ Preview · ③ the result keys H / M / E · ④ the Sparrows and Freestyle boxes, Freestyle's target menu · ⑤ the picture of Jack, the practice drills, your timing compass and the key list · ⑥ the Lucky plan (presets and the cast time) · ⑦ the dog-watch (section 6) · ⑧ the tabs (Dog reference / Lucky Timer), How it works and ⚙ Settings. Panels ⑤ ⑥ ⑦ can be dragged into any order by their •••• grip.</sub>
+
 A fresh browser opens ready, on the **Lucky Timer** tab:
 - Route **Beach-lineup2 · dog on the beach** (the file in section 2), **Sparrows at the door** off.
 - Start: **one Space tap when Jack stops at the end of the pier**. With this start the app offers no taps on the way in
@@ -195,6 +204,11 @@ Lucky plan, and the picture of Jack with the key list.
   let go at the **1st** bite, **gold** = hold through the 1st bite and let go at the **2nd**, **purple** = a later
   bite.
 
+
+![A preview of a lucky attempt with Freestyle off](media/app_preview.gif)
+
+<sub><b>Freestyle off, ▶ Preview a lucky attempt (P).</b> The app plays the cues of one winning attempt so you can see the rhythm: the bold CAST line meets the white line (press B there and keep holding), the release windows follow on the histogram, bite 1 comes (keep holding B, tap Space as it bites) and bite 2 is the Nut (let go). The ▶▶ parts are sped up. A real attempt starts from your Space tap at READY instead.</sub>
+
 **The Lucky plan panel** shows the route name and **Cast at X after READY**, with − / + / best to move it, and
 **Auto ✓ / Back to best** (lit when you moved something by hand: click it to go back to the best plan). It also has two
 rows of buttons describing your run, each with its own best cast and odds:
@@ -205,6 +219,10 @@ rows of buttons describing your run, each with its own best cast and odds:
 Pick what you actually did if you know it, or leave Any. ★ marks the best 2nd cut for that first step. With the
 pier-end start the plain suggestion is roughly **20 s after your tap at about 11 %** (shown live in the app; it
 depends on the presets).
+
+![Clicking through the presets of the Lucky plan](media/app_presets.gif)
+
+<sub><b>Each pick has its own best cast.</b> Any: <b>20.07 s · 11.0 %</b> → Clean: <b>36.96 s · 12.1 %</b> → Small fix: <b>20.14 s · 11.3 %</b> → Big fix: <b>36.77 s · 11.5 %</b>; with Clean, the 2nd cut: Early <b>37.01 s · 12.9 %</b>, Middle ★ <b>36.91 s · 13.1 %</b>, Late <b>36.79 s · 12.7 %</b>. The histogram is redrawn for every pick. If you are not sure how your run went, leave Any: it covers every timing in the tables.</sub>
 
 **After the cast** the lamp reads the bites for you:
 - **RELEASE** (e.g. **BITE 1 = NUT: RELEASE**, **RELEASE ON A BITE**) = let go of B at this bite.
@@ -219,6 +237,10 @@ depends on the presets).
 Once you have tapped Space at the end of the pier, the **dog-watch** panel opens with **cards**. Each card plays what
 one dog line's dog is doing *right now*, with its share of the likelihood (e.g. "17 % L5 +3").
 - "**+3**" means three "sister" lines have become the very same dog by now; they are shown on one card.
+
+![Finding your dog: the TV and the app side by side](media/app_dogwatch.gif)
+
+<sub><b>A real attempt, the TV and the app side by side</b> (the TV is the emulator running the same file and route; the close-up is the dog in the TV's lower-left corner). Space at READY; the cards play five dog lines; one arrow key as the dog turns (optional) and the matching card, L3, rises to the top on the right; click it; five presses of <b>[</b> line it up with the TV (−5 frames); the histogram now shows L3's own Power Nut cast frames.</sub>
 
 **1. Choose your dog.** When a card does what the dog on your TV is doing, **click it**. The other cards disappear and
 the panel becomes the **calibration view**: your dog drawn large, with three frames of it underneath (one game frame
@@ -235,6 +257,10 @@ nearest your TV.
 **2. Tune it.** A card plays at the tool's best guess of your timing, so it can run a little early or late. Press
 **[** (earlier) and **]** (later) to move it one game frame (33 ms), or **Shift + [ / ]** for 10 frames, until the
 large dog turns **exactly** with the dog on your TV. The three small frames show what one frame either way looks like.
+
+<img src="media/app_calibration.png" width="420" alt="The calibration view with numbered parts">
+
+<sub><b>The calibration view.</b> ① your dog, large (it sits on the side the Dog-watch options set: right by default) · ② the same dog one game frame earlier, tuned, and one frame later · ③ how far you moved it (here −5 frames = −167 ms) · ④ [ earlier / later ], zero, Clear my pick (the same as the keys).</sub>
 
 **3. The histogram changes.** With a dog chosen, the histogram stops showing odds for "any dog". It shows **that dog's
 own Power Nut cast frames** as bars, at your tuned timing, and the cast suggestion re-aims to the best cast still
@@ -270,6 +296,10 @@ attempt. Beside the box, pick the target: **Power Nut** (default), or large / me
   GO IN 1.2 s → LET GO NOW**.
 - **WAKE JACK** lines keep coming every 33.4 s until you cast (section 3.6).
 
+![Freestyle with the Power Nut target, the large-fish target, and Freestyle off](media/app_targets.png)
+
+<sub><b>The same dog (L3), three views.</b> Top: Freestyle, target <b>Power Nut</b>: only the frames that catch the Nut, doubles marked ×2. Middle: target <b>Large fish</b>: the frames that catch a large fish. Bottom: <b>Freestyle off</b> (Ctrl) with the dog still chosen: KNOWN LINE, the app's own cast moves to the best frame still ahead (here 25.77 s, 31.1 %).</sub>
+
 **How to play it:**
 - Watch the countdown, **press B on a bar**, ideally a double.
 - **Simplest way, no keyboard needed:** cast in a **green** bar's window and let go at the **first nibble**. For a
@@ -280,6 +310,10 @@ attempt. Beside the box, pick the target: **Power Nut** (default), or large / me
   you focus on the release that's left.
 - A freestyle attempt with no cast stops by itself at the end of the data (120 s after READY), without logging
   anything.
+
+![A Freestyle cast on a double and the catch, TV and app side by side](media/app_freestyle.gif)
+
+<sub><b>The same attempt, continued.</b> NEXT DOUBLE · GREEN counts down; press B on the ×2 bar (here with a Space tap as you cast, which marks it); hold B while the cast's thread swings up; when it stands upright the lamp says let go: the first nibble is the <b>Power Nut</b>, on the TV too. Then H. In the emulator, casts on the two frames of this double both give the Nut; the frames either side give a small fish.</sub>
 
 For a sense of scale (lab calculation): the best group of bars on a dog line is worth about **29 %** with a press
 spread of ±150 ms and about **47 %** at ±60 ms. In other words, steadier hands are worth more than anything else.
@@ -294,6 +328,10 @@ spread of ±150 ms and about **47 %** at ±60 ms. In other words, steadier hands
   landed, the dog line, the locked frame) and **Copy report** for sharing. **Remove** takes a bad attempt out of
   everything the tool learned (**Undo** puts it back). **Export** / **Clear** for the whole log.
 
+<img src="media/app_report.png" width="640" alt="The attempt list and the report of the freestyle attempt">
+
+<sub><b>L4 after the attempt above.</b> One Power Nut in one try; the report shows the target (a double, 67 ms wide), where your Space tap landed (INSIDE, on bar 2 of 2) and what to let go at. <b>Remove</b> takes an attempt out of everything the tool learned.</sub>
+
 ---
 
 ## 9. Practice drills
@@ -305,6 +343,10 @@ Under the picture of Jack:
 - **Bite practice:** only the bite. Hold, let go when the rod dips. A bite can be caught for 20 video frames (334 ms):
   CAUGHT / LATE / TOO EARLY.
 - **Esc** stops a drill.
+
+![Cast + bite practice](media/app_drill.gif)
+
+<sub><b>Cast + bite practice.</b> Hold Space from the CAST cue, let go when the rod dips. The lamp gives both results: here the press was 43 ms late and the catch took 204 ms.</sub>
 
 ---
 
@@ -326,6 +368,13 @@ Under the picture of Jack:
 | **Lucky plan** panel | See section 5 (presets, Cast at … − + best, Auto ✓ / Back to best, the last attempt in a few lines). |
 | **Cast + bite practice**, **Bite practice** | Section 9. |
 
+<table>
+<tr>
+<td valign="top" width="50%"><img src="media/app_dwopts.png" width="400" alt=""><br><sub><b>Dog-watch options</b>: how many cards (3 / 5 / 7), and where the most likely dog sits. In a 1280-pixel-wide window the 7th card runs past the panel's edge.</sub></td>
+<td valign="top" width="50%"><img src="media/app_peek.png" width="400" alt=""><br><sub><b>Mouseover forecast</b> (off by default): hover a card for that dog's next moves, with countdowns at the card's own timing.</sub></td>
+</tr>
+</table>
+
 ### Setup & review (the fold at the bottom)
 **L1 · Plan details**
 | Setting | What it does |
@@ -336,11 +385,19 @@ Under the picture of Jack:
 | **P(Nut) overview** | The chance for a cast at each moment with your timing spread. Click it to choose another cast time. |
 | **How to do this attempt** | The route and the start in words. |
 
+![The After the cast and Aim for settings and what they do to the plan](media/app_policy.gif)
+
+<sub><b>L1, cause and effect.</b> Auto (= Smart zones here): <b>20.07 s · 11.0 %</b>. 1st bite: the plan changes completely (cast at <b>0.48 s</b>, <b>6.5 %</b>, only green bars). 2nd bite (and 2nd bite + tap): <b>36.92 s · 8.4 %</b>. Aim for fastest Nut: nothing moves while dog-watch is on, as the panel says (the cast stays on best odds).</sub>
+
 **L2 · Start & taps**
 | Setting | What it does |
 |---|---|
 | **Start the stopwatch** | **"when Jack stops at the dock end (READY)"** (default): one Space tap, nothing on the way in. The other option, "when the beach starts to fade in", is a multi-tap start for experienced runners with slightly higher odds (11.6 % vs 11.0 %); choosing it brings back the tap strategies and **Pier only**. |
 | **Start key** | Space by default. |
+
+![The two start options in L2](media/app_start.png)
+
+<sub><b>L2, the two starts.</b> Left, the default: one tap at READY, nothing on the way in. Right, the fade-in start: the <b>Pier only</b> box comes back in the lamp row, and L2 gains the tap strategy, the beach cue and the clock-tap settings.</sub>
 
 **L4 · Attempts**: section 8.
 
@@ -354,6 +411,10 @@ Under the picture of Jack:
 | **Your data: clear stats** | Clear any one store (attempt log, bite taps, dog-watch records, clock taps, cast practice, bite practice) or **Clear all stats**. Settings and keys are kept. |
 | **Your dog lines** | Which lines your attempts were on, vs how common the lab found them. "Also count what the dog-watch saw" is experimental. |
 | **Bite practice**, **Cast practice** | Statistics and options of the drills ("tap instead of hold-and-let-go", "use it as my bite-tap delay", "moving cast line", "full wait", "hold on to the bite and let go", "Copy to my hand-set values", "Forget …"). |
+
+<img src="media/app_L5.png" width="640" alt="L5 Your timing after one attempt">
+
+<sub><b>L5 after one attempt.</b> The timing picture (each dot is something measured about you), the table of what has been learned so far, and the open folds below it.</sub>
 
 ### ⚙ Settings → Lucky Timer tab
 | Setting | What it does |
@@ -370,11 +431,23 @@ Under the picture of Jack:
 | **Sound too** / … release-window sounds | Beeps with the visual cues (off by default). |
 | **Load your own angler frames** / Stick figure | Change the picture of Jack. |
 
+<img src="media/app_settings_lucky.png" width="520" alt="Settings, Lucky Timer tab">
+
+<sub><b>⚙ Settings → Lucky Timer.</b> The route, dog-watch, the key table (every animation with its share of the wait and its key), the release line, cast tap, glow, sound and the picture of Jack.</sub>
+
 ### ⚙ Settings → Console & shared timing / Calibration & data tabs
 Mostly settings of the older "Dog Oracle" page, which this build no longer shows. Two matter:
 - **Console game update (ms; NTSC N64 = 33.430)**: **leave it at 33.430.** If it is changed, the front page shows a red
   warning with a one-click fix.
 - **Your tap delay, mean (ms)**: the tool's first guess for your bite-tap delay, until it has learned yours.
+
+<img src="media/app_settings_console.png" width="420" alt="Settings, Console and shared timing tab">
+
+<sub><b>⚙ Settings → Console & shared timing.</b> The game update stays at 33.430 ms.</sub>
+
+![The warning when the console update is changed](media/app_warn.png)
+
+<sub>If it is changed (here to 33.333 ms), the lamp row says so in red; one click puts it back.</sub>
 
 ### Dog reference tab
 A manual method for when the live tool is not wanted: what the dog is doing as Jack stops at the end of the pier →
@@ -384,6 +457,10 @@ a cast time in the tables to count down to it). Tabs: **First 10 seconds, by lin
 Its own settings: **Table** (Beach-lineup2 for the file in section 2), **Sparrows at the door** (S), **How exact is your
 cast?** (±100 / 150 / 200 / 300 ms), **Aim for** best odds or a quick cast of **at least** n %, and **Your reaction when
 Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper copy.
+
+<img src="media/app_dogref.png" width="700" alt="The Dog reference tab">
+
+<sub><b>The Dog reference tab</b>, the manual method, on its first tab.</sub>
 
 ---
 

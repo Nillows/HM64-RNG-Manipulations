@@ -174,7 +174,7 @@ table.lktime td{padding:3px 5px;vertical-align:top}table.lktime td:first-child{w
 .lkaim{border:1.5px solid;border-radius:12px;padding:1px 9px;font-weight:700;font-size:13px;white-space:nowrap}
 .cards.stale .lkdog{opacity:.35;filter:grayscale(1)}.lkdog.gone{opacity:.35;filter:grayscale(1)}.lkdog.exact{outline:2px solid #5fd38d;outline-offset:-1px;background:#12301f}.lkdog.tune{border-color:var(--acc);border-bottom-left-radius:0;border-bottom-right-radius:0}
 .lkcar .crs{flex:1 1 auto;min-width:0}.lkcar .cn{flex:0 0 62px;display:flex;flex-direction:column;align-items:center;justify-content:center;border-left:1px solid #1b2a35;background:#0b141c}.lkcar .cn b{font:800 22px/1.1 ui-monospace,Menlo,monospace;color:#ffd28a}.lkcar .cn.zero b{color:#8fa3b3}.lkcar .cn i{font-style:normal;font-size:10px;color:#8fa3b3;line-height:1.3}
-.lkrep{padding:6px 4px 10px;border-left:3px solid var(--acc);background:#0e1820}.lkrepcv{width:100%;max-width:760px;height:190px;display:block;border-radius:6px}.lkreptxt{margin:6px 0;line-height:1.5;max-width:980px}.lkreptxt div{margin:2px 0}
+#lkAttTbl .lkreprow td{white-space:normal}.lkrep{padding:6px 4px 10px;border-left:3px solid var(--acc);background:#0e1820}.lkrepcv{width:100%;max-width:760px;height:190px;display:block;border-radius:6px}.lkreptxt{margin:6px 0;line-height:1.5;max-width:980px}.lkreptxt div{margin:2px 0}
 .lkpeek{position:fixed;z-index:60;width:340px;pointer-events:none;background:#0b141c;border:1px solid var(--acc);border-radius:8px;padding:6px 8px;box-shadow:0 6px 22px rgba(0,0,0,.55);font-size:12px}.lkpeek[hidden]{display:none}
 .lkpeek .ph{margin-bottom:4px}.lkpeek .pr{display:flex;align-items:center;gap:7px;padding:2px 0;border-top:1px solid #1b2a35}.lkpeek .pr img{width:30px;height:30px;image-rendering:pixelated;flex:0 0 30px}.lkpeek .pn{flex:1 1 auto;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .lkpeek .pt{flex:0 0 auto;font:600 11px ui-monospace,Menlo,monospace;color:#8fa3b3;text-align:right}.lkpeek .pr.now{background:#13283a}.lkpeek .pr.now .pt{color:#8cc8ff}.lkpeek .pr.soon .pt{color:#ffd28a}
@@ -7379,6 +7379,7 @@ function dwCards(t) {
   else if (L.dwFill === 'mid') { const m = []; show.forEach((x, i) => (i === 0 ? m.push(x) : i % 2 ? m.push(x) : m.unshift(x))); show = m; }
   $('lkCompCards').className = 'cards n' + (cal ? 3 : nShow) + (cal ? ' cal' : '') + (L.dwFill === 'mid' ? ' mid' : L.dwFill === 'rtl' ? ' rtl' : '');
   const name = x => (x.li >= 0 ? 'L' + (x.li + 1) : 'no table') + (x.fam ? ` <b style="color:#7fd6ff" title="One dog path: ${x.fam.n} lines that have become the same dog, a few frames apart (${x.fam.sis.slice(0, 6).map(q => (q.li >= 0 ? 'L' + (q.li + 1) : 'line') + ' ' + (q.df >= 0 ? '+' : '−') + Math.abs(q.df) + ' frames ' + Math.round(100 * q.p) + '%').join(', ')}). Use the frame keys to find its timing; Shift = 10 frames.">+${x.fam.n - 1}</b>` : '');
+  const nameT = x => (x.li >= 0 ? 'L' + (x.li + 1) : 'no table') + (x.fam ? ` +${x.fam.n - 1}` : '');   // v31.28: plain text for textContent (the HTML badge showed as markup in the summary)
   const key = show.map(x => x.dwi + ':' + Math.round(100 * x.p) + (x.fam ? 'f' + x.fam.n : '')).join(',') + '|' + (w.pick ? w.pick.dwi : '') + '|' + nShow + L.dwFill + '|' + (w.out || []).length + (c.lines.length > 1) + '|' + (w.exact == null ? '' : w.exact) + '|' + (car ? 'car' + car.dwi + car.post : '');
   { const ub = $('lkDwOutUndo'), n = (w.out || []).length; if (ub) { ub.disabled = !n; ub.textContent = n ? `Undo × (${n} removed)` : 'Undo ×'; } }
   if (key !== dwCardKey) {
@@ -7412,25 +7413,25 @@ function dwCards(t) {
   const cast = t >= dwT();                                       // v30.18: dimmed from the cast cue on; v31.2: only when there is no after-cast data
   $('lkCompCards').classList.toggle('stale', cast && !dcOn);
   let state, cls = '';
-  if (w.pick) { state = `YOUR PICK: ${name({ li: R.dw.lines[w.pick.dwi].li })}`; cls = 'ok'; }
-  else if (top.p >= DW_LOCK) { state = `LOCKED: ${name(top)} ${Math.round(100 * top.p)}%`; cls = 'ok';
-    if (w.locked !== top.dwi) { w.locked = top.dwi; if (t < dwT()) cueFlash(`DOG LINE LOCKED · ${name(top)}`, 'go', 900); } }
-  else { state = top.p >= 0.6 ? `leaning: ${name(top)} ${Math.round(100 * top.p)}%` : `${c.left} lines competing`; w.locked = null; }
+  if (w.pick) { state = `YOUR PICK: ${nameT({ li: R.dw.lines[w.pick.dwi].li })}`; cls = 'ok'; }
+  else if (top.p >= DW_LOCK) { state = `LOCKED: ${nameT(top)} ${Math.round(100 * top.p)}%`; cls = 'ok';
+    if (w.locked !== top.dwi) { w.locked = top.dwi; if (t < dwT()) cueFlash(`DOG LINE LOCKED · ${nameT(top)}`, 'go', 900); } }
+  else { state = top.p >= 0.6 ? `leaning: ${nameT(top)} ${Math.round(100 * top.p)}%` : `${c.left} lines competing`; w.locked = null; }
   const se = $('lkCompState'); if (se.textContent !== state) { se.textContent = state; se.style.color = cls ? 'var(--ok)' : ''; }
-  let txt = !w.pick && w.dropped ? `Your pick (${name({ li: R.dw.lines[w.dropped.dwi].li })}) was dropped: your arrows do not fit that dog. The app's own weighing is back — ` +
-      c.lines.slice(0, 3).map(x => `${name(x)} ${Math.round(100 * x.p)}%`).join(' · ') + '.'
-    : w.pick ? (w.pickNote || `Reading ${name({ li: R.dw.lines[w.pick.dwi].li })} at the timing you lined up (±${Math.round(DW_EYE * viMs())} ms by eye): best cast still ahead${w.p != null ? ` → Nut ${pct(w.p)} on any bite` : ''}` +
+  let txt = !w.pick && w.dropped ? `Your pick (${nameT({ li: R.dw.lines[w.dropped.dwi].li })}) was dropped: your arrows do not fit that dog. The app's own weighing is back — ` +
+      c.lines.slice(0, 3).map(x => `${nameT(x)} ${Math.round(100 * x.p)}%`).join(' · ') + '.'
+    : w.pick ? (w.pickNote || `Reading ${nameT({ li: R.dw.lines[w.pick.dwi].li })} at the timing you lined up (±${Math.round(DW_EYE * viMs())} ms by eye): best cast still ahead${w.p != null ? ` → Nut ${pct(w.p)} on any bite` : ''}` +
       `${w.pickLate ? ` (this line's best moment, ${fmtS(w.pickLate.t)} at ${pct(w.pickLate.p)}, has passed)` : ''}. Click the card again to go back to the app's own weighing.`)
     : top.p >= DW_LOCK ? `The app is sure of the dog line${w.p != null ? `: Nut ${pct(w.p)} for this cast` : ''}. Timing on that line ±${Math.round(Math.max(top.sd, 1) * viMs())} ms.`
-    : `Not sure yet: ${c.lines.slice(0, 3).map(x => `${name(x)} ${Math.round(100 * x.p)}%`).join(' · ')}${c.left > 3 ? ` · ${c.left - 3} more ≥ 1%` : ''}. ${w.logs.length ? '' : 'From the route taps only so far. '}Arrows narrow it; or click your dog.`;
+    : `Not sure yet: ${c.lines.slice(0, 3).map(x => `${nameT(x)} ${Math.round(100 * x.p)}%`).join(' · ')}${c.left > 3 ? ` · ${c.left - 3} more ≥ 1%` : ''}. ${w.logs.length ? '' : 'From the route taps only so far. '}Arrows narrow it; or click your dog.`;
   if (ti && ti.fit && ti.sc && ti.sc.length) {                    // after the cast: what the bite taps say
     const m = new Map(); let Z = 0; for (const e of ti.sc) { m.set(e.path, (m.get(e.path) || 0) + e.w); Z += e.w; }
     const [bs, bp] = [...m.entries()].sort((x, y) => y[1] - x[1])[0], bl = R.sidxs.indexOf(bs);
     txt += ` After the bite tap${ti.taus && ti.taus.length > 1 ? 's' : ''}: L${bl + 1} ${Math.round(100 * bp / Z)}%.`;
   }
-  if (car) txt = car.post ? `TUNING ${name({ li: R.dw.lines[car.dwi].li })}: three frames of the same dog under its card, one cast frame (33 ms) apart, the tuned frame in the middle (cast frame ${(w.cadj || 0) >= 0 ? '+' : '−'}${Math.abs(w.cadj || 0)} from the ${run.tapInfo && run.tapInfo.fit ? 'bite tap' : run.castTap != null ? 'cast tap' : 'aim'}). They look alike for 1–3 s after the cast, then part. ${codeTxt(dwAdjKeys()[0])} ${codeTxt(dwAdjKeys()[1])} scroll; click the upper or lower one to bring it to the middle; Enter (or the middle one) when the middle one stays with your dog — the lamp then calls the bites.` +
+  if (car) txt = car.post ? `TUNING ${nameT({ li: R.dw.lines[car.dwi].li })}: three frames of the same dog under its card, one cast frame (33 ms) apart, the tuned frame in the middle (cast frame ${(w.cadj || 0) >= 0 ? '+' : '−'}${Math.abs(w.cadj || 0)} from the ${run.tapInfo && run.tapInfo.fit ? 'bite tap' : run.castTap != null ? 'cast tap' : 'aim'}). They look alike for 1–3 s after the cast, then part. ${codeTxt(dwAdjKeys()[0])} ${codeTxt(dwAdjKeys()[1])} scroll; click the upper or lower one to bring it to the middle; Enter (or the middle one) when the middle one stays with your dog — the lamp then calls the bites.` +
       (() => { const x = dcExact(t); if (!x) return ''; if (!x.B) return ' FRAME SET: no data for this frame.'; return ' FRAME SET: ' + (x.B.bites.map(b => `bite ${b.n} at ${fmtS1(b.t)} s = ${DC_FISH[b.o] || b.o}`).join(', ') || 'no bite in the data') + '. Enter again clears it.'; })() + ' “Clear my pick” goes back to all dogs.'
-    : `TUNING ${name({ li: R.dw.lines[car.dwi].li })}: three frames of the same dog under its card, one game frame (33 ms) apart. ${codeTxt(dwAdjKeys()[0])} ${codeTxt(dwAdjKeys()[1])} scroll the timing (now ${w.adj >= 0 ? '+' : '−'}${Math.round(Math.abs(w.adj) * viMs())} ms); Enter (or a click on the middle one) when the middle one moves with your dog: that closes it; “Clear my pick” goes back to all dogs.` + (w.pickNote ? ' ' + w.pickNote : '');
+    : `TUNING ${nameT({ li: R.dw.lines[car.dwi].li })}: three frames of the same dog under its card, one game frame (33 ms) apart. ${codeTxt(dwAdjKeys()[0])} ${codeTxt(dwAdjKeys()[1])} scroll the timing (now ${w.adj >= 0 ? '+' : '−'}${Math.round(Math.abs(w.adj) * viMs())} ms); Enter (or a click on the middle one) when the middle one moves with your dog: that closes it; “Clear my pick” goes back to all dogs.` + (w.pickNote ? ' ' + w.pickNote : '');
   else if (cast && dcOn) txt = `After the cast each card plays its line's dog for ONE cast frame: the ${run.tapInfo && run.tapInfo.fit ? 'frame the bite tap points to' : run.castTap != null ? 'cast tap' : 'aimed frame'}${w.cadj ? ` ${w.cadj > 0 ? '+' : '−'}${Math.abs(w.cadj)}` : ''}. The dog depends on the exact frame your cast landed on — one frame off and the card parts from your TV 1–3 s after the cast. ${codeTxt(dwAdjKeys()[0])} ${codeTxt(dwAdjKeys()[1])} now step that frame: when a card stays with your dog, that is the frame you landed on.` +
       (dcRel() ? ` Shown as let go at bite ${dcRel()}.` : ' Shown as B held.') +
       (() => { const x = dcExact(t); if (!x) return ' Click the card that stays with your dog: the lamp then calls the bites exactly.';
