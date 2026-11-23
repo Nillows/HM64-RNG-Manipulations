@@ -1,8 +1,15 @@
-# HM64 Power Nut Tool v31.30
+# HM64 Power Nut Tool v32.0
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
-It is one web page (`index.html`). It runs entirely in your browser, needs no install, and sends nothing anywhere
-(the page makes no network requests).
+The site's front page (`index.html`) is a **hub**: pick the morning you play (sunny / rainy) and your game file (horse or
+not), and it links to that file's pages, the **Lucky Timer** and the **Casting tables**. Each page is one file that holds
+only that game file's tables, runs entirely in your browser, needs no install and sends nothing anywhere (no network
+requests). Save a page (right-click its link in the hub → *Save link as…*) and it works offline.
+
+<img src="media/hub.png" width="620" alt="The hub: sunny and rainy mornings, each game file with its pages">
+
+<sub><b>The hub.</b> Ready today: <b>Sunny → No horse</b>. <b>Sunny → Horse</b> is being collected; rainy mornings, a
+marriage and a baby come later, each with its own tables.</sub>
 
 Every random event in the game comes from one random number generator. The dog's behaviour on the beach is a
 readout of where that generator is, and an emulator lab has recorded, for every dog path ("line") and every cast frame
@@ -29,8 +36,8 @@ expects, lets you line it up with the dog on your TV, and tells you when to pres
 ---
 
 ## 1. Quick start
-1. Open the page in a **desktop browser with a keyboard** (Chrome recommended for now). It is about 29 MB and takes a
-   few seconds to load.
+1. Open the hub in a **desktop browser with a keyboard** (Chrome recommended for now) and pick **Sunny → No horse →
+   Lucky Timer**. The page is about 29 MB and takes a few seconds to load.
 2. Make the game file described in section 2 (or get a copy of one).
 3. Nothing to set up: the page opens ready (section 4).
 4. Play: walk the route (section 3) and **tap Space once the moment Jack stops at the end of the pier**. Click the dog
@@ -69,13 +76,15 @@ Sparrows box ticked.
 
 <img src="media/app_blind.png" width="700" alt="The Optimal Blind Casting tab of the Dog reference">
 
-<sub><b>The same list in the app</b>: the first tab of the <b>Dog reference</b> (footer). Space starts its stopwatch when
+<sub><b>The same list in the app</b>: the first tab of the <b>Casting tables</b> page (hub → Sunny → No horse). Space starts its stopwatch when
 Jack stops; click a row and it counts down to that cast. The Harbingers tab has the same signs with a cast aimed to a
 fraction of a second.</sub>
 
 ---
 
 ## 2. Setting up the game file
+This is the file for **Sunny → No horse** in the hub; other game files get their own tables and their own list there.
+
 The tables work on any morning that starts the game in the same position as the lab's file. If yours doesn't, the
 tool's dog lines will not match your game.
 
@@ -199,9 +208,9 @@ push the stick after you have cast; fishing keeps him awake.
 
 ![The Lucky Timer front page with numbered areas](media/app_front.png)
 
-<sub><b>A fresh browser, nothing changed.</b> ① the histogram (section 5) · ② the lamp with its countdown, the stopwatch, Start and ▶ Preview · ③ the result keys H / M / E · ④ the Sparrows and Freestyle boxes, Freestyle's target menu · ⑤ the picture of Jack, the practice drills, your timing compass and the key list · ⑥ the Lucky plan (presets and the cast time) · ⑦ the dog-watch (section 6) · ⑧ the tabs (Dog reference / Lucky Timer), How it works and ⚙ Settings. Panels ⑤ ⑥ ⑦ can be dragged into any order by their •••• grip.</sub>
+<sub><b>A fresh browser, nothing changed.</b> ① the histogram (section 5) · ② the lamp with its countdown, the stopwatch, Start and ▶ Preview · ③ the result keys H / M / E · ④ the Sparrows and Freestyle boxes, Freestyle's target menu · ⑤ the picture of Jack, the practice drills, your timing compass and the key list · ⑥ the Lucky plan (presets and the cast time) · ⑦ the dog-watch (section 6) · ⑧ the footer: How it works and ⚙ Settings (from v32 the footer's left end links to the ⌂ Hub and the Casting tables; the picture shows v31's two tabs there). Panels ⑤ ⑥ ⑦ can be dragged into any order by their •••• grip.</sub>
 
-A fresh browser opens ready, on the **Lucky Timer** tab:
+A fresh browser opens the Lucky Timer ready:
 - Route **Beach-lineup2 · dog on the beach** (the file in section 2), **Sparrows at the door** off.
 - Start: **one Space tap when Jack stops at the end of the pier**. With this start the app offers no taps on the way in
   and hides **Pier only**; both come back only if you choose the fade-in start in Setup & review → L2.
@@ -221,8 +230,8 @@ anywhere or shared with other players. Clearing the browser's site data resets t
 The page also works offline: save it with your browser (File → Save Page As…) and open the saved file. A saved copy
 keeps its own settings, separate from the website's.
 
-The **Lucky Timer** tab (footer) is the tool. The **Dog reference** tab is a printable manual method; its first tab is
-[Optimal Blind Casting](#optimal-blind-casting) (more in section 10).
+The **Lucky Timer** page is the tool. The **Casting tables** page (a link in its footer and in the hub) is the Dog
+reference, a printable manual method; its first tab is [Optimal Blind Casting](#optimal-blind-casting) (more in section 10).
 
 ---
 
@@ -488,7 +497,7 @@ Mostly settings of the older "Dog Oracle" page, which this build no longer shows
 
 <sub>If it is changed (here to 33.333 ms), the lamp row says so in red; one click puts it back.</sub>
 
-### Dog reference tab
+### Casting tables page (the Dog reference)
 A manual method for when the live tool is not wanted: what the dog is doing as Jack stops at the end of the pier →
 which line you are likely on → how long to wait before casting (best-odds and quick casts per behaviour), the
 "harbinger" behaviours that give a line away, and a simple Space stopwatch (Space when Jack stops, Esc to stop; click
@@ -500,9 +509,9 @@ Its own settings: **Table** (Beach-lineup2 for the file in section 2), **Sparrow
 cast?** (±100 / 150 / 200 / 300 ms), **Aim for** best odds or a quick cast of **at least** n %, and **Your reaction when
 Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper copy.
 
-<img src="media/app_dogref.png" width="700" alt="The Dog reference tab">
+<img src="media/app_dogref.png" width="700" alt="The Casting tables page">
 
-<sub><b>The Dog reference tab</b>, the manual method, on its first tab (Optimal Blind Casting).</sub>
+<sub><b>The Casting tables page</b> (the Dog reference, the manual method) on its first tab, Optimal Blind Casting. The picture is from v31, where it was a tab of the one page.</sub>
 
 ---
 
