@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.1
+# HM64 Power Nut Tool v32.2
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: pick the morning you play (sunny / rainy) and your game file (horse or
@@ -80,6 +80,18 @@ Sparrows box ticked.
 <sub><b>The same list in the app</b>: the first tab of the <b>Casting tables</b> page (hub → Sunny → No horse). Space starts its stopwatch when
 Jack stops; click a row and it counts down to that cast. The Harbingers tab has the same signs with a cast aimed to a
 fraction of a second.</sub>
+
+**What you cast into (v32.2).** Every row has a small picture of its window: the cast histogram of that row's arrivals
+from 2 s before the window to 2 s after, one column per game frame (1/30 s). Green = the Nut on the 1st bite, gold =
+the Nut on the 2nd bite if you hold the 1st, the blue band = the second you press B in, the white line = the row's odds.
+Click it for the close-up: the same histogram large, with a readout under the mouse, and below it every dog line of the
+row (heaviest first) with its own Nut frames. A dense block of tall bars across the window means most presses in that
+second land on a Nut frame; a few tall spikes with gaps (the "run" / "walk" rows) mean the odds come from single frames,
+so the second you press in matters more. Each game file's page draws its own, from its own tables.
+
+<img src="media/app_blind_window.png" width="700" alt="The close-up of one Optimal Blind Casting window">
+
+<sub><b>The close-up</b> of the wiggle-bum row (Sunny → No horse): cast anywhere in 61.9–62.9 s, let go at the 1st bite, 28%.</sub>
 
 ---
 
