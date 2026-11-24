@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.10
+# HM64 Power Nut Tool v32.11
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -12,7 +12,7 @@ the answers.
 
 <img src="media/hub.png" width="620" alt="The hub: tick boxes for the game file, then three buttons for its pages">
 
-<sub><b>The hub (v32.7).</b> Nothing ticked = Sunny → No horse. Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>
+<sub><b>The hub (v32.11).</b> At the top, <i>The problem it solves</i> with a link to the deck page (below). Nothing ticked = Sunny → No horse. Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>
 (tick <i>I own the horse</i>), each with Casting tables, a Lucky Timer and Dog practice. Rainy mornings (horse / no horse)
 are being collected: ticking <i>Rainy morning</i> greys the buttons out until their tables are in; a marriage and a baby
 come later, each with its own tables. The hub remembers your ticks, and a link like <code>…/#sunny-horse</code> opens it on
@@ -29,8 +29,39 @@ out](#how-the-odds-are-worked-out) says how, in plain English.
 
 ---
 
+## The problem it solves: top-decking one card
+Catching the Power Nut is like drawing one card you picked beforehand — the ace of spades, say — off the top of a shuffled
+deck of 51. But this deck never holds still. It reshuffles every time the game's random number changes, 30 times a second,
+so whatever card is on top usually stays there for a single frame (1/30 s). Each arrival at the beach hands you a different
+deck (a different dog line). You can try again and again, but the act of casting shuffles a new card in, and once you leave
+the beach you start from a new deck altogether. And the deck shuffles faster while your hand reaches for it: casting and
+fishing draw random numbers of their own, more than Jack standing still. Drawing blind, your card comes up a few times in a
+hundred at best (1.8% on the most common dog line; 1 in 51 is the game's base chance per catch).
+
+The tool is a way around that: by watching the dog it works out which deck you are holding and how far it has shuffled,
+and counts you down to the moment your card is on top — the Power Nut, or a big fish, whenever you need it.
+
+![The problem: top-deck one card you chose](media/problem_deck.svg)
+
+**Try it:** the site's **[deck page](https://nillows.github.io/HM64-RNG-Manipulations/deck.html)** (`deck.html`) lays out
+52 cards in new deck order. Take one out, pick your goal card and stack the deck (seeded by the clock × the time you have
+spent on the page), then click the face-down deck to start and draw blind from a deck that blinks with a real dog line from
+the tables: your card is on top exactly on that line's Power Nut frames. The 51 cards lie face down in a grid where they
+stay — one of them is on top at every moment, and you cannot see which. A moment lasts 0.33 s there (ten times slower than
+the game) or, if you tick it, the game's own 1/30 s. Hold the button to reach (the deck shuffles twice as fast) and let go
+to draw; every draw reshuffles, and *Leave the beach* gives a new deck. Tick *Use the tool* to see what knowing the moment
+does.
+
+<img src="media/deck_page.png" width="760" alt="The deck page: 51 cards face down, the tool's countdown, a draw">
+
+<sub><b>The deck page</b> with <i>Use the tool</i> ticked: the countdown and the strip of the next moments (green = your card on
+top), the 51 cards face down (dealt again after every draw, since a draw reshuffles), your last draw under the deck, and the
+tally: blind draws against draws on the tool's cue.</sub>
+
+---
+
 ## Contents
-**Only want a stopwatch? Start with [Optimal Blind Casting](#optimal-blind-casting).** **Want to try it first, with no
+**What problem does it solve? [Top-decking one card](#the-problem-it-solves-top-decking-one-card).** **Only want a stopwatch? Start with [Optimal Blind Casting](#optimal-blind-casting).** **Want to try it first, with no
 console? [Dog practice](#dog-practice-try-it-without-a-console).** **How can a dog tell you when to cast? [How it works: a
 leaf in a forest](#how-it-works-a-leaf-in-a-forest).** **Where do the numbers come from? [How the odds are worked
 out](#how-the-odds-are-worked-out).** **Something wrong? The site's Guide → Not working?**
