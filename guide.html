@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>Guide · HM64 Power Nut Tool v32.14</title>
+<title>Guide · HM64 Power Nut Tool v32.15</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 :root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d;--warn:#f0b35a;--gold:#e7c14a}
@@ -10,6 +10,9 @@ h1{font-size:23px;margin:10px 0 2px}h2{font-size:19px;margin:34px 0 8px;padding-
 a{color:var(--acc)}.mut{color:var(--mut)}.small{font-size:13px}kbd{border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 5px;font:12.5px ui-monospace,monospace;background:var(--panel)}
 nav.top{position:sticky;top:0;z-index:5;background:rgba(13,23,32,.96);border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px 14px;padding:8px 16px;font-size:13.5px}
 nav.top a{text-decoration:none}nav.top a:hover{text-decoration:underline}nav.top .nw{color:var(--warn);font-weight:600}
+nav.top .here{color:var(--ink);font-weight:700;border-bottom:2px solid var(--acc)}nav.top .nw.here{color:var(--warn);border-bottom-color:var(--warn)}
+.toc{font-size:13.5px;margin:8px 0 0}.toc a{margin-right:12px}
+.yourfile{background:#0f1c27;border:1px solid var(--line);border-radius:10px;padding:8px 14px;margin:12px 0;font-size:14px}
 .box{background:#0f1c27;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}
 .picks{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 2px}.picks button{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:5px 10px;font:inherit;font-size:13.5px;cursor:pointer}
 .picks button.on{border-color:var(--acc);background:#1d3446}.picks button:hover{border-color:var(--acc)}
@@ -25,13 +28,26 @@ figcaption{font-size:13px;color:var(--mut);margin-top:4px}
 .nw-item:target{background:#1a2a1a;border-left-color:var(--ok)}
 ul,ol{padding-left:22px}li{margin:3px 0}
 footer{margin-top:40px;border-top:1px solid var(--line);padding-top:10px}
-</style></head>
+</style>
+</head>
 <body>
-<nav class="top"><a href="index.html">⌂ Hub</a><a href="#setup">1 · Your game file</a><a href="#route">2 · The route</a><a href="#beach">3 · The beach</a><a class="nw" href="#not-working">Not working?</a><a href="#how-it-works">How it works</a><a href="problem.html">The problem</a><a href="deck.html">The deck</a></nav>
+<script>
+/* v32.15: Not working? and How it works became pages of their own; an old link (a page saved before v32.15, an old README)
+   to guide.html#not-working, #nw-... or #how-it-works goes on to the new page, keeping ?set= */
+(function () {
+  const h = location.hash, q = location.search || '';
+  if (h === '#not-working') location.replace('not-working.html' + q);
+  else if (/^#nw-[a-z]+$/.test(h)) location.replace('not-working.html' + q + h);
+  else if (h === '#how-it-works') location.replace('how-it-works.html' + q);
+})();
+</script>
+<nav class="top"><a href="index.html">⌂ Hub</a><span class="here">Guide</span><a class="nw" data-keep href="not-working.html">Not working?</a><a data-keep href="how-it-works.html">How it works</a><a href="problem.html">The problem</a><a href="deck.html">The deck</a></nav>
 <div class="wrap">
-<h1>Guide <span class="mut small">HM64 Power Nut Tool v32.14</span></h1>
-<div class="mut">How to set up your game file, walk the route to the end of the pier, and what to check when it does not work.
-Every page of the tool (Lucky Timer, Casting tables, Dog practice) assumes this setup and this route.</div>
+<h1>Guide <span class="mut small">HM64 Power Nut Tool v32.15</span></h1>
+<div class="mut">How to set up your game file and walk the route to the end of the pier. Every page of the tool (Lucky Timer,
+Casting tables, Dog practice) assumes this setup and this route. Something wrong? <a class="nw" data-keep href="not-working.html">Not working?</a>
+How the tool finds your cast: <a data-keep href="how-it-works.html">How it works</a>.</div>
+<div class="toc"><a href="#setup">1 · Your game file</a><a href="#route">2 · The route</a><a href="#beach">3 · The beach</a></div>
 
 <h2 id="setup">1 · Your game file</h2>
 <p>The tables hold for one kind of game file: the weather of the morning you play and whether you own the horse each change the
@@ -70,7 +86,7 @@ taps keep fitting no dog line (<i>off the tables</i>), your file, your menu spee
 <h2 id="route">2 · The route</h2>
 <p>Everything from power-on to the bottom of the beach's back wall decides which dog line you get, and the cut onto the pier
 decides when you reach READY, so the route is played <b>as fast as possible</b> with the same turns every time. Small
-hesitations are expected: the tables cover a range of human timings (<a href="#how-it-works">How it works</a> shows how much).</p>
+hesitations are expected: the tables cover a range of human timings (<a href="how-it-works.html">How it works</a> shows how much).</p>
 
 <h3 id="menus">2.1 Power-on and menus</h3>
 <p>Turn the console on and <b>mash Start, then A</b>, through the title screen and the diary, to load your file as fast as you
@@ -121,7 +137,7 @@ so check the door every attempt.</p>
 <p><b>Tap Space once, the moment Jack stops at the water.</b> That one tap starts the tool's stopwatch; the dog cards, the cast cue and
 the bite calls all count from it. The tool allows for your reaction time and learns your personal delay from your bite taps over time.
 From here the hands are split: the <b>controller</b> casts (B) and reels, the <b>keyboard</b> is for the tool.</p>
-<figure><img src="media/ready.png" loading="lazy" alt="READY at the end of the pier, the dog at the lower left"><figcaption><b>READY:</b> Jack has stopped at the water, facing the sea: tap Space now. The dog sits at the lower-left edge of the screen, half under the black border. If yours is somewhere else, your file is not set up like the lab's (<a href="#nw-dog">below</a>).</figcaption></figure>
+<figure><img src="media/ready.png" loading="lazy" alt="READY at the end of the pier, the dog at the lower left"><figcaption><b>READY:</b> Jack has stopped at the water, facing the sea: tap Space now. The dog sits at the lower-left edge of the screen, half under the black border. If yours is somewhere else, your file is not set up like the lab's (<a data-keep href="not-working.html#nw-dog">Not working?</a>).</figcaption></figure>
 
 <h3 id="awake">3.2 Stay awake</h3>
 <p>Jack lies down after <b>40 s</b> with no input. A red <b>WAKE JACK</b> line crosses the Lucky Timer's histogram 33.4 s after READY
@@ -129,108 +145,54 @@ From here the hands are split: the <b>controller</b> casts (B) and reels, the <b
 once</b>: that resets the nap timer and does not change the dog or the bites (measured in the lab). Never push the stick after you
 have cast; fishing keeps him awake.</p>
 
-<h2 id="not-working">Not working?</h2>
-<p class="mut">Find what you see; each answer says what it means and what to do.</p>
-
-<div class="nw-item" id="nw-file"><h3>Am I on the right tables?</h3>
-<p>Each game file has its own: the weather of the morning and the horse both change the random numbers on the way. In the hub, tick
-<i>Rainy morning</i> only if it rains, <i>I own the horse</i> if you own it (a pony counts), and use the pages it opens. Then check
-<a href="#setup">your file's list</a>: the dog in the far south-west corner of the beach since the day before, not carried on the day
-you play; the rod in Jack's hand; saved in the first diary slot.</p></div>
-
-<div class="nw-item" id="nw-dog"><h3>The dog is not at the lower-left edge when Jack stops</h3>
-<p>Then your dog is somewhere else on the beach, and none of the tables' dog lines apply. Make the file again: the day before, carry
-the dog to the farthest south-west (bottom-left) corner of the beach, put it down, leave it there, and sleep. Which 32-unit tile of the
-beach it stands on matters, so put it right in the corner.</p></div>
-
-<div class="nw-item" id="nw-pier"><h3>Jack does not reach the end of the pier</h3>
-<p>The cut onto the pier has a window of about a third of a second (11 game frames). Cut too early and Jack misses the pier; too late
-and he stops short of it, beside the dog. Either way the attempt is not in the tables: restart. If the first cut was late, fix the
-drift along the back wall straight away (<a href="#beach">section 3</a>).</p></div>
-
-<div class="nw-item" id="nw-sparrows"><h3>Sparrows: tick the box or not?</h3>
-<p>Only two sparrows <b>by the farm door</b> count: tick <i>Sparrows at the door</i> (or <kbd>S</kbd>) before the pier. Nothing by the door:
-leave it off. A wrong box uses the wrong table for the whole attempt. (Sparrows also come on some slower mornings that no table
-covers; if your attempts keep coming out <i>off the tables</i>, <a href="#nw-off">see below</a>.)</p></div>
-
-<div class="nw-item" id="nw-nocard"><h3>No dog card matches what my dog does</h3>
-<ul>
-<li>Did you tap Space <b>the moment Jack stopped</b>? The cards count from that tap; a late tap shifts everything.</li>
-<li>Are you on your game file's page (<a href="#nw-file">above</a>) and is the sparrow box right?</li>
-<li>Key the dog's facing whenever it turns. One wrong key does not lose your dog: each key only re-weights the lines
- (a key a line's dog does not show ×0.02), so keep keying and the right card climbs back.</li>
-<li>Still nothing, attempt after attempt? Then the file, the menus or the route differ from the lab's: <a href="#nw-off">next</a>.</li>
-</ul></div>
-
-<div class="nw-item" id="nw-off"><h3>"Off the tables": my bite taps fit no dog line</h3>
-<p>The Lucky Timer's <i>Setup &amp; review → L5 → Is the app working?</i> says so when your taps keep fitting no line. Usual causes, most
-common first: menus slower than 6 frames late (mash Start, then A, from power-on); a hesitation in the house or at the crossroads
-longer than the slack (4 and 3 game frames); a different game file (dog spot, weather, horse, another diary slot). Practise the route
-until it is the same every time; the <a href="#how-it-works">pictures below</a> show why a few frames matter.</p></div>
-
-<div class="nw-item" id="nw-miss"><h3>The dog matches, but my casts miss the Nut</h3>
-<ul>
-<li><b>Tune the dog</b> with <kbd>[</kbd> <kbd>]</kbd> until it turns at the very moment the card does: one game frame off misses a
- single-frame target. The Dog practice page trains exactly this, with no console.</li>
-<li><b>Your press.</b> Aim for doubles (two neighbouring Nut frames): a double is worth about 29% with a press spread of ±150 ms and
- about 47% at ±60 ms. Steady hands are worth more than anything else.</li>
-<li><b>Let go on the right bite</b>: green = the 1st bite, gold = hold the 1st and let go on the 2nd.</li>
-</ul></div>
-
-<div class="nw-item" id="nw-awake"><h3>Jack lay down before I cast</h3>
-<p>He naps after 40 s with no input. Push the stick down-right once when the red WAKE JACK line reaches the white line
-(<a href="#awake">3.2</a>); it changes nothing else. Never push it after you have cast.</p></div>
-
-<div class="nw-item" id="nw-rain"><h3>It is raining</h3>
-<p>Rain draws many more random numbers on the way (outdoors, every frame), so a rainy morning needs its own tables. They are being
-collected: until they are in, reload the day before and sleep again for a sunny morning.</p></div>
-
-<div class="nw-item" id="nw-page"><h3>The page is slow, blank, or ignores my keys</h3>
-<p>A Lucky Timer page is 24–28 MB and takes a few seconds to load. Use a desktop browser with a keyboard, and click on the page once so
-the keys reach it. A page saved to your computer works offline and keeps its own settings.</p></div>
-
-<h2 id="how-it-works">How it works: a leaf in a forest</h2>
-<p>The tool finds one moment to cast among billions of possible game states. These pictures show how, with the lab's real numbers. The
-<a href="https://github.com/Nillows/HM64-RNG-Manipulations#how-it-works-a-leaf-in-a-forest">README</a> tells the whole story.</p>
-<figure><img src="media/forest_1_canopy.svg" loading="lazy" alt="The forest of random numbers"><figcaption>Every random thing in the game comes from one number. Its possible histories are a forest as wide as all its values and as tall as the game has run; a Power Nut cast is one leaf, low down, before the branches tangle.</figcaption></figure>
-<figure><img src="media/forest_2_backwards.svg" loading="lazy" alt="Searching down from a leaf"><figcaption>Searching down from the leaf gives odds, not an answer: the most common dog line comes from all 7 menu timings.</figcaption></figure>
-<figure><img src="media/forest_2b_merge.svg" loading="lazy" alt="Why branches merge"><figcaption>Branches merge for the same reason 1 + 2 = 3 and 2 + 1 = 3: once two routes reach the same random number with the same dog, everything after is the same, only reached at a different moment. The canopy is huge (4.3 billion values × the dog's states) but not infinite.</figcaption></figure>
-<figure><img src="media/forest_3_crown7.svg" loading="lazy" alt="One seed, a crown of 7"><figcaption>So the tool grows the forest from the bottom: every N64 starts at 0, and fast menus give only 7 branches. Two have sparrows.</figcaption></figure>
-<figure><img src="media/forest_4_sunlight.svg" loading="lazy" alt="Forest sunlight per screen"><figcaption>The forest's sunlight (not the game's weather): the numbers each screen draws per frame on its own as you travel to READY. It changes how a branch grows in the same time, not how tall it gets — like an hour of sun on a plant. Rain gives the forest the most of it; rain and the horse need their own tables.</figcaption></figure>
-<figure><img src="media/forest_5_three_crowns.svg" loading="lazy" alt="Three more crowns"><figcaption>A few frames of slack in the house, at the crossroads and on the beach split each branch three more times; all end at READY.</figcaption></figure>
-<figure><img src="media/forest_6_pier.svg" loading="lazy" alt="Group the branches by shape"><figcaption>At the pier, most branches are copies of another one a few frames later: keep one of each shape.</figcaption></figure>
-<figure><img src="media/forest_6b_one_future.svg" loading="lazy" alt="One future once the sunlight is steady"><figcaption>Sorting by shape only works once the forest's sunlight is steady: from the dog waking until the cast, nothing you do touches the numbers, so each key : value pair — the random number : the dog's state — has one future. Real pairs, and two real plays that stop 14 frames apart on the same branch.</figcaption></figure>
-<figure><img src="media/forest_7_leaves.svg" loading="lazy" alt="The leaves: only a cast grows them"><figcaption>Only a cast grows a leaf: with no cast the branch has none; a cast bends it, and the new branch decides what bites. Two real casts one frame apart: one grows the Power Nut, the other a small fish. The strip marks every cast moment that grows a leaf — what the app's bars show.</figcaption></figure>
-<figure><img src="media/forest_8_describe.svg" loading="lazy" alt="Describing the dog"><figcaption>Keying what the dog does describes the shape of your branch; four moves pick out L1.</figcaption></figure>
-<figure><img src="media/forest_9_tuner.svg" loading="lazy" alt="The tuner"><figcaption>The tuner brings the app's copy of your branch to the height your N64 is at, so the cast moments that grow leaves line up.</figcaption></figure>
-<figure><img src="media/forest_10_cubes.svg" loading="lazy" alt="L1 across game files: two cubes"><figcaption>Every game file: two cubes, sunny and rainy, each with the horse × a marriage × a baby (8 corners). Sunny with and without the horse share one L1, 3 game frames apart; the rainy corners fill in next, married and baby later.</figcaption></figure>
-
-<footer class="small mut">HM64 Power Nut Tool v32.14 · built 2026-11-24 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
+<footer class="small mut">HM64 Power Nut Tool v32.15 · built 2026-11-24 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
 the odds on every page are emulator data, not measured on a console.</footer>
 </div>
 <script>
 (function () {
   'use strict';
-  /* which game file: ?set=<id> (the tool pages' Not working? links), else the hub's ticks, else the first set */
-  const sets = [].slice.call(document.querySelectorAll('details.set'));
+  const SETS = [{"id":"sunny-no-horse","label":"Sunny · No horse","traits":{"rainy":false,"horse":false}},{"id":"sunny-horse","label":"Sunny · Horse","traits":{"rainy":false,"horse":true}},{"id":"rainy-no-horse","label":"Rainy · No horse","traits":{"rainy":true,"horse":false}},{"id":"rainy-horse","label":"Rainy · Horse","traits":{"rainy":true,"horse":true}}];
   let want = null;
   try { want = new URLSearchParams(location.search).get('set'); } catch (e) { want = null; }
   if (!want) {
     try {
       const pick = JSON.parse(localStorage.getItem('hm64v32_hub') || '{}') || {};
-      const T = [{"id":"sunny-no-horse","traits":{"rainy":false,"horse":false}},{"id":"sunny-horse","traits":{"rainy":false,"horse":true}},{"id":"rainy-no-horse","traits":{"rainy":true,"horse":false}},{"id":"rainy-horse","traits":{"rainy":true,"horse":true}}];
-      const hit = T.find(s => Object.keys(s.traits).every(k => !!s.traits[k] === !!pick[k]));
+      const hit = SETS.find(s => Object.keys(s.traits).every(k => !!s.traits[k] === !!pick[k]));
       if (hit) want = hit.id;
     } catch (e) { want = null; }
   }
+  if (!SETS.some(s => s.id === want)) want = SETS.length ? SETS[0].id : null;
+  const me = SETS.find(s => s.id === want);
+  function keep(id) {
+    if (!id) return;
+    document.querySelectorAll('a[data-keep]').forEach(a => {
+      const h = a.getAttribute('href'), i = h.indexOf('#'), path = (i < 0 ? h : h.slice(0, i)).split('?')[0];
+      const hash = a.dataset.keep === 'setup' ? '#setup-' + encodeURIComponent(id) : (i < 0 ? '' : h.slice(i));
+      a.setAttribute('href', path + '?set=' + encodeURIComponent(id) + hash);
+    });
+    const s = SETS.find(x => x.id === id);
+    document.querySelectorAll('.setname').forEach(e => { e.textContent = s ? s.label : ''; });
+  }
+  keep(want);
+  window.HM64Guide = { set: want, label: me ? me.label : '', keep, sets: SETS };
+})();
+</script>
+
+<script>
+(function () {
+  'use strict';
+  /* the game file picker: opens on the file the shared script found (?set=, the hub's ticks, else the first) */
+  const sets = [].slice.call(document.querySelectorAll('details.set'));
   const show = id => {
     sets.forEach(d => { const me = d.dataset.set === id; d.classList.toggle('yours', me); if (me) d.open = true; });
     document.querySelectorAll('#gdPicks button').forEach(b => b.classList.toggle('on', b.dataset.set === id));
   };
-  if (want && sets.some(d => d.dataset.set === want)) show(want); else if (sets[0]) show(sets[0].dataset.set);
+  const G = window.HM64Guide || {};
+  if (G.set && sets.some(d => d.dataset.set === G.set)) show(G.set); else if (sets[0]) show(sets[0].dataset.set);
   document.querySelectorAll('#gdPicks button').forEach(b => b.addEventListener('click', () => {
     sets.forEach(d => { d.open = false; });
     show(b.dataset.set);
+    if (G.keep) G.keep(b.dataset.set);                            // the links to the other guide pages follow the pick
   }));
 })();
 </script>

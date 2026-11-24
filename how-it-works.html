@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>How it works · HM64 Power Nut Tool v32.15</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d;--warn:#f0b35a;--gold:#e7c14a}
+*{box-sizing:border-box}html{scroll-padding-top:56px}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:12px 16px 60px}
+h1{font-size:23px;margin:10px 0 2px}h2{font-size:19px;margin:34px 0 8px;padding-top:6px;border-top:1px solid var(--line)}h3{font-size:16px;margin:22px 0 6px}
+a{color:var(--acc)}.mut{color:var(--mut)}.small{font-size:13px}kbd{border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 5px;font:12.5px ui-monospace,monospace;background:var(--panel)}
+nav.top{position:sticky;top:0;z-index:5;background:rgba(13,23,32,.96);border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px 14px;padding:8px 16px;font-size:13.5px}
+nav.top a{text-decoration:none}nav.top a:hover{text-decoration:underline}nav.top .nw{color:var(--warn);font-weight:600}
+nav.top .here{color:var(--ink);font-weight:700;border-bottom:2px solid var(--acc)}nav.top .nw.here{color:var(--warn);border-bottom-color:var(--warn)}
+.toc{font-size:13.5px;margin:8px 0 0}.toc a{margin-right:12px}
+.yourfile{background:#0f1c27;border:1px solid var(--line);border-radius:10px;padding:8px 14px;margin:12px 0;font-size:14px}
+.box{background:#0f1c27;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}
+.picks{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 2px}.picks button{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:5px 10px;font:inherit;font-size:13.5px;cursor:pointer}
+.picks button.on{border-color:var(--acc);background:#1d3446}.picks button:hover{border-color:var(--acc)}
+details.set{border:1px solid var(--line);border-radius:10px;margin:8px 0;background:#0f1c27}details.set>summary{cursor:pointer;padding:9px 14px;font-weight:600}
+details.set[open]>summary{border-bottom:1px solid var(--line)}details.set .in{padding:4px 16px 12px}details.set.yours{border-color:var(--acc)}
+.badge{font-size:11.5px;font-weight:normal;border:1px solid var(--line);border-radius:10px;padding:1px 8px;margin-left:8px;color:var(--mut)}
+.badge.ready{border-color:var(--ok);color:var(--ok)}.badge.collecting{border-color:var(--warn);color:var(--warn)}.yours-tag{display:none;color:var(--acc);font-weight:normal;font-size:12.5px;margin-left:8px}details.set.yours .yours-tag{display:inline}
+.pages a{display:inline-block;margin:2px 8px 2px 0}
+figure{margin:12px 0}figure img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#0a131a}
+figcaption{font-size:13px;color:var(--mut);margin-top:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media (max-width:700px){.two{grid-template-columns:1fr}}
+.nw-item{border-left:3px solid var(--warn);padding:2px 0 2px 12px;margin:14px 0}.nw-item h3{margin:0 0 4px}
+.nw-item:target{background:#1a2a1a;border-left-color:var(--ok)}
+ul,ol{padding-left:22px}li{margin:3px 0}
+footer{margin-top:40px;border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body>
+<nav class="top"><a href="index.html">⌂ Hub</a><a data-keep href="guide.html">Guide</a><a class="nw" data-keep href="not-working.html">Not working?</a><span class="here">How it works</span><a href="problem.html">The problem</a><a href="deck.html">The deck</a></nav>
+<div class="wrap">
+<h1>How it works: a leaf in a forest <span class="mut small">HM64 Power Nut Tool v32.15</span></h1>
+<p>The tool finds one moment to cast among billions of possible game states. These pictures show how, with the lab's real numbers. The
+<a href="https://github.com/Nillows/HM64-RNG-Manipulations#how-it-works-a-leaf-in-a-forest">README</a> tells the whole story.</p>
+<figure><img src="media/forest_1_canopy.svg" loading="lazy" alt="The forest of random numbers"><figcaption>Every random thing in the game comes from one number. Its possible histories are a forest as wide as all its values and as tall as the game has run; a Power Nut cast is one leaf, low down, before the branches tangle.</figcaption></figure>
+<figure><img src="media/forest_2_backwards.svg" loading="lazy" alt="Searching down from a leaf"><figcaption>Searching down from the leaf gives odds, not an answer: the most common dog line comes from all 7 menu timings.</figcaption></figure>
+<figure><img src="media/forest_2b_merge.svg" loading="lazy" alt="Why branches merge"><figcaption>Branches merge for the same reason 1 + 2 = 3 and 2 + 1 = 3: once two routes reach the same random number with the same dog, everything after is the same, only reached at a different moment. The canopy is huge (4.3 billion values × the dog's states) but not infinite.</figcaption></figure>
+<figure><img src="media/forest_3_crown7.svg" loading="lazy" alt="One seed, a crown of 7"><figcaption>So the tool grows the forest from the bottom: every N64 starts at 0, and fast menus give only 7 branches. Two have sparrows.</figcaption></figure>
+<figure><img src="media/forest_4_sunlight.svg" loading="lazy" alt="Forest sunlight per screen"><figcaption>The forest's sunlight (not the game's weather): the numbers each screen draws per frame on its own as you travel to READY. It changes how a branch grows in the same time, not how tall it gets — like an hour of sun on a plant. Rain gives the forest the most of it; rain and the horse need their own tables.</figcaption></figure>
+<figure><img src="media/forest_5_three_crowns.svg" loading="lazy" alt="Three more crowns"><figcaption>A few frames of slack in the house, at the crossroads and on the beach split each branch three more times; all end at READY.</figcaption></figure>
+<figure><img src="media/forest_6_pier.svg" loading="lazy" alt="Group the branches by shape"><figcaption>At the pier, most branches are copies of another one a few frames later: keep one of each shape.</figcaption></figure>
+<figure><img src="media/forest_6b_one_future.svg" loading="lazy" alt="One future once the sunlight is steady"><figcaption>Sorting by shape only works once the forest's sunlight is steady: from the dog waking until the cast, nothing you do touches the numbers, so each key : value pair — the random number : the dog's state — has one future. Real pairs, and two real plays that stop 14 frames apart on the same branch.</figcaption></figure>
+<figure><img src="media/forest_7_leaves.svg" loading="lazy" alt="The leaves: only a cast grows them"><figcaption>Only a cast grows a leaf: with no cast the branch has none; a cast bends it, and the new branch decides what bites. Two real casts one frame apart: one grows the Power Nut, the other a small fish. The strip marks every cast moment that grows a leaf — what the app's bars show.</figcaption></figure>
+<figure><img src="media/forest_8_describe.svg" loading="lazy" alt="Describing the dog"><figcaption>Keying what the dog does describes the shape of your branch; four moves pick out L1.</figcaption></figure>
+<figure><img src="media/forest_9_tuner.svg" loading="lazy" alt="The tuner"><figcaption>The tuner brings the app's copy of your branch to the height your N64 is at, so the cast moments that grow leaves line up.</figcaption></figure>
+<figure><img src="media/forest_10_cubes.svg" loading="lazy" alt="L1 across game files: two cubes"><figcaption>Every game file: two cubes, sunny and rainy, each with the horse × a marriage × a baby (8 corners). Sunny with and without the horse share one L1, 3 game frames apart; the rainy corners fill in next, married and baby later.</figcaption></figure>
+
+<footer class="small mut">HM64 Power Nut Tool v32.15 · built 2026-11-24 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
+the odds on every page are emulator data, not measured on a console.</footer>
+</div>
+<script>
+(function () {
+  'use strict';
+  const SETS = [{"id":"sunny-no-horse","label":"Sunny · No horse","traits":{"rainy":false,"horse":false}},{"id":"sunny-horse","label":"Sunny · Horse","traits":{"rainy":false,"horse":true}},{"id":"rainy-no-horse","label":"Rainy · No horse","traits":{"rainy":true,"horse":false}},{"id":"rainy-horse","label":"Rainy · Horse","traits":{"rainy":true,"horse":true}}];
+  let want = null;
+  try { want = new URLSearchParams(location.search).get('set'); } catch (e) { want = null; }
+  if (!want) {
+    try {
+      const pick = JSON.parse(localStorage.getItem('hm64v32_hub') || '{}') || {};
+      const hit = SETS.find(s => Object.keys(s.traits).every(k => !!s.traits[k] === !!pick[k]));
+      if (hit) want = hit.id;
+    } catch (e) { want = null; }
+  }
+  if (!SETS.some(s => s.id === want)) want = SETS.length ? SETS[0].id : null;
+  const me = SETS.find(s => s.id === want);
+  function keep(id) {
+    if (!id) return;
+    document.querySelectorAll('a[data-keep]').forEach(a => {
+      const h = a.getAttribute('href'), i = h.indexOf('#'), path = (i < 0 ? h : h.slice(0, i)).split('?')[0];
+      const hash = a.dataset.keep === 'setup' ? '#setup-' + encodeURIComponent(id) : (i < 0 ? '' : h.slice(i));
+      a.setAttribute('href', path + '?set=' + encodeURIComponent(id) + hash);
+    });
+    const s = SETS.find(x => x.id === id);
+    document.querySelectorAll('.setname').forEach(e => { e.textContent = s ? s.label : ''; });
+  }
+  keep(want);
+  window.HM64Guide = { set: want, label: me ? me.label : '', keep, sets: SETS };
+})();
+</script>
+
+</body></html>

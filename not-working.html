@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Not working? · HM64 Power Nut Tool v32.15</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d;--warn:#f0b35a;--gold:#e7c14a}
+*{box-sizing:border-box}html{scroll-padding-top:56px}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:12px 16px 60px}
+h1{font-size:23px;margin:10px 0 2px}h2{font-size:19px;margin:34px 0 8px;padding-top:6px;border-top:1px solid var(--line)}h3{font-size:16px;margin:22px 0 6px}
+a{color:var(--acc)}.mut{color:var(--mut)}.small{font-size:13px}kbd{border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 5px;font:12.5px ui-monospace,monospace;background:var(--panel)}
+nav.top{position:sticky;top:0;z-index:5;background:rgba(13,23,32,.96);border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:4px 14px;padding:8px 16px;font-size:13.5px}
+nav.top a{text-decoration:none}nav.top a:hover{text-decoration:underline}nav.top .nw{color:var(--warn);font-weight:600}
+nav.top .here{color:var(--ink);font-weight:700;border-bottom:2px solid var(--acc)}nav.top .nw.here{color:var(--warn);border-bottom-color:var(--warn)}
+.toc{font-size:13.5px;margin:8px 0 0}.toc a{margin-right:12px}
+.yourfile{background:#0f1c27;border:1px solid var(--line);border-radius:10px;padding:8px 14px;margin:12px 0;font-size:14px}
+.box{background:#0f1c27;border:1px solid var(--line);border-radius:10px;padding:10px 14px;margin:12px 0}
+.picks{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 2px}.picks button{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:7px;padding:5px 10px;font:inherit;font-size:13.5px;cursor:pointer}
+.picks button.on{border-color:var(--acc);background:#1d3446}.picks button:hover{border-color:var(--acc)}
+details.set{border:1px solid var(--line);border-radius:10px;margin:8px 0;background:#0f1c27}details.set>summary{cursor:pointer;padding:9px 14px;font-weight:600}
+details.set[open]>summary{border-bottom:1px solid var(--line)}details.set .in{padding:4px 16px 12px}details.set.yours{border-color:var(--acc)}
+.badge{font-size:11.5px;font-weight:normal;border:1px solid var(--line);border-radius:10px;padding:1px 8px;margin-left:8px;color:var(--mut)}
+.badge.ready{border-color:var(--ok);color:var(--ok)}.badge.collecting{border-color:var(--warn);color:var(--warn)}.yours-tag{display:none;color:var(--acc);font-weight:normal;font-size:12.5px;margin-left:8px}details.set.yours .yours-tag{display:inline}
+.pages a{display:inline-block;margin:2px 8px 2px 0}
+figure{margin:12px 0}figure img{max-width:100%;height:auto;border-radius:8px;border:1px solid var(--line);background:#0a131a}
+figcaption{font-size:13px;color:var(--mut);margin-top:4px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media (max-width:700px){.two{grid-template-columns:1fr}}
+.nw-item{border-left:3px solid var(--warn);padding:2px 0 2px 12px;margin:14px 0}.nw-item h3{margin:0 0 4px}
+.nw-item:target{background:#1a2a1a;border-left-color:var(--ok)}
+ul,ol{padding-left:22px}li{margin:3px 0}
+footer{margin-top:40px;border-top:1px solid var(--line);padding-top:10px}
+</style>
+</head>
+<body>
+<nav class="top"><a href="index.html">⌂ Hub</a><a data-keep href="guide.html">Guide</a><span class="nw here">Not working?</span><a data-keep href="how-it-works.html">How it works</a><a href="problem.html">The problem</a><a href="deck.html">The deck</a></nav>
+<div class="wrap">
+<h1>Not working? <span class="mut small">HM64 Power Nut Tool v32.15</span></h1>
+<div class="yourfile">Your game file: <b class="setname"></b> · <a data-keep="setup" href="guide.html">what it needs and how to make it</a> ·
+another file? tick it on the <a href="index.html">hub</a>.</div>
+<p class="mut">Find what you see; each answer says what it means and what to do.</p>
+
+<div class="nw-item" id="nw-file"><h3>Am I on the right tables?</h3>
+<p>Each game file has its own: the weather of the morning and the horse both change the random numbers on the way. In the hub, tick
+<i>Rainy morning</i> only if it rains, <i>I own the horse</i> if you own it (a pony counts), and use the pages it opens. Then check
+<a data-keep="setup" href="guide.html">your file's list</a>: the dog in the far south-west corner of the beach since the day before, not carried on the day
+you play; the rod in Jack's hand; saved in the first diary slot.</p></div>
+
+<div class="nw-item" id="nw-dog"><h3>The dog is not at the lower-left edge when Jack stops</h3>
+<p>Then your dog is somewhere else on the beach, and none of the tables' dog lines apply. Make the file again: the day before, carry
+the dog to the farthest south-west (bottom-left) corner of the beach, put it down, leave it there, and sleep. Which 32-unit tile of the
+beach it stands on matters, so put it right in the corner.</p></div>
+
+<div class="nw-item" id="nw-pier"><h3>Jack does not reach the end of the pier</h3>
+<p>The cut onto the pier has a window of about a third of a second (11 game frames). Cut too early and Jack misses the pier; too late
+and he stops short of it, beside the dog. Either way the attempt is not in the tables: restart. If the first cut was late, fix the
+drift along the back wall straight away (<a data-keep href="guide.html#beach">the guide, section 3</a>).</p></div>
+
+<div class="nw-item" id="nw-sparrows"><h3>Sparrows: tick the box or not?</h3>
+<p>Only two sparrows <b>by the farm door</b> count: tick <i>Sparrows at the door</i> (or <kbd>S</kbd>) before the pier. Nothing by the door:
+leave it off. A wrong box uses the wrong table for the whole attempt. (Sparrows also come on some slower mornings that no table
+covers; if your attempts keep coming out <i>off the tables</i>, <a href="#nw-off">see below</a>.)</p></div>
+
+<div class="nw-item" id="nw-nocard"><h3>No dog card matches what my dog does</h3>
+<ul>
+<li>Did you tap Space <b>the moment Jack stopped</b>? The cards count from that tap; a late tap shifts everything.</li>
+<li>Are you on your game file's page (<a href="#nw-file">above</a>) and is the sparrow box right?</li>
+<li>Key the dog's facing whenever it turns. One wrong key does not lose your dog: each key only re-weights the lines
+ (a key a line's dog does not show ×0.02), so keep keying and the right card climbs back.</li>
+<li>Still nothing, attempt after attempt? Then the file, the menus or the route differ from the lab's: <a href="#nw-off">next</a>.</li>
+</ul></div>
+
+<div class="nw-item" id="nw-off"><h3>"Off the tables": my bite taps fit no dog line</h3>
+<p>The Lucky Timer's <i>Setup &amp; review → L5 → Is the app working?</i> says so when your taps keep fitting no line. Usual causes, most
+common first: menus slower than 6 frames late (mash Start, then A, from power-on); a hesitation in the house or at the crossroads
+longer than the slack (4 and 3 game frames); a different game file (dog spot, weather, horse, another diary slot). Practise the route
+until it is the same every time; the pictures of <a data-keep href="how-it-works.html">How it works</a> show why a few frames matter.</p></div>
+
+<div class="nw-item" id="nw-miss"><h3>The dog matches, but my casts miss the Nut</h3>
+<ul>
+<li><b>Tune the dog</b> with <kbd>[</kbd> <kbd>]</kbd> until it turns at the very moment the card does: one game frame off misses a
+ single-frame target. The Dog practice page trains exactly this, with no console.</li>
+<li><b>Your press.</b> Aim for doubles (two neighbouring Nut frames): a double is worth about 29% with a press spread of ±150 ms and
+ about 47% at ±60 ms. Steady hands are worth more than anything else.</li>
+<li><b>Let go on the right bite</b>: green = the 1st bite, gold = hold the 1st and let go on the 2nd.</li>
+</ul></div>
+
+<div class="nw-item" id="nw-awake"><h3>Jack lay down before I cast</h3>
+<p>He naps after 40 s with no input. Push the stick down-right once when the red WAKE JACK line reaches the white line
+(<a data-keep href="guide.html#awake">the guide, 3.2</a>); it changes nothing else. Never push it after you have cast.</p></div>
+
+<div class="nw-item" id="nw-rain"><h3>It is raining</h3>
+<p>Rain draws many more random numbers on the way (outdoors, every frame), so a rainy morning needs its own tables. They are being
+collected: until they are in, reload the day before and sleep again for a sunny morning.</p></div>
+
+<div class="nw-item" id="nw-page"><h3>The page is slow, blank, or ignores my keys</h3>
+<p>A Lucky Timer page is 24–28 MB and takes a few seconds to load. Use a desktop browser with a keyboard, and click on the page once so
+the keys reach it. A page saved to your computer works offline and keeps its own settings.</p></div>
+
+<footer class="small mut">HM64 Power Nut Tool v32.15 · built 2026-11-24 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
+the odds on every page are emulator data, not measured on a console.</footer>
+</div>
+<script>
+(function () {
+  'use strict';
+  const SETS = [{"id":"sunny-no-horse","label":"Sunny · No horse","traits":{"rainy":false,"horse":false}},{"id":"sunny-horse","label":"Sunny · Horse","traits":{"rainy":false,"horse":true}},{"id":"rainy-no-horse","label":"Rainy · No horse","traits":{"rainy":true,"horse":false}},{"id":"rainy-horse","label":"Rainy · Horse","traits":{"rainy":true,"horse":true}}];
+  let want = null;
+  try { want = new URLSearchParams(location.search).get('set'); } catch (e) { want = null; }
+  if (!want) {
+    try {
+      const pick = JSON.parse(localStorage.getItem('hm64v32_hub') || '{}') || {};
+      const hit = SETS.find(s => Object.keys(s.traits).every(k => !!s.traits[k] === !!pick[k]));
+      if (hit) want = hit.id;
+    } catch (e) { want = null; }
+  }
+  if (!SETS.some(s => s.id === want)) want = SETS.length ? SETS[0].id : null;
+  const me = SETS.find(s => s.id === want);
+  function keep(id) {
+    if (!id) return;
+    document.querySelectorAll('a[data-keep]').forEach(a => {
+      const h = a.getAttribute('href'), i = h.indexOf('#'), path = (i < 0 ? h : h.slice(0, i)).split('?')[0];
+      const hash = a.dataset.keep === 'setup' ? '#setup-' + encodeURIComponent(id) : (i < 0 ? '' : h.slice(i));
+      a.setAttribute('href', path + '?set=' + encodeURIComponent(id) + hash);
+    });
+    const s = SETS.find(x => x.id === id);
+    document.querySelectorAll('.setname').forEach(e => { e.textContent = s ? s.label : ''; });
+  }
+  keep(want);
+  window.HM64Guide = { set: want, label: me ? me.label : '', keep, sets: SETS };
+})();
+</script>
+
+</body></html>

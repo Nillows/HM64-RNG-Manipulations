@@ -1,14 +1,14 @@
-# HM64 Power Nut Tool v32.14
+# HM64 Power Nut Tool v32.15
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
 and a baby come later) and three buttons — always the same — open that file's **Casting tables**, **Lucky Timer** and
 **Dog practice**. Each page is one file that holds
 only that game file's tables, runs entirely in your browser, needs no install and sends nothing anywhere (no network
-requests). Save a page (right-click its link in the hub → *Save link as…*) and it works offline. The site also has a
-**Guide** page (`guide.html`): how to set up each game file, the route and the beach, what to check when it does not work,
-and how it works in pictures. Every tool page links it, and its **Not working?** button opens a checklist that leads to
-the answers.
+requests). Save a page (right-click its link in the hub → *Save link as…*) and it works offline. The site also has three
+help pages, each its own page: the **Guide** (`guide.html`: how to set up each game file, the route and the beach),
+**Not working?** (`not-working.html`: what to check when it does not work) and **How it works** (`how-it-works.html`: the
+forest pictures). Every tool page links them, and its **Not working?** button opens a checklist that leads to the answers.
 
 <img src="media/hub.png" width="620" alt="The hub: tick boxes for the game file, then three buttons for its pages">
 
@@ -71,7 +71,7 @@ a strip of the next cast frames: green = let go at the 1st bite, gold = hold the
 **What problem does it solve? [Top-decking one card](#the-problem-it-solves-top-decking-one-card).** **Only want a stopwatch? Start with [Optimal Blind Casting](#optimal-blind-casting).** **Want to try it first, with no
 console? [Dog practice](#dog-practice-try-it-without-a-console).** **How can a dog tell you when to cast? [How it works: a
 leaf in a forest](#how-it-works-a-leaf-in-a-forest).** **Where do the numbers come from? [How the odds are worked
-out](#how-the-odds-are-worked-out).** **Something wrong? The site's Guide → Not working?**
+out](#how-the-odds-are-worked-out).** **Something wrong? The site's [Not working?](https://nillows.github.io/HM64-RNG-Manipulations/not-working.html) page.**
 
 1. [Quick start](#1-quick-start)
 2. [Setting up the game file](#2-setting-up-the-game-file)
@@ -97,19 +97,26 @@ out](#how-the-odds-are-worked-out).** **Something wrong? The site's Guide → No
    controller; the keyboard is only for the tool.
 
 Not working? Every tool page has a **Not working?** button in its footer: a short checklist, each item linked to its
-answer on the site's Guide page (which also has the setup and the route of sections 2–3).
+answer on the site's [Not working?](https://nillows.github.io/HM64-RNG-Manipulations/not-working.html) page. The setup and the route of sections 2–3 are on the
+[Guide](https://nillows.github.io/HM64-RNG-Manipulations/guide.html); the pictures of [How it works](#how-it-works-a-leaf-in-a-forest) have
+[a page of their own](https://nillows.github.io/HM64-RNG-Manipulations/how-it-works.html) too.
 
 <img src="media/app_notworking.png" width="700" alt="The Not working? checklist over the Lucky Timer, and the footer with Guide and Not working?">
 
-<sub><b>Not working? (v32.7)</b> on the Lucky Timer; the Casting tables and Dog practice have the same button. The fold at the top
-lists what this page's game file needs; each line opens its answer in the guide in a new tab, so the attempt on the page is kept.
-<b>Guide</b> next to it opens the guide on this game file's setup.</sub>
+<sub><b>Not working?</b> on the Lucky Timer; the Casting tables and Dog practice have the same button. The fold at the top
+lists what this page's game file needs; each line opens its answer on the Not working? page in a new tab, so the attempt on
+the page is kept. <b>Guide</b> next to it opens the guide on this game file's setup.</sub>
 
-<img src="media/guide.png" width="620" alt="The guide page: your game file's setup, the route, the beach, Not working?, how it works">
+<img src="media/guide.png" width="620" alt="The guide page: your game file's setup, the route, the beach">
 
 <sub><b>The guide page</b> (<code>guide.html</code>, linked from the hub and every tool page) opens on your game file: what it needs
-and how to make it, then the route, the beach, the Not working? answers and the pictures of
-<a href="#how-it-works-a-leaf-in-a-forest">How it works</a>.</sub>
+and how to make it, then the route and the beach. Its top bar leads to the other two help pages.</sub>
+
+<img src="media/notworking_page.png" width="620" alt="The Not working? page: your game file, then one answer per problem">
+
+<sub><b>The Not working? page</b> (<code>not-working.html</code>) names the game file it is for (the one you ticked on the hub, or the
+tool page you came from) and links back to its setup; one answer per problem, most common first. <b>How it works</b>
+(<code>how-it-works.html</code>) is the pictures of the section below, with a line each.</sub>
 No tool at all? [Optimal Blind Casting](#optimal-blind-casting) below tells you, from what the dog does in the first 10 s, when to cast.
 No console to hand? [Dog practice](#dog-practice-try-it-without-a-console) lets you tune, read and fish real dog lines in the browser.
 
