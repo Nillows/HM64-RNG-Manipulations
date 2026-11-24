@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.3
+# HM64 Power Nut Tool v32.4
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: pick the morning you play (sunny / rainy) and your game file (horse or
@@ -93,18 +93,21 @@ so the second you press in matters more. Each game file's page draws its own, fr
 
 <sub><b>The close-up</b> of the wiggle-bum row (Sunny → No horse): cast anywhere in 61.9–62.9 s, let go at the 1st bite, 28%.</sub>
 
-**Dig into a window (v32.3).** In the close-up, **click a candle**: the dog lines with a Nut in that game frame stay lit,
-the others dim, and the list under the chart shows each line's share of the row, how many points of the window's odds
-it adds, its odds if you are on it, and its runs of Nut frames. <kbd>←</kbd> <kbd>→</kbd> step one game frame,
-<kbd>Esc</kbd> clears (a second <kbd>Esc</kbd> closes).
+**Dig into a window (v32.4).** In the close-up, **click a candle**: the chart keeps only the arrivals that make up that
+candle (the dog lines, at the timings, that have a Nut in that frame) and shows where else *their* Nut frames are — the
+clicked candle goes to 100%, its neighbours show the double or triple it sits in, and every candle those arrivals can't
+reach disappears, as on the Lucky Timer's freestyle once it knows your dog. The list under the chart shows each line's
+share of the row, how many points of the window's odds it adds, its odds if you are on it, and its runs of Nut frames.
+<kbd>←</kbd> <kbd>→</kbd> step one game frame, <kbd>Esc</kbd> clears (a second <kbd>Esc</kbd> closes). Tick **keep every
+candle when I click** for the other view: every candle stays and the dog lines without a Nut there dim.
 
-<img src="media/app_blind_candle.png" width="700" alt="A clicked candle: the dog lines with a Nut there lit, the others dimmed">
+<img src="media/app_blind_candle.png" width="700" alt="A clicked candle: only the arrivals that make it up, the rest of the candles gone">
 
-**Click a line** (in the list or its label on the left): its part of every candle is drawn white, and its **timings**
-are listed. A timing is the same dog line reached a little earlier or later along the route, so at your stop its dog
+**Click a line** (in the list or its label on the left): the chart shows only that line (with the box ticked: its part
+of every candle is drawn white), and its **timings** are listed. A timing is the same dog line reached a little earlier or later along the route, so at your stop its dog
 is a few frames ahead or behind and its Nut frames move with it. Each timing on its own has exact Nut frames — single
-frames, doubles, triples — the same groups freestyle shows on the Lucky Timer once the dog is tuned. Click a timing to
-mark its frames on the chart (▲ and white outlines). Blind casting cannot know your timing, which is why a line's bars
+frames, doubles, triples — the same groups freestyle shows on the Lucky Timer once the dog is tuned. Click a timing and the
+chart shows only its exact Nut frames, each at 100% (▲ and white outlines mark them too). Blind casting cannot know your timing, which is why a line's bars
 in the strip are fractions; the timings show what they are made of.
 
 <img src="media/app_blind_timings.png" width="700" alt="A focused dog line and its timings with their exact Nut frames">
