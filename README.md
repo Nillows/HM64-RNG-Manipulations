@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.8
+# HM64 Power Nut Tool v32.9
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -224,13 +224,32 @@ end of the pier. Branches from different crowns grow into each other: counted ov
 
 ![Each branch splits three more times](media/forest_5_three_crowns.svg)
 
-**The pier moment: group the branches by shape.** At READY there are still a lot of branches: on Sunny → Horse the lab's
+**The pier moment: group the branches by shape.** Sorting branches by shape only works once the sunlight stops changing.
+On the way to the pier the sunlight is yours: every turn, wait and cut decides when each screen loads and when the dog
+wakes, so two branches that look alike can still be pushed apart. From the moment the dog wakes (Jack at the bottom of the
+back wall) nothing Jack does touches the random numbers any more, and standing at the end of the pier the sunlight is as
+steady as it gets: each game frame draws exactly one number for the game's own clock, plus the draws the dog makes — and
+what the dog draws is decided by the dog itself. From then until you cast, a branch is fully described by two things: the
+random number's value **x** and the dog's state **y** (where it is, what it is doing, the timer on what it is doing). With
+the sunlight steady, (x, y) has exactly one future: the next frame's x and y follow from it, then the next, and so on — the
+shape could not be any other way. So two branches that show the same (x, y) are the same branch, and one that reaches that
+(x, y) a few frames later is the same shape, offset in time: one causal future, and every copy collapses onto it.
+
+The picture shows it with two real plays of L1 on Sunny → Horse. A cut onto the pier early and stopped with
+x = 569,421,077 (draw 1,253 since power-on). B came by a different route and stopped 14 frames
+later, at draw 1,271: 14 frames before it stopped, while Jack was still walking along the pier, B passed
+through exactly A's (x, y), and from there the two are one branch.
+
+![One future, once the sunlight is steady](media/forest_6b_one_future.svg)
+
+That is the test the lab runs at READY, and it is why so few branches are left: on Sunny → Horse the lab's
 280,387,008 ways to play the route merge into 35,200 different plays on the beach and
 1,952 different arrivals at READY. Searching them all would be hopeless — but most of them are **the same
 branch, started a few frames later**: the same dog doing the same things, offset in time. Keep one of each and
 1,952 arrivals become **156 dog lines** (92% of the arrivals were copies). Fold in the
 lines that become the same dog after a few seconds (sister lines) and a normal morning has **21 shapes** to tell
-apart, a sparrow morning 16. That is the comparison that cut the dogs down in earlier versions.
+apart, a sparrow morning 16. That is the comparison that cut the dogs down in earlier versions — and it sets up the tuner
+below: your N64 is on one of these branches too, perhaps a few frames higher or lower than the tables' copy.
 
 ![Group the branches by shape](media/forest_6_pier.svg)
 
@@ -253,6 +272,8 @@ branch you are on and where its leaves are.
 **But not how tall your tree has grown: the tuner.** Your N64 can be a few frames ahead of or behind the tables' copy of the
 same branch (each line comes in at about 10 timings). The tuner (<kbd>[</kbd> <kbd>]</kbd>, one game frame per press) slides the
 app's branch up or down until your dog turns at the very moment the card does — and then its leaves are at your N64's height too.
+Because a shape has only one causal future (the pier moment above), the height is the only thing that can still differ:
+match the dog's turns and everything after them matches, the leaves included.
 
 ![The tuner](media/forest_9_tuner.svg)
 
