@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.15
+# HM64 Power Nut Tool v32.16
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -9,6 +9,8 @@ requests). Save a page (right-click its link in the hub → *Save link as…*) a
 help pages, each its own page: the **Guide** (`guide.html`: how to set up each game file, the route and the beach),
 **Not working?** (`not-working.html`: what to check when it does not work) and **How it works** (`how-it-works.html`: the
 forest pictures). Every tool page links them, and its **Not working?** button opens a checklist that leads to the answers.
+Your keys, your timing, your practice drills and one attempt count for every page are on the **Settings** page
+(`settings.html`, a button on the hub and a link in every tool page's footer): see [Settings](#settings-your-keys-timing-and-practice-in-one-place).
 
 <img src="media/hub.png" width="620" alt="The hub: tick boxes for the game file, then three buttons for its pages">
 
@@ -71,9 +73,10 @@ a strip of the next cast frames: green = let go at the 1st bite, gold = hold the
 **What problem does it solve? [Top-decking one card](#the-problem-it-solves-top-decking-one-card).** **Only want a stopwatch? Start with [Optimal Blind Casting](#optimal-blind-casting).** **Want to try it first, with no
 console? [Dog practice](#dog-practice-try-it-without-a-console).** **How can a dog tell you when to cast? [How it works: a
 leaf in a forest](#how-it-works-a-leaf-in-a-forest).** **Where do the numbers come from? [How the odds are worked
-out](#how-the-odds-are-worked-out).** **Something wrong? The site's [Not working?](https://nillows.github.io/HM64-RNG-Manipulations/not-working.html) page.**
+out](#how-the-odds-are-worked-out).** **Your keys, timing and practice? [Settings](#settings-your-keys-timing-and-practice-in-one-place).** **Something wrong? The site's [Not working?](https://nillows.github.io/HM64-RNG-Manipulations/not-working.html) page.**
 
 1. [Quick start](#1-quick-start)
+   · [Settings: your keys, timing and practice in one place](#settings-your-keys-timing-and-practice-in-one-place)
 2. [Setting up the game file](#2-setting-up-the-game-file)
 3. [The route](#3-the-route)
 4. [What the app starts with](#4-what-the-app-starts-with)
@@ -119,6 +122,49 @@ tool page you came from) and links back to its setup; one answer per problem, mo
 (<code>how-it-works.html</code>) is the pictures of the section below, with a line each.</sub>
 No tool at all? [Optimal Blind Casting](#optimal-blind-casting) below tells you, from what the dog does in the first 10 s, when to cast.
 No console to hand? [Dog practice](#dog-practice-try-it-without-a-console) lets you tune, read and fish real dog lines in the browser.
+
+---
+
+## Settings: your keys, timing and practice in one place
+The site's **Settings** page (`settings.html`; the hub's *Settings* button, *Settings* in every tool page's footer) holds
+everything about **you** that the pages use, so it is set once and shared: the Lucky Timer, the Casting tables and Dog
+practice all read it and all add what they measure to it (the same records the Lucky Timer has always kept, so nothing
+of yours is lost).
+
+- **Your attempts:** one count for every page. Each Lucky Timer attempt started at the end of the pier (logged or not) and
+  each whole attempt in Dog practice adds one; the count starts from the attempts already on record. The hub shows it on
+  its Settings button.
+- **Your timing:** the timing picture (each dot is something measured about you: left early, right late, top steady,
+  bottom loose), the four numbers the tool uses (start taps, B press on CAST, bite taps, how much you vary) and **Set by
+  hand**: start-tap delay (+ learn from your bite taps), cast-cue correction (your B-press habit), timing spread. What only
+  a page with the dog tables can learn (the clock shift from your bite taps, how well your console's offset is known, where
+  your casts landed) is shown as the Lucky Timer last worked it out. Dog practice's whole attempt measures your tap when
+  Jack stops; after 5 of them it can set your start-tap delay.
+- **Practice:** the Lucky Timer's two drills, same timings, same records. **Cast + bite practice**: press your start key on
+  CAST (pulses at −1.5 / −1 / −0.5 s, optionally a moving cast line), keep holding, let go the instant the rod dips.
+  **Bite practice**: hold, let go at the bite (or tap). Histograms, your median and spread, *Copy to my hand-set values*,
+  *Forget*.
+- **Your keys:** the start key, the dog's facing keys (arrows / W A S D), every animation key with its share of the dog's
+  wait, the card-timing keys; the Lucky Timer's refusals (keys the tool itself uses).
+- **Cues and the cast tap:** sound with the visual cues; the optional cast tap and its precision.
+- **Your console:** the frame period (NTSC N64 = 33.430 ms; anything else gets a warning with a one-click fix) and the
+  stock bite-tap delay.
+- **Your data:** *Export to a file* / *Import from a file*.
+
+**On the website** every page shares one store, and a change on the Settings page reaches an open Lucky Timer or Dog
+practice tab at once. **A page opened from a folder on your computer** keeps its own store (the browser keeps each file
+apart), so move your settings with a file: export on the Settings page, then on the local page click *⇅ Settings file* in
+its footer and import it (or the other way round).
+
+<img src="media/settings.png" width="760" alt="The Settings page: the attempt count, the timing picture and the four numbers">
+
+<sub><b>Settings</b>: one attempt count for every page, the timing picture and the four numbers the pages use, with what
+the Lucky Timer last learned from attempts.</sub>
+
+<img src="media/settings_drill.png" width="760" alt="Cast + bite practice on the Settings page">
+
+<sub><b>Cast + bite practice</b> on the Settings page: the countdown with the moving cast line, Jack on the READY screenshot, the
+histogram of your presses (blue) and real casts (yellow) against the CAST cue.</sub>
 
 ---
 
@@ -449,9 +495,12 @@ file, drawn by how often the route reaches it (its weight), at a real timing —
   start key on one to cast (here it is your B button, as the Lucky Timer reads a held Space) and **let go** when the float
   bites — the 1st bite for green, the 2nd for gold. The catch is the lab's record of the exact frame you cast on.
 
-**Your keys.** The page uses the keys of your Lucky Timer settings (facing on arrows or W A S D, your animation keys, your
-tuning keys, your start key, your reaction at READY; on the website every page shares them). A page saved to your computer
-keeps its own settings, so the keys can be changed on the page too (*change* next to the key list). Keys are matched by
+**Your keys.** The page uses the keys set on the [Settings](#settings-your-keys-timing-and-practice-in-one-place) page
+(facing on arrows or W A S D, your animation keys, your tuning keys, your start key, your reaction at READY; on the website
+every page shares them; *change them in Settings* next to the key list). A whole attempt adds one to the shared attempt
+count, your tap when Jack stops is kept as a measure of your start-tap delay, and your release at a bite as a bite
+reaction (the same records as bite practice). A page saved to your computer keeps its own copy: the footer's
+*⇅ Settings file* moves them through a file. Keys are matched by
 where they sit on the keyboard, like the Lucky Timer's, and their labels follow your layout (AZERTY, QWERTZ, …) where the
 browser tells it, or once you have typed the key on the site. Your results (last 30 of each drill) stay in your browser.
 
@@ -599,7 +648,7 @@ push the stick after you have cast; fishing keeps him awake.
 
 ![The Lucky Timer front page with numbered areas](media/app_front.png)
 
-<sub><b>A fresh browser, nothing changed.</b> ① the histogram (section 5) · ② the lamp with its countdown, the stopwatch, Start and ▶ Preview · ③ the result keys H / M / E · ④ the Sparrows and Freestyle boxes, Freestyle's target menu · ⑤ the picture of Jack, the practice drills, your timing compass and the key list · ⑥ the Lucky plan (presets and the cast time) · ⑦ the dog-watch (section 6) · ⑧ the footer: How it works and ⚙ Settings (from v32 the footer's left end links to the ⌂ Hub and the Casting tables; the picture shows v31's two tabs there). Panels ⑤ ⑥ ⑦ can be dragged into any order by their •••• grip.</sub>
+<sub><b>A fresh browser, nothing changed.</b> ① the histogram (section 5) · ② the lamp with its countdown, the stopwatch, Start and ▶ Preview · ③ the result keys H / M / E · ④ the Sparrows and Freestyle boxes, Freestyle's target menu · ⑤ the picture of Jack, the practice drills and your timing compass (both on the Settings page since v32.16) and the key list · ⑥ the Lucky plan (presets and the cast time) · ⑦ the dog-watch (section 6) · ⑧ the footer: How it works and ⚙ Settings (⚙ Options since v32.16; from v32 the footer's left end links to the ⌂ Hub and the Casting tables; the picture shows v31's two tabs there). Panels ⑤ ⑥ ⑦ can be dragged into any order by their •••• grip.</sub>
 
 A fresh browser opens the Lucky Timer ready:
 - Route **Beach-lineup2 · dog on the beach** (the file in section 2), **Sparrows at the door** off.
@@ -739,7 +788,7 @@ attempt. Beside the box, pick the target: **Power Nut** (default), or large / me
   catch can be reeled in. Once you pass a bar, its thread's top stays on the white line and the thread swings upright.
   **When it stands straight up, let go of B** (only if you cast on that bar). The lamp says it too: **GREEN THREAD · LET
   GO IN 1.2 s → LET GO NOW**.
-  Don't want the lane? Untick **⚙ Settings → Lucky Timer → Show the release window under the histogram** (v32.6): the
+  Don't want the lane? Untick **⚙ Options → Lucky Timer → Show the release window under the histogram** (v32.6; the button was called ⚙ Settings until v32.16): the
   lane and its threads go, the bars take the whole histogram as before the lane came, and the lamp still counts down to
   each let-go. In the app's own odds (no dog chosen) the same box hides the lane of bites after the cast with its
   release band.
@@ -785,8 +834,9 @@ left between you and the Nut is how close to the bar your press lands. In other 
 ---
 
 ## 9. Practice drills
-For the dog itself (tuning, reading, a whole attempt with no console) see [Dog practice](#dog-practice-try-it-without-a-console).
-Under the picture of Jack:
+Since v32.16 the drills are on the [Settings](#settings-your-keys-timing-and-practice-in-one-place) page (one place for
+every page), with the same timings and the same records as before. For the dog itself (tuning, reading, a whole attempt
+with no console) see [Dog practice](#dog-practice-try-it-without-a-console).
 - **Cast + bite practice:** the whole motion as on the N64. The histogram counts down to CAST, you press Space (or a
   controller button on a USB pad) on the cue and **keep holding**, Jack casts, a bite comes 1.4–5.2 s later, and you
   **let go** the instant the rod dips. The lamp gives both results, e.g. **CAST +42 MS · CAUGHT 231 MS**. These feed your
@@ -797,7 +847,7 @@ Under the picture of Jack:
 
 ![Cast + bite practice](media/app_drill.gif)
 
-<sub><b>Cast + bite practice.</b> Hold Space from the CAST cue, let go when the rod dips. The lamp gives both results: here the press was 43 ms late and the catch took 204 ms.</sub>
+<sub><b>Cast + bite practice</b> (in the Lucky Timer's preview, as it was until v32.16; the Settings page runs the same drill). Hold Space from the CAST cue, let go when the rod dips. The lamp gives both results: here the press was 43 ms late and the catch took 204 ms.</sub>
 
 ---
 
@@ -817,7 +867,7 @@ Under the picture of Jack:
 | → **Mouseover forecast** (off) | Hover a card to list that dog's next moves with countdowns. |
 | → **No missed turns once I start** + late arrows allowed up to … ms | Strict arrow logging: once you start keying, every turn must be keyed (late entries allowed up to the limit). Lines that don't show your sequence drop out. |
 | **Lucky plan** panel | See section 5 (presets, Cast at … − + best, Auto ✓ / Back to best, the last attempt in a few lines). |
-| **Cast + bite practice**, **Bite practice** | Section 9. |
+| **Cast + bite practice**, **Bite practice** | On the Settings page since v32.16 (section 9). |
 
 <table>
 <tr>
@@ -844,7 +894,7 @@ Under the picture of Jack:
 | Setting | What it does |
 |---|---|
 | **Start the stopwatch** | **"when Jack stops at the dock end (READY)"** (default): one Space tap, nothing on the way in. The other option, "when the beach starts to fade in", is a multi-tap start for experienced runners with slightly higher odds (11.6 % vs 11.0 %); choosing it brings back the tap strategies and **Pier only**. |
-| **Start key** | Space by default. |
+| **Start key** | Space by default; set on the Settings page. |
 
 ![The two start options in L2](media/app_start.png)
 
@@ -852,50 +902,49 @@ Under the picture of Jack:
 
 **L4 · Attempts**: section 8.
 
-**L5 · Your timing**
+**L5 · What your attempts teach** (until v32.16 "Your timing": the timing picture, *Set by hand* and the practice folds are on the [Settings](#settings-your-keys-timing-and-practice-in-one-place) page now; L5 starts with one line of the timing in use and a link there)
 | Fold | What it does |
 |---|---|
-| Timing picture | Each dot is something measured about you: left = early, right = late, top = steady, bottom = loose. |
-| **Set by hand** | Start-tap delay, cast-cue correction (your B-press habit) and timing spread. Each is learned automatically while its box is ticked; untick one to set it yourself. |
 | **Is the app working?** | Your bite taps vs the tables (do they fit a dog line, or are they "off the tables"?), Nuts expected vs caught, where your casts land. |
 | **What the app learns, and its limits** | What is learned, from what, and how far it may move. |
 | **Your data: clear stats** | Clear any one store (attempt log, bite taps, dog-watch records, clock taps, cast practice, bite practice) or **Clear all stats**. Settings and keys are kept. |
 | **Your dog lines** | Which lines your attempts were on, vs how common the lab found them. "Also count what the dog-watch saw" is experimental. |
-| **Bite practice**, **Cast practice** | Statistics and options of the drills ("tap instead of hold-and-let-go", "use it as my bite-tap delay", "moving cast line", "full wait", "hold on to the bite and let go", "Copy to my hand-set values", "Forget …"). |
+| ~~Bite practice, Cast practice~~ (Settings page since v32.16) | Statistics and options of the drills ("tap instead of hold-and-let-go", "use it as my bite-tap delay", "moving cast line", "full wait", "hold on to the bite and let go", "Copy to my hand-set values", "Forget …"). |
 
 <img src="media/app_L5.png" width="640" alt="L5 Your timing after one attempt">
 
-<sub><b>L5 after one attempt.</b> The timing picture (each dot is something measured about you), the table of what has been learned so far, and the open folds below it.</sub>
+<sub><b>L5 after one attempt</b> (v31; the timing picture and the table are on the Settings page since v32.16). The timing picture (each dot is something measured about you), the table of what has been learned so far, and the open folds below it.</sub>
 
-### ⚙ Settings → Lucky Timer tab
+### ⚙ Options → Lucky Timer tab
+The Lucky Timer's own **⚙ Options** button (called **⚙ Settings** until v32.16, when the [Settings](#settings-your-keys-timing-and-practice-in-one-place) page took that name for your keys, timing and practice).
 | Setting | What it does |
 |---|---|
 | **Route (save / dog spot)** | Which lab table to use: **Beach-lineup2** for the file in section 2. The others are older saves and routes. |
 | **Watch the dog at the dock end** | Turns the dog-watch panel (cards) on. |
-| **Facing keys** arrow keys / W A S D | Keys for the dog's facing. |
+| **Facing keys** arrow keys / W A S D | Keys for the dog's facing: on the Settings page since v32.16. |
 | **Hands on B (stop logging) before the cast (s)** | Dog-watch logging closes this long before the cast (default 2 s). |
-| **Dog-watch keys** | Reassign the animation keys (defaults in section 4) and the earlier / later card keys. Keys the tool itself uses are refused. **Reset these keys** returns to the defaults. |
+| **Dog-watch keys** (Settings page since v32.16) | Reassign the animation keys (defaults in section 4) and the earlier / later card keys. Keys the tool itself uses are refused. **Reset these keys** returns to the defaults. |
 | **Release line** | Show the pink release line (normal mode: best blind release; Freestyle: the middle of your marked cast's window). |
 | **Release window** (v32.6) | Show the release window under the histogram: in Freestyle the "let go here" lane and the threads to it; otherwise the lane of bites after the cast with its release band. Off: the cast bars take the whole histogram; the lamp's let-go countdown stays. On by default. |
-| **Cast tap** + precision | Optional: also tap Space when you press B, so the tool knows your real cast time. |
+| **Cast tap** + precision | Optional: also tap Space when you press B, so the tool knows your real cast time. On the Settings page since v32.16. |
 | **Glow around the screen edge** | The lamp's colour around the whole screen edge, for the corner of your eye. In Freestyle it also covers the LAST DOUBLE pulse. |
 | **Facing when casting** SE / E | Only changes the picture of Jack. |
-| **Sound too** / … release-window sounds | Beeps with the visual cues (off by default). |
+| **Sound too** / … release-window sounds | Beeps with the visual cues (off by default). *Sound too* is on the Settings page since v32.16. |
 | **Load your own angler frames** / Stick figure | Change the picture of Jack. |
 
 <img src="media/app_settings_lucky.png" width="520" alt="Settings, Lucky Timer tab">
 
-<sub><b>⚙ Settings → Lucky Timer.</b> The route, dog-watch, the key table (every animation with its share of the wait and its key), the release line, cast tap, glow, sound and the picture of Jack.</sub>
+<sub><b>⚙ Options → Lucky Timer</b> (the picture is from before v32.16, when it was ⚙ Settings: the key table, the cast tap and sound are on the Settings page now). The route, dog-watch, the key table (every animation with its share of the wait and its key), the release line, cast tap, glow, sound and the picture of Jack.</sub>
 
-### ⚙ Settings → Console & shared timing / Calibration & data tabs
-Mostly settings of the older "Dog Oracle" page, which this build no longer shows. Two matter:
+### ⚙ Options → Console & shared timing / Calibration & data tabs
+Mostly settings of the older "Dog Oracle" page, which this build no longer shows. The two that matter are on the Settings page since v32.16:
 - **Console game update (ms; NTSC N64 = 33.430)**: **leave it at 33.430.** If it is changed, the front page shows a red
   warning with a one-click fix.
 - **Your tap delay, mean (ms)**: the tool's first guess for your bite-tap delay, until it has learned yours.
 
 <img src="media/app_settings_console.png" width="420" alt="Settings, Console and shared timing tab">
 
-<sub><b>⚙ Settings → Console & shared timing.</b> The game update stays at 33.430 ms.</sub>
+<sub><b>⚙ Options → Console & shared timing</b> (before v32.16). The game update stays at 33.430 ms.</sub>
 
 ![The warning when the console update is changed](media/app_warn.png)
 
@@ -910,9 +959,12 @@ a fold, *How these odds are worked out*. Tabs: **Optimal Blind Casting** (the li
 seconds, by line** · **As you stop** · **Harbingers**. Casts reach 75 s after Jack stops (the Power Nut ends there); a
 cast after 40 s says so and needs the push ↘ at about 33 s (a cast after 73 s a second one at about 67 s); the
 stopwatch shows PUSH THE STICK ↘ NOW at those moments.
-Its own settings: **Table** (Beach-lineup2 for the file in section 2), **Sparrows at the door** (S), **How exact is your
-cast?** (±100 / 150 / 200 / 300 ms: the spread of the bell curve every aimed cast's odds are worked out with), **Aim for** best odds or a quick cast of **at least** n %, and **Your reaction when
-Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper copy.
+Its own settings: **Table** (Beach-lineup2 for the file in section 2), **Sparrows at the door** (S), **Aim for** best odds or a quick cast of **at least** n %.
+Since v32.16 the **timing spread** every aimed cast's odds are worked out with and **how much the stopwatch starts before
+your key press** are yours, from the [Settings](#settings-your-keys-timing-and-practice-in-one-place) page: your timing
+spread (auto from your B presses, or set by hand; ±150 ms until then) and your start-tap delay (plus the clock shift the
+Lucky Timer has learned from your bite taps). The line above the tables says which values are in use. **Print the
+tables** gives a paper copy.
 
 <img src="media/app_dogref.png" width="700" alt="The Casting tables page">
 
