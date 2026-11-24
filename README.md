@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.7
+# HM64 Power Nut Tool v32.8
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -179,6 +179,21 @@ most common dog line of Sunny → Horse (L1), traced back through every play the
 
 ![Searching down from the leaf](media/forest_2_backwards.svg)
 
+**Why branches merge.** Branches grow into each other for the same reason that 1 + 2 = 3 and 2 + 1 = 3: different
+circumstances can lead to the same answer. Here the answer is a pair — the random number's value and the dog's state
+(where it is and what it is doing). The random number can only take about 4.3 billion values, and the dog only so many
+states at each of those moments, so the canopy is huge but not infinite, and sooner or later two different routes land on
+exactly the same pair. There are endless ways to write a sum that comes to 3, and once you know the answer is 3 you can
+forget how it was written; in the same way, once two routes reach the same value with the same dog, everything after
+that is the same (the lab checks it: casts from different routes of one dog line catch the same thing), so the tool keeps
+one branch and ignores all the strange ways of getting there. The one thing that can still differ is *when* each route
+got there: the same pair, reached at a different moment — the same branch, entered higher or lower. That is why a dog
+line comes in at several timings, and why the search runs from the bottom up: on the way up every merge removes
+branches, on the way down every fork adds them. The picture shows real merges on Sunny → Horse: plays with menus 0, 3 and
+5 frames late all become L1, joining its path at +14, +19 and +33 frames (the most common moment for each).
+
+![Why branches merge](media/forest_2b_merge.svg)
+
 **So the tool grows the forest from the bottom up.** Switching the N64 on sets the number to 0 on every console: one shared
 seed that every forest grows from. The title screen and the menus draw 499 numbers by the time the house
 loads on the fastest menus. **The first exploit:** the tables only cover menus 0 to 6 game frames slower than the fastest,
@@ -241,12 +256,16 @@ app's branch up or down until your dog turns at the very moment the card does �
 
 ![The tuner](media/forest_9_tuner.svg)
 
-**L1 across game files.** The most common dog line of each game file, side by side: horse or no horse, sunny or rainy (married
-and a baby will add rows later). Sunny with and without the horse turn out to share the **same L1 branch**: every move of the
-dog and every leaf, 3 game frames earlier on the horse file. The rainy cells fill in when the rain lab's tables
-are in; rain is a far more jagged branch.
+**L1 across game files: two cubes.** Every game file that changes the random numbers before the pier needs tables of its
+own: the weather, the horse, and later a marriage and a baby. Three yes / no questions make a cube — horse × married ×
+baby, 8 corners — and the weather is a fourth, so there are two cubes, one sunny and one rainy: 16 game files in all.
+Each corner shows its L1 (the most common dog line) once its tables are in. Today two corners are filled, Sunny with and
+without the horse, and they turn out to share the **same L1 branch**: every move of the dog and every leaf,
+3 game frames earlier on the horse file. The rainy cube's two unmarried, childless corners fill in when the
+rain lab's tables are in (rain makes a far more jagged branch); the married and baby corners come later. The cubes are only
+a picture: in the hub you still just tick what is true of your file.
 
-![L1 across game files](media/forest_10_punnet.svg)
+![L1 across game files: two cubes](media/forest_10_cubes.svg)
 
 <a id="how-the-pictures-are-made"></a>**How the pictures are made.** `tools/forest_facts.py` reads the lab's runs (the stages
 of a dog-watch run, the reference route of each game file, the dog lines and casts of each table) into one facts file, and
