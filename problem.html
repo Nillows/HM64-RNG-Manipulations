@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>The problem it solves · HM64 Power Nut Tool v32.12</title>
+<title>The problem it solves · HM64 Power Nut Tool v32.14</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 :root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d}
@@ -16,18 +16,20 @@ footer{margin-top:30px;border-top:1px solid var(--line);padding-top:8px}
 <body><div class="wrap">
 <nav class="top"><a href="index.html">⌂ Hub</a><a href="deck.html">The deck</a><a href="guide.html">Guide</a><a href="guide.html#how-it-works">How it works</a></nav>
 <h1>The problem it solves: top-decking one card</h1>
-<p>Catching the Power Nut is like drawing one card you picked beforehand — the ace of spades, say — off the top of a shuffled
-deck of 51. But this deck never holds still. It reshuffles every time the game's random number changes, 30 times a second, so
-whatever card is on top usually stays there for a single frame (1/30 s).</p>
-<p>Each arrival at the beach hands you a different deck (a different dog line). You can try again and again, but the act of casting
-shuffles a new card in, and once you leave the beach you start from a new deck altogether. And the deck shuffles faster while your
-hand reaches for it: casting and fishing draw random numbers of their own, more than Jack standing still. Drawing blind, your card
-comes up a few times in a hundred at best (1.8% on the most common dog line; 1 in 51 is the game's base chance per catch).</p>
-<p>The tool is a way around that: by watching the dog it works out which deck you are holding and how far it has shuffled, and counts
-you down to the moment your card is on top — the Power Nut, or a big fish, whenever you need it.</p>
-<img src="media/problem_deck.svg" alt="The problem: top-deck one card you chose, from a deck that reshuffles every frame">
+<p>Catching the Power Nut is like drawing one card you picked beforehand — the ace of spades, say — from a shuffled deck of 51.
+But you cannot draw whenever you like. You draw by casting: the game frame you press B on (1/30 s) picks the cast, and with it
+every bite that will come. Then you hold B and wait. Each bite gives you 0.33 s to let go of B and pull in; let go early, late, or
+hold on through it, and that card is gone. Which bite is your card, you cannot see.</p>
+<p>The deck never holds still. Every frame it reshuffles with the game's random number, so a cast one frame earlier or later is
+another cast with other bites. Each arrival at the beach hands you a different deck (a different dog line), and you get one cast
+from it: whatever that cast brings, the next try is a new arrival and a new deck. Cast blind and your card comes up a few times in a
+hundred at best (the Power Nut is the 1st bite on 1.8% of the cast frames of the most common dog line; 1 in 51 is the game's base
+chance per catch).</p>
+<p>The tool is a way around that: by watching the dog it works out which deck you are holding and how far it has shuffled, counts you
+down to the frame to press B on, and tells you which bite to let go at — for the Power Nut, or a big fish, whenever you need it.</p>
+<img src="media/problem_deck.svg" alt="The problem: the frame you press B on picks the cast; each bite gives 0.33 s to let go; one cast per attempt">
 <p><a class="go" href="deck.html"><b>Try it with a deck of cards →</b></a><a class="go" href="index.html">Open the tool (hub)</a></p>
-<p class="small mut">On the deck page a moment lasts 0.33 s (ten times slower than the game) unless you tick the game's own speed. How
-the tool finds your deck: <a href="guide.html#how-it-works">How it works</a>.</p>
-<footer class="small mut">HM64 Power Nut Tool v32.12 · built 2026-11-24 · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source and files</a></footer>
+<p class="small mut">The deck page runs at the game's own speed on real casts from the lab's tables: Start when Jack stops, press and
+hold to cast, let go while your card is lit. How the tool finds your deck: <a href="guide.html#how-it-works">How it works</a>.</p>
+<footer class="small mut">HM64 Power Nut Tool v32.14 · built 2026-11-24 · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source and files</a></footer>
 </div></body></html>

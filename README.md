@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.12
+# HM64 Power Nut Tool v32.14
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -31,35 +31,39 @@ out](#how-the-odds-are-worked-out) says how, in plain English.
 ---
 
 ## The problem it solves: top-decking one card
-Catching the Power Nut is like drawing one card you picked beforehand — the ace of spades, say — off the top of a shuffled
-deck of 51. But this deck never holds still. It reshuffles every time the game's random number changes, 30 times a second,
-so whatever card is on top usually stays there for a single frame (1/30 s). Each arrival at the beach hands you a different
-deck (a different dog line). You can try again and again, but the act of casting shuffles a new card in, and once you leave
-the beach you start from a new deck altogether. And the deck shuffles faster while your hand reaches for it: casting and
-fishing draw random numbers of their own, more than Jack standing still. Drawing blind, your card comes up a few times in a
-hundred at best (1.8% on the most common dog line; 1 in 51 is the game's base chance per catch).
+Catching the Power Nut is like drawing one card you picked beforehand — the ace of spades, say — from a shuffled deck of
+51. But you cannot draw whenever you like. You draw by casting: the game frame you press B on (1/30 s) picks the cast, and
+with it every bite that will come. Then you hold B and wait. Each bite gives you 0.33 s to let go of B and pull in; let go
+early, late, or hold on through it, and that card is gone. Which bite is your card, you cannot see.
+
+The deck never holds still. Every frame it reshuffles with the game's random number, so a cast one frame earlier or later
+is another cast with other bites. Each arrival at the beach hands you a different deck (a different dog line), and you get
+one cast from it: whatever that cast brings, the next try is a new arrival and a new deck. Cast blind and your card comes up
+a few times in a hundred at best (the Power Nut is the 1st bite on 1.8% of the cast frames of the most common dog line; 1 in
+51 is the game's base chance per catch).
 
 The tool is a way around that: by watching the dog it works out which deck you are holding and how far it has shuffled,
-and counts you down to the moment your card is on top — the Power Nut, or a big fish, whenever you need it. (This
-explainer is also a page of its own on the site: [problem.html](https://nillows.github.io/HM64-RNG-Manipulations/problem.html),
-linked from the hub.)
+counts you down to the frame to press B on, and tells you which bite to let go at — for the Power Nut, or a big fish,
+whenever you need it. (This explainer is also a page of its own on the site:
+[problem.html](https://nillows.github.io/HM64-RNG-Manipulations/problem.html), linked from the hub.)
 
-![The problem: top-deck one card you chose](media/problem_deck.svg)
+![The problem: the frame you press B on picks the cast; each bite gives 0.33 s to let go; one cast per attempt](media/problem_deck.svg)
 
 **Try it:** the site's **[deck page](https://nillows.github.io/HM64-RNG-Manipulations/deck.html)** (`deck.html`) lays out
 52 cards in new deck order. Take one out, pick your goal card and stack the deck (seeded by the clock × the time you have
-spent on the page), then click the face-down deck to start and draw blind from a deck that blinks with a real dog line from
-the tables: your card is on top exactly on that line's Power Nut frames. The 51 cards lie face down in a grid where they
-stay — one of them is on top at every moment, and you cannot see which. A moment lasts 0.33 s there (ten times slower than
-the game) or, if you tick it, the game's own 1/30 s. Hold the button to reach (the deck shuffles twice as fast) and let go
-to draw; every draw reshuffles, and *Leave the beach* gives a new deck. Tick *Use the tool* to see what knowing the moment
+spent on the page). The 51 cards lie face down in a grid. Press **Start** when Jack stops at the pier, then **press and hold
+the deck** (or Space) to cast: the moment you press is a game frame, and you get the real cast the lab recorded on that frame
+of a real dog line (Sunny · No horse, casts up to 40 s after Jack stops, at the game's own speed). Each bite of that cast
+lights one face-down card for 0.33 s; **let go while it is lit** to catch it — your goal card when the bite is the Power
+Nut. Let go at any other time and the line comes back empty. One cast per attempt: *Try again* is a new arrival with
+another dog line, and no cast in 40 s means Jack lies down. Tick *Use the tool* to see what knowing the frame and the bite
 does.
 
-<img src="media/deck_page.png" width="760" alt="The deck page: 51 cards face down, the tool's countdown, a draw">
+<img src="media/deck_page.png" width="760" alt="The deck page: the line in the water, the 2nd bite lighting a face-down card, the tool saying let go now">
 
-<sub><b>The deck page</b> with <i>Use the tool</i> ticked: the countdown and the strip of the next moments (green = your card on
-top), the 51 cards face down (dealt again after every draw, since a draw reshuffles), your last draw under the deck, and the
-tally: blind draws against draws on the tool's cue.</sub>
+<sub><b>The deck page</b> with <i>Use the tool</i> ticked, the line in the water: bite 2 of this cast lights one of the 51
+face-down cards for 0.33 s, and the tool says let go now (before the cast it counts you down to the frame to press on, with
+a strip of the next cast frames: green = let go at the 1st bite, gold = hold the 1st and let go at the 2nd).</sub>
 
 ---
 
@@ -310,27 +314,37 @@ below: your N64 is on one of these branches too, perhaps a few frames higher or 
 
 ![Group the branches by shape](media/forest_6_pier.svg)
 
-**The leaves.** On each remaining branch, the leaves are the cast frames that land the Power Nut: **green** = let go on the
-first bite, **gold** = hold the first bite and let go on the second, **purple** = a later bite. L1 of Sunny → No horse has
-22 green, 43 gold and 2 purple leaves in its first 40 s; the first is a cast
-0.72 s after READY, and one game frame either side of it gives no Nut on the first bite.
-Casting changes the forest's sunlight again — the line in the water draws numbers of its own — so you don't cast *at* a leaf: you cast
-so that what your cast sets going lands on it, like an interception.
+**The leaves: only a cast grows them.** The branch you watch before you cast has no leaves at all. A leaf needs a cast:
+casting is the moment the branch bends, because the line in the water brings sunlight of its own (it draws random numbers of
+its own), and the branch that grows from that bend is the one that decides when a fish bites and what it is. So the leaves are
+not hanging on the branch ahead of you, waiting — the cast moment you choose decides whether the branch it starts will grow
+one.
 
-![The leaves](media/forest_7_leaves.svg)
+The picture shows it on L1 of Sunny → No horse, with two real casts one game frame apart. In all three rows the branch is
+the same up to 16.23 s. With no cast it never grows a leaf. A cast at 16.23 s bends it into a branch whose
+first bite, at 37.9 s, is **the Power Nut**. A cast one game frame later, at 16.26 s, bends it into another
+branch whose first bite, at 28.4 s, is a small fish.
+
+![The leaves: only a cast grows them](media/forest_7_leaves.svg)
+
+Mark every cast moment that grows a leaf and you get the strip at the bottom of the picture — **green** = the Nut on the first
+bite, **gold** = on the second (hold the first), **purple** = a later bite; L1 has 22 green, 43 gold and 2 purple in its
+first 40 s — and that strip is what the app's bars show. You don't cast *at* a leaf: you cast at the moment that grows one,
+like an interception.
 
 **Describing your dog describes your branch.** What the dog does after Jack stops is the shape of your branch, and each move
 you key narrows it down. On Sunny → No horse, after the dog's first move 6 lines still have L1's
 shape, after two moves 2, after four only L1. With enough of the dog seen, the tool knows which
-branch you are on and where its leaves are.
+branch you are on and which of its cast moments grow leaves.
 
 ![Describing the dog](media/forest_8_describe.svg)
 
 **But not how tall your tree has grown: the tuner.** Your N64 can be a few frames ahead of or behind the tables' copy of the
 same branch (each line comes in at about 10 timings). The tuner (<kbd>[</kbd> <kbd>]</kbd>, one game frame per press) slides the
-app's branch up or down until your dog turns at the very moment the card does — and then its leaves are at your N64's height too.
+app's branch up or down until your dog turns at the very moment the card does — and then the cast moments that grow leaves are at
+your N64's height too.
 Because a shape has only one causal future (the pier moment above), the height is the only thing that can still differ:
-match the dog's turns and everything after them matches, the leaves included.
+match the dog's turns and everything after them matches, including which cast moments grow leaves.
 
 ![The tuner](media/forest_9_tuner.svg)
 
