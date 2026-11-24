@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.9
+# HM64 Power Nut Tool v32.10
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -204,14 +204,19 @@ that is what keeps the forest small enough to grow completely. Two of the 7 carr
 
 ![One seed, a crown of 7](media/forest_3_crown7.svg)
 
-**Sunlight.** Each screen grows the branch at its own speed: whatever is on screen asks for random numbers every frame, some
-things more than others. That is the sunlight on that layer, and it shines only as long as you are on that screen. On a sunny
-morning the farm, the crossroads and the ranch draw about one number per game frame; the horse file draws a few more (2 on
-the farm, 4 at the crossroads, 4 on the ranch) although the horse never comes on screen; rain outdoors draws 13 to 19 a frame —
-READY comes at draw 10,593 instead of 1,259. Same route, same clock, very different branches:
-that is why every game file needs its own tables.
+**Sunlight (the forest's sunlight — not the game's weather).** In the forest picture, sunlight is the base drift of the
+random number: how many numbers a place draws each frame on its own, with nothing extra asking for any, as you travel to
+READY at the end of the pier. Each screen shines its own amount of it on the canopy of our ever-growing forest. Sunlight
+does not decide how fast a branch grows taller — height is time, and every branch reaches READY at the same height — but it
+changes *how* the branch grows in that time: an hour of sunlight changes how a plant grows during that hour, not how old the
+plant is. What counts is each place's own drift and how long you stand under it. On a sunny morning the farm, the
+crossroads and the ranch drift about one number per game frame; the horse file draws a few more (2 on the farm, 4 at the
+crossroads, 4 on the ranch) although the horse never comes on screen. And this is where the two meanings of "sun" cross:
+a *rainy* morning gives the forest far *more* sunlight, because outdoors the rain draws 13 to 19 numbers a frame — READY
+comes at draw 10,593 instead of 1,259. Same route, same clock, very differently grown branches: that is why every game file
+needs its own tables.
 
-![Sunlight per screen](media/forest_4_sunlight.svg)
+![Forest sunlight per screen](media/forest_4_sunlight.svg)
 
 **Three crowns on each branch.** Nobody walks frame-perfect, so the tables also cover a little slack after the menus: the
 turns in the house (up to 4 game frames), the turn at the crossroads (up to 3) and the beach —
@@ -224,23 +229,41 @@ end of the pier. Branches from different crowns grow into each other: counted ov
 
 ![Each branch splits three more times](media/forest_5_three_crowns.svg)
 
-**The pier moment: group the branches by shape.** Sorting branches by shape only works once the sunlight stops changing.
-On the way to the pier the sunlight is yours: every turn, wait and cut decides when each screen loads and when the dog
-wakes, so two branches that look alike can still be pushed apart. From the moment the dog wakes (Jack at the bottom of the
-back wall) nothing Jack does touches the random numbers any more, and standing at the end of the pier the sunlight is as
-steady as it gets: each game frame draws exactly one number for the game's own clock, plus the draws the dog makes — and
-what the dog draws is decided by the dog itself. From then until you cast, a branch is fully described by two things: the
+**The pier moment: group the branches by shape.** Sorting branches by shape only works once the forest's sunlight stops
+changing. On the way to the pier that light is yours: every turn, wait and cut decides how long you stand under each
+screen's drift and when the dog wakes, so two branches that look alike can still be pushed apart. From the moment the dog
+wakes (Jack at the bottom of the back wall) nothing Jack does touches the random numbers any more, and standing at the end
+of the pier the light on the forest is as steady as it gets: the base drift is exactly one number per game frame (the
+game's own clock), plus the draws the dog makes — and those belong to the branch itself, decided by the dog's state. From then until you cast, a branch is fully described by two things: the
 random number's value **x** and the dog's state **y** (where it is, what it is doing, the timer on what it is doing). With
-the sunlight steady, (x, y) has exactly one future: the next frame's x and y follow from it, then the next, and so on — the
+the light steady, (x, y) has exactly one future: the next frame's x and y follow from it, then the next, and so on — the
 shape could not be any other way. So two branches that show the same (x, y) are the same branch, and one that reaches that
 (x, y) a few frames later is the same shape, offset in time: one causal future, and every copy collapses onto it.
+
+Written as **key : value** — the random number : the dog (what it is doing, which way it faces, the timer on what it is
+doing) — real pairs from Sunny → Horse look like this (in every one the dog still stands where it was left):
+
+```
+  569421077: standing, facing 0, timer 2    L1 as Jack stops (draw 1,253)
+  -76265430: standing, facing 0, timer 1    L1 1 frame later (draw 1,254: the clock)
+ -117721573: standing, facing 0, timer 0    L1 2 frames later (draw 1,255)
+ -169427722: standing, facing 0, timer 10   L1 3 frames later (draw 1,258: the clock + 2 for the dog's choice)
+ -117721573: barking, facing 0, timer 2     L2 as Jack stops (draw 1,255)
+  297534865: digging, facing 0, timer 10    L3 as Jack stops (draw 1,257)
+```
+
+A key can only be one of 4,294,967,296 numbers, and a value one of the dog's couple of dozen actions × 8 facings × its timer
+(× its spot): a huge table, but a finite one, and every branch lives inside it. Two rows above share the key
+-117721573 but not the value — L1 2 frames after it stops, with the dog standing, and L2 as it stops, with
+the dog barking: two different branches. A key and a value together make a branch, and the same pair always has the
+same future.
 
 The picture shows it with two real plays of L1 on Sunny → Horse. A cut onto the pier early and stopped with
 x = 569,421,077 (draw 1,253 since power-on). B came by a different route and stopped 14 frames
 later, at draw 1,271: 14 frames before it stopped, while Jack was still walking along the pier, B passed
-through exactly A's (x, y), and from there the two are one branch.
+through exactly A's pair (the first row above), and from there the two are one branch.
 
-![One future, once the sunlight is steady](media/forest_6b_one_future.svg)
+![One future, once the forest's sunlight is steady](media/forest_6b_one_future.svg)
 
 That is the test the lab runs at READY, and it is why so few branches are left: on Sunny → Horse the lab's
 280,387,008 ways to play the route merge into 35,200 different plays on the beach and
@@ -257,7 +280,7 @@ below: your N64 is on one of these branches too, perhaps a few frames higher or 
 first bite, **gold** = hold the first bite and let go on the second, **purple** = a later bite. L1 of Sunny → No horse has
 22 green, 43 gold and 2 purple leaves in its first 40 s; the first is a cast
 0.72 s after READY, and one game frame either side of it gives no Nut on the first bite.
-Casting changes the sunlight again — the line in the water draws numbers of its own — so you don't cast *at* a leaf: you cast
+Casting changes the forest's sunlight again — the line in the water draws numbers of its own — so you don't cast *at* a leaf: you cast
 so that what your cast sets going lands on it, like an interception.
 
 ![The leaves](media/forest_7_leaves.svg)
