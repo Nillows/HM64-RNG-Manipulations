@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>The problem it solves · HM64 Power Nut Tool v32.12</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+:root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.6 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:12px 16px 60px}
+nav.top{display:flex;gap:14px;font-size:13.5px;padding:8px 0;border-bottom:1px solid var(--line)}nav.top a{color:var(--acc);text-decoration:none}
+h1{font-size:24px;margin:16px 0 6px}a{color:var(--acc)}.mut{color:var(--mut)}.small{font-size:13px}
+img{max-width:100%;height:auto;border-radius:8px;margin:12px 0}
+.go{display:inline-block;text-decoration:none;color:#fff;border:1px solid #36546a;background:#1d3446;border-radius:8px;padding:9px 14px;margin:6px 8px 0 0}
+.go:hover{border-color:var(--acc)}
+footer{margin-top:30px;border-top:1px solid var(--line);padding-top:8px}
+</style></head>
+<body><div class="wrap">
+<nav class="top"><a href="index.html">⌂ Hub</a><a href="deck.html">The deck</a><a href="guide.html">Guide</a><a href="guide.html#how-it-works">How it works</a></nav>
+<h1>The problem it solves: top-decking one card</h1>
+<p>Catching the Power Nut is like drawing one card you picked beforehand — the ace of spades, say — off the top of a shuffled
+deck of 51. But this deck never holds still. It reshuffles every time the game's random number changes, 30 times a second, so
+whatever card is on top usually stays there for a single frame (1/30 s).</p>
+<p>Each arrival at the beach hands you a different deck (a different dog line). You can try again and again, but the act of casting
+shuffles a new card in, and once you leave the beach you start from a new deck altogether. And the deck shuffles faster while your
+hand reaches for it: casting and fishing draw random numbers of their own, more than Jack standing still. Drawing blind, your card
+comes up a few times in a hundred at best (1.8% on the most common dog line; 1 in 51 is the game's base chance per catch).</p>
+<p>The tool is a way around that: by watching the dog it works out which deck you are holding and how far it has shuffled, and counts
+you down to the moment your card is on top — the Power Nut, or a big fish, whenever you need it.</p>
+<img src="media/problem_deck.svg" alt="The problem: top-deck one card you chose, from a deck that reshuffles every frame">
+<p><a class="go" href="deck.html"><b>Try it with a deck of cards →</b></a><a class="go" href="index.html">Open the tool (hub)</a></p>
+<p class="small mut">On the deck page a moment lasts 0.33 s (ten times slower than the game) unless you tick the game's own speed. How
+the tool finds your deck: <a href="guide.html#how-it-works">How it works</a>.</p>
+<footer class="small mut">HM64 Power Nut Tool v32.12 · built 2026-11-24 · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source and files</a></footer>
+</div></body></html>

@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.11
+# HM64 Power Nut Tool v32.12
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -12,7 +12,8 @@ the answers.
 
 <img src="media/hub.png" width="620" alt="The hub: tick boxes for the game file, then three buttons for its pages">
 
-<sub><b>The hub (v32.11).</b> At the top, <i>The problem it solves</i> with a link to the deck page (below). Nothing ticked = Sunny → No horse. Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>
+<sub><b>The hub (v32.12).</b> Under the intro, two small links: <i>What problem does this solve?</i> (its own page,
+<code>problem.html</code>) and the deck page (below). Nothing ticked = Sunny → No horse. Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>
 (tick <i>I own the horse</i>), each with Casting tables, a Lucky Timer and Dog practice. Rainy mornings (horse / no horse)
 are being collected: ticking <i>Rainy morning</i> greys the buttons out until their tables are in; a marriage and a baby
 come later, each with its own tables. The hub remembers your ticks, and a link like <code>…/#sunny-horse</code> opens it on
@@ -39,7 +40,9 @@ fishing draw random numbers of their own, more than Jack standing still. Drawing
 hundred at best (1.8% on the most common dog line; 1 in 51 is the game's base chance per catch).
 
 The tool is a way around that: by watching the dog it works out which deck you are holding and how far it has shuffled,
-and counts you down to the moment your card is on top — the Power Nut, or a big fish, whenever you need it.
+and counts you down to the moment your card is on top — the Power Nut, or a big fish, whenever you need it. (This
+explainer is also a page of its own on the site: [problem.html](https://nillows.github.io/HM64-RNG-Manipulations/problem.html),
+linked from the hub.)
 
 ![The problem: top-deck one card you chose](media/problem_deck.svg)
 
