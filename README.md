@@ -1,14 +1,14 @@
-# HM64 Power Nut Tool v32.4
+# HM64 Power Nut Tool v32.5
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: pick the morning you play (sunny / rainy) and your game file (horse or
-not), and it links to that file's pages, the **Lucky Timer** and the **Casting tables**. Each page is one file that holds
+not), and it links to that file's pages: the **Lucky Timer**, the **Casting tables** and **Dog practice**. Each page is one file that holds
 only that game file's tables, runs entirely in your browser, needs no install and sends nothing anywhere (no network
 requests). Save a page (right-click its link in the hub → *Save link as…*) and it works offline.
 
 <img src="media/hub.png" width="620" alt="The hub: sunny and rainy mornings, each game file with its pages">
 
-<sub><b>The hub.</b> Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>. Rainy mornings (horse / no horse) are
+<sub><b>The hub.</b> Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>, each with a Lucky Timer, Casting tables and Dog practice. Rainy mornings (horse / no horse) are
 being collected; a marriage and a baby come later, each with its own tables. Every page is beach-lineup2: the dog left
 in the far south-west corner of the beach; you pick your tables by your game file.</sub>
 
@@ -16,11 +16,15 @@ Every random event in the game comes from one random number generator. The dog's
 readout of where that generator is, and an emulator lab has recorded, for every dog path ("line") and every cast frame
 up to 120 s after Jack reaches the end of the pier, every bite and what it catches. The page shows you the dog the lab
 expects, lets you line it up with the dog on your TV, and tells you when to press B and when to let go.
+Every percentage on the pages is a share of the lab's plays of the route that land the Nut; [How the odds are worked
+out](#how-the-odds-are-worked-out) says how, in plain English.
 
 ---
 
 ## Contents
-**Only want a stopwatch? Start with [Optimal Blind Casting](#optimal-blind-casting).**
+**Only want a stopwatch? Start with [Optimal Blind Casting](#optimal-blind-casting).** **Want to try it first, with no
+console? [Dog practice](#dog-practice-try-it-without-a-console).** **Where do the numbers come from? [How the odds are worked
+out](#how-the-odds-are-worked-out).**
 
 1. [Quick start](#1-quick-start)
 2. [Setting up the game file](#2-setting-up-the-game-file)
@@ -46,6 +50,7 @@ expects, lets you line it up with the dog on your TV, and tells you when to pres
    controller; the keyboard is only for the tool.
 
 No tool at all? [Optimal Blind Casting](#optimal-blind-casting) below tells you, from what the dog does in the first 10 s, when to cast.
+No console to hand? [Dog practice](#dog-practice-try-it-without-a-console) lets you tune, read and fish real dog lines in the browser.
 
 ---
 
@@ -71,8 +76,9 @@ time shown — anywhere within half a second of it** — and let go of B as the 
 first bite and let go when the second one comes.
 
 The odds are the share of the lab's arrivals on this route (the file in section 2, no sparrows at the door) that show
-the sign and land the Power Nut with B pressed anywhere in that second; 1 in 51 (2%) is the game's base chance per
-catch. Emulator data. With **sparrows at the door** (section 3.2) the dog lines are different: use the app's list with the
+the sign and land the Power Nut with B pressed anywhere in that second, every frame of the second alike (more in
+[How the odds are worked out](#how-the-odds-are-worked-out)); 1 in 51 (2%) is the game's base chance per catch.
+Emulator data. With **sparrows at the door** (section 3.2) the dog lines are different: use the app's list with the
 Sparrows box ticked.
 
 <img src="media/app_blind.png" width="700" alt="The Optimal Blind Casting tab of the Dog reference">
@@ -94,9 +100,11 @@ so the second you press in matters more. Each game file's page draws its own, fr
 <sub><b>The close-up</b> of the wiggle-bum row (Sunny → No horse): cast anywhere in 61.9–62.9 s, let go at the 1st bite, 28%.</sub>
 
 **Dig into a window (v32.4).** In the close-up, **click a candle**: the chart keeps only the arrivals that make up that
-candle (the dog lines, at the timings, that have a Nut in that frame) and shows where else *their* Nut frames are — the
-clicked candle goes to 100%, its neighbours show the double or triple it sits in, and every candle those arrivals can't
-reach disappears, as on the Lucky Timer's freestyle once it knows your dog. The list under the chart shows each line's
+candle (the dog lines, at the timings, that have a Nut in that frame) and shows where else *their* Nut frames are — its
+neighbours show the double or triple it sits in, and every candle those arrivals can't reach disappears, as on the Lucky
+Timer's freestyle once it knows your dog. The clicked candle itself reads **100% by definition** (only the arrivals with a
+Nut there are kept, like filtering a class to the students who got question 5 right: question 5 is then 100%); the
+chart labels it so, with the share of the row it held. The news is in the *other* candles. The list under the chart shows each line's
 share of the row, how many points of the window's odds it adds, its odds if you are on it, and its runs of Nut frames.
 <kbd>←</kbd> <kbd>→</kbd> step one game frame, <kbd>Esc</kbd> clears (a second <kbd>Esc</kbd> closes). Tick **keep every
 candle when I click** for the other view: every candle stays and the dog lines without a Nut there dim.
@@ -111,6 +119,111 @@ chart shows only its exact Nut frames, each at 100% (▲ and white outlines mark
 in the strip are fractions; the timings show what they are made of.
 
 <img src="media/app_blind_timings.png" width="700" alt="A focused dog line and its timings with their exact Nut frames">
+
+**Try it: change the inputs (v32.5).** The close-up's **Try it** button opens a test bench for the row's number. Change
+**your press** — anywhere in a window of any width, or aimed at a moment with a spread (a bell curve, ±0–300 ms) — slide
+**where** you press, pick **which bite** you let go at, and tick off **dog lines** (what watching the dog does: it rules
+lines out). The candles and the odds follow live, and a line under the controls says how the number is made: each
+candle = the sum, over the lines that count, of the line's share × the share of its timings with a Nut in that frame; the
+odds = those candles averaged over the window, or weighted by the bell curve around the aim (the white line shows that
+number for every aim). With the row's own inputs it gives the row's odds exactly.
+
+<img src="media/app_try.png" width="700" alt="The close-up with Try it open: an aimed press with a spread">
+
+<sub><b>Try it</b> on the wiggle-bum row: aimed at 62.38 s with a ±100 ms spread instead of "anywhere in the second". The
+blue glow is the press's bell curve, the white line the odds for every aim (best aim on this chart: 62.58 s, 31%).</sub>
+
+---
+
+## How the odds are worked out
+Plain English first; every percentage on every page comes from these steps.
+
+**1. One random number generator, acted out by the dog.** Every random thing in the game — the dog's next move, when a
+fish bites, what it is — comes from one random number generator. The dog draws from it all the time, so what it does on
+the beach is a readout of where the generator is. The lab runs the real game in an emulator, so it can replay any moment
+exactly and record what happens.
+
+**2. The lab plays your route thousands of ways — the weights.** Nobody plays frame-perfect, so the lab played the route
+the way a good player might, in every combination: mashing the menus at 5 to 15 presses a second (every rhythm), turning in
+the house and at the crossroads at any moment that still reaches the next screen within a few frames of the fastest,
+taking the first beach cut on its frame or the next, starting on the beach up to half a second late, and cutting onto the pier anywhere across it. That is about 31,000
+plays for Sunny → No horse. Each play ends on one **dog line** (one path of the generator, which the dog acts out) reached
+at one **timing** (the same line a few frames earlier or later). That pair is an **arrival**. Every choice counts as equally
+likely within its window, so an arrival's **weight** is simply the share of all those plays that reach it.
+Picture a pachinko machine: each turn you take a frame early or late is a pin, the dog lines are the cups at the bottom, and
+a line's weight is how full its cup gets. On Sunny → No horse there are 84 dog lines; the most common holds 14% of the plays,
+6 lines hold half of them, 19 hold 90%, and a line comes in about 10 timings.
+- The weights are not measured on real players. If you always mash at the same speed, some lines come up more for you
+  than for "a good player"; the Lucky Timer learns that from your bite taps (L5 → *Your dog lines*).
+- Plays slower than these windows are not in the tables at all; the tool calls such attempts **off the tables**. The
+  sparrow mornings (menus 5–6 frames late, section 3.2) are a separate set of plays with their own table.
+
+**3. Every cast frame has a known outcome.** For every dog line and every cast frame (one per 1/30 s) up to 120 s after
+Jack stops, the lab recorded every bite and what it catches if you let go there — about 89,000 casts for Sunny → No horse.
+So once the line and the timing are known, each frame is a plain yes or no for the Power Nut: on the 1st bite (**green**), or
+on the 2nd if you hold the 1st (**gold**).
+
+**4. A bar is a share.** When the tool does not know your line, the bar (or candle) for one frame is the weighted share
+of the arrivals still in play whose cast on that frame lands the Nut. "28%" means: of every way a player who saw this could
+have got here, 28 in 100 (by weight) catch the Nut with a cast on that frame.
+
+**5. Your press is never exact.** The odds of a cast blur those bars with your press, like aiming a dart: the board is the
+bars, the spread is your hand. An aimed cast (Lucky Timer, the Dog reference's casts) uses a bell curve with the spread you
+set: ±150 ms means about 2 presses in 3 land within 150 ms of the aim. A blind window ("anywhere in that second") averages
+the 30 frames of the second, each alike.
+
+**6. Watching the dog rules arrivals out.** Seeing a sign keeps only the arrivals whose dog shows it — that is all an
+Optimal Blind Casting row is. The Lucky Timer's dog-watch keys work softly: each key multiplies every line by how well it
+fits (a key the line's dog does not show ×0.02, a turn of its dog you did not key ×0.1), then everything is scaled back to
+100%. That is Bayes' rule — weight before × fit = weight after — and it is exactly the % on a dog card.
+
+**7. Knowing the dog leaves only your hands.** With the right line, tuned to the right frame, nothing is averaged any
+more: the bars are yes or no. What is left is your press: a double (two neighbouring Nut frames, 67 ms) is worth about
+**29%** with a spread of ±150 ms and about **47%** at ±60 ms. Steady hands are worth more than anything else.
+
+**8. The yardstick.** 1 in 51 (2%) is the game's base chance per catch. Everything here is emulator data, checked frame by
+frame against the game, not measured on a console; the lab also played simulated runners through the real app against the
+emulator, and the odds shown were the odds they got.
+
+See it move: **Casting tables → click a picture → Try it**, or the **Dog practice** page below.
+
+---
+
+## Dog practice: try it without a console
+A README cannot run anything, so the test area is its own page on the site: **hub → your game file → Dog practice**
+(`dog-practice_<file>.html`, about 6 MB, works offline like the others). Every dog it plays is a real dog line of that game
+file, drawn by how often the route reaches it (its weight), at a real timing — or the one line you pick under **Dog**. The
+"TV" shows the end of the pier with Jack, and the dog in an inset (on your TV it sits at the lower-left edge). Three drills:
+
+- **1 · Tune the dog.** The dog card plays the same line as the TV, at the tool's guess of your timing: your Space tap off
+  by up to 150 ms, and the line reached a few frames earlier or later than usual — just as on the Lucky Timer after you pick
+  a dog. Step it with your tuning keys until it turns at the very moment the TV dog does, then press **Enter**. The result:
+  how many game frames off you were, and what that does to the line's next Nut casts (one frame off misses every single
+  frame; a double forgives one frame on one side). **TV speed** ½× and ¼× slow the TV down while you learn what "in
+  step" looks like.
+- **2 · Read the dog.** Key what you see with your dog-watch keys — the facing whenever it turns (two keys at once = a
+  diagonal), long animations on their keys — and watch the cards re-weight with the Lucky Timer's own matcher. When the
+  top card is your dog, press **Enter** (or click the one that is). Right or wrong comes back with how sure the tool was
+  when you picked.
+- **3 · Whole attempt.** Tap your start key the moment Jack stops, read the dog, **Enter** for the top card, tune it,
+  **Enter** again when it is in step. Its Nut frames scroll under the TV with a countdown to the next double; **hold** your
+  start key on one to cast (here it is your B button, as the Lucky Timer reads a held Space) and **let go** when the float
+  bites — the 1st bite for green, the 2nd for gold. The catch is the lab's record of the exact frame you cast on.
+
+**Your keys.** The page uses the keys of your Lucky Timer settings (facing on arrows or W A S D, your animation keys, your
+tuning keys, your start key, your reaction at READY; on the website every page shares them). A page saved to your computer
+keeps its own settings, so the keys can be changed on the page too (*change* next to the key list). Keys are matched by
+where they sit on the keyboard, like the Lucky Timer's, and their labels follow your layout (AZERTY, QWERTZ, …) where the
+browser tells it, or once you have typed the key on the site. Your results (last 30 of each drill) stay in your browser.
+
+<img src="media/practice_whole.png" width="760" alt="Dog practice, the whole attempt: the TV, the tuned dog card and its Nut frames">
+
+<sub><b>Whole attempt</b> (Sunny → No horse): Space tapped at READY, Enter took the top card (L1, 15%), the three frames
+below it tune it; under the TV the dog's own Nut frames scroll by with the countdown "NEXT SINGLE · GOLD in 4.3 s".</sub>
+
+<img src="media/practice_read.png" width="760" alt="Dog practice, reading the dog: five dog cards re-weighted by one arrow">
+
+<sub><b>Read the dog</b>: one arrow (↙) keyed; the most likely card (L1, 20%) sits on the right with its <kbd>Enter</kbd> tag.</sub>
 
 ---
 
@@ -166,7 +279,7 @@ you can. The tables cover loading up to **4 game frames (about 0.13 s) later tha
 
 ### 3.2 Sparrows at the door
 As Jack walks out of the house, look at the door: **two sparrows by the door** mean your menus were 5–6 frames late.
-That morning has its own table. Tick **Sparrows at the door** on the page (or press **S**) before the pier. No sparrows
+That morning has its own table (its own set of the lab's plays, section [How the odds are worked out](#how-the-odds-are-worked-out)). Tick **Sparrows at the door** on the page (or press **S**) before the pier. No sparrows
 by the door: leave it unticked. (Sparrows also appear on some slower mornings that no table covers.)
 
 ![The farm door on two mornings: no sparrows (left), two sparrows (right)](media/sparrows.png)
@@ -289,7 +402,10 @@ Lucky plan, and the picture of Jack with the key list.
   line sits that much early, and a dashed "ghost" line marks the unaltered moment.
 - **Bars** show the chance of a Power Nut for a cast at each moment, coloured by the bite the Nut comes on: **green** =
   let go at the **1st** bite, **gold** = hold through the 1st bite and let go at the **2nd**, **purple** = a later
-  bite.
+  bite. A bar's height = the share of the arrivals still in play (weighted by how often the route reaches them) that land
+  the Nut there, blurred by your press spread as a bell curve ([how](#how-the-odds-are-worked-out)).
+- **ⓘ What the bars mean** (under the histogram, v32.5) says the same for the mode you are in right now: the app's odds,
+  freestyle without a dog, or freestyle with your dog chosen.
 
 
 ![A preview of a lucky attempt with Freestyle off](media/app_preview.gif)
@@ -303,7 +419,8 @@ rows of buttons describing your run, each with its own best cast and odds:
   0.17–0.30 s late) / **Big fix** (a bigger one, 0.33–0.50 s late).
 - **2nd cut:** Any / **Early** / **Middle** / **Late** (where Jack stopped across the end of the pier).
 
-Pick what you actually did if you know it, or leave Any. ★ marks the best 2nd cut for that first step. With the
+Pick what you actually did if you know it, or leave Any: a preset only keeps the lab's plays that went that way, so its odds
+are those plays' odds. ★ marks the best 2nd cut for that first step. With the
 pier-end start the plain suggestion is roughly **20 s after your tap at about 11 %** (shown live in the app; it
 depends on the presets).
 
@@ -322,14 +439,16 @@ depends on the presets).
 
 ## 6. Layer 2 — find your dog and tune it to your N64
 Once you have tapped Space at the end of the pier, the **dog-watch** panel opens with **cards**. Each card plays what
-one dog line's dog is doing *right now*, with its share of the likelihood (e.g. "17 % L5 +3").
+one dog line's dog is doing *right now*, with its share of the likelihood (e.g. "17 % L5 +3"): the line's weight × how
+well it fits the keys you pressed, scaled so the cards add up to 100% ([how](#how-the-odds-are-worked-out)).
 - "**+3**" means three "sister" lines have become the very same dog by now; they are shown on one card.
 
 ![Finding your dog: the TV and the app side by side](media/app_dogwatch.gif)
 
 <sub><b>A real attempt, the TV and the app side by side</b> (the TV is the emulator running the same file and route; the close-up is the dog in the TV's lower-left corner). Space at READY; the cards play five dog lines; one arrow key as the dog turns (optional) and the matching card, L3, rises to the top on the right; click it; five presses of <b>[</b> line it up with the TV (−5 frames); the histogram now shows L3's own Power Nut cast frames.</sub>
 
-**1. Choose your dog.** When a card does what the dog on your TV is doing, **click it**. The other cards disappear and
+**1. Choose your dog.** When a card does what the dog on your TV is doing, **click it** — or, when it is the most likely
+card (the top one), press **Enter** (v32.5): no mouse needed. The other cards disappear and
 the panel becomes the **calibration view**: your dog drawn large, with three frames of it underneath (one game frame
 earlier, the tuned one, one later). The dog sits on the right by default (left / middle / right in Dog-watch options), so you can put it
 nearest your TV.
@@ -343,7 +462,7 @@ nearest your TV.
 
 **2. Tune it.** A card plays at the tool's best guess of your timing, so it can run a little early or late. Press
 **[** (earlier) and **]** (later) to move it one game frame (33 ms), or **Shift + [ / ]** for 10 frames, until the
-large dog turns **exactly** with the dog on your TV. The three small frames show what one frame either way looks like.
+large dog turns **exactly** with the dog on your TV, then press **Enter** (timing set). The three small frames show what one frame either way looks like. Practise this on the [Dog practice](#dog-practice-try-it-without-a-console) page.
 
 <img src="media/app_calibration.png" width="420" alt="The calibration view with numbered parts">
 
@@ -352,7 +471,7 @@ large dog turns **exactly** with the dog on your TV. The three small frames show
 **3. The histogram changes.** With a dog chosen, the histogram stops showing odds for "any dog". It shows **that dog's
 own Power Nut cast frames** as bars, at your tuned timing, and the cast suggestion re-aims to the best cast still
 ahead, on any bite. In the lab's simulated runs, attempts with the right dog chosen got about 30 % instead of
-about 12–13 % with no dog chosen.
+about 12–13 % with no dog chosen: knowing the line takes the averaging over every other line away.
 
 **After the cast, the cards stay lit:** the card plays its dog *after* a cast on one particular frame. A card that
 stays in step with your dog for more than about 3 s is the frame you landed on. Click it to **lock** that frame
@@ -403,7 +522,8 @@ attempt. Beside the box, pick the target: **Power Nut** (default), or large / me
 <sub><b>The same attempt, continued.</b> NEXT DOUBLE · GREEN counts down; press B on the ×2 bar (here with a Space tap as you cast, which marks it); hold B while the cast's thread swings up; when it stands upright the lamp says let go: the first nibble is the <b>Power Nut</b>, on the TV too. Then H. In the emulator, casts on the two frames of this double both give the Nut; the frames either side give a small fish.</sub>
 
 For a sense of scale (lab calculation): the best group of bars on a dog line is worth about **29 %** with a press
-spread of ±150 ms and about **47 %** at ±60 ms. In other words, steadier hands are worth more than anything else.
+spread of ±150 ms and about **47 %** at ±60 ms. With the dog known and tuned, the bars are yes or no, so the only thing
+left between you and the Nut is how close to the bar your press lands. In other words, steadier hands are worth more than anything else.
 
 ---
 
@@ -422,6 +542,7 @@ spread of ±150 ms and about **47 %** at ±60 ms. In other words, steadier hands
 ---
 
 ## 9. Practice drills
+For the dog itself (tuning, reading, a whole attempt with no console) see [Dog practice](#dog-practice-try-it-without-a-console).
 Under the picture of Jack:
 - **Cast + bite practice:** the whole motion as on the N64. The histogram counts down to CAST, you press Space (or a
   controller button on a USB pad) on the cue and **keep holding**, Jack casts, a bite comes 1.4–5.2 s later, and you
@@ -540,12 +661,13 @@ Mostly settings of the older "Dog Oracle" page, which this build no longer shows
 A manual method for when the live tool is not wanted: what the dog is doing as Jack stops at the end of the pier →
 which line you are likely on → how long to wait before casting (best-odds and quick casts per behaviour), the
 "harbinger" behaviours that give a line away, and a simple Space stopwatch (Space when Jack stops, Esc to stop; click
-a cast time in the tables to count down to it). Tabs: **Optimal Blind Casting** (the list above, first) · **First 10
+a cast time in the tables to count down to it). Every tab has a one-line ⓘ on what its numbers are; Optimal Blind Casting has
+a fold, *How these odds are worked out*. Tabs: **Optimal Blind Casting** (the list above, first) · **First 10
 seconds, by line** · **As you stop** · **Harbingers**. Casts reach 75 s after Jack stops (the Power Nut ends there); a
 cast after 40 s says so and needs the push ↘ at about 33 s (a cast after 73 s a second one at about 67 s); the
 stopwatch shows PUSH THE STICK ↘ NOW at those moments.
 Its own settings: **Table** (Beach-lineup2 for the file in section 2), **Sparrows at the door** (S), **How exact is your
-cast?** (±100 / 150 / 200 / 300 ms), **Aim for** best odds or a quick cast of **at least** n %, and **Your reaction when
+cast?** (±100 / 150 / 200 / 300 ms: the spread of the bell curve every aimed cast's odds are worked out with), **Aim for** best odds or a quick cast of **at least** n %, and **Your reaction when
 Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper copy.
 
 <img src="media/app_dogref.png" width="700" alt="The Casting tables page">
@@ -567,6 +689,8 @@ Jack stops** (ms, taken off your Space tap). **Print the tables** gives a paper 
 | **S** / **X** | before the pier | sparrows at the door / pier-only override (X: fade-in start only) |
 | **Arrows** (or WASD), **Numpad 0–9**, **R F G O B** | dog-watch | dog facing / long animations (section 4) |
 | **[ ]**, **Shift + [ ]** | dog chosen | move the dog 1 / 10 game frames |
+| **Enter** | dog-watch, no dog chosen yet | choose the most likely dog (the top card), as a click on it |
+| **Enter** | a dog chosen, before the cast | its timing is set (close the three tuning frames) |
 | **Enter** | after the cast | lock the frame of the card you are tuning |
 | **Backspace** | — | undo: the chosen dog, a removed card, the last arrow, a Freestyle cast mark |
 | **Delete** | dog-watch | remove the top card |
