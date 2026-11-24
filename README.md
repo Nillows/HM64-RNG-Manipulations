@@ -1,20 +1,24 @@
-# HM64 Power Nut Tool v32.6
+# HM64 Power Nut Tool v32.7
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
 and a baby come later) and three buttons — always the same — open that file's **Casting tables**, **Lucky Timer** and
 **Dog practice**. Each page is one file that holds
 only that game file's tables, runs entirely in your browser, needs no install and sends nothing anywhere (no network
-requests). Save a page (right-click its link in the hub → *Save link as…*) and it works offline.
+requests). Save a page (right-click its link in the hub → *Save link as…*) and it works offline. The site also has a
+**Guide** page (`guide.html`): how to set up each game file, the route and the beach, what to check when it does not work,
+and how it works in pictures. Every tool page links it, and its **Not working?** button opens a checklist that leads to
+the answers.
 
 <img src="media/hub.png" width="620" alt="The hub: tick boxes for the game file, then three buttons for its pages">
 
-<sub><b>The hub (v32.6).</b> Nothing ticked = Sunny → No horse. Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>
+<sub><b>The hub (v32.7).</b> Nothing ticked = Sunny → No horse. Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>
 (tick <i>I own the horse</i>), each with Casting tables, a Lucky Timer and Dog practice. Rainy mornings (horse / no horse)
 are being collected: ticking <i>Rainy morning</i> greys the buttons out until their tables are in; a marriage and a baby
 come later, each with its own tables. The hub remembers your ticks, and a link like <code>…/#sunny-horse</code> opens it on
 that file. Every page is beach-lineup2: the dog left
-in the far south-west corner of the beach; you pick your tables by your game file.</sub>
+in the far south-west corner of the beach; you pick your tables by your game file. Under the buttons: <b>Guide</b> and
+<b>Not working?</b>, both opened on the game file you ticked.</sub>
 
 Every random event in the game comes from one random number generator. The dog's behaviour on the beach is a
 readout of where that generator is, and an emulator lab has recorded, for every dog path ("line") and every cast frame
@@ -27,8 +31,9 @@ out](#how-the-odds-are-worked-out) says how, in plain English.
 
 ## Contents
 **Only want a stopwatch? Start with [Optimal Blind Casting](#optimal-blind-casting).** **Want to try it first, with no
-console? [Dog practice](#dog-practice-try-it-without-a-console).** **Where do the numbers come from? [How the odds are worked
-out](#how-the-odds-are-worked-out).**
+console? [Dog practice](#dog-practice-try-it-without-a-console).** **How can a dog tell you when to cast? [How it works: a
+leaf in a forest](#how-it-works-a-leaf-in-a-forest).** **Where do the numbers come from? [How the odds are worked
+out](#how-the-odds-are-worked-out).** **Something wrong? The site's Guide → Not working?**
 
 1. [Quick start](#1-quick-start)
 2. [Setting up the game file](#2-setting-up-the-game-file)
@@ -53,6 +58,20 @@ out](#how-the-odds-are-worked-out).**
    card that matches your TV, tune it with **[ ]**, and cast on one of its bars (sections 6–7). Cast and reel on the
    controller; the keyboard is only for the tool.
 
+Not working? Every tool page has a **Not working?** button in its footer: a short checklist, each item linked to its
+answer on the site's Guide page (which also has the setup and the route of sections 2–3).
+
+<img src="media/app_notworking.png" width="700" alt="The Not working? checklist over the Lucky Timer, and the footer with Guide and Not working?">
+
+<sub><b>Not working? (v32.7)</b> on the Lucky Timer; the Casting tables and Dog practice have the same button. The fold at the top
+lists what this page's game file needs; each line opens its answer in the guide in a new tab, so the attempt on the page is kept.
+<b>Guide</b> next to it opens the guide on this game file's setup.</sub>
+
+<img src="media/guide.png" width="620" alt="The guide page: your game file's setup, the route, the beach, Not working?, how it works">
+
+<sub><b>The guide page</b> (<code>guide.html</code>, linked from the hub and every tool page) opens on your game file: what it needs
+and how to make it, then the route, the beach, the Not working? answers and the pictures of
+<a href="#how-it-works-a-leaf-in-a-forest">How it works</a>.</sub>
 No tool at all? [Optimal Blind Casting](#optimal-blind-casting) below tells you, from what the dog does in the first 10 s, when to cast.
 No console to hand? [Dog practice](#dog-practice-try-it-without-a-console) lets you tune, read and fish real dog lines in the browser.
 
@@ -139,6 +158,104 @@ blue glow is the press's bell curve, the white line the odds for every aim (best
 
 ---
 
+## How it works: a leaf in a forest
+The tool's job is to find one moment to press B among billions of possible game states. Here is how, as a picture: a
+forest. Every picture is drawn from the lab's own records ([how they are made](#how-the-pictures-are-made)).
+
+**The forest.** Every random thing in the game — the dog's next move, when a fish bites, what it is — comes from one number,
+the random number generator. Every time anything asks for a random number, that number steps to a new value, and it can be
+any of about 4.3 billion values, from −2,147,483,648 to +2,147,483,647. Picture all its possible histories as a forest: as
+wide as all those values, and as tall as the game has been running. The cast that lands the Power Nut is a single leaf, on a
+single low branch of one tree, before that branch disappears into the canopy — where branches that started apart grow
+into each other (two different routes can reach the very same game state).
+
+![A leaf in a forest](media/forest_1_canopy.svg)
+
+**Why not search down from the leaf?** You could start at a leaf and follow its branch down to find its trunk. But at every
+fork it could have come either way, all the way down through the canopy of time to the forest floor, and even then you would
+end up with a handful of possible trunks and how likely each is — odds, not an answer. The picture does it for real: the
+most common dog line of Sunny → Horse (L1), traced back through every play the lab made, comes from all 7 menu timings
+(2%, 13%, 18%, 24%, 34%, 6%, 3%).
+
+![Searching down from the leaf](media/forest_2_backwards.svg)
+
+**So the tool grows the forest from the bottom up.** Switching the N64 on sets the number to 0 on every console: one shared
+seed that every forest grows from. The title screen and the menus draw 499 numbers by the time the house
+loads on the fastest menus. **The first exploit:** the tables only cover menus 0 to 6 game frames slower than the fastest,
+so the trunk splits into a crown of just **7 main branches** — the house loads at draw 499 to 505,
+one more draw for each frame late. Slower menus grow 9 more branches that the tables leave out, and
+that is what keeps the forest small enough to grow completely. Two of the 7 carry an identifier: menus 5 or 6 frames late put
+**two sparrows by the farm door** ([3.2](#32-sparrows-at-the-door)), and those two branches have their own table.
+
+![One seed, a crown of 7](media/forest_3_crown7.svg)
+
+**Sunlight.** Each screen grows the branch at its own speed: whatever is on screen asks for random numbers every frame, some
+things more than others. That is the sunlight on that layer, and it shines only as long as you are on that screen. On a sunny
+morning the farm, the crossroads and the ranch draw about one number per game frame; the horse file draws a few more (2 on
+the farm, 4 at the crossroads, 4 on the ranch) although the horse never comes on screen; rain outdoors draws 13 to 19 a frame —
+READY comes at draw 10,593 instead of 1,259. Same route, same clock, very different branches:
+that is why every game file needs its own tables.
+
+![Sunlight per screen](media/forest_4_sunlight.svg)
+
+**Three crowns on each branch.** Nobody walks frame-perfect, so the tables also cover a little slack after the menus: the
+turns in the house (up to 4 game frames), the turn at the crossroads (up to 3) and the beach —
+your first step (up to 15), the first cut (1) and the cut onto the pier (an
+11-frame window). That is 34 game frames, about 1.1 s, peppered over three places.
+Each of the 7 branches forks again at each place, but every fork still grows to the same height: READY, Jack stopped at the
+end of the pier. Branches from different crowns grow into each other: counted over all 7 there are 19 farm,
+54 ranch and 50 beach states, not 33 /
+116 / 114.
+
+![Each branch splits three more times](media/forest_5_three_crowns.svg)
+
+**The pier moment: group the branches by shape.** At READY there are still a lot of branches: on Sunny → Horse the lab's
+280,387,008 ways to play the route merge into 35,200 different plays on the beach and
+1,952 different arrivals at READY. Searching them all would be hopeless — but most of them are **the same
+branch, started a few frames later**: the same dog doing the same things, offset in time. Keep one of each and
+1,952 arrivals become **156 dog lines** (92% of the arrivals were copies). Fold in the
+lines that become the same dog after a few seconds (sister lines) and a normal morning has **21 shapes** to tell
+apart, a sparrow morning 16. That is the comparison that cut the dogs down in earlier versions.
+
+![Group the branches by shape](media/forest_6_pier.svg)
+
+**The leaves.** On each remaining branch, the leaves are the cast frames that land the Power Nut: **green** = let go on the
+first bite, **gold** = hold the first bite and let go on the second, **purple** = a later bite. L1 of Sunny → No horse has
+22 green, 43 gold and 2 purple leaves in its first 40 s; the first is a cast
+0.72 s after READY, and one game frame either side of it gives no Nut on the first bite.
+Casting changes the sunlight again — the line in the water draws numbers of its own — so you don't cast *at* a leaf: you cast
+so that what your cast sets going lands on it, like an interception.
+
+![The leaves](media/forest_7_leaves.svg)
+
+**Describing your dog describes your branch.** What the dog does after Jack stops is the shape of your branch, and each move
+you key narrows it down. On Sunny → No horse, after the dog's first move 6 lines still have L1's
+shape, after two moves 2, after four only L1. With enough of the dog seen, the tool knows which
+branch you are on and where its leaves are.
+
+![Describing the dog](media/forest_8_describe.svg)
+
+**But not how tall your tree has grown: the tuner.** Your N64 can be a few frames ahead of or behind the tables' copy of the
+same branch (each line comes in at about 10 timings). The tuner (<kbd>[</kbd> <kbd>]</kbd>, one game frame per press) slides the
+app's branch up or down until your dog turns at the very moment the card does — and then its leaves are at your N64's height too.
+
+![The tuner](media/forest_9_tuner.svg)
+
+**L1 across game files.** The most common dog line of each game file, side by side: horse or no horse, sunny or rainy (married
+and a baby will add rows later). Sunny with and without the horse turn out to share the **same L1 branch**: every move of the
+dog and every leaf, 3 game frames earlier on the horse file. The rainy cells fill in when the rain lab's tables
+are in; rain is a far more jagged branch.
+
+![L1 across game files](media/forest_10_punnet.svg)
+
+<a id="how-the-pictures-are-made"></a>**How the pictures are made.** `tools/forest_facts.py` reads the lab's runs (the stages
+of a dog-watch run, the reference route of each game file, the dog lines and casts of each table) into one facts file, and
+`tools/forest_svg.py` draws every picture from it — trees grown from the game's own generator, a dog line drawn as a branch
+with a kink at every change in what the dog does. When new tables come in (rain, then married and a baby), the same two
+commands redraw them with the new numbers.
+
+---
+
 ## How the odds are worked out
 Plain English first; every percentage on every page comes from these steps.
 
@@ -150,8 +267,8 @@ exactly and record what happens.
 **2. The lab plays your route thousands of ways — the weights.** Nobody plays frame-perfect, so the lab played the route
 the way a good player might, in every combination: mashing the menus at 5 to 15 presses a second (every rhythm), turning in
 the house and at the crossroads at any moment that still reaches the next screen within a few frames of the fastest,
-taking the first beach cut on its frame or the next, starting on the beach up to half a second late, and cutting onto the pier anywhere across it. That is about 31,000
-plays for Sunny → No horse. Each play ends on one **dog line** (one path of the generator, which the dog acts out) reached
+taking the first beach cut on its frame or the next, starting on the beach up to half a second late, and cutting onto the pier anywhere across it. On Sunny → No
+horse that comes to 30,976 different plays on the beach, each standing for its share of every menu rhythm and turn that leads to it. Each play ends on one **dog line** (one path of the generator, which the dog acts out) reached
 at one **timing** (the same line a few frames earlier or later). That pair is an **arrival**. Every choice counts as equally
 likely within its window, so an arrival's **weight** is simply the share of all those plays that reach it.
 Picture a pachinko machine: each turn you take a frame early or late is a pin, the dog lines are the cups at the bottom, and
@@ -254,9 +371,9 @@ tool's dog lines will not match your game.
    extra menu presses, which makes you later than the tables).
 4. The next morning must be sunny, with no cutscene when you wake up. If it rains, reload the day before and try again.
 
-**With a horse (Sunny → Horse).** The same file and the same route, with two differences. Owning the horse changes the
-random numbers at the ranch on the way whether or not you see it, so a file with a horse needs the horse tables, not
-the no-horse ones. And the horse must stay out of sight: leave it on the farm far from the house door, where it never
+**With a horse (Sunny → Horse).** The same file and the same route, with two differences. A file with the horse draws a
+few more random numbers on the way (2 more on the farm, 4 at the crossroads, 4 on the ranch) although the horse never comes
+on screen, so it needs the horse tables, not the no-horse ones. And the horse must stay out of sight: leave it on the farm far from the house door, where it never
 comes on screen while Jack walks from the door to the farm exit (a horse on screen draws more random numbers and can
 get in the way). The lab's file has the pony, not yet grown; a grown horse has not been tested.
 
