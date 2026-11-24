@@ -1,130 +1,108 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>HM64 Power Nut Tool v32.5</title>
+<title>HM64 Power Nut Tool v32.6</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 :root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d;--warn:#f0b35a}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,Segoe UI,sans-serif}
-.wrap{max-width:980px;margin:0 auto;padding:18px 16px 40px}
-h1{font-size:22px;margin:0 0 4px}h2{font-size:17px;margin:26px 0 8px;display:flex;gap:8px;align-items:baseline}h3{font-size:15px;margin:0}
+.wrap{max-width:860px;margin:0 auto;padding:18px 16px 40px}
+h1{font-size:22px;margin:0 0 4px}h2{font-size:16px;margin:22px 0 8px}
 a{color:var(--acc)}.mut{color:var(--mut)}.small{font-size:12.5px}
-.weathers{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px}
-.weather{background:#0f1c27;border:1px solid var(--line);border-radius:10px;padding:10px 12px}
-.weather>h2{margin:0 0 4px}.weather>p{margin:0 0 10px}
-.set{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:9px 11px;margin-top:10px}
-.set.ready{border-color:#3d7a57}.set .top{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
-.badge{font-size:11px;border:1px solid var(--line);border-radius:10px;padding:1px 8px;white-space:nowrap}
-.badge.ready{border-color:var(--ok);color:var(--ok)}.badge.collecting{border-color:var(--warn);color:var(--warn)}.badge.planned{color:var(--mut)}
-.pages{display:flex;flex-direction:column;gap:6px;margin:8px 0 4px}
-.page{display:block;text-decoration:none;color:var(--ink);border:1px solid #36546a;background:#1d3446;border-radius:7px;padding:6px 10px}
-.page:hover{border-color:var(--acc)}.page b{color:#fff}.page span{display:block;font-size:12.5px;color:var(--mut)}
-details{margin-top:6px}summary{cursor:pointer;color:#b9cbd8;font-size:13px}
+.box{background:#0f1c27;border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-top:14px}
+.ticks{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:6px 14px}
+.ticks label{display:flex;gap:8px;align-items:center;border:1px solid var(--line);border-radius:7px;padding:7px 10px;background:var(--panel);cursor:pointer;user-select:none}
+.ticks label:hover{border-color:var(--acc)}.ticks input{width:17px;height:17px;margin:0;accent-color:#6fb7ff}
+.ticks label.later{cursor:default;opacity:.55;border-style:dashed}.ticks label.later:hover{border-color:var(--line)}
+.ticks .sub{font-size:11px;color:var(--mut);margin-left:auto}
+.file{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:14px 0 2px}
+.file b{font-size:16px}.badge{font-size:11.5px;border:1px solid var(--line);border-radius:10px;padding:1px 9px;white-space:nowrap}
+.badge.ready{border-color:var(--ok);color:var(--ok)}.badge.collecting{border-color:var(--warn);color:var(--warn)}.badge.planned,.badge.none{color:var(--mut)}
+.go{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:10px 0 4px}
+.go a{display:flex;flex-direction:column;gap:2px;text-decoration:none;color:var(--ink);border:1px solid #36546a;background:#1d3446;border-radius:8px;padding:10px 12px;min-height:74px}
+.go a b{font-size:15px;color:#fff}.go a span{font-size:12px;color:var(--mut)}
+.go a:hover{border-color:var(--acc);background:#22405a}.go a.off{opacity:.4;pointer-events:none;border-style:dashed;background:var(--panel)}
+@media (max-width:640px){.go{grid-template-columns:1fr}}
+details{margin-top:8px}summary{cursor:pointer;color:#b9cbd8;font-size:13px}
 ul,ol{margin:6px 0 0;padding-left:20px}li{margin:3px 0}
-.later{display:flex;flex-wrap:wrap;gap:8px}.later div{border:1px dashed var(--line);border-radius:8px;padding:5px 10px}
-footer{margin-top:30px;border-top:1px solid var(--line);padding-top:10px}
+footer{margin-top:26px;border-top:1px solid var(--line);padding-top:10px}
 </style></head>
 <body><div class="wrap">
-<h1>HM64 Power Nut Tool <span class="mut small">v32.5</span></h1>
+<h1>HM64 Power Nut Tool <span class="mut small">v32.6</span></h1>
 <div>Catch the <b>Power Nut</b> from the ocean pier in <b>Harvest Moon 64</b> (USA, NTSC) on a real N64.</div>
 <p class="small mut">The dog on the beach shows where the game's random numbers are. The tables behind every page come from an
-emulator lab that played every dog path and every cast moment, and they hold for one kind of game file: pick the morning
-and the file you have. Each page is a single file with only that file's tables: save it (right-click the link →
-<i>Save link as…</i>) and it works offline, with nothing sent anywhere.</p>
+emulator lab, and they hold for one kind of game file: tick what is true of yours, then open its page. Each page is a single
+file with only that file's tables: save it (right-click → <i>Save link as…</i>) and it works offline, with nothing sent anywhere.</p>
 
-<div class="weathers">
-<section class="weather">
- <h2><span>☀</span> Sunny morning</h2>
- <p class="small mut">The morning you play is sunny and starts with no cutscene when you wake up. Any such day works.</p>
- <div class="set ready" id="sunny-no-horse">
-  <div class="top"><h3>No horse</h3><span class="badge ready">Ready</span></div>
-  <div class="small mut">Before you have a horse. The dog is left on the beach the day before.</div>
-  <div class="pages">
-   <a class="page" href="lucky-timer_sunny-no-horse.html"><b>Lucky Timer</b><span>The live tool. Tap Space when Jack stops at the end of the pier, match the dog on your TV, cast on its bars.</span></a>
-   <a class="page" href="casting-tables_sunny-no-horse.html"><b>Casting tables</b><span>No live tool needed: Optimal Blind Casting first, then the Dog reference: what the dog does as Jack stops tells you when to cast. A stopwatch is built in.</span></a>
-   <a class="page" href="dog-practice_sunny-no-horse.html"><b>Dog practice</b><span>Learn the dog without a console: tune a dog card to the TV, read a dog with your keys, or play a whole attempt to the catch, on this file&#x27;s real dog lines.</span></a>
-  </div>
-  <details open><summary>Your game file needs</summary>
-   <ul class="small">
-    <li>No horse yet. Anything that moves on the route and is not in the lab&#x27;s file (a horse, farm animals) can draw random numbers before the beach and send you down another path.</li>
-    <li>The fishing rod in Jack&#x27;s hand (equipped), not in the rucksack.</li>
-    <li>The dog left on the beach the day before, in the far south-west corner (bottom-left on screen), and not carried anywhere on the day you play. From the end of the pier it sits at the lower-left edge of the screen.</li>
-    <li>Saved in bed in the first diary slot (another slot means extra menu presses: later than the tables).</li>
-   </ul>
-   <div class="small" style="margin-top:6px"><b>How to make it</b></div>
-   <ol class="small">
-    <li>The day before: carry the dog to the beach, put it down in the farthest south-west (bottom-left) corner and leave it there.</li>
-    <li>Check the rod is in Jack&#x27;s hand and you have no horse.</li>
-    <li>Go home, go to bed and save in the first diary slot.</li>
-    <li>The next morning must be sunny with no wake-up cutscene. If it rains, reload the day before and sleep again.</li>
-   </ol>
-  </details>
- </div>
- <div class="set ready" id="sunny-horse">
-  <div class="top"><h3>Horse</h3><span class="badge ready">Ready</span></div>
-  <div class="small mut">You own the horse. The dog is left on the beach the day before, the horse stays out of sight on the farm.</div>
-  <div class="pages">
-   <a class="page" href="lucky-timer_sunny-horse.html"><b>Lucky Timer</b><span>The live tool. Tap Space when Jack stops at the end of the pier, match the dog on your TV, cast on its bars.</span></a>
-   <a class="page" href="casting-tables_sunny-horse.html"><b>Casting tables</b><span>No live tool needed: Optimal Blind Casting first, then the Dog reference: what the dog does as Jack stops tells you when to cast. A stopwatch is built in.</span></a>
-   <a class="page" href="dog-practice_sunny-horse.html"><b>Dog practice</b><span>Learn the dog without a console: tune a dog card to the TV, read a dog with your keys, or play a whole attempt to the catch, on this file&#x27;s real dog lines.</span></a>
-  </div>
-  <details open><summary>Your game file needs</summary>
-   <ul class="small">
-    <li>You own the horse. Owning it changes the random numbers at the ranch on the way, whether or not you see it, so a file with a horse needs these tables and not the no-horse ones.</li>
-    <li>The horse left on the farm far from the house door, where it never comes on screen while Jack walks from the door to the farm exit. A horse that comes on screen draws more random numbers (and can get in the way) and sends you down another path.</li>
-    <li>The lab&#x27;s file has the pony (not yet grown). A grown horse has not been tested.</li>
-    <li>The fishing rod in Jack&#x27;s hand (equipped), not in the rucksack.</li>
-    <li>The dog left on the beach the day before, in the far south-west corner (bottom-left on screen), and not carried anywhere on the day you play. From the end of the pier it sits at the lower-left edge of the screen.</li>
-    <li>Saved in bed in the first diary slot (another slot means extra menu presses: later than the tables).</li>
-   </ul>
-   <div class="small" style="margin-top:6px"><b>How to make it</b></div>
-   <ol class="small">
-    <li>The day before: carry the dog to the beach, put it down in the farthest south-west (bottom-left) corner and leave it there.</li>
-    <li>Make sure the horse is on the farm far from the house door, out of sight of the walk from the door to the farm exit (in the lab&#x27;s file it is at x 449, z −339 in game units).</li>
-    <li>Check the rod is in Jack&#x27;s hand.</li>
-    <li>Go home, go to bed and save in the first diary slot.</li>
-    <li>The next morning must be sunny with no wake-up cutscene. If it rains, reload the day before and sleep again.</li>
-   </ol>
-  </details>
- </div>
+<section class="box" id="hub">
+ <div class="small mut" style="margin-bottom:6px">Your game file — tick what is true of it:</div>
+ <div class="ticks" id="hubTicks"></div>
+ <div class="file"><b id="hubName"></b><span class="badge" id="hubBadge"></span></div>
+ <div class="small mut" id="hubSummary"></div>
+ <div class="go" id="hubGo"></div>
+ <div class="small mut" id="hubWhy"></div>
+ <details id="hubNeeds"><summary>Your game file needs, and how to make it</summary><div id="hubNeedsBody" class="small"></div></details>
 </section>
-<section class="weather">
- <h2><span>☂</span> Rainy morning</h2>
- <p class="small mut">Rainy mornings need tables of their own: outdoors the rain draws random numbers every frame, and no sparrows come to the farm.</p>
- <div class="set collecting" id="rainy-no-horse">
-  <div class="top"><h3>No horse</h3><span class="badge collecting">Tables being collected</span></div>
-  <div class="small mut">A rainy morning before you have a horse, the dog on the beach as for the sunny tables. Its tables are being collected in the lab.</div>
- </div>
- <div class="set collecting" id="rainy-horse">
-  <div class="top"><h3>Horse</h3><span class="badge collecting">Tables being collected</span></div>
-  <div class="small mut">A rainy morning with the horse, the dog on the beach as for the sunny tables. Its tables are being collected in the lab.</div>
- </div>
-</section>
-</div>
-
-<h2>Later</h2>
-<p class="small mut">More game-file circumstances will get their own tables, so a file further into the game can still use the tool.</p>
-<div class="later small">
- <div><b>Married</b> <span class="mut">· tables of their own</span></div>
- <div><b>A baby</b> <span class="mut">· one set of tables for each stage of growth</span></div>
-</div>
+<noscript><section class="box"><b>Every page</b><ul class="small">
+  <li><a href="lucky-timer_sunny-no-horse.html">Lucky Timer · Sunny, No horse</a></li>
+  <li><a href="casting-tables_sunny-no-horse.html">Casting tables · Sunny, No horse</a></li>
+  <li><a href="dog-practice_sunny-no-horse.html">Dog practice · Sunny, No horse</a></li>
+  <li><a href="lucky-timer_sunny-horse.html">Lucky Timer · Sunny, Horse</a></li>
+  <li><a href="casting-tables_sunny-horse.html">Casting tables · Sunny, Horse</a></li>
+  <li><a href="dog-practice_sunny-horse.html">Dog practice · Sunny, Horse</a></li>
+</ul></section></noscript>
 
 <h2>Before you start</h2>
 <ul class="small">
- <li><b>Match your file.</b> Open your circumstance above and check <i>Your game file needs</i>. A file that differs
-  (another weather, a horse, the dog somewhere else) puts the dog on paths the tables do not have.</li>
- <li><b>The route.</b> Everything from power-on to the end of the pier decides which dog path you get: play it the same,
-  as fast as possible, every time. The full route, every setting and the keys are in the
-  <a href="https://github.com/Nillows/HM64-RNG-Manipulations#readme">guide</a>.</li>
+ <li><b>Match your file.</b> Check <i>Your game file needs</i> above. A file that differs (another weather, a horse, the dog
+  somewhere else) puts the dog on paths the tables do not have.</li>
+ <li><b>The route.</b> Everything from power-on to the end of the pier decides which dog path you get: play it the same, as
+  fast as possible, every time. The route, every setting and the keys are in the <a href="https://github.com/Nillows/HM64-RNG-Manipulations#readme">guide</a>.</li>
+ <li><b>New to it?</b> Start with <i>Dog practice</i>: no console needed. <b>Where do the numbers come from?</b>
+  <a href="https://github.com/Nillows/HM64-RNG-Manipulations#how-the-odds-are-worked-out">How the odds are worked out</a>.</li>
  <li><b>Is my file right?</b> After a few Lucky Timer attempts with a Space tap at a bite, open <i>Setup &amp; review → L5 →
-  Is the app working?</i>. Bite taps that keep fitting no dog path (<i>off the tables</i>) mean the file, the menus or the
+  Is the app working?</i>: bite taps that keep fitting no dog path (<i>off the tables</i>) mean the file, the menus or the
   route do not match the lab's.</li>
- <li><b>Try it first.</b> Each ready file has a <i>Dog practice</i> page: tune a dog card to the TV, read a dog with your
-  keys, or play a whole attempt to the catch, on that file's real dog lines, with no console.</li>
- <li><b>Where the numbers come from.</b> Every percentage is a share of the lab's plays of the route that land the Nut:
-  <a href="https://github.com/Nillows/HM64-RNG-Manipulations#how-the-odds-are-worked-out">how the odds are worked out</a>.</li>
  <li>A desktop browser with a keyboard. Cast and reel on the controller; the keyboard is only for the tool.</li>
 </ul>
 
-<footer class="small mut">HM64 Power Nut Tool v32.5 · built 2026-11-23 · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source and files</a> ·
+<footer class="small mut">HM64 Power Nut Tool v32.6 · built 2026-11-24 · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source and files</a> ·
 the odds on every page are emulator data, not measured on a console.</footer>
-</div></body></html>
+</div>
+<script>const HUB={"version":"v32.6","traits":[{"id":"rainy","label":"Rainy morning","hint":"The morning you play is rainy (unticked: sunny, with no cutscene when you wake up)."},{"id":"horse","label":"I own the horse","hint":"You own the horse (a pony counts); it stays out of sight on the farm."},{"id":"married","label":"Married","later":true,"hint":"Later: married game files will get tables of their own."},{"id":"baby","label":"A baby","later":true,"hint":"Later: one set of tables for each stage of the baby's growth."}],"weathers":{"sunny":{"label":"Sunny","note":"The morning you play is sunny and starts with no cutscene when you wake up. Any such day works."},"rainy":{"label":"Rainy","note":"Rainy mornings need tables of their own: outdoors the rain draws random numbers every frame, and no sparrows come to the farm."}},"kinds":[{"kind":"casting","name":"Casting tables","blurb":"Optimal Blind Casting and the Dog reference, with a stopwatch: no live tool needed."},{"kind":"lucky","name":"Lucky Timer","blurb":"The live tool: tap Space when Jack stops, match the dog, cast on its bars."},{"kind":"practice","name":"Dog practice","blurb":"Learn the dog without a console: tune, read, play a whole attempt."}],"sets":[{"id":"sunny-no-horse","traits":{"rainy":false,"horse":false},"status":"ready","status_label":"Ready","summary":"Before you have a horse. The dog is left on the beach the day before.","needs":["No horse yet. Anything that moves on the route and is not in the lab's file (a horse, farm animals) can draw random numbers before the beach and send you down another path.","The fishing rod in Jack's hand (equipped), not in the rucksack.","The dog left on the beach the day before, in the far south-west corner (bottom-left on screen), and not carried anywhere on the day you play. From the end of the pier it sits at the lower-left edge of the screen.","Saved in bed in the first diary slot (another slot means extra menu presses: later than the tables)."],"make":["The day before: carry the dog to the beach, put it down in the farthest south-west (bottom-left) corner and leave it there.","Check the rod is in Jack's hand and you have no horse.","Go home, go to bed and save in the first diary slot.","The next morning must be sunny with no wake-up cutscene. If it rains, reload the day before and sleep again."],"links":{"lucky":"lucky-timer_sunny-no-horse.html","casting":"casting-tables_sunny-no-horse.html","practice":"dog-practice_sunny-no-horse.html"}},{"id":"sunny-horse","traits":{"rainy":false,"horse":true},"status":"ready","status_label":"Ready","summary":"You own the horse. The dog is left on the beach the day before, the horse stays out of sight on the farm.","needs":["You own the horse. Owning it changes the random numbers at the ranch on the way, whether or not you see it, so a file with a horse needs these tables and not the no-horse ones.","The horse left on the farm far from the house door, where it never comes on screen while Jack walks from the door to the farm exit. A horse that comes on screen draws more random numbers (and can get in the way) and sends you down another path.","The lab's file has the pony (not yet grown). A grown horse has not been tested.","The fishing rod in Jack's hand (equipped), not in the rucksack.","The dog left on the beach the day before, in the far south-west corner (bottom-left on screen), and not carried anywhere on the day you play. From the end of the pier it sits at the lower-left edge of the screen.","Saved in bed in the first diary slot (another slot means extra menu presses: later than the tables)."],"make":["The day before: carry the dog to the beach, put it down in the farthest south-west (bottom-left) corner and leave it there.","Make sure the horse is on the farm far from the house door, out of sight of the walk from the door to the farm exit (in the lab's file it is at x 449, z −339 in game units).","Check the rod is in Jack's hand.","Go home, go to bed and save in the first diary slot.","The next morning must be sunny with no wake-up cutscene. If it rains, reload the day before and sleep again."],"links":{"lucky":"lucky-timer_sunny-horse.html","casting":"casting-tables_sunny-horse.html","practice":"dog-practice_sunny-horse.html"}},{"id":"rainy-no-horse","traits":{"rainy":true,"horse":false},"status":"collecting","status_label":"Tables being collected","summary":"A rainy morning before you have a horse, the dog on the beach as for the sunny tables. Its tables are being collected in the lab.","needs":[],"make":[],"links":{}},{"id":"rainy-horse","traits":{"rainy":true,"horse":true},"status":"collecting","status_label":"Tables being collected","summary":"A rainy morning with the horse, the dog on the beach as for the sunny tables. Its tables are being collected in the lab.","needs":[],"make":[],"links":{}}]};</script>
+<script>
+(function () {
+  'use strict';
+  const $ = id => document.getElementById(id), esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const KEY = 'hm64v32_hub';
+  let pick = {};
+  try { pick = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { pick = {}; }
+  const fromHash = () => { const s = HUB.sets.find(x => '#' + x.id === location.hash); if (s) pick = Object.assign({}, s.traits); };
+  fromHash();
+  const now = () => HUB.traits.filter(t => !t.later).reduce((o, t) => (o[t.id] = !!pick[t.id], o), {});
+  const setOf = tr => HUB.sets.find(s => HUB.traits.filter(t => !t.later).every(t => !!(s.traits || {})[t.id] === tr[t.id])) || null;
+  function ticks() {
+    $('hubTicks').innerHTML = HUB.traits.map(t => `<label class="${t.later ? 'later' : ''}" title="${esc(t.hint || '')}"><input type="checkbox" data-t="${t.id}"${t.later ? ' disabled' : ''}${!t.later && pick[t.id] ? ' checked' : ''}> ${esc(t.label)}${t.later ? '<span class="sub">later</span>' : ''}</label>`).join('');
+    for (const cb of $('hubTicks').querySelectorAll('input:not([disabled])')) cb.onchange = () => { pick[cb.dataset.t] = cb.checked; save(); show(); };
+  }
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(now())); } catch (e) { /* storage off */ } }
+  function show() {
+    const tr = now(), s = setOf(tr), W = HUB.weathers[tr.rainy ? 'rainy' : 'sunny'];
+    $('hubName').textContent = `${W ? W.label : ''} · ${tr.horse ? 'Horse' : 'No horse'}`;
+    const st = s ? s.status : 'none';
+    $('hubBadge').className = 'badge ' + st; $('hubBadge').textContent = s ? s.status_label : 'No tables yet';
+    $('hubSummary').textContent = s ? s.summary : 'No tables for this game file yet.';
+    $('hubGo').innerHTML = HUB.kinds.map(k => {
+      const href = s && s.links[k.kind];
+      return `<a class="${href ? '' : 'off'}" data-kind="${k.kind}"${href ? ` href="${esc(href)}?v=${esc(HUB.version)}"` : ' aria-disabled="true"'}><b>${esc(k.name)}</b><span>${esc(k.blurb)}</span></a>`;
+    }).join('');
+    $('hubWhy').innerHTML = (W && W.note ? esc(W.note) + ' ' : '') + (s && st !== 'ready' ? `<b>${esc(s.status_label)}:</b> its pages come when the lab's tables are in.` : '');
+    const n = s && s.needs ? `<ul>${s.needs.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` + (s.make && s.make.length ? `<div style="margin-top:6px"><b>How to make it</b></div><ol>${s.make.map(x => `<li>${esc(x)}</li>`).join('')}</ol>` : '') : '';
+    $('hubNeeds').hidden = !n; $('hubNeedsBody').innerHTML = n;
+    if (s && location.hash !== '#' + s.id) history.replaceState(null, '', '#' + s.id);
+  }
+  window.addEventListener('hashchange', () => { fromHash(); ticks(); show(); });
+  ticks(); show();
+  window.HM64Hub = { show, setOf, now };
+})();
+</script>
+</body></html>

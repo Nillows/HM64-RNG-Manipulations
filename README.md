@@ -1,15 +1,19 @@
-# HM64 Power Nut Tool v32.5
+# HM64 Power Nut Tool v32.6
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
-The site's front page (`index.html`) is a **hub**: pick the morning you play (sunny / rainy) and your game file (horse or
-not), and it links to that file's pages: the **Lucky Timer**, the **Casting tables** and **Dog practice**. Each page is one file that holds
+The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
+and a baby come later) and three buttons — always the same — open that file's **Casting tables**, **Lucky Timer** and
+**Dog practice**. Each page is one file that holds
 only that game file's tables, runs entirely in your browser, needs no install and sends nothing anywhere (no network
 requests). Save a page (right-click its link in the hub → *Save link as…*) and it works offline.
 
-<img src="media/hub.png" width="620" alt="The hub: sunny and rainy mornings, each game file with its pages">
+<img src="media/hub.png" width="620" alt="The hub: tick boxes for the game file, then three buttons for its pages">
 
-<sub><b>The hub.</b> Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>, each with a Lucky Timer, Casting tables and Dog practice. Rainy mornings (horse / no horse) are
-being collected; a marriage and a baby come later, each with its own tables. Every page is beach-lineup2: the dog left
+<sub><b>The hub (v32.6).</b> Nothing ticked = Sunny → No horse. Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>
+(tick <i>I own the horse</i>), each with Casting tables, a Lucky Timer and Dog practice. Rainy mornings (horse / no horse)
+are being collected: ticking <i>Rainy morning</i> greys the buttons out until their tables are in; a marriage and a baby
+come later, each with its own tables. The hub remembers your ticks, and a link like <code>…/#sunny-horse</code> opens it on
+that file. Every page is beach-lineup2: the dog left
 in the far south-west corner of the beach; you pick your tables by your game file.</sub>
 
 Every random event in the game comes from one random number generator. The dog's behaviour on the beach is a
@@ -41,8 +45,8 @@ out](#how-the-odds-are-worked-out).**
 ---
 
 ## 1. Quick start
-1. Open the hub in a **desktop browser with a keyboard** (Chrome recommended for now) and pick your morning and file,
-   e.g. **Sunny → No horse → Lucky Timer**. A page is 24–28 MB and takes a few seconds to load.
+1. Open the hub in a **desktop browser with a keyboard** (Chrome recommended for now), tick what is true of your file
+   (nothing ticked = Sunny → No horse) and press **Lucky Timer**. A page is 24–28 MB and takes a few seconds to load.
 2. Make the game file described in section 2 (or get a copy of one).
 3. Nothing to set up: the page opens ready (section 4).
 4. Play: walk the route (section 3) and **tap Space once the moment Jack stops at the end of the pier**. Click the dog
@@ -500,6 +504,10 @@ attempt. Beside the box, pick the target: **Power Nut** (default), or large / me
   catch can be reeled in. Once you pass a bar, its thread's top stays on the white line and the thread swings upright.
   **When it stands straight up, let go of B** (only if you cast on that bar). The lamp says it too: **GREEN THREAD · LET
   GO IN 1.2 s → LET GO NOW**.
+  Don't want the lane? Untick **⚙ Settings → Lucky Timer → Show the release window under the histogram** (v32.6): the
+  lane and its threads go, the bars take the whole histogram as before the lane came, and the lamp still counts down to
+  each let-go. In the app's own odds (no dog chosen) the same box hides the lane of bites after the cast with its
+  release band.
 - **WAKE JACK** lines keep coming every 33.4 s until you cast (section 3.6).
 
 ![Freestyle with the Power Nut target, the large-fish target, and Freestyle off](media/app_targets.png)
@@ -633,6 +641,7 @@ Under the picture of Jack:
 | **Hands on B (stop logging) before the cast (s)** | Dog-watch logging closes this long before the cast (default 2 s). |
 | **Dog-watch keys** | Reassign the animation keys (defaults in section 4) and the earlier / later card keys. Keys the tool itself uses are refused. **Reset these keys** returns to the defaults. |
 | **Release line** | Show the pink release line (normal mode: best blind release; Freestyle: the middle of your marked cast's window). |
+| **Release window** (v32.6) | Show the release window under the histogram: in Freestyle the "let go here" lane and the threads to it; otherwise the lane of bites after the cast with its release band. Off: the cast bars take the whole histogram; the lamp's let-go countdown stays. On by default. |
 | **Cast tap** + precision | Optional: also tap Space when you press B, so the tool knows your real cast time. |
 | **Glow around the screen edge** | The lamp's colour around the whole screen edge, for the corner of your eye. In Freestyle it also covers the LAST DOUBLE pulse. |
 | **Facing when casting** SE / E | Only changes the picture of Jack. |
