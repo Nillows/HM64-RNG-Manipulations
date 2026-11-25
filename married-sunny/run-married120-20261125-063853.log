@@ -1924,3 +1924,36 @@ fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by
 ==> married-sunny-d140c90 block 4 of 5  (Wed 09:56)
 fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..5398 VIs after READY on the heavy lines (10), 1431 casts, each held to 8398 VIs after READY (and to its 2nd bite)
 [FD block 4] 65 jobs, 0 already done, 65 to run
+[FD block 4] 5/65  8.6 jobs/min  eta 7 min
+[FD block 4] 10/65  16.0 jobs/min  eta 3 min
+[FD block 4] 15/65  14.8 jobs/min  eta 3 min
+[FD block 4] 20/65  17.0 jobs/min  eta 3 min
+[FD block 4] 25/65  20.4 jobs/min  eta 2 min
+[FD block 4] 30/65  18.9 jobs/min  eta 2 min
+[FD block 4] 35/65  19.5 jobs/min  eta 2 min
+[FD block 4] 40/65  21.4 jobs/min  eta 1 min
+[FD block 4] 45/65  21.6 jobs/min  eta 1 min
+[FD block 4] 50/65  20.4 jobs/min  eta 1 min
+[FD block 4] 55/65  22.0 jobs/min  eta 0 min
+[FD block 4] 60/65  23.0 jobs/min  eta 0 min
+[FD block 4] 65/65  22.3 jobs/min  eta 0 min
+  block 4 done in 2 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 2 | 40.1 – 80.2 · heavy | 30 | 8953 | 8953 | 0 | 8323 / 0 / 630 | 8953 / 0 / 0 | 5.4 | 343 (3.8%) |
+| 3 | 40.1 – 80.2 · other | 90 | 11184 | 11184 | 0 | 9294 / 0 / 1890 | 11184 / 0 / 0 | 5.3 | 401 (3.6%) |
+| 4 | 80.2 – 90.3 · heavy | 10 | 1431 | 1431 | 0 | 1431 / 0 / 0 | 1431 / 0 / 0 | 3.9 | 0 (0.0%) |
+
+
+==> married-sunny-d140c90 block 5 of 5  (Wed 09:59)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..5398 VIs after READY on the other lines (17), 2169 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 5] 101 jobs, 0 already done, 101 to run
+[FD block 5] 5/101  9.5 jobs/min  eta 10 min
+[FD block 5] 10/101  17.9 jobs/min  eta 5 min
+[FD block 5] 15/101  25.6 jobs/min  eta 3 min
+[FD block 5] 20/101  18.1 jobs/min  eta 4 min
+[FD block 5] 25/101  20.9 jobs/min  eta 4 min
+[FD block 5] 30/101  24.4 jobs/min  eta 3 min
+[FD block 5] 35/101  19.8 jobs/min  eta 3 min
+[FD block 5] 40/101  21.8 jobs/min  eta 3 min
+[FD block 5] 45/101  23.6 jobs/min  eta 2 min
