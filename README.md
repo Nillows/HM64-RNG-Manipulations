@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.20
+# HM64 Power Nut Tool v32.21
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -254,13 +254,13 @@ dog a few seconds after READY:
 
 The rainy Casting tables have a **Wide windows** tab for this: per line, every run of 3 or more game frames in a row
 (0.1 s and up) in which at least half of the line's arrivals catch the Nut on the same bite, with its cast and odds — the
-long purple runs the Lucky Timer shows for a tuned dog (L6: 70.70–70.80 s, the 5th bite; L18: 108.31–108.68 s, ×12
+long runs of one colour the Lucky Timer shows for a tuned dog (L6: 70.70–70.80 s, the 5th bite; L18: 108.31–108.68 s, ×12
 frames, the 3rd bite, 75%; L9: 21.06–21.40 s, ×11 frames, the 1st bite, 62%).
 
 <img src="media/app_wide.png" width="700" alt="The Wide windows tab of the rainy Casting tables">
 
 <sub><b>Wide windows</b> (Rainy → No horse, v32.19): per line its dog's first moves, the run of frames (green = 1st bite,
-gold = 2nd, purple = later; ×n = frames in a row), the cast, the bite to let go at and when it comes, the odds.</sub>
+gold = 2nd, purple = 3rd, red = 4th, orange = 5th, blue = 6th; ×n = frames in a row), the cast, the bite to let go at and when it comes, the odds.</sub>
 
 **What you cast into (v32.2).** Every row has a small picture of its window: the cast histogram of that row's arrivals
 from 2 s before the window to 2 s after, one column per game frame (1/30 s). Green = the Nut on the 1st bite, gold =
@@ -450,7 +450,7 @@ branch whose first bite, at 28.4 s, is a small fish.
 ![The leaves: only a cast grows them](media/forest_7_leaves.svg)
 
 Mark every cast moment that grows a leaf and you get the strip at the bottom of the picture — **green** = the Nut on the first
-bite, **gold** = on the second (hold the first), **purple** = a later bite; L1 has 22 green, 43 gold and 2 purple in its
+bite, **gold** = on the second (hold the first), **purple** = on the third (later bites: red, orange, blue); L1 has 22 green, 43 gold and 2 purple in its
 first 40 s — and that strip is what the app's bars show. You don't cast *at* a leaf: you cast at the moment that grows one,
 like an interception.
 
@@ -788,12 +788,16 @@ Lucky plan, and the picture of Jack with the key list.
   glow around the screen edge all hit zero at that same moment. If the tool has learned that you press late, the bold
   line sits that much early, and a dashed "ghost" line marks the unaltered moment.
 - **Bars** show the chance of a Power Nut for a cast at each moment, coloured by the bite the Nut comes on: **green** =
-  let go at the **1st** bite, **gold** = hold through the 1st bite and let go at the **2nd**, **purple** = a later
-  bite (v32.19: lighter to darker for the 3rd, 4th, 5th and 6th-or-later bite, and freestyle writes the bite number on
-  every purple group; on rain about one purple run in ten mixes bites, e.g. 6-6-6-5). A bar's height = the share of the arrivals still in play (weighted by how often the route reaches them) that land
+  let go at the **1st** bite, **gold** = hold through the 1st bite and let go at the **2nd**, then one colour per
+  bite: **purple** = the **3rd**, **red** = the **4th**, **orange** = the **5th**, **blue** = the **6th** or later
+  (v32.21; freestyle also writes the bite number on every group of bite 3 and later, so a run like 6-6-6-5 reads as
+  three blue bars and an orange one). A bar's height = the share of the arrivals still in play (weighted by how often the route reaches them) that land
   the Nut there, blurred by your press spread as a bell curve ([how](#how-the-odds-are-worked-out)).
 - **ⓘ What the bars mean** (under the histogram, v32.5) says the same for the mode you are in right now: the app's odds,
   freestyle without a dog, or freestyle with your dog chosen.
+
+<img src="media/app_bitecolours.png" width="731" alt="Freestyle on a rainy dog line: bars in the colour of their bite, with the bite number on bite 3 and later">
+<sub>Freestyle on a rainy line (L11): green 1st bite, gold 2nd, red 4th, orange 5th, blue 6th and later (the 7 and 8 written on the bars).</sub>
 
 
 ![A preview of a lucky attempt with Freestyle off](media/app_preview.gif)
@@ -932,7 +936,7 @@ left between you and the Nut is how close to the bar your press lands. In other 
 <sub><b>L4 after the attempt above.</b> One Power Nut in one try; the report shows the target (a double, 67 ms wide), where your Space tap landed (INSIDE, on bar 2 of 2) and what to let go at. <b>Remove</b> takes an attempt out of everything the tool learned.</sub>
 
 **Around the target (v32.20).** A freestyle report also shows what a cast on each frame **around** the target would
-have caught **at the target's bite** — the moment you let go: a full bar = the Power Nut (green / gold / purple by bite,
+have caught **at the target's bite** — the moment you let go: a full bar = the Power Nut (in its bite's colour,
 with its number), a shorter grey bar = a fish (**S** / **M** / **L** and which bite), **no bar** = that frame has no
 bite at that moment (a cast there holds straight through it). So when you pull up a fish, find its size next to the
 target: only on the frames before it = you were early, only after = late. The text lists the 6 frames on each side and
