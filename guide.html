@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>Guide · HM64 Power Nut Tool v32.17</title>
+<title>Guide · HM64 Power Nut Tool v32.18</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 :root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d;--warn:#f0b35a;--gold:#e7c14a}
@@ -43,7 +43,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:10px}
 </script>
 <nav class="top"><a href="index.html">⌂ Hub</a><span class="here">Guide</span><a class="nw" data-keep href="not-working.html">Not working?</a><a data-keep href="how-it-works.html">How it works</a><a href="settings.html">Settings</a><a href="problem.html">The problem</a><a href="deck.html">The deck</a></nav>
 <div class="wrap">
-<h1>Guide <span class="mut small">HM64 Power Nut Tool v32.17</span></h1>
+<h1>Guide <span class="mut small">HM64 Power Nut Tool v32.18</span></h1>
 <div class="mut">How to set up your game file and walk the route to the end of the pier. Every page of the tool (Lucky Timer,
 Casting tables, Dog practice) assumes this setup and this route. Something wrong? <a class="nw" data-keep href="not-working.html">Not working?</a>
 How the tool finds your cast: <a data-keep href="how-it-works.html">How it works</a>.</div>
@@ -56,32 +56,34 @@ game's random numbers before you reach the pier, so each has tables of its own. 
 <details class="set" id="setup-sunny-no-horse" data-set="sunny-no-horse"><summary>Sunny · No horse<span class="badge ready">Ready</span><span class="yours-tag">← yours</span></summary>
 <div class="in"><p>Before you have a horse. The dog is left on the beach the day before.</p>
 <b>What the file needs</b><ul><li>No horse yet. Anything that moves on the route and is not in the lab&#x27;s file (a horse, farm animals) can draw random numbers before the beach and send you down another path.</li><li>The fishing rod in Jack&#x27;s hand (equipped), not in the rucksack.</li><li>The dog left on the beach the day before, in the far south-west corner (bottom-left on screen), and not carried anywhere on the day you play. From the end of the pier it sits at the lower-left edge of the screen.</li><li>Saved in bed in the first diary slot (another slot means extra menu presses: later than the tables).</li></ul>
-<b>How to make it</b><ol><li>The day before: carry the dog to the beach, put it down in the farthest south-west (bottom-left) corner and leave it there.</li><li>Check the rod is in Jack&#x27;s hand and you have no horse.</li><li>Go home, go to bed and save in the first diary slot.</li><li>The next morning must be sunny with no wake-up cutscene. If it rains, reload the day before and sleep again.</li></ol>
+<b>How to make it</b><ol><li>The day before: carry the dog to the beach, put it down in the farthest south-west (bottom-left) corner and leave it there.</li><li>Check the rod is in Jack&#x27;s hand and you have no horse.</li><li>Go home, go to bed and save in the first diary slot.</li><li>The next morning must be sunny with no wake-up cutscene. If it rains, tick Rainy morning on the hub and use the rainy pages (the same file), or reload the day before and sleep again.</li></ol>
 <div class="pages small">Its pages: <a href="lucky-timer_sunny-no-horse.html">Lucky Timer</a><a href="casting-tables_sunny-no-horse.html">Casting tables</a><a href="dog-practice_sunny-no-horse.html">Dog practice</a></div>
 </div></details>
 <details class="set" id="setup-sunny-horse" data-set="sunny-horse"><summary>Sunny · Horse<span class="badge ready">Ready</span><span class="yours-tag">← yours</span></summary>
 <div class="in"><p>You own the horse. The dog is left on the beach the day before, the horse stays out of sight on the farm.</p>
 <b>What the file needs</b><ul><li>You own the horse. A file with the horse draws a few more random numbers on the way (on the farm, at the crossroads and on the ranch) even though the horse never comes on screen, so it needs these tables and not the no-horse ones.</li><li>The horse left on the farm far from the house door, where it never comes on screen while Jack walks from the door to the farm exit. A horse that comes on screen draws more random numbers (and can get in the way) and sends you down another path.</li><li>The lab&#x27;s file has the pony (not yet grown). A grown horse has not been tested.</li><li>The fishing rod in Jack&#x27;s hand (equipped), not in the rucksack.</li><li>The dog left on the beach the day before, in the far south-west corner (bottom-left on screen), and not carried anywhere on the day you play. From the end of the pier it sits at the lower-left edge of the screen.</li><li>Saved in bed in the first diary slot (another slot means extra menu presses: later than the tables).</li></ul>
-<b>How to make it</b><ol><li>The day before: carry the dog to the beach, put it down in the farthest south-west (bottom-left) corner and leave it there.</li><li>Make sure the horse is on the farm far from the house door, out of sight of the walk from the door to the farm exit (in the lab&#x27;s file it is at x 449, z −339 in game units).</li><li>Check the rod is in Jack&#x27;s hand.</li><li>Go home, go to bed and save in the first diary slot.</li><li>The next morning must be sunny with no wake-up cutscene. If it rains, reload the day before and sleep again.</li></ol>
+<b>How to make it</b><ol><li>The day before: carry the dog to the beach, put it down in the farthest south-west (bottom-left) corner and leave it there.</li><li>Make sure the horse is on the farm far from the house door, out of sight of the walk from the door to the farm exit (in the lab&#x27;s file it is at x 449, z −339 in game units).</li><li>Check the rod is in Jack&#x27;s hand.</li><li>Go home, go to bed and save in the first diary slot.</li><li>The next morning must be sunny with no wake-up cutscene. If it rains, tick Rainy morning on the hub and use the rainy pages (the same file), or reload the day before and sleep again.</li></ol>
 <div class="pages small">Its pages: <a href="lucky-timer_sunny-horse.html">Lucky Timer</a><a href="casting-tables_sunny-horse.html">Casting tables</a><a href="dog-practice_sunny-horse.html">Dog practice</a></div>
 </div></details>
-<details class="set" id="setup-rainy-no-horse" data-set="rainy-no-horse"><summary>Rainy · No horse<span class="badge collecting">Tables being collected</span><span class="yours-tag">← yours</span></summary>
-<div class="in"><p>A rainy morning before you have a horse, the dog on the beach as for the sunny tables. Its tables are being collected in the lab.</p>
-
-
-<div class="small mut">No pages yet: its tables are still being collected. Until then, play a sunny morning (reload the day before and sleep again).</div>
+<details class="set" id="setup-rainy-no-horse" data-set="rainy-no-horse"><summary>Rainy · No horse<span class="badge ready">Ready</span><span class="yours-tag">← yours</span></summary>
+<div class="in"><p>A rainy morning before you have a horse. The dog is left on the beach the day before, as for the sunny tables.</p>
+<b>What the file needs</b><ul><li>A rainy morning: it is raining when Jack walks out of the house. Outdoors the rain draws random numbers every frame, so these are other dog lines than on a sunny morning. No sparrows come to the farm in the rain: one table covers menus 0–6 frames late, and the rainy pages have no sparrow box.</li><li>No horse yet. Anything that moves on the route and is not in the lab&#x27;s file (a horse, farm animals) can draw random numbers before the beach and send you down another path.</li><li>The fishing rod in Jack&#x27;s hand (equipped), not in the rucksack.</li><li>The dog left on the beach the day before, in the far south-west corner (bottom-left on screen), and not carried anywhere on the day you play. From the end of the pier it sits at the lower-left edge of the screen.</li><li>Saved in bed in the first diary slot (another slot means extra menu presses: later than the tables).</li></ul>
+<b>How to make it</b><ol><li>The day before: carry the dog to the beach, put it down in the farthest south-west (bottom-left) corner and leave it there.</li><li>Check the rod is in Jack&#x27;s hand and you have no horse.</li><li>Go home, go to bed and save in the first diary slot.</li><li>The next morning must be rainy with no wake-up cutscene. If it is sunny, untick Rainy morning on the hub and use the sunny pages (the same file), or reload the day before and sleep again.</li></ol>
+<div class="pages small">Its pages: <a href="lucky-timer_rainy-no-horse.html">Lucky Timer</a><a href="casting-tables_rainy-no-horse.html">Casting tables</a><a href="dog-practice_rainy-no-horse.html">Dog practice</a></div>
 </div></details>
-<details class="set" id="setup-rainy-horse" data-set="rainy-horse"><summary>Rainy · Horse<span class="badge collecting">Tables being collected</span><span class="yours-tag">← yours</span></summary>
-<div class="in"><p>A rainy morning with the horse, the dog on the beach as for the sunny tables. Its tables are being collected in the lab.</p>
-
-
-<div class="small mut">No pages yet: its tables are still being collected. Until then, play a sunny morning (reload the day before and sleep again).</div>
+<details class="set" id="setup-rainy-horse" data-set="rainy-horse"><summary>Rainy · Horse<span class="badge ready">Ready</span><span class="yours-tag">← yours</span></summary>
+<div class="in"><p>A rainy morning with the horse. The dog is left on the beach the day before, the horse stays out of sight on the farm.</p>
+<b>What the file needs</b><ul><li>A rainy morning: it is raining when Jack walks out of the house. Outdoors the rain draws random numbers every frame, so these are other dog lines than on a sunny morning. No sparrows come to the farm in the rain: one table covers menus 0–6 frames late, and the rainy pages have no sparrow box.</li><li>You own the horse. A file with the horse draws two more random numbers on the farm (the pony) even though it never comes on screen. On a rainy morning the rain swallows them on most paths but not on all, so this file needs these tables and not the rainy no-horse ones.</li><li>The horse left on the farm far from the house door, where it never comes on screen while Jack walks from the door to the farm exit. A horse that comes on screen draws more random numbers (and can get in the way) and sends you down another path.</li><li>The lab&#x27;s file has the pony (not yet grown). A grown horse has not been tested.</li><li>The fishing rod in Jack&#x27;s hand (equipped), not in the rucksack.</li><li>The dog left on the beach the day before, in the far south-west corner (bottom-left on screen), and not carried anywhere on the day you play. From the end of the pier it sits at the lower-left edge of the screen.</li><li>Saved in bed in the first diary slot (another slot means extra menu presses: later than the tables).</li></ul>
+<b>How to make it</b><ol><li>The day before: carry the dog to the beach, put it down in the farthest south-west (bottom-left) corner and leave it there.</li><li>Make sure the horse is on the farm far from the house door, out of sight of the walk from the door to the farm exit (in the lab&#x27;s file it is at x 449, z −339 in game units).</li><li>Check the rod is in Jack&#x27;s hand.</li><li>Go home, go to bed and save in the first diary slot.</li><li>The next morning must be rainy with no wake-up cutscene. If it is sunny, untick Rainy morning on the hub and use the sunny pages (the same file), or reload the day before and sleep again.</li></ol>
+<div class="pages small">Its pages: <a href="lucky-timer_rainy-horse.html">Lucky Timer</a><a href="casting-tables_rainy-horse.html">Casting tables</a><a href="dog-practice_rainy-horse.html">Dog practice</a></div>
 </div></details>
 
 <p class="small mut"><b>Is my file right?</b> The dog's exact spot matters: the lab found that what counts is which 32-unit tile of the
 beach the dog stands on, and a different tile shifts every dog line. You cannot see tiles, so use the tool's own check: after a few
 Lucky Timer attempts in which you tapped Space at a bite, open <i>Setup &amp; review → L5 → Is the app working?</i>. If your bite
-taps keep fitting no dog line (<i>off the tables</i>), your file, your menu speed or your route does not match the lab's.</p>
+taps keep fitting no dog line (<i>off the tables</i>), your file, your menu speed or your route does not match the lab's. Within the tile
+the exact spot matters only now and then: the lab's files (their dogs 2.2 units apart on the same tile) share nearly all their dog lines,
+and on those lines 97–99% of cast moments have the same bites; the rest differ where the dog walks off the screen a moment earlier or later.</p>
 
 <h2 id="route">2 · The route</h2>
 <p>Everything from power-on to the bottom of the beach's back wall decides which dog line you get, and the cut onto the pier
@@ -90,16 +92,19 @@ hesitations are expected: the tables cover a range of human timings (<a href="ho
 
 <h3 id="menus">2.1 Power-on and menus</h3>
 <p>Turn the console on and <b>mash Start, then A</b>, through the title screen and the diary, to load your file as fast as you
-can. The tables cover reaching the house up to <b>6 game frames (0.2 s)</b> later than the fastest possible: 0–4 frames late is
-the main table, 5–6 frames late has its own (the sparrow morning, next). Slower is off the tables.</p>
+can. The tables cover reaching the house up to <b>6 game frames (0.2 s)</b> later than the fastest possible: <span data-when="sunny">0–4 frames late is
+the main table, 5–6 frames late has its own (the sparrow morning, next).</span><span data-when="rainy" hidden>on a rainy morning one table
+covers all of them (no sparrows in the rain, next).</span> Slower is off the tables.</p>
 <figure><img src="media/menus.gif" width="400" loading="lazy" alt="Power-on to the house: mash Start, then A"><figcaption>Power-on to the house at full speed: mash <b>Start</b> through the logos and the title, then <b>A</b> through the diary.</figcaption></figure>
 
 <h3 id="sparrows">2.2 Sparrows at the door</h3>
-<p>As Jack walks out of the house, look at the door: <b>two sparrows by the door</b> mean your menus were 5–6 frames late. That
+<p data-when="rainy" hidden><b>Not on a rainy morning.</b> No sparrows come to the farm in the rain, so nothing tells 0–4 from 5–6 frames
+late: the rainy pages have one table for both and no sparrow box. Nothing to check here.</p>
+<p data-when="sunny">As Jack walks out of the house, look at the door: <b>two sparrows by the door</b> mean your menus were 5–6 frames late. That
 morning has its own table: tick <b>Sparrows at the door</b> on the page (or press <kbd>S</kbd>) before the pier. No sparrows by the
 door: leave it unticked. (Sparrows also appear on some slower mornings that no table covers.) A wrong box means the wrong table,
 so check the door every attempt.</p>
-<figure><img src="media/sparrows.png" loading="lazy" alt="The farm door on two mornings: no sparrows (left), two sparrows (right)"><figcaption><b>Left:</b> menus 0–4 frames late, nothing by the door: leave the box off. <b>Right:</b> menus 5–6 frames late, two sparrows by the door: tick <i>Sparrows at the door</i> or press <kbd>S</kbd>.</figcaption></figure>
+<figure data-when="sunny"><img src="media/sparrows.png" loading="lazy" alt="The farm door on two mornings: no sparrows (left), two sparrows (right)"><figcaption><b>Left:</b> menus 0–4 frames late, nothing by the door: leave the box off. <b>Right:</b> menus 5–6 frames late, two sparrows by the door: tick <i>Sparrows at the door</i> or press <kbd>S</kbd>.</figcaption></figure>
 
 <h3 id="path">2.3 House, farm, crossroads, ranch: one held direction per screen</h3>
 <ul>
@@ -145,7 +150,7 @@ From here the hands are split: the <b>controller</b> casts (B) and reels, the <b
 once</b>: that resets the nap timer and does not change the dog or the bites (measured in the lab). Never push the stick after you
 have cast; fishing keeps him awake.</p>
 
-<footer class="small mut">HM64 Power Nut Tool v32.17 · built 2026-11-24 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
+<footer class="small mut">HM64 Power Nut Tool v32.18 · built 2026-11-24 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
 the odds on every page are emulator data, not measured on a console.</footer>
 </div>
 <script>
@@ -172,6 +177,9 @@ the odds on every page are emulator data, not measured on a console.</footer>
     });
     const s = SETS.find(x => x.id === id);
     document.querySelectorAll('.setname').forEach(e => { e.textContent = s ? s.label : ''; });
+    // v32.18: text that holds for one weather only (data-when="sunny" / "rainy"; no script = the sunny text)
+    const rainy = !!(s && s.traits && s.traits.rainy);
+    document.querySelectorAll('[data-when]').forEach(e => { e.hidden = (e.dataset.when === 'rainy') !== rainy; });
   }
   keep(want);
   window.HM64Guide = { set: want, label: me ? me.label : '', keep, sets: SETS };

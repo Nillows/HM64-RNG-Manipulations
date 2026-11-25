@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.17
+# HM64 Power Nut Tool v32.18
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -15,10 +15,9 @@ Your keys, your timing, your practice drills and one attempt count for every pag
 <img src="media/hub.png" width="620" alt="The hub: tick boxes for the game file, then three buttons for its pages">
 
 <sub><b>The hub (v32.12).</b> Under the intro, two small links: <i>What problem does this solve?</i> (its own page,
-<code>problem.html</code>) and the deck page (below). Nothing ticked = Sunny → No horse. Ready today: <b>Sunny → No horse</b> and <b>Sunny → Horse</b>
-(tick <i>I own the horse</i>), each with Casting tables, a Lucky Timer and Dog practice. Rainy mornings (horse / no horse)
-are being collected: ticking <i>Rainy morning</i> greys the buttons out until their tables are in; a marriage and a baby
-come later, each with its own tables. The hub remembers your ticks, and a link like <code>…/#sunny-horse</code> opens it on
+<code>problem.html</code>) and the deck page (below). Nothing ticked = Sunny → No horse. Ready today: <b>Sunny → No horse</b>, <b>Sunny → Horse</b>
+(tick <i>I own the horse</i>), <b>Rainy → No horse</b> and <b>Rainy → Horse</b> (tick <i>Rainy morning</i>; v32.18), each with
+Casting tables, a Lucky Timer and Dog practice. A marriage and a baby come later, each with its own tables. The hub remembers your ticks, and a link like <code>…/#sunny-horse</code> opens it on
 that file. Every page is beach-lineup2: the dog left
 in the far south-west corner of the beach; you pick your tables by your game file. Under the buttons: <b>Guide</b> and
 <b>Not working?</b>, both opened on the game file you ticked.</sub>
@@ -101,7 +100,7 @@ out](#how-the-odds-are-worked-out).** **Your keys, timing and practice? [Setting
 
 ## 1. Quick start
 1. Open the hub in a **desktop browser with a keyboard** (Chrome recommended for now), tick what is true of your file
-   (nothing ticked = Sunny → No horse) and press **Lucky Timer**. A page is 24–28 MB and takes a few seconds to load.
+   (nothing ticked = Sunny → No horse) and press **Lucky Timer**. A page is 24–38 MB and takes a few seconds to load.
 2. Make the game file described in section 2 (or get a copy of one).
 3. Nothing to set up: the page opens ready (section 4).
 4. Play: walk the route (section 3) and **tap Space once the moment Jack stops at the end of the pier**. Click the dog
@@ -300,7 +299,8 @@ loads on the fastest menus. **The first exploit:** the tables only cover menus 0
 so the trunk splits into a crown of just **7 main branches** — the house loads at draw 499 to 505,
 one more draw for each frame late. Slower menus grow 9 more branches that the tables leave out, and
 that is what keeps the forest small enough to grow completely. Two of the 7 carry an identifier: menus 5 or 6 frames late put
-**two sparrows by the farm door** ([3.2](#32-sparrows-at-the-door)), and those two branches have their own table.
+**two sparrows by the farm door** ([3.2](#32-sparrows-at-the-door)), and those two branches have their own table. (On a
+sunny morning: no sparrows come out in the rain, so the rainy tables keep all 7 branches in one.)
 
 ![One seed, a crown of 7](media/forest_3_crown7.svg)
 
@@ -358,6 +358,13 @@ A key can only be one of 4,294,967,296 numbers, and a value one of the dog's cou
 the dog barking: two different branches. A key and a value together make a branch, and the same pair always has the
 same future.
 
+On a rainy morning the light never quite steadies: the raindrops keep drawing numbers as they start and stop, so the rain
+is a third part of the pair. At READY that changed nothing the lab could find (casts re-made from other plays of the same line
+gave the same bites every time: 178 checks on the horse file, 223 without), but after a cast two runs can meet on the same
+key and value with different rain and part again. That happened at about 1 in 65 of the bite states the rainy runs saw more than
+once (none on the sunny runs), so since v32.18 the cast pack compares the whole recorded future of every bite and keeps
+those apart: every one of the 325,948 rainy casts it was built from reads back exactly.
+
 The picture shows it with two real plays of L1 on Sunny → Horse. A cut onto the pier early and stopped with
 x = 569,421,077 (draw 1,253 since power-on). B came by a different route and stopped 14 frames
 later, at draw 1,271: 14 frames before it stopped, while Jack was still walking along the pier, B passed
@@ -413,18 +420,24 @@ match the dog's turns and everything after them matches, including which cast mo
 **L1 across game files: two cubes.** Every game file that changes the random numbers before the pier needs tables of its
 own: the weather, the horse, and later a marriage and a baby. Three yes / no questions make a cube — horse × married ×
 baby, 8 corners — and the weather is a fourth, so there are two cubes, one sunny and one rainy: 16 game files in all.
-Each corner shows its L1 (the most common dog line) once its tables are in. Today two corners are filled, Sunny with and
-without the horse, and they turn out to share the **same L1 branch**: every move of the dog and every leaf,
-3 game frames earlier on the horse file. The rainy cube's two unmarried, childless corners fill in when the
-rain lab's tables are in (rain makes a far more jagged branch); the married and baby corners come later. The cubes are only
-a picture: in the hub you still just tick what is true of your file.
+Each corner shows its L1 (the most common dog line) once its tables are in. Today four corners are filled. Sunny with and
+without the horse share the **same L1 branch**: every move of the dog and every leaf, 3 game frames earlier on the horse
+file. Rainy with and without the horse share one L1 too, and **at the same moment**: in the rain the horse's two extra numbers
+on the farm get swallowed. Each raindrop that is not falling rolls the dice every frame (one in five starts it) and a drop that
+starts rolls twice more for where it lands, so the rain reads the numbers in chunks of changing size; two runs that are two
+numbers apart soon fall into step, like the Kruskal count card trick, where two people counting through one deck from
+different starting cards end up on the same card. That happens on most paths, not on all: about 85% of the rainy horse
+file's plays end on a dog line the no-horse file also has, at the same moment, 7% on one a few frames apart and the rest
+elsewhere, so each rainy file still has its own tables. The rainy L1 holds only 5% of the plays (sunny: 11–14%): rain spreads the plays over more lines
+(20 lines hold half of them, 50 hold 90%). The married and baby corners come later. The cubes are only a picture: in the hub
+you still just tick what is true of your file.
 
 ![L1 across game files: two cubes](media/forest_10_cubes.svg)
 
 <a id="how-the-pictures-are-made"></a>**How the pictures are made.** `tools/forest_facts.py` reads the lab's runs (the stages
 of a dog-watch run, the reference route of each game file, the dog lines and casts of each table) into one facts file, and
 `tools/forest_svg.py` draws every picture from it — trees grown from the game's own generator, a dog line drawn as a branch
-with a kink at every change in what the dog does. When new tables come in (rain, then married and a baby), the same two
+with a kink at every change in what the dog does. When new tables come in (married and a baby next), the same two
 commands redraw them with the new numbers.
 
 ---
@@ -450,7 +463,10 @@ a line's weight is how full its cup gets. On Sunny → No horse there are 84 dog
 - The weights are not measured on real players. If you always mash at the same speed, some lines come up more for you
   than for "a good player"; the Lucky Timer learns that from your bite taps (L5 → *Your dog lines*).
 - Plays slower than these windows are not in the tables at all; the tool calls such attempts **off the tables**. The
-  sparrow mornings (menus 5–6 frames late, section 3.2) are a separate set of plays with their own table.
+  sparrow mornings (menus 5–6 frames late, section 3.2) are a separate set of plays with their own table on a sunny
+  morning; the rainy tables hold menus 0–6 frames late in one (no sparrows in the rain).
+- Rainy mornings: 8,448 plays on the beach and 99 dog lines without the horse, 5,632 plays and 68 lines with it; the most
+  common line holds 5%, 20 lines hold half the plays and 50 hold 90%.
 
 **3. Every cast frame has a known outcome.** For every dog line and every cast frame (one per 1/30 s) up to 120 s after
 Jack stops, the lab recorded every bite and what it catches if you let go there — about 89,000 casts for Sunny → No horse.
@@ -525,8 +541,9 @@ below it tune it; under the TV the dog's own Nut frames scroll by with the count
 ---
 
 ## 2. Setting up the game file
-This is the file for **Sunny → No horse** in the hub. **Sunny → Horse** is the same file with the horse (see below);
-other game files get their own tables and their own list there.
+This is the file for **Sunny → No horse** in the hub. **Sunny → Horse** is the same file with the horse, and **Rainy →
+No horse** / **Rainy → Horse** the same files on a rainy morning (see below); other game files get their own tables and
+their own list there.
 
 The tables work on any morning that starts the game in the same position as the lab's file. If yours doesn't, the
 tool's dog lines will not match your game.
@@ -545,7 +562,8 @@ tool's dog lines will not match your game.
 2. Make sure the rod is in Jack's hand and you have no horse.
 3. Go home, go to bed and save in the diary, in the **first diary slot** (the lab's file is there; another slot needs
    extra menu presses, which makes you later than the tables).
-4. The next morning must be sunny, with no cutscene when you wake up. If it rains, reload the day before and try again.
+4. The next morning must be sunny, with no cutscene when you wake up. If it rains, tick **Rainy morning** on the hub and
+   use the rainy pages (the same file, below), or reload the day before and try again.
 
 **With a horse (Sunny → Horse).** The same file and the same route, with two differences. A file with the horse draws a
 few more random numbers on the way (2 more on the farm, 4 at the crossroads, 4 on the ranch) although the horse never comes
@@ -553,11 +571,26 @@ on screen, so it needs the horse tables, not the no-horse ones. And the horse mu
 comes on screen while Jack walks from the door to the farm exit (a horse on screen draws more random numbers and can
 get in the way). The lab's file has the pony, not yet grown; a grown horse has not been tested.
 
+**On a rainy morning (Rainy → No horse, Rainy → Horse).** The same file and the same route on a morning when it rains: tick
+**Rainy morning** on the hub. Outdoors the rain draws 13 to 19 random numbers a frame (READY comes at draw 10,593 instead of
+1,259), so the rainy tables are other dog lines, and the sunny pages are wrong on a rainy morning (and the other way round).
+No sparrows come to the farm in the rain, so nothing tells 0–4 from 5–6 frames late: the rainy pages have one table for menus
+0–6 frames late and no sparrow box. With the horse, the two extra numbers the pony draws on the farm get swallowed by the
+rain on most paths but not all (see [the cubes](#how-it-works-a-leaf-in-a-forest)), so the horse file has its own rainy
+tables too. (The sunny horse file's extra numbers at the crossroads and the ranch are not drawn by the horse: on a sunny
+morning a file without the horse gets the horse-offer cutscene at the ranch, which keeps the ranch's people and animals from
+being set up. That cutscene needs sun, so in the rain both files set them up alike.) If the morning is sunny instead, the
+same file works with the sunny pages.
+
 **Is my file right?** The dog's exact spot matters: the lab found that what counts is which 32-unit tile of the beach
 the dog stands on, and a different tile shifts every dog line. You can't see tiles, so use the tool's own
 check. After a few attempts in which you tapped Space at a bite (sections 5 and 8), open Setup & review → L5 →
 **"Is the app working?"**. If your bite taps keep fitting "no dog line" (shown as **off the tables**), your file, your
-menu speed or your route does not match the lab's, and the tool's advice will not apply.
+menu speed or your route does not match the lab's, and the tool's advice will not apply. Within the tile the exact spot
+matters only now and then: the lab's files (their dogs 2.2 units apart on the same tile) share nearly all their dog lines,
+and on those lines 97–99% of cast moments have the same bites. The rest differ where the dog walks off the screen a moment
+earlier or later (off screen it stops drawing numbers): 99% of those differences on the sunny files and 94% on the rainy
+ones line up with such a moment.
 
 ---
 
@@ -568,13 +601,16 @@ time. Small hesitations are expected: the tables cover a range of human timings.
 
 ### 3.1 Power-on and menus
 Turn the console on and **mash Start, then A**, through the title screen and the diary, to load your file as fast as
-you can. The tables cover loading up to **4 game frames (about 0.13 s) later than the fastest possible**.
+you can. The tables cover loading up to **4 game frames (about 0.13 s) later than the fastest possible**, and 5–6 frames
+late with the sparrow table (next). On a rainy morning one table covers all of them (0–6 frames late).
 
 ![Power-on to the house: mash Start, then A](media/menus.gif)
 
 <sub>Power-on to the house at full speed. The badge shows the button being pressed: mash **Start** through the logos and the title, then **A** through the diary.</sub>
 
 ### 3.2 Sparrows at the door
+*Sunny mornings only: no sparrows come to the farm in the rain, and the rainy pages have no sparrow box.*
+
 As Jack walks out of the house, look at the door: **two sparrows by the door** mean your menus were 5–6 frames late.
 That morning has its own table (its own set of the lab's plays, section [How the odds are worked out](#how-the-odds-are-worked-out)). Tick **Sparrows at the door** on the page (or press **S**) before the pier. No sparrows
 by the door: leave it unticked. (Sparrows also appear on some slower mornings that no table covers.)

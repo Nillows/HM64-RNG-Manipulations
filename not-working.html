@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>Not working? · HM64 Power Nut Tool v32.17</title>
+<title>Not working? · HM64 Power Nut Tool v32.18</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 :root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d;--warn:#f0b35a;--gold:#e7c14a}
@@ -33,7 +33,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:10px}
 <body>
 <nav class="top"><a href="index.html">⌂ Hub</a><a data-keep href="guide.html">Guide</a><span class="nw here">Not working?</span><a data-keep href="how-it-works.html">How it works</a><a href="settings.html">Settings</a><a href="problem.html">The problem</a><a href="deck.html">The deck</a></nav>
 <div class="wrap">
-<h1>Not working? <span class="mut small">HM64 Power Nut Tool v32.17</span></h1>
+<h1>Not working? <span class="mut small">HM64 Power Nut Tool v32.18</span></h1>
 <div class="yourfile">Your game file: <b class="setname"></b> · <a data-keep="setup" href="guide.html">what it needs and how to make it</a> ·
 another file? tick it on the <a href="index.html">hub</a>.</div>
 <p class="mut">Find what you see; each answer says what it means and what to do.</p>
@@ -57,7 +57,8 @@ drift along the back wall straight away (<a data-keep href="guide.html#beach">th
 <div class="nw-item" id="nw-sparrows"><h3>Sparrows: tick the box or not?</h3>
 <p>Only two sparrows <b>by the farm door</b> count: tick <i>Sparrows at the door</i> (or <kbd>S</kbd>) before the pier. Nothing by the door:
 leave it off. A wrong box uses the wrong table for the whole attempt. (Sparrows also come on some slower mornings that no table
-covers; if your attempts keep coming out <i>off the tables</i>, <a href="#nw-off">see below</a>.)</p></div>
+covers; if your attempts keep coming out <i>off the tables</i>, <a href="#nw-off">see below</a>.) Sunny mornings only: the rainy pages
+have no sparrow box.</p></div>
 
 <div class="nw-item" id="nw-nocard"><h3>No dog card matches what my dog does</h3>
 <ul>
@@ -88,14 +89,15 @@ until it is the same every time; the pictures of <a data-keep href="how-it-works
 (<a data-keep href="guide.html#awake">the guide, 3.2</a>); it changes nothing else. Never push it after you have cast.</p></div>
 
 <div class="nw-item" id="nw-rain"><h3>It is raining</h3>
-<p>Rain draws many more random numbers on the way (outdoors, every frame), so a rainy morning needs its own tables. They are being
-collected: until they are in, reload the day before and sleep again for a sunny morning.</p></div>
+<p>Rain draws many more random numbers on the way (outdoors, every frame), so a rainy morning has its own tables: tick <i>Rainy
+morning</i> on the hub and use the pages it opens. The sunny pages are wrong on a rainy morning and the rainy pages on a sunny one. In
+the rain there are no sparrows and no sparrow box: one table covers menus 0–6 frames late.</p></div>
 
 <div class="nw-item" id="nw-page"><h3>The page is slow, blank, or ignores my keys</h3>
-<p>A Lucky Timer page is 24–28 MB and takes a few seconds to load. Use a desktop browser with a keyboard, and click on the page once so
+<p>A Lucky Timer page is 24–38 MB and takes a few seconds to load. Use a desktop browser with a keyboard, and click on the page once so
 the keys reach it. A page saved to your computer works offline and keeps its own settings.</p></div>
 
-<footer class="small mut">HM64 Power Nut Tool v32.17 · built 2026-11-24 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
+<footer class="small mut">HM64 Power Nut Tool v32.18 · built 2026-11-24 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
 the odds on every page are emulator data, not measured on a console.</footer>
 </div>
 <script>
@@ -122,6 +124,9 @@ the odds on every page are emulator data, not measured on a console.</footer>
     });
     const s = SETS.find(x => x.id === id);
     document.querySelectorAll('.setname').forEach(e => { e.textContent = s ? s.label : ''; });
+    // v32.18: text that holds for one weather only (data-when="sunny" / "rainy"; no script = the sunny text)
+    const rainy = !!(s && s.traits && s.traits.rainy);
+    document.querySelectorAll('[data-when]').forEach(e => { e.hidden = (e.dataset.when === 'rainy') !== rainy; });
   }
   keep(want);
   window.HM64Guide = { set: want, label: me ? me.label : '', keep, sets: SETS };
