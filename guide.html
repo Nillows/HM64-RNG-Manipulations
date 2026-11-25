@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>Guide · HM64 Power Nut Tool v32.18</title>
+<title>Guide · HM64 Power Nut Tool v32.19</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 :root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d;--warn:#f0b35a;--gold:#e7c14a}
@@ -43,7 +43,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:10px}
 </script>
 <nav class="top"><a href="index.html">⌂ Hub</a><span class="here">Guide</span><a class="nw" data-keep href="not-working.html">Not working?</a><a data-keep href="how-it-works.html">How it works</a><a href="settings.html">Settings</a><a href="problem.html">The problem</a><a href="deck.html">The deck</a></nav>
 <div class="wrap">
-<h1>Guide <span class="mut small">HM64 Power Nut Tool v32.18</span></h1>
+<h1>Guide <span class="mut small">HM64 Power Nut Tool v32.19</span></h1>
 <div class="mut">How to set up your game file and walk the route to the end of the pier. Every page of the tool (Lucky Timer,
 Casting tables, Dog practice) assumes this setup and this route. Something wrong? <a class="nw" data-keep href="not-working.html">Not working?</a>
 How the tool finds your cast: <a data-keep href="how-it-works.html">How it works</a>.</div>
@@ -150,7 +150,21 @@ From here the hands are split: the <b>controller</b> casts (B) and reels, the <b
 once</b>: that resets the nap timer and does not change the dog or the bites (measured in the lab). Never push the stick after you
 have cast; fishing keeps him awake.</p>
 
-<footer class="small mut">HM64 Power Nut Tool v32.18 · built 2026-11-24 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
+<div data-when="rainy" hidden>
+<h3 id="later">3.3 Rain: later bites, wide windows</h3>
+<p>The rain re-synchronises the random numbers, so on a rainy morning the Power Nut often comes on a <b>later bite</b> and in
+<b>wider runs</b> of cast frames. The Casting tables then use rules up to the 6th bite — “hold the first 4 bites, let go at the
+5th” means keep B held while the rod dips four times and let go on the fifth — with casts up to 120 s after READY (a cast after
+106 s needs a third push of the stick at about 100 s). Their <b>Wide windows</b> tab lists each line's runs of 3 or more frames in a
+row with the Nut on one bite, and the Lucky Timer's freestyle draws later bites in purple, darker for later bites, with the
+bite number on the bars.</p>
+<p>Worth watching for, without knowing the line (B anywhere in that second, ±150 ms, both rainy files): the dog starts
+<b>flapper ↘</b> at 6–8 s → cast at 31.1 s, let go at the 1st bite: 30% · <b>mess ↗</b> at 0.5–2 s → 65.6 s, the 5th bite: 33% ·
+<b>sniff-standing ↘</b> at 2–4 s → 24.5 s, the 1st bite: 33% · <b>run ↙</b> at 0.5–2 s → 70.4 s, the 5th bite: 22%. The Casting
+tables' first tab has the full list for your file and timing spread.</p>
+</div>
+
+<footer class="small mut">HM64 Power Nut Tool v32.19 · built 2026-11-24 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
 the odds on every page are emulator data, not measured on a console.</footer>
 </div>
 <script>
