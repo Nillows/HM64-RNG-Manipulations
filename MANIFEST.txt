@@ -1,0 +1,17 @@
+HM64 raw lab results: sha256, bytes, file
+42ecadf36db28f72c49befb56fdcaddde730b0135d48ad8d470d1056873d9950     71868036  married-sunny/hm64-dogwatch-married-lineup2-sunny-237e3d1d.zip
+c68f6345eb1695246ccabf4a4ce1a868291120a82106cb928773222e71b8a341       108838  married-sunny/run-married120-20261125-063853.log
+28af829c7d3655cdc3679048041aeb634fb9e27aa800ae623127f42c4de4fe08     16451575  rainy-horse/hm64-dogwatch-rain-lineup2-horse-287c11a6.zip
+46698d0babb4b77c34bd40d30fd67600f8e95b2f2b4d0532b0ad588af4a32a86     10893466  rainy-horse/hm64-fullday-rain-horse-d140c90.zip
+30514d1a603689d0c15a69dea384655c46994386a57a1edd99221d07a57db46a      8478135  rainy-horse/hm64-fullday-rain-horse-d170c120.zip
+7ddc5636e10393d30fd1001048704a92eece9ec2445822980c158d3e1eaa841d     10626501  rainy-horse/hm64-fullday-rain-horse-d90.zip
+88c8062cef6f6427ff1dbda8b34e33792767353c80a1ffdcae3aee8c7934d90f     23041797  rainy-no-horse/hm64-dogwatch-rain-lineup2-nohorse-8e972d75.zip
+80e283526577c346608cb1cee2f2d60b33388c37d11d293081ece62e0c8c250c     15134579  rainy-no-horse/hm64-fullday-rain-nohorse-d140c90.zip
+ede86832113b58a1a6e74a8e1798c961169a6c85bf5250a15f3317b05311fbce     12055264  rainy-no-horse/hm64-fullday-rain-nohorse-d170c120.zip
+f49f7dd03dc46f9de190b4826c08e32a8e6b6057305662a27e5b7c865eabdca2     14267226  rainy-no-horse/hm64-fullday-rain-nohorse-d90.zip
+33ccc8eb75ed1bc3c82437a793201e67defda6687680cfbcea842164c2d2f13d       275309  rainy-no-horse/run-rain120-20261123-181229.log
+9e5614868163abe6dc2690f0a29311443d9cc2b52d9725cac11a29963216eaa6     64812770  sunny-horse/hm64-dogwatch-beach-lineup2-horse-b0f2a284.zip
+074d4cd74d5e31343e0b12f50f0ee8787dbe9176e3617e3c552849200cab3232     10474347  sunny-horse/hm64-fullday-horse-d140c90.zip
+03dad925bf7a334b079f73bcbfc43f1f816e8369de89a28b00b26b7623a3580d     10754251  sunny-horse/hm64-fullday-horse-d170c120.zip
+05aa3c94ef7e375c45d63c258d145742e1637b3a61617606bba313adf5d2423d     10880581  sunny-horse/hm64-fullday-horse-d90.zip
+6a91fc04a8c496aec3bb6811edeb77c5dc83a291bf1125ed113294e171c941ac       144788  sunny-horse/run-horse120-20261123-104115.log
