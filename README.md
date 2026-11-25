@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.19
+# HM64 Power Nut Tool v32.20
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -930,6 +930,17 @@ left between you and the Nut is how close to the bar your press lands. In other 
 <img src="media/app_report.png" width="640" alt="The attempt list and the report of the freestyle attempt">
 
 <sub><b>L4 after the attempt above.</b> One Power Nut in one try; the report shows the target (a double, 67 ms wide), where your Space tap landed (INSIDE, on bar 2 of 2) and what to let go at. <b>Remove</b> takes an attempt out of everything the tool learned.</sub>
+
+**Around the target (v32.20).** A freestyle report also shows what a cast on each frame **around** the target would
+have caught **at the target's bite** — the moment you let go: a full bar = the Power Nut (green / gold / purple by bite,
+with its number), a shorter grey bar = a fish (**S** / **M** / **L** and which bite), **no bar** = that frame has no
+bite at that moment (a cast there holds straight through it). So when you pull up a fish, find its size next to the
+target: only on the frames before it = you were early, only after = late. The text lists the 6 frames on each side and
+the target cast's **own** bites in order (e.g. 1st small fish, 2nd medium fish, 3rd small fish, 4th NUT): a fish that
+matches none of the neighbours but one of those means you let go at an earlier bite. Reports stored before v32.20 get
+the same view when you open them, if their target can be found again without doubt on the page's tables.
+
+<img src="media/app_report_around.png" width="640" alt="A freestyle report with the frames around the target at its bite">
 
 ---
 
