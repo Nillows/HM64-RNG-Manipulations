@@ -1957,3 +1957,1839 @@ fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by
 [FD block 5] 35/101  19.8 jobs/min  eta 3 min
 [FD block 5] 40/101  21.8 jobs/min  eta 3 min
 [FD block 5] 45/101  23.6 jobs/min  eta 2 min
+[FD block 5] 50/101  21.1 jobs/min  eta 2 min
+[FD block 5] 55/101  23.0 jobs/min  eta 2 min
+[FD block 5] 60/101  24.6 jobs/min  eta 2 min
+[FD block 5] 65/101  22.0 jobs/min  eta 2 min
+[FD block 5] 70/101  23.5 jobs/min  eta 1 min
+[FD block 5] 75/101  22.6 jobs/min  eta 1 min
+[FD block 5] 80/101  22.9 jobs/min  eta 1 min
+[FD block 5] 85/101  23.8 jobs/min  eta 1 min
+[FD block 5] 90/101  23.1 jobs/min  eta 0 min
+[FD block 5] 95/101  23.6 jobs/min  eta 0 min
+[FD block 5] 100/101  24.5 jobs/min  eta 0 min
+[FD block 5] 101/101  24.8 jobs/min  eta 0 min
+  block 5 done in 4 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 2 | 40.1 – 80.2 · heavy | 30 | 8953 | 8953 | 0 | 8323 / 0 / 630 | 8953 / 0 / 0 | 5.4 | 343 (3.8%) |
+| 3 | 40.1 – 80.2 · other | 90 | 11184 | 11184 | 0 | 9294 / 0 / 1890 | 11184 / 0 / 0 | 5.3 | 401 (3.6%) |
+| 4 | 80.2 – 90.3 · heavy | 10 | 1431 | 1431 | 0 | 1431 / 0 / 0 | 1431 / 0 / 0 | 3.9 | 0 (0.0%) |
+| 5 | 80.2 – 90.3 · other | 17 | 2169 | 2169 | 0 | 2169 / 0 / 0 | 2169 / 0 / 0 | 3.9 | 0 (0.0%) |
+
+
+==> married-sunny-d170c120: casts to 120 s, everything to 170 s after READY, blocks 4-5  (Wed 10:03)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-lineup2-sunny-237e3d1d  save /work/data/saves_dogspots/married-lineup2-sunny-237e3d1d.SaveRAM  workers 13  dog at [-197.27, 222.24]
+  followed to 10198 VIs after READY
+[FD1 lines] 120 jobs, 0 already done, 120 to run
+[FD1 lines] 5/120  136.2 jobs/min  eta 1 min
+[FD1 lines] 10/120  258.7 jobs/min  eta 0 min
+[FD1 lines] 15/120  251.8 jobs/min  eta 0 min
+[FD1 lines] 20/120  276.3 jobs/min  eta 0 min
+[FD1 lines] 25/120  339.1 jobs/min  eta 0 min
+[FD1 lines] 30/120  332.6 jobs/min  eta 0 min
+[FD1 lines] 35/120  328.9 jobs/min  eta 0 min
+[FD1 lines] 40/120  349.9 jobs/min  eta 0 min
+[FD1 lines] 45/120  324.8 jobs/min  eta 0 min
+[FD1 lines] 50/120  353.0 jobs/min  eta 0 min
+[FD1 lines] 55/120  376.2 jobs/min  eta 0 min
+[FD1 lines] 60/120  344.6 jobs/min  eta 0 min
+[FD1 lines] 65/120  369.4 jobs/min  eta 0 min
+[FD1 lines] 70/120  346.9 jobs/min  eta 0 min
+[FD1 lines] 75/120  359.0 jobs/min  eta 0 min
+[FD1 lines] 80/120  375.7 jobs/min  eta 0 min
+[FD1 lines] 85/120  353.3 jobs/min  eta 0 min
+[FD1 lines] 90/120  368.1 jobs/min  eta 0 min
+[FD1 lines] 95/120  379.1 jobs/min  eta 0 min
+[FD1 lines] 100/120  368.4 jobs/min  eta 0 min
+[FD1 lines] 105/120  373.0 jobs/min  eta 0 min
+[FD1 lines] 110/120  375.2 jobs/min  eta 0 min
+[FD1 lines] 115/120  381.3 jobs/min  eta 0 min
+[FD1 lines] 120/120  381.7 jobs/min  eta 0 min
+  the dog had already left its tile at READY on 1 lines (kept): [('eeb412a8', [-222.1, 219.4])]
+[FD1] 120 of 120 lines ran as planned; hashes against the dog-watch run: 119400 equal, 0 different; ended: [('limit', 10198)]
+lines followed to 10198 VIs (170 s) after READY; 30 heavy lines (90.1% of the route weight), 90 others; 75833 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 30):  17378 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 90):  21683 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 30):   8953 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 90):  11184 casts
+  block  4: casts  80.2-120.3 s after READY, heavy lines ( 30):   6807 casts
+  block  5: casts  80.2-120.3 s after READY, other lines ( 90):   9828 casts
+
+==> married-sunny-d170c120 block 4 of 5  (Wed 10:04)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..7198 VIs after READY on the heavy lines (30), 6807 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 4] 689 jobs, 0 already done, 689 to run
+[FD block 4] 5/689  6.0 jobs/min  eta 1.9 h
+[FD block 4] 10/689  11.7 jobs/min  eta 58 min
+[FD block 4] 15/689  10.1 jobs/min  eta 67 min
+[FD block 4] 20/689  12.8 jobs/min  eta 52 min
+[FD block 4] 25/689  15.2 jobs/min  eta 44 min
+[FD block 4] 30/689  13.6 jobs/min  eta 48 min
+[FD block 4] 35/689  15.7 jobs/min  eta 42 min
+[FD block 4] 40/689  16.6 jobs/min  eta 39 min
+[FD block 4] 45/689  15.9 jobs/min  eta 40 min
+[FD block 4] 50/689  15.8 jobs/min  eta 41 min
+[FD block 4] 55/689  14.9 jobs/min  eta 42 min
+[FD block 4] 60/689  16.0 jobs/min  eta 39 min
+[FD block 4] 65/689  16.0 jobs/min  eta 39 min
+[FD block 4] 70/689  15.5 jobs/min  eta 40 min
+[FD block 4] 75/689  15.8 jobs/min  eta 39 min
+[FD block 4] 80/689  15.7 jobs/min  eta 39 min
+[FD block 4] 85/689  16.5 jobs/min  eta 37 min
+[FD block 4] 90/689  16.7 jobs/min  eta 36 min
+[FD block 4] 95/689  16.6 jobs/min  eta 36 min
+[FD block 4] 100/689  16.7 jobs/min  eta 35 min
+[FD block 4] 105/689  16.8 jobs/min  eta 35 min
+[FD block 4] 110/689  16.9 jobs/min  eta 34 min
+[FD block 4] 115/689  16.8 jobs/min  eta 34 min
+[FD block 4] 120/689  16.9 jobs/min  eta 34 min
+[FD block 4] 125/689  17.1 jobs/min  eta 33 min
+[FD block 4] 130/689  17.4 jobs/min  eta 32 min
+[FD block 4] 135/689  17.6 jobs/min  eta 32 min
+[FD block 4] 140/689  17.9 jobs/min  eta 31 min
+[FD block 4] 145/689  18.3 jobs/min  eta 30 min
+[FD block 4] 150/689  18.9 jobs/min  eta 29 min
+[FD block 4] 155/689  19.4 jobs/min  eta 27 min
+[FD block 4] 160/689  20.0 jobs/min  eta 26 min
+[FD block 4] 165/689  20.6 jobs/min  eta 25 min
+[FD block 4] 170/689  21.1 jobs/min  eta 25 min
+[FD block 4] 175/689  21.7 jobs/min  eta 24 min
+[FD block 4] 180/689  22.3 jobs/min  eta 23 min
+[FD block 4] 185/689  22.8 jobs/min  eta 22 min
+[FD block 4] 190/689  23.4 jobs/min  eta 21 min
+[FD block 4] 195/689  23.9 jobs/min  eta 21 min
+[FD block 4] 200/689  23.6 jobs/min  eta 21 min
+[FD block 4] 205/689  22.8 jobs/min  eta 21 min
+[FD block 4] 210/689  23.3 jobs/min  eta 21 min
+[FD block 4] 215/689  22.4 jobs/min  eta 21 min
+[FD block 4] 220/689  22.7 jobs/min  eta 21 min
+[FD block 4] 225/689  22.7 jobs/min  eta 20 min
+[FD block 4] 230/689  22.1 jobs/min  eta 21 min
+[FD block 4] 235/689  22.5 jobs/min  eta 20 min
+[FD block 4] 240/689  22.5 jobs/min  eta 20 min
+[FD block 4] 245/689  22.6 jobs/min  eta 20 min
+[FD block 4] 250/689  22.8 jobs/min  eta 19 min
+[FD block 4] 255/689  23.2 jobs/min  eta 19 min
+[FD block 4] 260/689  23.6 jobs/min  eta 18 min
+[FD block 4] 265/689  24.0 jobs/min  eta 18 min
+[FD block 4] 270/689  24.4 jobs/min  eta 17 min
+[FD block 4] 275/689  24.8 jobs/min  eta 17 min
+[FD block 4] 280/689  25.2 jobs/min  eta 16 min
+[FD block 4] 285/689  25.7 jobs/min  eta 16 min
+[FD block 4] 290/689  26.0 jobs/min  eta 15 min
+[FD block 4] 295/689  26.4 jobs/min  eta 15 min
+[FD block 4] 300/689  26.8 jobs/min  eta 15 min
+[FD block 4] 305/689  27.2 jobs/min  eta 14 min
+[FD block 4] 310/689  27.6 jobs/min  eta 14 min
+[FD block 4] 315/689  28.0 jobs/min  eta 13 min
+[FD block 4] 320/689  28.3 jobs/min  eta 13 min
+[FD block 4] 325/689  28.7 jobs/min  eta 13 min
+[FD block 4] 330/689  29.1 jobs/min  eta 12 min
+[FD block 4] 335/689  29.4 jobs/min  eta 12 min
+[FD block 4] 340/689  29.8 jobs/min  eta 12 min
+[FD block 4] 345/689  30.1 jobs/min  eta 11 min
+[FD block 4] 350/689  30.5 jobs/min  eta 11 min
+[FD block 4] 355/689  30.9 jobs/min  eta 11 min
+[FD block 4] 360/689  31.2 jobs/min  eta 11 min
+[FD block 4] 365/689  31.6 jobs/min  eta 10 min
+[FD block 4] 370/689  31.9 jobs/min  eta 10 min
+[FD block 4] 375/689  32.2 jobs/min  eta 10 min
+[FD block 4] 380/689  32.6 jobs/min  eta 9 min
+[FD block 4] 385/689  32.9 jobs/min  eta 9 min
+[FD block 4] 390/689  33.3 jobs/min  eta 9 min
+[FD block 4] 395/689  33.6 jobs/min  eta 9 min
+[FD block 4] 400/689  33.9 jobs/min  eta 9 min
+[FD block 4] 405/689  34.3 jobs/min  eta 8 min
+[FD block 4] 410/689  34.6 jobs/min  eta 8 min
+[FD block 4] 415/689  34.9 jobs/min  eta 8 min
+[FD block 4] 420/689  35.3 jobs/min  eta 8 min
+[FD block 4] 425/689  35.6 jobs/min  eta 7 min
+[FD block 4] 430/689  36.0 jobs/min  eta 7 min
+[FD block 4] 435/689  36.3 jobs/min  eta 7 min
+[FD block 4] 440/689  36.7 jobs/min  eta 7 min
+[FD block 4] 445/689  37.0 jobs/min  eta 7 min
+[FD block 4] 450/689  37.4 jobs/min  eta 6 min
+[FD block 4] 455/689  37.8 jobs/min  eta 6 min
+[FD block 4] 460/689  38.1 jobs/min  eta 6 min
+[FD block 4] 465/689  36.9 jobs/min  eta 6 min
+[FD block 4] 470/689  36.4 jobs/min  eta 6 min
+[FD block 4] 475/689  36.7 jobs/min  eta 6 min
+[FD block 4] 480/689  35.7 jobs/min  eta 6 min
+[FD block 4] 485/689  35.5 jobs/min  eta 6 min
+[FD block 4] 490/689  35.6 jobs/min  eta 6 min
+[FD block 4] 495/689  34.5 jobs/min  eta 6 min
+[FD block 4] 500/689  34.7 jobs/min  eta 5 min
+[FD block 4] 505/689  34.0 jobs/min  eta 5 min
+[FD block 4] 510/689  34.1 jobs/min  eta 5 min
+[FD block 4] 515/689  34.3 jobs/min  eta 5 min
+[FD block 4] 520/689  34.6 jobs/min  eta 5 min
+[FD block 4] 525/689  34.9 jobs/min  eta 5 min
+[FD block 4] 530/689  35.1 jobs/min  eta 5 min
+[FD block 4] 535/689  35.4 jobs/min  eta 4 min
+[FD block 4] 540/689  35.7 jobs/min  eta 4 min
+[FD block 4] 545/689  35.9 jobs/min  eta 4 min
+[FD block 4] 550/689  36.2 jobs/min  eta 4 min
+[FD block 4] 555/689  36.5 jobs/min  eta 4 min
+[FD block 4] 560/689  36.8 jobs/min  eta 4 min
+[FD block 4] 565/689  37.1 jobs/min  eta 3 min
+[FD block 4] 570/689  37.3 jobs/min  eta 3 min
+[FD block 4] 575/689  37.5 jobs/min  eta 3 min
+[FD block 4] 580/689  37.7 jobs/min  eta 3 min
+[FD block 4] 585/689  38.0 jobs/min  eta 3 min
+[FD block 4] 590/689  38.2 jobs/min  eta 3 min
+[FD block 4] 595/689  38.5 jobs/min  eta 2 min
+[FD block 4] 600/689  38.7 jobs/min  eta 2 min
+[FD block 4] 605/689  39.0 jobs/min  eta 2 min
+[FD block 4] 610/689  39.2 jobs/min  eta 2 min
+[FD block 4] 615/689  39.4 jobs/min  eta 2 min
+[FD block 4] 620/689  39.7 jobs/min  eta 2 min
+[FD block 4] 625/689  39.9 jobs/min  eta 2 min
+[FD block 4] 630/689  40.1 jobs/min  eta 1 min
+[FD block 4] 635/689  40.3 jobs/min  eta 1 min
+[FD block 4] 640/689  40.6 jobs/min  eta 1 min
+[FD block 4] 645/689  40.8 jobs/min  eta 1 min
+[FD block 4] 650/689  41.1 jobs/min  eta 1 min
+[FD block 4] 655/689  41.3 jobs/min  eta 1 min
+[FD block 4] 660/689  41.6 jobs/min  eta 1 min
+[FD block 4] 665/689  41.8 jobs/min  eta 1 min
+[FD block 4] 670/689  42.1 jobs/min  eta 0 min
+[FD block 4] 675/689  42.4 jobs/min  eta 0 min
+[FD block 4] 680/689  42.6 jobs/min  eta 0 min
+[FD block 4] 685/689  42.6 jobs/min  eta 0 min
+[FD block 4] 689/689  41.9 jobs/min  eta 0 min
+  block 4 done in 16 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 30 | 6807 | 6807 | 0 | 6177 / 0 / 630 | 6807 / 0 / 0 | 4.8 | 2 (0.0%) |
+
+
+==> married-sunny-d170c120 block 5 of 5  (Wed 10:20)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..7198 VIs after READY on the other lines (90), 9828 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 5] 782 jobs, 0 already done, 782 to run
+[FD block 5] 5/782  6.3 jobs/min  eta 2.1 h
+[FD block 5] 10/782  12.3 jobs/min  eta 63 min
+[FD block 5] 15/782  10.7 jobs/min  eta 72 min
+[FD block 5] 20/782  13.0 jobs/min  eta 59 min
+[FD block 5] 25/782  15.9 jobs/min  eta 48 min
+[FD block 5] 30/782  18.8 jobs/min  eta 40 min
+[FD block 5] 35/782  21.7 jobs/min  eta 34 min
+[FD block 5] 40/782  24.4 jobs/min  eta 30 min
+[FD block 5] 45/782  26.9 jobs/min  eta 27 min
+[FD block 5] 50/782  29.7 jobs/min  eta 25 min
+[FD block 5] 55/782  30.0 jobs/min  eta 24 min
+[FD block 5] 60/782  31.7 jobs/min  eta 23 min
+[FD block 5] 65/782  32.7 jobs/min  eta 22 min
+[FD block 5] 70/782  33.6 jobs/min  eta 21 min
+[FD block 5] 75/782  35.2 jobs/min  eta 20 min
+[FD block 5] 80/782  35.5 jobs/min  eta 20 min
+[FD block 5] 85/782  37.4 jobs/min  eta 19 min
+[FD block 5] 90/782  38.9 jobs/min  eta 18 min
+[FD block 5] 95/782  40.5 jobs/min  eta 17 min
+[FD block 5] 100/782  42.2 jobs/min  eta 16 min
+[FD block 5] 105/782  43.8 jobs/min  eta 15 min
+[FD block 5] 110/782  45.5 jobs/min  eta 15 min
+[FD block 5] 115/782  47.0 jobs/min  eta 14 min
+[FD block 5] 120/782  48.6 jobs/min  eta 14 min
+[FD block 5] 125/782  50.0 jobs/min  eta 13 min
+[FD block 5] 130/782  51.6 jobs/min  eta 13 min
+[FD block 5] 135/782  53.1 jobs/min  eta 12 min
+[FD block 5] 140/782  44.8 jobs/min  eta 14 min
+[FD block 5] 145/782  45.9 jobs/min  eta 14 min
+[FD block 5] 150/782  47.1 jobs/min  eta 13 min
+[FD block 5] 155/782  48.3 jobs/min  eta 13 min
+[FD block 5] 160/782  49.4 jobs/min  eta 13 min
+[FD block 5] 165/782  50.4 jobs/min  eta 12 min
+[FD block 5] 170/782  51.7 jobs/min  eta 12 min
+[FD block 5] 175/782  52.6 jobs/min  eta 12 min
+[FD block 5] 180/782  53.8 jobs/min  eta 11 min
+[FD block 5] 185/782  54.8 jobs/min  eta 11 min
+[FD block 5] 190/782  56.0 jobs/min  eta 11 min
+[FD block 5] 195/782  57.1 jobs/min  eta 10 min
+[FD block 5] 200/782  58.2 jobs/min  eta 10 min
+[FD block 5] 205/782  48.6 jobs/min  eta 12 min
+[FD block 5] 210/782  49.1 jobs/min  eta 12 min
+[FD block 5] 215/782  45.6 jobs/min  eta 12 min
+[FD block 5] 220/782  44.3 jobs/min  eta 13 min
+[FD block 5] 225/782  44.8 jobs/min  eta 12 min
+[FD block 5] 230/782  40.8 jobs/min  eta 14 min
+[FD block 5] 235/782  41.4 jobs/min  eta 13 min
+[FD block 5] 240/782  41.4 jobs/min  eta 13 min
+[FD block 5] 245/782  39.5 jobs/min  eta 14 min
+[FD block 5] 250/782  39.9 jobs/min  eta 13 min
+[FD block 5] 255/782  40.6 jobs/min  eta 13 min
+[FD block 5] 260/782  41.2 jobs/min  eta 13 min
+[FD block 5] 265/782  41.9 jobs/min  eta 12 min
+[FD block 5] 270/782  42.5 jobs/min  eta 12 min
+[FD block 5] 275/782  43.2 jobs/min  eta 12 min
+[FD block 5] 280/782  43.8 jobs/min  eta 11 min
+[FD block 5] 285/782  44.5 jobs/min  eta 11 min
+[FD block 5] 290/782  45.1 jobs/min  eta 11 min
+[FD block 5] 295/782  45.8 jobs/min  eta 11 min
+[FD block 5] 300/782  46.4 jobs/min  eta 10 min
+[FD block 5] 305/782  47.1 jobs/min  eta 10 min
+[FD block 5] 310/782  47.6 jobs/min  eta 10 min
+[FD block 5] 315/782  48.3 jobs/min  eta 10 min
+[FD block 5] 320/782  48.8 jobs/min  eta 9 min
+[FD block 5] 325/782  49.4 jobs/min  eta 9 min
+[FD block 5] 330/782  50.0 jobs/min  eta 9 min
+[FD block 5] 335/782  50.6 jobs/min  eta 9 min
+[FD block 5] 340/782  51.1 jobs/min  eta 9 min
+[FD block 5] 345/782  51.7 jobs/min  eta 8 min
+[FD block 5] 350/782  51.7 jobs/min  eta 8 min
+[FD block 5] 355/782  47.9 jobs/min  eta 9 min
+[FD block 5] 360/782  48.2 jobs/min  eta 9 min
+[FD block 5] 365/782  47.3 jobs/min  eta 9 min
+[FD block 5] 370/782  45.6 jobs/min  eta 9 min
+[FD block 5] 375/782  45.8 jobs/min  eta 9 min
+[FD block 5] 380/782  43.6 jobs/min  eta 9 min
+[FD block 5] 385/782  44.0 jobs/min  eta 9 min
+[FD block 5] 390/782  43.7 jobs/min  eta 9 min
+[FD block 5] 395/782  42.6 jobs/min  eta 9 min
+[FD block 5] 400/782  43.0 jobs/min  eta 9 min
+[FD block 5] 405/782  41.8 jobs/min  eta 9 min
+[FD block 5] 410/782  41.7 jobs/min  eta 9 min
+[FD block 5] 415/782  40.2 jobs/min  eta 9 min
+[FD block 5] 420/782  39.7 jobs/min  eta 9 min
+[FD block 5] 425/782  39.7 jobs/min  eta 9 min
+[FD block 5] 430/782  38.2 jobs/min  eta 9 min
+[FD block 5] 435/782  38.2 jobs/min  eta 9 min
+[FD block 5] 440/782  38.3 jobs/min  eta 9 min
+[FD block 5] 445/782  37.1 jobs/min  eta 9 min
+[FD block 5] 450/782  37.3 jobs/min  eta 9 min
+[FD block 5] 455/782  37.4 jobs/min  eta 9 min
+[FD block 5] 460/782  37.4 jobs/min  eta 9 min
+[FD block 5] 465/782  37.4 jobs/min  eta 8 min
+[FD block 5] 470/782  37.7 jobs/min  eta 8 min
+[FD block 5] 475/782  37.9 jobs/min  eta 8 min
+[FD block 5] 480/782  38.2 jobs/min  eta 8 min
+[FD block 5] 485/782  38.5 jobs/min  eta 8 min
+[FD block 5] 490/782  38.9 jobs/min  eta 8 min
+[FD block 5] 495/782  39.2 jobs/min  eta 7 min
+[FD block 5] 500/782  39.6 jobs/min  eta 7 min
+[FD block 5] 505/782  39.9 jobs/min  eta 7 min
+[FD block 5] 510/782  40.2 jobs/min  eta 7 min
+[FD block 5] 515/782  40.5 jobs/min  eta 7 min
+[FD block 5] 520/782  40.9 jobs/min  eta 6 min
+[FD block 5] 525/782  41.2 jobs/min  eta 6 min
+[FD block 5] 530/782  41.5 jobs/min  eta 6 min
+[FD block 5] 535/782  41.7 jobs/min  eta 6 min
+[FD block 5] 540/782  42.0 jobs/min  eta 6 min
+[FD block 5] 545/782  42.3 jobs/min  eta 6 min
+[FD block 5] 550/782  42.6 jobs/min  eta 5 min
+[FD block 5] 555/782  42.8 jobs/min  eta 5 min
+[FD block 5] 560/782  42.2 jobs/min  eta 5 min
+[FD block 5] 565/782  42.4 jobs/min  eta 5 min
+[FD block 5] 570/782  42.1 jobs/min  eta 5 min
+[FD block 5] 575/782  40.8 jobs/min  eta 5 min
+[FD block 5] 580/782  40.8 jobs/min  eta 5 min
+[FD block 5] 585/782  40.1 jobs/min  eta 5 min
+[FD block 5] 590/782  40.0 jobs/min  eta 5 min
+[FD block 5] 595/782  39.9 jobs/min  eta 5 min
+[FD block 5] 600/782  39.0 jobs/min  eta 5 min
+[FD block 5] 605/782  39.1 jobs/min  eta 5 min
+[FD block 5] 610/782  39.3 jobs/min  eta 4 min
+[FD block 5] 615/782  38.7 jobs/min  eta 4 min
+[FD block 5] 620/782  38.7 jobs/min  eta 4 min
+[FD block 5] 625/782  37.5 jobs/min  eta 4 min
+[FD block 5] 630/782  37.7 jobs/min  eta 4 min
+[FD block 5] 635/782  37.9 jobs/min  eta 4 min
+[FD block 5] 640/782  36.9 jobs/min  eta 4 min
+[FD block 5] 645/782  37.1 jobs/min  eta 4 min
+[FD block 5] 650/782  36.3 jobs/min  eta 4 min
+[FD block 5] 655/782  36.5 jobs/min  eta 3 min
+[FD block 5] 660/782  36.7 jobs/min  eta 3 min
+[FD block 5] 665/782  36.6 jobs/min  eta 3 min
+[FD block 5] 670/782  36.6 jobs/min  eta 3 min
+[FD block 5] 675/782  36.7 jobs/min  eta 3 min
+[FD block 5] 680/782  36.9 jobs/min  eta 3 min
+[FD block 5] 685/782  37.1 jobs/min  eta 3 min
+[FD block 5] 690/782  37.3 jobs/min  eta 2 min
+[FD block 5] 695/782  37.4 jobs/min  eta 2 min
+[FD block 5] 700/782  37.6 jobs/min  eta 2 min
+[FD block 5] 705/782  37.9 jobs/min  eta 2 min
+[FD block 5] 710/782  38.0 jobs/min  eta 2 min
+[FD block 5] 715/782  38.2 jobs/min  eta 2 min
+[FD block 5] 720/782  37.9 jobs/min  eta 2 min
+[FD block 5] 725/782  37.3 jobs/min  eta 2 min
+[FD block 5] 730/782  37.1 jobs/min  eta 1 min
+[FD block 5] 735/782  37.2 jobs/min  eta 1 min
+[FD block 5] 740/782  36.7 jobs/min  eta 1 min
+[FD block 5] 745/782  36.6 jobs/min  eta 1 min
+[FD block 5] 750/782  36.2 jobs/min  eta 1 min
+[FD block 5] 755/782  36.1 jobs/min  eta 1 min
+[FD block 5] 760/782  36.2 jobs/min  eta 1 min
+[FD block 5] 765/782  35.9 jobs/min  eta 0 min
+[FD block 5] 770/782  35.8 jobs/min  eta 0 min
+[FD block 5] 775/782  35.8 jobs/min  eta 0 min
+[FD block 5] 780/782  35.7 jobs/min  eta 0 min
+[FD block 5] 782/782  35.7 jobs/min  eta 0 min
+  block 5 done in 21 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 30 | 6807 | 6807 | 0 | 6177 / 0 / 630 | 6807 / 0 / 0 | 4.8 | 2 (0.0%) |
+| 5 | 80.2 – 120.3 · other | 90 | 9828 | 9828 | 0 | 7938 / 0 / 1890 | 9828 / 0 / 0 | 4.9 | 0 (0.0%) |
+
+
+==> 7/7 [1: married-lineup2-sunny-237e3d1d] the zips to send
+  married-lineup2-sunny-237e3d1d done: its zips are in /Users/thomwollin/Documents/hm64/runs/hm64-married120-20261125-063853
+
+==> 4/7 [2: married-lineup2-rainy-62991249] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY (Wed 10:42)
+zigzag-4f (2026-11-16: every bite to 90 s after READY; dogwatch menus 0-6 frames late; dog-watch traces (observe), house band house_lo, lineup-sparrow; 2026-11-15: lineup + first cut D 86; dog-spot lab - dog-neutral beach + lines, failure map; zigzag-3 pool/core/scan)  preset dogwatch  save /work/data/saves_dogspots/married-lineup2-rainy-62991249.SaveRAM  workers 13
+[core] M64H_CPU=dynarec (set by you)
+[Z0] save married-lineup2-rainy-62991249.SaveRAM  sha256 629912496c62  spring 9 year 1  weather 2  6:00  rod in hand: True
+[Z0] dog at the house load: beach (map 9) x -197.27 z 222.24 dir 0 flags ['ACTIVE']
+[Z0] dog on screen at the load of: beach
+[Z0] reference route (mash 10/s, U276 V52 C80 D86 B134): house VI 1036, farm +412, crossroads +350, ranch +236, beach +230; READY 339 VIs after the beach load at x -92.0 z 194.0
+[Z0] repeatable (two cold boots equal): yes
+[Z1 menus] 18 jobs, 0 already done, 18 to run
+[Z1 menus] 10/18  5.41 jobs/s  eta 0.0 min
+[Z1 menus] 18/18  5.45 jobs/s  eta 0.0 min
+[Z1] 16 distinct house arrivals (VI 1036..1074); 7 within 0-12 VIs of the fastest (VI [1036, 1038, 1040, 1042, 1044, 1046, 1048])
+[Z2 house] 7 jobs, 0 already done, 7 to run
+[Z2 house] 7/7  0.21 jobs/s  eta 0.0 min
+[Z2] fastest farm arrival 412 VIs after the house load; 10 farm states within 8
+[Z3 cross] 10 jobs, 0 already done, 10 to run
+[Z3 cross] 10/10  1.69 jobs/s  eta 0.0 min
+[Z3] fastest ranch arrival 586 VIs after the farm load; 12 ranch states
+[Z4 ranch] 12 jobs, 0 already done, 12 to run
+[Z4 ranch] 10/12  24.32 jobs/s  eta 0.0 min
+[Z4 ranch] 12/12  28.21 jobs/s  eta 0.0 min
+[Z4] 12 distinct beach states
+[Z4] x 16 beach waits (W 0-30 VIs before the first step) = 192 beach starts
+[Z5] 192 beach states, 0 already decided for D 84-86
+[Z5 beach] 192 jobs, 0 already done, 192 to run
+[Z5 beach] 10/192  2.61 jobs/s  eta 1.2 min
+[Z5 beach] 20/192  2.79 jobs/s  eta 1.0 min
+[Z5 beach] 30/192  2.95 jobs/s  eta 0.9 min
+[Z5 beach] 40/192  3.00 jobs/s  eta 0.8 min
+[Z5 beach] 50/192  3.47 jobs/s  eta 0.7 min
+[Z5 beach] 60/192  3.46 jobs/s  eta 0.6 min
+[Z5 beach] 70/192  3.43 jobs/s  eta 0.6 min
+[Z5 beach] 80/192  3.41 jobs/s  eta 0.5 min
+[Z5 beach] 90/192  3.57 jobs/s  eta 0.5 min
+[Z5 beach] 100/192  3.54 jobs/s  eta 0.4 min
+[Z5 beach] 110/192  3.54 jobs/s  eta 0.4 min
+[Z5 beach] 120/192  3.54 jobs/s  eta 0.3 min
+[Z5 beach] 130/192  3.58 jobs/s  eta 0.3 min
+[Z5 beach] 140/192  3.62 jobs/s  eta 0.2 min
+[Z5 beach] 150/192  3.61 jobs/s  eta 0.2 min
+[Z5 beach] 160/192  3.58 jobs/s  eta 0.1 min
+[Z5 beach] 170/192  3.63 jobs/s  eta 0.1 min
+[Z5 beach] 180/192  3.61 jobs/s  eta 0.1 min
+[Z5 beach] 190/192  3.65 jobs/s  eta 0.0 min
+[Z5 beach] 192/192  3.67 jobs/s  eta 0.0 min
+[Z5] scan jobs: 192, walks 8448, fell back to the full grid: 0
+[Z5] 192 dog lines (line keys) from 8448 (beach state, D, B) members
+[Z6 lines r0] 192 jobs, 0 already done, 192 to run
+[Z6 lines r0] 10/192  11.73 jobs/s  eta 0.3 min
+[Z6 lines r0] 20/192  15.94 jobs/s  eta 0.2 min
+[Z6 lines r0] 30/192  16.93 jobs/s  eta 0.2 min
+[Z6 lines r0] 40/192  17.37 jobs/s  eta 0.1 min
+[Z6 lines r0] 50/192  18.62 jobs/s  eta 0.1 min
+[Z6 lines r0] 60/192  20.43 jobs/s  eta 0.1 min
+[Z6 lines r0] 70/192  20.17 jobs/s  eta 0.1 min
+[Z6 lines r0] 80/192  18.96 jobs/s  eta 0.1 min
+[Z6 lines r0] 90/192  19.25 jobs/s  eta 0.1 min
+[Z6 lines r0] 100/192  20.36 jobs/s  eta 0.1 min
+[Z6 lines r0] 110/192  20.51 jobs/s  eta 0.1 min
+[Z6 lines r0] 120/192  20.46 jobs/s  eta 0.1 min
+[Z6 lines r0] 130/192  20.50 jobs/s  eta 0.1 min
+[Z6 lines r0] 140/192  20.94 jobs/s  eta 0.0 min
+[Z6 lines r0] 150/192  21.12 jobs/s  eta 0.0 min
+[Z6 lines r0] 160/192  20.62 jobs/s  eta 0.0 min
+[Z6 lines r0] 170/192  20.52 jobs/s  eta 0.0 min
+[Z6 lines r0] 180/192  20.80 jobs/s  eta 0.0 min
+[Z6 lines r0] 190/192  20.87 jobs/s  eta 0.0 min
+[Z6 lines r0] 192/192  20.72 jobs/s  eta 0.0 min
+[Z6] round 0: 370 lines (178 new, their paths run next round); 4988 members on another line's path or not matched yet
+[Z6 lines r1] 370 jobs, 192 already done, 178 to run
+[Z6 lines r1] 10/178  13.36 jobs/s  eta 0.2 min
+[Z6 lines r1] 20/178  15.85 jobs/s  eta 0.2 min
+[Z6 lines r1] 30/178  17.16 jobs/s  eta 0.1 min
+[Z6 lines r1] 40/178  17.84 jobs/s  eta 0.1 min
+[Z6 lines r1] 50/178  20.69 jobs/s  eta 0.1 min
+[Z6 lines r1] 60/178  20.43 jobs/s  eta 0.1 min
+[Z6 lines r1] 70/178  20.43 jobs/s  eta 0.1 min
+[Z6 lines r1] 80/178  19.64 jobs/s  eta 0.1 min
+[Z6 lines r1] 90/178  19.80 jobs/s  eta 0.1 min
+[Z6 lines r1] 100/178  20.26 jobs/s  eta 0.1 min
+[Z6 lines r1] 110/178  20.65 jobs/s  eta 0.1 min
+[Z6 lines r1] 120/178  20.70 jobs/s  eta 0.0 min
+[Z6 lines r1] 130/178  20.97 jobs/s  eta 0.0 min
+[Z6 lines r1] 140/178  21.18 jobs/s  eta 0.0 min
+[Z6 lines r1] 150/178  21.23 jobs/s  eta 0.0 min
+[Z6 lines r1] 160/178  20.78 jobs/s  eta 0.0 min
+[Z6 lines r1] 170/178  20.78 jobs/s  eta 0.0 min
+[Z6 lines r1] 178/178  20.98 jobs/s  eta 0.0 min
+[Z6] round 1: 388 lines (18 new, their paths run next round); 362 members on another line's path or not matched yet
+[Z6 lines r2] 388 jobs, 370 already done, 18 to run
+[Z6 lines r2] 10/18  11.17 jobs/s  eta 0.0 min
+[Z6 lines r2] 18/18  13.52 jobs/s  eta 0.0 min
+[Z6] round 2: 397 lines (9 new, their paths run next round); 50 members on another line's path or not matched yet
+[Z6 lines r3] 397 jobs, 388 already done, 9 to run
+[Z6 lines r3] 9/9  9.05 jobs/s  eta 0.0 min
+[Z6] round 3: 406 lines (9 new, their paths run next round); 32 members on another line's path or not matched yet
+[Z6 lines r4] 406 jobs, 397 already done, 9 to run
+[Z6 lines r4] 9/9  9.20 jobs/s  eta 0.0 min
+[Z6] round 4: 413 lines (7 new, their paths run next round); 14 members on another line's path or not matched yet
+[Z6 lines r5] 413 jobs, 406 already done, 7 to run
+[Z6 lines r5] 7/7  7.50 jobs/s  eta 0.0 min
+[Z6] round 5: 99 lines (0 new, their paths run next round); 0 members on another line's path or not matched yet
+stopping after Z6 (--stop-after)
+[dogwatch] gear           3 s: right line on top 36%, posterior on it 29%, >= 90% sure 20%, lines left 48.6
+[dogwatch] gear           5 s: right line on top 50%, posterior on it 46%, >= 90% sure 41%, lines left 40.7
+[dogwatch] gear          10 s: right line on top 52%, posterior on it 49%, >= 90% sure 43%, lines left 39.8
+[dogwatch] gear          15 s: right line on top 64%, posterior on it 60%, >= 90% sure 53%, lines left 30.0
+[dogwatch] gear          20 s: right line on top 73%, posterior on it 68%, >= 90% sure 63%, lines left 24.6
+[dogwatch] gear-arrows    3 s: right line on top 22%, posterior on it 17%, >= 90% sure 6%, lines left 49.1
+[dogwatch] gear-arrows    5 s: right line on top 36%, posterior on it 30%, >= 90% sure 18%, lines left 44.0
+[dogwatch] gear-arrows   10 s: right line on top 40%, posterior on it 33%, >= 90% sure 20%, lines left 42.5
+[dogwatch] gear-arrows   15 s: right line on top 52%, posterior on it 48%, >= 90% sure 36%, lines left 31.1
+[dogwatch] gear-arrows   20 s: right line on top 62%, posterior on it 57%, >= 90% sure 46%, lines left 27.3
+[dogwatch] thomas         3 s: right line on top 29%, posterior on it 25%, >= 90% sure 16%, lines left 69.3
+[dogwatch] thomas         5 s: right line on top 50%, posterior on it 43%, >= 90% sure 38%, lines left 54.6
+[dogwatch] thomas        10 s: right line on top 56%, posterior on it 51%, >= 90% sure 46%, lines left 46.8
+[dogwatch] thomas        15 s: right line on top 65%, posterior on it 58%, >= 90% sure 51%, lines left 37.3
+[dogwatch] thomas        20 s: right line on top 70%, posterior on it 64%, >= 90% sure 56%, lines left 31.3
+[dogwatch] facing         3 s: right line on top 13%, posterior on it 10%, >= 90% sure 5%, lines left 88.6
+[dogwatch] facing         5 s: right line on top 26%, posterior on it 21%, >= 90% sure 17%, lines left 78.0
+[dogwatch] facing        10 s: right line on top 30%, posterior on it 23%, >= 90% sure 15%, lines left 73.7
+[dogwatch] facing        15 s: right line on top 44%, posterior on it 37%, >= 90% sure 26%, lines left 57.0
+[dogwatch] facing        20 s: right line on top 58%, posterior on it 52%, >= 90% sure 42%, lines left 41.9
+[dogwatch] anim+facing    3 s: right line on top 69%, posterior on it 64%, >= 90% sure 44%, lines left 12.4
+[dogwatch] anim+facing    5 s: right line on top 90%, posterior on it 89%, >= 90% sure 81%, lines left 2.8
+[dogwatch] anim+facing   10 s: right line on top 95%, posterior on it 95%, >= 90% sure 90%, lines left 1.6
+[dogwatch] anim+facing   15 s: right line on top 95%, posterior on it 93%, >= 90% sure 86%, lines left 1.3
+[dogwatch] anim+facing   20 s: right line on top 96%, posterior on it 94%, >= 90% sure 88%, lines left 1.5
+[dogwatch] anim           3 s: right line on top 74%, posterior on it 69%, >= 90% sure 49%, lines left 11.8
+[dogwatch] anim           5 s: right line on top 91%, posterior on it 89%, >= 90% sure 76%, lines left 1.9
+[dogwatch] anim          10 s: right line on top 97%, posterior on it 96%, >= 90% sure 91%, lines left 1.2
+[dogwatch] anim          15 s: right line on top 96%, posterior on it 95%, >= 90% sure 88%, lines left 1.3
+[dogwatch] anim          20 s: right line on top 94%, posterior on it 93%, >= 90% sure 86%, lines left 1.3
+[dogwatch] tap            3 s: right line on top 14%, posterior on it 9%, >= 90% sure 0%, lines left 50.8
+[dogwatch] tap            5 s: right line on top 41%, posterior on it 29%, >= 90% sure 6%, lines left 18.5
+[dogwatch] tap           10 s: right line on top 83%, posterior on it 78%, >= 90% sure 55%, lines left 3.1
+[dogwatch] tap           15 s: right line on top 95%, posterior on it 92%, >= 90% sure 82%, lines left 1.4
+[dogwatch] tap           20 s: right line on top 94%, posterior on it 93%, >= 90% sure 85%, lines left 1.6
+[dogwatch] wrote results/dogwatch/married-lineup2-rainy-62991249/DOGWATCH.md
+# Dog-watch report: married-lineup2-rainy-62991249
+
+99 dog lines with traces (40 s after READY), 911 (line, READY offset) variants; route-weighted. Clock = the dock-end tap ±3 VI; logs from 1.0 s after READY; runner: changes >= 12 VI, reaction 10-25 VI, 15% missed. Odds: cast >= 2 s after the window, ±150 ms.
+
+## What the dog does while you wait (after READY, route-weighted)
+
+- dog's tile on the visibility grid (it animates only then): 99% of the time
+- visible changes per minute: 61; changes lasting >= 12 VI: 88%
+- facing on screen (share of the wait): SW 40%, NE 17%, SE 13%, W 9%, NW 9%, E 7%, N 5%; animations readable (dog faces S / N / NE / E / SE): 43%
+- the dog moves (units, max over the trace): median 0.0
+- decision (actionState change) -> next visible change: median 0 VI (p10 0, p90 30); animation set -> displayed: median 0 VI
+
+## Telling the lines apart (simulated runners)
+
+| logging | window | right line on top | posterior on it | >= 90% sure | lines left | logs |
+|---|---|---|---|---|---|---|
+| gear: arrows at every facing change (no arrow = same facing) + numpad 0-9 for long animations facing S/N/E | 3 s | 36% | 29% | 20% | 48.6 | 0.3 |
+| gear: arrows at every facing change (no arrow = same facing) + numpad 0-9 for long animations facing S/N/E | 5 s | 50% | 46% | 41% | 40.7 | 0.8 |
+| gear: arrows at every facing change (no arrow = same facing) + numpad 0-9 for long animations facing S/N/E | 10 s | 52% | 49% | 43% | 39.8 | 1.5 |
+| gear: arrows at every facing change (no arrow = same facing) + numpad 0-9 for long animations facing S/N/E | 15 s | 64% | 60% | 53% | 30.0 | 2.3 |
+| gear: arrows at every facing change (no arrow = same facing) + numpad 0-9 for long animations facing S/N/E | 20 s | 73% | 68% | 63% | 24.6 | 3.5 |
+| gear, arrows only (no arrow = same facing) | 3 s | 22% | 17% | 6% | 49.1 | 0.1 |
+| gear, arrows only (no arrow = same facing) | 5 s | 36% | 30% | 18% | 44.0 | 0.3 |
+| gear, arrows only (no arrow = same facing) | 10 s | 40% | 33% | 20% | 42.5 | 0.4 |
+| gear, arrows only (no arrow = same facing) | 15 s | 52% | 48% | 36% | 31.1 | 0.6 |
+| gear, arrows only (no arrow = same facing) | 20 s | 62% | 57% | 46% | 27.3 | 1.0 |
+| your logging (arrows always, letters for long animations facing S/N/E) | 3 s | 29% | 25% | 16% | 69.3 | 0.4 |
+| your logging (arrows always, letters for long animations facing S/N/E) | 5 s | 50% | 43% | 38% | 54.6 | 0.8 |
+| your logging (arrows always, letters for long animations facing S/N/E) | 10 s | 56% | 51% | 46% | 46.8 | 1.8 |
+| your logging (arrows always, letters for long animations facing S/N/E) | 15 s | 65% | 58% | 51% | 37.3 | 2.5 |
+  zip      /Users/thomwollin/Documents/hm64/runs/hm64-dogwatch-early-married-lineup2-rainy-62991249-20261125-063853.zip
+  phase 1: 2 min
+
+==> 5/7 [2: married-lineup2-rainy-62991249] dog-watch phase 3: Lucky Timer cast tables (every game frame 0.1-40 s, every bite to 90 s) (Wed 10:45)
+zigzag-4f (2026-11-16: every bite to 90 s after READY; dogwatch menus 0-6 frames late; dog-watch traces (observe), house band house_lo, lineup-sparrow; 2026-11-15: lineup + first cut D 86; dog-spot lab - dog-neutral beach + lines, failure map; zigzag-3 pool/core/scan)  preset dogwatch  save /work/data/saves_dogspots/married-lineup2-rainy-62991249.SaveRAM  workers 13
+[core] M64H_CPU=dynarec (set by you)
+[Z0] save married-lineup2-rainy-62991249.SaveRAM  sha256 629912496c62  spring 9 year 1  weather 2  6:00  rod in hand: True
+[Z0] dog at the house load: beach (map 9) x -197.27 z 222.24 dir 0 flags ['ACTIVE']
+[Z0] dog on screen at the load of: beach
+[Z0] reference route (mash 10/s, U276 V52 C80 D86 B134): house VI 1036, farm +412, crossroads +350, ranch +236, beach +230; READY 339 VIs after the beach load at x -92.0 z 194.0
+[Z0] repeatable (two cold boots equal): yes
+[Z1 menus] 18 jobs, 18 already done, 0 to run
+[Z1] 16 distinct house arrivals (VI 1036..1074); 7 within 0-12 VIs of the fastest (VI [1036, 1038, 1040, 1042, 1044, 1046, 1048])
+[Z2 house] 7 jobs, 7 already done, 0 to run
+[Z2] fastest farm arrival 412 VIs after the house load; 10 farm states within 8
+[Z3 cross] 10 jobs, 10 already done, 0 to run
+[Z3] fastest ranch arrival 586 VIs after the farm load; 12 ranch states
+[Z4 ranch] 12 jobs, 12 already done, 0 to run
+[Z4] 12 distinct beach states
+[Z4] x 16 beach waits (W 0-30 VIs before the first step) = 192 beach starts
+[Z5] 192 beach states, 192 already decided for D 84-86
+[Z5 beach] 0 jobs, 192 already done, 0 to run
+[Z5] scan jobs: 192, walks 8448, fell back to the full grid: 0
+[Z5] 192 dog lines (line keys) from 8448 (beach state, D, B) members
+[Z6 lines r0] 192 jobs, 413 already done, 0 to run
+[Z6] round 0: 370 lines (178 new, their paths run next round); 4988 members on another line's path or not matched yet
+[Z6 lines r1] 370 jobs, 413 already done, 0 to run
+[Z6] round 1: 388 lines (18 new, their paths run next round); 362 members on another line's path or not matched yet
+[Z6 lines r2] 388 jobs, 413 already done, 0 to run
+[Z6] round 2: 397 lines (9 new, their paths run next round); 50 members on another line's path or not matched yet
+[Z6 lines r3] 397 jobs, 413 already done, 0 to run
+[Z6] round 3: 406 lines (9 new, their paths run next round); 32 members on another line's path or not matched yet
+[Z6 lines r4] 406 jobs, 413 already done, 0 to run
+[Z6] round 4: 413 lines (7 new, their paths run next round); 14 members on another line's path or not matched yet
+[Z6 lines r5] 413 jobs, 413 already done, 0 to run
+[Z6] round 5: 99 lines (0 new, their paths run next round); 0 members on another line's path or not matched yet
+[Z7] casting 51 of 99 dog lines (90.4% of the route weight)
+[Z7] every bite up to 90 s after READY (bites 1-2 always)
+[Z7 casts 0-20 s] 1089 jobs, 0 already done, 1089 to run
+[Z7 casts 0-20 s] 10/1089  0.18 jobs/s  eta 97.8 min
+[Z7 casts 0-20 s] 20/1089  0.20 jobs/s  eta 89.0 min
+[Z7 casts 0-20 s] 30/1089  0.20 jobs/s  eta 88.9 min
+[Z7 casts 0-20 s] 40/1089  0.21 jobs/s  eta 82.7 min
+[Z7 casts 0-20 s] 50/1089  0.24 jobs/s  eta 71.2 min
+[Z7 casts 0-20 s] 60/1089  0.24 jobs/s  eta 71.2 min
+[Z7 casts 0-20 s] 70/1089  0.24 jobs/s  eta 70.9 min
+[Z7 casts 0-20 s] 80/1089  0.24 jobs/s  eta 71.3 min
+[Z7 casts 0-20 s] 90/1089  0.24 jobs/s  eta 68.3 min
+[Z7 casts 0-20 s] 100/1089  0.26 jobs/s  eta 64.4 min
+[Z7 casts 0-20 s] 110/1089  0.25 jobs/s  eta 65.2 min
+[Z7 casts 0-20 s] 120/1089  0.25 jobs/s  eta 64.5 min
+[Z7 casts 0-20 s] 130/1089  0.25 jobs/s  eta 65.0 min
+[Z7 casts 0-20 s] 140/1089  0.25 jobs/s  eta 62.8 min
+[Z7 casts 0-20 s] 150/1089  0.26 jobs/s  eta 60.8 min
+[Z7 casts 0-20 s] 160/1089  0.25 jobs/s  eta 61.1 min
+[Z7 casts 0-20 s] 170/1089  0.25 jobs/s  eta 60.8 min
+[Z7 casts 0-20 s] 180/1089  0.25 jobs/s  eta 59.9 min
+[Z7 casts 0-20 s] 190/1089  0.25 jobs/s  eta 58.8 min
+[Z7 casts 0-20 s] 200/1089  0.26 jobs/s  eta 57.1 min
+[Z7 casts 0-20 s] 210/1089  0.26 jobs/s  eta 57.1 min
+[Z7 casts 0-20 s] 220/1089  0.26 jobs/s  eta 56.6 min
+[Z7 casts 0-20 s] 230/1089  0.26 jobs/s  eta 56.0 min
+[Z7 casts 0-20 s] 240/1089  0.26 jobs/s  eta 55.2 min
+[Z7 casts 0-20 s] 250/1089  0.26 jobs/s  eta 53.7 min
+[Z7 casts 0-20 s] 260/1089  0.26 jobs/s  eta 53.6 min
+[Z7 casts 0-20 s] 270/1089  0.26 jobs/s  eta 53.0 min
+[Z7 casts 0-20 s] 280/1089  0.26 jobs/s  eta 52.6 min
+[Z7 casts 0-20 s] 290/1089  0.26 jobs/s  eta 51.5 min
+[Z7 casts 0-20 s] 300/1089  0.26 jobs/s  eta 50.3 min
+[Z7 casts 0-20 s] 310/1089  0.26 jobs/s  eta 50.0 min
+[Z7 casts 0-20 s] 320/1089  0.26 jobs/s  eta 49.5 min
+[Z7 casts 0-20 s] 330/1089  0.26 jobs/s  eta 49.0 min
+[Z7 casts 0-20 s] 340/1089  0.26 jobs/s  eta 48.1 min
+[Z7 casts 0-20 s] 350/1089  0.26 jobs/s  eta 47.0 min
+[Z7 casts 0-20 s] 360/1089  0.26 jobs/s  eta 46.6 min
+[Z7 casts 0-20 s] 370/1089  0.26 jobs/s  eta 46.1 min
+[Z7 casts 0-20 s] 380/1089  0.26 jobs/s  eta 45.6 min
+[Z7 casts 0-20 s] 390/1089  0.26 jobs/s  eta 44.6 min
+[Z7 casts 0-20 s] 400/1089  0.26 jobs/s  eta 43.7 min
+[Z7 casts 0-20 s] 410/1089  0.26 jobs/s  eta 43.2 min
+[Z7 casts 0-20 s] 420/1089  0.26 jobs/s  eta 42.7 min
+[Z7 casts 0-20 s] 430/1089  0.26 jobs/s  eta 42.2 min
+[Z7 casts 0-20 s] 440/1089  0.26 jobs/s  eta 41.2 min
+[Z7 casts 0-20 s] 450/1089  0.26 jobs/s  eta 40.5 min
+[Z7 casts 0-20 s] 460/1089  0.26 jobs/s  eta 40.1 min
+[Z7 casts 0-20 s] 470/1089  0.26 jobs/s  eta 39.8 min
+[Z7 casts 0-20 s] 480/1089  0.26 jobs/s  eta 38.7 min
+[Z7 casts 0-20 s] 490/1089  0.26 jobs/s  eta 38.0 min
+[Z7 casts 0-20 s] 500/1089  0.26 jobs/s  eta 37.6 min
+[Z7 casts 0-20 s] 510/1089  0.26 jobs/s  eta 36.8 min
+[Z7 casts 0-20 s] 520/1089  0.26 jobs/s  eta 36.0 min
+[Z7 casts 0-20 s] 530/1089  0.26 jobs/s  eta 35.5 min
+[Z7 casts 0-20 s] 540/1089  0.26 jobs/s  eta 34.9 min
+[Z7 casts 0-20 s] 550/1089  0.26 jobs/s  eta 34.4 min
+[Z7 casts 0-20 s] 560/1089  0.26 jobs/s  eta 33.5 min
+[Z7 casts 0-20 s] 570/1089  0.26 jobs/s  eta 33.0 min
+[Z7 casts 0-20 s] 580/1089  0.26 jobs/s  eta 32.3 min
+[Z7 casts 0-20 s] 590/1089  0.26 jobs/s  eta 31.8 min
+[Z7 casts 0-20 s] 600/1089  0.26 jobs/s  eta 31.0 min
+[Z7 casts 0-20 s] 610/1089  0.26 jobs/s  eta 30.2 min
+[Z7 casts 0-20 s] 620/1089  0.26 jobs/s  eta 29.7 min
+[Z7 casts 0-20 s] 630/1089  0.26 jobs/s  eta 29.2 min
+[Z7 casts 0-20 s] 640/1089  0.26 jobs/s  eta 28.4 min
+[Z7 casts 0-20 s] 650/1089  0.26 jobs/s  eta 27.8 min
+[Z7 casts 0-20 s] 660/1089  0.26 jobs/s  eta 27.2 min
+[Z7 casts 0-20 s] 670/1089  0.26 jobs/s  eta 26.6 min
+[Z7 casts 0-20 s] 680/1089  0.26 jobs/s  eta 25.9 min
+[Z7 casts 0-20 s] 690/1089  0.26 jobs/s  eta 25.3 min
+[Z7 casts 0-20 s] 700/1089  0.26 jobs/s  eta 24.6 min
+[Z7 casts 0-20 s] 710/1089  0.26 jobs/s  eta 24.0 min
+[Z7 casts 0-20 s] 720/1089  0.26 jobs/s  eta 23.5 min
+[Z7 casts 0-20 s] 730/1089  0.26 jobs/s  eta 22.8 min
+[Z7 casts 0-20 s] 740/1089  0.26 jobs/s  eta 22.1 min
+[Z7 casts 0-20 s] 750/1089  0.26 jobs/s  eta 21.5 min
+[Z7 casts 0-20 s] 760/1089  0.26 jobs/s  eta 20.9 min
+[Z7 casts 0-20 s] 770/1089  0.26 jobs/s  eta 20.3 min
+[Z7 casts 0-20 s] 780/1089  0.26 jobs/s  eta 19.7 min
+[Z7 casts 0-20 s] 790/1089  0.26 jobs/s  eta 19.0 min
+[Z7 casts 0-20 s] 800/1089  0.26 jobs/s  eta 18.3 min
+[Z7 casts 0-20 s] 810/1089  0.26 jobs/s  eta 17.7 min
+[Z7 casts 0-20 s] 820/1089  0.26 jobs/s  eta 17.1 min
+[Z7 casts 0-20 s] 830/1089  0.26 jobs/s  eta 16.5 min
+[Z7 casts 0-20 s] 840/1089  0.26 jobs/s  eta 15.8 min
+[Z7 casts 0-20 s] 850/1089  0.26 jobs/s  eta 15.2 min
+[Z7 casts 0-20 s] 860/1089  0.26 jobs/s  eta 14.6 min
+[Z7 casts 0-20 s] 870/1089  0.26 jobs/s  eta 14.0 min
+[Z7 casts 0-20 s] 880/1089  0.26 jobs/s  eta 13.3 min
+[Z7 casts 0-20 s] 890/1089  0.26 jobs/s  eta 12.6 min
+[Z7 casts 0-20 s] 900/1089  0.26 jobs/s  eta 12.0 min
+[Z7 casts 0-20 s] 910/1089  0.26 jobs/s  eta 11.4 min
+[Z7 casts 0-20 s] 920/1089  0.26 jobs/s  eta 10.8 min
+[Z7 casts 0-20 s] 930/1089  0.26 jobs/s  eta 10.1 min
+[Z7 casts 0-20 s] 940/1089  0.26 jobs/s  eta 9.5 min
+[Z7 casts 0-20 s] 950/1089  0.26 jobs/s  eta 8.9 min
+[Z7 casts 0-20 s] 960/1089  0.26 jobs/s  eta 8.2 min
+[Z7 casts 0-20 s] 970/1089  0.26 jobs/s  eta 7.5 min
+[Z7 casts 0-20 s] 980/1089  0.26 jobs/s  eta 6.9 min
+[Z7 casts 0-20 s] 990/1089  0.26 jobs/s  eta 6.3 min
+[Z7 casts 0-20 s] 1000/1089  0.26 jobs/s  eta 5.7 min
+[Z7 casts 0-20 s] 1010/1089  0.26 jobs/s  eta 5.0 min
+[Z7 casts 0-20 s] 1020/1089  0.26 jobs/s  eta 4.4 min
+[Z7 casts 0-20 s] 1030/1089  0.27 jobs/s  eta 3.7 min
+[Z7 casts 0-20 s] 1040/1089  0.27 jobs/s  eta 3.1 min
+[Z7 casts 0-20 s] 1050/1089  0.27 jobs/s  eta 2.4 min
+[Z7 casts 0-20 s] 1060/1089  0.27 jobs/s  eta 1.8 min
+[Z7 casts 0-20 s] 1070/1089  0.27 jobs/s  eta 1.2 min
+[Z7 casts 0-20 s] 1080/1089  0.28 jobs/s  eta 0.5 min
+[Z7 casts 0-20 s] 1089/1089  0.28 jobs/s  eta 0.0 min
+[Z8 member checks 0] 137 jobs, 0 already done, 137 to run
+[Z8 member checks 0] 10/137  3.71 jobs/s  eta 0.6 min
+[Z8 member checks 0] 20/137  3.90 jobs/s  eta 0.5 min
+[Z8 member checks 0] 30/137  4.13 jobs/s  eta 0.4 min
+[Z8 member checks 0] 40/137  4.33 jobs/s  eta 0.4 min
+[Z8 member checks 0] 50/137  4.75 jobs/s  eta 0.3 min
+[Z8 member checks 0] 60/137  4.71 jobs/s  eta 0.3 min
+[Z8 member checks 0] 70/137  4.76 jobs/s  eta 0.2 min
+[Z8 member checks 0] 80/137  4.69 jobs/s  eta 0.2 min
+[Z8 member checks 0] 90/137  4.76 jobs/s  eta 0.2 min
+[Z8 member checks 0] 100/137  4.79 jobs/s  eta 0.1 min
+[Z8 member checks 0] 110/137  4.80 jobs/s  eta 0.1 min
+[Z8 member checks 0] 120/137  4.79 jobs/s  eta 0.1 min
+[Z8 member checks 0] 130/137  4.87 jobs/s  eta 0.0 min
+[Z8 member checks 0] 137/137  4.87 jobs/s  eta 0.0 min
+[Z7 casts 20-40 s] 978 jobs, 1089 already done, 978 to run
+[Z7 casts 20-40 s] 10/978  0.23 jobs/s  eta 69.8 min
+[Z7 casts 20-40 s] 20/978  0.26 jobs/s  eta 61.9 min
+[Z7 casts 20-40 s] 30/978  0.26 jobs/s  eta 61.3 min
+[Z7 casts 20-40 s] 40/978  0.27 jobs/s  eta 57.5 min
+[Z7 casts 20-40 s] 50/978  0.33 jobs/s  eta 46.7 min
+[Z7 casts 20-40 s] 60/978  0.31 jobs/s  eta 49.1 min
+[Z7 casts 20-40 s] 70/978  0.31 jobs/s  eta 48.3 min
+[Z7 casts 20-40 s] 80/978  0.30 jobs/s  eta 49.4 min
+[Z7 casts 20-40 s] 90/978  0.31 jobs/s  eta 47.7 min
+[Z7 casts 20-40 s] 100/978  0.33 jobs/s  eta 44.7 min
+[Z7 casts 20-40 s] 110/978  0.32 jobs/s  eta 45.1 min
+[Z7 casts 20-40 s] 120/978  0.32 jobs/s  eta 44.7 min
+[Z7 casts 20-40 s] 130/978  0.31 jobs/s  eta 45.0 min
+[Z7 casts 20-40 s] 140/978  0.32 jobs/s  eta 44.2 min
+[Z7 casts 20-40 s] 150/978  0.33 jobs/s  eta 42.0 min
+[Z7 casts 20-40 s] 160/978  0.32 jobs/s  eta 42.2 min
+[Z7 casts 20-40 s] 170/978  0.32 jobs/s  eta 42.0 min
+[Z7 casts 20-40 s] 180/978  0.32 jobs/s  eta 42.0 min
+[Z7 casts 20-40 s] 190/978  0.33 jobs/s  eta 40.0 min
+[Z7 casts 20-40 s] 200/978  0.33 jobs/s  eta 39.6 min
+[Z7 casts 20-40 s] 210/978  0.32 jobs/s  eta 39.5 min
+[Z7 casts 20-40 s] 220/978  0.32 jobs/s  eta 39.1 min
+[Z7 casts 20-40 s] 230/978  0.32 jobs/s  eta 38.7 min
+[Z7 casts 20-40 s] 240/978  0.33 jobs/s  eta 37.6 min
+[Z7 casts 20-40 s] 250/978  0.33 jobs/s  eta 36.9 min
+[Z7 casts 20-40 s] 260/978  0.33 jobs/s  eta 36.8 min
+[Z7 casts 20-40 s] 270/978  0.33 jobs/s  eta 36.2 min
+[Z7 casts 20-40 s] 280/978  0.33 jobs/s  eta 35.6 min
+[Z7 casts 20-40 s] 290/978  0.33 jobs/s  eta 35.2 min
+[Z7 casts 20-40 s] 300/978  0.33 jobs/s  eta 34.3 min
+[Z7 casts 20-40 s] 310/978  0.33 jobs/s  eta 33.8 min
+[Z7 casts 20-40 s] 320/978  0.33 jobs/s  eta 33.3 min
+[Z7 casts 20-40 s] 330/978  0.33 jobs/s  eta 33.2 min
+[Z7 casts 20-40 s] 340/978  0.33 jobs/s  eta 32.7 min
+[Z7 casts 20-40 s] 350/978  0.33 jobs/s  eta 31.6 min
+[Z7 casts 20-40 s] 360/978  0.33 jobs/s  eta 31.2 min
+[Z7 casts 20-40 s] 370/978  0.33 jobs/s  eta 30.7 min
+[Z7 casts 20-40 s] 380/978  0.33 jobs/s  eta 30.3 min
+[Z7 casts 20-40 s] 390/978  0.33 jobs/s  eta 29.4 min
+[Z7 casts 20-40 s] 400/978  0.33 jobs/s  eta 28.8 min
+[Z7 casts 20-40 s] 410/978  0.33 jobs/s  eta 28.6 min
+[Z7 casts 20-40 s] 420/978  0.33 jobs/s  eta 28.1 min
+[Z7 casts 20-40 s] 430/978  0.33 jobs/s  eta 27.5 min
+[Z7 casts 20-40 s] 440/978  0.33 jobs/s  eta 27.0 min
+[Z7 casts 20-40 s] 450/978  0.33 jobs/s  eta 26.3 min
+[Z7 casts 20-40 s] 460/978  0.33 jobs/s  eta 26.0 min
+[Z7 casts 20-40 s] 470/978  0.33 jobs/s  eta 25.4 min
+[Z7 casts 20-40 s] 480/978  0.33 jobs/s  eta 24.9 min
+[Z7 casts 20-40 s] 490/978  0.34 jobs/s  eta 24.2 min
+[Z7 casts 20-40 s] 500/978  0.33 jobs/s  eta 23.8 min
+[Z7 casts 20-40 s] 510/978  0.33 jobs/s  eta 23.5 min
+[Z7 casts 20-40 s] 520/978  0.33 jobs/s  eta 22.9 min
+[Z7 casts 20-40 s] 530/978  0.34 jobs/s  eta 22.2 min
+[Z7 casts 20-40 s] 540/978  0.34 jobs/s  eta 21.8 min
+[Z7 casts 20-40 s] 550/978  0.34 jobs/s  eta 21.2 min
+[Z7 casts 20-40 s] 560/978  0.34 jobs/s  eta 20.7 min
+[Z7 casts 20-40 s] 570/978  0.34 jobs/s  eta 20.2 min
+[Z7 casts 20-40 s] 580/978  0.34 jobs/s  eta 19.6 min
+[Z7 casts 20-40 s] 590/978  0.34 jobs/s  eta 19.2 min
+[Z7 casts 20-40 s] 600/978  0.34 jobs/s  eta 18.8 min
+[Z7 casts 20-40 s] 610/978  0.33 jobs/s  eta 18.3 min
+[Z7 casts 20-40 s] 620/978  0.33 jobs/s  eta 17.8 min
+[Z7 casts 20-40 s] 630/978  0.34 jobs/s  eta 17.2 min
+[Z7 casts 20-40 s] 640/978  0.34 jobs/s  eta 16.7 min
+[Z7 casts 20-40 s] 650/978  0.34 jobs/s  eta 16.3 min
+[Z7 casts 20-40 s] 660/978  0.33 jobs/s  eta 15.8 min
+[Z7 casts 20-40 s] 670/978  0.33 jobs/s  eta 15.3 min
+[Z7 casts 20-40 s] 680/978  0.34 jobs/s  eta 14.7 min
+[Z7 casts 20-40 s] 690/978  0.34 jobs/s  eta 14.3 min
+[Z7 casts 20-40 s] 700/978  0.34 jobs/s  eta 13.8 min
+[Z7 casts 20-40 s] 710/978  0.34 jobs/s  eta 13.3 min
+[Z7 casts 20-40 s] 720/978  0.34 jobs/s  eta 12.8 min
+[Z7 casts 20-40 s] 730/978  0.34 jobs/s  eta 12.2 min
+[Z7 casts 20-40 s] 740/978  0.34 jobs/s  eta 11.8 min
+[Z7 casts 20-40 s] 750/978  0.34 jobs/s  eta 11.3 min
+[Z7 casts 20-40 s] 760/978  0.33 jobs/s  eta 10.9 min
+[Z7 casts 20-40 s] 770/978  0.34 jobs/s  eta 10.3 min
+[Z7 casts 20-40 s] 780/978  0.34 jobs/s  eta 9.8 min
+[Z7 casts 20-40 s] 790/978  0.34 jobs/s  eta 9.3 min
+[Z7 casts 20-40 s] 800/978  0.34 jobs/s  eta 8.9 min
+[Z7 casts 20-40 s] 810/978  0.34 jobs/s  eta 8.3 min
+[Z7 casts 20-40 s] 820/978  0.34 jobs/s  eta 7.8 min
+[Z7 casts 20-40 s] 830/978  0.34 jobs/s  eta 7.3 min
+[Z7 casts 20-40 s] 840/978  0.34 jobs/s  eta 6.9 min
+[Z7 casts 20-40 s] 850/978  0.33 jobs/s  eta 6.4 min
+[Z7 casts 20-40 s] 860/978  0.34 jobs/s  eta 5.8 min
+[Z7 casts 20-40 s] 870/978  0.34 jobs/s  eta 5.3 min
+[Z7 casts 20-40 s] 880/978  0.34 jobs/s  eta 4.8 min
+[Z7 casts 20-40 s] 890/978  0.34 jobs/s  eta 4.3 min
+[Z7 casts 20-40 s] 900/978  0.35 jobs/s  eta 3.7 min
+[Z7 casts 20-40 s] 910/978  0.35 jobs/s  eta 3.2 min
+[Z7 casts 20-40 s] 920/978  0.36 jobs/s  eta 2.7 min
+[Z7 casts 20-40 s] 930/978  0.36 jobs/s  eta 2.2 min
+[Z7 casts 20-40 s] 940/978  0.36 jobs/s  eta 1.7 min
+[Z7 casts 20-40 s] 950/978  0.37 jobs/s  eta 1.3 min
+[Z7 casts 20-40 s] 960/978  0.37 jobs/s  eta 0.8 min
+[Z7 casts 20-40 s] 970/978  0.37 jobs/s  eta 0.4 min
+[Z7 casts 20-40 s] 978/978  0.38 jobs/s  eta 0.0 min
+[Z8 member checks 1] 104 jobs, 137 already done, 104 to run
+[Z8 member checks 1] 10/104  2.76 jobs/s  eta 0.6 min
+[Z8 member checks 1] 20/104  3.01 jobs/s  eta 0.5 min
+[Z8 member checks 1] 30/104  3.12 jobs/s  eta 0.4 min
+[Z8 member checks 1] 40/104  3.33 jobs/s  eta 0.3 min
+[Z8 member checks 1] 50/104  3.66 jobs/s  eta 0.2 min
+[Z8 member checks 1] 60/104  3.62 jobs/s  eta 0.2 min
+[Z8 member checks 1] 70/104  3.62 jobs/s  eta 0.2 min
+[Z8 member checks 1] 80/104  3.65 jobs/s  eta 0.1 min
+[Z8 member checks 1] 90/104  3.77 jobs/s  eta 0.1 min
+[Z8 member checks 1] 100/104  3.83 jobs/s  eta 0.0 min
+[Z8 member checks 1] 104/104  3.84 jobs/s  eta 0.0 min
+zigzag campaign done in 110.3 min -> results/dogwatch/married-lineup2-rainy-62991249/ZIGZAG.md
+[dogwatch] gear           3 s: right line on top 36%, posterior on it 29%, >= 90% sure 20%, lines left 48.6, Nut 7.3% -> 16.0% (known line 41.2%)
+[dogwatch] gear           5 s: right line on top 50%, posterior on it 46%, >= 90% sure 41%, lines left 40.7, Nut 5.0% -> 21.4% (known line 40.1%)
+[dogwatch] gear          10 s: right line on top 52%, posterior on it 49%, >= 90% sure 43%, lines left 39.8, Nut 5.4% -> 20.8% (known line 37.5%)
+[dogwatch] gear          15 s: right line on top 64%, posterior on it 60%, >= 90% sure 53%, lines left 30.0, Nut 4.8% -> 22.2% (known line 35.7%)
+[dogwatch] gear          20 s: right line on top 73%, posterior on it 68%, >= 90% sure 63%, lines left 24.6, Nut 4.7% -> 21.3% (known line 30.5%)
+[dogwatch] gear-arrows    3 s: right line on top 22%, posterior on it 17%, >= 90% sure 6%, lines left 49.1, Nut 7.0% -> 11.3% (known line 40.8%)
+[dogwatch] gear-arrows    5 s: right line on top 36%, posterior on it 30%, >= 90% sure 18%, lines left 44.0, Nut 5.0% -> 15.6% (known line 40.0%)
+[dogwatch] gear-arrows   10 s: right line on top 40%, posterior on it 33%, >= 90% sure 20%, lines left 42.5, Nut 6.2% -> 17.4% (known line 38.1%)
+[dogwatch] gear-arrows   15 s: right line on top 52%, posterior on it 48%, >= 90% sure 36%, lines left 31.1, Nut 6.8% -> 20.9% (known line 37.7%)
+[dogwatch] gear-arrows   20 s: right line on top 62%, posterior on it 57%, >= 90% sure 46%, lines left 27.3, Nut 5.1% -> 20.8% (known line 31.5%)
+[dogwatch] thomas         3 s: right line on top 29%, posterior on it 25%, >= 90% sure 16%, lines left 69.3, Nut 5.7% -> 13.4% (known line 39.6%)
+[dogwatch] thomas         5 s: right line on top 50%, posterior on it 43%, >= 90% sure 38%, lines left 54.6, Nut 5.6% -> 20.0% (known line 40.6%)
+[dogwatch] thomas        10 s: right line on top 56%, posterior on it 51%, >= 90% sure 46%, lines left 46.8, Nut 4.9% -> 21.4% (known line 37.4%)
+[dogwatch] thomas        15 s: right line on top 65%, posterior on it 58%, >= 90% sure 51%, lines left 37.3, Nut 5.1% -> 23.0% (known line 36.9%)
+[dogwatch] thomas        20 s: right line on top 70%, posterior on it 64%, >= 90% sure 56%, lines left 31.3, Nut 4.7% -> 20.7% (known line 30.3%)
+[dogwatch] facing         3 s: right line on top 13%, posterior on it 10%, >= 90% sure 5%, lines left 88.6, Nut 5.8% -> 9.2% (known line 40.6%)
+[dogwatch] facing         5 s: right line on top 26%, posterior on it 21%, >= 90% sure 17%, lines left 78.0, Nut 7.0% -> 13.0% (known line 41.5%)
+[dogwatch] facing        10 s: right line on top 30%, posterior on it 23%, >= 90% sure 15%, lines left 73.7, Nut 6.6% -> 14.1% (known line 37.6%)
+[dogwatch] facing        15 s: right line on top 44%, posterior on it 37%, >= 90% sure 26%, lines left 57.0, Nut 4.7% -> 15.5% (known line 35.9%)
+[dogwatch] facing        20 s: right line on top 58%, posterior on it 52%, >= 90% sure 42%, lines left 41.9, Nut 4.6% -> 18.7% (known line 30.7%)
+[dogwatch] anim+facing    3 s: right line on top 69%, posterior on it 64%, >= 90% sure 44%, lines left 12.4, Nut 6.3% -> 28.6% (known line 40.1%)
+[dogwatch] anim+facing    5 s: right line on top 90%, posterior on it 89%, >= 90% sure 81%, lines left 2.8, Nut 5.4% -> 36.4% (known line 39.9%)
+[dogwatch] anim+facing   10 s: right line on top 95%, posterior on it 95%, >= 90% sure 90%, lines left 1.6, Nut 5.6% -> 36.1% (known line 37.8%)
+[dogwatch] anim+facing   15 s: right line on top 95%, posterior on it 93%, >= 90% sure 86%, lines left 1.3, Nut 6.4% -> 35.1% (known line 36.5%)
+[dogwatch] anim+facing   20 s: right line on top 96%, posterior on it 94%, >= 90% sure 88%, lines left 1.5, Nut 4.6% -> 29.9% (known line 31.1%)
+[dogwatch] anim           3 s: right line on top 74%, posterior on it 69%, >= 90% sure 49%, lines left 11.8, Nut 6.4% -> 32.3% (known line 40.8%)
+[dogwatch] anim           5 s: right line on top 91%, posterior on it 89%, >= 90% sure 76%, lines left 1.9, Nut 5.3% -> 35.5% (known line 38.9%)
+[dogwatch] anim          10 s: right line on top 97%, posterior on it 96%, >= 90% sure 91%, lines left 1.2, Nut 6.1% -> 35.6% (known line 37.0%)
+[dogwatch] anim          15 s: right line on top 96%, posterior on it 95%, >= 90% sure 88%, lines left 1.3, Nut 4.7% -> 33.7% (known line 35.1%)
+[dogwatch] anim          20 s: right line on top 94%, posterior on it 93%, >= 90% sure 86%, lines left 1.3, Nut 4.8% -> 29.9% (known line 31.1%)
+[dogwatch] tap            3 s: right line on top 14%, posterior on it 9%, >= 90% sure 0%, lines left 50.8, Nut 5.8% -> 8.2% (known line 40.0%)
+[dogwatch] tap            5 s: right line on top 41%, posterior on it 29%, >= 90% sure 6%, lines left 18.5, Nut 7.2% -> 19.4% (known line 40.1%)
+[dogwatch] tap           10 s: right line on top 83%, posterior on it 78%, >= 90% sure 55%, lines left 3.1, Nut 6.0% -> 32.3% (known line 37.7%)
+[dogwatch] tap           15 s: right line on top 95%, posterior on it 92%, >= 90% sure 82%, lines left 1.4, Nut 5.9% -> 33.7% (known line 35.7%)
+[dogwatch] tap           20 s: right line on top 94%, posterior on it 93%, >= 90% sure 85%, lines left 1.6, Nut 4.5% -> 30.1% (known line 31.3%)
+[dogwatch] wrote results/dogwatch/married-lineup2-rainy-62991249/DOGWATCH.md
+# Dog-watch report: married-lineup2-rainy-62991249
+
+99 dog lines with traces (40 s after READY), 911 (line, READY offset) variants; route-weighted. Clock = the dock-end tap ±3 VI; logs from 1.0 s after READY; runner: changes >= 12 VI, reaction 10-25 VI, 15% missed. Odds: cast >= 2 s after the window, ±150 ms.
+
+## What the dog does while you wait (after READY, route-weighted)
+
+- dog's tile on the visibility grid (it animates only then): 99% of the time
+- visible changes per minute: 61; changes lasting >= 12 VI: 88%
+- facing on screen (share of the wait): SW 40%, NE 17%, SE 13%, W 9%, NW 9%, E 7%, N 5%; animations readable (dog faces S / N / NE / E / SE): 43%
+- the dog moves (units, max over the trace): median 0.0
+- decision (actionState change) -> next visible change: median 0 VI (p10 0, p90 30); animation set -> displayed: median 0 VI
+
+## Telling the lines apart (simulated runners)
+
+| logging | window | right line on top | posterior on it | >= 90% sure | lines left | logs | Nut (no logs -> logs) | known line |
+|---|---|---|---|---|---|---|---|---|
+| gear: arrows at every facing change (no arrow = same facing) + numpad 0-9 for long animations facing S/N/E | 3 s | 36% | 29% | 20% | 48.6 | 0.3 | 7.3% -> 16.0% | 41.2% |
+| gear: arrows at every facing change (no arrow = same facing) + numpad 0-9 for long animations facing S/N/E | 5 s | 50% | 46% | 41% | 40.7 | 0.8 | 5.0% -> 21.4% | 40.1% |
+| gear: arrows at every facing change (no arrow = same facing) + numpad 0-9 for long animations facing S/N/E | 10 s | 52% | 49% | 43% | 39.8 | 1.5 | 5.4% -> 20.8% | 37.5% |
+| gear: arrows at every facing change (no arrow = same facing) + numpad 0-9 for long animations facing S/N/E | 15 s | 64% | 60% | 53% | 30.0 | 2.3 | 4.8% -> 22.2% | 35.7% |
+| gear: arrows at every facing change (no arrow = same facing) + numpad 0-9 for long animations facing S/N/E | 20 s | 73% | 68% | 63% | 24.6 | 3.5 | 4.7% -> 21.3% | 30.5% |
+| gear, arrows only (no arrow = same facing) | 3 s | 22% | 17% | 6% | 49.1 | 0.1 | 7.0% -> 11.3% | 40.8% |
+| gear, arrows only (no arrow = same facing) | 5 s | 36% | 30% | 18% | 44.0 | 0.3 | 5.0% -> 15.6% | 40.0% |
+| gear, arrows only (no arrow = same facing) | 10 s | 40% | 33% | 20% | 42.5 | 0.4 | 6.2% -> 17.4% | 38.1% |
+| gear, arrows only (no arrow = same facing) | 15 s | 52% | 48% | 36% | 31.1 | 0.6 | 6.8% -> 20.9% | 37.7% |
+| gear, arrows only (no arrow = same facing) | 20 s | 62% | 57% | 46% | 27.3 | 1.0 | 5.1% -> 20.8% | 31.5% |
+| your logging (arrows always, letters for long animations facing S/N/E) | 3 s | 29% | 25% | 16% | 69.3 | 0.4 | 5.7% -> 13.4% | 39.6% |
+| your logging (arrows always, letters for long animations facing S/N/E) | 5 s | 50% | 43% | 38% | 54.6 | 0.8 | 5.6% -> 20.0% | 40.6% |
+| your logging (arrows always, letters for long animations facing S/N/E) | 10 s | 56% | 51% | 46% | 46.8 | 1.8 | 4.9% -> 21.4% | 37.4% |
+| your logging (arrows always, letters for long animations facing S/N/E) | 15 s | 65% | 58% | 51% | 37.3 | 2.5 | 5.1% -> 23.0% | 36.9% |
+  phase 3: 111 min
+  zip      /Users/thomwollin/Documents/hm64/runs/hm64-dogwatch-married-lineup2-rainy-62991249.zip
+
+==> 6/7 [2: married-lineup2-rainy-62991249] dog after the cast: 3 windows (Wed 12:37)
+
+==> married-rainy-d90: casts to 40 s, everything to 90 s after READY, blocks 0-1  (Wed 12:37)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-lineup2-rainy-62991249  save /work/data/saves_dogspots/married-lineup2-rainy-62991249.SaveRAM  workers 13  dog at [-197.27, 222.24]
+  followed to 5398 VIs after READY
+[FD1 lines] 99 jobs, 0 already done, 99 to run
+[FD1 lines] 5/99  278.8 jobs/min  eta 0 min
+[FD1 lines] 10/99  542.6 jobs/min  eta 0 min
+[FD1 lines] 15/99  479.0 jobs/min  eta 0 min
+[FD1 lines] 20/99  609.2 jobs/min  eta 0 min
+[FD1 lines] 25/99  742.9 jobs/min  eta 0 min
+[FD1 lines] 30/99  644.0 jobs/min  eta 0 min
+[FD1 lines] 35/99  729.6 jobs/min  eta 0 min
+[FD1 lines] 40/99  677.4 jobs/min  eta 0 min
+[FD1 lines] 45/99  734.7 jobs/min  eta 0 min
+[FD1 lines] 50/99  791.4 jobs/min  eta 0 min
+[FD1 lines] 55/99  731.1 jobs/min  eta 0 min
+[FD1 lines] 60/99  777.2 jobs/min  eta 0 min
+[FD1 lines] 65/99  805.8 jobs/min  eta 0 min
+[FD1 lines] 70/99  774.3 jobs/min  eta 0 min
+[FD1 lines] 75/99  814.4 jobs/min  eta 0 min
+[FD1 lines] 80/99  742.2 jobs/min  eta 0 min
+[FD1 lines] 85/99  774.7 jobs/min  eta 0 min
+[FD1 lines] 90/99  807.9 jobs/min  eta 0 min
+[FD1 lines] 95/99  783.3 jobs/min  eta 0 min
+[FD1 lines] 99/99  806.1 jobs/min  eta 0 min
+[FD1] 99 of 99 lines ran as planned; hashes against the dog-watch run: 98505 equal, 0 different; ended: [('limit', 5398)]
+lines followed to 5398 VIs (90 s) after READY; 51 heavy lines (90.4% of the route weight), 48 others; 69370 casts in 2 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 51):  45356 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 48):  24014 casts
+
+==> married-rainy-d90 block 0 of 1  (Wed 12:37)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 0: casts 6..2398 VIs after READY on the heavy lines (51), 45356 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 0] 2291 jobs, 0 already done, 2291 to run
+[FD block 0] 5/2291  6.0 jobs/min  eta 6.4 h
+[FD block 0] 10/2291  11.1 jobs/min  eta 3.4 h
+[FD block 0] 15/2291  9.5 jobs/min  eta 4.0 h
+[FD block 0] 20/2291  12.0 jobs/min  eta 3.1 h
+[FD block 0] 25/2291  14.8 jobs/min  eta 2.6 h
+[FD block 0] 30/2291  13.0 jobs/min  eta 2.9 h
+[FD block 0] 35/2291  14.9 jobs/min  eta 2.5 h
+[FD block 0] 40/2291  14.5 jobs/min  eta 2.6 h
+[FD block 0] 45/2291  15.5 jobs/min  eta 2.4 h
+[FD block 0] 50/2291  16.7 jobs/min  eta 2.2 h
+[FD block 0] 55/2291  14.8 jobs/min  eta 2.5 h
+[FD block 0] 60/2291  15.7 jobs/min  eta 2.4 h
+[FD block 0] 65/2291  15.1 jobs/min  eta 2.5 h
+[FD block 0] 70/2291  15.5 jobs/min  eta 2.4 h
+[FD block 0] 75/2291  16.3 jobs/min  eta 2.3 h
+[FD block 0] 80/2291  15.7 jobs/min  eta 2.4 h
+[FD block 0] 85/2291  16.5 jobs/min  eta 2.2 h
+[FD block 0] 90/2291  17.1 jobs/min  eta 2.1 h
+[FD block 0] 95/2291  16.8 jobs/min  eta 2.2 h
+[FD block 0] 100/2291  17.5 jobs/min  eta 2.1 h
+[FD block 0] 105/2291  16.3 jobs/min  eta 2.2 h
+[FD block 0] 110/2291  16.9 jobs/min  eta 2.2 h
+[FD block 0] 115/2291  16.7 jobs/min  eta 2.2 h
+[FD block 0] 120/2291  16.7 jobs/min  eta 2.2 h
+[FD block 0] 125/2291  17.2 jobs/min  eta 2.1 h
+[FD block 0] 130/2291  16.7 jobs/min  eta 2.2 h
+[FD block 0] 135/2291  17.1 jobs/min  eta 2.1 h
+[FD block 0] 140/2291  17.2 jobs/min  eta 2.1 h
+[FD block 0] 145/2291  17.3 jobs/min  eta 2.1 h
+[FD block 0] 150/2291  17.8 jobs/min  eta 2.0 h
+[FD block 0] 155/2291  16.9 jobs/min  eta 2.1 h
+[FD block 0] 160/2291  17.3 jobs/min  eta 2.1 h
+[FD block 0] 165/2291  16.8 jobs/min  eta 2.1 h
+[FD block 0] 170/2291  17.1 jobs/min  eta 2.1 h
+[FD block 0] 175/2291  17.5 jobs/min  eta 2.0 h
+[FD block 0] 180/2291  17.0 jobs/min  eta 2.1 h
+[FD block 0] 185/2291  17.4 jobs/min  eta 2.0 h
+[FD block 0] 190/2291  17.5 jobs/min  eta 2.0 h
+[FD block 0] 195/2291  17.4 jobs/min  eta 2.0 h
+[FD block 0] 200/2291  17.8 jobs/min  eta 2.0 h
+[FD block 0] 205/2291  17.1 jobs/min  eta 2.0 h
+[FD block 0] 210/2291  17.4 jobs/min  eta 2.0 h
+[FD block 0] 215/2291  17.3 jobs/min  eta 2.0 h
+[FD block 0] 220/2291  17.2 jobs/min  eta 2.0 h
+[FD block 0] 225/2291  17.5 jobs/min  eta 2.0 h
+[FD block 0] 230/2291  17.3 jobs/min  eta 2.0 h
+[FD block 0] 235/2291  17.5 jobs/min  eta 2.0 h
+[FD block 0] 240/2291  17.5 jobs/min  eta 2.0 h
+[FD block 0] 245/2291  17.5 jobs/min  eta 1.9 h
+[FD block 0] 250/2291  17.8 jobs/min  eta 1.9 h
+[FD block 0] 255/2291  17.3 jobs/min  eta 2.0 h
+[FD block 0] 260/2291  17.5 jobs/min  eta 1.9 h
+[FD block 0] 265/2291  17.2 jobs/min  eta 2.0 h
+[FD block 0] 270/2291  17.3 jobs/min  eta 1.9 h
+[FD block 0] 275/2291  17.6 jobs/min  eta 1.9 h
+[FD block 0] 280/2291  17.4 jobs/min  eta 1.9 h
+[FD block 0] 285/2291  17.5 jobs/min  eta 1.9 h
+[FD block 0] 290/2291  17.5 jobs/min  eta 1.9 h
+[FD block 0] 295/2291  17.6 jobs/min  eta 1.9 h
+[FD block 0] 300/2291  17.8 jobs/min  eta 1.9 h
+[FD block 0] 305/2291  17.4 jobs/min  eta 1.9 h
+[FD block 0] 310/2291  17.5 jobs/min  eta 1.9 h
+[FD block 0] 315/2291  17.5 jobs/min  eta 1.9 h
+[FD block 0] 320/2291  17.4 jobs/min  eta 1.9 h
+[FD block 0] 325/2291  17.6 jobs/min  eta 1.9 h
+[FD block 0] 330/2291  17.4 jobs/min  eta 1.9 h
+[FD block 0] 335/2291  17.6 jobs/min  eta 1.9 h
+[FD block 0] 340/2291  17.5 jobs/min  eta 1.9 h
+[FD block 0] 345/2291  17.6 jobs/min  eta 1.8 h
+[FD block 0] 350/2291  17.8 jobs/min  eta 1.8 h
+[FD block 0] 355/2291  17.4 jobs/min  eta 1.9 h
+[FD block 0] 360/2291  17.6 jobs/min  eta 1.8 h
+[FD block 0] 365/2291  17.6 jobs/min  eta 1.8 h
+[FD block 0] 370/2291  17.5 jobs/min  eta 1.8 h
+[FD block 0] 375/2291  17.7 jobs/min  eta 1.8 h
+[FD block 0] 380/2291  17.5 jobs/min  eta 1.8 h
+[FD block 0] 385/2291  17.6 jobs/min  eta 1.8 h
+[FD block 0] 390/2291  17.8 jobs/min  eta 1.8 h
+[FD block 0] 395/2291  17.7 jobs/min  eta 1.8 h
+[FD block 0] 400/2291  17.8 jobs/min  eta 1.8 h
+[FD block 0] 405/2291  17.5 jobs/min  eta 1.8 h
+[FD block 0] 410/2291  17.7 jobs/min  eta 1.8 h
+[FD block 0] 415/2291  17.6 jobs/min  eta 1.8 h
+[FD block 0] 420/2291  17.6 jobs/min  eta 1.8 h
+[FD block 0] 425/2291  17.7 jobs/min  eta 1.8 h
+[FD block 0] 430/2291  17.7 jobs/min  eta 1.8 h
+[FD block 0] 435/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 440/2291  17.8 jobs/min  eta 1.7 h
+[FD block 0] 445/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 450/2291  17.8 jobs/min  eta 1.7 h
+[FD block 0] 455/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 460/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 465/2291  17.6 jobs/min  eta 1.7 h
+[FD block 0] 470/2291  17.6 jobs/min  eta 1.7 h
+[FD block 0] 475/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 480/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 485/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 490/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 495/2291  17.8 jobs/min  eta 1.7 h
+[FD block 0] 500/2291  17.9 jobs/min  eta 1.7 h
+[FD block 0] 505/2291  17.6 jobs/min  eta 1.7 h
+[FD block 0] 510/2291  17.8 jobs/min  eta 1.7 h
+[FD block 0] 515/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 520/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 525/2291  17.8 jobs/min  eta 1.7 h
+[FD block 0] 530/2291  17.7 jobs/min  eta 1.7 h
+[FD block 0] 535/2291  17.7 jobs/min  eta 1.6 h
+[FD block 0] 540/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 545/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 550/2291  17.9 jobs/min  eta 1.6 h
+[FD block 0] 555/2291  17.7 jobs/min  eta 1.6 h
+[FD block 0] 560/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 565/2291  17.7 jobs/min  eta 1.6 h
+[FD block 0] 570/2291  17.7 jobs/min  eta 1.6 h
+[FD block 0] 575/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 580/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 585/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 590/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 595/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 600/2291  17.9 jobs/min  eta 1.6 h
+[FD block 0] 605/2291  17.7 jobs/min  eta 1.6 h
+[FD block 0] 610/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 615/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 620/2291  17.7 jobs/min  eta 1.6 h
+[FD block 0] 625/2291  17.9 jobs/min  eta 1.6 h
+[FD block 0] 630/2291  17.8 jobs/min  eta 1.6 h
+[FD block 0] 635/2291  17.8 jobs/min  eta 1.5 h
+[FD block 0] 640/2291  17.9 jobs/min  eta 1.5 h
+[FD block 0] 645/2291  17.9 jobs/min  eta 1.5 h
+[FD block 0] 650/2291  17.9 jobs/min  eta 1.5 h
+[FD block 0] 655/2291  17.8 jobs/min  eta 1.5 h
+[FD block 0] 660/2291  17.9 jobs/min  eta 1.5 h
+[FD block 0] 665/2291  17.8 jobs/min  eta 1.5 h
+[FD block 0] 670/2291  17.8 jobs/min  eta 1.5 h
+[FD block 0] 675/2291  17.9 jobs/min  eta 1.5 h
+[FD block 0] 680/2291  17.8 jobs/min  eta 1.5 h
+[FD block 0] 685/2291  17.9 jobs/min  eta 90 min
+[FD block 0] 690/2291  17.8 jobs/min  eta 90 min
+[FD block 0] 695/2291  17.9 jobs/min  eta 89 min
+[FD block 0] 700/2291  18.0 jobs/min  eta 89 min
+[FD block 0] 705/2291  17.8 jobs/min  eta 89 min
+[FD block 0] 710/2291  17.9 jobs/min  eta 89 min
+[FD block 0] 715/2291  17.8 jobs/min  eta 88 min
+[FD block 0] 720/2291  17.8 jobs/min  eta 88 min
+[FD block 0] 725/2291  17.9 jobs/min  eta 87 min
+[FD block 0] 730/2291  17.8 jobs/min  eta 88 min
+[FD block 0] 735/2291  17.9 jobs/min  eta 87 min
+[FD block 0] 740/2291  17.9 jobs/min  eta 86 min
+[FD block 0] 745/2291  17.9 jobs/min  eta 86 min
+[FD block 0] 750/2291  18.1 jobs/min  eta 85 min
+[FD block 0] 755/2291  17.9 jobs/min  eta 86 min
+[FD block 0] 760/2291  18.0 jobs/min  eta 85 min
+[FD block 0] 765/2291  17.9 jobs/min  eta 85 min
+[FD block 0] 770/2291  17.9 jobs/min  eta 85 min
+[FD block 0] 775/2291  18.0 jobs/min  eta 84 min
+[FD block 0] 780/2291  17.9 jobs/min  eta 84 min
+[FD block 0] 785/2291  18.0 jobs/min  eta 84 min
+[FD block 0] 790/2291  18.0 jobs/min  eta 83 min
+[FD block 0] 795/2291  18.0 jobs/min  eta 83 min
+[FD block 0] 800/2291  18.1 jobs/min  eta 82 min
+[FD block 0] 805/2291  17.9 jobs/min  eta 83 min
+[FD block 0] 810/2291  18.0 jobs/min  eta 82 min
+[FD block 0] 815/2291  17.9 jobs/min  eta 82 min
+[FD block 0] 820/2291  17.9 jobs/min  eta 82 min
+[FD block 0] 825/2291  18.0 jobs/min  eta 81 min
+[FD block 0] 830/2291  18.0 jobs/min  eta 81 min
+[FD block 0] 835/2291  18.0 jobs/min  eta 81 min
+[FD block 0] 840/2291  18.0 jobs/min  eta 81 min
+[FD block 0] 845/2291  18.0 jobs/min  eta 80 min
+[FD block 0] 850/2291  18.1 jobs/min  eta 80 min
+[FD block 0] 855/2291  18.0 jobs/min  eta 80 min
+[FD block 0] 860/2291  18.0 jobs/min  eta 79 min
+[FD block 0] 865/2291  18.1 jobs/min  eta 79 min
+[FD block 0] 870/2291  18.2 jobs/min  eta 78 min
+[FD block 0] 875/2291  18.3 jobs/min  eta 77 min
+[FD block 0] 880/2291  18.4 jobs/min  eta 77 min
+[FD block 0] 885/2291  18.5 jobs/min  eta 76 min
+[FD block 0] 890/2291  18.4 jobs/min  eta 76 min
+[FD block 0] 895/2291  18.4 jobs/min  eta 76 min
+[FD block 0] 900/2291  18.5 jobs/min  eta 75 min
+[FD block 0] 905/2291  18.4 jobs/min  eta 75 min
+[FD block 0] 910/2291  18.4 jobs/min  eta 75 min
+[FD block 0] 915/2291  18.4 jobs/min  eta 75 min
+[FD block 0] 920/2291  18.4 jobs/min  eta 75 min
+[FD block 0] 925/2291  18.4 jobs/min  eta 74 min
+[FD block 0] 930/2291  18.4 jobs/min  eta 74 min
+[FD block 0] 935/2291  18.5 jobs/min  eta 73 min
+[FD block 0] 940/2291  18.5 jobs/min  eta 73 min
+[FD block 0] 945/2291  18.4 jobs/min  eta 73 min
+[FD block 0] 950/2291  18.4 jobs/min  eta 73 min
+[FD block 0] 955/2291  18.5 jobs/min  eta 72 min
+[FD block 0] 960/2291  18.4 jobs/min  eta 72 min
+[FD block 0] 965/2291  18.4 jobs/min  eta 72 min
+[FD block 0] 970/2291  18.3 jobs/min  eta 72 min
+[FD block 0] 975/2291  18.4 jobs/min  eta 72 min
+[FD block 0] 980/2291  18.5 jobs/min  eta 71 min
+[FD block 0] 985/2291  18.4 jobs/min  eta 71 min
+[FD block 0] 990/2291  18.5 jobs/min  eta 70 min
+[FD block 0] 995/2291  18.4 jobs/min  eta 70 min
+[FD block 0] 1000/2291  18.5 jobs/min  eta 70 min
+[FD block 0] 1005/2291  18.5 jobs/min  eta 69 min
+[FD block 0] 1010/2291  18.6 jobs/min  eta 69 min
+[FD block 0] 1015/2291  18.7 jobs/min  eta 68 min
+[FD block 0] 1020/2291  18.7 jobs/min  eta 68 min
+[FD block 0] 1025/2291  18.8 jobs/min  eta 67 min
+[FD block 0] 1030/2291  18.9 jobs/min  eta 67 min
+[FD block 0] 1035/2291  19.0 jobs/min  eta 66 min
+[FD block 0] 1040/2291  19.0 jobs/min  eta 66 min
+[FD block 0] 1045/2291  19.1 jobs/min  eta 65 min
+[FD block 0] 1050/2291  19.2 jobs/min  eta 65 min
+[FD block 0] 1055/2291  19.3 jobs/min  eta 64 min
+[FD block 0] 1060/2291  19.4 jobs/min  eta 64 min
+[FD block 0] 1065/2291  19.4 jobs/min  eta 63 min
+[FD block 0] 1070/2291  19.5 jobs/min  eta 63 min
+[FD block 0] 1075/2291  19.6 jobs/min  eta 62 min
+[FD block 0] 1080/2291  19.6 jobs/min  eta 62 min
+[FD block 0] 1085/2291  19.6 jobs/min  eta 61 min
+[FD block 0] 1090/2291  19.6 jobs/min  eta 61 min
+[FD block 0] 1095/2291  19.5 jobs/min  eta 61 min
+[FD block 0] 1100/2291  19.6 jobs/min  eta 61 min
+[FD block 0] 1105/2291  19.5 jobs/min  eta 61 min
+[FD block 0] 1110/2291  19.5 jobs/min  eta 60 min
+[FD block 0] 1115/2291  19.6 jobs/min  eta 60 min
+[FD block 0] 1120/2291  19.5 jobs/min  eta 60 min
+[FD block 0] 1125/2291  19.6 jobs/min  eta 60 min
+[FD block 0] 1130/2291  19.5 jobs/min  eta 59 min
+[FD block 0] 1135/2291  19.6 jobs/min  eta 59 min
+[FD block 0] 1140/2291  19.5 jobs/min  eta 59 min
+[FD block 0] 1145/2291  19.5 jobs/min  eta 59 min
+[FD block 0] 1150/2291  19.5 jobs/min  eta 58 min
+[FD block 0] 1155/2291  19.5 jobs/min  eta 58 min
+[FD block 0] 1160/2291  19.5 jobs/min  eta 58 min
+[FD block 0] 1165/2291  19.5 jobs/min  eta 58 min
+[FD block 0] 1170/2291  19.4 jobs/min  eta 58 min
+[FD block 0] 1175/2291  19.5 jobs/min  eta 57 min
+[FD block 0] 1180/2291  19.5 jobs/min  eta 57 min
+[FD block 0] 1185/2291  19.5 jobs/min  eta 57 min
+[FD block 0] 1190/2291  19.5 jobs/min  eta 57 min
+[FD block 0] 1195/2291  19.4 jobs/min  eta 56 min
+[FD block 0] 1200/2291  19.5 jobs/min  eta 56 min
+[FD block 0] 1205/2291  19.5 jobs/min  eta 56 min
+[FD block 0] 1210/2291  19.6 jobs/min  eta 55 min
+[FD block 0] 1215/2291  19.7 jobs/min  eta 55 min
+[FD block 0] 1220/2291  19.8 jobs/min  eta 54 min
+[FD block 0] 1225/2291  19.8 jobs/min  eta 54 min
+[FD block 0] 1230/2291  19.8 jobs/min  eta 54 min
+[FD block 0] 1235/2291  19.7 jobs/min  eta 54 min
+[FD block 0] 1240/2291  19.8 jobs/min  eta 53 min
+[FD block 0] 1245/2291  19.7 jobs/min  eta 53 min
+[FD block 0] 1250/2291  19.7 jobs/min  eta 53 min
+[FD block 0] 1255/2291  19.8 jobs/min  eta 52 min
+[FD block 0] 1260/2291  19.7 jobs/min  eta 52 min
+[FD block 0] 1265/2291  19.7 jobs/min  eta 52 min
+[FD block 0] 1270/2291  19.8 jobs/min  eta 52 min
+[FD block 0] 1275/2291  19.9 jobs/min  eta 51 min
+[FD block 0] 1280/2291  19.9 jobs/min  eta 51 min
+[FD block 0] 1285/2291  20.0 jobs/min  eta 50 min
+[FD block 0] 1290/2291  20.1 jobs/min  eta 50 min
+[FD block 0] 1295/2291  20.1 jobs/min  eta 50 min
+[FD block 0] 1300/2291  20.2 jobs/min  eta 49 min
+[FD block 0] 1305/2291  20.2 jobs/min  eta 49 min
+[FD block 0] 1310/2291  20.3 jobs/min  eta 48 min
+[FD block 0] 1315/2291  20.4 jobs/min  eta 48 min
+[FD block 0] 1320/2291  20.4 jobs/min  eta 48 min
+[FD block 0] 1325/2291  20.5 jobs/min  eta 47 min
+[FD block 0] 1330/2291  20.6 jobs/min  eta 47 min
+[FD block 0] 1335/2291  20.6 jobs/min  eta 46 min
+[FD block 0] 1340/2291  20.7 jobs/min  eta 46 min
+[FD block 0] 1345/2291  20.7 jobs/min  eta 46 min
+[FD block 0] 1350/2291  20.8 jobs/min  eta 45 min
+[FD block 0] 1355/2291  20.8 jobs/min  eta 45 min
+[FD block 0] 1360/2291  20.7 jobs/min  eta 45 min
+[FD block 0] 1365/2291  20.7 jobs/min  eta 45 min
+[FD block 0] 1370/2291  20.7 jobs/min  eta 45 min
+[FD block 0] 1375/2291  20.7 jobs/min  eta 44 min
+[FD block 0] 1380/2291  20.7 jobs/min  eta 44 min
+[FD block 0] 1385/2291  20.7 jobs/min  eta 44 min
+[FD block 0] 1390/2291  20.7 jobs/min  eta 44 min
+[FD block 0] 1395/2291  20.7 jobs/min  eta 43 min
+[FD block 0] 1400/2291  20.7 jobs/min  eta 43 min
+[FD block 0] 1405/2291  20.7 jobs/min  eta 43 min
+[FD block 0] 1410/2291  20.7 jobs/min  eta 42 min
+[FD block 0] 1415/2291  20.8 jobs/min  eta 42 min
+[FD block 0] 1420/2291  20.9 jobs/min  eta 42 min
+[FD block 0] 1425/2291  20.9 jobs/min  eta 41 min
+[FD block 0] 1430/2291  21.0 jobs/min  eta 41 min
+[FD block 0] 1435/2291  20.9 jobs/min  eta 41 min
+[FD block 0] 1440/2291  21.0 jobs/min  eta 41 min
+[FD block 0] 1445/2291  21.0 jobs/min  eta 40 min
+[FD block 0] 1450/2291  21.1 jobs/min  eta 40 min
+[FD block 0] 1455/2291  21.2 jobs/min  eta 40 min
+[FD block 0] 1460/2291  21.2 jobs/min  eta 39 min
+[FD block 0] 1465/2291  21.2 jobs/min  eta 39 min
+[FD block 0] 1470/2291  21.3 jobs/min  eta 39 min
+[FD block 0] 1475/2291  21.1 jobs/min  eta 39 min
+[FD block 0] 1480/2291  21.2 jobs/min  eta 38 min
+[FD block 0] 1485/2291  21.2 jobs/min  eta 38 min
+[FD block 0] 1490/2291  21.1 jobs/min  eta 38 min
+[FD block 0] 1495/2291  21.2 jobs/min  eta 38 min
+[FD block 0] 1500/2291  21.1 jobs/min  eta 38 min
+[FD block 0] 1505/2291  21.1 jobs/min  eta 37 min
+[FD block 0] 1510/2291  21.2 jobs/min  eta 37 min
+[FD block 0] 1515/2291  21.1 jobs/min  eta 37 min
+[FD block 0] 1520/2291  21.2 jobs/min  eta 36 min
+[FD block 0] 1525/2291  21.0 jobs/min  eta 36 min
+[FD block 0] 1530/2291  21.1 jobs/min  eta 36 min
+[FD block 0] 1535/2291  21.1 jobs/min  eta 36 min
+[FD block 0] 1540/2291  21.0 jobs/min  eta 36 min
+[FD block 0] 1545/2291  21.0 jobs/min  eta 35 min
+[FD block 0] 1550/2291  21.0 jobs/min  eta 35 min
+[FD block 0] 1555/2291  21.0 jobs/min  eta 35 min
+[FD block 0] 1560/2291  21.1 jobs/min  eta 35 min
+[FD block 0] 1565/2291  21.0 jobs/min  eta 35 min
+[FD block 0] 1570/2291  21.1 jobs/min  eta 34 min
+[FD block 0] 1575/2291  21.0 jobs/min  eta 34 min
+[FD block 0] 1580/2291  21.0 jobs/min  eta 34 min
+[FD block 0] 1585/2291  21.0 jobs/min  eta 34 min
+[FD block 0] 1590/2291  20.9 jobs/min  eta 34 min
+[FD block 0] 1595/2291  20.9 jobs/min  eta 33 min
+[FD block 0] 1600/2291  20.9 jobs/min  eta 33 min
+[FD block 0] 1605/2291  20.9 jobs/min  eta 33 min
+[FD block 0] 1610/2291  21.0 jobs/min  eta 32 min
+[FD block 0] 1615/2291  20.9 jobs/min  eta 32 min
+[FD block 0] 1620/2291  21.0 jobs/min  eta 32 min
+[FD block 0] 1625/2291  20.9 jobs/min  eta 32 min
+[FD block 0] 1630/2291  20.9 jobs/min  eta 32 min
+[FD block 0] 1635/2291  20.9 jobs/min  eta 31 min
+[FD block 0] 1640/2291  20.8 jobs/min  eta 31 min
+[FD block 0] 1645/2291  20.8 jobs/min  eta 31 min
+[FD block 0] 1650/2291  20.8 jobs/min  eta 31 min
+[FD block 0] 1655/2291  20.8 jobs/min  eta 31 min
+[FD block 0] 1660/2291  20.9 jobs/min  eta 30 min
+[FD block 0] 1665/2291  20.8 jobs/min  eta 30 min
+[FD block 0] 1670/2291  20.8 jobs/min  eta 30 min
+[FD block 0] 1675/2291  20.8 jobs/min  eta 30 min
+[FD block 0] 1680/2291  20.8 jobs/min  eta 29 min
+[FD block 0] 1685/2291  20.8 jobs/min  eta 29 min
+[FD block 0] 1690/2291  20.7 jobs/min  eta 29 min
+[FD block 0] 1695/2291  20.8 jobs/min  eta 29 min
+[FD block 0] 1700/2291  20.7 jobs/min  eta 28 min
+[FD block 0] 1705/2291  20.7 jobs/min  eta 28 min
+[FD block 0] 1710/2291  20.8 jobs/min  eta 28 min
+[FD block 0] 1715/2291  20.7 jobs/min  eta 28 min
+[FD block 0] 1720/2291  20.8 jobs/min  eta 28 min
+[FD block 0] 1725/2291  20.7 jobs/min  eta 27 min
+[FD block 0] 1730/2291  20.7 jobs/min  eta 27 min
+[FD block 0] 1735/2291  20.7 jobs/min  eta 27 min
+[FD block 0] 1740/2291  20.6 jobs/min  eta 27 min
+[FD block 0] 1745/2291  20.7 jobs/min  eta 26 min
+[FD block 0] 1750/2291  20.7 jobs/min  eta 26 min
+[FD block 0] 1755/2291  20.7 jobs/min  eta 26 min
+[FD block 0] 1760/2291  20.7 jobs/min  eta 26 min
+[FD block 0] 1765/2291  20.7 jobs/min  eta 25 min
+[FD block 0] 1770/2291  20.7 jobs/min  eta 25 min
+[FD block 0] 1775/2291  20.6 jobs/min  eta 25 min
+[FD block 0] 1780/2291  20.6 jobs/min  eta 25 min
+[FD block 0] 1785/2291  20.7 jobs/min  eta 25 min
+[FD block 0] 1790/2291  20.6 jobs/min  eta 24 min
+[FD block 0] 1795/2291  20.6 jobs/min  eta 24 min
+[FD block 0] 1800/2291  20.6 jobs/min  eta 24 min
+[FD block 0] 1805/2291  20.6 jobs/min  eta 24 min
+[FD block 0] 1810/2291  20.6 jobs/min  eta 23 min
+[FD block 0] 1815/2291  20.6 jobs/min  eta 23 min
+[FD block 0] 1820/2291  20.6 jobs/min  eta 23 min
+[FD block 0] 1825/2291  20.6 jobs/min  eta 23 min
+[FD block 0] 1830/2291  20.5 jobs/min  eta 22 min
+[FD block 0] 1835/2291  20.6 jobs/min  eta 22 min
+[FD block 0] 1840/2291  20.5 jobs/min  eta 22 min
+[FD block 0] 1845/2291  20.5 jobs/min  eta 22 min
+[FD block 0] 1850/2291  20.5 jobs/min  eta 22 min
+[FD block 0] 1855/2291  20.5 jobs/min  eta 21 min
+[FD block 0] 1860/2291  20.5 jobs/min  eta 21 min
+[FD block 0] 1865/2291  20.5 jobs/min  eta 21 min
+[FD block 0] 1870/2291  20.5 jobs/min  eta 21 min
+[FD block 0] 1875/2291  20.5 jobs/min  eta 20 min
+[FD block 0] 1880/2291  20.5 jobs/min  eta 20 min
+[FD block 0] 1885/2291  20.5 jobs/min  eta 20 min
+[FD block 0] 1890/2291  20.6 jobs/min  eta 19 min
+[FD block 0] 1895/2291  20.6 jobs/min  eta 19 min
+[FD block 0] 1900/2291  20.7 jobs/min  eta 19 min
+[FD block 0] 1905/2291  20.7 jobs/min  eta 19 min
+[FD block 0] 1910/2291  20.8 jobs/min  eta 18 min
+[FD block 0] 1915/2291  20.6 jobs/min  eta 18 min
+[FD block 0] 1920/2291  20.7 jobs/min  eta 18 min
+[FD block 0] 1925/2291  20.7 jobs/min  eta 18 min
+[FD block 0] 1930/2291  20.6 jobs/min  eta 17 min
+[FD block 0] 1935/2291  20.7 jobs/min  eta 17 min
+[FD block 0] 1940/2291  20.6 jobs/min  eta 17 min
+[FD block 0] 1945/2291  20.6 jobs/min  eta 17 min
+[FD block 0] 1950/2291  20.6 jobs/min  eta 17 min
+[FD block 0] 1955/2291  20.6 jobs/min  eta 16 min
+[FD block 0] 1960/2291  20.7 jobs/min  eta 16 min
+[FD block 0] 1965/2291  20.7 jobs/min  eta 16 min
+[FD block 0] 1970/2291  20.8 jobs/min  eta 15 min
+[FD block 0] 1975/2291  20.8 jobs/min  eta 15 min
+[FD block 0] 1980/2291  20.9 jobs/min  eta 15 min
+[FD block 0] 1985/2291  20.9 jobs/min  eta 15 min
+[FD block 0] 1990/2291  20.8 jobs/min  eta 14 min
+[FD block 0] 1995/2291  20.8 jobs/min  eta 14 min
+[FD block 0] 2000/2291  20.8 jobs/min  eta 14 min
+[FD block 0] 2005/2291  20.8 jobs/min  eta 14 min
+[FD block 0] 2010/2291  20.8 jobs/min  eta 14 min
+[FD block 0] 2015/2291  20.8 jobs/min  eta 13 min
+[FD block 0] 2020/2291  20.8 jobs/min  eta 13 min
+[FD block 0] 2025/2291  20.8 jobs/min  eta 13 min
+[FD block 0] 2030/2291  20.8 jobs/min  eta 13 min
+[FD block 0] 2035/2291  20.7 jobs/min  eta 12 min
+[FD block 0] 2040/2291  20.7 jobs/min  eta 12 min
+[FD block 0] 2045/2291  20.7 jobs/min  eta 12 min
+[FD block 0] 2050/2291  20.7 jobs/min  eta 12 min
+[FD block 0] 2055/2291  20.8 jobs/min  eta 11 min
+[FD block 0] 2060/2291  20.8 jobs/min  eta 11 min
+[FD block 0] 2065/2291  20.9 jobs/min  eta 11 min
+[FD block 0] 2070/2291  20.9 jobs/min  eta 11 min
+[FD block 0] 2075/2291  20.9 jobs/min  eta 10 min
+[FD block 0] 2080/2291  21.0 jobs/min  eta 10 min
+[FD block 0] 2085/2291  20.9 jobs/min  eta 10 min
+[FD block 0] 2090/2291  20.9 jobs/min  eta 10 min
+[FD block 0] 2095/2291  20.9 jobs/min  eta 9 min
+[FD block 0] 2100/2291  20.9 jobs/min  eta 9 min
+[FD block 0] 2105/2291  20.9 jobs/min  eta 9 min
+[FD block 0] 2110/2291  20.8 jobs/min  eta 9 min
+[FD block 0] 2115/2291  20.9 jobs/min  eta 8 min
+[FD block 0] 2120/2291  20.9 jobs/min  eta 8 min
+[FD block 0] 2125/2291  20.9 jobs/min  eta 8 min
+[FD block 0] 2130/2291  20.9 jobs/min  eta 8 min
+[FD block 0] 2135/2291  20.9 jobs/min  eta 7 min
+[FD block 0] 2140/2291  21.0 jobs/min  eta 7 min
+[FD block 0] 2145/2291  21.0 jobs/min  eta 7 min
+[FD block 0] 2150/2291  21.1 jobs/min  eta 7 min
+[FD block 0] 2155/2291  21.1 jobs/min  eta 6 min
+[FD block 0] 2160/2291  21.0 jobs/min  eta 6 min
+[FD block 0] 2165/2291  21.0 jobs/min  eta 6 min
+[FD block 0] 2170/2291  21.0 jobs/min  eta 6 min
+[FD block 0] 2175/2291  21.0 jobs/min  eta 6 min
+[FD block 0] 2180/2291  21.0 jobs/min  eta 5 min
+[FD block 0] 2185/2291  21.0 jobs/min  eta 5 min
+[FD block 0] 2190/2291  21.0 jobs/min  eta 5 min
+[FD block 0] 2195/2291  21.0 jobs/min  eta 5 min
+[FD block 0] 2200/2291  21.0 jobs/min  eta 4 min
+[FD block 0] 2205/2291  21.0 jobs/min  eta 4 min
+[FD block 0] 2210/2291  21.0 jobs/min  eta 4 min
+[FD block 0] 2215/2291  21.1 jobs/min  eta 4 min
+[FD block 0] 2220/2291  21.1 jobs/min  eta 3 min
+[FD block 0] 2225/2291  21.1 jobs/min  eta 3 min
+[FD block 0] 2230/2291  21.2 jobs/min  eta 3 min
+[FD block 0] 2235/2291  21.2 jobs/min  eta 3 min
+[FD block 0] 2240/2291  21.3 jobs/min  eta 2 min
+[FD block 0] 2245/2291  21.3 jobs/min  eta 2 min
+[FD block 0] 2250/2291  21.4 jobs/min  eta 2 min
+[FD block 0] 2255/2291  21.4 jobs/min  eta 2 min
+[FD block 0] 2260/2291  21.4 jobs/min  eta 1 min
+[FD block 0] 2265/2291  21.5 jobs/min  eta 1 min
+[FD block 0] 2270/2291  21.5 jobs/min  eta 1 min
+[FD block 0] 2275/2291  21.6 jobs/min  eta 1 min
+[FD block 0] 2280/2291  21.6 jobs/min  eta 1 min
+[FD block 0] 2285/2291  21.6 jobs/min  eta 0 min
+[FD block 0] 2290/2291  21.6 jobs/min  eta 0 min
+[FD block 0] 2291/2291  21.6 jobs/min  eta 0 min
+  block 0 done in 106 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 0 | 0.1 – 40.1 · heavy | 51 | 45356 | 45356 | 0 | 44285 / 0 / 1071 | 45356 / 0 / 0 | 6.6 | 2227 (4.9%) |
+
+
+==> married-rainy-d90 block 1 of 1  (Wed 14:23)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 1: casts 6..2398 VIs after READY on the other lines (48), 24014 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 1] 1749 jobs, 0 already done, 1749 to run
+[FD block 1] 5/1749  6.1 jobs/min  eta 4.8 h
+[FD block 1] 10/1749  11.8 jobs/min  eta 2.5 h
+[FD block 1] 15/1749  9.9 jobs/min  eta 2.9 h
+[FD block 1] 20/1749  12.9 jobs/min  eta 2.2 h
+[FD block 1] 25/1749  15.6 jobs/min  eta 1.8 h
+[FD block 1] 30/1749  13.6 jobs/min  eta 2.1 h
+[FD block 1] 35/1749  15.8 jobs/min  eta 1.8 h
+[FD block 1] 40/1749  15.0 jobs/min  eta 1.9 h
+[FD block 1] 45/1749  16.5 jobs/min  eta 1.7 h
+[FD block 1] 50/1749  18.3 jobs/min  eta 1.6 h
+[FD block 1] 55/1749  19.9 jobs/min  eta 85 min
+[FD block 1] 60/1749  21.6 jobs/min  eta 78 min
+[FD block 1] 65/1749  23.2 jobs/min  eta 73 min
+[FD block 1] 70/1749  24.9 jobs/min  eta 68 min
+[FD block 1] 75/1749  23.9 jobs/min  eta 70 min
+[FD block 1] 80/1749  22.0 jobs/min  eta 76 min
+[FD block 1] 85/1749  23.0 jobs/min  eta 72 min
+[FD block 1] 90/1749  21.9 jobs/min  eta 76 min
+[FD block 1] 95/1749  21.6 jobs/min  eta 77 min
+[FD block 1] 100/1749  22.3 jobs/min  eta 74 min
+[FD block 1] 105/1749  20.8 jobs/min  eta 79 min
+[FD block 1] 110/1749  21.6 jobs/min  eta 76 min
+[FD block 1] 115/1749  21.9 jobs/min  eta 75 min
+[FD block 1] 120/1749  21.2 jobs/min  eta 77 min
+[FD block 1] 125/1749  21.9 jobs/min  eta 74 min
+[FD block 1] 130/1749  22.7 jobs/min  eta 71 min
+[FD block 1] 135/1749  23.5 jobs/min  eta 69 min
+[FD block 1] 140/1749  24.2 jobs/min  eta 66 min
+[FD block 1] 145/1749  25.0 jobs/min  eta 64 min
+[FD block 1] 150/1749  25.7 jobs/min  eta 62 min
+[FD block 1] 155/1749  24.4 jobs/min  eta 65 min
+[FD block 1] 160/1749  24.0 jobs/min  eta 66 min
+[FD block 1] 165/1749  24.5 jobs/min  eta 65 min
+[FD block 1] 170/1749  23.1 jobs/min  eta 68 min
+[FD block 1] 175/1749  23.4 jobs/min  eta 67 min
+[FD block 1] 180/1749  23.0 jobs/min  eta 68 min
+[FD block 1] 185/1749  22.9 jobs/min  eta 68 min
+[FD block 1] 190/1749  23.3 jobs/min  eta 67 min
+[FD block 1] 195/1749  22.6 jobs/min  eta 69 min
+[FD block 1] 200/1749  23.0 jobs/min  eta 67 min
+[FD block 1] 205/1749  22.8 jobs/min  eta 68 min
+[FD block 1] 210/1749  22.1 jobs/min  eta 70 min
+[FD block 1] 215/1749  22.5 jobs/min  eta 68 min
+[FD block 1] 220/1749  22.3 jobs/min  eta 68 min
+[FD block 1] 225/1749  21.9 jobs/min  eta 70 min
+[FD block 1] 230/1749  22.1 jobs/min  eta 69 min
+[FD block 1] 235/1749  21.5 jobs/min  eta 70 min
+[FD block 1] 240/1749  21.8 jobs/min  eta 69 min
+[FD block 1] 245/1749  21.9 jobs/min  eta 69 min
+[FD block 1] 250/1749  22.2 jobs/min  eta 67 min
+[FD block 1] 255/1749  22.6 jobs/min  eta 66 min
+[FD block 1] 260/1749  22.9 jobs/min  eta 65 min
+[FD block 1] 265/1749  23.2 jobs/min  eta 64 min
+[FD block 1] 270/1749  23.5 jobs/min  eta 63 min
+[FD block 1] 275/1749  23.8 jobs/min  eta 62 min
+[FD block 1] 280/1749  24.1 jobs/min  eta 61 min
+[FD block 1] 285/1749  23.0 jobs/min  eta 64 min
+[FD block 1] 290/1749  23.3 jobs/min  eta 63 min
+[FD block 1] 295/1749  23.6 jobs/min  eta 62 min
+[FD block 1] 300/1749  23.8 jobs/min  eta 61 min
+[FD block 1] 305/1749  24.1 jobs/min  eta 60 min
+[FD block 1] 310/1749  24.4 jobs/min  eta 59 min
+[FD block 1] 315/1749  24.7 jobs/min  eta 58 min
+[FD block 1] 320/1749  24.8 jobs/min  eta 58 min
+[FD block 1] 325/1749  24.7 jobs/min  eta 58 min
+[FD block 1] 330/1749  24.9 jobs/min  eta 57 min
+[FD block 1] 335/1749  24.0 jobs/min  eta 59 min
+[FD block 1] 340/1749  24.2 jobs/min  eta 58 min
+[FD block 1] 345/1749  24.5 jobs/min  eta 57 min
+[FD block 1] 350/1749  24.8 jobs/min  eta 56 min
+[FD block 1] 355/1749  25.1 jobs/min  eta 56 min
+[FD block 1] 360/1749  25.4 jobs/min  eta 55 min
+[FD block 1] 365/1749  25.7 jobs/min  eta 54 min
+[FD block 1] 370/1749  25.9 jobs/min  eta 53 min
+[FD block 1] 375/1749  26.2 jobs/min  eta 52 min
+[FD block 1] 380/1749  26.4 jobs/min  eta 52 min
+[FD block 1] 385/1749  26.6 jobs/min  eta 51 min
+[FD block 1] 390/1749  26.9 jobs/min  eta 51 min
+[FD block 1] 395/1749  27.1 jobs/min  eta 50 min
+[FD block 1] 400/1749  27.4 jobs/min  eta 49 min
+[FD block 1] 405/1749  27.6 jobs/min  eta 49 min
+[FD block 1] 410/1749  27.8 jobs/min  eta 48 min
+[FD block 1] 415/1749  28.1 jobs/min  eta 47 min
+[FD block 1] 420/1749  28.4 jobs/min  eta 47 min
+[FD block 1] 425/1749  28.4 jobs/min  eta 47 min
+[FD block 1] 430/1749  27.9 jobs/min  eta 47 min
+[FD block 1] 435/1749  27.7 jobs/min  eta 47 min
+[FD block 1] 440/1749  27.9 jobs/min  eta 47 min
+[FD block 1] 445/1749  28.1 jobs/min  eta 46 min
+[FD block 1] 450/1749  28.3 jobs/min  eta 46 min
+[FD block 1] 455/1749  28.6 jobs/min  eta 45 min
+[FD block 1] 460/1749  28.8 jobs/min  eta 45 min
+[FD block 1] 465/1749  29.1 jobs/min  eta 44 min
+[FD block 1] 470/1749  28.6 jobs/min  eta 45 min
+[FD block 1] 475/1749  28.3 jobs/min  eta 45 min
+[FD block 1] 480/1749  28.0 jobs/min  eta 45 min
+[FD block 1] 485/1749  28.2 jobs/min  eta 45 min
+[FD block 1] 490/1749  28.4 jobs/min  eta 44 min
+[FD block 1] 495/1749  28.6 jobs/min  eta 44 min
+[FD block 1] 500/1749  28.8 jobs/min  eta 43 min
+[FD block 1] 505/1749  29.1 jobs/min  eta 43 min
+[FD block 1] 510/1749  29.3 jobs/min  eta 42 min
+[FD block 1] 515/1749  29.2 jobs/min  eta 42 min
+[FD block 1] 520/1749  28.5 jobs/min  eta 43 min
+[FD block 1] 525/1749  28.6 jobs/min  eta 43 min
+[FD block 1] 530/1749  28.5 jobs/min  eta 43 min
+[FD block 1] 535/1749  28.1 jobs/min  eta 43 min
+[FD block 1] 540/1749  28.3 jobs/min  eta 43 min
+[FD block 1] 545/1749  27.7 jobs/min  eta 43 min
+[FD block 1] 550/1749  27.8 jobs/min  eta 43 min
+[FD block 1] 555/1749  28.0 jobs/min  eta 43 min
+[FD block 1] 560/1749  27.8 jobs/min  eta 43 min
+[FD block 1] 565/1749  28.0 jobs/min  eta 42 min
+[FD block 1] 570/1749  28.2 jobs/min  eta 42 min
+[FD block 1] 575/1749  28.4 jobs/min  eta 41 min
+[FD block 1] 580/1749  28.6 jobs/min  eta 41 min
+[FD block 1] 585/1749  28.8 jobs/min  eta 40 min
+[FD block 1] 590/1749  29.0 jobs/min  eta 40 min
+[FD block 1] 595/1749  29.3 jobs/min  eta 39 min
+[FD block 1] 600/1749  29.5 jobs/min  eta 39 min
+[FD block 1] 605/1749  29.7 jobs/min  eta 39 min
+[FD block 1] 610/1749  29.9 jobs/min  eta 38 min
+[FD block 1] 615/1749  30.2 jobs/min  eta 38 min
+[FD block 1] 620/1749  30.4 jobs/min  eta 37 min
+[FD block 1] 625/1749  30.6 jobs/min  eta 37 min
+[FD block 1] 630/1749  30.8 jobs/min  eta 36 min
+[FD block 1] 635/1749  31.0 jobs/min  eta 36 min
+[FD block 1] 640/1749  31.2 jobs/min  eta 36 min
+[FD block 1] 645/1749  31.4 jobs/min  eta 35 min
+[FD block 1] 650/1749  31.6 jobs/min  eta 35 min
+[FD block 1] 655/1749  31.9 jobs/min  eta 34 min
+[FD block 1] 660/1749  32.1 jobs/min  eta 34 min
+[FD block 1] 665/1749  31.8 jobs/min  eta 34 min
+[FD block 1] 670/1749  31.2 jobs/min  eta 35 min
+[FD block 1] 675/1749  31.4 jobs/min  eta 34 min
+[FD block 1] 680/1749  30.8 jobs/min  eta 35 min
+[FD block 1] 685/1749  30.8 jobs/min  eta 35 min
+[FD block 1] 690/1749  30.9 jobs/min  eta 34 min
+[FD block 1] 695/1749  30.4 jobs/min  eta 35 min
+[FD block 1] 700/1749  30.5 jobs/min  eta 34 min
+[FD block 1] 705/1749  30.1 jobs/min  eta 35 min
+[FD block 1] 710/1749  30.2 jobs/min  eta 34 min
+[FD block 1] 715/1749  30.3 jobs/min  eta 34 min
+[FD block 1] 720/1749  29.6 jobs/min  eta 35 min
+[FD block 1] 725/1749  29.8 jobs/min  eta 34 min
+[FD block 1] 730/1749  29.9 jobs/min  eta 34 min
+[FD block 1] 735/1749  29.3 jobs/min  eta 35 min
+[FD block 1] 740/1749  29.4 jobs/min  eta 34 min
+[FD block 1] 745/1749  29.0 jobs/min  eta 35 min
+[FD block 1] 750/1749  29.1 jobs/min  eta 34 min
+[FD block 1] 755/1749  29.3 jobs/min  eta 34 min
+[FD block 1] 760/1749  28.9 jobs/min  eta 34 min
+[FD block 1] 765/1749  29.0 jobs/min  eta 34 min
+[FD block 1] 770/1749  28.6 jobs/min  eta 34 min
+[FD block 1] 775/1749  28.5 jobs/min  eta 34 min
+[FD block 1] 780/1749  28.6 jobs/min  eta 34 min
+[FD block 1] 785/1749  28.2 jobs/min  eta 34 min
+[FD block 1] 790/1749  28.3 jobs/min  eta 34 min
+[FD block 1] 795/1749  28.2 jobs/min  eta 34 min
+[FD block 1] 800/1749  28.1 jobs/min  eta 34 min
+[FD block 1] 805/1749  28.3 jobs/min  eta 33 min
+[FD block 1] 810/1749  28.0 jobs/min  eta 34 min
+[FD block 1] 815/1749  28.1 jobs/min  eta 33 min
+[FD block 1] 820/1749  28.3 jobs/min  eta 33 min
+[FD block 1] 825/1749  28.4 jobs/min  eta 32 min
+[FD block 1] 830/1749  28.6 jobs/min  eta 32 min
+[FD block 1] 835/1749  28.7 jobs/min  eta 32 min
+[FD block 1] 840/1749  28.9 jobs/min  eta 31 min
+[FD block 1] 845/1749  28.7 jobs/min  eta 32 min
+[FD block 1] 850/1749  28.4 jobs/min  eta 32 min
+[FD block 1] 855/1749  28.3 jobs/min  eta 32 min
+[FD block 1] 860/1749  28.1 jobs/min  eta 32 min
+[FD block 1] 865/1749  28.2 jobs/min  eta 31 min
+[FD block 1] 870/1749  28.0 jobs/min  eta 31 min
+[FD block 1] 875/1749  27.9 jobs/min  eta 31 min
+[FD block 1] 880/1749  28.0 jobs/min  eta 31 min
+[FD block 1] 885/1749  27.8 jobs/min  eta 31 min
+[FD block 1] 890/1749  27.9 jobs/min  eta 31 min
+[FD block 1] 895/1749  28.0 jobs/min  eta 31 min
+[FD block 1] 900/1749  28.1 jobs/min  eta 30 min
+[FD block 1] 905/1749  28.3 jobs/min  eta 30 min
+[FD block 1] 910/1749  28.4 jobs/min  eta 30 min
+[FD block 1] 915/1749  28.5 jobs/min  eta 29 min
+[FD block 1] 920/1749  28.7 jobs/min  eta 29 min
+[FD block 1] 925/1749  28.8 jobs/min  eta 29 min
+[FD block 1] 930/1749  28.9 jobs/min  eta 28 min
+[FD block 1] 935/1749  29.0 jobs/min  eta 28 min
+[FD block 1] 940/1749  29.2 jobs/min  eta 28 min
+[FD block 1] 945/1749  29.3 jobs/min  eta 27 min
+[FD block 1] 950/1749  29.4 jobs/min  eta 27 min
+[FD block 1] 955/1749  29.6 jobs/min  eta 27 min
+[FD block 1] 960/1749  29.7 jobs/min  eta 27 min
+[FD block 1] 965/1749  29.8 jobs/min  eta 26 min
+[FD block 1] 970/1749  29.6 jobs/min  eta 26 min
+[FD block 1] 975/1749  29.3 jobs/min  eta 26 min
+[FD block 1] 980/1749  29.5 jobs/min  eta 26 min
+[FD block 1] 985/1749  29.2 jobs/min  eta 26 min
+[FD block 1] 990/1749  29.1 jobs/min  eta 26 min
+[FD block 1] 995/1749  29.0 jobs/min  eta 26 min
+[FD block 1] 1000/1749  28.8 jobs/min  eta 26 min
+[FD block 1] 1005/1749  28.9 jobs/min  eta 26 min
+[FD block 1] 1010/1749  28.8 jobs/min  eta 26 min
+[FD block 1] 1015/1749  28.8 jobs/min  eta 25 min
+[FD block 1] 1020/1749  28.9 jobs/min  eta 25 min
+[FD block 1] 1025/1749  29.0 jobs/min  eta 25 min
+[FD block 1] 1030/1749  29.1 jobs/min  eta 25 min
+[FD block 1] 1035/1749  29.2 jobs/min  eta 24 min
+[FD block 1] 1040/1749  29.4 jobs/min  eta 24 min
+[FD block 1] 1045/1749  29.5 jobs/min  eta 24 min
+[FD block 1] 1050/1749  29.6 jobs/min  eta 24 min
+[FD block 1] 1055/1749  29.7 jobs/min  eta 23 min
+[FD block 1] 1060/1749  29.8 jobs/min  eta 23 min
+[FD block 1] 1065/1749  29.9 jobs/min  eta 23 min
+[FD block 1] 1070/1749  30.1 jobs/min  eta 23 min
+[FD block 1] 1075/1749  29.6 jobs/min  eta 23 min
+[FD block 1] 1080/1749  29.7 jobs/min  eta 23 min
+[FD block 1] 1085/1749  29.7 jobs/min  eta 22 min
+[FD block 1] 1090/1749  29.4 jobs/min  eta 22 min
+[FD block 1] 1095/1749  29.4 jobs/min  eta 22 min
+[FD block 1] 1100/1749  29.5 jobs/min  eta 22 min
+[FD block 1] 1105/1749  29.7 jobs/min  eta 22 min
+[FD block 1] 1110/1749  29.8 jobs/min  eta 21 min
+[FD block 1] 1115/1749  29.9 jobs/min  eta 21 min
+[FD block 1] 1120/1749  30.0 jobs/min  eta 21 min
+[FD block 1] 1125/1749  30.1 jobs/min  eta 21 min
+[FD block 1] 1130/1749  30.2 jobs/min  eta 21 min
+[FD block 1] 1135/1749  30.3 jobs/min  eta 20 min
+[FD block 1] 1140/1749  30.4 jobs/min  eta 20 min
+[FD block 1] 1145/1749  30.5 jobs/min  eta 20 min
+[FD block 1] 1150/1749  30.6 jobs/min  eta 20 min
+[FD block 1] 1155/1749  30.7 jobs/min  eta 19 min
+[FD block 1] 1160/1749  30.8 jobs/min  eta 19 min
+[FD block 1] 1165/1749  30.9 jobs/min  eta 19 min
+[FD block 1] 1170/1749  31.0 jobs/min  eta 19 min
+[FD block 1] 1175/1749  31.1 jobs/min  eta 18 min
+[FD block 1] 1180/1749  31.0 jobs/min  eta 18 min
+[FD block 1] 1185/1749  30.7 jobs/min  eta 18 min
+[FD block 1] 1190/1749  30.7 jobs/min  eta 18 min
+[FD block 1] 1195/1749  30.4 jobs/min  eta 18 min
+[FD block 1] 1200/1749  30.4 jobs/min  eta 18 min
+[FD block 1] 1205/1749  30.4 jobs/min  eta 18 min
+[FD block 1] 1210/1749  30.2 jobs/min  eta 18 min
+[FD block 1] 1215/1749  30.3 jobs/min  eta 18 min
+[FD block 1] 1220/1749  30.3 jobs/min  eta 17 min
+[FD block 1] 1225/1749  30.3 jobs/min  eta 17 min
+[FD block 1] 1230/1749  30.3 jobs/min  eta 17 min
+[FD block 1] 1235/1749  30.4 jobs/min  eta 17 min
+[FD block 1] 1240/1749  30.5 jobs/min  eta 17 min
+[FD block 1] 1245/1749  30.6 jobs/min  eta 16 min
+[FD block 1] 1250/1749  30.7 jobs/min  eta 16 min
+[FD block 1] 1255/1749  30.8 jobs/min  eta 16 min
+[FD block 1] 1260/1749  30.9 jobs/min  eta 16 min
+[FD block 1] 1265/1749  31.0 jobs/min  eta 16 min
+[FD block 1] 1270/1749  31.1 jobs/min  eta 15 min
+[FD block 1] 1275/1749  31.2 jobs/min  eta 15 min
+[FD block 1] 1280/1749  31.3 jobs/min  eta 15 min
+[FD block 1] 1285/1749  31.4 jobs/min  eta 15 min
+[FD block 1] 1290/1749  31.5 jobs/min  eta 15 min
+[FD block 1] 1295/1749  31.6 jobs/min  eta 14 min
+[FD block 1] 1300/1749  31.7 jobs/min  eta 14 min
+[FD block 1] 1305/1749  31.7 jobs/min  eta 14 min
+[FD block 1] 1310/1749  31.8 jobs/min  eta 14 min
+[FD block 1] 1315/1749  31.9 jobs/min  eta 14 min
+[FD block 1] 1320/1749  32.0 jobs/min  eta 13 min
+[FD block 1] 1325/1749  32.1 jobs/min  eta 13 min
+[FD block 1] 1330/1749  32.2 jobs/min  eta 13 min
+[FD block 1] 1335/1749  32.1 jobs/min  eta 13 min
+[FD block 1] 1340/1749  31.8 jobs/min  eta 13 min
+[FD block 1] 1345/1749  31.9 jobs/min  eta 13 min
+[FD block 1] 1350/1749  31.8 jobs/min  eta 13 min
+[FD block 1] 1355/1749  31.5 jobs/min  eta 12 min
+[FD block 1] 1360/1749  31.5 jobs/min  eta 12 min
+[FD block 1] 1365/1749  31.4 jobs/min  eta 12 min
+[FD block 1] 1370/1749  31.4 jobs/min  eta 12 min
+[FD block 1] 1375/1749  31.4 jobs/min  eta 12 min
+[FD block 1] 1380/1749  31.2 jobs/min  eta 12 min
+[FD block 1] 1385/1749  31.3 jobs/min  eta 12 min
+[FD block 1] 1390/1749  31.1 jobs/min  eta 12 min
+[FD block 1] 1395/1749  31.0 jobs/min  eta 11 min
+[FD block 1] 1400/1749  31.0 jobs/min  eta 11 min
+[FD block 1] 1405/1749  30.7 jobs/min  eta 11 min
+[FD block 1] 1410/1749  30.8 jobs/min  eta 11 min
+[FD block 1] 1415/1749  30.8 jobs/min  eta 11 min
+[FD block 1] 1420/1749  30.6 jobs/min  eta 11 min
+[FD block 1] 1425/1749  30.7 jobs/min  eta 11 min
+[FD block 1] 1430/1749  30.7 jobs/min  eta 10 min
+[FD block 1] 1435/1749  30.7 jobs/min  eta 10 min
+[FD block 1] 1440/1749  30.8 jobs/min  eta 10 min
+[FD block 1] 1445/1749  30.8 jobs/min  eta 10 min
+[FD block 1] 1450/1749  30.9 jobs/min  eta 10 min
+[FD block 1] 1455/1749  31.0 jobs/min  eta 9 min
+[FD block 1] 1460/1749  31.1 jobs/min  eta 9 min
+[FD block 1] 1465/1749  30.9 jobs/min  eta 9 min
+[FD block 1] 1470/1749  30.7 jobs/min  eta 9 min
+[FD block 1] 1475/1749  30.8 jobs/min  eta 9 min
+[FD block 1] 1480/1749  30.4 jobs/min  eta 9 min
+[FD block 1] 1485/1749  30.5 jobs/min  eta 9 min
+[FD block 1] 1490/1749  30.4 jobs/min  eta 9 min
+[FD block 1] 1495/1749  30.3 jobs/min  eta 8 min
+[FD block 1] 1500/1749  30.4 jobs/min  eta 8 min
+[FD block 1] 1505/1749  30.3 jobs/min  eta 8 min
+[FD block 1] 1510/1749  30.3 jobs/min  eta 8 min
+[FD block 1] 1515/1749  30.4 jobs/min  eta 8 min
+[FD block 1] 1520/1749  30.5 jobs/min  eta 8 min
+[FD block 1] 1525/1749  30.6 jobs/min  eta 7 min
+[FD block 1] 1530/1749  30.7 jobs/min  eta 7 min
+[FD block 1] 1535/1749  30.7 jobs/min  eta 7 min
+[FD block 1] 1540/1749  30.8 jobs/min  eta 7 min
+[FD block 1] 1545/1749  30.9 jobs/min  eta 7 min
+[FD block 1] 1550/1749  31.0 jobs/min  eta 6 min
+[FD block 1] 1555/1749  31.1 jobs/min  eta 6 min
+[FD block 1] 1560/1749  31.2 jobs/min  eta 6 min
+[FD block 1] 1565/1749  31.0 jobs/min  eta 6 min
+[FD block 1] 1570/1749  30.9 jobs/min  eta 6 min
+[FD block 1] 1575/1749  31.0 jobs/min  eta 6 min
+[FD block 1] 1580/1749  30.7 jobs/min  eta 5 min
+[FD block 1] 1585/1749  30.7 jobs/min  eta 5 min
+[FD block 1] 1590/1749  30.7 jobs/min  eta 5 min
+[FD block 1] 1595/1749  30.5 jobs/min  eta 5 min
+[FD block 1] 1600/1749  30.6 jobs/min  eta 5 min
+[FD block 1] 1605/1749  30.5 jobs/min  eta 5 min
+[FD block 1] 1610/1749  30.5 jobs/min  eta 5 min
+[FD block 1] 1615/1749  30.5 jobs/min  eta 4 min
+[FD block 1] 1620/1749  30.6 jobs/min  eta 4 min
+[FD block 1] 1625/1749  30.7 jobs/min  eta 4 min
+[FD block 1] 1630/1749  30.8 jobs/min  eta 4 min
+[FD block 1] 1635/1749  30.8 jobs/min  eta 4 min
+[FD block 1] 1640/1749  30.9 jobs/min  eta 4 min
+[FD block 1] 1645/1749  31.0 jobs/min  eta 3 min
+[FD block 1] 1650/1749  31.1 jobs/min  eta 3 min
+[FD block 1] 1655/1749  31.2 jobs/min  eta 3 min
+[FD block 1] 1660/1749  31.3 jobs/min  eta 3 min
+[FD block 1] 1665/1749  31.3 jobs/min  eta 3 min
+[FD block 1] 1670/1749  31.1 jobs/min  eta 3 min
+[FD block 1] 1675/1749  31.0 jobs/min  eta 2 min
+[FD block 1] 1680/1749  31.1 jobs/min  eta 2 min
+[FD block 1] 1685/1749  30.8 jobs/min  eta 2 min
+[FD block 1] 1690/1749  30.8 jobs/min  eta 2 min
+[FD block 1] 1695/1749  30.7 jobs/min  eta 2 min
+[FD block 1] 1700/1749  30.6 jobs/min  eta 2 min
+[FD block 1] 1705/1749  30.7 jobs/min  eta 1 min
+[FD block 1] 1710/1749  30.5 jobs/min  eta 1 min
+[FD block 1] 1715/1749  30.6 jobs/min  eta 1 min
+[FD block 1] 1720/1749  30.7 jobs/min  eta 1 min
+[FD block 1] 1725/1749  30.7 jobs/min  eta 1 min
+[FD block 1] 1730/1749  30.8 jobs/min  eta 1 min
+[FD block 1] 1735/1749  30.9 jobs/min  eta 0 min
+[FD block 1] 1740/1749  31.0 jobs/min  eta 0 min
+[FD block 1] 1745/1749  30.9 jobs/min  eta 0 min
+[FD block 1] 1749/1749  30.8 jobs/min  eta 0 min
+  block 1 done in 56 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 0 | 0.1 – 40.1 · heavy | 51 | 45356 | 45356 | 0 | 44285 / 0 / 1071 | 45356 / 0 / 0 | 6.6 | 2227 (4.9%) |
+| 1 | 0.1 – 40.1 · other | 48 | 24014 | 24014 | 0 | 23006 / 0 / 1008 | 24014 / 0 / 0 | 6.7 | 989 (4.1%) |
+
+
+==> married-rainy-d140c90: casts to 90 s, everything to 140 s after READY, blocks 2-5  (Wed 15:20)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-lineup2-rainy-62991249  save /work/data/saves_dogspots/married-lineup2-rainy-62991249.SaveRAM  workers 13  dog at [-197.27, 222.24]
+  followed to 8398 VIs after READY
+[FD1 lines] 99 jobs, 0 already done, 99 to run
+[FD1 lines] 5/99  192.8 jobs/min  eta 0 min
+[FD1 lines] 10/99  369.1 jobs/min  eta 0 min
+[FD1 lines] 15/99  313.7 jobs/min  eta 0 min
+[FD1 lines] 20/99  412.3 jobs/min  eta 0 min
+[FD1 lines] 25/99  501.6 jobs/min  eta 0 min
+[FD1 lines] 30/99  426.9 jobs/min  eta 0 min
+[FD1 lines] 35/99  492.1 jobs/min  eta 0 min
+[FD1 lines] 40/99  454.4 jobs/min  eta 0 min
+[FD1 lines] 45/99  488.1 jobs/min  eta 0 min
+[FD1 lines] 50/99  531.7 jobs/min  eta 0 min
+[FD1 lines] 55/99  484.9 jobs/min  eta 0 min
+[FD1 lines] 60/99  521.8 jobs/min  eta 0 min
+[FD1 lines] 65/99  549.2 jobs/min  eta 0 min
+[FD1 lines] 70/99  515.6 jobs/min  eta 0 min
+[FD1 lines] 75/99  544.8 jobs/min  eta 0 min
+[FD1 lines] 80/99  499.1 jobs/min  eta 0 min
+[FD1 lines] 85/99  525.2 jobs/min  eta 0 min
+[FD1 lines] 90/99  543.8 jobs/min  eta 0 min
+[FD1 lines] 95/99  528.1 jobs/min  eta 0 min
+[FD1 lines] 99/99  544.9 jobs/min  eta 0 min
+[FD1] 99 of 99 lines ran as planned; hashes against the dog-watch run: 98505 equal, 0 different; ended: [('limit', 8398)]
+lines followed to 8398 VIs (140 s) after READY; 51 heavy lines (90.4% of the route weight), 48 others; 136296 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 51):  45356 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 48):  24014 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 51):  36004 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 48):  18305 casts
+  block  4: casts  80.2- 90.3 s after READY, heavy lines ( 41):   8368 casts
+  block  5: casts  80.2- 90.3 s after READY, other lines ( 25):   4249 casts
+
+==> married-rainy-d140c90 block 2 of 5  (Wed 15:20)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 2: casts 2400..4798 VIs after READY on the heavy lines (51), 36004 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 2] 1812 jobs, 0 already done, 1812 to run
+[FD block 2] 5/1812  6.1 jobs/min  eta 4.9 h
+[FD block 2] 10/1812  11.2 jobs/min  eta 2.7 h
+[FD block 2] 15/1812  9.5 jobs/min  eta 3.1 h
+[FD block 2] 20/1812  12.6 jobs/min  eta 2.4 h
+[FD block 2] 25/1812  15.0 jobs/min  eta 2.0 h
+[FD block 2] 30/1812  13.2 jobs/min  eta 2.2 h
+[FD block 2] 35/1812  15.0 jobs/min  eta 2.0 h
+[FD block 2] 40/1812  15.4 jobs/min  eta 1.9 h
+[FD block 2] 45/1812  15.5 jobs/min  eta 1.9 h
+[FD block 2] 50/1812  17.0 jobs/min  eta 1.7 h
+[FD block 2] 55/1812  15.6 jobs/min  eta 1.9 h
+[FD block 2] 60/1812  16.8 jobs/min  eta 1.7 h
+[FD block 2] 65/1812  17.4 jobs/min  eta 1.7 h
+[FD block 2] 70/1812  17.2 jobs/min  eta 1.7 h
+[FD block 2] 75/1812  18.3 jobs/min  eta 1.6 h
+[FD block 2] 80/1812  17.7 jobs/min  eta 1.6 h
+[FD block 2] 85/1812  18.5 jobs/min  eta 1.6 h
+[FD block 2] 90/1812  19.4 jobs/min  eta 89 min
+[FD block 2] 95/1812  18.9 jobs/min  eta 1.5 h
+[FD block 2] 100/1812  19.7 jobs/min  eta 87 min
+[FD block 2] 105/1812  18.1 jobs/min  eta 1.6 h
+[FD block 2] 110/1812  18.6 jobs/min  eta 1.5 h
+[FD block 2] 115/1812  18.2 jobs/min  eta 1.6 h
+[FD block 2] 120/1812  18.2 jobs/min  eta 1.6 h
+[FD block 2] 125/1812  18.6 jobs/min  eta 1.5 h
+[FD block 2] 130/1812  18.3 jobs/min  eta 1.5 h
+[FD block 2] 135/1812  18.3 jobs/min  eta 1.5 h
+[FD block 2] 140/1812  18.3 jobs/min  eta 1.5 h
+[FD block 2] 145/1812  18.4 jobs/min  eta 1.5 h
+[FD block 2] 150/1812  18.8 jobs/min  eta 88 min
+[FD block 2] 155/1812  18.0 jobs/min  eta 1.5 h
+[FD block 2] 160/1812  18.4 jobs/min  eta 90 min
+Traceback (most recent call last):
+  File "/work/tools/fullday_campaign.py", line 266, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/work/tools/fullday_campaign.py", line 260, in main
+    bad = run_stage(f"FD block {b['i']}", FJ.fd_cast_job, jobs, out / f"FD_casts_b{b['i']:02d}.jsonl", args.workers,
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/work/tools/fullday_campaign.py", line 67, in run_stage
+    for res in run_jobs(fn, todo, rom=rom, sram=sram, workers=workers):
+  File "/work/m64h/pool.py", line 122, in run_jobs
+    wait([w["c"] for w in busy] + [w["p"].sentinel for w in busy], timeout=30)
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 1136, in wait
+    ready = selector.select(timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+STOP: married-rainy-d140c90 block 2 stopped with job errors - see /Users/thomwollin/Documents/hm64/runs/dogspots/run-married120-20261125-063853.log (the same command runs the failed jobs again)

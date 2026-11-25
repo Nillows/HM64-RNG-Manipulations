@@ -1,0 +1,12 @@
+
+==> rainy tables to 120 s: saves [horse nohorse], preset dogwatch, work folder /Users/thomwollin/Documents/hm64/runs/dogspots/hm64-lab (native ARM image)  Mon 17:52
+  lab code: ZZ_CODE = "zigzag-4f (2026-11-16: every bite to 90 s after READY; dogwatch menus...
+  free disk: 109 GB
+
+==> 1/7 lab files
+  fullday-2 kit, save_check.py, rain_z0_check.py -> /Users/thomwollin/Documents/hm64/runs/dogspots/hm64-lab
+  workers  13
+
+==> 2/7 the saves
+
+STOP: the rain + horse save (sha256 287c11a6...) is not in ~/Documents/hm64/sourcefiles(/rain) or ~/Downloads - put "Harvest Moon 64 USA.beach-lineup2-horse-rainy.SaveRAM" into ~/Documents/hm64/sourcefiles/rain/

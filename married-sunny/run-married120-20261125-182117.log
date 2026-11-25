@@ -1,0 +1,159 @@
+
+==> married tables to 120 s: saves [sunny rainy], preset dogwatch, work folder /Users/thomwollin/Documents/hm64/runs/dogspots/hm64-lab (native ARM image)  Wed 18:21
+  lab code: ZZ_CODE = "zigzag-4f (2026-11-16: every bite to 90 s after READY; dogwatch menus...
+  keeping the Mac awake: caffeinate -dims (pid 91402) until this script ends - display, idle, disk and system sleep held off
+  note: Energy Mode is Automatic. High Power (System Settings > Energy > Energy Mode) keeps the M4 Pro at full clock with the fans up; optional.
+  free disk: 85 GB
+
+==> 1/7 lab files
+  fullday-2 kit, save_check.py, married_z0_check.py, save_redate.py -> /Users/thomwollin/Documents/hm64/runs/dogspots/hm64-lab
+  workers  13
+
+==> 2/7 the saves
+  save     married-lineup2-sunny-237e3d1d   <- /Users/thomwollin/Documents/hm64/sourcefiles/married/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-sunny.spring9.SaveRAM
+    married-lineup2-sunny-237e3d1d.SaveRAM  sha256 237e3d1dfe5d  (bizhawk-saveram, checksum valid)
+      day      year 1 spring 9 (day of week 2), weather sunny, forecast rain
+      Jack     gold 300, stamina 100/100, tools [24, 1, 3, 4, 5, 0, 0, 0, 24], in hand 24 (fishing rod)
+      dog      beach (map 9) x -197.272 z 222.243  tile 18:23
+      horse    no (HAVE_HORSE False, ranch cutscene seen False); block: farm (map 82) x 0.0 z 0.0, grown 0, age 0, flags 0x0000
+      family   married True, baby False, wife 4; life events ['MARRIED', 16, 62]
+      [PASS] weather  want sunny    got sunny
+      [PASS] horse    want no       got no
+      [PASS] married  want yes      got yes
+      [PASS] wife     want karen    got karen
+      [PASS] baby     want no       got no
+      [PASS] dog      want beach    got beach
+      [PASS] tile     want 18:23    got 18:23
+      [PASS] rod      want yes      got yes
+      [PASS] season   want spring   got spring
+      [PASS] day      want 9        got 9
+      [PASS] checksum want valid    got valid
+  save     married-lineup2-rainy-62991249   <- /Users/thomwollin/Documents/hm64/sourcefiles/married/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-rainy.SaveRAM
+    married-lineup2-rainy-62991249.SaveRAM  sha256 629912496c62  (bizhawk-saveram, checksum valid)
+      day      year 1 spring 9 (day of week 2), weather rain, forecast sunny
+      Jack     gold 300, stamina 100/100, tools [24, 1, 3, 4, 5, 0, 0, 0, 24], in hand 24 (fishing rod)
+      dog      beach (map 9) x -197.272 z 222.243  tile 18:23
+      horse    no (HAVE_HORSE False, ranch cutscene seen False); block: farm (map 82) x 0.0 z 0.0, grown 0, age 0, flags 0x0000
+      family   married True, baby False, wife 4; life events ['MARRIED', 16, 62]
+      [PASS] weather  want rain     got rain
+      [PASS] horse    want no       got no
+      [PASS] married  want yes      got yes
+      [PASS] wife     want karen    got karen
+      [PASS] baby     want no       got no
+      [PASS] dog      want beach    got beach
+      [PASS] tile     want 18:23    got 18:23
+      [PASS] rod      want yes      got yes
+      [PASS] season   want spring   got spring
+      [PASS] day      want 9        got 9
+      [PASS] checksum want valid    got valid
+
+==> 3/7 lab health + each save's reference route from power-on (twice)
+[PASS] lcg        index(0x705EE83C)=1716
+[PASS] save       Harvest_Moon_64_USA3.SaveRAM: bizhawk-saveram, diary slots [0]
+[PASS] boot       load anchor VI 922 idx 503; control anchor VI 1184 idx 650
+[PASS] roundtrip  900 VIs
+[PASS] dogmodel   100 decisions explained, 1 whistle resets, 0 unexplained
+[PASS] poke       diary+4 (idx 505) vs load_d0+poke over 1800 VIs
+[SKIP] visual     xvfb-run not installed
+[SKIP] qs2        states/qs2.st missing (convert QuickSave2(1) with tools/convert_bizhawk_state.py)
+[PASS] route      fishing_ready VI 2668 draw 1312
+[PASS] ladder     cast 130 whistle [] from rung 120: bite 1148 vs 1148; cast 200 whistle [140] from rung 120: bite 1462 vs 1462
+
+SMOKE: ALL PASSED
+  married-lineup2-sunny-237e3d1d:
+  save 237e3d1dfe5d: spring 9 year 1, weather 1, rod in hand True; dog at the beach load: beach x -197.27 z 222.24
+  reference route: {"house": [1036, 499], "farm": [1448, 704], "beach": [2264, 1073], "wake": [213, 1180], "ready": [339, -92.0, 194.0, 1259]}
+  equal to Claude's sandbox record of this save (x86 build): OK
+  married-lineup2-rainy-62991249:
+  save 629912496c62: spring 9 year 1, weather 2, rod in hand True; dog at the beach load: beach x -197.27 z 222.24
+  reference route: {"house": [1036, 499], "farm": [1448, 704], "beach": [2264, 7429], "wake": [213, 9382], "ready": [339, -92.0, 194.0, 10593]}
+  equal to Claude's sandbox record of this save (x86 build): OK
+
+==> 4/7 [1: married-lineup2-sunny-237e3d1d] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY (Wed 18:21)
+  done before
+
+==> 5/7 [1: married-lineup2-sunny-237e3d1d] dog-watch phase 3: Lucky Timer cast tables (every game frame 0.1-40 s, every bite to 90 s) (Wed 18:21)
+  done before
+  zip      /Users/thomwollin/Documents/hm64/runs/hm64-dogwatch-married-lineup2-sunny-237e3d1d.zip
+
+==> 6/7 [1: married-lineup2-sunny-237e3d1d] dog after the cast: 3 windows (Wed 18:21)
+
+==> married-sunny-d90: casts to 40 s, everything to 90 s after READY, blocks 0-1  (Wed 18:21)
+  lines: done before
+lines followed to 5398 VIs (90 s) after READY; 30 heavy lines (90.1% of the route weight), 90 others; 39061 casts in 2 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 30):  17378 casts  (17378 done)
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 90):  21683 casts  (21683 done)
+  block 0: done before
+  block 1: done before
+
+==> married-sunny-d140c90: casts to 90 s, everything to 140 s after READY, blocks 2-5  (Wed 18:21)
+  lines: done before
+lines followed to 8398 VIs (140 s) after READY; 30 heavy lines (90.1% of the route weight), 90 others; 62798 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 30):  17378 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 90):  21683 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 30):   8953 casts  (8953 done)
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 90):  11184 casts  (11184 done)
+  block  4: casts  80.2- 90.3 s after READY, heavy lines ( 10):   1431 casts  (1431 done)
+  block  5: casts  80.2- 90.3 s after READY, other lines ( 17):   2169 casts  (2169 done)
+  block 2: done before
+  block 3: done before
+  block 4: done before
+  block 5: done before
+
+==> married-sunny-d170c120: casts to 120 s, everything to 170 s after READY, blocks 4-5  (Wed 18:22)
+  lines: done before
+lines followed to 10198 VIs (170 s) after READY; 30 heavy lines (90.1% of the route weight), 90 others; 75833 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 30):  17378 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 90):  21683 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 30):   8953 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 90):  11184 casts
+  block  4: casts  80.2-120.3 s after READY, heavy lines ( 30):   6807 casts  (6807 done)
+  block  5: casts  80.2-120.3 s after READY, other lines ( 90):   9828 casts  (9828 done)
+  block 4: done before
+  block 5: done before
+
+==> 7/7 [1: married-lineup2-sunny-237e3d1d] the zips to send
+  married-lineup2-sunny-237e3d1d done: its zips are in /Users/thomwollin/Documents/hm64/runs/hm64-married120-20261125-182117
+
+==> 4/7 [2: married-lineup2-rainy-62991249] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY (Wed 18:22)
+  done before
+
+==> 5/7 [2: married-lineup2-rainy-62991249] dog-watch phase 3: Lucky Timer cast tables (every game frame 0.1-40 s, every bite to 90 s) (Wed 18:22)
+  done before
+  zip      /Users/thomwollin/Documents/hm64/runs/hm64-dogwatch-married-lineup2-rainy-62991249.zip
+
+==> 6/7 [2: married-lineup2-rainy-62991249] dog after the cast: 3 windows (Wed 18:22)
+
+==> married-rainy-d90: casts to 40 s, everything to 90 s after READY, blocks 0-1  (Wed 18:22)
+  lines: done before
+lines followed to 5398 VIs (90 s) after READY; 51 heavy lines (90.4% of the route weight), 48 others; 69370 casts in 2 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 51):  45356 casts  (45356 done)
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 48):  24014 casts  (24014 done)
+  block 0: done before
+  block 1: done before
+
+==> married-rainy-d140c90: casts to 90 s, everything to 140 s after READY, blocks 2-5  (Wed 18:22)
+  lines: done before
+lines followed to 8398 VIs (140 s) after READY; 51 heavy lines (90.4% of the route weight), 48 others; 136296 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 51):  45356 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 48):  24014 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 51):  36004 casts  (3900 done)
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 48):  18305 casts
+  block  4: casts  80.2- 90.3 s after READY, heavy lines ( 41):   8368 casts
+  block  5: casts  80.2- 90.3 s after READY, other lines ( 25):   4249 casts
+
+==> married-rainy-d140c90 block 2 of 5  (Wed 18:22)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 2: casts 2400..4798 VIs after READY on the heavy lines (51), 36004 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 2] 1812 jobs, 163 already done, 1649 to run
+[FD block 2] 5/1649  6.7 jobs/min  eta 4.1 h
+[FD block 2] 10/1649  12.8 jobs/min  eta 2.1 h
+[FD block 2] 15/1649  10.3 jobs/min  eta 2.6 h
+[FD block 2] 20/1649  13.4 jobs/min  eta 2.0 h
+[FD block 2] 25/1649  16.3 jobs/min  eta 1.7 h
+[FD block 2] 30/1649  14.2 jobs/min  eta 1.9 h
+[FD block 2] 35/1649  16.2 jobs/min  eta 1.7 h
+[FD block 2] 40/1649  13.8 jobs/min  eta 2.0 h
+[FD block 2] 45/1649  14.9 jobs/min  eta 1.8 h
+[FD block 2] 50/1649  16.1 jobs/min  eta 1.7 h
+[FD block 2] 55/1649  14.5 jobs/min  eta 1.8 h
+[FD block 2] 60/1649  15.5 jobs/min  eta 1.7 h

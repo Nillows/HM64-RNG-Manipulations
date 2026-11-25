@@ -1,0 +1,14 @@
+
+==> married tables to 120 s: saves [sunny rainy], preset dogwatch, work folder /Users/thomwollin/Documents/hm64/runs/dogspots/hm64-lab (native ARM image)  Wed 06:37
+  lab code: ZZ_CODE = "zigzag-4f (2026-11-16: every bite to 90 s after READY; dogwatch menus...
+  keeping the Mac awake: caffeinate -dims (pid 93262) until this script ends - display, idle, disk and system sleep held off
+  note: Energy Mode is Automatic. High Power (System Settings > Energy > Energy Mode) keeps the M4 Pro at full clock with the fans up; optional.
+  free disk: 88 GB
+
+==> 1/7 lab files
+  fullday-2 kit, save_check.py, married_z0_check.py, save_redate.py -> /Users/thomwollin/Documents/hm64/runs/dogspots/hm64-lab
+  workers  13
+
+==> 2/7 the saves
+
+STOP: the sunny married save (sha256 01999fee..., "Harvest Moon 64 (USA).beach-lineup2-nohorse-married-sunny.SaveRAM") is not in ~/Documents/hm64/sourcefiles, ~/Downloads or a married-nohorse.zip there - put it into ~/Documents/hm64/sourcefiles/married/

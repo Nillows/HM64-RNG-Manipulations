@@ -1,0 +1,1013 @@
+
+==> pier spots on the rainy files: saves [nohorse horse], work folder /Users/thomwollin/Documents/hm64/runs/dogspots/hm64-lab (native ARM image)  Wed 15:29
+  keeping the Mac awake: caffeinate -dims (pid 91080) until this script ends
+  free disk: 86 GB
+
+==> 1/5 lab files
+  spot_jobs.py, spot_campaign.py, the plans -> /Users/thomwollin/Documents/hm64/runs/dogspots/hm64-lab
+  workers  13
+
+==> 2/5 the saves, their dog-watch runs and beach savestates
+  save     rain-lineup2-nohorse-8e972d75   (in the lab, sha256 ok)
+           12 beach savestates, lines: results/dogwatch/rain-lineup2-nohorse-8e972d75/zz_lines.json
+  save     rain-lineup2-horse-287c11a6   (in the lab, sha256 ok)
+           8 beach savestates, lines: results/dogwatch/rain-lineup2-horse-287c11a6/zz_lines.json
+
+==> 3/5 [1: rain-lineup2-nohorse-8e972d75] every line from every pier spot, no cast, to 170 s (Wed 15:29)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  lines of results/dogwatch/rain-lineup2-nohorse-8e972d75  save /work/data/saves_dogspots/rain-lineup2-nohorse-8e972d75.SaveRAM  workers 13  99 lines, 802 line x spot runs to 10198 VIs after READY
+[SP1 lines] 802 jobs, 0 already done, 802 to run
+[SP1 lines] 10/802  314.2 jobs/min  eta 3 min
+[SP1 lines] 20/802  340.5 jobs/min  eta 2 min
+[SP1 lines] 30/802  359.8 jobs/min  eta 2 min
+[SP1 lines] 40/802  373.3 jobs/min  eta 2 min
+[SP1 lines] 50/802  436.1 jobs/min  eta 2 min
+[SP1 lines] 60/802  428.0 jobs/min  eta 2 min
+[SP1 lines] 70/802  421.4 jobs/min  eta 2 min
+[SP1 lines] 80/802  417.1 jobs/min  eta 2 min
+[SP1 lines] 90/802  447.8 jobs/min  eta 2 min
+[SP1 lines] 100/802  441.4 jobs/min  eta 2 min
+[SP1 lines] 110/802  436.0 jobs/min  eta 2 min
+[SP1 lines] 120/802  433.5 jobs/min  eta 2 min
+[SP1 lines] 130/802  449.2 jobs/min  eta 1 min
+[SP1 lines] 140/802  449.6 jobs/min  eta 1 min
+[SP1 lines] 150/802  445.5 jobs/min  eta 1 min
+[SP1 lines] 160/802  440.3 jobs/min  eta 1 min
+[SP1 lines] 170/802  436.2 jobs/min  eta 1 min
+[SP1 lines] 180/802  451.8 jobs/min  eta 1 min
+[SP1 lines] 190/802  447.7 jobs/min  eta 1 min
+[SP1 lines] 200/802  445.1 jobs/min  eta 1 min
+[SP1 lines] 210/802  442.3 jobs/min  eta 1 min
+[SP1 lines] 220/802  453.6 jobs/min  eta 1 min
+[SP1 lines] 230/802  450.4 jobs/min  eta 1 min
+[SP1 lines] 240/802  446.7 jobs/min  eta 1 min
+[SP1 lines] 250/802  443.2 jobs/min  eta 1 min
+[SP1 lines] 260/802  450.2 jobs/min  eta 1 min
+[SP1 lines] 270/802  450.1 jobs/min  eta 1 min
+[SP1 lines] 280/802  449.0 jobs/min  eta 1 min
+[SP1 lines] 290/802  447.6 jobs/min  eta 1 min
+[SP1 lines] 300/802  446.5 jobs/min  eta 1 min
+[SP1 lines] 310/802  450.2 jobs/min  eta 1 min
+[SP1 lines] 320/802  449.2 jobs/min  eta 1 min
+[SP1 lines] 330/802  448.0 jobs/min  eta 1 min
+[SP1 lines] 340/802  445.9 jobs/min  eta 1 min
+[SP1 lines] 350/802  447.6 jobs/min  eta 1 min
+[SP1 lines] 360/802  450.3 jobs/min  eta 1 min
+[SP1 lines] 370/802  449.2 jobs/min  eta 1 min
+[SP1 lines] 380/802  448.8 jobs/min  eta 1 min
+[SP1 lines] 390/802  449.4 jobs/min  eta 1 min
+[SP1 lines] 400/802  449.2 jobs/min  eta 1 min
+[SP1 lines] 410/802  449.1 jobs/min  eta 1 min
+[SP1 lines] 420/802  449.0 jobs/min  eta 1 min
+[SP1 lines] 430/802  447.7 jobs/min  eta 1 min
+[SP1 lines] 440/802  448.4 jobs/min  eta 1 min
+[SP1 lines] 450/802  449.6 jobs/min  eta 1 min
+[SP1 lines] 460/802  450.5 jobs/min  eta 1 min
+[SP1 lines] 470/802  448.2 jobs/min  eta 1 min
+[SP1 lines] 480/802  447.7 jobs/min  eta 1 min
+[SP1 lines] 490/802  448.9 jobs/min  eta 1 min
+[SP1 lines] 500/802  449.4 jobs/min  eta 1 min
+[SP1 lines] 510/802  449.3 jobs/min  eta 1 min
+[SP1 lines] 520/802  449.5 jobs/min  eta 1 min
+[SP1 lines] 530/802  448.9 jobs/min  eta 1 min
+[SP1 lines] 540/802  449.7 jobs/min  eta 1 min
+[SP1 lines] 550/802  449.5 jobs/min  eta 1 min
+[SP1 lines] 560/802  449.3 jobs/min  eta 1 min
+[SP1 lines] 570/802  448.7 jobs/min  eta 1 min
+[SP1 lines] 580/802  449.0 jobs/min  eta 0 min
+[SP1 lines] 590/802  448.8 jobs/min  eta 0 min
+[SP1 lines] 600/802  450.6 jobs/min  eta 0 min
+[SP1 lines] 610/802  450.0 jobs/min  eta 0 min
+[SP1 lines] 620/802  449.4 jobs/min  eta 0 min
+[SP1 lines] 630/802  446.6 jobs/min  eta 0 min
+[SP1 lines] 640/802  449.8 jobs/min  eta 0 min
+[SP1 lines] 650/802  450.2 jobs/min  eta 0 min
+[SP1 lines] 660/802  449.1 jobs/min  eta 0 min
+[SP1 lines] 670/802  448.0 jobs/min  eta 0 min
+[SP1 lines] 680/802  450.8 jobs/min  eta 0 min
+[SP1 lines] 690/802  450.8 jobs/min  eta 0 min
+[SP1 lines] 700/802  449.9 jobs/min  eta 0 min
+[SP1 lines] 710/802  448.2 jobs/min  eta 0 min
+[SP1 lines] 720/802  450.6 jobs/min  eta 0 min
+[SP1 lines] 730/802  450.5 jobs/min  eta 0 min
+[SP1 lines] 740/802  450.1 jobs/min  eta 0 min
+[SP1 lines] 750/802  449.3 jobs/min  eta 0 min
+[SP1 lines] 760/802  448.4 jobs/min  eta 0 min
+[SP1 lines] 770/802  451.3 jobs/min  eta 0 min
+[SP1 lines] 780/802  450.4 jobs/min  eta 0 min
+[SP1 lines] 790/802  449.1 jobs/min  eta 0 min
+[SP1 lines] 800/802  449.3 jobs/min  eta 0 min
+[SP1 lines] 802/802  450.0 jobs/min  eta 0 min
+[SP1] the representative's own spot against the recorded run: 99 of 99 lines equal on every cast hash (504603 hashes), 0 lines differ, 0 without a row; 0 line x spot runs refused
+  lines: 1 min
+# Pier spots: rain-lineup2-nohorse-8e972d75
+
+Times are seconds after the representative's READY. A row 'split' = the first cast hash that is not the recorded one.
+
+## No cast: the line from each pier spot against the recorded line
+
+| Jack's z at the dock end | lines | weight of those lines | same to 170 s | split by 20 s | 40 s | 60 s | 90 s | 120 s | 170 s | earliest split |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 154.8 | 1 | 1.5% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 156.2 | 6 | 2.4% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 156.6 | 5 | 4.5% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 158.0 | 10 | 12.3% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 158.4 | 78 | 80.8% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 164.0 | 10 | 12.3% | 93.4% | 0.0% | 0.0% | 0.0% | 4.6% | 4.6% | 6.6% | 83.2 s |
+| 164.4 | 78 | 80.8% | 64.2% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 35.8% | 23.1 s |
+| 170.0 | 10 | 12.3% | 93.4% | 0.0% | 0.0% | 0.0% | 4.6% | 4.6% | 6.6% | 83.2 s |
+| 170.4 | 78 | 80.8% | 64.2% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 35.8% | 23.1 s |
+| 176.0 | 10 | 12.3% | 93.4% | 0.0% | 0.0% | 0.0% | 4.6% | 4.6% | 6.6% | 83.2 s |
+| 176.4 | 78 | 80.8% | 59.8% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 40.2% | 23.1 s |
+| 182.0 | 10 | 12.3% | 93.4% | 0.0% | 0.0% | 0.0% | 4.6% | 4.6% | 6.6% | 83.2 s |
+| 182.4 | 78 | 80.8% | 59.8% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 40.2% | 23.1 s |
+| 188.0 | 10 | 12.3% | 93.4% | 0.0% | 0.0% | 0.0% | 4.6% | 4.6% | 6.6% | 83.2 s |
+| 188.4 | 78 | 80.8% | 59.8% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 40.2% | 23.1 s |
+| 194.0 | 10 | 12.3% | 77.6% | 15.8% | 15.8% | 15.8% | 20.4% | 20.4% | 22.4% | 15.0 s |
+| 194.4 | 77 | 77.2% | 62.6% | 0.0% | 7.7% | 10.7% | 11.9% | 11.9% | 37.4% | 23.1 s |
+| 195.4 | 10 | 12.3% | 77.6% | 15.8% | 15.8% | 15.8% | 20.4% | 20.4% | 22.4% | 15.0 s |
+| 195.8 | 87 | 93.1% | 62.1% | 2.1% | 8.5% | 11.0% | 12.6% | 12.6% | 37.9% | 15.0 s |
+| 196.1 | 78 | 80.8% | 59.8% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 40.2% | 23.1 s |
+
+(shares are of the route weight of the lines that reach that spot)
+
+
+
+==> 4/5 [1: rain-lineup2-nohorse-8e972d75] the recorded casts from three other spots (Wed 15:31)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  casts: 43946 casts in 3651 jobs on 99 lines, spots rep (control, every 25th cast) + z [164.4, 176.4, 194.4]
+[SP2 casts] 3651 jobs, 0 already done, 3651 to run
+[SP2 casts] 10/3651  203.5 jobs/min  eta 18 min
+[SP2 casts] 20/3651  32.2 jobs/min  eta 1.9 h
+[SP2 casts] 30/3651  37.1 jobs/min  eta 1.6 h
+[SP2 casts] 40/3651  30.9 jobs/min  eta 1.9 h
+[SP2 casts] 50/3651  32.4 jobs/min  eta 1.9 h
+[SP2 casts] 60/3651  30.5 jobs/min  eta 2.0 h
+[SP2 casts] 70/3651  33.1 jobs/min  eta 1.8 h
+[SP2 casts] 80/3651  34.5 jobs/min  eta 1.7 h
+[SP2 casts] 90/3651  34.6 jobs/min  eta 1.7 h
+[SP2 casts] 100/3651  34.6 jobs/min  eta 1.7 h
+[SP2 casts] 110/3651  35.2 jobs/min  eta 1.7 h
+[SP2 casts] 120/3651  35.7 jobs/min  eta 1.6 h
+[SP2 casts] 130/3651  37.2 jobs/min  eta 1.6 h
+[SP2 casts] 140/3651  39.2 jobs/min  eta 89 min
+[SP2 casts] 150/3651  38.2 jobs/min  eta 1.5 h
+[SP2 casts] 160/3651  36.6 jobs/min  eta 1.6 h
+[SP2 casts] 170/3651  36.5 jobs/min  eta 1.6 h
+[SP2 casts] 180/3651  34.7 jobs/min  eta 1.7 h
+[SP2 casts] 190/3651  35.2 jobs/min  eta 1.6 h
+[SP2 casts] 200/3651  36.1 jobs/min  eta 1.6 h
+[SP2 casts] 210/3651  36.0 jobs/min  eta 1.6 h
+[SP2 casts] 220/3651  35.5 jobs/min  eta 1.6 h
+[SP2 casts] 230/3651  35.1 jobs/min  eta 1.6 h
+[SP2 casts] 240/3651  34.6 jobs/min  eta 1.6 h
+[SP2 casts] 250/3651  34.3 jobs/min  eta 1.7 h
+[SP2 casts] 260/3651  34.1 jobs/min  eta 1.7 h
+[SP2 casts] 270/3651  35.0 jobs/min  eta 1.6 h
+[SP2 casts] 280/3651  35.2 jobs/min  eta 1.6 h
+[SP2 casts] 290/3651  34.4 jobs/min  eta 1.6 h
+[SP2 casts] 300/3651  33.9 jobs/min  eta 1.6 h
+[SP2 casts] 310/3651  33.7 jobs/min  eta 1.7 h
+[SP2 casts] 320/3651  32.9 jobs/min  eta 1.7 h
+[SP2 casts] 330/3651  33.5 jobs/min  eta 1.7 h
+[SP2 casts] 340/3651  34.1 jobs/min  eta 1.6 h
+[SP2 casts] 350/3651  33.8 jobs/min  eta 1.6 h
+[SP2 casts] 360/3651  34.0 jobs/min  eta 1.6 h
+[SP2 casts] 370/3651  33.6 jobs/min  eta 1.6 h
+[SP2 casts] 380/3651  33.8 jobs/min  eta 1.6 h
+[SP2 casts] 390/3651  33.5 jobs/min  eta 1.6 h
+[SP2 casts] 400/3651  34.1 jobs/min  eta 1.6 h
+[SP2 casts] 410/3651  34.8 jobs/min  eta 1.6 h
+[SP2 casts] 420/3651  34.9 jobs/min  eta 1.5 h
+[SP2 casts] 430/3651  34.5 jobs/min  eta 1.6 h
+[SP2 casts] 440/3651  34.4 jobs/min  eta 1.6 h
+[SP2 casts] 450/3651  34.3 jobs/min  eta 1.6 h
+[SP2 casts] 460/3651  34.0 jobs/min  eta 1.6 h
+[SP2 casts] 470/3651  34.2 jobs/min  eta 1.5 h
+[SP2 casts] 480/3651  34.8 jobs/min  eta 1.5 h
+[SP2 casts] 490/3651  35.4 jobs/min  eta 89 min
+[SP2 casts] 500/3651  36.0 jobs/min  eta 88 min
+[SP2 casts] 510/3651  35.7 jobs/min  eta 88 min
+[SP2 casts] 520/3651  35.9 jobs/min  eta 87 min
+[SP2 casts] 530/3651  35.6 jobs/min  eta 88 min
+[SP2 casts] 540/3651  35.7 jobs/min  eta 87 min
+[SP2 casts] 550/3651  35.2 jobs/min  eta 88 min
+[SP2 casts] 560/3651  35.7 jobs/min  eta 87 min
+[SP2 casts] 570/3651  35.8 jobs/min  eta 86 min
+[SP2 casts] 580/3651  35.4 jobs/min  eta 87 min
+[SP2 casts] 590/3651  35.3 jobs/min  eta 87 min
+[SP2 casts] 600/3651  34.8 jobs/min  eta 88 min
+[SP2 casts] 610/3651  34.9 jobs/min  eta 87 min
+[SP2 casts] 620/3651  34.5 jobs/min  eta 88 min
+[SP2 casts] 630/3651  34.9 jobs/min  eta 87 min
+[SP2 casts] 640/3651  35.2 jobs/min  eta 85 min
+[SP2 casts] 650/3651  34.9 jobs/min  eta 86 min
+[SP2 casts] 660/3651  34.7 jobs/min  eta 86 min
+[SP2 casts] 670/3651  34.5 jobs/min  eta 86 min
+[SP2 casts] 680/3651  34.3 jobs/min  eta 87 min
+[SP2 casts] 690/3651  34.2 jobs/min  eta 87 min
+[SP2 casts] 700/3651  34.4 jobs/min  eta 86 min
+[SP2 casts] 710/3651  34.5 jobs/min  eta 85 min
+[SP2 casts] 720/3651  34.3 jobs/min  eta 86 min
+[SP2 casts] 730/3651  34.3 jobs/min  eta 85 min
+[SP2 casts] 740/3651  34.1 jobs/min  eta 85 min
+[SP2 casts] 750/3651  34.1 jobs/min  eta 85 min
+[SP2 casts] 760/3651  33.9 jobs/min  eta 85 min
+[SP2 casts] 770/3651  34.3 jobs/min  eta 84 min
+[SP2 casts] 780/3651  34.3 jobs/min  eta 84 min
+[SP2 casts] 790/3651  34.4 jobs/min  eta 83 min
+[SP2 casts] 800/3651  34.5 jobs/min  eta 83 min
+[SP2 casts] 810/3651  34.6 jobs/min  eta 82 min
+[SP2 casts] 820/3651  34.6 jobs/min  eta 82 min
+[SP2 casts] 830/3651  34.9 jobs/min  eta 81 min
+[SP2 casts] 840/3651  35.2 jobs/min  eta 80 min
+[SP2 casts] 850/3651  34.9 jobs/min  eta 80 min
+[SP2 casts] 860/3651  34.7 jobs/min  eta 81 min
+[SP2 casts] 870/3651  34.6 jobs/min  eta 80 min
+[SP2 casts] 880/3651  34.4 jobs/min  eta 81 min
+[SP2 casts] 890/3651  34.4 jobs/min  eta 80 min
+[SP2 casts] 900/3651  34.5 jobs/min  eta 80 min
+[SP2 casts] 910/3651  34.7 jobs/min  eta 79 min
+[SP2 casts] 920/3651  35.0 jobs/min  eta 78 min
+[SP2 casts] 930/3651  35.2 jobs/min  eta 77 min
+[SP2 casts] 940/3651  34.9 jobs/min  eta 78 min
+[SP2 casts] 950/3651  34.8 jobs/min  eta 78 min
+[SP2 casts] 960/3651  34.8 jobs/min  eta 77 min
+[SP2 casts] 970/3651  34.5 jobs/min  eta 78 min
+[SP2 casts] 980/3651  34.4 jobs/min  eta 78 min
+[SP2 casts] 990/3651  34.6 jobs/min  eta 77 min
+[SP2 casts] 1000/3651  34.8 jobs/min  eta 76 min
+[SP2 casts] 1010/3651  34.6 jobs/min  eta 76 min
+[SP2 casts] 1020/3651  34.5 jobs/min  eta 76 min
+[SP2 casts] 1030/3651  34.5 jobs/min  eta 76 min
+[SP2 casts] 1040/3651  34.5 jobs/min  eta 76 min
+[SP2 casts] 1050/3651  34.3 jobs/min  eta 76 min
+[SP2 casts] 1060/3651  34.5 jobs/min  eta 75 min
+[SP2 casts] 1070/3651  34.6 jobs/min  eta 74 min
+[SP2 casts] 1080/3651  34.9 jobs/min  eta 74 min
+[SP2 casts] 1090/3651  35.1 jobs/min  eta 73 min
+[SP2 casts] 1100/3651  35.2 jobs/min  eta 73 min
+[SP2 casts] 1110/3651  35.4 jobs/min  eta 72 min
+[SP2 casts] 1120/3651  35.4 jobs/min  eta 72 min
+[SP2 casts] 1130/3651  35.3 jobs/min  eta 72 min
+[SP2 casts] 1140/3651  35.2 jobs/min  eta 71 min
+[SP2 casts] 1150/3651  35.1 jobs/min  eta 71 min
+[SP2 casts] 1160/3651  35.1 jobs/min  eta 71 min
+[SP2 casts] 1170/3651  35.0 jobs/min  eta 71 min
+[SP2 casts] 1180/3651  35.1 jobs/min  eta 70 min
+[SP2 casts] 1190/3651  35.3 jobs/min  eta 70 min
+[SP2 casts] 1200/3651  35.5 jobs/min  eta 69 min
+[SP2 casts] 1210/3651  35.5 jobs/min  eta 69 min
+[SP2 casts] 1220/3651  35.6 jobs/min  eta 68 min
+[SP2 casts] 1230/3651  35.8 jobs/min  eta 68 min
+[SP2 casts] 1240/3651  36.0 jobs/min  eta 67 min
+[SP2 casts] 1250/3651  35.9 jobs/min  eta 67 min
+[SP2 casts] 1260/3651  35.9 jobs/min  eta 67 min
+[SP2 casts] 1270/3651  35.8 jobs/min  eta 67 min
+[SP2 casts] 1280/3651  35.7 jobs/min  eta 66 min
+[SP2 casts] 1290/3651  35.6 jobs/min  eta 66 min
+[SP2 casts] 1300/3651  35.7 jobs/min  eta 66 min
+[SP2 casts] 1310/3651  35.8 jobs/min  eta 65 min
+[SP2 casts] 1320/3651  35.8 jobs/min  eta 65 min
+[SP2 casts] 1330/3651  35.9 jobs/min  eta 65 min
+[SP2 casts] 1340/3651  36.1 jobs/min  eta 64 min
+[SP2 casts] 1350/3651  36.3 jobs/min  eta 63 min
+[SP2 casts] 1360/3651  36.4 jobs/min  eta 63 min
+[SP2 casts] 1370/3651  36.2 jobs/min  eta 63 min
+[SP2 casts] 1380/3651  36.1 jobs/min  eta 63 min
+[SP2 casts] 1390/3651  35.9 jobs/min  eta 63 min
+[SP2 casts] 1400/3651  35.9 jobs/min  eta 63 min
+[SP2 casts] 1410/3651  35.7 jobs/min  eta 63 min
+[SP2 casts] 1420/3651  35.8 jobs/min  eta 62 min
+[SP2 casts] 1430/3651  35.9 jobs/min  eta 62 min
+[SP2 casts] 1440/3651  35.8 jobs/min  eta 62 min
+[SP2 casts] 1450/3651  35.8 jobs/min  eta 62 min
+[SP2 casts] 1460/3651  35.7 jobs/min  eta 61 min
+[SP2 casts] 1470/3651  35.7 jobs/min  eta 61 min
+[SP2 casts] 1480/3651  35.7 jobs/min  eta 61 min
+[SP2 casts] 1490/3651  35.9 jobs/min  eta 60 min
+[SP2 casts] 1500/3651  35.9 jobs/min  eta 60 min
+[SP2 casts] 1510/3651  35.7 jobs/min  eta 60 min
+[SP2 casts] 1520/3651  35.7 jobs/min  eta 60 min
+[SP2 casts] 1530/3651  35.5 jobs/min  eta 60 min
+[SP2 casts] 1540/3651  35.5 jobs/min  eta 59 min
+[SP2 casts] 1550/3651  35.4 jobs/min  eta 59 min
+[SP2 casts] 1560/3651  35.6 jobs/min  eta 59 min
+[SP2 casts] 1570/3651  35.6 jobs/min  eta 58 min
+[SP2 casts] 1580/3651  35.5 jobs/min  eta 58 min
+[SP2 casts] 1590/3651  35.5 jobs/min  eta 58 min
+[SP2 casts] 1600/3651  35.3 jobs/min  eta 58 min
+[SP2 casts] 1610/3651  35.4 jobs/min  eta 58 min
+[SP2 casts] 1620/3651  35.2 jobs/min  eta 58 min
+[SP2 casts] 1630/3651  35.4 jobs/min  eta 57 min
+[SP2 casts] 1640/3651  35.5 jobs/min  eta 57 min
+[SP2 casts] 1650/3651  35.4 jobs/min  eta 57 min
+[SP2 casts] 1660/3651  35.3 jobs/min  eta 56 min
+[SP2 casts] 1670/3651  35.2 jobs/min  eta 56 min
+[SP2 casts] 1680/3651  35.1 jobs/min  eta 56 min
+[SP2 casts] 1690/3651  35.0 jobs/min  eta 56 min
+[SP2 casts] 1700/3651  35.1 jobs/min  eta 56 min
+[SP2 casts] 1710/3651  35.2 jobs/min  eta 55 min
+[SP2 casts] 1720/3651  35.4 jobs/min  eta 55 min
+[SP2 casts] 1730/3651  35.5 jobs/min  eta 54 min
+[SP2 casts] 1740/3651  35.5 jobs/min  eta 54 min
+[SP2 casts] 1750/3651  35.3 jobs/min  eta 54 min
+[SP2 casts] 1760/3651  35.3 jobs/min  eta 54 min
+[SP2 casts] 1770/3651  35.1 jobs/min  eta 54 min
+[SP2 casts] 1780/3651  35.1 jobs/min  eta 53 min
+[SP2 casts] 1790/3651  35.1 jobs/min  eta 53 min
+[SP2 casts] 1800/3651  35.1 jobs/min  eta 53 min
+[SP2 casts] 1810/3651  35.3 jobs/min  eta 52 min
+[SP2 casts] 1820/3651  35.4 jobs/min  eta 52 min
+[SP2 casts] 1830/3651  35.5 jobs/min  eta 51 min
+[SP2 casts] 1840/3651  35.5 jobs/min  eta 51 min
+[SP2 casts] 1850/3651  35.5 jobs/min  eta 51 min
+[SP2 casts] 1860/3651  35.4 jobs/min  eta 51 min
+[SP2 casts] 1870/3651  35.3 jobs/min  eta 50 min
+[SP2 casts] 1880/3651  35.3 jobs/min  eta 50 min
+[SP2 casts] 1890/3651  35.2 jobs/min  eta 50 min
+[SP2 casts] 1900/3651  35.3 jobs/min  eta 50 min
+[SP2 casts] 1910/3651  35.4 jobs/min  eta 49 min
+[SP2 casts] 1920/3651  35.6 jobs/min  eta 49 min
+[SP2 casts] 1930/3651  35.5 jobs/min  eta 48 min
+[SP2 casts] 1940/3651  35.5 jobs/min  eta 48 min
+[SP2 casts] 1950/3651  35.4 jobs/min  eta 48 min
+[SP2 casts] 1960/3651  35.4 jobs/min  eta 48 min
+[SP2 casts] 1970/3651  35.4 jobs/min  eta 48 min
+[SP2 casts] 1980/3651  35.5 jobs/min  eta 47 min
+[SP2 casts] 1990/3651  35.5 jobs/min  eta 47 min
+[SP2 casts] 2000/3651  35.5 jobs/min  eta 47 min
+[SP2 casts] 2010/3651  35.6 jobs/min  eta 46 min
+[SP2 casts] 2020/3651  35.6 jobs/min  eta 46 min
+[SP2 casts] 2030/3651  35.7 jobs/min  eta 45 min
+[SP2 casts] 2040/3651  35.7 jobs/min  eta 45 min
+[SP2 casts] 2050/3651  35.7 jobs/min  eta 45 min
+[SP2 casts] 2060/3651  35.6 jobs/min  eta 45 min
+[SP2 casts] 2070/3651  35.5 jobs/min  eta 44 min
+[SP2 casts] 2080/3651  35.6 jobs/min  eta 44 min
+[SP2 casts] 2090/3651  35.7 jobs/min  eta 44 min
+[SP2 casts] 2100/3651  35.8 jobs/min  eta 43 min
+[SP2 casts] 2110/3651  35.9 jobs/min  eta 43 min
+[SP2 casts] 2120/3651  36.1 jobs/min  eta 42 min
+[SP2 casts] 2130/3651  36.2 jobs/min  eta 42 min
+[SP2 casts] 2140/3651  36.1 jobs/min  eta 42 min
+[SP2 casts] 2150/3651  36.2 jobs/min  eta 41 min
+[SP2 casts] 2160/3651  36.1 jobs/min  eta 41 min
+[SP2 casts] 2170/3651  36.0 jobs/min  eta 41 min
+[SP2 casts] 2180/3651  36.1 jobs/min  eta 41 min
+[SP2 casts] 2190/3651  36.2 jobs/min  eta 40 min
+[SP2 casts] 2200/3651  36.4 jobs/min  eta 40 min
+[SP2 casts] 2210/3651  36.5 jobs/min  eta 39 min
+[SP2 casts] 2220/3651  36.6 jobs/min  eta 39 min
+[SP2 casts] 2230/3651  36.7 jobs/min  eta 39 min
+[SP2 casts] 2240/3651  36.6 jobs/min  eta 39 min
+[SP2 casts] 2250/3651  36.7 jobs/min  eta 38 min
+[SP2 casts] 2260/3651  36.7 jobs/min  eta 38 min
+[SP2 casts] 2270/3651  36.8 jobs/min  eta 38 min
+[SP2 casts] 2280/3651  36.8 jobs/min  eta 37 min
+[SP2 casts] 2290/3651  36.8 jobs/min  eta 37 min
+[SP2 casts] 2300/3651  36.8 jobs/min  eta 37 min
+[SP2 casts] 2310/3651  36.8 jobs/min  eta 36 min
+[SP2 casts] 2320/3651  36.8 jobs/min  eta 36 min
+[SP2 casts] 2330/3651  36.8 jobs/min  eta 36 min
+[SP2 casts] 2340/3651  36.9 jobs/min  eta 36 min
+[SP2 casts] 2350/3651  37.0 jobs/min  eta 35 min
+[SP2 casts] 2360/3651  37.1 jobs/min  eta 35 min
+[SP2 casts] 2370/3651  36.9 jobs/min  eta 35 min
+[SP2 casts] 2380/3651  36.8 jobs/min  eta 35 min
+[SP2 casts] 2390/3651  36.8 jobs/min  eta 34 min
+[SP2 casts] 2400/3651  36.7 jobs/min  eta 34 min
+[SP2 casts] 2410/3651  36.7 jobs/min  eta 34 min
+[SP2 casts] 2420/3651  36.8 jobs/min  eta 33 min
+[SP2 casts] 2430/3651  36.9 jobs/min  eta 33 min
+[SP2 casts] 2440/3651  37.0 jobs/min  eta 33 min
+[SP2 casts] 2450/3651  37.0 jobs/min  eta 32 min
+[SP2 casts] 2460/3651  37.0 jobs/min  eta 32 min
+[SP2 casts] 2470/3651  37.0 jobs/min  eta 32 min
+[SP2 casts] 2480/3651  37.0 jobs/min  eta 32 min
+[SP2 casts] 2490/3651  37.1 jobs/min  eta 31 min
+[SP2 casts] 2500/3651  37.2 jobs/min  eta 31 min
+[SP2 casts] 2510/3651  37.1 jobs/min  eta 31 min
+[SP2 casts] 2520/3651  37.1 jobs/min  eta 30 min
+[SP2 casts] 2530/3651  37.0 jobs/min  eta 30 min
+[SP2 casts] 2540/3651  37.0 jobs/min  eta 30 min
+[SP2 casts] 2550/3651  36.9 jobs/min  eta 30 min
+[SP2 casts] 2560/3651  37.0 jobs/min  eta 30 min
+[SP2 casts] 2570/3651  37.1 jobs/min  eta 29 min
+[SP2 casts] 2580/3651  37.1 jobs/min  eta 29 min
+[SP2 casts] 2590/3651  37.2 jobs/min  eta 29 min
+[SP2 casts] 2600/3651  37.3 jobs/min  eta 28 min
+[SP2 casts] 2610/3651  37.3 jobs/min  eta 28 min
+[SP2 casts] 2620/3651  37.3 jobs/min  eta 28 min
+[SP2 casts] 2630/3651  37.4 jobs/min  eta 27 min
+[SP2 casts] 2640/3651  37.5 jobs/min  eta 27 min
+[SP2 casts] 2650/3651  37.6 jobs/min  eta 27 min
+[SP2 casts] 2660/3651  37.7 jobs/min  eta 26 min
+[SP2 casts] 2670/3651  37.9 jobs/min  eta 26 min
+[SP2 casts] 2680/3651  38.0 jobs/min  eta 26 min
+[SP2 casts] 2690/3651  38.0 jobs/min  eta 25 min
+[SP2 casts] 2700/3651  38.0 jobs/min  eta 25 min
+[SP2 casts] 2710/3651  38.1 jobs/min  eta 25 min
+[SP2 casts] 2720/3651  38.2 jobs/min  eta 24 min
+[SP2 casts] 2730/3651  38.3 jobs/min  eta 24 min
+[SP2 casts] 2740/3651  38.5 jobs/min  eta 24 min
+[SP2 casts] 2750/3651  38.5 jobs/min  eta 23 min
+[SP2 casts] 2760/3651  38.4 jobs/min  eta 23 min
+[SP2 casts] 2770/3651  38.4 jobs/min  eta 23 min
+[SP2 casts] 2780/3651  38.4 jobs/min  eta 23 min
+[SP2 casts] 2790/3651  38.3 jobs/min  eta 22 min
+[SP2 casts] 2800/3651  38.4 jobs/min  eta 22 min
+[SP2 casts] 2810/3651  38.4 jobs/min  eta 22 min
+[SP2 casts] 2820/3651  38.4 jobs/min  eta 22 min
+[SP2 casts] 2830/3651  38.3 jobs/min  eta 21 min
+[SP2 casts] 2840/3651  38.3 jobs/min  eta 21 min
+[SP2 casts] 2850/3651  38.2 jobs/min  eta 21 min
+[SP2 casts] 2860/3651  38.1 jobs/min  eta 21 min
+[SP2 casts] 2870/3651  38.2 jobs/min  eta 20 min
+[SP2 casts] 2880/3651  38.2 jobs/min  eta 20 min
+[SP2 casts] 2890/3651  38.2 jobs/min  eta 20 min
+[SP2 casts] 2900/3651  38.2 jobs/min  eta 20 min
+[SP2 casts] 2910/3651  38.1 jobs/min  eta 19 min
+[SP2 casts] 2920/3651  38.1 jobs/min  eta 19 min
+[SP2 casts] 2930/3651  38.0 jobs/min  eta 19 min
+[SP2 casts] 2940/3651  38.1 jobs/min  eta 19 min
+[SP2 casts] 2950/3651  38.2 jobs/min  eta 18 min
+[SP2 casts] 2960/3651  38.3 jobs/min  eta 18 min
+[SP2 casts] 2970/3651  38.4 jobs/min  eta 18 min
+[SP2 casts] 2980/3651  38.4 jobs/min  eta 17 min
+[SP2 casts] 2990/3651  38.3 jobs/min  eta 17 min
+[SP2 casts] 3000/3651  38.3 jobs/min  eta 17 min
+[SP2 casts] 3010/3651  38.2 jobs/min  eta 17 min
+[SP2 casts] 3020/3651  38.2 jobs/min  eta 17 min
+[SP2 casts] 3030/3651  38.2 jobs/min  eta 16 min
+[SP2 casts] 3040/3651  38.3 jobs/min  eta 16 min
+[SP2 casts] 3050/3651  38.4 jobs/min  eta 16 min
+[SP2 casts] 3060/3651  38.3 jobs/min  eta 15 min
+[SP2 casts] 3070/3651  38.3 jobs/min  eta 15 min
+[SP2 casts] 3080/3651  38.2 jobs/min  eta 15 min
+[SP2 casts] 3090/3651  38.2 jobs/min  eta 15 min
+[SP2 casts] 3100/3651  38.1 jobs/min  eta 14 min
+[SP2 casts] 3110/3651  38.2 jobs/min  eta 14 min
+[SP2 casts] 3120/3651  38.3 jobs/min  eta 14 min
+[SP2 casts] 3130/3651  38.4 jobs/min  eta 14 min
+[SP2 casts] 3140/3651  38.5 jobs/min  eta 13 min
+[SP2 casts] 3150/3651  38.6 jobs/min  eta 13 min
+[SP2 casts] 3160/3651  38.6 jobs/min  eta 13 min
+[SP2 casts] 3170/3651  38.7 jobs/min  eta 12 min
+[SP2 casts] 3180/3651  38.7 jobs/min  eta 12 min
+[SP2 casts] 3190/3651  38.6 jobs/min  eta 12 min
+[SP2 casts] 3200/3651  38.6 jobs/min  eta 12 min
+[SP2 casts] 3210/3651  38.7 jobs/min  eta 11 min
+[SP2 casts] 3220/3651  38.7 jobs/min  eta 11 min
+[SP2 casts] 3230/3651  38.8 jobs/min  eta 11 min
+[SP2 casts] 3240/3651  38.9 jobs/min  eta 11 min
+[SP2 casts] 3250/3651  38.9 jobs/min  eta 10 min
+[SP2 casts] 3260/3651  38.9 jobs/min  eta 10 min
+[SP2 casts] 3270/3651  38.8 jobs/min  eta 10 min
+[SP2 casts] 3280/3651  38.8 jobs/min  eta 10 min
+[SP2 casts] 3290/3651  38.7 jobs/min  eta 9 min
+[SP2 casts] 3300/3651  38.8 jobs/min  eta 9 min
+[SP2 casts] 3310/3651  38.9 jobs/min  eta 9 min
+[SP2 casts] 3320/3651  39.0 jobs/min  eta 8 min
+[SP2 casts] 3330/3651  39.1 jobs/min  eta 8 min
+[SP2 casts] 3340/3651  39.1 jobs/min  eta 8 min
+[SP2 casts] 3350/3651  39.2 jobs/min  eta 8 min
+[SP2 casts] 3360/3651  39.3 jobs/min  eta 7 min
+[SP2 casts] 3370/3651  39.2 jobs/min  eta 7 min
+[SP2 casts] 3380/3651  39.2 jobs/min  eta 7 min
+[SP2 casts] 3390/3651  39.1 jobs/min  eta 7 min
+[SP2 casts] 3400/3651  39.1 jobs/min  eta 6 min
+[SP2 casts] 3410/3651  39.0 jobs/min  eta 6 min
+[SP2 casts] 3420/3651  39.1 jobs/min  eta 6 min
+[SP2 casts] 3430/3651  39.2 jobs/min  eta 6 min
+[SP2 casts] 3440/3651  39.3 jobs/min  eta 5 min
+[SP2 casts] 3450/3651  39.2 jobs/min  eta 5 min
+[SP2 casts] 3460/3651  39.1 jobs/min  eta 5 min
+[SP2 casts] 3470/3651  39.1 jobs/min  eta 5 min
+[SP2 casts] 3480/3651  39.0 jobs/min  eta 4 min
+[SP2 casts] 3490/3651  38.9 jobs/min  eta 4 min
+[SP2 casts] 3500/3651  39.0 jobs/min  eta 4 min
+[SP2 casts] 3510/3651  39.0 jobs/min  eta 4 min
+[SP2 casts] 3520/3651  39.1 jobs/min  eta 3 min
+[SP2 casts] 3530/3651  39.2 jobs/min  eta 3 min
+[SP2 casts] 3540/3651  39.3 jobs/min  eta 3 min
+[SP2 casts] 3550/3651  39.4 jobs/min  eta 3 min
+[SP2 casts] 3560/3651  39.5 jobs/min  eta 2 min
+[SP2 casts] 3570/3651  39.3 jobs/min  eta 2 min
+[SP2 casts] 3580/3651  39.3 jobs/min  eta 2 min
+[SP2 casts] 3590/3651  39.3 jobs/min  eta 2 min
+[SP2 casts] 3600/3651  39.2 jobs/min  eta 1 min
+[SP2 casts] 3610/3651  39.2 jobs/min  eta 1 min
+[SP2 casts] 3620/3651  39.3 jobs/min  eta 1 min
+[SP2 casts] 3630/3651  39.4 jobs/min  eta 1 min
+[SP2 casts] 3640/3651  39.5 jobs/min  eta 0 min
+[SP2 casts] 3650/3651  39.6 jobs/min  eta 0 min
+[SP2 casts] 3651/3651  39.6 jobs/min  eta 0 min
+  casts: 92 min
+
+==> 5/5 [1: rain-lineup2-nohorse-8e972d75] report and zip
+# Pier spots: rain-lineup2-nohorse-8e972d75
+
+Times are seconds after the representative's READY. A row 'split' = the first cast hash that is not the recorded one.
+
+## No cast: the line from each pier spot against the recorded line
+
+| Jack's z at the dock end | lines | weight of those lines | same to 170 s | split by 20 s | 40 s | 60 s | 90 s | 120 s | 170 s | earliest split |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 154.8 | 1 | 1.5% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 156.2 | 6 | 2.4% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 156.6 | 5 | 4.5% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 158.0 | 10 | 12.3% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 158.4 | 78 | 80.8% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 164.0 | 10 | 12.3% | 93.4% | 0.0% | 0.0% | 0.0% | 4.6% | 4.6% | 6.6% | 83.2 s |
+| 164.4 | 78 | 80.8% | 64.2% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 35.8% | 23.1 s |
+| 170.0 | 10 | 12.3% | 93.4% | 0.0% | 0.0% | 0.0% | 4.6% | 4.6% | 6.6% | 83.2 s |
+| 170.4 | 78 | 80.8% | 64.2% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 35.8% | 23.1 s |
+| 176.0 | 10 | 12.3% | 93.4% | 0.0% | 0.0% | 0.0% | 4.6% | 4.6% | 6.6% | 83.2 s |
+| 176.4 | 78 | 80.8% | 59.8% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 40.2% | 23.1 s |
+| 182.0 | 10 | 12.3% | 93.4% | 0.0% | 0.0% | 0.0% | 4.6% | 4.6% | 6.6% | 83.2 s |
+| 182.4 | 78 | 80.8% | 59.8% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 40.2% | 23.1 s |
+| 188.0 | 10 | 12.3% | 93.4% | 0.0% | 0.0% | 0.0% | 4.6% | 4.6% | 6.6% | 83.2 s |
+| 188.4 | 78 | 80.8% | 59.8% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 40.2% | 23.1 s |
+| 194.0 | 10 | 12.3% | 77.6% | 15.8% | 15.8% | 15.8% | 20.4% | 20.4% | 22.4% | 15.0 s |
+| 194.4 | 77 | 77.2% | 62.6% | 0.0% | 7.7% | 10.7% | 11.9% | 11.9% | 37.4% | 23.1 s |
+| 195.4 | 10 | 12.3% | 77.6% | 15.8% | 15.8% | 15.8% | 20.4% | 20.4% | 22.4% | 15.0 s |
+| 195.8 | 87 | 93.1% | 62.1% | 2.1% | 8.5% | 11.0% | 12.6% | 12.6% | 37.9% | 15.0 s |
+| 196.1 | 78 | 80.8% | 59.8% | 0.0% | 7.3% | 10.2% | 11.4% | 11.4% | 40.2% | 23.1 s |
+
+(shares are of the route weight of the lines that reach that spot)
+
+## Casts: the recorded casts repeated from other spots
+
+| spot | Jack's z | casts | every bite and catch as recorded | recorded Nut casts | Nut on the same bite at the same moment | recorded no-Nut casts | of those, a Nut now | not possible (before READY at that spot) |
+|---|---|---|---|---|---|---|---|---|
+| rep | 156.2, 156.6, 158.0, 158.4 | 695 | 695 (100.0%) | 338 | 338 (100.0%) | 357 | 0 (0.0%) | 0 |
+| z164.4 | 164.0, 164.4 | 14414 | 12557 (87.1%) | 6925 | 6239 (90.1%) | 7489 | 20 (0.3%) | 3 |
+| z176.4 | 176.0, 176.4 | 14405 | 12548 (87.1%) | 6916 | 6230 (90.1%) | 7489 | 20 (0.3%) | 12 |
+| z194.4 | 194.0, 194.4, 195.8 | 14393 | 11807 (82.0%) | 6904 | 5833 (84.5%) | 7489 | 24 (0.3%) | 24 |
+
+Control (the representative's own spot): 695 of 695 casts as recorded; cast-state hash 679 equal / 0 different. Anything but all equal means this lab does not reproduce the recorded run.
+
+
+  zip      /Users/thomwollin/Documents/hm64/runs/hm64-spots-rain-lineup2-nohorse-8e972d75.zip
+
+==> 3/5 [2: rain-lineup2-horse-287c11a6] every line from every pier spot, no cast, to 170 s (Wed 17:04)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  lines of results/dogwatch/rain-lineup2-horse-287c11a6  save /work/data/saves_dogspots/rain-lineup2-horse-287c11a6.SaveRAM  workers 13  68 lines, 549 line x spot runs to 10198 VIs after READY
+[SP1 lines] 549 jobs, 0 already done, 549 to run
+[SP1 lines] 10/549  326.0 jobs/min  eta 2 min
+[SP1 lines] 20/549  347.2 jobs/min  eta 2 min
+[SP1 lines] 30/549  356.0 jobs/min  eta 1 min
+[SP1 lines] 40/549  382.4 jobs/min  eta 1 min
+[SP1 lines] 50/549  438.5 jobs/min  eta 1 min
+[SP1 lines] 60/549  427.5 jobs/min  eta 1 min
+[SP1 lines] 70/549  418.8 jobs/min  eta 1 min
+[SP1 lines] 80/549  420.7 jobs/min  eta 1 min
+[SP1 lines] 90/549  446.8 jobs/min  eta 1 min
+[SP1 lines] 100/549  439.3 jobs/min  eta 1 min
+[SP1 lines] 110/549  437.2 jobs/min  eta 1 min
+[SP1 lines] 120/549  432.4 jobs/min  eta 1 min
+[SP1 lines] 130/549  454.9 jobs/min  eta 1 min
+[SP1 lines] 140/549  448.2 jobs/min  eta 1 min
+[SP1 lines] 150/549  445.1 jobs/min  eta 1 min
+[SP1 lines] 160/549  439.8 jobs/min  eta 1 min
+[SP1 lines] 170/549  440.9 jobs/min  eta 1 min
+[SP1 lines] 180/549  449.5 jobs/min  eta 1 min
+[SP1 lines] 190/549  448.4 jobs/min  eta 1 min
+[SP1 lines] 200/549  445.2 jobs/min  eta 1 min
+[SP1 lines] 210/549  443.7 jobs/min  eta 1 min
+[SP1 lines] 220/549  451.0 jobs/min  eta 1 min
+[SP1 lines] 230/549  451.4 jobs/min  eta 1 min
+[SP1 lines] 240/549  446.8 jobs/min  eta 1 min
+[SP1 lines] 250/549  443.5 jobs/min  eta 1 min
+[SP1 lines] 260/549  451.9 jobs/min  eta 1 min
+[SP1 lines] 270/549  449.8 jobs/min  eta 1 min
+[SP1 lines] 280/549  449.5 jobs/min  eta 1 min
+[SP1 lines] 290/549  449.1 jobs/min  eta 1 min
+[SP1 lines] 300/549  447.9 jobs/min  eta 1 min
+[SP1 lines] 310/549  453.3 jobs/min  eta 1 min
+[SP1 lines] 320/549  450.0 jobs/min  eta 1 min
+[SP1 lines] 330/549  448.5 jobs/min  eta 0 min
+[SP1 lines] 340/549  447.8 jobs/min  eta 0 min
+[SP1 lines] 350/549  451.6 jobs/min  eta 0 min
+[SP1 lines] 360/549  452.9 jobs/min  eta 0 min
+[SP1 lines] 370/549  451.1 jobs/min  eta 0 min
+[SP1 lines] 380/549  450.6 jobs/min  eta 0 min
+[SP1 lines] 390/549  450.9 jobs/min  eta 0 min
+[SP1 lines] 400/549  452.9 jobs/min  eta 0 min
+[SP1 lines] 410/549  450.6 jobs/min  eta 0 min
+[SP1 lines] 420/549  449.7 jobs/min  eta 0 min
+[SP1 lines] 430/549  449.7 jobs/min  eta 0 min
+[SP1 lines] 440/549  451.1 jobs/min  eta 0 min
+[SP1 lines] 450/549  452.8 jobs/min  eta 0 min
+[SP1 lines] 460/549  451.2 jobs/min  eta 0 min
+[SP1 lines] 470/549  449.5 jobs/min  eta 0 min
+[SP1 lines] 480/549  450.2 jobs/min  eta 0 min
+[SP1 lines] 490/549  451.8 jobs/min  eta 0 min
+[SP1 lines] 500/549  450.8 jobs/min  eta 0 min
+[SP1 lines] 510/549  450.9 jobs/min  eta 0 min
+[SP1 lines] 520/549  449.7 jobs/min  eta 0 min
+[SP1 lines] 530/549  452.4 jobs/min  eta 0 min
+[SP1 lines] 540/549  452.1 jobs/min  eta 0 min
+[SP1 lines] 549/549  452.5 jobs/min  eta 0 min
+[SP1] the representative's own spot against the recorded run: 68 of 68 lines equal on every cast hash (346596 hashes), 0 lines differ, 0 without a row; 0 line x spot runs refused
+  lines: 1 min
+# Pier spots: rain-lineup2-horse-287c11a6
+
+Times are seconds after the representative's READY. A row 'split' = the first cast hash that is not the recorded one.
+
+## No cast: the line from each pier spot against the recorded line
+
+| Jack's z at the dock end | lines | weight of those lines | same to 170 s | split by 20 s | 40 s | 60 s | 90 s | 120 s | 170 s | earliest split |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 154.8 | 1 | 1.6% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 156.2 | 4 | 0.7% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 156.6 | 4 | 2.4% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 158.0 | 6 | 9.4% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 158.4 | 54 | 87.5% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 164.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 164.4 | 54 | 87.5% | 70.9% | 0.0% | 2.3% | 4.9% | 6.0% | 6.0% | 29.1% | 23.1 s |
+| 170.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 170.4 | 54 | 87.5% | 70.9% | 0.0% | 2.3% | 4.9% | 6.0% | 6.0% | 29.1% | 23.1 s |
+| 176.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 176.4 | 54 | 87.5% | 66.8% | 0.0% | 2.3% | 4.9% | 6.0% | 6.0% | 33.2% | 23.1 s |
+| 182.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 182.4 | 54 | 87.5% | 66.8% | 0.0% | 2.3% | 4.9% | 6.0% | 6.0% | 33.2% | 23.1 s |
+| 188.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 188.4 | 54 | 87.5% | 66.8% | 0.0% | 2.3% | 4.9% | 6.0% | 6.0% | 33.2% | 23.1 s |
+| 194.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 194.4 | 54 | 87.5% | 64.6% | 2.2% | 4.5% | 7.1% | 8.2% | 8.2% | 35.4% | 15.1 s |
+| 195.4 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 195.8 | 60 | 96.9% | 67.5% | 2.0% | 4.1% | 6.5% | 8.0% | 8.0% | 32.5% | 15.1 s |
+| 196.1 | 54 | 87.5% | 64.6% | 2.2% | 4.5% | 7.1% | 8.2% | 8.2% | 35.4% | 15.1 s |
+
+(shares are of the route weight of the lines that reach that spot)
+
+
+
+==> 4/5 [2: rain-lineup2-horse-287c11a6] the recorded casts from three other spots (Wed 17:05)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  casts: 34679 casts in 2684 jobs on 68 lines, spots rep (control, every 25th cast) + z [164.4, 176.4, 194.4]
+[SP2 casts] 2684 jobs, 0 already done, 2684 to run
+[SP2 casts] 10/2684  198.9 jobs/min  eta 13 min
+[SP2 casts] 20/2684  31.6 jobs/min  eta 84 min
+[SP2 casts] 30/2684  36.7 jobs/min  eta 72 min
+[SP2 casts] 40/2684  30.9 jobs/min  eta 86 min
+[SP2 casts] 50/2684  32.5 jobs/min  eta 81 min
+[SP2 casts] 60/2684  30.4 jobs/min  eta 86 min
+[SP2 casts] 70/2684  33.2 jobs/min  eta 79 min
+[SP2 casts] 80/2684  35.5 jobs/min  eta 73 min
+[SP2 casts] 90/2684  32.5 jobs/min  eta 80 min
+[SP2 casts] 100/2684  33.1 jobs/min  eta 78 min
+[SP2 casts] 110/2684  31.5 jobs/min  eta 82 min
+[SP2 casts] 120/2684  32.0 jobs/min  eta 80 min
+[SP2 casts] 130/2684  31.4 jobs/min  eta 81 min
+[SP2 casts] 140/2684  32.8 jobs/min  eta 78 min
+[SP2 casts] 150/2684  33.4 jobs/min  eta 76 min
+[SP2 casts] 160/2684  32.2 jobs/min  eta 78 min
+[SP2 casts] 170/2684  31.3 jobs/min  eta 80 min
+[SP2 casts] 180/2684  31.2 jobs/min  eta 80 min
+[SP2 casts] 190/2684  30.4 jobs/min  eta 82 min
+[SP2 casts] 200/2684  31.3 jobs/min  eta 79 min
+[SP2 casts] 210/2684  32.5 jobs/min  eta 76 min
+[SP2 casts] 220/2684  32.1 jobs/min  eta 77 min
+[SP2 casts] 230/2684  31.3 jobs/min  eta 78 min
+[SP2 casts] 240/2684  31.7 jobs/min  eta 77 min
+[SP2 casts] 250/2684  30.8 jobs/min  eta 79 min
+[SP2 casts] 260/2684  31.1 jobs/min  eta 78 min
+[SP2 casts] 270/2684  31.8 jobs/min  eta 76 min
+[SP2 casts] 280/2684  31.8 jobs/min  eta 76 min
+[SP2 casts] 290/2684  31.7 jobs/min  eta 75 min
+[SP2 casts] 300/2684  31.8 jobs/min  eta 75 min
+[SP2 casts] 310/2684  31.3 jobs/min  eta 76 min
+[SP2 casts] 320/2684  31.1 jobs/min  eta 76 min
+[SP2 casts] 330/2684  31.2 jobs/min  eta 76 min
+[SP2 casts] 340/2684  31.8 jobs/min  eta 74 min
+[SP2 casts] 350/2684  31.8 jobs/min  eta 73 min
+[SP2 casts] 360/2684  31.9 jobs/min  eta 73 min
+[SP2 casts] 370/2684  31.8 jobs/min  eta 73 min
+[SP2 casts] 380/2684  32.0 jobs/min  eta 72 min
+[SP2 casts] 390/2684  31.8 jobs/min  eta 72 min
+[SP2 casts] 400/2684  32.0 jobs/min  eta 71 min
+[SP2 casts] 410/2684  32.6 jobs/min  eta 70 min
+[SP2 casts] 420/2684  33.2 jobs/min  eta 68 min
+[SP2 casts] 430/2684  32.8 jobs/min  eta 69 min
+[SP2 casts] 440/2684  32.6 jobs/min  eta 69 min
+[SP2 casts] 450/2684  32.6 jobs/min  eta 68 min
+[SP2 casts] 460/2684  32.3 jobs/min  eta 69 min
+[SP2 casts] 470/2684  32.4 jobs/min  eta 68 min
+[SP2 casts] 480/2684  32.5 jobs/min  eta 68 min
+[SP2 casts] 490/2684  32.7 jobs/min  eta 67 min
+[SP2 casts] 500/2684  33.1 jobs/min  eta 66 min
+[SP2 casts] 510/2684  33.6 jobs/min  eta 65 min
+[SP2 casts] 520/2684  33.3 jobs/min  eta 65 min
+[SP2 casts] 530/2684  33.2 jobs/min  eta 65 min
+[SP2 casts] 540/2684  32.8 jobs/min  eta 65 min
+[SP2 casts] 550/2684  32.8 jobs/min  eta 65 min
+[SP2 casts] 560/2684  32.5 jobs/min  eta 65 min
+[SP2 casts] 570/2684  32.7 jobs/min  eta 65 min
+[SP2 casts] 580/2684  33.2 jobs/min  eta 63 min
+[SP2 casts] 590/2684  32.9 jobs/min  eta 64 min
+[SP2 casts] 600/2684  32.7 jobs/min  eta 64 min
+[SP2 casts] 610/2684  32.6 jobs/min  eta 64 min
+[SP2 casts] 620/2684  32.4 jobs/min  eta 64 min
+[SP2 casts] 630/2684  32.3 jobs/min  eta 64 min
+[SP2 casts] 640/2684  32.6 jobs/min  eta 63 min
+[SP2 casts] 650/2684  32.7 jobs/min  eta 62 min
+[SP2 casts] 660/2684  32.6 jobs/min  eta 62 min
+[SP2 casts] 670/2684  32.6 jobs/min  eta 62 min
+[SP2 casts] 680/2684  32.4 jobs/min  eta 62 min
+[SP2 casts] 690/2684  32.5 jobs/min  eta 61 min
+[SP2 casts] 700/2684  32.4 jobs/min  eta 61 min
+[SP2 casts] 710/2684  32.8 jobs/min  eta 60 min
+[SP2 casts] 720/2684  32.7 jobs/min  eta 60 min
+[SP2 casts] 730/2684  32.6 jobs/min  eta 60 min
+[SP2 casts] 740/2684  32.6 jobs/min  eta 60 min
+[SP2 casts] 750/2684  32.4 jobs/min  eta 60 min
+[SP2 casts] 760/2684  32.6 jobs/min  eta 59 min
+[SP2 casts] 770/2684  32.8 jobs/min  eta 58 min
+[SP2 casts] 780/2684  32.6 jobs/min  eta 58 min
+[SP2 casts] 790/2684  32.6 jobs/min  eta 58 min
+[SP2 casts] 800/2684  32.4 jobs/min  eta 58 min
+[SP2 casts] 810/2684  32.4 jobs/min  eta 58 min
+[SP2 casts] 820/2684  32.3 jobs/min  eta 58 min
+[SP2 casts] 830/2684  32.5 jobs/min  eta 57 min
+[SP2 casts] 840/2684  32.6 jobs/min  eta 57 min
+[SP2 casts] 850/2684  32.7 jobs/min  eta 56 min
+[SP2 casts] 860/2684  32.8 jobs/min  eta 56 min
+[SP2 casts] 870/2684  32.9 jobs/min  eta 55 min
+[SP2 casts] 880/2684  33.0 jobs/min  eta 55 min
+[SP2 casts] 890/2684  33.1 jobs/min  eta 54 min
+[SP2 casts] 900/2684  33.3 jobs/min  eta 54 min
+[SP2 casts] 910/2684  33.3 jobs/min  eta 53 min
+[SP2 casts] 920/2684  33.2 jobs/min  eta 53 min
+[SP2 casts] 930/2684  33.1 jobs/min  eta 53 min
+[SP2 casts] 940/2684  33.1 jobs/min  eta 53 min
+[SP2 casts] 950/2684  32.9 jobs/min  eta 53 min
+[SP2 casts] 960/2684  32.9 jobs/min  eta 52 min
+[SP2 casts] 970/2684  33.0 jobs/min  eta 52 min
+[SP2 casts] 980/2684  33.2 jobs/min  eta 51 min
+[SP2 casts] 990/2684  33.0 jobs/min  eta 51 min
+[SP2 casts] 1000/2684  32.8 jobs/min  eta 51 min
+[SP2 casts] 1010/2684  32.9 jobs/min  eta 51 min
+[SP2 casts] 1020/2684  32.6 jobs/min  eta 51 min
+[SP2 casts] 1030/2684  32.6 jobs/min  eta 51 min
+[SP2 casts] 1040/2684  32.5 jobs/min  eta 51 min
+[SP2 casts] 1050/2684  32.6 jobs/min  eta 50 min
+[SP2 casts] 1060/2684  32.7 jobs/min  eta 50 min
+[SP2 casts] 1070/2684  32.5 jobs/min  eta 50 min
+[SP2 casts] 1080/2684  32.6 jobs/min  eta 49 min
+[SP2 casts] 1090/2684  32.4 jobs/min  eta 49 min
+[SP2 casts] 1100/2684  32.4 jobs/min  eta 49 min
+[SP2 casts] 1110/2684  32.3 jobs/min  eta 49 min
+[SP2 casts] 1120/2684  32.5 jobs/min  eta 48 min
+[SP2 casts] 1130/2684  32.6 jobs/min  eta 48 min
+[SP2 casts] 1140/2684  32.5 jobs/min  eta 48 min
+[SP2 casts] 1150/2684  32.3 jobs/min  eta 47 min
+[SP2 casts] 1160/2684  32.3 jobs/min  eta 47 min
+[SP2 casts] 1170/2684  32.2 jobs/min  eta 47 min
+[SP2 casts] 1180/2684  32.3 jobs/min  eta 47 min
+[SP2 casts] 1190/2684  32.5 jobs/min  eta 46 min
+[SP2 casts] 1200/2684  32.6 jobs/min  eta 45 min
+[SP2 casts] 1210/2684  32.7 jobs/min  eta 45 min
+[SP2 casts] 1220/2684  32.9 jobs/min  eta 44 min
+[SP2 casts] 1230/2684  32.7 jobs/min  eta 44 min
+[SP2 casts] 1240/2684  32.8 jobs/min  eta 44 min
+[SP2 casts] 1250/2684  32.6 jobs/min  eta 44 min
+[SP2 casts] 1260/2684  32.6 jobs/min  eta 44 min
+[SP2 casts] 1270/2684  32.5 jobs/min  eta 44 min
+[SP2 casts] 1280/2684  32.7 jobs/min  eta 43 min
+[SP2 casts] 1290/2684  32.8 jobs/min  eta 42 min
+[SP2 casts] 1300/2684  33.0 jobs/min  eta 42 min
+[SP2 casts] 1310/2684  33.0 jobs/min  eta 42 min
+[SP2 casts] 1320/2684  33.1 jobs/min  eta 41 min
+[SP2 casts] 1330/2684  33.2 jobs/min  eta 41 min
+[SP2 casts] 1340/2684  33.4 jobs/min  eta 40 min
+[SP2 casts] 1350/2684  33.3 jobs/min  eta 40 min
+[SP2 casts] 1360/2684  33.3 jobs/min  eta 40 min
+[SP2 casts] 1370/2684  33.3 jobs/min  eta 40 min
+[SP2 casts] 1380/2684  33.2 jobs/min  eta 39 min
+[SP2 casts] 1390/2684  33.2 jobs/min  eta 39 min
+[SP2 casts] 1400/2684  33.2 jobs/min  eta 39 min
+[SP2 casts] 1410/2684  33.3 jobs/min  eta 38 min
+[SP2 casts] 1420/2684  33.3 jobs/min  eta 38 min
+[SP2 casts] 1430/2684  33.4 jobs/min  eta 37 min
+[SP2 casts] 1440/2684  33.6 jobs/min  eta 37 min
+[SP2 casts] 1450/2684  33.8 jobs/min  eta 36 min
+[SP2 casts] 1460/2684  33.9 jobs/min  eta 36 min
+[SP2 casts] 1470/2684  33.7 jobs/min  eta 36 min
+[SP2 casts] 1480/2684  33.6 jobs/min  eta 36 min
+[SP2 casts] 1490/2684  33.5 jobs/min  eta 36 min
+[SP2 casts] 1500/2684  33.5 jobs/min  eta 35 min
+[SP2 casts] 1510/2684  33.4 jobs/min  eta 35 min
+[SP2 casts] 1520/2684  33.6 jobs/min  eta 35 min
+[SP2 casts] 1530/2684  33.6 jobs/min  eta 34 min
+[SP2 casts] 1540/2684  33.5 jobs/min  eta 34 min
+[SP2 casts] 1550/2684  33.4 jobs/min  eta 34 min
+[SP2 casts] 1560/2684  33.4 jobs/min  eta 34 min
+[SP2 casts] 1570/2684  33.3 jobs/min  eta 33 min
+[SP2 casts] 1580/2684  33.3 jobs/min  eta 33 min
+[SP2 casts] 1590/2684  33.5 jobs/min  eta 33 min
+[SP2 casts] 1600/2684  33.4 jobs/min  eta 32 min
+[SP2 casts] 1610/2684  33.4 jobs/min  eta 32 min
+[SP2 casts] 1620/2684  33.2 jobs/min  eta 32 min
+[SP2 casts] 1630/2684  33.3 jobs/min  eta 32 min
+[SP2 casts] 1640/2684  33.5 jobs/min  eta 31 min
+[SP2 casts] 1650/2684  33.4 jobs/min  eta 31 min
+[SP2 casts] 1660/2684  33.3 jobs/min  eta 31 min
+[SP2 casts] 1670/2684  33.3 jobs/min  eta 30 min
+[SP2 casts] 1680/2684  33.2 jobs/min  eta 30 min
+[SP2 casts] 1690/2684  33.1 jobs/min  eta 30 min
+[SP2 casts] 1700/2684  33.1 jobs/min  eta 30 min
+[SP2 casts] 1710/2684  33.2 jobs/min  eta 29 min
+[SP2 casts] 1720/2684  33.3 jobs/min  eta 29 min
+[SP2 casts] 1730/2684  33.4 jobs/min  eta 29 min
+[SP2 casts] 1740/2684  33.5 jobs/min  eta 28 min
+[SP2 casts] 1750/2684  33.6 jobs/min  eta 28 min
+[SP2 casts] 1760/2684  33.8 jobs/min  eta 27 min
+[SP2 casts] 1770/2684  33.9 jobs/min  eta 27 min
+[SP2 casts] 1780/2684  33.7 jobs/min  eta 27 min
+[SP2 casts] 1790/2684  33.7 jobs/min  eta 27 min
+[SP2 casts] 1800/2684  33.5 jobs/min  eta 26 min
+[SP2 casts] 1810/2684  33.5 jobs/min  eta 26 min
+[SP2 casts] 1820/2684  33.4 jobs/min  eta 26 min
+[SP2 casts] 1830/2684  33.4 jobs/min  eta 26 min
+[SP2 casts] 1840/2684  33.5 jobs/min  eta 25 min
+[SP2 casts] 1850/2684  33.7 jobs/min  eta 25 min
+[SP2 casts] 1860/2684  33.7 jobs/min  eta 24 min
+[SP2 casts] 1870/2684  33.6 jobs/min  eta 24 min
+[SP2 casts] 1880/2684  33.6 jobs/min  eta 24 min
+[SP2 casts] 1890/2684  33.6 jobs/min  eta 24 min
+[SP2 casts] 1900/2684  33.5 jobs/min  eta 23 min
+[SP2 casts] 1910/2684  33.6 jobs/min  eta 23 min
+[SP2 casts] 1920/2684  33.7 jobs/min  eta 23 min
+[SP2 casts] 1930/2684  33.6 jobs/min  eta 22 min
+[SP2 casts] 1940/2684  33.6 jobs/min  eta 22 min
+[SP2 casts] 1950/2684  33.5 jobs/min  eta 22 min
+[SP2 casts] 1960/2684  33.5 jobs/min  eta 22 min
+[SP2 casts] 1970/2684  33.4 jobs/min  eta 21 min
+[SP2 casts] 1980/2684  33.5 jobs/min  eta 21 min
+[SP2 casts] 1990/2684  33.5 jobs/min  eta 21 min
+[SP2 casts] 2000/2684  33.5 jobs/min  eta 20 min
+[SP2 casts] 2010/2684  33.6 jobs/min  eta 20 min
+[SP2 casts] 2020/2684  33.6 jobs/min  eta 20 min
+[SP2 casts] 2030/2684  33.6 jobs/min  eta 19 min
+[SP2 casts] 2040/2684  33.6 jobs/min  eta 19 min
+[SP2 casts] 2050/2684  33.7 jobs/min  eta 19 min
+[SP2 casts] 2060/2684  33.8 jobs/min  eta 18 min
+[SP2 casts] 2070/2684  33.7 jobs/min  eta 18 min
+[SP2 casts] 2080/2684  33.7 jobs/min  eta 18 min
+[SP2 casts] 2090/2684  33.7 jobs/min  eta 18 min
+[SP2 casts] 2100/2684  33.6 jobs/min  eta 17 min
+[SP2 casts] 2110/2684  33.7 jobs/min  eta 17 min
+[SP2 casts] 2120/2684  33.7 jobs/min  eta 17 min
+[SP2 casts] 2130/2684  33.7 jobs/min  eta 16 min
+[SP2 casts] 2140/2684  33.7 jobs/min  eta 16 min
+[SP2 casts] 2150/2684  33.7 jobs/min  eta 16 min
+[SP2 casts] 2160/2684  33.7 jobs/min  eta 16 min
+[SP2 casts] 2170/2684  33.8 jobs/min  eta 15 min
+[SP2 casts] 2180/2684  33.8 jobs/min  eta 15 min
+[SP2 casts] 2190/2684  33.8 jobs/min  eta 15 min
+[SP2 casts] 2200/2684  33.7 jobs/min  eta 14 min
+[SP2 casts] 2210/2684  33.7 jobs/min  eta 14 min
+[SP2 casts] 2220/2684  33.6 jobs/min  eta 14 min
+[SP2 casts] 2230/2684  33.7 jobs/min  eta 13 min
+[SP2 casts] 2240/2684  33.6 jobs/min  eta 13 min
+[SP2 casts] 2250/2684  33.7 jobs/min  eta 13 min
+[SP2 casts] 2260/2684  33.7 jobs/min  eta 13 min
+[SP2 casts] 2270/2684  33.8 jobs/min  eta 12 min
+[SP2 casts] 2280/2684  33.9 jobs/min  eta 12 min
+[SP2 casts] 2290/2684  33.9 jobs/min  eta 12 min
+[SP2 casts] 2300/2684  33.9 jobs/min  eta 11 min
+[SP2 casts] 2310/2684  33.8 jobs/min  eta 11 min
+[SP2 casts] 2320/2684  33.9 jobs/min  eta 11 min
+[SP2 casts] 2330/2684  33.8 jobs/min  eta 10 min
+[SP2 casts] 2340/2684  33.9 jobs/min  eta 10 min
+[SP2 casts] 2350/2684  34.0 jobs/min  eta 10 min
+[SP2 casts] 2360/2684  34.0 jobs/min  eta 10 min
+[SP2 casts] 2370/2684  34.1 jobs/min  eta 9 min
+[SP2 casts] 2380/2684  34.2 jobs/min  eta 9 min
+[SP2 casts] 2390/2684  34.3 jobs/min  eta 9 min
+[SP2 casts] 2400/2684  34.4 jobs/min  eta 8 min
+[SP2 casts] 2410/2684  34.5 jobs/min  eta 8 min
+[SP2 casts] 2420/2684  34.6 jobs/min  eta 8 min
+[SP2 casts] 2430/2684  34.7 jobs/min  eta 7 min
+[SP2 casts] 2440/2684  34.9 jobs/min  eta 7 min
+[SP2 casts] 2450/2684  34.9 jobs/min  eta 7 min
+[SP2 casts] 2460/2684  34.9 jobs/min  eta 6 min
+[SP2 casts] 2470/2684  34.9 jobs/min  eta 6 min
+[SP2 casts] 2480/2684  35.0 jobs/min  eta 6 min
+[SP2 casts] 2490/2684  34.9 jobs/min  eta 6 min
+[SP2 casts] 2500/2684  35.0 jobs/min  eta 5 min
+[SP2 casts] 2510/2684  35.1 jobs/min  eta 5 min
+[SP2 casts] 2520/2684  35.0 jobs/min  eta 5 min
+[SP2 casts] 2530/2684  35.0 jobs/min  eta 4 min
+[SP2 casts] 2540/2684  34.9 jobs/min  eta 4 min
+[SP2 casts] 2550/2684  34.9 jobs/min  eta 4 min
+[SP2 casts] 2560/2684  34.8 jobs/min  eta 4 min
+[SP2 casts] 2570/2684  34.9 jobs/min  eta 3 min
+[SP2 casts] 2580/2684  35.0 jobs/min  eta 3 min
+[SP2 casts] 2590/2684  35.1 jobs/min  eta 3 min
+[SP2 casts] 2600/2684  35.1 jobs/min  eta 2 min
+[SP2 casts] 2610/2684  35.2 jobs/min  eta 2 min
+[SP2 casts] 2620/2684  35.2 jobs/min  eta 2 min
+[SP2 casts] 2630/2684  35.2 jobs/min  eta 2 min
+[SP2 casts] 2640/2684  35.3 jobs/min  eta 1 min
+[SP2 casts] 2650/2684  35.4 jobs/min  eta 1 min
+[SP2 casts] 2660/2684  35.6 jobs/min  eta 1 min
+[SP2 casts] 2670/2684  35.7 jobs/min  eta 0 min
+[SP2 casts] 2680/2684  35.8 jobs/min  eta 0 min
+[SP2 casts] 2684/2684  35.8 jobs/min  eta 0 min
+  casts: 74 min
+
+==> 5/5 [2: rain-lineup2-horse-287c11a6] report and zip
+# Pier spots: rain-lineup2-horse-287c11a6
+
+Times are seconds after the representative's READY. A row 'split' = the first cast hash that is not the recorded one.
+
+## No cast: the line from each pier spot against the recorded line
+
+| Jack's z at the dock end | lines | weight of those lines | same to 170 s | split by 20 s | 40 s | 60 s | 90 s | 120 s | 170 s | earliest split |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 154.8 | 1 | 1.6% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 156.2 | 4 | 0.7% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 156.6 | 4 | 2.4% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 158.0 | 6 | 9.4% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 158.4 | 54 | 87.5% | 100.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | 0.0% | - |
+| 164.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 164.4 | 54 | 87.5% | 70.9% | 0.0% | 2.3% | 4.9% | 6.0% | 6.0% | 29.1% | 23.1 s |
+| 170.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 170.4 | 54 | 87.5% | 70.9% | 0.0% | 2.3% | 4.9% | 6.0% | 6.0% | 29.1% | 23.1 s |
+| 176.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 176.4 | 54 | 87.5% | 66.8% | 0.0% | 2.3% | 4.9% | 6.0% | 6.0% | 33.2% | 23.1 s |
+| 182.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 182.4 | 54 | 87.5% | 66.8% | 0.0% | 2.3% | 4.9% | 6.0% | 6.0% | 33.2% | 23.1 s |
+| 188.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 188.4 | 54 | 87.5% | 66.8% | 0.0% | 2.3% | 4.9% | 6.0% | 6.0% | 33.2% | 23.1 s |
+| 194.0 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 194.4 | 54 | 87.5% | 64.6% | 2.2% | 4.5% | 7.1% | 8.2% | 8.2% | 35.4% | 15.1 s |
+| 195.4 | 6 | 9.4% | 94.1% | 0.0% | 0.0% | 0.0% | 5.9% | 5.9% | 5.9% | 83.2 s |
+| 195.8 | 60 | 96.9% | 67.5% | 2.0% | 4.1% | 6.5% | 8.0% | 8.0% | 32.5% | 15.1 s |
+| 196.1 | 54 | 87.5% | 64.6% | 2.2% | 4.5% | 7.1% | 8.2% | 8.2% | 35.4% | 15.1 s |
+
+(shares are of the route weight of the lines that reach that spot)
+
+## Casts: the recorded casts repeated from other spots
+
+| spot | Jack's z | casts | every bite and catch as recorded | recorded Nut casts | Nut on the same bite at the same moment | recorded no-Nut casts | of those, a Nut now | not possible (before READY at that spot) |
+|---|---|---|---|---|---|---|---|---|
+| rep | 156.2, 156.6, 158.0, 158.4 | 512 | 512 (100.0%) | 248 | 248 (100.0%) | 264 | 0 (0.0%) | 0 |
+| z164.4 | 164.0, 164.4 | 11387 | 10138 (89.0%) | 5563 | 5073 (91.2%) | 5824 | 10 (0.2%) | 2 |
+| z176.4 | 176.0, 176.4 | 11382 | 10133 (89.0%) | 5558 | 5068 (91.2%) | 5824 | 10 (0.2%) | 7 |
+| z194.4 | 194.0, 194.4 | 11372 | 9560 (84.1%) | 5548 | 4755 (85.7%) | 5824 | 20 (0.3%) | 17 |
+
+Control (the representative's own spot): 512 of 512 casts as recorded; cast-state hash 497 equal / 0 different. Anything but all equal means this lab does not reproduce the recorded run.
+
+
+  zip      /Users/thomwollin/Documents/hm64/runs/hm64-spots-rain-lineup2-horse-287c11a6.zip
+
+------------------------------------------------------------------------------------------------
+ PIER SPOTS DONE   [nohorse horse]   (170 min in all)
+------------------------------------------------------------------------------------------------
+    hm64-spots-rain-lineup2-horse-287c11a6.zip                     34.0 MB
+    hm64-spots-rain-lineup2-nohorse-8e972d75.zip                   48.5 MB
+    run-spots-20261125-152951.log                                   0.0 MB
+  folder: /Users/thomwollin/Documents/hm64/runs/hm64-spots-20261125-152951   (no ROM / saves / savestates inside)
+  lab-data script 2026-11-25b installed in /Users/thomwollin/Documents/hm64/tools
+
+==> lab data 1/5  is a lab run going? (lab-data script 2026-11-25b)
+  no lab run is going
+
+==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+  push access: the release SSH key (/Users/thomwollin/.ssh/hm64_github_ed25519)
+  /Users/thomwollin/Documents/hm64/lab-data (branch lab-data, GitHub has 1045eef73c321b35eb85e3734ee83513dd370a7d)
+
+==> lab data 3/5  looking for results in /Users/thomwollin/Documents/hm64/runs and /Users/thomwollin/Downloads (table: built in; newest copy of each file)
+  + sunny-no-horse/hm64-dogwatch-beach-lineup2-52cfd712-20261116-174959.zip (72 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-dogwatch-beach-lineup2-52cfd712-20261116-174959.zip
+  + sunny-no-horse/hm64-fullday-d90-summary.zip (3 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d90-summary.zip
+  + sunny-no-horse/hm64-fullday-d90-b01.zip (2 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d90-b01.zip
+  + sunny-no-horse/hm64-fullday-d90-b00.zip (2 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d90-b00.zip
+  + sunny-no-horse/hm64-fullday-d110-summary.zip (3 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d110-summary.zip
+  + sunny-no-horse/hm64-fullday-d110-b03.zip (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d110-b03.zip
+  + sunny-no-horse/hm64-fullday-d110-b02.zip (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d110-b02.zip
+  + sunny-no-horse/hm64-fullday-d140c90-summary.zip (5 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d140c90-summary.zip
+  + sunny-no-horse/hm64-fullday-d140c90-b05.zip (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d140c90-b05.zip
+  + sunny-no-horse/hm64-fullday-d140c90-b04.zip (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d140c90-b04.zip
+  + sunny-no-horse/hm64-fullday-d140c90-b03.zip (1 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d140c90-b03.zip
+  + sunny-no-horse/hm64-fullday-d140c90-b02.zip (1 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d140c90-b02.zip
+  + sunny-no-horse/hm64-fullday-d170c120-summary.zip (6 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d170c120-summary.zip
+  + sunny-no-horse/hm64-fullday-d170c120-b05.zip (1 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d170c120-b05.zip
+  + sunny-no-horse/hm64-fullday-d170c120-b04.zip (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-fullday-d170c120-b04.zip
+  + rainy-no-horse/run-rain120-20261123-175223.log (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/dogspots/run-rain120-20261123-175223.log
+  + married-sunny/hm64-fullday-married-sunny-d90.zip (8 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-married120-20261125-063853/hm64-fullday-married-sunny-d90.zip
+  + married-sunny/hm64-fullday-married-sunny-d140c90.zip (8 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-married120-20261125-063853/hm64-fullday-married-sunny-d140c90.zip
+  + married-sunny/hm64-fullday-married-sunny-d170c120.zip (8 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-married120-20261125-063853/hm64-fullday-married-sunny-d170c120.zip
+  + married-sunny/run-married120-20261125-063853.log (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/dogspots/run-married120-20261125-063853.log
+  + married-sunny/run-married120-20261125-063713.log (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/dogspots/run-married120-20261125-063713.log
+  + married-rainy/hm64-dogwatch-married-lineup2-rainy-62991249.zip (22 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-dogwatch-married-lineup2-rainy-62991249.zip
+  not on this Mac yet: married-rainy/hm64-fullday-married-rainy-d90.zip
+  not on this Mac yet: married-rainy/hm64-fullday-married-rainy-d140c90.zip
+  not on this Mac yet: married-rainy/hm64-fullday-married-rainy-d170c120.zip
+  + spots-rainy-no-horse/hm64-spots-rain-lineup2-nohorse-8e972d75.zip (48 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-spots-rain-lineup2-nohorse-8e972d75.zip
+  + spots-rainy-no-horse/run-spots-20261125-152951.log (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/dogspots/run-spots-20261125-152951.log
+  + spots-rainy-horse/hm64-spots-rain-lineup2-horse-287c11a6.zip (33 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-spots-rain-lineup2-horse-287c11a6.zip
+  25 new or changed, 15 already up to date
+/Users/thomwollin/Documents/hm64/tools/hm64_labdata.sh: line 198: syntax error near unexpected token `;;'
+/Users/thomwollin/Documents/hm64/tools/hm64_labdata.sh: line 198: `  case "$f" in "$HM/runs/"*) ;; *) continue ;; esac'
+  warning: the results were NOT uploaded to the lab-data branch (see above); they are in /Users/thomwollin/Documents/hm64/runs/hm64-spots-20261125-152951. Try: bash /Users/thomwollin/Documents/hm64/tools/hm64_labdata.sh </dev/null
