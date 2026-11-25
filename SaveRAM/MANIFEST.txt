@@ -1,0 +1,7 @@
+2b8adfbf71a06ba9079c77440c3be00a3d4b7b49789274dcab0253f8dc6282bc  README.md
+629912496c6211d0da630c895176336c45c57ffccf4f1451d83d932e9f34b03c  married-rainy-no-horse/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-rainy.SaveRAM
+01999feee4656fdcbe4faff1d96c8ba982a6ccbfff7e930db698b506bf0365f8  married-sunny-no-horse/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-sunny-spring8-festival.SaveRAM
+237e3d1dfe5d220e28015cc865409fdcf467ed8423d258f6bde302e03fa2ab09  married-sunny-no-horse/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-sunny-spring9.SaveRAM
+287c11a65fa9745eb6529affac9b7b0243c7dc87e98655f4a16aa5d6cc1bf989  rainy-horse/Harvest Moon 64 (USA).beach-lineup2-horse-rainy.SaveRAM
+8e972d756d3ef52f31e73925368a8d1ebdd06de8a631781a8ab3cce02ceda091  rainy-no-horse/Harvest Moon 64 (USA).beach-lineup2-nohorse-rainy.SaveRAM
+52cfd712095494d3217fdc032f88439216abfb6b6f2e55e0fb14e4c6d0e31a84  sunny-no-horse/Harvest Moon 64 (USA).beach-lineup2.SaveRAM
