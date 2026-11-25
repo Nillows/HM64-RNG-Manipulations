@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.16
+# HM64 Power Nut Tool v32.17
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -56,16 +56,25 @@ whenever you need it. (This explainer is also a page of its own on the site:
 spent on the page). The 51 cards lie face down in a grid. Press **Start** when Jack stops at the pier, then **press and hold
 the deck** (or Space) to cast: the moment you press is a game frame, and you get the real cast the lab recorded on that frame
 of a real dog line (Sunny · No horse, casts up to 40 s after Jack stops, at the game's own speed). Each bite of that cast
-lights one face-down card for 0.33 s; **let go while it is lit** to catch it — your goal card when the bite is the Power
-Nut. Let go at any other time and the line comes back empty. One cast per attempt: *Try again* is a new arrival with
+lights one face-down card for 0.33 s, and the big card you hold glows with it: **the big card is your bobber** (Jack's cast
+plays faintly on it, his rod dipping at each bite), so you watch one spot as you watch the float on the TV. **Let go while it
+is lit** to catch it — your goal card when the bite is the Power Nut. Let go at any other time and the line comes back empty. One cast per attempt: *Try again* is a new arrival with
 another dog line, and no cast in 40 s means Jack lies down. Tick *Use the tool* to see what knowing the frame and the bite
-does.
+does. Tick *show RNG speed* to turn the 51 cards face up, dealt anew at every step of the game's random number: once per game
+frame while Jack stands at the pier (the main loop's `rand()`, 30 a second), three times per frame while the line is in the
+water waiting for a bite (the game rolls `getRandomNumberInRange(0, 400)`, a 1-in-401 bite check, every frame, and that function
+calls `rand()` twice: 90 a second; the dog adds its own on top). The cards flicker, so it is off by default.
 
 <img src="media/deck_page.png" width="760" alt="The deck page: the line in the water, the 2nd bite lighting a face-down card, the tool saying let go now">
 
 <sub><b>The deck page</b> with <i>Use the tool</i> ticked, the line in the water: bite 2 of this cast lights one of the 51
-face-down cards for 0.33 s, and the tool says let go now (before the cast it counts you down to the frame to press on, with
+face-down cards for 0.33 s and the big card glows with Jack's rod dipping on it, and the tool says let go now (before the cast it counts you down to the frame to press on, with
 a strip of the next cast frames: green = let go at the 1st bite, gold = hold the 1st and let go at the 2nd).</sub>
+
+<img src="media/deck_rng.png" width="760" alt="The deck page with show RNG speed: the 51 cards face up, the line in the water">
+
+<sub><b>Show RNG speed</b>, the line in the water: the 51 cards face up, dealt anew at every step of the random number — 3 per
+game frame now, 90 a second (1 per frame, 30 a second, while Jack stands at the pier).</sub>
 
 ---
 
