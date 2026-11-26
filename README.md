@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.22
+# HM64 Power Nut Tool v32.23
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
@@ -100,7 +100,7 @@ out](#how-the-odds-are-worked-out).** **Your keys, timing and practice? [Setting
 
 ## 1. Quick start
 1. Open the hub in a **desktop browser with a keyboard** (Chrome recommended for now), tick what is true of your file
-   (nothing ticked = Sunny → No horse) and press **Lucky Timer**. A page is 24–38 MB and takes a few seconds to load.
+   (nothing ticked = Sunny → No horse) and press **Lucky Timer**. A page is 24–47 MB and takes a few seconds to load.
 2. Make the game file described in section 2 (or get a copy of one).
 3. Nothing to set up: the page opens ready (section 4).
 4. Play: walk the route (section 3) and **tap Space once the moment Jack stops at the end of the pier**. Click the dog
@@ -209,72 +209,106 @@ Sparrows box ticked.
 Jack stops; click a row and it counts down to that cast. The Harbingers tab has the same signs with a cast aimed to a
 fraction of a second.</sub>
 
-### On a rainy morning (v32.19, corrected in v32.22)
-**v32.22: where Jack stops on the end of the pier matters in the rain.** The spot moves the camera, and a dog that walks off
-the screen stops drawing random numbers until it is back, so the same cast can end differently one step further along the
-pier. The end of the pier has three camera zones (north end, middle, south end); inside a zone every spot plays the same. All
-rainy casts were recorded from the north end. A second lab run cast every recorded Power Nut cast again from the middle and
-the south end: the Nut came on the same bite at the same moment in 84% (no horse) and 86% (horse) of them — without the
-horse in 95–99% of the casts before 80 s, 59% of those at 80–100 s and 53% of those after 100 s. The big late windows were
-among the losses (L18 108.3–108.7 s, L17 104.5 s, L16 107.5 s, L6 70.7 s).
+### On a rainy morning (v32.19; pier zones since v32.23)
+**Where Jack stops on the end of the pier matters in the rain.** The spot moves the camera, and a dog that walks off the
+camera's grid stops drawing random numbers until it is back, so the same cast can end differently one step further along
+the pier. The end of the pier has three camera zones; inside a zone every spot plays the same. Which zone you stand in is
+set by your **2nd cut**, the down-right turn onto the pier:
 
-Since v32.22 the rainy pages count a Power Nut **only where it was measured to come on the same bite from all three zones**, so
-you can stop anywhere on the end of the pier. A Nut that is not proven everywhere shows as *fish (a Nut only from the north end
-of the dock)*. That keeps 68% of the earlier Nut casts without the horse and 78% with it: about one in ten is known to fail
-somewhere, and the rest are not measured from the other zones yet (among them 11 dog lines without the horse, 6.9% of the
-plays, and 8 with it, 3.0%, which the second run could not move along the pier: L9 has no Nut cast for now). A third run is
-measuring what is missing. The lists below are the corrected ones.
+| zone | your 2nd cut | Jack stops | share of the lab's plays |
+|---|---|---|---|
+| **North** | the first 3 game frames the cut is possible | at the edge nearest the beach | 27% |
+| **Middle** | game frames 4–8 | in the middle | 46% |
+| **South** | game frames 9–11 (the last that still reach the end) | at the far edge | 27% |
+
+All rainy casts were recorded from the north end. Two more lab runs cast them again from the middle and the south: every
+recorded Power Nut cast, every cast whose dog comes near a tile the other zones' cameras treat differently, and a check
+sample of the rest (3,352 check casts, all as recorded). Since **v32.23 every rainy page has one table per zone**: pick
+your 2nd cut in the Lucky Timer's Lucky plan, or with the *where Jack stops on the pier end* buttons on the Casting tables
+and Dog practice pages.
+
+<img src="media/app_zones.png" width="700" alt="The pier-zone buttons on a rainy Casting tables page">
+
+<sub><b>The zone buttons</b> on a rainy Casting tables page (here South picked); the note under them says what the table holds.</sub>
+
+| table | Nut cast frames, no horse | with the horse | what it is |
+|---|---|---|---|
+| **North** | 16,823 | 11,036 | the recording itself |
+| **Middle** | 12,630 | 8,660 | recorded casts that came out the same there + 834 / 650 Nut frames that exist only there |
+| **South** | 12,202 | 8,381 | the same for the south end, + 899 / 700 only there |
+| **Not sure** (the base) | 12,620 | 8,703 | a Nut only where it comes on the same bite at the same moment from all three |
+
+(Cast frames with a Nut on bites 1–6; Middle and South counted over the dog lines that reach that zone.) For casts in the
+first minute after READY a zone keeps 92–96% of the north table's Nut frames, for casts at 60–120 s 64–76%: the big late
+windows of the north table (L18 108.3–108.7 s, L17 104.5 s, L16 107.5 s) do not exist further south.
+
+A recorded Nut that is **not proven in your zone** shows as a fish and stays out of the odds: *fish (a Nut only elsewhere
+on the pier end)* was measured and is no Nut there; *fish as far as proven* means the measurement of that cast ended before
+the Nut's bite. 3 dog lines without the horse (6.3% of the plays) and 1 with it (2.3%) carry the mark **not proven
+here** in the middle and south zones: they were never cast from there (a lab run for both gaps is planned).
+
+The pages open on **Middle**, the biggest zone; click North, South or Not sure if that fits you better. The lists below
+are the Middle table's; each zone's page shows its own.
+
+**Solid and striped bars (v32.23).** With a dog picked, the Lucky Timer draws every Nut cast frame of that dog as a bar. A
+**solid** bar holds wherever Jack stops on the pier end; a **striped** bar is a Nut only from the zone you picked. If you
+are not sure of your 2nd cut, cast on solid bars.
+
+![Solid and striped bars](media/app_zone_bars.png)
 
 The rain spreads the plays over more dog lines, so not knowing the line is worth less (the best blind cast is about 7%),
 but the Power Nut often comes on a **later bite** and in **wider runs** of cast frames, and many signs in the first 10 s
 name a line or a family of sister lines (lines that have become the same dog). The rainy Casting tables use release rules
-up to the **6th bite** and casts up to **120 s** after Jack stops. Rainy → No horse, timing spread ±150 ms (Rainy → Horse
-has its own, nearly identical list):
+up to the **6th bite** and casts up to **120 s** after Jack stops. Rainy → No horse, Middle table, timing spread ±150 ms
+(Rainy → Horse has its own, nearly identical list):
 
-- If you see **mess** facing **↗ up-right** at **0.5–2 s** (or **run ↗** at 4–6 s), cast at **65.6 s** for **33%** (1 in 3.0) — hold the first 4 bites, let go at the **5th** (it comes at about 99 s) · push ↘ at 33 s.
-- If you see **sniff-standing** facing **↘ down-right** at **2–4 s** (or **scratch ↘** at 8–10 s), cast at **24.5 s** for **33%** (1 in 3.0) — let go at the 1st bite.
-- If you see **smell** facing **↙ down-left** at **8–10 s**, cast at **33.0 s** for **32%** (1 in 3.1) — let go at the 1st bite.
-- If you see **flapper** facing **↘ down-right** at **6–8 s**, cast at **31.1 s** for **30%** (1 in 3.3) — let go at the 1st bite.
-- If you see **Idle** facing **↑ up** at **0.5–2 s** (or **walk ↑** at 2–4 s), cast at **12.5 s** for **19%** (1 in 5.4) — let go at the 1st bite.
-- If you see **sprint** facing **↘ down-right** at **2–4 s**, cast at **4.6 s** for **23%** (1 in 4.3) — hold the first 2 bites, let go at the **3rd** (about 26 s).
+- If you see **scratch** facing **↗ up-right** at **2–4 s**, cast at **33.8 s** for **20%** (1 in 5.0) — let go at the 1st bite (about 35 s).
+- If you see **Idle** facing **↖ up-left** at **4–6 s**, cast at **33.8 s** for **20%** (1 in 5.0) — let go at the 1st bite (about 35 s).
+- If you see **mess** facing **↙ down-left** at **0.5–2 s**, cast at **46.2 s** for **27%** (1 in 3.7) — let go at the 1st bite (about 55 s) · push ↘ at 33 s.
+- If you see **bork** facing **↗ up-right** at **2–4 s**, cast at **46.2 s** for **27%** (1 in 3.7) — let go at the 1st bite (about 55 s) · push ↘ at 33 s.
+- If you see **flapper** facing **↘ down-right** at **6–8 s**, cast at **31.0 s** for **30%** (1 in 3.3) — let go at the 1st bite (about 35 s).
+- If you see **Idle** facing **↘ down-right** at **8–10 s**, cast at **31.0 s** for **30%** (1 in 3.3) — let go at the 1st bite (about 35 s).
+- If you see **Idle** facing **↖ up-left** at **0.5–2 s**, cast at **119.4 s** for **20%** (1 in 5.0) — let go at the 1st bite (about 132 s) · push ↘ at 33, 67 and 100 s.
+- If you see **stand** facing **↖ up-left** at **2–4 s**, cast at **119.4 s** for **20%** (1 in 5.0) — let go at the 1st bite (about 132 s) · push ↘ at 33, 67 and 100 s.
 - If you see **run** facing **↙ down-left** at **0.5–2 s**, cast at **35.2 s** for **20%** (1 in 5.0) — let go at the 1st bite (about 48 s).
-- If you see **none of these** by 10 s, cast at **54.2 s** for **7.1%** (1 in 14) — let go at the 1st bite · push ↘ at 33 s.
+- If you see **sniff-standing** facing **↙ down-left** at **4–6 s**, cast at **78.4 s** for **20%** (1 in 5.0) — hold the 1st bite, let go at the **2nd** (about 101 s) · push ↘ at 33 and 67 s.
+- If you see **none of these** by 10 s, cast at **54.2 s** for **8.2%** (1 in 12) — let go at the 1st bite · push ↘ at 33 s.
 
 The app's list has 26 signs; these are the strongest. **Let go at the 5th** = keep B held while the rod dips four times
 and let go on the fifth: count carefully. A cast after 73 s needs a second push at about 67 s, after 106 s a third at
 about 100 s.
 
 **If you know the line** (the *First 10 seconds, by line* tab, or the Lucky Timer's dog cards), the common rainy lines
-have far better casts — Rainy → No horse, ±150 ms, B aimed at the cast time; "family" = sister lines that become the same
+have far better casts — Rainy → No horse, Middle table, ±150 ms, B aimed at the cast time; "family" = sister lines that become the same
 dog a few seconds after READY:
 
 | line | how often | family | the dog from READY (s) | best cast | let go at | Nut bite | Power Nut |
 |---|---|---|---|---|---|---|---|
-| L1 | 5.0% | L1 family (3) | bork ↙ 0.0, stand ↙ 1.1, sit ↙ 1.6, stand ↙ 1.9 | 9.79 s | 2nd | ~26 s | 52% |
-| L2 | 4.0% | — | Idle ↗ 0.0, sit ↗ 0.3, shoulder-sitting ↗ 0.6, sit ↗ 2.0 | 33.53 s | 1st | ~35 s | 28% |
-| L3 | 3.9% | — | run ↘ 0.0, Idle ↘ 0.8, sniff-standing ↘ 1.6, Idle ↘ 3.2 | 31.09 s | 1st | ~35 s | 46% |
-| L4 | 3.8% | — | sit ↙ 0.0, Idle ↙ 0.5, mess ↙ 0.9, Idle ↙ 2.9 | 46.23 s | 1st | ~54 s | 32% |
-| L5 | 3.6% | L5 family (4) | wiggle-bum ↙ 0.0, Idle ↙ 0.5, bork ↙ 1.2, stand ↙ 3.6 | 7.49 s | 2nd | ~19 s | 24% |
-| L6 | 2.7% | L6 family (3) | bark ↙ 0.0, Idle ↙ 1.0, run ↙ 1.4, Idle ↙ 1.9 | 35.40 s | 1st | ~48 s | 38% |
-| L7 | 2.2% | L7 family (3) | sit ↗ 0.0, shoulder-sitting ↗ 1.1, sit ↗ 3.2, shoulder-sitting ↗ 4.7 | 76.32 s | 3rd | ~100 s | 20% |
-| L8 | 2.2% | — | shoulder-standing ↙ 0.0, Idle ↗ 0.5, Idle ↗ 0.9, bork ↗ 1.6 | 74.81 s | 6th | ~111 s | 37% |
-| L9 | 2.2% | L9 family (5) | Idle ↗ 0.0, bark ↗ 0.1, Idle ↗ 1.3, sit ↗ 2.9 | not measured from the other zones yet | — | — | — |
-| L10 | 2.2% | joins L5 | walk ↘ 0.0, Idle ↘ 0.5, bork ↘ 1.6, stand ↘ 3.3 | 96.81 s | 2nd | ~123 s | 34% |
-| L11 | 2.2% | L11 family (2) | bark ↙ 0.0, Idle ↙ 0.6, shoulder-standing ↙ 1.3, Idle ↙ 2.3 | 78.49 s | 2nd | ~101 s | 42% |
-| L12 | 2.2% | L12 family (3) | Idle ↙ 0.0, Idle ↗ 0.1, stand ↗ 0.5, Idle ↗ 2.0 | 46.03 s | 1st | ~55 s | 42% |
-| L13 | 2.2% | L13 family (3) | bark ↙ 0.0, Idle ↙ 0.6, Idle ↖ 1.7, stand ↖ 2.1 | 86.21 s | 3rd | ~101 s | 42% |
-| L14 | 2.1% | L14 family (2) | Idle ↙ 0.0, Idle ↘ 0.1, run ↘ 0.4, sprint ↘ 2.6 | 4.74 s | 3rd | ~26 s | 39% |
-| L15 | 2.0% | — | Idle ↙ 0.0, walk ↙ 1.6, run ↙ 2.7, sprint ↙ 4.4 | 11.86 s | 1st | ~15 s | 35% |
-| L16 | 1.9% | — | mess ↙ 0.0, Idle ↙ 0.8, Idle ↑ 1.5, run ↑ 1.9 | 12.20 s | 1st | ~14 s | 30% |
+| L1 | 5.2% | L1 family (3) | bork ↙ 0.0, stand ↙ 1.1, sit ↙ 1.6, stand ↙ 1.9 | 9.85 s | 2nd | ~26 s | 56% |
+| L2 | 3.9% | — | Idle ↗ 0.0, sit ↗ 0.3, shoulder-sitting ↗ 0.7, sit ↗ 2.0 | 33.55 s | 1st | ~35 s | 32% |
+| L3 | 3.9% | — | run ↘ 0.0, Idle ↘ 0.9, sniff-standing ↘ 1.6, Idle ↘ 3.2 | 31.14 s | 1st | ~35 s | 49% |
+| L4 | 3.9% | — | sit ↙ 0.1, Idle ↙ 0.5, mess ↙ 0.9, Idle ↙ 2.9 | 46.22 s | 1st | ~54 s | 34% |
+| L5 | 3.6% | L5 family (4) | wiggle-bum ↙ 0.0, Idle ↙ 0.5, bork ↙ 1.3, stand ↙ 3.6 | 7.57 s | 2nd | ~19 s | 26% |
+| L6 | 2.7% | L6 family (3) | bark ↙ 0.0, Idle ↙ 1.1, run ↙ 1.4, Idle ↙ 1.9 | 35.42 s | 1st | ~48 s | 42% |
+| L8 | 2.2% | — | shoulder-standing ↙ 0.0, Idle ↗ 0.5, Idle ↗ 0.9, bork ↗ 1.7 | 19.44 s | 2nd | ~52 s | 40% |
+| L7 | 2.2% | L7 family (3) | sit ↗ 0.0, shoulder-sitting ↗ 1.1, sit ↗ 3.2, shoulder-sitting ↗ 4.7 | 113.44 s | 5th | ~156 s | 25% (not proven here: shared casts only) |
+| L9 | 2.2% | L9 family (5) | Idle ↗ 0.0, bark ↗ 0.2, Idle ↗ 1.4, sit ↗ 2.9 | not proven here | — | — | — |
+| L10 | 2.2% | joins L5 | walk ↘ 0.0, Idle ↘ 0.5, bork ↘ 1.6, stand ↘ 3.3 | 96.83 s | 2nd | ~123 s | 38% |
+| L11 | 2.2% | L11 family (2) | bark ↙ 0.0, Idle ↙ 0.6, shoulder-standing ↙ 1.4, Idle ↙ 2.4 | 78.51 s | 2nd | ~101 s | 47% |
+| L12 | 2.2% | L12 family (3) | Idle ↙ 0.0, Idle ↗ 0.2, stand ↗ 0.5, Idle ↗ 2.0 | 46.05 s | 1st | ~55 s | 47% |
+| L13 | 2.2% | L13 family (3) | bark ↙ 0.0, Idle ↙ 0.6, Idle ↖ 1.7, stand ↖ 2.1 | 86.23 s | 3rd | ~101 s | 47% |
+| L16 | 2.2% | — | mess ↙ 0.0, Idle ↙ 0.8, Idle ↑ 1.6, run ↑ 1.9 | 107.59 s | 1st | ~113 s | 54% |
+| L14 | 2.2% | L14 family (2) | Idle ↙ 0.0, Idle ↘ 0.1, run ↘ 0.5, sprint ↘ 2.7 | 4.80 s | 3rd | ~26 s | 43% |
+| L15 | 1.9% | — | Idle ↙ 0.0, walk ↙ 1.6, run ↙ 2.7, sprint ↙ 4.4 | 11.88 s | 1st | ~15 s | 39% |
 
 The rainy Casting tables have a **Wide windows** tab for this: per line, every run of 3 or more game frames in a row
 (0.1 s and up) in which at least half of the line's arrivals catch the Nut on the same bite, with its cast and odds — the
-long runs of one colour the Lucky Timer shows for a tuned dog (L1: 9.69–9.93 s, ×8 frames, the 2nd bite, 52%; L11:
-78.43–78.59 s, ×6 frames, the 2nd bite, 42%; L3: 30.99–31.09 s, ×4 frames, the 1st bite, 46%).
+long runs of one colour the Lucky Timer shows for a tuned dog (Middle table: L18: 108.31–108.68 s, ×12 frames, the 3rd bite, 81%; L33: 48.27–48.64 s, ×12 frames, the 1st bite, 66%; L36: 48.01–48.37 s, ×12 frames, the 1st bite, 66%;
+the L18 run holds from the north and the middle, not from the south).
 
 <img src="media/app_wide.png" width="700" alt="The Wide windows tab of the rainy Casting tables">
 
-<sub><b>Wide windows</b> (Rainy → No horse; the picture is from v32.19, v32.22 lists fewer runs): per line its dog's first moves, the run of frames (green = 1st bite,
+<sub><b>Wide windows</b> (Rainy → No horse; the picture is from v32.19, before the pier zones): per line its dog's first moves, the run of frames (green = 1st bite,
 gold = 2nd, purple = 3rd, red = 4th, orange = 5th, blue = 6th; ×n = frames in a row), the cast, the bite to let go at and when it comes, the odds.</sub>
 
 **What you cast into (v32.2).** Every row has a small picture of its window: the cast histogram of that row's arrivals
@@ -825,6 +859,10 @@ rows of buttons describing your run, each with its own best cast and odds:
 - **Your first step on the beach:** Any / **Clean** (tight first turn, no correction) / **Small fix** (a small correction,
   0.17–0.30 s late) / **Big fix** (a bigger one, 0.33–0.50 s late).
 - **2nd cut:** Any / **Early** / **Middle** / **Late** (where Jack stopped across the end of the pier).
+
+On the **rainy pages** (v32.23) the two rows are the other way round, because there the 2nd cut picks the table: first
+**2nd cut: Any / North / Middle / South** (game frames 1–3 / 4–8 / 9–11 of the pier window; see “On a rainy morning”), then,
+if you know it, your first step. Under the rows the panel says which table is in use and what it holds.
 
 Pick what you actually did if you know it, or leave Any: a preset only keeps the lab's plays that went that way, so its odds
 are those plays' odds. ★ marks the best 2nd cut for that first step. With the
