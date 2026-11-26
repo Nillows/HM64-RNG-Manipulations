@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>Not working? · HM64 Power Nut Tool v32.21</title>
+<title>Not working? · HM64 Power Nut Tool v32.22</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 :root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d;--warn:#f0b35a;--gold:#e7c14a}
@@ -33,7 +33,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:10px}
 <body>
 <nav class="top"><a href="index.html">⌂ Hub</a><a data-keep href="guide.html">Guide</a><span class="nw here">Not working?</span><a data-keep href="how-it-works.html">How it works</a><a href="settings.html">Settings</a><a href="problem.html">The problem</a><a href="deck.html">The deck</a></nav>
 <div class="wrap">
-<h1>Not working? <span class="mut small">HM64 Power Nut Tool v32.21</span></h1>
+<h1>Not working? <span class="mut small">HM64 Power Nut Tool v32.22</span></h1>
 <div class="yourfile">Your game file: <b class="setname"></b> · <a data-keep="setup" href="guide.html">what it needs and how to make it</a> ·
 another file? tick it on the <a href="index.html">hub</a>.</div>
 <p class="mut">Find what you see; each answer says what it means and what to do.</p>
@@ -93,13 +93,18 @@ until it is the same every time; the pictures of <a data-keep href="how-it-works
 <div class="nw-item" id="nw-rain"><h3>It is raining</h3>
 <p>Rain draws many more random numbers on the way (outdoors, every frame), so a rainy morning has its own tables: tick <i>Rainy
 morning</i> on the hub and use the pages it opens. The sunny pages are wrong on a rainy morning and the rainy pages on a sunny one. In
-the rain there are no sparrows and no sparrow box: one table covers menus 0–6 frames late.</p></div>
+the rain there are no sparrows and no sparrow box: one table covers menus 0–6 frames late.</p>
+<p><b>Rainy casts where the bite never came (before v32.22).</b> The rainy casts were recorded with Jack at the north end of the pier's end.
+A step further south the camera sits lower, the dog leaves the screen at other moments, and from then on the random numbers differ:
+about one Nut cast in ten did not come from the middle or the south end, the big windows later than 100 s among them. Since v32.22 the
+rainy tables keep only the Nuts measured to come on the same bite from every part of the pier's end. If a cast still misses, check the line
+first (<a href="#nw-miss">above</a>).</p></div>
 
 <div class="nw-item" id="nw-page"><h3>The page is slow, blank, or ignores my keys</h3>
 <p>A Lucky Timer page is 24–38 MB and takes a few seconds to load. Use a desktop browser with a keyboard, and click on the page once so
 the keys reach it. A page saved to your computer works offline and keeps its own settings.</p></div>
 
-<footer class="small mut">HM64 Power Nut Tool v32.21 · built 2026-11-25 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
+<footer class="small mut">HM64 Power Nut Tool v32.22 · built 2026-11-25 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
 the odds on every page are emulator data, not measured on a console.</footer>
 </div>
 <script>
