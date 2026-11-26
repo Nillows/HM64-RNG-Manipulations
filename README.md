@@ -3,7 +3,7 @@
 Raw results of the Power Nut lab runs on Thomas's Mac, for rebuilding and re-verifying the tool's data
 (route tables, cast packs). Not part of the website: GitHub Pages serves the `main` branch only.
 No ROM, saves or savestates in any file. sha256 of every file: `MANIFEST.txt`.
-Kept up to date by `~/Documents/hm64/tools/hm64_labdata.sh` (2026-11-25f), which every release runs.
+Kept up to date by `~/Documents/hm64/tools/hm64_labdata.sh` (2026-11-26g), which every release runs.
 
 | folder | run | save |
 |---|---|---|
@@ -25,6 +25,6 @@ Get only this branch:
 Then check: `cd hm64-lab-data && shasum -a 256 -c <(awk 'NR>1 {print $1"  "$3}' MANIFEST.txt)`
 
 Last update: 2026-11-26.
-Not on the Mac at the last update: married-rainy/hm64-fullday-married-rainy-d90.zip married-rainy/hm64-fullday-married-rainy-d140c90.zip married-rainy/hm64-fullday-married-rainy-d170c120.zip
+Not on the Mac at the last update: nothing missing
 Left out as unfinished at the last update: none
 No lab run was going at the last update.
