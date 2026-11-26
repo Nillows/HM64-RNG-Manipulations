@@ -268,3 +268,37 @@ spots-1 (2026-11-25: one dog line from other pier spots, labels of the represent
   + married-rainy/hm64-dogwatch-married-lineup2-rainy-62991249.zip (22 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-dogwatch-married-lineup2-rainy-62991249.zip
   + spots-rainy-no-horse/hm64-gaps-rain-lineup2-nohorse-8e972d75@scotts-m4.zip (3 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-gaps-rain-lineup2-nohorse-8e972d75@scotts-m4.zip
   + spots-rainy-horse/hm64-gaps-rain-lineup2-horse-287c11a6@scotts-m4.zip (2 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-gaps-rain-lineup2-horse-287c11a6@scotts-m4.zip
+  + spots-rainy-no-horse/run-gaps-20261126-124936.log (0 MB)   <- /Users/thomaswollin/Documents/hm64/runs/dogspots/run-gaps-20261126-124936.log
+  5 new or changed, 7 already up to date
+  result zips in runs/ that are not in the table (NOT uploaded; tell Claude if they should be): 8
+    hm64-fullday-married-rainy-d140c90-summary.zip
+    hm64-fullday-married-rainy-d170c120-b04@scotts-m4.zip
+    hm64-fullday-married-rainy-d170c120-b05@scotts-m4.zip
+    hm64-fullday-married-rainy-d170c120-summary.zip
+    hm64-fullday-married-rainy-d90-summary.zip
+    hm64-fullday-married-sunny-d140c90-summary.zip
+    hm64-fullday-married-sunny-d170c120-summary.zip
+    hm64-fullday-married-sunny-d90-summary.zip
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  61 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |   7 +-
+ README.md                                          |   4 +-
+ ...m64-dogwatch-married-lineup2-rainy-62991249.zip | Bin 23069653 -> 23069653 bytes
+ ...m64-dogwatch-married-lineup2-sunny-237e3d1d.zip | Bin 71868036 -> 71868036 bytes
+ ...-gaps-rain-lineup2-horse-287c11a6@scotts-m4.zip | Bin 0 -> 2686629 bytes
+ ...aps-rain-lineup2-nohorse-8e972d75@scotts-m4.zip | Bin 0 -> 3717986 bytes
+ spots-rainy-no-horse/run-gaps-20261126-124936.log  | 270 +++++++++++++++++++++
+ 7 files changed, 277 insertions(+), 4 deletions(-)
+  committed d7e2bd3 (96 MB of files)
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File married-sunny/hm64-dogwatch-married-lineup2-sunny-237e3d1d.zip is 68.54 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To github.com:Nillows/HM64-RNG-Manipulations.git
+   f0f6d70..d7e2bd3  lab-data -> lab-data
+branch 'lab-data' set up to track 'origin/lab-data'.
+  pushed: GitHub's lab-data = your copy (d7e2bd3)
+
+LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at d7e2bd3.
