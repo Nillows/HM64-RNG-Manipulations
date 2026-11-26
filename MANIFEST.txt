@@ -48,6 +48,7 @@ adf1d172e9f758fb0e0cabd7795657d33ece02c6a659319b8ec84bf65f0defb2      3717986  s
 03dad925bf7a334b079f73bcbfc43f1f816e8369de89a28b00b26b7623a3580d     10754251  sunny-horse/hm64-fullday-horse-d170c120.zip
 05aa3c94ef7e375c45d63c258d145742e1637b3a61617606bba313adf5d2423d     10880581  sunny-horse/hm64-fullday-horse-d90.zip
 024a2b092471b1f2af917c30f4e6de2e8b5fe66fb186cd2f3defe782bfd88f92     18772492  sunny-horse/hm64-gaps-beach-lineup2-horse-b0f2a284@scotts-m4.zip
+b92975077e91fbbea764b7e51929c5edbd381efab57a1b7d18a5702590a5a4fe     19719456  sunny-horse/hm64-gaps-beach-lineup2-horse-b0f2a284@thomass-mac-mini.zip
 6a91fc04a8c496aec3bb6811edeb77c5dc83a291bf1125ed113294e171c941ac       144788  sunny-horse/run-horse120-20261123-104115.log
 9741a79809c3f01be726b5cfa7dd7f84a12c3a119340362045e33e976cbe9e79     76072378  sunny-no-horse/hm64-dogwatch-beach-lineup2-52cfd712-20261116-174959.zip
 e409039716a776d0770ebd81722d9de113eb0cf9dd68edaeafa110b73da80b1b       531679  sunny-no-horse/hm64-fullday-d110-b02.zip
@@ -65,4 +66,6 @@ d0e521957aedd0d40bfb2a1d46e2e361031ba7cffd30490a16afbfbbc05d18bc      2328129  s
 c10eae8411595a2ae9903e9f963c82f6a557e60b233985772ea9237b5c514999      3107341  sunny-no-horse/hm64-fullday-d90-b01.zip
 bd784836a20bf1266d5dc912cb9b0eb77cb45b396f9963ac4297204a6b73eafe      3424967  sunny-no-horse/hm64-fullday-d90-summary.zip
 ecd579fbb649f0d82738e414c1217df6a4697e39a69fe67f4585a0b4b3012729     14594972  sunny-no-horse/hm64-gaps-beach-lineup2-52cfd712@scotts-m4.zip
+5de15beea843b39224405aef940e4c8eea1272ae31c2efada985dc07a385113b     15588949  sunny-no-horse/hm64-gaps-beach-lineup2-52cfd712@thomass-mac-mini.zip
+40f0a8566d72622163adc3696eef763999dc8991895a4f7b0cd874d7790ecdda       127465  sunny-no-horse/run-sunspots-20261126-171745.log
 e811434101430095b936e06d593a3b1b1d966a960b3e4f064177059d7b9197fb       120429  sunny-no-horse/run-sunspots-20261126-171746.log
