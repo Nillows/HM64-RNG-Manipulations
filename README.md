@@ -1,16 +1,21 @@
-# HM64 Power Nut Tool v32.23
+# HM64 Power Nut Tool v32.24
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
-The site's front page (`index.html`) is a **hub**: tick what is true of your game file (a rainy morning, the horse; married
-and a baby come later) and three buttons — always the same — open that file's **Casting tables**, **Lucky Timer** and
-**Dog practice**. Each page is one file that holds
-only that game file's tables, runs entirely in your browser, needs no install and sends nothing anywhere (no network
-requests). Save a page (right-click its link in the hub → *Save link as…*) and it works offline. The site also has three
-help pages, each its own page: the **Guide** (`guide.html`: how to set up each game file, the route and the beach),
-**Not working?** (`not-working.html`: what to check when it does not work) and **How it works** (`how-it-works.html`: the
-forest pictures). Every tool page links them, and its **Not working?** button opens a checklist that leads to the answers.
-Your keys, your timing, your practice drills and one attempt count for every page are on the **Settings** page
-(`settings.html`, a button on the hub and a link in every tool page's footer): see [Settings](#settings-your-keys-timing-and-practice-in-one-place).
+
+Open the site and you land on the **hub** (`index.html`). Tick what is true of your game file (a rainy morning, the
+horse; married and a baby come later) and three buttons open that file's pages:
+
+- **Lucky Timer**: watch your dog, line the app up with it, and get counted down to the frame to press B on.
+- **Casting tables**: the same data as a list, for when you only want a stopwatch.
+- **Dog practice**: try the whole thing in the browser, with no console.
+
+Each page is a single file with only that game file's tables. It runs in your browser, needs no install and sends
+nothing anywhere. Save a page (right-click its link in the hub → *Save link as…*) and it works offline.
+
+There are three help pages: the **Guide** (`guide.html`: setting up each game file, the route, the beach), **Not
+working?** (`not-working.html`: what to check) and **How it works** (`how-it-works.html`: the forest pictures). Your keys,
+timing, practice drills and attempt count live on the **Settings** page (`settings.html`); see
+[Settings](#settings-your-keys-timing-and-practice-in-one-place).
 
 <img src="media/hub.png" width="620" alt="The hub: tick boxes for the game file, then three buttons for its pages">
 
@@ -22,12 +27,13 @@ that file. Every page is beach-lineup2: the dog left
 in the far south-west corner of the beach; you pick your tables by your game file. Under the buttons: <b>Guide</b> and
 <b>Not working?</b>, both opened on the game file you ticked.</sub>
 
-Every random event in the game comes from one random number generator. The dog's behaviour on the beach is a
-readout of where that generator is, and an emulator lab has recorded, for every dog path ("line") and every cast frame
-up to 120 s after Jack reaches the end of the pier, every bite and what it catches. The page shows you the dog the lab
-expects, lets you line it up with the dog on your TV, and tells you when to press B and when to let go.
-Every percentage on the pages is a share of the lab's plays of the route that land the Nut; [How the odds are worked
-out](#how-the-odds-are-worked-out) says how, in plain English.
+**The idea in four sentences.** Every random event in the game comes from one random number generator, and the dog on
+the beach is a readout of where that generator is. An emulator lab has recorded every dog path ("line"), and for every
+cast frame up to 120 s after Jack reaches the end of the pier, every bite and what it catches. The page shows you the dog
+the lab expects and lets you line it up with the dog on your TV. Then it tells you when to press B and when to let go.
+
+Every percentage on the pages is a share of the lab's plays of the route that land the Nut;
+[How the odds are worked out](#how-the-odds-are-worked-out) says how.
 
 ---
 
@@ -50,19 +56,20 @@ whenever you need it. (This explainer is also a page of its own on the site:
 
 ![The problem: the frame you press B on picks the cast; each bite gives 0.33 s to let go; one cast per attempt](media/problem_deck.svg)
 
-**Try it:** the site's **[deck page](https://nillows.github.io/HM64-RNG-Manipulations/deck.html)** (`deck.html`) lays out
-52 cards in new deck order. Take one out, pick your goal card and stack the deck (seeded by the clock × the time you have
-spent on the page). The 51 cards lie face down in a grid. Press **Start** when Jack stops at the pier, then **press and hold
-the deck** (or Space) to cast: the moment you press is a game frame, and you get the real cast the lab recorded on that frame
-of a real dog line (Sunny · No horse, casts up to 40 s after Jack stops, at the game's own speed). Each bite of that cast
-lights one face-down card for 0.33 s, and the big card you hold glows with it: **the big card is your bobber** (Jack's cast
-plays faintly on it, his rod dipping at each bite), so you watch one spot as you watch the float on the TV. **Let go while it
-is lit** to catch it — your goal card when the bite is the Power Nut. Let go at any other time and the line comes back empty. One cast per attempt: *Try again* is a new arrival with
-another dog line, and no cast in 40 s means Jack lies down. Tick *Use the tool* to see what knowing the frame and the bite
-does. Tick *show RNG speed* to turn the 51 cards face up, dealt anew at every step of the game's random number: once per game
-frame while Jack stands at the pier (the main loop's `rand()`, 30 a second), three times per frame while the line is in the
-water waiting for a bite (the game rolls `getRandomNumberInRange(0, 400)`, a 1-in-401 bite check, every frame, and that function
-calls `rand()` twice: 90 a second; the dog adds its own on top). The cards flicker, so it is off by default.
+**Try it:** the site's **[deck page](https://nillows.github.io/HM64-RNG-Manipulations/deck.html)** (`deck.html`) plays
+this as a card game. Pick your goal card and stack the deck; the 51 cards lie face down. Press **Start** when Jack stops
+at the pier, then **press and hold the deck** (or Space) to cast. The moment you press is a game frame, and you get the
+real cast the lab recorded on that frame of a real dog line (Sunny · No horse, casts up to 40 s after Jack stops, at the
+game's own speed). Each bite lights one face-down card for 0.33 s and the big card you hold glows with it; the big card
+is your bobber, so you watch one spot as you watch the float on the TV. **Let go while it is lit** to catch that card.
+Let go at any other time and the line comes back empty. One cast per attempt: *Try again* is a new arrival with another
+dog line, and no cast in 40 s means Jack lies down.
+
+Two tick boxes: *Use the tool* shows what knowing the frame and the bite does. *Show RNG speed* turns the cards face up
+and deals them anew at every step of the random number: once per game frame while Jack stands at the pier (30 a second),
+three times per frame while the line is in the water (the game rolls a 1-in-401 bite check every frame,
+`getRandomNumberInRange(0, 400)`, which calls `rand()` twice: 90 a second, plus the dog's own). The cards flicker, so it
+is off by default.
 
 <img src="media/deck_page.png" width="760" alt="The deck page: the line in the water, the 2nd bite lighting a face-down card, the tool saying let go now">
 
@@ -360,90 +367,77 @@ blue glow is the press's bell curve, the white line the odds for every aim (best
 ---
 
 ## How it works: a leaf in a forest
-The tool's job is to find one moment to press B among billions of possible game states. Here is how, as a picture: a
-forest. Every picture is drawn from the lab's own records ([how they are made](#how-the-pictures-are-made)).
+The tool has to find one moment to press B among billions of possible game states. The easiest way to see how is a picture:
+a forest. Every picture below is drawn from the lab's own records ([how they are made](#how-the-pictures-are-made)).
 
-**The forest.** Every random thing in the game — the dog's next move, when a fish bites, what it is — comes from one number,
-the random number generator. Every time anything asks for a random number, that number steps to a new value, and it can be
-any of about 4.3 billion values, from −2,147,483,648 to +2,147,483,647. Picture all its possible histories as a forest: as
-wide as all those values, and as tall as the game has been running. The cast that lands the Power Nut is a single leaf, on a
-single low branch of one tree, before that branch disappears into the canopy — where branches that started apart grow
-into each other (two different routes can reach the very same game state).
+**The forest.** Every random thing in the game (the dog's next move, when a fish bites, what it is) comes from one number,
+the random number generator. Each time anything asks for a random number, that number steps to a new value, one of about
+4.3 billion (−2,147,483,648 to +2,147,483,647). Picture all its possible histories as a forest: as wide as all those values
+and as tall as the game has been running. The cast that lands the Power Nut is one leaf on one low branch of one tree.
 
 ![A leaf in a forest](media/forest_1_canopy.svg)
 
-**Why not search down from the leaf?** You could start at a leaf and follow its branch down to find its trunk. But at every
-fork it could have come either way, all the way down through the canopy of time to the forest floor, and even then you would
-end up with a handful of possible trunks and how likely each is — odds, not an answer. The picture does it for real: the
-most common dog line of Sunny → Horse (L1), traced back through every play the lab made, comes from all 7 menu timings
-(2%, 13%, 18%, 24%, 34%, 6%, 3%).
+**Why not search down from the leaf?** You could start at the leaf and follow its branch down to its trunk. But at every
+fork it could have come either way, so you end with a handful of possible trunks and how likely each is: odds, not an
+answer. The picture is a real case: the most common dog line of Sunny → Horse (L1), traced back through every play the
+lab made, comes from all 7 menu timings (2%, 13%, 18%, 24%, 34%, 6%, 3%).
 
 ![Searching down from the leaf](media/forest_2_backwards.svg)
 
-**Why branches merge.** Branches grow into each other for the same reason that 1 + 2 = 3 and 2 + 1 = 3: different
-circumstances can lead to the same answer. Here the answer is a pair — the random number's value and the dog's state
-(where it is and what it is doing). The random number can only take about 4.3 billion values, and the dog only so many
-states at each of those moments, so the canopy is huge but not infinite, and sooner or later two different routes land on
-exactly the same pair. There are endless ways to write a sum that comes to 3, and once you know the answer is 3 you can
-forget how it was written; in the same way, once two routes reach the same value with the same dog, everything after
-that is the same (the lab checks it: casts from different routes of one dog line catch the same thing), so the tool keeps
-one branch and ignores all the strange ways of getting there. The one thing that can still differ is *when* each route
-got there: the same pair, reached at a different moment — the same branch, entered higher or lower. That is why a dog
-line comes in at several timings, and why the search runs from the bottom up: on the way up every merge removes
-branches, on the way down every fork adds them. The picture shows real merges on Sunny → Horse: plays with menus 0, 3 and
-5 frames late all become L1, joining its path at +14, +19 and +33 frames (the most common moment for each).
+**Why branches merge.** 1 + 2 = 3 and 2 + 1 = 3: different ways in, one answer, and once you have the 3 you can forget how
+it was written. In the game the answer is a pair: the random number's value and the dog's state (where it is and what it
+is doing). There are only so many pairs, so sooner or later two different routes land on exactly the same one, and from
+there everything is the same (the lab checks it: casts from different routes of one dog line catch the same thing). The
+one thing that can still differ is *when* each route got there. That is why a dog line comes in at several timings, and
+why the search runs from the bottom up: going up, every merge removes branches; going down, every fork adds them. The
+picture shows real merges on Sunny → Horse: plays with menus 0, 3 and 5 frames late all become L1, joining its path at
++14, +19 and +33 frames (the most common moment for each).
 
 ![Why branches merge](media/forest_2b_merge.svg)
 
-**So the tool grows the forest from the bottom up.** Switching the N64 on sets the number to 0 on every console: one shared
-seed that every forest grows from. The title screen and the menus draw 499 numbers by the time the house
-loads on the fastest menus. **The first exploit:** the tables only cover menus 0 to 6 game frames slower than the fastest,
-so the trunk splits into a crown of just **7 main branches** — the house loads at draw 499 to 505,
-one more draw for each frame late. Slower menus grow 9 more branches that the tables leave out, and
-that is what keeps the forest small enough to grow completely. Two of the 7 carry an identifier: menus 5 or 6 frames late put
-**two sparrows by the farm door** ([3.2](#32-sparrows-at-the-door)), and those two branches have their own table. (On a
-sunny morning: no sparrows come out in the rain, so the rainy tables keep all 7 branches in one.)
+**So the tool grows the forest from the bottom up.** Switching the N64 on sets the number to 0 on every console: one seed
+for every forest. The title screen and the menus draw 499 numbers by the time the house loads on the fastest menus, and
+one more for each frame you are late. The tables cover menus 0 to 6 game frames late, so the trunk splits into a crown of
+just **7 main branches** (the house loads at draw 499 to 505). Slower menus grow 9 more branches that the tables leave
+out, and that is what keeps the forest small enough to grow completely. On a sunny morning two of the 7 can be told apart
+by eye: menus 5 or 6 frames late put **two sparrows by the farm door** ([3.2](#32-sparrows-at-the-door)), and those two
+branches have their own table. No sparrows come out in the rain, so the rainy tables keep all 7 together.
 
 ![One seed, a crown of 7](media/forest_3_crown7.svg)
 
-**Sunlight (the forest's sunlight — not the game's weather).** In the forest picture, sunlight is the base drift of the
-random number: how many numbers a place draws each frame on its own, with nothing extra asking for any, as you travel to
-READY at the end of the pier. Each screen shines its own amount of it on the canopy of our ever-growing forest. Sunlight
-does not decide how fast a branch grows taller — height is time, and every branch reaches READY at the same height — but it
-changes *how* the branch grows in that time: an hour of sunlight changes how a plant grows during that hour, not how old the
-plant is. What counts is each place's own drift and how long you stand under it. On a sunny morning the farm, the
-crossroads and the ranch drift about one number per game frame; the horse file draws a few more (2 on the farm, 4 at the
-crossroads, 4 on the ranch) although the horse never comes on screen. And this is where the two meanings of "sun" cross:
-a *rainy* morning gives the forest far *more* sunlight, because outdoors the rain draws 13 to 19 numbers a frame — READY
-comes at draw 10,593 instead of 1,259. Same route, same clock, very differently grown branches: that is why every game file
-needs its own tables.
+**Sunlight: how fast a screen draws numbers.** Every screen draws random numbers at a rate of its own, even when nothing
+special is happening. That rate is the forest's sunlight (nothing to do with the game's weather). Count the numbers drawn
+against the clock and you get a straight line on a slope: the steeper the slope, the more sunlight. On a sunny morning the
+slope is gentle and almost the same everywhere, about one number per game frame, the game's own clock; the horse file
+draws a few more (2 on the farm, 4 at the crossroads, 4 on the ranch) although the horse never comes on screen. A *rainy*
+morning is the steep one: outdoors the rain draws 13 to 19 numbers a frame, about 400 to 565 a second, so READY comes at
+draw 10,593 instead of 1,259. The walk and the clock are the same; the ground under them is not. That is why every game
+file needs its own tables.
 
-![Forest sunlight per screen](media/forest_4_sunlight.svg)
+The slope is also what lets plays be joined. While you travel, you choose how long you stand on each slope (every turn,
+wait and cut), so two plays can drift apart. On the pier the slope is steady, and two plays that stand on the same line
+are the same play at different times: the panel on the right shows two real ones, 14 game frames apart.
+
+![Sunlight: each screen's draw rate as a slope](media/forest_4_sunlight.svg)
 
 **Three crowns on each branch.** Nobody walks frame-perfect, so the tables also cover a little slack after the menus: the
-turns in the house (up to 4 game frames), the turn at the crossroads (up to 3) and the beach —
-your first step (up to 15), the first cut (1) and the cut onto the pier (an
-11-frame window). That is 34 game frames, about 1.1 s, peppered over three places.
-Each of the 7 branches forks again at each place, but every fork still grows to the same height: READY, Jack stopped at the
-end of the pier. Branches from different crowns grow into each other: counted over all 7 there are 19 farm,
-54 ranch and 50 beach states, not 33 /
-116 / 114.
+turns in the house (up to 4 game frames), the turn at the crossroads (up to 3) and the beach (your first step, up to 15;
+the first cut, 1; the cut onto the pier, an 11-frame window). That is 34 game frames, about 1.1 s, over three places.
+Each of the 7 branches forks again at each place, and branches from different crowns grow into each other: counted over
+all 7 there are 19 farm, 54 ranch and 50 beach states, not 33 / 116 / 114.
 
 ![Each branch splits three more times](media/forest_5_three_crowns.svg)
 
-**The pier moment: group the branches by shape.** Sorting branches by shape only works once the forest's sunlight stops
-changing. On the way to the pier that light is yours: every turn, wait and cut decides how long you stand under each
-screen's drift and when the dog wakes, so two branches that look alike can still be pushed apart. From the moment the dog
-wakes (Jack at the bottom of the back wall) nothing Jack does touches the random numbers any more, and standing at the end
-of the pier the light on the forest is as steady as it gets: the base drift is exactly one number per game frame (the
-game's own clock), plus the draws the dog makes — and those belong to the branch itself, decided by the dog's state. From then until you cast, a branch is fully described by two things: the
-random number's value **x** and the dog's state **y** (where it is, what it is doing, the timer on what it is doing). With
-the light steady, (x, y) has exactly one future: the next frame's x and y follow from it, then the next, and so on — the
-shape could not be any other way. So two branches that show the same (x, y) are the same branch, and one that reaches that
-(x, y) a few frames later is the same shape, offset in time: one causal future, and every copy collapses onto it.
+**The pier: same ground, different time.** From the moment the dog wakes (Jack at the bottom of the back wall) nothing Jack
+does touches the random numbers any more. The slope is as steady as it gets: exactly one number per game frame, plus the
+draws the dog makes, and those are decided by the dog's own state. So from then until you cast, a branch is fully
+described by two things: the random number's value **x** and the dog's state **y** (where it is, what it is doing, the
+timer on what it is doing). The next frame's x and y follow from this frame's, and so on: a pair has exactly one future.
+Two plays that show the same pair are the same branch, and a play that reaches that pair a few frames later is the same
+branch, later.
 
-Written as **key : value** — the random number : the dog (what it is doing, which way it faces, the timer on what it is
-doing) — real pairs from Sunny → Horse look like this (in every one the dog still stands where it was left):
+Written as **key : value** (the random number : the dog), real pairs from Sunny → Horse look like this (in every one the
+dog still stands where it was left):
 
 ```
   569421077: standing, facing 0, timer 2    L1 as Jack stops (draw 1,253)
@@ -454,93 +448,79 @@ doing) — real pairs from Sunny → Horse look like this (in every one the dog 
   297534865: digging, facing 0, timer 10    L3 as Jack stops (draw 1,257)
 ```
 
-A key can only be one of 4,294,967,296 numbers, and a value one of the dog's couple of dozen actions × 8 facings × its timer
-(× its spot): a huge table, but a finite one, and every branch lives inside it. Two rows above share the key
--117721573 but not the value — L1 2 frames after it stops, with the dog standing, and L2 as it stops, with
-the dog barking: two different branches. A key and a value together make a branch, and the same pair always has the
-same future.
+Two rows share the key -117721573 but not the value: L1 two frames after it stops, with the dog standing, and L2 as it
+stops, with the dog barking. Those are two different branches. It takes the key and the value together to make a branch.
 
-On a rainy morning the light never quite steadies: the raindrops keep drawing numbers as they start and stop, so the rain
-is a third part of the pair. At READY that changed nothing the lab could find (casts re-made from other plays of the same line
-gave the same bites every time: 178 checks on the horse file, 223 without), but after a cast two runs can meet on the same
-key and value with different rain and part again. That happened at about 1 in 65 of the bite states the rainy runs saw more than
-once (none on the sunny runs), so since v32.18 the cast pack compares the whole recorded future of every bite and keeps
-those apart: every one of the 325,948 rainy casts it was built from reads back exactly.
+The picture shows two real plays of L1 on Sunny → Horse. A cut onto the pier early and stopped with x = 569,421,077
+(draw 1,253 since power-on). B came by a different route and stopped 14 frames later, at draw 1,271. Fourteen frames
+before it stopped, while Jack was still walking along the pier, B passed through exactly A's pair (the first row above),
+and from there the two are one branch.
 
-The picture shows it with two real plays of L1 on Sunny → Horse. A cut onto the pier early and stopped with
-x = 569,421,077 (draw 1,253 since power-on). B came by a different route and stopped 14 frames
-later, at draw 1,271: 14 frames before it stopped, while Jack was still walking along the pier, B passed
-through exactly A's pair (the first row above), and from there the two are one branch.
+![One future, once the slope is steady](media/forest_6b_one_future.svg)
 
-![One future, once the forest's sunlight is steady](media/forest_6b_one_future.svg)
+On a rainy morning the ground never quite settles: raindrops keep drawing numbers as they start and stop, so the rain is
+a third part of the pair. At READY that changed nothing the lab could find (casts re-made from other plays of the same
+line gave the same bites every time: 178 checks on the horse file, 223 without). After a cast, though, two runs can meet
+on the same key and value with different rain and part again. That happened at about 1 in 65 of the bite states the rainy
+runs saw more than once (none on the sunny runs), so since v32.18 the cast pack compares the whole recorded future of
+every bite and keeps those apart: every one of the 325,948 rainy casts it was built from reads back exactly.
 
-That is the test the lab runs at READY, and it is why so few branches are left: on Sunny → Horse the lab's
-280,387,008 ways to play the route merge into 35,200 different plays on the beach and
-1,952 different arrivals at READY. Searching them all would be hopeless — but most of them are **the same
-branch, started a few frames later**: the same dog doing the same things, offset in time. Keep one of each and
-1,952 arrivals become **156 dog lines** (92% of the arrivals were copies). Fold in the
-lines that become the same dog after a few seconds (sister lines) and a normal morning has **21 shapes** to tell
-apart, a sparrow morning 16. That is the comparison that cut the dogs down in earlier versions — and it sets up the tuner
-below: your N64 is on one of these branches too, perhaps a few frames higher or lower than the tables' copy.
+**Group the branches by shape.** This is why so few branches are left. On Sunny → Horse the lab's 280,387,008 ways to play
+the route merge into 35,200 different plays on the beach and 1,952 different arrivals at READY, and most of those are
+**the same branch, started a few frames later**: the same dog doing the same things. Keep one of each and 1,952 arrivals
+become **156 dog lines** (92% of the arrivals were copies). Fold in the lines that become the same dog after a few
+seconds (sister lines) and a normal morning has **21 shapes** to tell apart, a sparrow morning 16. Your N64 is on one of
+these branches too, perhaps a few frames higher or lower than the tables' copy: that is what the tuner below is for.
 
 ![Group the branches by shape](media/forest_6_pier.svg)
 
-**The leaves: only a cast grows them.** The branch you watch before you cast has no leaves at all. A leaf needs a cast:
-casting is the moment the branch bends, because the line in the water brings sunlight of its own (it draws random numbers of
-its own), and the branch that grows from that bend is the one that decides when a fish bites and what it is. So the leaves are
-not hanging on the branch ahead of you, waiting — the cast moment you choose decides whether the branch it starts will grow
-one.
+**The leaves: only a cast grows them.** The branch you watch before you cast has no leaves. Casting bends it: the line in
+the water draws random numbers of its own, and the branch that grows from that bend decides when a fish bites and what it
+is. So you do not cast *at* a leaf. You cast at the moment that grows one, like an interception.
 
 The picture shows it on L1 of Sunny → No horse, with two real casts one game frame apart. In all three rows the branch is
-the same up to 16.23 s. With no cast it never grows a leaf. A cast at 16.23 s bends it into a branch whose
-first bite, at 37.9 s, is **the Power Nut**. A cast one game frame later, at 16.26 s, bends it into another
-branch whose first bite, at 28.4 s, is a small fish.
+the same up to 16.23 s. With no cast it never grows a leaf. A cast at 16.23 s bends it into a branch whose first bite, at
+37.9 s, is **the Power Nut**. A cast one game frame later, at 16.26 s, gives a small fish at 28.4 s.
 
 ![The leaves: only a cast grows them](media/forest_7_leaves.svg)
 
-Mark every cast moment that grows a leaf and you get the strip at the bottom of the picture — **green** = the Nut on the first
-bite, **gold** = on the second (hold the first), **purple** = on the third (later bites: red, orange, blue); L1 has 22 green, 43 gold and 2 purple in its
-first 40 s — and that strip is what the app's bars show. You don't cast *at* a leaf: you cast at the moment that grows one,
-like an interception.
+Mark every cast moment that grows a leaf and you get the strip at the bottom of the picture, which is what the app's bars
+show: **green** = the Nut on the first bite, **gold** = on the second (hold the first), **purple** = on the third (later
+bites: red, orange, blue). L1 has 22 green, 43 gold and 2 purple in its first 40 s.
 
-**Describing your dog describes your branch.** What the dog does after Jack stops is the shape of your branch, and each move
-you key narrows it down. On Sunny → No horse, after the dog's first move 6 lines still have L1's
-shape, after two moves 2, after four only L1. With enough of the dog seen, the tool knows which
-branch you are on and which of its cast moments grow leaves.
+**Describing your dog describes your branch.** What the dog does after Jack stops is the shape of your branch, and each
+move you key narrows it down. On Sunny → No horse, after the dog's first move 6 lines still have L1's shape, after two
+moves 2, after four only L1.
 
 ![Describing the dog](media/forest_8_describe.svg)
 
-**But not how tall your tree has grown: the tuner.** Your N64 can be a few frames ahead of or behind the tables' copy of the
-same branch (each line comes in at about 10 timings). The tuner (<kbd>[</kbd> <kbd>]</kbd>, one game frame per press) slides the
-app's branch up or down until your dog turns at the very moment the card does — and then the cast moments that grow leaves are at
-your N64's height too.
-Because a shape has only one causal future (the pier moment above), the height is the only thing that can still differ:
-match the dog's turns and everything after them matches, including which cast moments grow leaves.
+**The tuner: how far along you are.** Knowing the branch is not yet knowing the moment: your N64 can be a few frames ahead
+of or behind the tables' copy (each line comes in at about 10 timings). The tuner (<kbd>[</kbd> <kbd>]</kbd>, one game
+frame per press) slides the app's branch until your dog turns at the very moment the card does. Because you and the
+tables stand on the same ground, time is the only thing that can differ: match the dog's turns and everything after them
+matches, including which cast moments grow leaves.
 
 ![The tuner](media/forest_9_tuner.svg)
 
 **L1 across game files: two cubes.** Every game file that changes the random numbers before the pier needs tables of its
-own: the weather, the horse, and later a marriage and a baby. Three yes / no questions make a cube — horse × married ×
-baby, 8 corners — and the weather is a fourth, so there are two cubes, one sunny and one rainy: 16 game files in all.
-Each corner shows its L1 (the most common dog line) once its tables are in. Today four corners are filled. Sunny with and
-without the horse share the **same L1 branch**: every move of the dog and every leaf, 3 game frames earlier on the horse
-file. Rainy with and without the horse share one L1 too, and **at the same moment**: in the rain the horse's two extra numbers
-on the farm get swallowed. Each raindrop that is not falling rolls the dice every frame (one in five starts it) and a drop that
-starts rolls twice more for where it lands, so the rain reads the numbers in chunks of changing size; two runs that are two
-numbers apart soon fall into step, like the Kruskal count card trick, where two people counting through one deck from
-different starting cards end up on the same card. That happens on most paths, not on all: about 85% of the rainy horse
-file's plays end on a dog line the no-horse file also has, at the same moment, 7% on one a few frames apart and the rest
-elsewhere, so each rainy file still has its own tables. The rainy L1 holds only 5% of the plays (sunny: 11–14%): rain spreads the plays over more lines
-(20 lines hold half of them, 50 hold 90%). The married and baby corners come later. The cubes are only a picture: in the hub
-you still just tick what is true of your file.
+own: the weather, the horse, and later a marriage and a baby. Horse × married × baby makes a cube with 8 corners, and the
+weather makes it two cubes: 16 game files in all, four of them filled today. Each corner shows its L1 (the most common dog
+line). Sunny with and without the horse share the **same L1 branch**: every move of the dog and every leaf, 3 game frames
+earlier on the horse file. Rainy with and without the horse share one L1 too, and **at the same moment**, because the
+rain swallows the horse's two extra numbers on the farm. Each raindrop that is not falling rolls the dice every frame (one
+in five starts it) and a drop that starts rolls twice more for where it lands, so the rain reads the numbers in chunks of
+changing size, and two runs that are two numbers apart soon fall into step. It is the Kruskal count card trick, where two
+people counting through one deck from different starting cards end up on the same card. It happens on most paths, not
+all: about 85% of the rainy horse file's plays end on a dog line the no-horse file also has, at the same moment, 7% on one
+a few frames apart and the rest elsewhere, so each rainy file still has its own tables. Rain also spreads the plays over
+more lines: the rainy L1 holds only 5% of them (sunny: 11–14%), 20 lines hold half and 50 hold 90%. In the hub you still
+just tick what is true of your file.
 
 ![L1 across game files: two cubes](media/forest_10_cubes.svg)
 
-<a id="how-the-pictures-are-made"></a>**How the pictures are made.** `tools/forest_facts.py` reads the lab's runs (the stages
-of a dog-watch run, the reference route of each game file, the dog lines and casts of each table) into one facts file, and
-`tools/forest_svg.py` draws every picture from it — trees grown from the game's own generator, a dog line drawn as a branch
-with a kink at every change in what the dog does. When new tables come in (married and a baby next), the same two
-commands redraw them with the new numbers.
+<a id="how-the-pictures-are-made"></a>**How the pictures are made.** `tools/forest_facts.py` reads the lab's runs into one
+facts file and `tools/forest_svg.py` draws every picture from it, so when new tables come in (married and a baby next) the
+same two commands redraw them with the new numbers.
 
 ---
 
