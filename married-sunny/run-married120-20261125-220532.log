@@ -1,0 +1,693 @@
+
+==> SHARED run: this Mac = scotts-m4, direction down (helper: cast blocks only, of the saves whose dog-watch is already here)
+
+==> married tables to 120 s: saves [sunny rainy], preset dogwatch, work folder /Users/thomaswollin/Documents/hm64/runs/dogspots/hm64-lab (native ARM image)  Wed 22:05
+  lab code: ZZ_CODE = "zigzag-4f (2026-11-16: every bite to 90 s after READY; dogwatch menus...
+  keeping the Mac awake: caffeinate -dims (pid 13013) until this script ends - display, idle, disk and system sleep held off
+  free disk: 114 GB
+
+==> 1/7 lab files
+  note: tools/fullday_campaign.py in the lab differs from the kit's copy (fullday-2); the kit's copy is used
+  [coord 22:05:32] machine scotts-m4, branch lab-coord, every 30 s (rev 2026-11-25a)
+  table sync with GitHub (branch lab-coord): running (pid 13121)
+  [coord 22:05:36] machine scotts-m4, branch lab-coord, every 30 s (rev 2026-11-25a)
+  fullday-2 kit, save_check.py, married_z0_check.py, save_redate.py -> /Users/thomaswollin/Documents/hm64/runs/dogspots/hm64-lab
+  workers  9
+
+==> 2/7 the saves
+  save     married-lineup2-sunny-237e3d1d   <- /Users/thomaswollin/Documents/hm64/sourcefiles/married/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-sunny.spring9.SaveRAM
+    married-lineup2-sunny-237e3d1d.SaveRAM  sha256 237e3d1dfe5d  (bizhawk-saveram, checksum valid)
+      day      year 1 spring 9 (day of week 2), weather sunny, forecast rain
+      Jack     gold 300, stamina 100/100, tools [24, 1, 3, 4, 5, 0, 0, 0, 24], in hand 24 (fishing rod)
+      dog      beach (map 9) x -197.272 z 222.243  tile 18:23
+      horse    no (HAVE_HORSE False, ranch cutscene seen False); block: farm (map 82) x 0.0 z 0.0, grown 0, age 0, flags 0x0000
+      family   married True, baby False, wife 4; life events ['MARRIED', 16, 62]
+      [PASS] weather  want sunny    got sunny
+      [PASS] horse    want no       got no
+      [PASS] married  want yes      got yes
+      [PASS] wife     want karen    got karen
+      [PASS] baby     want no       got no
+      [PASS] dog      want beach    got beach
+      [PASS] tile     want 18:23    got 18:23
+      [PASS] rod      want yes      got yes
+      [PASS] season   want spring   got spring
+      [PASS] day      want 9        got 9
+      [PASS] checksum want valid    got valid
+  save     married-lineup2-rainy-62991249   <- /Users/thomaswollin/Documents/hm64/sourcefiles/married/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-rainy.SaveRAM
+    married-lineup2-rainy-62991249.SaveRAM  sha256 629912496c62  (bizhawk-saveram, checksum valid)
+      day      year 1 spring 9 (day of week 2), weather rain, forecast sunny
+      Jack     gold 300, stamina 100/100, tools [24, 1, 3, 4, 5, 0, 0, 0, 24], in hand 24 (fishing rod)
+      dog      beach (map 9) x -197.272 z 222.243  tile 18:23
+      horse    no (HAVE_HORSE False, ranch cutscene seen False); block: farm (map 82) x 0.0 z 0.0, grown 0, age 0, flags 0x0000
+      family   married True, baby False, wife 4; life events ['MARRIED', 16, 62]
+      [PASS] weather  want rain     got rain
+      [PASS] horse    want no       got no
+      [PASS] married  want yes      got yes
+      [PASS] wife     want karen    got karen
+      [PASS] baby     want no       got no
+      [PASS] dog      want beach    got beach
+      [PASS] tile     want 18:23    got 18:23
+      [PASS] rod      want yes      got yes
+      [PASS] season   want spring   got spring
+      [PASS] day      want 9        got 9
+      [PASS] checksum want valid    got valid
+
+==> 3/7 lab health + each save's reference route from power-on (twice)
+[PASS] lcg        index(0x705EE83C)=1716
+[PASS] save       Harvest_Moon_64_USA3.SaveRAM: bizhawk-saveram, diary slots [0]
+[PASS] boot       load anchor VI 922 idx 503; control anchor VI 1184 idx 650
+[PASS] roundtrip  900 VIs
+[PASS] dogmodel   100 decisions explained, 1 whistle resets, 0 unexplained
+[PASS] poke       diary+4 (idx 505) vs load_d0+poke over 1800 VIs
+[SKIP] visual     xvfb-run not installed
+[SKIP] qs2        states/qs2.st missing (convert QuickSave2(1) with tools/convert_bizhawk_state.py)
+[PASS] route      fishing_ready VI 2668 draw 1312
+[PASS] ladder     cast 130 whistle [] from rung 120: bite 1148 vs 1148; cast 200 whistle [140] from rung 120: bite 1462 vs 1462
+
+SMOKE: ALL PASSED
+  married-lineup2-sunny-237e3d1d:
+  save 237e3d1dfe5d: spring 9 year 1, weather 1, rod in hand True; dog at the beach load: beach x -197.27 z 222.24
+  reference route: {"house": [1036, 499], "farm": [1448, 704], "beach": [2264, 1073], "wake": [213, 1180], "ready": [339, -92.0, 194.0, 1259]}
+  equal to Claude's sandbox record of this save (x86 build): OK
+  married-lineup2-rainy-62991249:
+  save 629912496c62: spring 9 year 1, weather 2, rod in hand True; dog at the beach load: beach x -197.27 z 222.24
+  reference route: {"house": [1036, 499], "farm": [1448, 704], "beach": [2264, 7429], "wake": [213, 9382], "ready": [339, -92.0, 194.0, 10593]}
+  equal to Claude's sandbox record of this save (x86 build): OK
+
+==> 4/7 [1: married-lineup2-rainy-62991249] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY (Wed 22:11)
+  done before
+
+==> 5/7 [1: married-lineup2-rainy-62991249] dog-watch phase 3: Lucky Timer cast tables (every game frame 0.1-40 s, every bite to 90 s) (Wed 22:11)
+  done before
+  zip      /Users/thomaswollin/Documents/hm64/runs/hm64-dogwatch-married-lineup2-rainy-62991249.zip
+
+==> 6/7 [1: married-lineup2-rainy-62991249] dog after the cast: 3 windows (Wed 22:11)
+
+==> married-rainy-d170c120: casts to 120 s, everything to 170 s after READY, blocks 4-5  (Wed 22:11)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-lineup2-rainy-62991249  save /work/data/saves_dogspots/married-lineup2-rainy-62991249.SaveRAM  workers 9  dog at [-197.27, 222.24]
+  followed to 10198 VIs after READY
+[FD1 lines] 99 jobs, 0 already done, 99 to run
+[FD1 lines] 5/99  132.2 jobs/min  eta 1 min
+[FD1 lines] 10/99  142.9 jobs/min  eta 1 min
+[FD1 lines] 15/99  208.4 jobs/min  eta 0 min
+[FD1 lines] 20/99  192.2 jobs/min  eta 0 min
+[FD1 lines] 25/99  235.5 jobs/min  eta 0 min
+[FD1 lines] 30/99  218.2 jobs/min  eta 0 min
+[FD1 lines] 35/99  248.6 jobs/min  eta 0 min
+[FD1 lines] 40/99  232.3 jobs/min  eta 0 min
+[FD1 lines] 45/99  253.9 jobs/min  eta 0 min
+[FD1 lines] 50/99  242.0 jobs/min  eta 0 min
+[FD1 lines] 55/99  231.3 jobs/min  eta 0 min
+[FD1 lines] 60/99  243.5 jobs/min  eta 0 min
+[FD1 lines] 65/99  236.2 jobs/min  eta 0 min
+[FD1 lines] 70/99  249.4 jobs/min  eta 0 min
+[FD1 lines] 75/99  241.2 jobs/min  eta 0 min
+[FD1 lines] 80/99  253.4 jobs/min  eta 0 min
+[FD1 lines] 85/99  246.2 jobs/min  eta 0 min
+[FD1 lines] 90/99  255.2 jobs/min  eta 0 min
+[FD1 lines] 95/99  250.6 jobs/min  eta 0 min
+[FD1 lines] 99/99  258.7 jobs/min  eta 0 min
+[FD1] 99 of 99 lines ran as planned; hashes against the dog-watch run: 98505 equal, 0 different; ended: [('limit', 10198)]
+lines followed to 10198 VIs (170 s) after READY; 51 heavy lines (90.4% of the route weight), 48 others; 174651 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 51):  45356 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 48):  24014 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 51):  36004 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 48):  18305 casts
+  block  4: casts  80.2-120.3 s after READY, heavy lines ( 51):  33267 casts
+  block  5: casts  80.2-120.3 s after READY, other lines ( 48):  17705 casts
+
+==> married-rainy-d170c120 block 5 of 5  (Wed 22:12)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..7198 VIs after READY on the other lines (48), 17705 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 5] 1143 jobs, 0 already done, 1143 to run
+[FD block 5] shared run: machine scotts-m4, order down, 1143 jobs in 50 blocks; other machines: none seen yet
+[FD block 5] block 50/50 (bottom up): 16 jobs
+[FD block 5] block 50 done; 16 jobs here in 2 min (7.1 jobs/min)
+[FD block 5] block 49/50 (bottom up): 23 jobs
+[FD block 5] block 49 done; 39 jobs here in 5 min (7.5 jobs/min)
+[FD block 5] block 48/50 (bottom up): 23 jobs
+[FD block 5] block 48 done; 62 jobs here in 7 min (8.3 jobs/min)
+[FD block 5] block 47/50 (bottom up): 23 jobs
+[FD block 5] block 47 done; 85 jobs here in 10 min (8.3 jobs/min)
+[FD block 5] block 46/50 (bottom up): 23 jobs
+[FD block 5] block 46 done; 108 jobs here in 13 min (8.2 jobs/min)
+[FD block 5] block 45/50 (bottom up): 23 jobs
+[FD block 5] block 45 done; 131 jobs here in 15 min (8.9 jobs/min)
+[FD block 5] block 44/50 (bottom up): 23 jobs
+[FD block 5] block 44 done; 154 jobs here in 17 min (9.2 jobs/min)
+[FD block 5] block 43/50 (bottom up): 23 jobs
+[FD block 5] block 43 done; 177 jobs here in 20 min (9.0 jobs/min)
+[FD block 5] block 42/50 (bottom up): 23 jobs
+[FD block 5] block 42 done; 200 jobs here in 23 min (8.8 jobs/min)
+[FD block 5] block 41/50 (bottom up): 23 jobs
+[FD block 5] block 41 done; 223 jobs here in 25 min (8.8 jobs/min)
+[FD block 5] block 40/50 (bottom up): 23 jobs
+[FD block 5] block 40 done; 246 jobs here in 28 min (8.7 jobs/min)
+[FD block 5] block 39/50 (bottom up): 23 jobs
+[FD block 5] block 39 done; 269 jobs here in 30 min (9.0 jobs/min)
+[FD block 5] block 38/50 (bottom up): 23 jobs
+[FD block 5] block 38 done; 292 jobs here in 31 min (9.4 jobs/min)
+[FD block 5] block 37/50 (bottom up): 23 jobs
+[FD block 5] block 37 done; 315 jobs here in 32 min (9.8 jobs/min)
+[FD block 5] block 36/50 (bottom up): 23 jobs
+[FD block 5] block 36 done; 338 jobs here in 35 min (9.8 jobs/min)
+[FD block 5] block 35/50 (bottom up): 23 jobs
+[FD block 5] block 35 done; 361 jobs here in 38 min (9.6 jobs/min)
+[FD block 5] block 34/50 (bottom up): 23 jobs
+[FD block 5] block 34 done; 384 jobs here in 39 min (9.8 jobs/min)
+[FD block 5] block 33/50 (bottom up): 23 jobs
+[FD block 5] block 33 done; 407 jobs here in 40 min (10.1 jobs/min)
+[FD block 5] block 32/50 (bottom up): 23 jobs
+[FD block 5] block 32 done; 430 jobs here in 42 min (10.2 jobs/min)
+[FD block 5] block 31/50 (bottom up): 23 jobs
+[FD block 5] block 31 done; 453 jobs here in 44 min (10.2 jobs/min)
+[FD block 5] block 30/50 (bottom up): 23 jobs
+[FD block 5] block 30 done; 476 jobs here in 47 min (10.1 jobs/min)
+[FD block 5] block 29/50 (bottom up): 23 jobs
+[FD block 5] block 29 done; 499 jobs here in 50 min (10.1 jobs/min)
+[FD block 5] block 28/50 (bottom up): 23 jobs
+[FD block 5] block 28 done; 522 jobs here in 52 min (10.0 jobs/min)
+[FD block 5] block 27/50 (bottom up): 23 jobs
+[FD block 5] block 27 done; 545 jobs here in 55 min (10.0 jobs/min)
+[FD block 5] block 26/50 (bottom up): 23 jobs
+[FD block 5] block 26 done; 568 jobs here in 56 min (10.1 jobs/min)
+[FD block 5] block 25/50 (bottom up): 23 jobs
+[FD block 5] block 25 done; 591 jobs here in 58 min (10.1 jobs/min)
+[FD block 5] block 24/50 (bottom up): 23 jobs
+[FD block 5] block 24 done; 614 jobs here in 61 min (10.0 jobs/min)
+[FD block 5] block 23/50 (bottom up): 23 jobs
+[FD block 5] block 23 done; 637 jobs here in 64 min (9.9 jobs/min)
+[FD block 5] block 22/50 (bottom up): 23 jobs
+[FD block 5] block 22 done; 660 jobs here in 67 min (9.8 jobs/min)
+[FD block 5] block 21/50 (bottom up): 23 jobs
+[FD block 5] block 21 done; 683 jobs here in 70 min (9.8 jobs/min)
+[FD block 5] block 20/50 (bottom up): 23 jobs
+[FD block 5] block 20 done; 706 jobs here in 73 min (9.7 jobs/min)
+[FD block 5] block 19/50 (bottom up): 23 jobs
+[FD block 5] block 19 done; 729 jobs here in 75 min (9.7 jobs/min)
+[FD block 5] block 18/50 (bottom up): 23 jobs
+[FD block 5] block 18 done; 752 jobs here in 76 min (10.0 jobs/min)
+[FD block 5] block 17/50 (bottom up): 23 jobs
+[FD block 5] block 17 done; 775 jobs here in 77 min (10.1 jobs/min)
+[FD block 5] block 16/50 (bottom up): 23 jobs
+[FD block 5] block 16 done; 798 jobs here in 78 min (10.2 jobs/min)
+[FD block 5] block 15/50 (bottom up): 23 jobs
+[FD block 5] block 15 done; 821 jobs here in 81 min (10.1 jobs/min)
+[FD block 5] block 14/50 (bottom up): 23 jobs
+[FD block 5] block 14 done; 844 jobs here in 83 min (10.1 jobs/min)
+[FD block 5] block 13/50 (bottom up): 23 jobs
+[FD block 5] block 13 done; 867 jobs here in 85 min (10.2 jobs/min)
+[FD block 5] block 12/50 (bottom up): 23 jobs
+[FD block 5] block 12 done; 890 jobs here in 86 min (10.3 jobs/min)
+[FD block 5] block 11/50 (bottom up): 23 jobs
+[FD block 5] block 11 done; 913 jobs here in 88 min (10.4 jobs/min)
+[FD block 5] block 10/50 (bottom up): 23 jobs
+[FD block 5] block 10 done; 936 jobs here in 89 min (10.5 jobs/min)
+[FD block 5] block 9/50 (bottom up): 23 jobs
+[FD block 5] block 9 done; 959 jobs here in 92 min (10.4 jobs/min)
+[FD block 5] block 8/50 (bottom up): 23 jobs
+[FD block 5] block 8 done; 982 jobs here in 95 min (10.3 jobs/min)
+[FD block 5] block 7/50 (bottom up): 23 jobs
+[FD block 5] block 7 done; 1005 jobs here in 98 min (10.3 jobs/min)
+[FD block 5] block 6/50 (bottom up): 23 jobs
+[FD block 5] block 6 done; 1028 jobs here in 101 min (10.2 jobs/min)
+[FD block 5] block 5/50 (bottom up): 23 jobs
+[FD block 5] block 5 done; 1051 jobs here in 102 min (10.3 jobs/min)
+[FD block 5] block 4/50 (bottom up): 23 jobs
+[FD block 5] block 4 done; 1074 jobs here in 104 min (10.3 jobs/min)
+[FD block 5] block 3/50 (bottom up): 23 jobs
+[FD block 5] block 3 done; 1097 jobs here in 107 min (10.2 jobs/min)
+[FD block 5] block 2/50 (bottom up): 23 jobs
+[FD block 5] block 2 done; 1120 jobs here in 110 min (10.2 jobs/min)
+[FD block 5] block 1/50 (bottom up): 23 jobs
+[FD block 5] block 1 done; 1143 jobs here in 111 min (10.3 jobs/min)
+[FD block 5] every block is done (1143 jobs run here this time)
+  block 5 done in 111 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 5 | 80.2 – 120.3 · other | 48 | 17705 | 17705 | 0 | 16697 / 0 / 1008 | 17705 / 0 / 0 | 4.6 | 815 (4.6%) |
+
+  this Mac's part of block 5: /Users/thomaswollin/Documents/hm64/runs/hm64-fullday-married-rainy-d170c120-b05@scotts-m4.zip
+
+==> married-rainy-d170c120 block 4 of 5  (Thu 00:03)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..7198 VIs after READY on the heavy lines (51), 33267 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 4] 1734 jobs, 0 already done, 1734 to run
+[FD block 4] shared run: machine scotts-m4, order down, 1734 jobs in 50 blocks; other machines: thomass-mac-mini
+[FD block 4] block 50/50 (bottom up): 19 jobs
+[FD block 4] block 50 done; 19 jobs here in 1 min (19.3 jobs/min)
+[FD block 4] block 49/50 (bottom up): 35 jobs
+[FD block 4] block 49 done; 54 jobs here in 4 min (12.9 jobs/min)
+[FD block 4] every block is done (54 jobs run here this time)
+  block 4 done in 4 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 51 | 33267 | 719 | 0 | 656 / 0 / 63 | 719 / 0 / 0 | 4.0 | 1 (0.1%) |
+| 5 | 80.2 – 120.3 · other | 48 | 17705 | 17705 | 0 | 16697 / 0 / 1008 | 17705 / 0 / 0 | 4.6 | 815 (4.6%) |
+
+  this Mac's part of block 4: /Users/thomaswollin/Documents/hm64/runs/hm64-fullday-married-rainy-d170c120-b04@scotts-m4.zip
+
+==> married-rainy-d140c90: casts to 90 s, everything to 140 s after READY, blocks 2-5  (Thu 00:07)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-lineup2-rainy-62991249  save /work/data/saves_dogspots/married-lineup2-rainy-62991249.SaveRAM  workers 9  dog at [-197.27, 222.24]
+  followed to 8398 VIs after READY
+[FD1 lines] 99 jobs, 0 already done, 99 to run
+[FD1 lines] 5/99  158.2 jobs/min  eta 1 min
+[FD1 lines] 10/99  174.7 jobs/min  eta 1 min
+[FD1 lines] 15/99  250.6 jobs/min  eta 0 min
+[FD1 lines] 20/99  233.8 jobs/min  eta 0 min
+[FD1 lines] 25/99  282.7 jobs/min  eta 0 min
+[FD1 lines] 30/99  263.8 jobs/min  eta 0 min
+[FD1 lines] 35/99  300.4 jobs/min  eta 0 min
+[FD1 lines] 40/99  278.5 jobs/min  eta 0 min
+[FD1 lines] 45/99  303.0 jobs/min  eta 0 min
+[FD1 lines] 50/99  290.7 jobs/min  eta 0 min
+[FD1 lines] 55/99  274.9 jobs/min  eta 0 min
+[FD1 lines] 60/99  293.5 jobs/min  eta 0 min
+[FD1 lines] 65/99  279.9 jobs/min  eta 0 min
+[FD1 lines] 70/99  298.8 jobs/min  eta 0 min
+[FD1 lines] 75/99  288.7 jobs/min  eta 0 min
+[FD1 lines] 80/99  302.6 jobs/min  eta 0 min
+[FD1 lines] 85/99  294.4 jobs/min  eta 0 min
+[FD1 lines] 90/99  303.4 jobs/min  eta 0 min
+[FD1 lines] 95/99  299.8 jobs/min  eta 0 min
+[FD1 lines] 99/99  308.0 jobs/min  eta 0 min
+[FD1] 99 of 99 lines ran as planned; hashes against the dog-watch run: 98505 equal, 0 different; ended: [('limit', 8398)]
+lines followed to 8398 VIs (140 s) after READY; 51 heavy lines (90.4% of the route weight), 48 others; 136296 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 51):  45356 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 48):  24014 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 51):  36004 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 48):  18305 casts
+  block  4: casts  80.2- 90.3 s after READY, heavy lines ( 41):   8368 casts
+  block  5: casts  80.2- 90.3 s after READY, other lines ( 25):   4249 casts
+
+==> married-rainy-d140c90 block 5 of 5  (Thu 00:08)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..5398 VIs after READY on the other lines (25), 4249 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 5] 193 jobs, 0 already done, 193 to run
+[FD block 5] shared run: machine scotts-m4, order down, 193 jobs in 49 blocks; other machines: thomass-mac-mini
+[FD block 5] every block is done (0 jobs run here this time)
+  block 5 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-rainy-d140c90 block 4 of 5  (Thu 00:08)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..5398 VIs after READY on the heavy lines (41), 8368 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 4] 371 jobs, 0 already done, 371 to run
+[FD block 4] shared run: machine scotts-m4, order down, 371 jobs in 47 blocks; other machines: thomass-mac-mini
+[FD block 4] every block is done (0 jobs run here this time)
+  block 4 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-rainy-d140c90 block 3 of 5  (Thu 00:08)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 3: casts 2400..4798 VIs after READY on the other lines (48), 18305 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 3] 1102 jobs, 0 already done, 1102 to run
+[FD block 3] shared run: machine scotts-m4, order down, 1102 jobs in 48 blocks; other machines: thomass-mac-mini
+[FD block 3] every block is done (0 jobs run here this time)
+  block 3 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-rainy-d140c90 block 2 of 5  (Thu 00:08)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 2: casts 2400..4798 VIs after READY on the heavy lines (51), 36004 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 2] 1812 jobs, 0 already done, 1812 to run
+[FD block 2] shared run: machine scotts-m4, order down, 1812 jobs in 49 blocks; other machines: thomass-mac-mini
+[FD block 2] every block is done (0 jobs run here this time)
+  block 2 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-rainy-d90: casts to 40 s, everything to 90 s after READY, blocks 0-1  (Thu 00:08)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-lineup2-rainy-62991249  save /work/data/saves_dogspots/married-lineup2-rainy-62991249.SaveRAM  workers 9  dog at [-197.27, 222.24]
+  followed to 5398 VIs after READY
+[FD1 lines] 99 jobs, 0 already done, 99 to run
+[FD1 lines] 5/99  221.6 jobs/min  eta 0 min
+[FD1 lines] 10/99  250.9 jobs/min  eta 0 min
+[FD1 lines] 15/99  364.7 jobs/min  eta 0 min
+[FD1 lines] 20/99  342.2 jobs/min  eta 0 min
+[FD1 lines] 25/99  402.1 jobs/min  eta 0 min
+[FD1 lines] 30/99  389.8 jobs/min  eta 0 min
+[FD1 lines] 35/99  425.7 jobs/min  eta 0 min
+[FD1 lines] 40/99  414.6 jobs/min  eta 0 min
+[FD1 lines] 45/99  432.3 jobs/min  eta 0 min
+[FD1 lines] 50/99  431.4 jobs/min  eta 0 min
+[FD1 lines] 55/99  407.7 jobs/min  eta 0 min
+[FD1 lines] 60/99  425.5 jobs/min  eta 0 min
+[FD1 lines] 65/99  421.0 jobs/min  eta 0 min
+[FD1 lines] 70/99  437.3 jobs/min  eta 0 min
+[FD1 lines] 75/99  431.8 jobs/min  eta 0 min
+[FD1 lines] 80/99  445.4 jobs/min  eta 0 min
+[FD1 lines] 85/99  438.7 jobs/min  eta 0 min
+[FD1 lines] 90/99  446.3 jobs/min  eta 0 min
+[FD1 lines] 95/99  444.7 jobs/min  eta 0 min
+[FD1 lines] 99/99  455.4 jobs/min  eta 0 min
+[FD1] 99 of 99 lines ran as planned; hashes against the dog-watch run: 98505 equal, 0 different; ended: [('limit', 5398)]
+lines followed to 5398 VIs (90 s) after READY; 51 heavy lines (90.4% of the route weight), 48 others; 69370 casts in 2 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 51):  45356 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 48):  24014 casts
+
+==> married-rainy-d90 block 1 of 1  (Thu 00:08)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 1: casts 6..2398 VIs after READY on the other lines (48), 24014 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 1] 1749 jobs, 0 already done, 1749 to run
+[FD block 1] shared run: machine scotts-m4, order down, 1749 jobs in 50 blocks; other machines: thomass-mac-mini
+[FD block 1] every block is done (0 jobs run here this time)
+  block 1 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-rainy-d90 block 0 of 1  (Thu 00:08)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 0: casts 6..2398 VIs after READY on the heavy lines (51), 45356 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 0] 2291 jobs, 0 already done, 2291 to run
+[FD block 0] shared run: machine scotts-m4, order down, 2291 jobs in 50 blocks; other machines: thomass-mac-mini
+[FD block 0] every block is done (0 jobs run here this time)
+  block 0 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> 7/7 [1: married-lineup2-rainy-62991249] the zips to send
+  married-lineup2-rainy-62991249 done: its zips are in /Users/thomaswollin/Documents/hm64/runs/hm64-married120-20261125-220532
+
+==> 4/7 [2: married-lineup2-sunny-237e3d1d] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY (Thu 00:08)
+  done before
+
+==> 5/7 [2: married-lineup2-sunny-237e3d1d] dog-watch phase 3: Lucky Timer cast tables (every game frame 0.1-40 s, every bite to 90 s) (Thu 00:08)
+  done before
+  zip      /Users/thomaswollin/Documents/hm64/runs/hm64-dogwatch-married-lineup2-sunny-237e3d1d.zip
+
+==> 6/7 [2: married-lineup2-sunny-237e3d1d] dog after the cast: 3 windows (Thu 00:08)
+
+==> married-sunny-d170c120: casts to 120 s, everything to 170 s after READY, blocks 4-5  (Thu 00:08)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-lineup2-sunny-237e3d1d  save /work/data/saves_dogspots/married-lineup2-sunny-237e3d1d.SaveRAM  workers 9  dog at [-197.27, 222.24]
+  followed to 10198 VIs after READY
+[FD1 lines] 120 jobs, 0 already done, 120 to run
+[FD1 lines] 5/120  113.8 jobs/min  eta 1 min
+[FD1 lines] 10/120  136.1 jobs/min  eta 1 min
+[FD1 lines] 15/120  178.1 jobs/min  eta 1 min
+[FD1 lines] 20/120  181.1 jobs/min  eta 1 min
+[FD1 lines] 25/120  199.9 jobs/min  eta 0 min
+[FD1 lines] 30/120  185.8 jobs/min  eta 0 min
+[FD1 lines] 35/120  209.9 jobs/min  eta 0 min
+[FD1 lines] 40/120  194.6 jobs/min  eta 0 min
+[FD1 lines] 45/120  216.4 jobs/min  eta 0 min
+[FD1 lines] 50/120  203.3 jobs/min  eta 0 min
+[FD1 lines] 55/120  213.0 jobs/min  eta 0 min
+[FD1 lines] 60/120  206.2 jobs/min  eta 0 min
+[FD1 lines] 65/120  215.0 jobs/min  eta 0 min
+[FD1 lines] 70/120  210.1 jobs/min  eta 0 min
+[FD1 lines] 75/120  210.6 jobs/min  eta 0 min
+[FD1 lines] 80/120  213.2 jobs/min  eta 0 min
+[FD1 lines] 85/120  208.0 jobs/min  eta 0 min
+[FD1 lines] 90/120  216.3 jobs/min  eta 0 min
+[FD1 lines] 95/120  210.5 jobs/min  eta 0 min
+[FD1 lines] 100/120  217.4 jobs/min  eta 0 min
+[FD1 lines] 105/120  212.8 jobs/min  eta 0 min
+[FD1 lines] 110/120  218.6 jobs/min  eta 0 min
+[FD1 lines] 115/120  215.4 jobs/min  eta 0 min
+[FD1 lines] 120/120  221.9 jobs/min  eta 0 min
+  the dog had already left its tile at READY on 1 lines (kept): [('eeb412a8', [-222.1, 219.4])]
+[FD1] 120 of 120 lines ran as planned; hashes against the dog-watch run: 119400 equal, 0 different; ended: [('limit', 10198)]
+lines followed to 10198 VIs (170 s) after READY; 30 heavy lines (90.1% of the route weight), 90 others; 75833 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 30):  17378 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 90):  21683 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 30):   8953 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 90):  11184 casts
+  block  4: casts  80.2-120.3 s after READY, heavy lines ( 30):   6807 casts
+  block  5: casts  80.2-120.3 s after READY, other lines ( 90):   9828 casts
+
+==> married-sunny-d170c120 block 5 of 5  (Thu 00:09)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..7198 VIs after READY on the other lines (90), 9828 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 5] 782 jobs, 0 already done, 782 to run
+[FD block 5] shared run: machine scotts-m4, order down, 782 jobs in 49 blocks; other machines: thomass-mac-mini
+[FD block 5] every block is done (0 jobs run here this time)
+  block 5 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-sunny-d170c120 block 4 of 5  (Thu 00:09)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..7198 VIs after READY on the heavy lines (30), 6807 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 4] 689 jobs, 0 already done, 689 to run
+[FD block 4] shared run: machine scotts-m4, order down, 689 jobs in 50 blocks; other machines: thomass-mac-mini
+[FD block 4] every block is done (0 jobs run here this time)
+  block 4 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-sunny-d140c90: casts to 90 s, everything to 140 s after READY, blocks 2-5  (Thu 00:09)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-lineup2-sunny-237e3d1d  save /work/data/saves_dogspots/married-lineup2-sunny-237e3d1d.SaveRAM  workers 9  dog at [-197.27, 222.24]
+  followed to 8398 VIs after READY
+[FD1 lines] 120 jobs, 0 already done, 120 to run
+[FD1 lines] 5/120  133.6 jobs/min  eta 1 min
+[FD1 lines] 10/120  168.3 jobs/min  eta 1 min
+[FD1 lines] 15/120  208.8 jobs/min  eta 1 min
+[FD1 lines] 20/120  216.9 jobs/min  eta 0 min
+[FD1 lines] 25/120  236.0 jobs/min  eta 0 min
+[FD1 lines] 30/120  219.1 jobs/min  eta 0 min
+[FD1 lines] 35/120  250.0 jobs/min  eta 0 min
+[FD1 lines] 40/120  232.6 jobs/min  eta 0 min
+[FD1 lines] 45/120  253.5 jobs/min  eta 0 min
+[FD1 lines] 50/120  241.2 jobs/min  eta 0 min
+[FD1 lines] 55/120  259.0 jobs/min  eta 0 min
+[FD1 lines] 60/120  245.1 jobs/min  eta 0 min
+[FD1 lines] 65/120  252.2 jobs/min  eta 0 min
+[FD1 lines] 70/120  250.9 jobs/min  eta 0 min
+[FD1 lines] 75/120  247.8 jobs/min  eta 0 min
+[FD1 lines] 80/120  255.6 jobs/min  eta 0 min
+[FD1 lines] 85/120  250.7 jobs/min  eta 0 min
+[FD1 lines] 90/120  260.4 jobs/min  eta 0 min
+[FD1 lines] 95/120  254.7 jobs/min  eta 0 min
+[FD1 lines] 100/120  259.5 jobs/min  eta 0 min
+[FD1 lines] 105/120  256.9 jobs/min  eta 0 min
+[FD1 lines] 110/120  259.1 jobs/min  eta 0 min
+[FD1 lines] 115/120  258.6 jobs/min  eta 0 min
+[FD1 lines] 120/120  263.0 jobs/min  eta 0 min
+  the dog had already left its tile at READY on 1 lines (kept): [('eeb412a8', [-222.1, 219.4])]
+[FD1] 120 of 120 lines ran as planned; hashes against the dog-watch run: 119400 equal, 0 different; ended: [('limit', 8398)]
+lines followed to 8398 VIs (140 s) after READY; 30 heavy lines (90.1% of the route weight), 90 others; 62798 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 30):  17378 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 90):  21683 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 30):   8953 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 90):  11184 casts
+  block  4: casts  80.2- 90.3 s after READY, heavy lines ( 10):   1431 casts
+  block  5: casts  80.2- 90.3 s after READY, other lines ( 17):   2169 casts
+
+==> married-sunny-d140c90 block 5 of 5  (Thu 00:10)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..5398 VIs after READY on the other lines (17), 2169 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 5] 101 jobs, 0 already done, 101 to run
+[FD block 5] shared run: machine scotts-m4, order down, 101 jobs in 34 blocks; other machines: thomass-mac-mini
+[FD block 5] every block is done (0 jobs run here this time)
+  block 5 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-sunny-d140c90 block 4 of 5  (Thu 00:10)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..5398 VIs after READY on the heavy lines (10), 1431 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 4] 65 jobs, 0 already done, 65 to run
+[FD block 4] shared run: machine scotts-m4, order down, 65 jobs in 33 blocks; other machines: thomass-mac-mini
+[FD block 4] every block is done (0 jobs run here this time)
+  block 4 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-sunny-d140c90 block 3 of 5  (Thu 00:10)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 3: casts 2400..4798 VIs after READY on the other lines (90), 11184 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 3] 761 jobs, 0 already done, 761 to run
+[FD block 3] shared run: machine scotts-m4, order down, 761 jobs in 48 blocks; other machines: thomass-mac-mini
+[FD block 3] every block is done (0 jobs run here this time)
+  block 3 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-sunny-d140c90 block 2 of 5  (Thu 00:10)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 2: casts 2400..4798 VIs after READY on the heavy lines (30), 8953 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 2] 536 jobs, 0 already done, 536 to run
+[FD block 2] shared run: machine scotts-m4, order down, 536 jobs in 49 blocks; other machines: thomass-mac-mini
+[FD block 2] every block is done (0 jobs run here this time)
+  block 2 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-sunny-d90: casts to 40 s, everything to 90 s after READY, blocks 0-1  (Thu 00:10)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-lineup2-sunny-237e3d1d  save /work/data/saves_dogspots/married-lineup2-sunny-237e3d1d.SaveRAM  workers 9  dog at [-197.27, 222.24]
+  followed to 5398 VIs after READY
+[FD1 lines] 120 jobs, 0 already done, 120 to run
+[FD1 lines] 5/120  197.1 jobs/min  eta 1 min
+[FD1 lines] 10/120  242.6 jobs/min  eta 0 min
+[FD1 lines] 15/120  317.9 jobs/min  eta 0 min
+[FD1 lines] 20/120  315.1 jobs/min  eta 0 min
+[FD1 lines] 25/120  358.8 jobs/min  eta 0 min
+[FD1 lines] 30/120  334.3 jobs/min  eta 0 min
+[FD1 lines] 35/120  371.5 jobs/min  eta 0 min
+[FD1 lines] 40/120  359.4 jobs/min  eta 0 min
+[FD1 lines] 45/120  376.6 jobs/min  eta 0 min
+[FD1 lines] 50/120  373.8 jobs/min  eta 0 min
+[FD1 lines] 55/120  377.7 jobs/min  eta 0 min
+[FD1 lines] 60/120  373.0 jobs/min  eta 0 min
+[FD1 lines] 65/120  381.8 jobs/min  eta 0 min
+[FD1 lines] 70/120  380.3 jobs/min  eta 0 min
+[FD1 lines] 75/120  375.2 jobs/min  eta 0 min
+[FD1 lines] 80/120  381.0 jobs/min  eta 0 min
+[FD1 lines] 85/120  376.9 jobs/min  eta 0 min
+[FD1 lines] 90/120  385.9 jobs/min  eta 0 min
+[FD1 lines] 95/120  382.4 jobs/min  eta 0 min
+[FD1 lines] 100/120  391.3 jobs/min  eta 0 min
+[FD1 lines] 105/120  379.3 jobs/min  eta 0 min
+[FD1 lines] 110/120  387.2 jobs/min  eta 0 min
+[FD1 lines] 115/120  382.0 jobs/min  eta 0 min
+[FD1 lines] 120/120  392.6 jobs/min  eta 0 min
+  the dog had already left its tile at READY on 1 lines (kept): [('eeb412a8', [-222.1, 219.4])]
+[FD1] 120 of 120 lines ran as planned; hashes against the dog-watch run: 119400 equal, 0 different; ended: [('limit', 5398)]
+lines followed to 5398 VIs (90 s) after READY; 30 heavy lines (90.1% of the route weight), 90 others; 39061 casts in 2 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 30):  17378 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 90):  21683 casts
+
+==> married-sunny-d90 block 1 of 1  (Thu 00:10)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 1: casts 6..2398 VIs after READY on the other lines (90), 21683 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 1] 2897 jobs, 0 already done, 2897 to run
+[FD block 1] shared run: machine scotts-m4, order down, 2897 jobs in 50 blocks; other machines: thomass-mac-mini
+[FD block 1] every block is done (0 jobs run here this time)
+  block 1 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> married-sunny-d90 block 0 of 1  (Thu 00:10)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 0: casts 6..2398 VIs after READY on the heavy lines (30), 17378 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 0] 1262 jobs, 0 already done, 1262 to run
+[FD block 0] shared run: machine scotts-m4, order down, 1262 jobs in 49 blocks; other machines: thomass-mac-mini
+[FD block 0] every block is done (0 jobs run here this time)
+  block 0 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> 7/7 [2: married-lineup2-sunny-237e3d1d] the zips to send
+  married-lineup2-sunny-237e3d1d done: its zips are in /Users/thomaswollin/Documents/hm64/runs/hm64-married120-20261125-220532
+
+------------------------------------------------------------------------------------------------
+ MARRIED TABLES DONE   [rainy sunny ]   (125 min in all)
+------------------------------------------------------------------------------------------------
+  married-lineup2-rainy-62991249:
+    # Dog-watch report: married-lineup2-rainy-62991249
+    
+    99 dog lines with traces (40 s after READY), 911 (line, READY offset) variants; route-weighted. Clock = the dock-end tap ±3 VI; logs from 1.0 s after READY; runner: changes >= 12 VI, reaction 10-25 VI, 15% missed. Odds: cast >= 2 s after the window, ±150 ms.
+    
+    ## What the dog does while you wait (after READY, route-weighted)
+    
+    - dog's tile on the visibility grid (it animates only then): 99% of the time
+    - visible changes per minute: 61; changes lasting >= 12 VI: 88%
+    - facing on screen (share of the wait): SW 40%, NE 17%, SE 13%, W 9%, NW 9%, E 7%, N 5%; animations readable (dog faces S / N / NE / E / SE): 43%
+    - the dog moves (units, max over the trace): median 0.0
+    - decision (actionState change) -> next visible change: median 0 VI (p10 0, p90 30); animation set -> displayed: median 0 VI
+    
+  married-lineup2-sunny-237e3d1d:
+    # Dog-watch report: married-lineup2-sunny-237e3d1d
+    
+    120 dog lines with traces (40 s after READY), 1392 (line, READY offset) variants; route-weighted. Clock = the dock-end tap ±3 VI; logs from 1.0 s after READY; runner: changes >= 12 VI, reaction 10-25 VI, 15% missed. Odds: cast >= 2 s after the window, ±150 ms.
+    
+    ## What the dog does while you wait (after READY, route-weighted)
+    
+    - dog's tile on the visibility grid (it animates only then): 100% of the time
+    - visible changes per minute: 59; changes lasting >= 12 VI: 90%
+    - facing on screen (share of the wait): SW 38%, SE 19%, E 14%, NE 13%, NW 9%, N 6%, W 1%; animations readable (dog faces S / N / NE / E / SE): 52%
+    - the dog moves (units, max over the trace): median 0.0
+    - decision (actionState change) -> next visible change: median 0 VI (p10 0, p90 30); animation set -> displayed: median 0 VI
+    
+
+  send these (no ROM / saves / savestates inside):
+    hm64-fullday-married-rainy-d140c90@scotts-m4.zip                4.2 MB
+    hm64-fullday-married-rainy-d170c120@scotts-m4.zip               7.2 MB
+    hm64-fullday-married-rainy-d90@scotts-m4.zip                    2.7 MB
+    hm64-fullday-married-sunny-d140c90@scotts-m4.zip                5.0 MB
+    hm64-fullday-married-sunny-d170c120@scotts-m4.zip               6.1 MB
+    hm64-fullday-married-sunny-d90@scotts-m4.zip                    3.3 MB
+    run-married120-20261125-220532.log                              0.0 MB
+  folder: /Users/thomaswollin/Documents/hm64/runs/hm64-married120-20261125-220532
+  [coord 00:11:12] ended
+  lab-data script 2026-11-25f installed in /Users/thomaswollin/Documents/hm64/tools
+
+==> lab data 1/5  is a lab run going? (lab-data script 2026-11-25f)
+  no lab run is going
+
+==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+  push access: the release SSH key (/Users/thomaswollin/.ssh/hm64_github_ed25519)
+  no local copy yet: fetching GitHub's lab-data into /Users/thomaswollin/Documents/hm64/lab-data
+
+==> lab data 3/5  looking for results in /Users/thomaswollin/Documents/hm64/runs and /Users/thomaswollin/Downloads (table: built in; newest copy of each file)
+  + married-sunny/hm64-dogwatch-married-lineup2-sunny-237e3d1d.zip (68 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-dogwatch-married-lineup2-sunny-237e3d1d.zip
+  + married-sunny/run-married120-20261125-220532.log (0 MB)   <- /Users/thomaswollin/Documents/hm64/runs/dogspots/run-married120-20261125-220532.log
+  + married-rainy/hm64-dogwatch-married-lineup2-rainy-62991249.zip (22 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-dogwatch-married-lineup2-rainy-62991249.zip
+  not on this Mac yet: married-rainy/hm64-fullday-married-rainy-d90.zip
+  not on this Mac yet: married-rainy/hm64-fullday-married-rainy-d140c90.zip
+  not on this Mac yet: married-rainy/hm64-fullday-married-rainy-d170c120.zip
+  + married-sunny/hm64-fullday-married-sunny-d90@scotts-m4.zip (3 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-married120-20261125-220532/hm64-fullday-married-sunny-d90@scotts-m4.zip
+  + married-sunny/hm64-fullday-married-sunny-d140c90@scotts-m4.zip (5 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-married120-20261125-220532/hm64-fullday-married-sunny-d140c90@scotts-m4.zip
+  + married-sunny/hm64-fullday-married-sunny-d170c120@scotts-m4.zip (6 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-married120-20261125-220532/hm64-fullday-married-sunny-d170c120@scotts-m4.zip
+  + married-rainy/hm64-fullday-married-rainy-d90@scotts-m4.zip (2 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-married120-20261125-220532/hm64-fullday-married-rainy-d90@scotts-m4.zip
+  + married-rainy/hm64-fullday-married-rainy-d140c90@scotts-m4.zip (4 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-married120-20261125-220532/hm64-fullday-married-rainy-d140c90@scotts-m4.zip
+  + married-rainy/hm64-fullday-married-rainy-d170c120@scotts-m4.zip (7 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-married120-20261125-220532/hm64-fullday-married-rainy-d170c120@scotts-m4.zip
+  9 new or changed, 0 already up to date
+  result zips in runs/ that are not in the table (NOT uploaded; tell Claude if they should be): 8
+    hm64-fullday-married-rainy-d140c90-summary.zip
+    hm64-fullday-married-rainy-d170c120-b04@scotts-m4.zip
+    hm64-fullday-married-rainy-d170c120-b05@scotts-m4.zip
+    hm64-fullday-married-rainy-d170c120-summary.zip
+    hm64-fullday-married-rainy-d90-summary.zip
+    hm64-fullday-married-sunny-d140c90-summary.zip
+    hm64-fullday-married-sunny-d170c120-summary.zip
+    hm64-fullday-married-sunny-d90-summary.zip
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  48 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |  11 +-
+ README.md                                          |   6 +-
+ ...m64-dogwatch-married-lineup2-rainy-62991249.zip | Bin 23069653 -> 23069653 bytes
+ ...m64-fullday-married-rainy-d140c90@scotts-m4.zip | Bin 0 -> 4361233 bytes
+ ...64-fullday-married-rainy-d170c120@scotts-m4.zip | Bin 0 -> 7532822 bytes
+ .../hm64-fullday-married-rainy-d90@scotts-m4.zip   | Bin 0 -> 2814960 bytes
+ ...m64-dogwatch-married-lineup2-sunny-237e3d1d.zip | Bin 71868036 -> 71868036 bytes
+ ...m64-fullday-married-sunny-d140c90@scotts-m4.zip | Bin 0 -> 5279303 bytes
+ ...64-fullday-married-sunny-d170c120@scotts-m4.zip | Bin 0 -> 6397657 bytes
+ .../hm64-fullday-married-sunny-d90@scotts-m4.zip   | Bin 0 -> 3410086 bytes
+ married-sunny/run-married120-20261125-220532.log   | 625 +++++++++++++++++++++
+ 11 files changed, 637 insertions(+), 5 deletions(-)
+  committed 9bf4139 (119 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+ ! [rejected]        lab-data -> lab-data (fetch first)
+error: failed to push some refs to 'github.com:Nillows/HM64-RNG-Manipulations.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+  push failed, trying again in 5 s
+To github.com:Nillows/HM64-RNG-Manipulations.git
+ ! [rejected]        lab-data -> lab-data (fetch first)
+error: failed to push some refs to 'github.com:Nillows/HM64-RNG-Manipulations.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+  push failed, trying again in 5 s
+To github.com:Nillows/HM64-RNG-Manipulations.git
+ ! [rejected]        lab-data -> lab-data (fetch first)
+error: failed to push some refs to 'github.com:Nillows/HM64-RNG-Manipulations.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+STOP (lab data): git push failed. The commit is safe in /Users/thomaswollin/Documents/hm64/lab-data; run the same command again to push it.
+  warning: the results were NOT uploaded to the lab-data branch (see above). Try: bash /Users/thomaswollin/Documents/hm64/tools/hm64_labdata.sh </dev/null
