@@ -1,0 +1,7 @@
+hm64-powernut-tool_v32-26_github-pages_2026-11-26.zip is 93 MB: over 90 MB, so it is stored here in parts (GitHub refuses files over 100 MB).
+To get the zip back, in this folder:   cat hm64-powernut-tool_v32-26_github-pages_2026-11-26.zip.part-* > hm64-powernut-tool_v32-26_github-pages_2026-11-26.zip
+Then check it:                         shasum -a 256 hm64-powernut-tool_v32-26_github-pages_2026-11-26.zip
+sha256 of the whole zip: 3798c3e6d2ec96f2b3cecbde7cb53abfefd3a4b327da299615ca5c42e9f992ad
+parts:
+  hm64-powernut-tool_v32-26_github-pages_2026-11-26.zip.part-aa  94371840 bytes  0931b15e378a1b77a084f5e2e8c4d708dd9682ff98dd03814f39f5ece51639e6
+  hm64-powernut-tool_v32-26_github-pages_2026-11-26.zip.part-ab  4152254 bytes  6f7baf30b0cc35faa7149b03e97927d763f3ab89f071bf8d5ecbdc8874a610df
