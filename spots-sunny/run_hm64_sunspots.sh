@@ -31,6 +31,10 @@ WORKERS=${2:-}
 PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin:/usr/local/bin:/opt/homebrew/bin"
 export PATH
 ROM_SHA=15c570120bfaa97b4580762f5ee5939a56ba054e696925ea81ccfa55a022d2a6
+# 2026-11-26b: the container and its platform come from the pool script (Macs: the native ARM image, as before; a
+# Linux x86-64 machine: hm64-lab:amd64, the x86 bundle image built there). Unset = the Macs' values.
+IMAGE=${HM64_LAB_IMAGE:-hm64-lab:arm64}
+PLATFORM=${HM64_LAB_PLATFORM:-linux/arm64}
 SHA_nohorse=52cfd712095494d3217fdc032f88439216abfb6b6f2e55e0fb14e4c6d0e31a84
 SHA_horse=b0f2a28471fd995157fb6877eb66775655233998c9c3a2b12e5e0bdfa56b25aa
 LABEL_nohorse=beach-lineup2-52cfd712
@@ -69,7 +73,7 @@ fi
 [ -d "$LAB" ] || die "no lab folder $LAB - this run uses the work folder of the lineup2 runs"
 [ -f "$LAB/tools/zigzag_campaign.py" ] && [ -f "$LAB/experiments/zigzag_jobs.py" ] || die "$LAB has no dog-watch lab code"
 grep -q '^ZZ_CODE = "zigzag-4f' "$LAB/tools/zigzag_campaign.py" || die "the lab code in $LAB is not zigzag-4f (the code of the dog-watch runs)"
-docker image inspect hm64-lab:arm64 >/dev/null 2>&1 || die "the image hm64-lab:arm64 is not on this Mac"
+docker image inspect "$IMAGE" >/dev/null 2>&1 || die "the image $IMAGE is not on this machine"
 [ -f "$LAB/data/rom/Harvest_Moon_64_USA.z64" ] || die "no ROM in $LAB/data/rom"
 [ "$(sha "$LAB/data/rom/Harvest_Moon_64_USA.z64")" = "$ROM_SHA" ] || die "$LAB/data/rom/Harvest_Moon_64_USA.z64 is not the NYWE rev00 ROM (sha256)"
 
@@ -94,7 +98,7 @@ STAMP=$(date +%Y%m%d-%H%M%S)
 LOG="$WORK/run-sunspots-$STAMP.log"
 exec > >(tee -a "$LOG") 2>&1
 T_ALL=$(date +%s)
-say "pier-spot check on the SUNNY files (the fast check = the gate, then the casts that can differ), SHARED: this Mac = $MACHINE, direction $ORDER; saves [$NAMES], work folder $LAB (native ARM image)  $(date '+%a %H:%M')"
+say "pier-spot check on the SUNNY files (the fast check = the gate, then the casts that can differ), SHARED: this Mac = $MACHINE, direction $ORDER; saves [$NAMES], work folder $LAB (container $IMAGE)  $(date '+%a %H:%M')"
 if [ -n "$CAF" ]; then echo "  keeping the Mac awake: caffeinate -dims (pid $CAF) until this script ends"; else echo "  (no caffeinate on this machine: nothing keeps it awake)"; fi
 FREE_GB=$(df -Pk "$WORK" | awk 'NR==2 {print int($4 / 1048576)}')
 echo "  free disk: ${FREE_GB} GB"
@@ -133,11 +137,11 @@ lab_run() {
   local envs=()
   while [ "$#" -gt 0 ] && [ "$1" != "--" ]; do envs+=("$1"); shift; done
   shift
-  docker run --rm --platform linux/arm64 --shm-size 4g -v "$LAB:/work" -v "$LAB/data:/work/data:ro" -w /work \
+  docker run --rm --platform "$PLATFORM" --shm-size 4g -v "$LAB:/work" -v "$LAB/data:/work/data:ro" -w /work \
     -e HM64_SRAM="/work/data/saves_dogspots/$CUR.SaveRAM" -e M64H_CPU=dynarec -e M64H_RECYCLE="${M64H_RECYCLE:-6}" \
     -e HM64_COORD_DIR=/work/results/gaps/coord -e HM64_COORD_MACHINE="$MACHINE" -e HM64_COORD_ORDER="$ORDER" \
     -e HM64_COORD_CAMPAIGN="gaps-$CUR" -e HM64_COORD_BLOCKS="${HM64_COORD_BLOCKS:-50}" -e HM64_COORD_LISTS="${HM64_COORD_LISTS:-1}" \
-    ${envs[@]+"${envs[@]}"} hm64-lab:arm64 "$@" </dev/null
+    ${envs[@]+"${envs[@]}"} "$IMAGE" "$@" </dev/null
 }
 AUTOW=0
 if [ -z "$WORKERS" ]; then
@@ -145,7 +149,8 @@ if [ -z "$WORKERS" ]; then
   NCPU=$(lab_run -- nproc 2>/dev/null || echo 2)
   WORKERS=$(( NCPU > 1 ? NCPU - 1 : 1 ))
 fi
-echo "  workers  $WORKERS"
+if [ "$AUTOW" = 1 ] && [ "$(uname -s)" = Linux ] && [ "$WORKERS" -gt $((NCPU - 2)) ] && [ "$NCPU" -gt 3 ]; then WORKERS=$((NCPU - 2)); fi
+echo "  workers  $WORKERS   container $IMAGE ($PLATFORM)"
 
 say "2/5 the saves, their dog-watch runs and beach savestates"
 by_sha() {
@@ -178,14 +183,16 @@ done
 
 if [ "$AUTOW" = 1 ] && [ "${HM64_POOL_BENCH:-1}" = 1 ]; then
   CUR=$(get LABEL ${NAMES%% *})
-  IMG=$(docker image inspect hm64-lab:arm64 --format '{{.Id}}' 2>/dev/null | cut -c8-19)
+  IMG=$(docker image inspect "$IMAGE" --format '{{.Id}}' 2>/dev/null | cut -c8-19)
   mkdir -p "$HM64_DIR/pool"
   BF="$HM64_DIR/pool/bench_${IMG:-image}_${NCPU}.json"
   if [ ! -f "$BF" ]; then
     FAST=$(sysctl -n hw.perflevel0.physicalcpu 2>/dev/null || echo "$NCPU")
     say "worker benchmark: which worker count is fastest on this Mac (once per Mac and container; some minutes)"
     rm -f "$LAB/results/.pool_bench.json"
-    lab_run -- python3 tools/pool_bench.py --workers-list "$FAST,$((NCPU - 1)),$NCPU,$((NCPU + NCPU / 3))" --out /work/results/.pool_bench.json || echo "  (benchmark failed: the usual worker count is used)"
+    WL="$FAST,$((NCPU - 1)),$NCPU,$((NCPU + NCPU / 3))"
+    if [ "$(uname -s)" = Linux ]; then WL="$((NCPU / 2)),$((NCPU * 3 / 4)),$((NCPU - 2))"; fi     # a PC: threads, not cores, and less memory
+    lab_run -- python3 tools/pool_bench.py --workers-list "$WL" --out /work/results/.pool_bench.json || echo "  (benchmark failed: the usual worker count is used)"
     [ ! -f "$LAB/results/.pool_bench.json" ] || mv "$LAB/results/.pool_bench.json" "$BF"
   fi
   if [ -f "$BF" ]; then
@@ -195,6 +202,7 @@ if [ "$AUTOW" = 1 ] && [ "${HM64_POOL_BENCH:-1}" = 1 ]; then
 fi
 SEND="$RUN_ROOT/hm64-gaps-$STAMP"
 PARTLIST=${HM64_GAP_PARTS:-A}
+[ "$PARTLIST" != none ] || PARTLIST=""      # HM64_GAP_PARTS=none: the gate only (a new machine proving itself)
 camp() {   # camp LABEL STAGE: one stage of tools/gap_campaign.py for one save
   CUR=$1
   local RES_L="results/$PRESET/$CUR" STORE="states/$PRESET/$CUR" ZZ=zz_lines.json
@@ -232,6 +240,7 @@ for part in $PARTLIST; do
     echo "  part $part, $CUR: $(( ($(date +%s) - T0) / 60 )) min"
   done
 done
+if [ "$(uname -s)" = Linux ]; then echo "  memory now: $(free -m | awk 'NR==2 {printf "%d MB used of %d", $3, $2}')"; fi
 say "5/5 zips of this Mac's part"
 mkdir -p "$SEND"
 for n in $NAMES; do

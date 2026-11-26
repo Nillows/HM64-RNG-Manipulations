@@ -1,4 +1,5 @@
-2fe471d790ca53907b3afa0f7359d70ef0b0ae7f4d4de18dc6b41196aa5851a6  ./campaign.json
+90e7388a224d4fed23195f84bd3214c377dc9f84fca5b80ca65ddffe445a1fb3  ./README_SUNSPOTS.txt
+4f97ce7ec7976722e2010e5c05d7a6efda1a167e8e02f5d6102b2ccc9738ab92  ./campaign.json
 29323a789352072040f39c84cad39bdfd405f5680b9f8da50ad4f7771658981f  ./lab/experiments/fullday_jobs.py
 eddd047e4b47ca5012297554e779a0ec871dd2b08c3276803807acaccdf38ed5  ./lab/experiments/gap_jobs.py
 da88e6674369394bb21ed6442f54608bed56c9911f82d3d585cee8bd783510f2  ./lab/experiments/spot_jobs.py
@@ -9,8 +10,7 @@ f91888b24d823a6587a79dc378f7ac44c1e777c7cd5f22cffa835907b777dbcb  ./lab/tools/po
 341e35411a62c4a97a6bdc118e0aa27bfbc73c0180708d6b6eade82a89d515db  ./lab/tools/spot_campaign.py
 bccf955540377fb061bfd53f1ceff3d2735b4193fe0887737cd88a78b4b42807  ./plans/gap_plan_beach-lineup2-52cfd712.json.gz
 6c771028ed243490d659c38f8d28a8b5625b79a997de4b6d20c9d677d3e83c09  ./plans/gap_plan_beach-lineup2-horse-b0f2a284.json.gz
-90e7388a224d4fed23195f84bd3214c377dc9f84fca5b80ca65ddffe445a1fb3  ./README_SUNSPOTS.txt
-ebdd6afc016eb2806b8432a763bf64c379d5d7d79a6c59f6f82e875f89a423f0  ./run_hm64_sunspots.sh
+e7b8bd19e929b21468d9eb022516286494f05f6491c59ffd2527f91c0fbd522d  ./run_hm64_sunspots.sh
 5930b0f53f6675ced3e43bc7190fd38e13003f5741a51de4219e3c55ca865bcf  ./tools/hm64_coord_sync.sh
 5e0b3373f9ca314f237c1b72b6e34082c17ff68a2d1036f952c831a9be92efa6  ./tools/hm64_labdata.sh
 cfc04dc6b7e915cb4d3a5a45ea00c7db5c8cae3f56e0fad334594534a8b03a00  ./tools/hm64_parts_sync.sh
