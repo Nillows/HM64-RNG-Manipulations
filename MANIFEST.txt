@@ -1,12 +1,12 @@
 HM64 raw lab results: sha256, bytes, file
-bfe4a46449e948e26161132380e80633b805fceadb9f3df40748ccbbae416106     23069653  married-rainy/hm64-dogwatch-married-lineup2-rainy-62991249.zip
+08a7c24ec4badd5ec0bfc47b5a55b93cb2c0caa2805f3254a0819532b66e3ba3     23069653  married-rainy/hm64-dogwatch-married-lineup2-rainy-62991249.zip
 fd56efe596880bd2135819ab16a07e4a6155fa08381a900cf1811dbf01602aa8      4361233  married-rainy/hm64-fullday-married-rainy-d140c90@scotts-m4.zip
 bf7fea72c54e6cf4ef8a0a221c461177dd1a18a26d1292855fdf21fa8e5fae6b     15353192  married-rainy/hm64-fullday-married-rainy-d140c90@thomass-mac-mini.zip
 49a00a6e657b0383e155f001048328e89e44bfc1d94fd9b98a7e933dec67687f      7532822  married-rainy/hm64-fullday-married-rainy-d170c120@scotts-m4.zip
 a2fa88edb2e82489f768637addef689eafdaac6c11cdc76629b78189cff95146      9830071  married-rainy/hm64-fullday-married-rainy-d170c120@thomass-mac-mini.zip
 4755df7667c066f67c348473bd3ab766cc1c68e6e157b546d41b2f3b02a9c67a      2814960  married-rainy/hm64-fullday-married-rainy-d90@scotts-m4.zip
 138baf734b525dabdd3b496db98d192c5b082bde234f4922424547923b8c1458     14418281  married-rainy/hm64-fullday-married-rainy-d90@thomass-mac-mini.zip
-229178f2a79f3ce503d11192b524e98f610e6413fd87c57b69d2e02225a378cb     71868036  married-sunny/hm64-dogwatch-married-lineup2-sunny-237e3d1d.zip
+315fd44a6601fa53a953eaf077fe45c7b81fc43bc53c486c91a55c7f7f45d451     71868036  married-sunny/hm64-dogwatch-married-lineup2-sunny-237e3d1d.zip
 e9e1b831a373369edd4c02b5f273d34cb6bdc205a365470664d794d48393b7e9      8830613  married-sunny/hm64-fullday-married-sunny-d140c90.zip
 ab9528a99fc910d86661ba17f7f63170a6ce4ae915ca8e60330f5475c6a15c5e      5279303  married-sunny/hm64-fullday-married-sunny-d140c90@scotts-m4.zip
 12f375989f1644cb4da79ef6f8d449fe4f9e14d1cb1c6989bd7c9e165c635f95      8833993  married-sunny/hm64-fullday-married-sunny-d140c90@thomass-mac-mini.zip
@@ -32,11 +32,14 @@ f49f7dd03dc46f9de190b4826c08e32a8e6b6057305662a27e5b7c865eabdca2     14267226  r
 02aba9e0d73e3bef2400850f23c22c742912600cdb9da1b0e2d827b8b70a9026          655  rainy-no-horse/run-rain120-20261123-175223.log
 33ccc8eb75ed1bc3c82437a793201e67defda6687680cfbcea842164c2d2f13d       275309  rainy-no-horse/run-rain120-20261123-181229.log
 24fa6ff92cb395e1fb9187e9294479ccb416d6974ed566698bd8b1bedda23734      2686629  spots-rainy-horse/hm64-gaps-rain-lineup2-horse-287c11a6@scotts-m4.zip
+c5f59fa8a345138256c5824c4040a3ef150c00cf6a8720d94a4820d88de1f463      3097533  spots-rainy-horse/hm64-gaps-rain-lineup2-horse-287c11a6@thomass-mac-mini.zip
 58059e2e18423248616d1077e57898fc6d5c5798ed063d5e4346f61c4d1c9db1     35633585  spots-rainy-horse/hm64-spots-rain-lineup2-horse-287c11a6.zip
 3c5604212cc037ef6685a4219ea0a169ccb1a46dc260d358ac429bdbccefa332      8091292  spots-rainy-horse/hm64-zones-rain-lineup2-horse-287c11a6.zip
 adf1d172e9f758fb0e0cabd7795657d33ece02c6a659319b8ec84bf65f0defb2      3717986  spots-rainy-no-horse/hm64-gaps-rain-lineup2-nohorse-8e972d75@scotts-m4.zip
+1f349998f248233f4dd751d6e5eca8a476d565ccbb086af378b1b829fd0d0d36      5152390  spots-rainy-no-horse/hm64-gaps-rain-lineup2-nohorse-8e972d75@thomass-mac-mini.zip
 6a57bd7d2ae45c8e814eb617c31fa6d5069005e1934e8f889d771e8c5f9c2e49     50843932  spots-rainy-no-horse/hm64-spots-rain-lineup2-nohorse-8e972d75.zip
 3e1a3d9a062388ff25cf6d144a384325b1ba2063f5624117af6d9efe0cf9e453     12295451  spots-rainy-no-horse/hm64-zones-rain-lineup2-nohorse-8e972d75.zip
+f11f714b296b2d6c0a9afd1ae170aef2ee2f860f0453301b3a8a349973ad5f8f        26983  spots-rainy-no-horse/run-gaps-20261126-124935.log
 43cd5f89727a69d8de4aa83fb1749653e62adc9f894397eb63383ee66720e848        21939  spots-rainy-no-horse/run-gaps-20261126-124936.log
 71e6328ea28598758b171cd8824ca0adc3706b3e862b57285f39c601bda465e1        55987  spots-rainy-no-horse/run-spots-20261125-152951.log
 2d4f11f233c14315578331fc1876c7fa5a1ad735acea002c81b110779f267ec9        56089  spots-rainy-no-horse/run-zones-20261125-201200.log

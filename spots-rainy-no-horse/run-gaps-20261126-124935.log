@@ -1,0 +1,338 @@
+
+==> gap campaign on the rainy files (parts A, B1, C, B2), SHARED: this Mac = thomass-mac-mini, direction up; saves [nohorse horse], work folder /Users/thomwollin/Documents/hm64/runs/dogspots/hm64-lab (native ARM image)  Thu 12:49
+  keeping the Mac awake: caffeinate -dims (pid 43242) until this script ends
+  free disk: 81 GB
+
+==> 1/5 lab files
+  [coord 12:49:35] machine thomass-mac-mini, branch lab-coord, every 30 s (rev 2026-11-25a)
+  table sync with GitHub (branch lab-coord): running (pid 43417)
+  this Mac's result parts go to GitHub every 30 min (branch lab-parts-thomass-mac-mini; pid 43420)
+  [coord 12:49:36] machine thomass-mac-mini, branch lab-coord, every 30 s (rev 2026-11-25a)
+  [parts 12:49:36] machine thomass-mac-mini, every 30 min (rev 2026-11-25a)
+  spot_jobs.py, gap_jobs.py, spot_campaign.py, gap_campaign.py, the plans -> /Users/thomwollin/Documents/hm64/runs/dogspots/hm64-lab
+  workers  13
+
+==> 2/5 the saves, their dog-watch runs, beach savestates and pier-spot runs
+  save     rain-lineup2-nohorse-8e972d75   (in the lab, sha256 ok)
+           12 beach savestates, the pier-spot run's gate passed, lines: results/dogwatch/rain-lineup2-nohorse-8e972d75/zz_lines.json
+  save     rain-lineup2-horse-287c11a6   (in the lab, sha256 ok)
+           8 beach savestates, the pier-spot run's gate passed, lines: results/dogwatch/rain-lineup2-horse-287c11a6/zz_lines.json
+
+==> worker benchmark: which worker count is fastest on this Mac (once per Mac and container; some minutes)
+[bench] 10 workers: 80 jobs in     7 s =  666.3 jobs/min
+[bench] 13 workers: 104 jobs in     7 s =  901.7 jobs/min
+[bench] 14 workers: 112 jobs in     7 s =  941.5 jobs/min
+[bench] 18 workers: 144 jobs in     9 s =  983.1 jobs/min
+[bench] best: 18 workers
+  workers  18  (this Mac's benchmark: /Users/thomwollin/Documents/hm64/pool/bench_9b61e93aed50_14.json; delete that file to measure again)
+
+==> 3/5 the gate: this Mac on the recorded lines (Thu 12:50)
+[GA gate, lines] 6 jobs, 0 already done, 6 to run
+[GA gate, lines] 6/6  850.1 jobs/min  eta 0 min
+[GA gate, casts] 27 jobs, 0 already done, 27 to run
+[GA gate, casts] 10/27  186.8 jobs/min  eta 0 min
+[GA gate, casts] 20/27  235.1 jobs/min  eta 0 min
+[GA gate, casts] 27/27  243.6 jobs/min  eta 0 min
+[gate] gate:middle:d90aba3d6af26d56  member D 86 B 128 (k_off 22), Jack at [-92.0, 176.0]: the recorded dog to the end of the 20 s; cast hashes equal in the first 8 s: 226 of 226  ->  ok
+[gate] gate:south:d90aba3d6af26d56  member D 86 B 134 (k_off 28), Jack at [-92.0, 194.0]: the recorded dog to the end of the 20 s; cast hashes equal in the first 8 s: 223 of 223  ->  ok
+[gate] gate:middle:db2a37faaf97d4dc  member D 86 B 128 (k_off 22), Jack at [-92.0, 176.0]: the recorded dog to the end of the 20 s; cast hashes equal in the first 8 s: 226 of 226  ->  ok
+[gate] gate:south:db2a37faaf97d4dc  member D 86 B 134 (k_off 28), Jack at [-92.0, 194.0]: the recorded dog to the end of the 20 s; cast hashes equal in the first 8 s: 223 of 223  ->  ok
+[gate] gate:middle:8d17215306bb26a8  member D 86 B 128 (k_off 26), Jack at [-92.0, 176.0]: the recorded dog to the end of the 20 s; cast hashes equal in the first 8 s: 224 of 224  ->  ok
+[gate] gate:south:8d17215306bb26a8  member D 86 B 134 (k_off 32), Jack at [-92.0, 194.0]: the recorded dog to the end of the 20 s; cast hashes equal in the first 8 s: 221 of 221  ->  ok
+[gate] control casts at the recorded spot: 36 as recorded, 0 not
+[gate] PASSED
+[GA gate, lines] 2 jobs, 0 already done, 2 to run
+[GA gate, lines] 2/2  289.3 jobs/min  eta 0 min
+[GA gate, casts] 7 jobs, 0 already done, 7 to run
+[GA gate, casts] 7/7  121.9 jobs/min  eta 0 min
+[gate] gate:middle:e9a283665cb676ba  member D 86 B 128 (k_off 22), Jack at [-92.0, 176.0]: the recorded dog to the end of the 20 s; cast hashes equal in the first 8 s: 226 of 226  ->  ok
+[gate] gate:south:e9a283665cb676ba  member D 86 B 134 (k_off 28), Jack at [-92.0, 194.0]: the recorded dog to the end of the 20 s; cast hashes equal in the first 8 s: 223 of 223  ->  ok
+[gate] control casts at the recorded spot: 12 as recorded, 0 not
+[gate] PASSED
+
+==> 4/5 the parts, small ones first: A B1 C B2
+
+  --- part A, rain-lineup2-nohorse-8e972d75 (Thu 12:50)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  part A: 4878 casts in 216 jobs
+[GA] 216 jobs, 0 already done, 216 to run
+[GA] shared run: machine thomass-mac-mini, order up, 216 jobs in 2 blocks; other machines: none seen yet
+[GA] block 1/2 (top down): 108 jobs
+[GA] block 1 done; 108 jobs here in 8 min (12.7 jobs/min)
+[GA] pool: 2 Mac(s), 12.7 jobs/min (scotts-m4 0.0, thomass-mac-mini 12.7) - 108 jobs left in this list: 9 min for the pool
+[GA] campaign so far: 1 of 1 lists opened, 108 jobs left in them = 9 min at the pool's present speed (rough: jobs differ in length between lists)
+[GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[GA] every block is done (108 jobs run here this time)
+  part A, rain-lineup2-nohorse-8e972d75: 11 min
+
+  --- part A, rain-lineup2-horse-287c11a6 (Thu 13:01)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  part A: 456 casts in 29 jobs
+[GA] 29 jobs, 0 already done, 29 to run
+[GA] shared run: machine thomass-mac-mini, order up, 29 jobs in 2 blocks; other machines: scotts-m4
+[GA] block 1/2 (top down): 15 jobs
+[GA] block 1 done; 15 jobs here in 2 min (6.7 jobs/min)
+[GA] pool: 2 Mac(s), 11.6 jobs/min (scotts-m4 4.9, thomass-mac-mini 6.7) - 0 jobs left in this list: 0 min for the pool
+[GA] campaign so far: 1 of 1 lists opened, 0 jobs left in them = 0 min at the pool's present speed (rough: jobs differ in length between lists)
+[GA] every block is done (15 jobs run here this time)
+  part A, rain-lineup2-horse-287c11a6: 2 min
+
+  --- part B1, rain-lineup2-nohorse-8e972d75 (Thu 13:04)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  part B1: 2264 casts in 554 jobs
+[GB1] 554 jobs, 0 already done, 554 to run
+[GB1] shared run: machine thomass-mac-mini, order up, 554 jobs in 6 blocks; other machines: none seen yet
+[GB1] block 1/6 (top down): 93 jobs
+[GB1] block 1 done; 93 jobs here in 2 min (49.6 jobs/min)
+[GB1] pool: 1 Mac(s), 46.5 jobs/min (thomass-mac-mini 46.5) - 461 jobs left in this list: 10 min for the pool
+[GB1] campaign so far: 1 of 1 lists opened, 461 jobs left in them = 10 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB1] block 2/6 (top down): 93 jobs
+[GB1] block 2 done; 186 jobs here in 4 min (50.8 jobs/min)
+[GB1] pool: 2 Mac(s), 50.9 jobs/min (scotts-m4 0.0, thomass-mac-mini 50.9) - 368 jobs left in this list: 7 min for the pool
+[GB1] campaign so far: 1 of 1 lists opened, 368 jobs left in them = 7 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB1] block 3/6 (top down): 93 jobs
+[GB1] block 3 done; 279 jobs here in 6 min (48.1 jobs/min)
+[GB1] pool: 2 Mac(s), 69.5 jobs/min (scotts-m4 21.4, thomass-mac-mini 48.1) - 186 jobs left in this list: 3 min for the pool
+[GB1] campaign so far: 1 of 1 lists opened, 186 jobs left in them = 3 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB1] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[GB1] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[GB1] every block is done (279 jobs run here this time)
+  part B1, rain-lineup2-nohorse-8e972d75: 8 min
+
+  --- part B1, rain-lineup2-horse-287c11a6 (Thu 13:13)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  part B1: 1650 casts in 399 jobs
+[GB1] 399 jobs, 0 already done, 399 to run
+[GB1] shared run: machine thomass-mac-mini, order up, 399 jobs in 4 blocks; other machines: scotts-m4
+[GB1] block 1/4 (top down): 100 jobs
+[GB1] block 1 done; 100 jobs here in 2 min (62.8 jobs/min)
+[GB1] pool: 2 Mac(s), 50.0 jobs/min (scotts-m4 0.0, thomass-mac-mini 50.0) - 299 jobs left in this list: 6 min for the pool
+[GB1] campaign so far: 1 of 1 lists opened, 299 jobs left in them = 6 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB1] block 2/4 (top down): 100 jobs
+[GB1] block 2 done; 200 jobs here in 3 min (57.6 jobs/min)
+[GB1] pool: 2 Mac(s), 80.4 jobs/min (scotts-m4 22.8, thomass-mac-mini 57.7) - 100 jobs left in this list: 1 min for the pool
+[GB1] campaign so far: 1 of 1 lists opened, 100 jobs left in them = 1 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB1] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[GB1] every block is done (200 jobs run here this time)
+  part B1, rain-lineup2-horse-287c11a6: 4 min
+
+  --- part C, rain-lineup2-nohorse-8e972d75 (Thu 13:17)
+gaps-1 (2026-11-26: per-frame trace of one cast)  part C: 288 casts in 288 jobs
+[GC] 288 jobs, 0 already done, 288 to run
+[GC] shared run: machine thomass-mac-mini, order up, 288 jobs in 3 blocks; other machines: none seen yet
+[GC] block 1/3 (top down): 96 jobs
+[GC] block 1 done; 96 jobs here in 1 min (84.1 jobs/min)
+[GC] pool: 2 Mac(s), 48.0 jobs/min (scotts-m4 0.0, thomass-mac-mini 48.0) - 192 jobs left in this list: 4 min for the pool
+[GC] campaign so far: 1 of 1 lists opened, 192 jobs left in them = 4 min at the pool's present speed (rough: jobs differ in length between lists)
+[GC] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+  [parts 13:19:40] 11 result files on GitHub (branch lab-parts-thomass-mac-mini)
+[GC] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[GC] every block is done (96 jobs run here this time)
+  part C, rain-lineup2-nohorse-8e972d75: 4 min
+
+  --- part C, rain-lineup2-horse-287c11a6 (Thu 13:21)
+gaps-1 (2026-11-26: per-frame trace of one cast)  part C: 288 casts in 288 jobs
+[GC] 288 jobs, 0 already done, 288 to run
+[GC] shared run: machine thomass-mac-mini, order up, 288 jobs in 3 blocks; other machines: scotts-m4
+[GC] block 1/3 (top down): 96 jobs
+[GC] block 1 done; 96 jobs here in 1 min (109.0 jobs/min)
+[GC] pool: 2 Mac(s), 87.5 jobs/min (scotts-m4 39.5, thomass-mac-mini 48.0) - 96 jobs left in this list: 1 min for the pool
+[GC] campaign so far: 1 of 1 lists opened, 96 jobs left in them = 1 min at the pool's present speed (rough: jobs differ in length between lists)
+[GC] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[GC] every block is done (96 jobs run here this time)
+  part C, rain-lineup2-horse-287c11a6: 1 min
+
+  --- part B2, rain-lineup2-nohorse-8e972d75 (Thu 13:23)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  part B2: 40676 casts in 2284 jobs
+[GB2] 2284 jobs, 0 already done, 2284 to run
+[GB2] shared run: machine thomass-mac-mini, order up, 2284 jobs in 25 blocks; other machines: none seen yet
+[GB2] block 1/25 (top down): 92 jobs
+[GB2] block 1 done; 92 jobs here in 5 min (17.1 jobs/min)
+[GB2] pool: 2 Mac(s), 17.1 jobs/min (scotts-m4 0.0, thomass-mac-mini 17.1) - 2192 jobs left in this list: 2.1 h for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 2192 jobs left in them = 2.1 h at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 2/25 (top down): 92 jobs
+[GB2] block 2 done; 184 jobs here in 11 min (17.0 jobs/min)
+[GB2] pool: 2 Mac(s), 23.8 jobs/min (scotts-m4 6.9, thomass-mac-mini 17.0) - 2024 jobs left in this list: 85 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 2024 jobs left in them = 85 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 3/25 (top down): 92 jobs
+[GB2] block 3 done; 276 jobs here in 17 min (16.2 jobs/min)
+[GB2] pool: 2 Mac(s), 25.9 jobs/min (scotts-m4 9.7, thomass-mac-mini 16.2) - 1840 jobs left in this list: 71 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1840 jobs left in them = 71 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 4/25 (top down): 92 jobs
+[GB2] block 4 done; 368 jobs here in 22 min (16.5 jobs/min)
+[GB2] pool: 2 Mac(s), 23.9 jobs/min (scotts-m4 7.4, thomass-mac-mini 16.5) - 1748 jobs left in this list: 73 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1748 jobs left in them = 73 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 5/25 (top down): 92 jobs
+  [parts 13:49:44] 13 result files on GitHub (branch lab-parts-thomass-mac-mini)
+[GB2] block 5 done; 460 jobs here in 27 min (16.8 jobs/min)
+[GB2] pool: 2 Mac(s), 26.2 jobs/min (scotts-m4 9.4, thomass-mac-mini 16.8) - 1564 jobs left in this list: 60 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1564 jobs left in them = 60 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 6/25 (top down): 92 jobs
+[GB2] block 6 done; 552 jobs here in 31 min (17.6 jobs/min)
+[GB2] pool: 2 Mac(s), 30.1 jobs/min (scotts-m4 11.7, thomass-mac-mini 18.4) - 1380 jobs left in this list: 46 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1380 jobs left in them = 46 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 7/25 (top down): 92 jobs
+[GB2] block 7 done; 644 jobs here in 37 min (17.5 jobs/min)
+[GB2] pool: 2 Mac(s), 27.6 jobs/min (scotts-m4 9.2, thomass-mac-mini 18.4) - 1288 jobs left in this list: 47 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1288 jobs left in them = 47 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 8/25 (top down): 92 jobs
+[GB2] block 8 done; 736 jobs here in 42 min (17.7 jobs/min)
+[GB2] pool: 2 Mac(s), 27.6 jobs/min (scotts-m4 9.2, thomass-mac-mini 18.4) - 1196 jobs left in this list: 43 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1196 jobs left in them = 43 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 9/25 (top down): 92 jobs
+[GB2] block 9 done; 828 jobs here in 47 min (17.5 jobs/min)
+[GB2] pool: 2 Mac(s), 27.6 jobs/min (scotts-m4 9.2, thomass-mac-mini 18.4) - 1012 jobs left in this list: 37 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1012 jobs left in them = 37 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 10/25 (top down): 92 jobs
+[GB2] block 10 done; 920 jobs here in 53 min (17.3 jobs/min)
+[GB2] pool: 2 Mac(s), 27.6 jobs/min (scotts-m4 9.2, thomass-mac-mini 18.4) - 828 jobs left in this list: 30 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 828 jobs left in them = 30 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 11/25 (top down): 92 jobs
+  [parts 14:19:48] 13 result files on GitHub (branch lab-parts-thomass-mac-mini)
+[GB2] block 11 done; 1012 jobs here in 58 min (17.4 jobs/min)
+[GB2] pool: 2 Mac(s), 30.7 jobs/min (scotts-m4 12.3, thomass-mac-mini 18.4) - 644 jobs left in this list: 21 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 644 jobs left in them = 21 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 12/25 (top down): 92 jobs
+[GB2] block 12 done; 1104 jobs here in 64 min (17.4 jobs/min)
+[GB2] pool: 2 Mac(s), 30.7 jobs/min (scotts-m4 12.3, thomass-mac-mini 18.4) - 460 jobs left in this list: 15 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 460 jobs left in them = 15 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 13/25 (top down): 92 jobs
+[GB2] block 13 done; 1196 jobs here in 69 min (17.4 jobs/min)
+[GB2] pool: 2 Mac(s), 30.7 jobs/min (scotts-m4 12.3, thomass-mac-mini 18.4) - 368 jobs left in this list: 12 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 368 jobs left in them = 12 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 14/25 (top down): 92 jobs
+[GB2] block 14 done; 1288 jobs here in 75 min (17.1 jobs/min)
+[GB2] pool: 2 Mac(s), 30.7 jobs/min (scotts-m4 12.3, thomass-mac-mini 18.4) - 184 jobs left in this list: 6 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 184 jobs left in them = 6 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 15/25 (top down): 92 jobs
+[GB2] block 15 done; 1380 jobs here in 81 min (17.0 jobs/min)
+[GB2] pool: 2 Mac(s), 30.7 jobs/min (scotts-m4 12.3, thomass-mac-mini 18.4) - 0 jobs left in this list: 0 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 0 jobs left in them = 0 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] every block is done (1380 jobs run here this time)
+  part B2, rain-lineup2-nohorse-8e972d75: 81 min
+
+  --- part B2, rain-lineup2-horse-287c11a6 (Thu 14:44)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  part B2: 29503 casts in 1663 jobs
+[GB2] 1663 jobs, 0 already done, 1663 to run
+[GB2] shared run: machine thomass-mac-mini, order up, 1663 jobs in 18 blocks; other machines: none seen yet
+[GB2] block 1/18 (top down): 93 jobs
+[GB2] block 1 done; 93 jobs here in 4 min (24.0 jobs/min)
+[GB2] pool: 2 Mac(s), 24.0 jobs/min (scotts-m4 0.0, thomass-mac-mini 24.0) - 1570 jobs left in this list: 65 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1570 jobs left in them = 65 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 2/18 (top down): 93 jobs
+  [parts 14:49:53] 14 result files on GitHub (branch lab-parts-thomass-mac-mini)
+[GB2] block 2 done; 186 jobs here in 10 min (18.4 jobs/min)
+[GB2] pool: 2 Mac(s), 27.5 jobs/min (scotts-m4 9.1, thomass-mac-mini 18.4) - 1395 jobs left in this list: 51 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1395 jobs left in them = 51 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 3/18 (top down): 93 jobs
+[GB2] block 3 done; 279 jobs here in 16 min (17.6 jobs/min)
+[GB2] pool: 2 Mac(s), 23.2 jobs/min (scotts-m4 5.6, thomass-mac-mini 17.6) - 1302 jobs left in this list: 56 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1302 jobs left in them = 56 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 4/18 (top down): 93 jobs
+[GB2] block 4 done; 372 jobs here in 20 min (18.6 jobs/min)
+[GB2] pool: 2 Mac(s), 27.9 jobs/min (scotts-m4 9.3, thomass-mac-mini 18.6) - 1116 jobs left in this list: 40 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1116 jobs left in them = 40 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 5/18 (top down): 93 jobs
+[GB2] block 5 done; 465 jobs here in 25 min (18.9 jobs/min)
+[GB2] pool: 2 Mac(s), 26.4 jobs/min (scotts-m4 7.5, thomass-mac-mini 18.9) - 1023 jobs left in this list: 39 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 1023 jobs left in them = 39 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 6/18 (top down): 93 jobs
+[GB2] block 6 done; 558 jobs here in 30 min (18.8 jobs/min)
+[GB2] pool: 2 Mac(s), 28.2 jobs/min (scotts-m4 9.4, thomass-mac-mini 18.8) - 837 jobs left in this list: 30 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 837 jobs left in them = 30 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 7/18 (top down): 93 jobs
+[GB2] block 7 done; 651 jobs here in 35 min (18.7 jobs/min)
+[GB2] pool: 2 Mac(s), 30.6 jobs/min (scotts-m4 12.0, thomass-mac-mini 18.6) - 651 jobs left in this list: 21 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 651 jobs left in them = 21 min at the pool's present speed (rough: jobs differ in length between lists)
+  [parts 15:19:57] 14 result files on GitHub (branch lab-parts-thomass-mac-mini)
+[GB2] block 8/18 (top down): 93 jobs
+[GB2] block 8 done; 744 jobs here in 40 min (18.6 jobs/min)
+[GB2] pool: 2 Mac(s), 34.1 jobs/min (scotts-m4 12.4, thomass-mac-mini 21.7) - 465 jobs left in this list: 14 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 465 jobs left in them = 14 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 9/18 (top down): 93 jobs
+[GB2] block 9 done; 837 jobs here in 45 min (18.7 jobs/min)
+[GB2] pool: 2 Mac(s), 34.1 jobs/min (scotts-m4 12.4, thomass-mac-mini 21.7) - 372 jobs left in this list: 11 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 372 jobs left in them = 11 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 10/18 (top down): 93 jobs
+[GB2] block 10 done; 930 jobs here in 50 min (18.4 jobs/min)
+[GB2] pool: 2 Mac(s), 31.0 jobs/min (scotts-m4 12.4, thomass-mac-mini 18.6) - 186 jobs left in this list: 6 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 186 jobs left in them = 6 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] block 11/18 (top down): 93 jobs
+[GB2] block 11 done; 1023 jobs here in 57 min (17.9 jobs/min)
+[GB2] pool: 2 Mac(s), 31.0 jobs/min (scotts-m4 12.4, thomass-mac-mini 18.6) - 0 jobs left in this list: 0 min for the pool
+[GB2] campaign so far: 1 of 1 lists opened, 0 jobs left in them = 0 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB2] every block is done (1023 jobs run here this time)
+  part B2, rain-lineup2-horse-287c11a6: 57 min
+
+==> 5/5 zips of this Mac's part
+  zip      /Users/thomwollin/Documents/hm64/runs/hm64-gaps-rain-lineup2-nohorse-8e972d75@thomass-mac-mini.zip
+  zip      /Users/thomwollin/Documents/hm64/runs/hm64-gaps-rain-lineup2-horse-287c11a6@thomass-mac-mini.zip
+
+------------------------------------------------------------------------------------------------
+ GAP CAMPAIGN DONE ON THIS MAC   [nohorse horse]   (172 min in all)
+------------------------------------------------------------------------------------------------
+    hm64-gaps-rain-lineup2-horse-287c11a6@thomass-mac-mini.zip      3.0 MB
+    hm64-gaps-rain-lineup2-nohorse-8e972d75@thomass-mac-mini.zip    4.9 MB
+    run-gaps-20261126-124935.log                                    0.0 MB
+  folder: /Users/thomwollin/Documents/hm64/runs/hm64-gaps-20261126-124935   (no ROM / saves / savestates inside)
+  [parts 15:42:22] 14 result files on GitHub (branch lab-parts-thomass-mac-mini)
+  [parts 15:42:22] ended
+  [coord 15:42:49] ended
+  lab-data script 2026-11-26h installed in /Users/thomwollin/Documents/hm64/tools
+
+==> lab data 1/5  is a lab run going? (lab-data script 2026-11-26h)
+  no lab run is going
+
+==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+  push access: the release SSH key (/Users/thomwollin/.ssh/hm64_github_ed25519)
+  /Users/thomwollin/Documents/hm64/lab-data (branch lab-data, GitHub has f0f6d703b7144cf6ec020f562aa5f3032441f3e5)
+
+==> lab data 3/5  looking for results in /Users/thomwollin/Documents/hm64/runs and /Users/thomwollin/Downloads (table: built in; newest copy of each file)
+  + spots-rainy-no-horse/hm64-gaps-rain-lineup2-nohorse-8e972d75@thomass-mac-mini.zip (4 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-gaps-rain-lineup2-nohorse-8e972d75@thomass-mac-mini.zip
+  + spots-rainy-horse/hm64-gaps-rain-lineup2-horse-287c11a6@thomass-mac-mini.zip (2 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-gaps-rain-lineup2-horse-287c11a6@thomass-mac-mini.zip
+  + spots-rainy-no-horse/run-gaps-20261126-124935.log (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/dogspots/run-gaps-20261126-124935.log
+  3 new or changed, 51 already up to date
+  result zips in runs/ that are not in the table (NOT uploaded; tell Claude if they should be): 76
+    hm64-dogwatch-beach-lineup2-52cfd712-20261116-145829.zip
+    hm64-dogwatch-early-beach-lineup2-52cfd712-20261116-145829.zip
+    hm64-dogwatch-early-beach-lineup2-52cfd712-20261116-174959.zip
+    hm64-dogwatch-early-beach-lineup2-horse-b0f2a284-20261123-104115.zip
+    hm64-dogwatch-early-married-lineup2-rainy-62991249-20261125-063853.zip
+    hm64-dogwatch-early-married-lineup2-sunny-237e3d1d-20261125-063853.zip
+    hm64-dogwatch-early-rain-lineup2-horse-287c11a6-20261123-181229.zip
+    hm64-dogwatch-early-rain-lineup2-nohorse-8e972d75-20261123-181229.zip
+    hm64-fullday-horse-d140c90-b02.zip
+    hm64-fullday-horse-d140c90-b03.zip
+    hm64-fullday-horse-d140c90-b04.zip
+    hm64-fullday-horse-d140c90-b05.zip
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  61 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |   3 +
+ README.md                                          |   4 +-
+ ...ain-lineup2-horse-287c11a6@thomass-mac-mini.zip | Bin 0 -> 3097533 bytes
+ ...n-lineup2-nohorse-8e972d75@thomass-mac-mini.zip | Bin 0 -> 5152390 bytes
+ spots-rainy-no-horse/run-gaps-20261126-124935.log  | 290 +++++++++++++++++++++
+ 5 files changed, 295 insertions(+), 2 deletions(-)
+  committed 09d726c (7 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+ ! [rejected]        lab-data -> lab-data (fetch first)
+error: failed to push some refs to 'github.com:Nillows/HM64-RNG-Manipulations.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+  another Mac pushed first: joining its upload and trying again
+
+==> lab data 1/5  is a lab run going? (lab-data script 2026-11-26h)
+  no lab run is going
+
+==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+  push access: the release SSH key (/Users/thomwollin/.ssh/hm64_github_ed25519)
+  another Mac has uploaded meanwhile: took its 1 commit(s), kept this Mac's 3 new files (1 local commit(s) kept as branch before-join-20261126-154431)
+  /Users/thomwollin/Documents/hm64/lab-data (branch lab-data, GitHub has d7e2bd3d97c3ce580452c08658f17b10d9c62ea1)
+
+==> lab data 3/5  looking for results in /Users/thomwollin/Documents/hm64/runs and /Users/thomwollin/Downloads (table: built in; newest copy of each file)
+  + married-sunny/hm64-dogwatch-married-lineup2-sunny-237e3d1d.zip (68 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-married120-20261125-220630/hm64-dogwatch-married-lineup2-sunny-237e3d1d.zip
+  + married-rainy/hm64-dogwatch-married-lineup2-rainy-62991249.zip (22 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-married120-20261125-220630/hm64-dogwatch-married-lineup2-rainy-62991249.zip
