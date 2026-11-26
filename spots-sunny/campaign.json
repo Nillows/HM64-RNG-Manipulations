@@ -1,0 +1,43 @@
+{
+ "name": "spots-sunny",
+ "title": "Sunny files: pier-spot check - every dog line watched from the middle and south zones to 170 s (fast check), then the casts that can differ",
+ "version": "2026-11-26a",
+ "image": {
+  "tag": "hm64-lab:arm64",
+  "id": "sha256:9b61e93aed507f7022f55fb1112e4c9cc484049ee8cd5d58837efb18963341cf"
+ },
+ "rom_sha256": "15c570120bfaa97b4580762f5ee5939a56ba054e696925ea81ccfa55a022d2a6",
+ "base_sha256": "",
+ "saves": [
+  {
+   "file": "Harvest Moon 64 (USA).beach-lineup2.SaveRAM",
+   "sha256": "52cfd712095494d3217fdc032f88439216abfb6b6f2e55e0fb14e4c6d0e31a84",
+   "repo_path": "SaveRAM/sunny-no-horse/Harvest Moon 64 (USA).beach-lineup2.SaveRAM"
+  },
+  {
+   "file": "Harvest Moon 64 (USA).beach-lineup2-horse.SaveRAM",
+   "sha256": "b0f2a28471fd995157fb6877eb66775655233998c9c3a2b12e5e0bdfa56b25aa",
+   "repo_path": "SaveRAM/sunny-horse/Harvest Moon 64 (USA).beach-lineup2-horse.SaveRAM"
+  }
+ ],
+ "needs": [
+  "results/dogwatch/beach-lineup2-52cfd712",
+  "states/dogwatch/beach-lineup2-52cfd712/b",
+  "results/dogwatch/beach-lineup2-horse-b0f2a284",
+  "states/dogwatch/beach-lineup2-horse-b0f2a284/b"
+ ],
+ "shared": "one list per save (gaps-<label>.A), claims on branch lab-coord; the gate (fast check) is run by every Mac for itself",
+ "runner": "run_hm64_sunspots.sh",
+ "presets": {
+  "preset": "dogwatch",
+  "zones": {
+   "middle": 176.4,
+   "south": 194.4
+  },
+  "plans": "plans/gap_plan_<label>.json.gz",
+  "parts": [
+   "A"
+  ],
+  "blocks_per_list": 50
+ }
+}
