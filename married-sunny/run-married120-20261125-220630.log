@@ -493,3 +493,54 @@ fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by
   /Users/thomwollin/Documents/hm64/lab-data (branch lab-data, GitHub has 20a081b79a927d16213ffa101af6f47162f0ccfe)
 
 ==> lab data 3/5  looking for results in /Users/thomwollin/Documents/hm64/runs and /Users/thomwollin/Downloads (table: built in; newest copy of each file)
+  + married-sunny/run-married120-20261125-220630.log (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/dogspots/run-married120-20261125-220630.log
+  + married-sunny/run-married120-20261125-182117.log (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/dogspots/run-married120-20261125-182117.log
+  not finished yet (changed 13 s ago), left for next time: married-rainy/hm64-dogwatch-married-lineup2-rainy-62991249.zip
+  not on this Mac yet: married-rainy/hm64-fullday-married-rainy-d90.zip
+  not on this Mac yet: married-rainy/hm64-fullday-married-rainy-d140c90.zip
+  not on this Mac yet: married-rainy/hm64-fullday-married-rainy-d170c120.zip
+  + married-sunny/hm64-fullday-married-sunny-d90@thomass-mac-mini.zip (8 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-married120-20261125-220630/hm64-fullday-married-sunny-d90@thomass-mac-mini.zip
+  + married-sunny/hm64-fullday-married-sunny-d140c90@thomass-mac-mini.zip (8 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-married120-20261125-220630/hm64-fullday-married-sunny-d140c90@thomass-mac-mini.zip
+  + married-sunny/hm64-fullday-married-sunny-d170c120@thomass-mac-mini.zip (8 MB)   <- /Users/thomwollin/Documents/hm64/runs/hm64-married120-20261125-220630/hm64-fullday-married-sunny-d170c120@thomass-mac-mini.zip
+  not finished yet (changed 10 s ago), left for next time: married-rainy/hm64-fullday-married-rainy-d90@thomass-mac-mini.zip
+  not finished yet (changed 5 s ago), left for next time: married-rainy/hm64-fullday-married-rainy-d140c90@thomass-mac-mini.zip
+  not finished yet (changed 3 s ago), left for next time: married-rainy/hm64-fullday-married-rainy-d170c120@thomass-mac-mini.zip
+  + spots-rainy-no-horse/run-zones-20261125-201200.log (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/dogspots/run-zones-20261125-201200.log
+  6 new or changed, 39 already up to date
+  result zips in runs/ that are not in the table (NOT uploaded; tell Claude if they should be): 76
+    hm64-dogwatch-beach-lineup2-52cfd712-20261116-145829.zip
+    hm64-dogwatch-early-beach-lineup2-52cfd712-20261116-145829.zip
+    hm64-dogwatch-early-beach-lineup2-52cfd712-20261116-174959.zip
+    hm64-dogwatch-early-beach-lineup2-horse-b0f2a284-20261123-104115.zip
+    hm64-dogwatch-early-married-lineup2-rainy-62991249-20261125-063853.zip
+    hm64-dogwatch-early-married-lineup2-sunny-237e3d1d-20261125-063853.zip
+    hm64-dogwatch-early-rain-lineup2-horse-287c11a6-20261123-181229.zip
+    hm64-dogwatch-early-rain-lineup2-nohorse-8e972d75-20261123-181229.zip
+    hm64-fullday-horse-d140c90-b02.zip
+    hm64-fullday-horse-d140c90-b03.zip
+    hm64-fullday-horse-d140c90-b04.zip
+    hm64-fullday-horse-d140c90-b05.zip
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  46 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |   7 +-
+ README.md                                          |   6 +-
+ ...lday-married-sunny-d140c90@thomass-mac-mini.zip | Bin 0 -> 8833993 bytes
+ ...day-married-sunny-d170c120@thomass-mac-mini.zip | Bin 0 -> 8733893 bytes
+ ...-fullday-married-sunny-d90@thomass-mac-mini.zip | Bin 0 -> 9280759 bytes
+ married-sunny/run-married120-20261125-182117.log   | 429 ++++++++++++++++++
+ married-sunny/run-married120-20261125-220630.log   | 495 +++++++++++++++++++++
+ spots-rainy-no-horse/run-zones-20261125-201200.log | 361 +++++++++++++++
+ 8 files changed, 1294 insertions(+), 4 deletions(-)
+  committed 7e453d6 (25 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+   20a081b..7e453d6  lab-data -> lab-data
+branch 'lab-data' set up to track 'origin/lab-data'.
+  pushed: GitHub's lab-data = your copy (7e453d6)
+
+LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 7e453d6.
+  Not on this Mac yet: married-rainy/hm64-fullday-married-rainy-d90.zip married-rainy/hm64-fullday-married-rainy-d140c90.zip married-rainy/hm64-fullday-married-rainy-d170c120.zip
+  Left out as unfinished: married-rainy/hm64-dogwatch-married-lineup2-rainy-62991249.zip married-rainy/hm64-fullday-married-rainy-d90@thomass-mac-mini.zip married-rainy/hm64-fullday-married-rainy-d140c90@thomass-mac-mini.zip married-rainy/hm64-fullday-married-rainy-d170c120@thomass-mac-mini.zip
+  A lab run is still going: run  bash ~/Documents/hm64/tools/hm64_release.sh labdata wait </dev/null  to upload the rest by itself when it ends.

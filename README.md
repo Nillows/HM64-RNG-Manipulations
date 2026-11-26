@@ -26,5 +26,5 @@ Then check: `cd hm64-lab-data && shasum -a 256 -c <(awk 'NR>1 {print $1"  "$3}' 
 
 Last update: 2026-11-26.
 Not on the Mac at the last update: married-rainy/hm64-fullday-married-rainy-d90.zip married-rainy/hm64-fullday-married-rainy-d140c90.zip married-rainy/hm64-fullday-married-rainy-d170c120.zip
-Left out as unfinished at the last update: married-rainy/hm64-dogwatch-married-lineup2-rainy-62991249.zip married-rainy/hm64-fullday-married-rainy-d90@thomass-mac-mini.zip married-rainy/hm64-fullday-married-rainy-d140c90@thomass-mac-mini.zip married-rainy/hm64-fullday-married-rainy-d170c120@thomass-mac-mini.zip
-A lab run was still going at the last update: its unfinished files are not here yet.
+Left out as unfinished at the last update: none
+No lab run was going at the last update.
