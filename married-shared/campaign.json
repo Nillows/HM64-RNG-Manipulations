@@ -1,0 +1,37 @@
+{
+ "name": "married-shared",
+ "title": "Married, no horse (sunny spring 9 + rainy): dog-watch on the main Mac, cast blocks to 120 s shared",
+ "version": "2026-11-25c",
+ "image": {
+  "tag": "hm64-lab:arm64",
+  "id": "sha256:9b61e93aed507f7022f55fb1112e4c9cc484049ee8cd5d58837efb18963341cf"
+ },
+ "rom_sha256": "15c570120bfaa97b4580762f5ee5939a56ba054e696925ea81ccfa55a022d2a6",
+ "base_sha256": "",
+ "saves": [
+  {
+   "file": "Harvest Moon 64 (USA).beach-lineup2-nohorse-married-sunny-spring9.SaveRAM",
+   "sha256": "237e3d1dfe5d220e28015cc865409fdcf467ed8423d258f6bde302e03fa2ab09",
+   "repo_path": "SaveRAM/married-sunny-no-horse/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-sunny-spring9.SaveRAM"
+  },
+  {
+   "file": "Harvest Moon 64 (USA).beach-lineup2-nohorse-married-rainy.SaveRAM",
+   "sha256": "629912496c6211d0da630c895176336c45c57ffccf4f1451d83d932e9f34b03c",
+   "repo_path": "SaveRAM/married-rainy-no-horse/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-rainy.SaveRAM"
+  }
+ ],
+ "needs": [
+  "results/dogwatch/married-lineup2-sunny-237e3d1d",
+  "states/dogwatch/married-lineup2-sunny-237e3d1d/b",
+  "results/dogwatch/married-lineup2-rainy-62991249",
+  "states/dogwatch/married-lineup2-rainy-62991249/b"
+ ],
+ "shared": "the cast blocks of each window, 50 parts per block, claims on branch lab-coord",
+ "runner": "run_hm64_married_shared.sh",
+ "presets": {
+  "preset": "dogwatch",
+  "windows": "d90:90:40:0-1 d140c90:140:90:2-5 d170c120:170:120:4-5",
+  "kit": "fullday-2",
+  "blocks_per_list": 50
+ }
+}
