@@ -1,7 +1,7 @@
 {
  "name": "zones-shared",
  "title": "Rainy files: the casts that can differ, from the middle and south camera zones of the dock end",
- "version": "2026-11-25c",
+ "version": "2026-11-26d",
  "image": {
   "tag": "hm64-lab:arm64",
   "id": "sha256:9b61e93aed507f7022f55fb1112e4c9cc484049ee8cd5d58837efb18963341cf"

@@ -1,4 +1,4 @@
-00816d980dfdca11e87bdf8ca046a049052db5fedfd610dbe6b8ac0b0cfdc6cd  ./campaign.json
+03e803978f42ad7e48ef08bc85a1671a4e5cabf82ddc1db81814749d227db78f  ./campaign.json
 29323a789352072040f39c84cad39bdfd405f5680b9f8da50ad4f7771658981f  ./lab/experiments/fullday_jobs.py
 da88e6674369394bb21ed6442f54608bed56c9911f82d3d585cee8bd783510f2  ./lab/experiments/spot_jobs.py
 f15f9a0c31f87e2f5f552e99721639e3f52135bc6cd7e0581ce638a57f1507fa  ./lab/tools/coord.py
@@ -11,7 +11,7 @@ f91888b24d823a6587a79dc378f7ac44c1e777c7cd5f22cffa835907b777dbcb  ./lab/tools/po
 748dd0ac45c3b4c6dc55d80a7e01d78d60e33353657e5b4fdb9f3857eaf2b55f  ./README_ZONES.txt
 82ae2f0537b19d70bebf75e3943b59f768bdd6b37d046be7e675d90dbbcebab7  ./run_hm64_zones_shared.sh
 5930b0f53f6675ced3e43bc7190fd38e13003f5741a51de4219e3c55ca865bcf  ./tools/hm64_coord_sync.sh
-1d2d36fb57d84152d87cf2d5dbb2678cd06d12b523ed881fd06aab1d4ce8eb21  ./tools/hm64_labdata.sh
+5d2d04740f9a01a5945f013e9c53c58e6ee34e787fff7320e8bf7933a5cfa21f  ./tools/hm64_labdata.sh
 cfc04dc6b7e915cb4d3a5a45ea00c7db5c8cae3f56e0fad334594534a8b03a00  ./tools/hm64_parts_sync.sh
 07308c4f74c6d101f71739fc7e3406bf09e23301232fa17720f9e10c41250485  ./tools/masks.json
 63d13694c26c677d69785645c7c43ee358f4c15a2187528eceb0930b189f864f  ./tools/zone_plan.py

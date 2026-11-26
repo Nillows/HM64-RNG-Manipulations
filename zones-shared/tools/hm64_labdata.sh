@@ -1,6 +1,7 @@
 set -uo pipefail
-LABDATA_REV="2026-11-25e"
+LABDATA_REV="2026-11-26g"
 MODE="${1:-}"
+ARGS_KEEP="${1:-}"
 HM="$HOME/Documents/hm64"
 TOOLS="$HM/tools"
 DL="$HOME/Downloads"
@@ -52,9 +53,15 @@ married-sunny|hm64-fullday-married-sunny-d140c90.zip|1|each
 married-sunny|hm64-fullday-married-sunny-d170c120.zip|1|each
 married-sunny|run-married120-*.log|0|each
 married-rainy|hm64-dogwatch-married-lineup2-rainy-62991249.zip|1|each
-married-rainy|hm64-fullday-married-rainy-d90.zip|1|each
-married-rainy|hm64-fullday-married-rainy-d140c90.zip|1|each
-married-rainy|hm64-fullday-married-rainy-d170c120.zip|1|each
+married-rainy|hm64-fullday-married-rainy-d90.zip|0|each
+married-rainy|hm64-fullday-married-rainy-d140c90.zip|0|each
+married-rainy|hm64-fullday-married-rainy-d170c120.zip|0|each
+married-sunny|hm64-fullday-married-sunny-d90@*.zip|0|each
+married-sunny|hm64-fullday-married-sunny-d140c90@*.zip|0|each
+married-sunny|hm64-fullday-married-sunny-d170c120@*.zip|0|each
+married-rainy|hm64-fullday-married-rainy-d90@*.zip|0|each
+married-rainy|hm64-fullday-married-rainy-d140c90@*.zip|0|each
+married-rainy|hm64-fullday-married-rainy-d170c120@*.zip|0|each
 spots-rainy-no-horse|hm64-spots-rain-lineup2-nohorse-8e972d75.zip|0|each
 spots-rainy-no-horse|run-spots-*.log|0|each
 spots-rainy-horse|hm64-spots-rain-lineup2-horse-287c11a6.zip|0|each
@@ -121,7 +128,26 @@ if [ -d "$DATA/.git" ]; then
     git fetch -q origin "$BRANCH" || die "git fetch of $BRANCH failed. Nothing was changed."
     if git rev-parse -q --verify HEAD >/dev/null 2>&1; then
       set -- $(git rev-list --left-right --count "HEAD...FETCH_HEAD")
-      if [ "$1" -gt 0 ] && [ "$2" -gt 0 ]; then die "$DATA and GitHub's $BRANCH have both moved on ($1 local, $2 remote commits). Sort that out by hand; nothing was changed."; fi
+      if [ "$1" -gt 0 ] && [ "$2" -gt 0 ]; then
+        LOCALN=$1; REMOTEN=$2
+        BASE=$(git merge-base HEAD FETCH_HEAD 2>/dev/null || true)
+        [ -n "$BASE" ] || die "$DATA and GitHub's $BRANCH share no history. Sort that out by hand; nothing was changed."
+        CHG=$(git diff --name-only --diff-filter=MDRT "$BASE" HEAD | grep -v -e '^README.md$' -e '^MANIFEST.txt$' || true)
+        [ -z "$CHG" ] || die "$DATA changed or removed files that are on GitHub ($(printf '%s' "$CHG" | head -n 3 | tr '\n' ' ')): not joined automatically. Nothing was changed."
+        KEEP="$DATA.keep.$$"; rm -rf "$KEEP"; mkdir -p "$KEEP"
+        git diff --name-only --diff-filter=A "$BASE" HEAD | grep -v -e '^README.md$' -e '^MANIFEST.txt$' > "$KEEP/.list" || true
+        while IFS= read -r f; do mkdir -p "$KEEP/$(dirname "$f")"; cp "$f" "$KEEP/$f" || die "could not set $f aside"; done < "$KEEP/.list"
+        BK="before-join-$(date +%Y%m%d-%H%M%S)"
+        git branch -f "$BK" HEAD
+        git reset -q --hard FETCH_HEAD || die "could not take GitHub's $BRANCH (your commits are kept as branch $BK in $DATA)"
+        while IFS= read -r f; do
+          if [ -f "$f" ]; then cmp -s "$f" "$KEEP/$f" || die "$f is on GitHub with other content than this Mac's copy (this Mac's commits are kept as branch $BK in $DATA)"
+          else mkdir -p "$(dirname "$f")"; cp "$KEEP/$f" "$f"; fi
+        done < "$KEEP/.list"
+        echo "  another Mac has uploaded meanwhile: took its $REMOTEN commit(s), kept this Mac's $(wc -l < "$KEEP/.list" | tr -d ' ') new files ($LOCALN local commit(s) kept as branch $BK)"
+        rm -rf "$KEEP"
+        set -- 0 0
+      fi
       if [ "$2" -gt 0 ]; then git merge -q --ff-only FETCH_HEAD || die "could not fast-forward $DATA (local edits in the way?)"; echo "  pulled $2 commit(s) from GitHub"; fi
     else
       git reset -q --hard FETCH_HEAD || die "could not take GitHub's $BRANCH into the empty $DATA"
@@ -280,6 +306,12 @@ else
   t=0
   until git push -u origin "$BRANCH"; do
     t=$((t + 1))
+    if [ "$t" = 1 ] && [ "${HM64_LABDATA_RETRY:-0}" -lt 3 ] && git fetch -q origin "$BRANCH" 2>/dev/null && [ "$(git rev-list --count "HEAD..FETCH_HEAD" 2>/dev/null || echo 0)" -gt 0 ]; then
+      echo "  another Mac pushed first: joining its upload and trying again"
+      HM64_LABDATA_RETRY=$(( ${HM64_LABDATA_RETRY:-0} + 1 )); export HM64_LABDATA_RETRY
+      sleep $(( HM64_LABDATA_RETRY * 3 ))
+      exec bash "$0" ${ARGS_KEEP:-} </dev/null
+    fi
     [ "$t" -lt 3 ] || die "git push failed. The commit is safe in $DATA; run the same command again to push it."
     echo "  push failed, trying again in 5 s"; sleep 5
   done
