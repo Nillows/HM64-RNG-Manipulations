@@ -157,3 +157,23 @@ spots-1 (2026-11-25: one dog line from other pier spots, labels of the represent
 ==> lab data 3/5  looking for results in /home/boot_camper/Documents/hm64/runs and /home/boot_camper/Downloads (table: built in; newest copy of each file)
   + sunny-no-horse/hm64-nutgaps-beach-lineup2-52cfd712@desktop-4uutk80.zip (0 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-nutgaps-beach-lineup2-52cfd712@desktop-4uutk80.zip
   + sunny-horse/hm64-nutgaps-beach-lineup2-horse-b0f2a284@desktop-4uutk80.zip (0 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-nutgaps-beach-lineup2-horse-b0f2a284@desktop-4uutk80.zip
+  + sunny-no-horse/run-nutgaps-20261126-212831.log (0 MB)   <- /home/boot_camper/Documents/hm64/runs/dogspots/run-nutgaps-20261126-212831.log
+  3 new or changed, 3 already up to date
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  76 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |   3 +
+ README.md                                          |   2 +-
+ ...each-lineup2-horse-b0f2a284@desktop-4uutk80.zip | Bin 0 -> 9415 bytes
+ ...gaps-beach-lineup2-52cfd712@desktop-4uutk80.zip | Bin 0 -> 7271 bytes
+ sunny-no-horse/run-nutgaps-20261126-212831.log     | 159 +++++++++++++++++++++
+ 5 files changed, 163 insertions(+), 1 deletion(-)
+  committed 393e8e4 (0 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+   105b536..393e8e4  lab-data -> lab-data
+branch 'lab-data' set up to track 'origin/lab-data'.
+  pushed: GitHub's lab-data = your copy (393e8e4)
+
+LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 393e8e4.
