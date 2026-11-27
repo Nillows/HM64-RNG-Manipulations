@@ -804,3 +804,33 @@ spots-1 (2026-11-25: one dog line from other pier spots, labels of the represent
   + sunny-no-horse/hm64-gaps-beach-lineup2-52cfd712@scotts-m4.zip (13 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-gaps-beach-lineup2-52cfd712@scotts-m4.zip
   + sunny-horse/hm64-gaps-beach-lineup2-horse-b0f2a284@scotts-m4.zip (17 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-gaps-beach-lineup2-horse-b0f2a284@scotts-m4.zip
   + spots-rainy-no-horse//Users/thomaswollin/Documents/hm64/lab-data/spots-rainy-no-horse/run-gaps-20261126-124936.log (0 MB)   <- /Users/thomaswollin/Documents/hm64/runs/dogspots/run-gaps-20261126-124936.log
+  + sunny-no-horse/run-sunspots-20261126-171746.log (0 MB)   <- /Users/thomaswollin/Documents/hm64/runs/dogspots/run-sunspots-20261126-171746.log
+  4 new or changed, 11 already up to date (2 of them: same files inside as the copy on GitHub, only zipped again - not uploaded again)
+  result zips in runs/ that are not in the table (NOT uploaded; tell Claude if they should be): 8
+    hm64-fullday-married-rainy-d140c90-summary.zip
+    hm64-fullday-married-rainy-d170c120-b04@scotts-m4.zip
+    hm64-fullday-married-rainy-d170c120-b05@scotts-m4.zip
+    hm64-fullday-married-rainy-d170c120-summary.zip
+    hm64-fullday-married-rainy-d90-summary.zip
+    hm64-fullday-married-sunny-d140c90-summary.zip
+    hm64-fullday-married-sunny-d170c120-summary.zip
+    hm64-fullday-married-sunny-d90-summary.zip
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  67 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |   5 +-
+ README.md                                          |   2 +-
+ spots-rainy-no-horse/run-gaps-20261126-124936.log  |  34 +
+ ...gaps-beach-lineup2-horse-b0f2a284@scotts-m4.zip | Bin 0 -> 18772492 bytes
+ .../hm64-gaps-beach-lineup2-52cfd712@scotts-m4.zip | Bin 0 -> 14594972 bytes
+ sunny-no-horse/run-sunspots-20261126-171746.log    | 806 +++++++++++++++++++++
+ 6 files changed, 845 insertions(+), 2 deletions(-)
+  committed d842b3e (31 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+   bd5fd8d..d842b3e  lab-data -> lab-data
+branch 'lab-data' set up to track 'origin/lab-data'.
+  pushed: GitHub's lab-data = your copy (d842b3e)
+
+LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at d842b3e.
