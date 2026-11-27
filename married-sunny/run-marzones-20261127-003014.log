@@ -705,3 +705,25 @@ spots-1 (2026-11-25: one dog line from other pier spots, labels of the represent
 ==> lab data 3/5  looking for results in /home/boot_camper/Documents/hm64/runs and /home/boot_camper/Downloads (table: built in; newest copy of each file)
   + married-sunny/hm64-gaps-married-lineup2-sunny-237e3d1d@desktop-4uutk80.zip (14 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marzones-20261127-003014/hm64-gaps-married-lineup2-sunny-237e3d1d@desktop-4uutk80.zip
   + married-rainy/hm64-gaps-married-lineup2-rainy-62991249@desktop-4uutk80.zip (16 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marzones-20261127-003014/hm64-gaps-married-lineup2-rainy-62991249@desktop-4uutk80.zip
+  + married-sunny/run-marzones-20261127-003014.log (0 MB)   <- /home/boot_camper/Documents/hm64/runs/dogspots/run-marzones-20261127-003014.log
+  + sunny-no-horse//home/boot_camper/Documents/hm64/lab-data/sunny-no-horse/run-nutgaps-20261126-212831.log (0 MB)   <- /home/boot_camper/Documents/hm64/runs/dogspots/run-nutgaps-20261126-212831.log
+  4 new or changed, 5 already up to date
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  82 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |   5 +-
+ README.md                                          |   4 +-
+ ...ried-lineup2-rainy-62991249@desktop-4uutk80.zip | Bin 0 -> 17543501 bytes
+ ...ried-lineup2-sunny-237e3d1d@desktop-4uutk80.zip | Bin 0 -> 15652009 bytes
+ married-sunny/run-marzones-20261127-003014.log     | 707 +++++++++++++++++++++
+ sunny-no-horse/run-nutgaps-20261126-212831.log     |  20 +
+ 6 files changed, 733 insertions(+), 3 deletions(-)
+  committed db23660 (31 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+   97b5b13..db23660  lab-data -> lab-data
+branch 'lab-data' set up to track 'origin/lab-data'.
+  pushed: GitHub's lab-data = your copy (db23660)
+
+LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at db23660.

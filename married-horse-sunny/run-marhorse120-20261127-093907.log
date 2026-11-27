@@ -1,0 +1,456 @@
+
+==> SHARED run: this Mac = desktop-4uutk80, direction middle (helper: cast blocks only, of the saves whose dog-watch is already here)
+
+==> MARRIED + HORSE tables to 120 s: saves [sunny rainy], preset dogwatch, work folder /home/boot_camper/Documents/hm64/runs/dogspots/hm64-lab (image hm64-lab:amd64-nd)  Fri 09:39
+  lab code: ZZ_CODE = "zigzag-4f (2026-11-16: every bite to 90 s after READY; dogwatch menus...
+  (no caffeinate on this machine: nothing keeps it awake)
+  free disk: 947 GB
+
+==> 1/7 lab files
+  note: tools/fullday_campaign.py in the lab differs from the kit's copy (fullday-2); the kit's copy is used
+  [coord 09:39:07] machine desktop-4uutk80, branch lab-coord, every 30 s (rev 2026-11-25a)
+  table sync with GitHub (branch lab-coord): running (pid 269217)
+  this Mac's result parts go to GitHub every 30 min (branch lab-parts-desktop-4uutk80; pid 269220)
+  [coord 09:39:08] machine desktop-4uutk80, branch lab-coord, every 30 s (rev 2026-11-25a)
+  [parts 09:39:08] machine desktop-4uutk80, every 30 min (rev 2026-11-25a)
+  fullday-2 kit, save_check.py, married_z0_check.py, save_redate.py -> /home/boot_camper/Documents/hm64/runs/dogspots/hm64-lab
+  workers  14
+
+==> 2/7 the saves
+  save     married-horse-lineup2-sunny-0f33f322   <- /home/boot_camper/Documents/hm64/sourcefiles/married/Harvest Moon 64 (USA).beach-lineup2-horse-sunny-married.SaveRAM
+    married-horse-lineup2-sunny-0f33f322.SaveRAM  sha256 0f33f322f655  (bizhawk-saveram, checksum valid)
+      day      year 1 spring 13 (day of week 6), weather sunny, forecast sunny
+      Jack     gold 300, stamina 100/100, tools [24, 1, 3, 4, 5, 0, 0, 0, 24], in hand 24 (fishing rod)
+      dog      beach (map 9) x -197.272 z 222.243  tile 18:23
+      horse    YES (HAVE_HORSE True, ranch cutscene seen True); block: farm (map 82) x 492.879 z -69.384, grown 0, age 3, flags 0x0003
+      family   married True, baby False, wife 4; life events ['MARRIED', 'HAVE_HORSE', 'RANCH_GET_HORSE_CUTSCENE', 16, 62]
+      [PASS] weather  want sunny    got sunny
+      [PASS] horse    want yes      got yes
+      [PASS] married  want yes      got yes
+      [PASS] wife     want karen    got karen
+      [PASS] baby     want no       got no
+      [PASS] dog      want beach    got beach
+      [PASS] tile     want 18:23    got 18:23
+      [PASS] rod      want yes      got yes
+      [PASS] season   want spring   got spring
+      [PASS] day      want 13       got 13
+      [PASS] checksum want valid    got valid
+  save     married-horse-lineup2-rainy-8cbe43a5   <- /home/boot_camper/Documents/hm64/sourcefiles/married/Harvest Moon 64 (USA).beach-lineup2-horse-rainy-married.SaveRAM
+    married-horse-lineup2-rainy-8cbe43a5.SaveRAM  sha256 8cbe43a540e3  (bizhawk-saveram, checksum valid)
+      day      year 1 spring 12 (day of week 5), weather rain, forecast sunny
+      Jack     gold 300, stamina 100/100, tools [24, 1, 3, 4, 5, 0, 0, 0, 24], in hand 24 (fishing rod)
+      dog      beach (map 9) x -197.272 z 222.243  tile 18:23
+      horse    YES (HAVE_HORSE True, ranch cutscene seen True); block: farm (map 82) x 492.879 z -69.384, grown 0, age 2, flags 0x0003
+      family   married True, baby False, wife 4; life events ['MARRIED', 'HAVE_HORSE', 'RANCH_GET_HORSE_CUTSCENE', 16, 62]
+      [PASS] weather  want rain     got rain
+      [PASS] horse    want yes      got yes
+      [PASS] married  want yes      got yes
+      [PASS] wife     want karen    got karen
+      [PASS] baby     want no       got no
+      [PASS] dog      want beach    got beach
+      [PASS] tile     want 18:23    got 18:23
+      [PASS] rod      want yes      got yes
+      [PASS] season   want spring   got spring
+      [PASS] day      want 12       got 12
+      [PASS] checksum want valid    got valid
+  workers  14  (this Mac's benchmark: /home/boot_camper/Documents/hm64/pool/bench_3b4ab031b02d_16.json; delete that file to measure again)
+
+==> 3/7 lab health + each save's reference route from power-on (twice)
+  lab health test skipped (no Spring 9 save in /home/boot_camper/Documents/hm64/runs/dogspots/hm64-lab/data/saves)
+  married-horse-lineup2-sunny-0f33f322:
+  save 0f33f322f655: spring 13 year 1, weather 1, rod in hand True; dog at the beach load: beach x -197.27 z 222.24
+  reference route: {"house": [1036, 499], "farm": [1448, 704], "beach": [2264, 1083], "wake": [213, 1190], "ready": [339, -92.0, 194.0, 1269]}
+  equal to Claude's sandbox record of this save (x86 build): OK
+  married-horse-lineup2-rainy-8cbe43a5:
+  save 8cbe43a540e3: spring 12 year 1, weather 2, rod in hand True; dog at the beach load: beach x -197.27 z 222.24
+  reference route: {"house": [1036, 499], "farm": [1448, 704], "beach": [2264, 7429], "wake": [213, 9382], "ready": [339, -92.0, 194.0, 10593]}
+  equal to Claude's sandbox record of this save (x86 build): OK
+
+==> [1: married-horse-lineup2-rainy-8cbe43a5] SKIPPED on this helper Mac: its dog-watch run is not here (it is made on the main Mac). When the main Mac has finished it: bash hm64_pool.sh pull user@main-mac married-horse  here (or sync from the main Mac), then start this again; hm64_pool.sh work does both by itself.
+
+==> 4/7 [2: married-horse-lineup2-sunny-0f33f322] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY (Fri 09:39)
+  done before
+
+==> 5/7 [2: married-horse-lineup2-sunny-0f33f322] dog-watch phase 3: Lucky Timer cast tables (every game frame 0.1-40 s, every bite to 90 s) (Fri 09:39)
+  done before
+  zip      /home/boot_camper/Documents/hm64/runs/hm64-dogwatch-married-horse-lineup2-sunny-0f33f322.zip
+
+==> 6/7 [2: married-horse-lineup2-sunny-0f33f322] dog after the cast: 3 windows (Fri 09:39)
+
+==> marhorse-sunny-d170c120: casts to 120 s, everything to 170 s after READY, blocks 4-5  (Fri 09:39)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-horse-lineup2-sunny-0f33f322  save /work/data/saves_dogspots/married-horse-lineup2-sunny-0f33f322.SaveRAM  workers 14  dog at [-197.27, 222.24]
+  followed to 10198 VIs after READY
+[FD1 lines] 156 jobs, 0 already done, 156 to run
+[FD1 lines] 5/156  37.3 jobs/min  eta 4 min
+[FD1 lines] 10/156  72.3 jobs/min  eta 2 min
+[FD1 lines] 15/156  65.0 jobs/min  eta 2 min
+[FD1 lines] 20/156  85.3 jobs/min  eta 2 min
+[FD1 lines] 25/156  104.4 jobs/min  eta 1 min
+[FD1 lines] 30/156  89.1 jobs/min  eta 1 min
+[FD1 lines] 35/156  102.5 jobs/min  eta 1 min
+[FD1 lines] 40/156  115.2 jobs/min  eta 1 min
+[FD1 lines] 45/156  100.4 jobs/min  eta 1 min
+[FD1 lines] 50/156  111.0 jobs/min  eta 1 min
+[FD1 lines] 55/156  120.4 jobs/min  eta 1 min
+[FD1 lines] 60/156  107.6 jobs/min  eta 1 min
+[FD1 lines] 65/156  115.8 jobs/min  eta 1 min
+[FD1 lines] 70/156  122.7 jobs/min  eta 1 min
+[FD1 lines] 75/156  113.1 jobs/min  eta 1 min
+[FD1 lines] 80/156  119.8 jobs/min  eta 1 min
+[FD1 lines] 85/156  109.8 jobs/min  eta 1 min
+[FD1 lines] 90/156  115.0 jobs/min  eta 1 min
+[FD1 lines] 95/156  120.6 jobs/min  eta 1 min
+[FD1 lines] 100/156  113.6 jobs/min  eta 0 min
+[FD1 lines] 105/156  118.2 jobs/min  eta 0 min
+[FD1 lines] 110/156  122.9 jobs/min  eta 0 min
+[FD1 lines] 115/156  116.9 jobs/min  eta 0 min
+[FD1 lines] 120/156  120.8 jobs/min  eta 0 min
+[FD1 lines] 125/156  125.0 jobs/min  eta 0 min
+[FD1 lines] 130/156  119.2 jobs/min  eta 0 min
+[FD1 lines] 135/156  122.8 jobs/min  eta 0 min
+[FD1 lines] 140/156  126.0 jobs/min  eta 0 min
+[FD1 lines] 145/156  121.2 jobs/min  eta 0 min
+[FD1 lines] 150/156  124.7 jobs/min  eta 0 min
+[FD1 lines] 155/156  124.8 jobs/min  eta 0 min
+[FD1 lines] 156/156  125.5 jobs/min  eta 0 min
+  the dog had already left its tile at READY on 1 lines (kept): [('f5314469', [-222.1, 219.4])]
+[FD1] 156 of 156 lines ran as planned; hashes against the dog-watch run: 155220 equal, 0 different; ended: [('limit', 10198)]
+lines followed to 10198 VIs (170 s) after READY; 57 heavy lines (90.0% of the route weight), 99 others; 87727 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 57):  27674 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 99):  19072 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 57):  15502 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 99):   6785 casts
+  block  4: casts  80.2-120.3 s after READY, heavy lines ( 57):  12800 casts
+  block  5: casts  80.2-120.3 s after READY, other lines ( 99):   5894 casts
+
+==> marhorse-sunny-d170c120 block 5 of 5  (Fri 09:41)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..7198 VIs after READY on the other lines (99), 5894 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 5] 570 jobs, 0 already done, 570 to run
+[FD block 5] shared run: machine desktop-4uutk80, order middle, 570 jobs in 48 blocks; other machines: scotts-m4
+[FD block 5] block 24/48 (middle out): 12 jobs
+[FD block 5] block 24 done; 12 jobs here in 2 min (7.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 7.5 jobs/min (desktop-4uutk80 6.0, scotts-m4 1.5) - 552 jobs left in this list: 73 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 1547 jobs left in them = 3.4 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 25/48 (middle out): 12 jobs
+[FD block 5] block 25 done; 24 jobs here in 4 min (6.4 jobs/min)
+[FD block 5] pool: 2 Mac(s), 11.3 jobs/min (desktop-4uutk80 6.4, scotts-m4 4.9) - 516 jobs left in this list: 46 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 1467 jobs left in them = 2.2 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 23/48 (middle out): 12 jobs
+[FD block 5] block 23 done; 36 jobs here in 5 min (7.3 jobs/min)
+[FD block 5] pool: 2 Mac(s), 13.0 jobs/min (desktop-4uutk80 7.3, scotts-m4 5.7) - 492 jobs left in this list: 38 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 1443 jobs left in them = 1.9 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 26/48 (middle out): 12 jobs
+[FD block 5] block 26 done; 48 jobs here in 8 min (6.1 jobs/min)
+[FD block 5] pool: 2 Mac(s), 12.6 jobs/min (desktop-4uutk80 6.1, scotts-m4 6.4) - 456 jobs left in this list: 36 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 1363 jobs left in them = 1.8 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 22/48 (middle out): 12 jobs
+[FD block 5] block 22 done; 60 jobs here in 10 min (6.2 jobs/min)
+[FD block 5] pool: 2 Mac(s), 13.6 jobs/min (desktop-4uutk80 6.2, scotts-m4 7.4) - 420 jobs left in this list: 31 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 1305 jobs left in them = 1.6 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 27/48 (middle out): 12 jobs
+[FD block 5] block 27 done; 72 jobs here in 13 min (5.8 jobs/min)
+[FD block 5] pool: 2 Mac(s), 13.4 jobs/min (desktop-4uutk80 5.8, scotts-m4 7.6) - 384 jobs left in this list: 29 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 1203 jobs left in them = 90 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 21/48 (middle out): 12 jobs
+[FD block 5] block 21 done; 84 jobs here in 14 min (6.2 jobs/min)
+[FD block 5] pool: 2 Mac(s), 14.0 jobs/min (desktop-4uutk80 6.2, scotts-m4 7.8) - 360 jobs left in this list: 26 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 1179 jobs left in them = 84 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 28/48 (middle out): 12 jobs
+[FD block 5] block 28 done; 96 jobs here in 16 min (6.0 jobs/min)
+[FD block 5] pool: 2 Mac(s), 14.7 jobs/min (desktop-4uutk80 6.0, scotts-m4 8.8) - 312 jobs left in this list: 21 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 1109 jobs left in them = 75 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 20/48 (middle out): 12 jobs
+[FD block 5] block 20 done; 108 jobs here in 17 min (6.3 jobs/min)
+[FD block 5] pool: 2 Mac(s), 15.3 jobs/min (desktop-4uutk80 6.3, scotts-m4 8.9) - 288 jobs left in this list: 19 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 1085 jobs left in them = 71 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 29/48 (middle out): 12 jobs
+[FD block 5] block 29 done; 120 jobs here in 20 min (6.1 jobs/min)
+[FD block 5] pool: 2 Mac(s), 15.1 jobs/min (desktop-4uutk80 6.1, scotts-m4 9.0) - 252 jobs left in this list: 17 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 1005 jobs left in them = 66 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 19/48 (middle out): 12 jobs
+[FD block 5] block 19 done; 132 jobs here in 21 min (6.2 jobs/min)
+[FD block 5] pool: 2 Mac(s), 15.0 jobs/min (desktop-4uutk80 6.2, scotts-m4 8.8) - 228 jobs left in this list: 15 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 981 jobs left in them = 66 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 18/48 (middle out): 12 jobs
+[FD block 5] block 18 done; 144 jobs here in 22 min (6.4 jobs/min)
+[FD block 5] pool: 2 Mac(s), 15.4 jobs/min (desktop-4uutk80 6.4, scotts-m4 8.9) - 204 jobs left in this list: 13 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 935 jobs left in them = 61 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 17/48 (middle out): 12 jobs
+[FD block 5] block 17 done; 156 jobs here in 23 min (6.7 jobs/min)
+[FD block 5] pool: 2 Mac(s), 15.2 jobs/min (desktop-4uutk80 6.7, scotts-m4 8.6) - 192 jobs left in this list: 13 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 901 jobs left in them = 59 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 16/48 (middle out): 12 jobs
+[FD block 5] block 16 done; 168 jobs here in 25 min (6.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 15.1 jobs/min (desktop-4uutk80 6.9, scotts-m4 8.2) - 180 jobs left in this list: 12 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 867 jobs left in them = 57 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 15/48 (middle out): 12 jobs
+[FD block 5] block 15 done; 180 jobs here in 26 min (6.8 jobs/min)
+[FD block 5] pool: 2 Mac(s), 14.5 jobs/min (desktop-4uutk80 6.8, scotts-m4 7.7) - 168 jobs left in this list: 12 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 811 jobs left in them = 56 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 13/48 (middle out): 12 jobs
+  [parts 10:09:15] 2 result files on GitHub (branch lab-parts-desktop-4uutk80)
+[FD block 5] block 13 done; 192 jobs here in 28 min (6.8 jobs/min)
+[FD block 5] pool: 2 Mac(s), 14.6 jobs/min (desktop-4uutk80 6.8, scotts-m4 7.8) - 144 jobs left in this list: 10 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 765 jobs left in them = 52 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 11/48 (middle out): 12 jobs
+[FD block 5] block 11 done; 204 jobs here in 31 min (6.7 jobs/min)
+[FD block 5] pool: 2 Mac(s), 14.8 jobs/min (desktop-4uutk80 6.8, scotts-m4 8.0) - 120 jobs left in this list: 8 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 697 jobs left in them = 47 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 9/48 (middle out): 12 jobs
+[FD block 5] block 9 done; 216 jobs here in 34 min (6.4 jobs/min)
+[FD block 5] pool: 2 Mac(s), 13.6 jobs/min (desktop-4uutk80 6.4, scotts-m4 7.2) - 96 jobs left in this list: 7 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 629 jobs left in them = 46 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 7/48 (middle out): 12 jobs
+[FD block 5] block 7 done; 228 jobs here in 35 min (6.5 jobs/min)
+[FD block 5] pool: 2 Mac(s), 13.6 jobs/min (desktop-4uutk80 6.4, scotts-m4 7.2) - 72 jobs left in this list: 5 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 583 jobs left in them = 43 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 6/48 (middle out): 12 jobs
+[FD block 5] block 6 done; 240 jobs here in 36 min (6.6 jobs/min)
+[FD block 5] pool: 2 Mac(s), 13.6 jobs/min (desktop-4uutk80 6.8, scotts-m4 6.8) - 60 jobs left in this list: 4 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 549 jobs left in them = 40 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 5/48 (middle out): 12 jobs
+[FD block 5] block 5 done; 252 jobs here in 38 min (6.6 jobs/min)
+[FD block 5] pool: 2 Mac(s), 13.2 jobs/min (desktop-4uutk80 6.8, scotts-m4 6.4) - 48 jobs left in this list: 4 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 515 jobs left in them = 39 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 3/48 (middle out): 12 jobs
+[FD block 5] block 3 done; 264 jobs here in 41 min (6.5 jobs/min)
+[FD block 5] pool: 2 Mac(s), 12.8 jobs/min (desktop-4uutk80 6.8, scotts-m4 6.0) - 24 jobs left in this list: 2 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 447 jobs left in them = 35 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 1/48 (middle out): 12 jobs
+[FD block 5] block 1 done; 276 jobs here in 44 min (6.3 jobs/min)
+[FD block 5] pool: 2 Mac(s), 11.6 jobs/min (desktop-4uutk80 6.4, scotts-m4 5.2) - 0 jobs left in this list: 0 min for the pool
+[FD block 5] campaign so far: 8 of 8 lists opened, 357 jobs left in them = 31 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] every block is done (276 jobs run here this time)
+  block 5 done in 43 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 5 | 80.2 – 120.3 · other | 99 | 5894 | 3330 | 0 | 2395 / 0 / 935 | 3330 / 0 / 0 | 5.0 | 1 (0.0%) |
+
+  this Mac's part of block 5: /home/boot_camper/Documents/hm64/runs/hm64-fullday-marhorse-sunny-d170c120-b05@desktop-4uutk80.zip
+
+==> marhorse-sunny-d170c120 block 4 of 5  (Fri 10:25)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..7198 VIs after READY on the heavy lines (57), 12800 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 4] 1083 jobs, 0 already done, 1083 to run
+[FD block 4] shared run: machine desktop-4uutk80, order middle, 1083 jobs in 50 blocks; other machines: thomass-mac-mini
+[FD block 4] block 35/50 (middle out): 22 jobs
+[FD block 4] block 35 done; 22 jobs here in 3 min (7.9 jobs/min)
+[FD block 4] pool: 3 Mac(s), 25.8 jobs/min (desktop-4uutk80 7.9, scotts-m4 2.5, thomass-mac-mini 15.4) - 308 jobs left in this list: 12 min for the pool
+[FD block 4] campaign so far: 8 of 8 lists opened, 308 jobs left in them = 12 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 37/50 (middle out): 22 jobs
+[FD block 4] block 37 done; 44 jobs here in 7 min (6.7 jobs/min)
+[FD block 4] pool: 3 Mac(s), 26.1 jobs/min (desktop-4uutk80 6.7, scotts-m4 4.7, thomass-mac-mini 14.7) - 242 jobs left in this list: 9 min for the pool
+[FD block 4] campaign so far: 8 of 8 lists opened, 242 jobs left in them = 9 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 39/50 (middle out): 22 jobs
+[FD block 4] block 39 done; 66 jobs here in 10 min (6.3 jobs/min)
+[FD block 4] pool: 3 Mac(s), 28.4 jobs/min (desktop-4uutk80 6.3, scotts-m4 7.4, thomass-mac-mini 14.7) - 110 jobs left in this list: 4 min for the pool
+[FD block 4] campaign so far: 8 of 8 lists opened, 110 jobs left in them = 4 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 43/50 (middle out): 22 jobs
+[FD block 4] block 43 done; 88 jobs here in 11 min (7.8 jobs/min)
+[FD block 4] pool: 3 Mac(s), 28.4 jobs/min (desktop-4uutk80 7.8, scotts-m4 6.8, thomass-mac-mini 13.9) - 88 jobs left in this list: 3 min for the pool
+[FD block 4] campaign so far: 8 of 8 lists opened, 88 jobs left in them = 3 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 44/50 (middle out): 22 jobs
+  [parts 10:39:20] 3 result files on GitHub (branch lab-parts-desktop-4uutk80)
+[FD block 4] block 44 done; 110 jobs here in 15 min (7.2 jobs/min)
+[FD block 4] pool: 3 Mac(s), 27.7 jobs/min (desktop-4uutk80 7.2, scotts-m4 8.0, thomass-mac-mini 12.5) - 0 jobs left in this list: 0 min for the pool
+[FD block 4] campaign so far: 8 of 8 lists opened, 0 jobs left in them = 0 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] every block is done (110 jobs run here this time)
+  block 4 done in 15 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 57 | 12800 | 1696 | 0 | 1465 / 0 / 231 | 1696 / 0 / 0 | 4.8 | 0 (0.0%) |
+| 5 | 80.2 – 120.3 · other | 99 | 5894 | 3330 | 0 | 2395 / 0 / 935 | 3330 / 0 / 0 | 5.0 | 1 (0.0%) |
+
+  this Mac's part of block 4: /home/boot_camper/Documents/hm64/runs/hm64-fullday-marhorse-sunny-d170c120-b04@desktop-4uutk80.zip
+
+==> marhorse-sunny-d140c90: casts to 90 s, everything to 140 s after READY, blocks 2-5  (Fri 10:40)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-horse-lineup2-sunny-0f33f322  save /work/data/saves_dogspots/married-horse-lineup2-sunny-0f33f322.SaveRAM  workers 14  dog at [-197.27, 222.24]
+  followed to 8398 VIs after READY
+[FD1 lines] 156 jobs, 0 already done, 156 to run
+[FD1 lines] 5/156  54.6 jobs/min  eta 3 min
+[FD1 lines] 10/156  108.4 jobs/min  eta 1 min
+[FD1 lines] 15/156  83.6 jobs/min  eta 2 min
+[FD1 lines] 20/156  110.4 jobs/min  eta 1 min
+[FD1 lines] 25/156  136.2 jobs/min  eta 1 min
+[FD1 lines] 30/156  112.6 jobs/min  eta 1 min
+[FD1 lines] 35/156  130.0 jobs/min  eta 1 min
+[FD1 lines] 40/156  146.9 jobs/min  eta 1 min
+[FD1 lines] 45/156  126.9 jobs/min  eta 1 min
+[FD1 lines] 50/156  139.7 jobs/min  eta 1 min
+[FD1 lines] 55/156  152.8 jobs/min  eta 1 min
+[FD1 lines] 60/156  136.0 jobs/min  eta 1 min
+[FD1 lines] 65/156  146.3 jobs/min  eta 1 min
+[FD1 lines] 70/156  155.9 jobs/min  eta 1 min
+[FD1 lines] 75/156  141.5 jobs/min  eta 1 min
+[FD1 lines] 80/156  149.4 jobs/min  eta 1 min
+[FD1 lines] 85/156  136.3 jobs/min  eta 1 min
+[FD1 lines] 90/156  143.8 jobs/min  eta 0 min
+[FD1 lines] 95/156  150.5 jobs/min  eta 0 min
+[FD1 lines] 100/156  140.6 jobs/min  eta 0 min
+[FD1 lines] 105/156  147.0 jobs/min  eta 0 min
+[FD1 lines] 110/156  152.9 jobs/min  eta 0 min
+[FD1 lines] 115/156  143.5 jobs/min  eta 0 min
+[FD1 lines] 120/156  148.9 jobs/min  eta 0 min
+[FD1 lines] 125/156  154.4 jobs/min  eta 0 min
+[FD1 lines] 130/156  146.2 jobs/min  eta 0 min
+[FD1 lines] 135/156  151.1 jobs/min  eta 0 min
+[FD1 lines] 140/156  156.0 jobs/min  eta 0 min
+[FD1 lines] 145/156  148.3 jobs/min  eta 0 min
+[FD1 lines] 150/156  153.0 jobs/min  eta 0 min
+[FD1 lines] 155/156  152.7 jobs/min  eta 0 min
+[FD1 lines] 156/156  153.7 jobs/min  eta 0 min
+  the dog had already left its tile at READY on 1 lines (kept): [('f5314469', [-222.1, 219.4])]
+[FD1] 156 of 156 lines ran as planned; hashes against the dog-watch run: 155220 equal, 0 different; ended: [('limit', 8398)]
+lines followed to 8398 VIs (140 s) after READY; 57 heavy lines (90.0% of the route weight), 99 others; 72933 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 57):  27674 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 99):  19072 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 57):  15502 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 99):   6785 casts
+  block  4: casts  80.2- 90.3 s after READY, heavy lines ( 16):   2921 casts
+  block  5: casts  80.2- 90.3 s after READY, other lines ( 10):    979 casts
+
+==> marhorse-sunny-d140c90 block 5 of 5  (Fri 10:41)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..5398 VIs after READY on the other lines (10), 979 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 5] 46 jobs, 0 already done, 46 to run
+[FD block 5] shared run: machine desktop-4uutk80, order middle, 46 jobs in 46 blocks; other machines: thomass-mac-mini
+[FD block 5] every block is done (0 jobs run here this time)
+  block 5 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d140c90 block 4 of 5  (Fri 10:41)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..5398 VIs after READY on the heavy lines (16), 2921 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 4] 129 jobs, 0 already done, 129 to run
+[FD block 4] shared run: machine desktop-4uutk80, order middle, 129 jobs in 43 blocks; other machines: thomass-mac-mini
+[FD block 4] every block is done (0 jobs run here this time)
+  block 4 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d140c90 block 3 of 5  (Fri 10:42)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 3: casts 2400..4798 VIs after READY on the other lines (99), 6785 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 3] 502 jobs, 0 already done, 502 to run
+[FD block 3] shared run: machine desktop-4uutk80, order middle, 502 jobs in 46 blocks; other machines: thomass-mac-mini
+[FD block 3] every block is done (0 jobs run here this time)
+  block 3 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d140c90 block 2 of 5  (Fri 10:42)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 2: casts 2400..4798 VIs after READY on the heavy lines (57), 15502 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 2] 898 jobs, 0 already done, 898 to run
+[FD block 2] shared run: machine desktop-4uutk80, order middle, 898 jobs in 50 blocks; other machines: thomass-mac-mini
+[FD block 2] every block is done (0 jobs run here this time)
+  block 2 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d90: casts to 40 s, everything to 90 s after READY, blocks 0-1  (Fri 10:42)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-horse-lineup2-sunny-0f33f322  save /work/data/saves_dogspots/married-horse-lineup2-sunny-0f33f322.SaveRAM  workers 14  dog at [-197.27, 222.24]
+  followed to 5398 VIs after READY
+[FD1 lines] 156 jobs, 0 already done, 156 to run
+[FD1 lines] 5/156  71.7 jobs/min  eta 2 min
+[FD1 lines] 10/156  143.0 jobs/min  eta 1 min
+[FD1 lines] 15/156  118.3 jobs/min  eta 1 min
+[FD1 lines] 20/156  154.7 jobs/min  eta 1 min
+[FD1 lines] 25/156  190.5 jobs/min  eta 1 min
+[FD1 lines] 30/156  164.0 jobs/min  eta 1 min
+[FD1 lines] 35/156  188.6 jobs/min  eta 1 min
+[FD1 lines] 40/156  213.0 jobs/min  eta 1 min
+[FD1 lines] 45/156  186.2 jobs/min  eta 1 min
+[FD1 lines] 50/156  205.3 jobs/min  eta 1 min
+[FD1 lines] 55/156  224.2 jobs/min  eta 0 min
+[FD1 lines] 60/156  198.5 jobs/min  eta 0 min
+[FD1 lines] 65/156  214.0 jobs/min  eta 0 min
+[FD1 lines] 70/156  228.5 jobs/min  eta 0 min
+[FD1 lines] 75/156  207.7 jobs/min  eta 0 min
+[FD1 lines] 80/156  220.3 jobs/min  eta 0 min
+[FD1 lines] 85/156  201.3 jobs/min  eta 0 min
+[FD1 lines] 90/156  211.0 jobs/min  eta 0 min
+[FD1 lines] 95/156  220.4 jobs/min  eta 0 min
+[FD1 lines] 100/156  207.2 jobs/min  eta 0 min
+[FD1 lines] 105/156  215.9 jobs/min  eta 0 min
+[FD1 lines] 110/156  224.5 jobs/min  eta 0 min
+[FD1 lines] 115/156  212.3 jobs/min  eta 0 min
+[FD1 lines] 120/156  219.8 jobs/min  eta 0 min
+[FD1 lines] 125/156  228.0 jobs/min  eta 0 min
+[FD1 lines] 130/156  216.6 jobs/min  eta 0 min
+[FD1 lines] 135/156  223.4 jobs/min  eta 0 min
+[FD1 lines] 140/156  228.5 jobs/min  eta 0 min
+[FD1 lines] 145/156  218.9 jobs/min  eta 0 min
+[FD1 lines] 150/156  226.1 jobs/min  eta 0 min
+[FD1 lines] 155/156  226.1 jobs/min  eta 0 min
+[FD1 lines] 156/156  227.4 jobs/min  eta 0 min
+  the dog had already left its tile at READY on 1 lines (kept): [('f5314469', [-222.1, 219.4])]
+[FD1] 156 of 156 lines ran as planned; hashes against the dog-watch run: 155220 equal, 0 different; ended: [('limit', 5398)]
+lines followed to 5398 VIs (90 s) after READY; 57 heavy lines (90.0% of the route weight), 99 others; 46746 casts in 2 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 57):  27674 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 99):  19072 casts
+
+==> marhorse-sunny-d90 block 1 of 1  (Fri 10:43)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 1: casts 6..2398 VIs after READY on the other lines (99), 19072 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 1] 3060 jobs, 0 already done, 3060 to run
+[FD block 1] shared run: machine desktop-4uutk80, order middle, 3060 jobs in 50 blocks; other machines: thomass-mac-mini
+[FD block 1] every block is done (0 jobs run here this time)
+  block 1 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d90 block 0 of 1  (Fri 10:43)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 0: casts 6..2398 VIs after READY on the heavy lines (57), 27674 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 0] 2303 jobs, 0 already done, 2303 to run
+[FD block 0] shared run: machine desktop-4uutk80, order middle, 2303 jobs in 49 blocks; other machines: thomass-mac-mini
+[FD block 0] every block is done (0 jobs run here this time)
+  block 0 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> 7/7 [2: married-horse-lineup2-sunny-0f33f322] the zips to send
+  married-horse-lineup2-sunny-0f33f322 done: its zips are in /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-093907
+
+------------------------------------------------------------------------------------------------
+ MARRIED TABLES DONE   [rainy sunny ]   (64 min in all)
+------------------------------------------------------------------------------------------------
+  married-horse-lineup2-rainy-8cbe43a5:
+  married-horse-lineup2-sunny-0f33f322:
+    # Dog-watch report: married-horse-lineup2-sunny-0f33f322
+    
+    156 dog lines with traces (40 s after READY), 1959 (line, READY offset) variants; route-weighted. Clock = the dock-end tap ±3 VI; logs from 1.0 s after READY; runner: changes >= 12 VI, reaction 10-25 VI, 15% missed. Odds: cast >= 2 s after the window, ±150 ms.
+    
+    ## What the dog does while you wait (after READY, route-weighted)
+    
+    - dog's tile on the visibility grid (it animates only then): 100% of the time
+    - visible changes per minute: 59; changes lasting >= 12 VI: 90%
+    - facing on screen (share of the wait): SW 36%, NE 15%, E 15%, SE 14%, N 10%, NW 8%, W 2%; animations readable (dog faces S / N / NE / E / SE): 54%
+    - the dog moves (units, max over the trace): median 0.0
+    - decision (actionState change) -> next visible change: median 0 VI (p10 0, p90 30); animation set -> displayed: median 0 VI
+    
+
+  send these (no ROM / saves / savestates inside):
+    hm64-fullday-marhorse-sunny-d140c90@desktop-4uutk80.zip         6.5 MB
+    hm64-fullday-marhorse-sunny-d170c120@desktop-4uutk80.zip        8.6 MB
+    hm64-fullday-marhorse-sunny-d90@desktop-4uutk80.zip             4.2 MB
+    run-marhorse120-20261127-093907.log                             0.0 MB
+  folder: /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-093907
+  [parts 10:43:46] 5 result files on GitHub (branch lab-parts-desktop-4uutk80)
+  [parts 10:43:46] ended
+  [coord 10:44:15] ended
+
+==> lab data 1/5  is a lab run going? (lab-data script 2026-11-27a)
+  no lab run is going
+
+==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+  push access: the release SSH key (/home/boot_camper/.ssh/hm64_github_ed25519)
+  pulled 2 commit(s) from GitHub
+  /home/boot_camper/Documents/hm64/lab-data (branch lab-data, GitHub has c1428e1fe52ca7bbafe888e71d3607dd194037cf)
+
+==> lab data 3/5  looking for results in /home/boot_camper/Documents/hm64/runs and /home/boot_camper/Downloads (table: built in; newest copy of each file)
+  + married-sunny//home/boot_camper/Documents/hm64/lab-data/married-sunny/run-marzones-20261127-003014.log (0 MB)   <- /home/boot_camper/Documents/hm64/runs/dogspots/run-marzones-20261127-003014.log
+  + married-horse-sunny/hm64-fullday-marhorse-sunny-d90@desktop-4uutk80.zip (4 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-093907/hm64-fullday-marhorse-sunny-d90@desktop-4uutk80.zip
+  + married-horse-sunny/hm64-fullday-marhorse-sunny-d140c90@desktop-4uutk80.zip (6 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-093907/hm64-fullday-marhorse-sunny-d140c90@desktop-4uutk80.zip
+  + married-horse-sunny/hm64-fullday-marhorse-sunny-d170c120@desktop-4uutk80.zip (8 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-093907/hm64-fullday-marhorse-sunny-d170c120@desktop-4uutk80.zip
