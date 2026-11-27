@@ -1,5 +1,5 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 16:00 EST by desktop-4uutk80.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 16:02 EST by thomass-mac-mini.
 
 === desktop-4uutk80    reported 2026-11-27 16:00 EST    (pool script 2026-11-27c)
 lab run going:   YES
@@ -33,19 +33,19 @@ newest log: pool-work.log   (last written 15:57)
     | [FD block 4] pool: 2 Mac(s), 8.8 jobs/min (desktop-4uutk80 4.3, scotts-m4 4.5) - 88 jobs left in this list: 10 min for the pool
     | [FD block 4] campaign so far: 6 of 8 lists opened, 341 jobs left in them = 39 min; 2 lists not opened yet (about 3.4 h more if they are like the opened ones) at the pool'
 
-=== thomass-mac-mini    reported 2026-11-27 15:51 EST    (pool script 2026-11-27c)
+=== thomass-mac-mini    reported 2026-11-27 16:02 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       NOT running (this machine takes nothing new from the queue)
 role:            main Mac (or a machine with no main set)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    to do
 next from the queue for this machine: married-horse
-newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 15:51)
-    | [FD block 1] campaign so far: 6 of 8 lists opened, 499 jobs left in them = 61 min; 2 lists not opened yet (about 3.6 h more if they are like the opened ones) at the pool'
-    | [FD block 1] block 25 done; 325 jobs here in 40 min (8.1 jobs/min)
-    | [FD block 1] pool: 1 Mac(s), 8.2 jobs/min (thomass-mac-mini 8.2) - 318 jobs left in this list: 39 min for the pool
-    | [FD block 1] campaign so far: 6 of 8 lists opened, 470 jobs left in them = 57 min; 2 lists not opened yet (about 3.6 h more if they are like the opened ones) at the pool'
-    | [FD block 1] block 26 done; 338 jobs here in 42 min (8.1 jobs/min)
-    | [FD block 1] pool: 1 Mac(s), 8.2 jobs/min (thomass-mac-mini 8.2) - 305 jobs left in this list: 37 min for the pool
-    | [FD block 1] campaign so far: 6 of 8 lists opened, 441 jobs left in them = 54 min; 2 lists not opened yet (about 3.6 h more if they are like the opened ones) at the pool'
+newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 16:01)
+    | [FD block 1] campaign so far: 6 of 8 lists opened, 320 jobs left in them = 37 min; 2 lists not opened yet (about 3.5 h more if they are like the opened ones) at the pool'
+    | [FD block 1] block 32 done; 416 jobs here in 50 min (8.3 jobs/min)
+    | [FD block 1] pool: 1 Mac(s), 8.7 jobs/min (thomass-mac-mini 8.7) - 227 jobs left in this list: 26 min for the pool
+    | [FD block 1] campaign so far: 6 of 8 lists opened, 299 jobs left in them = 34 min; 2 lists not opened yet (about 3.5 h more if they are like the opened ones) at the pool'
+    | [FD block 1] block 33 done; 429 jobs here in 52 min (8.3 jobs/min)
+    | [FD block 1] pool: 1 Mac(s), 8.7 jobs/min (thomass-mac-mini 8.7) - 214 jobs left in this list: 25 min for the pool
+    | [FD block 1] campaign so far: 6 of 8 lists opened, 286 jobs left in them = 33 min; 2 lists not opened yet (about 3.5 h more if they are like the opened ones) at the pool'
 
