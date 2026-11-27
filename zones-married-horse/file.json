@@ -1,0 +1,19 @@
+{
+ "name": "married-horse",
+ "tag": "marhorse",
+ "prefix": "married-horse",
+ "made": "2026-11-27 (adopted: the campaign was started before the kit)",
+ "windows": "d90:90:40:0-1 d140c90:140:90:2-5 d170c120:170:120:4-5",
+ "saves": {
+  "sunny": {
+   "sha256": "0f33f322f65546b2c00e023df6538d35c149b32731b92a57cd5a8cbb9ccd5f44",
+   "file": "Harvest Moon 64 (USA).beach-lineup2-horse-sunny-married.SaveRAM",
+   "label": "married-horse-lineup2-sunny-0f33f322"
+  },
+  "rainy": {
+   "sha256": "8cbe43a540e30d5bf8abfcf54356779e823921337e1c0349f5fbe681cba98716",
+   "file": "Harvest Moon 64 (USA).beach-lineup2-horse-rainy-married.SaveRAM",
+   "label": "married-horse-lineup2-rainy-8cbe43a5"
+  }
+ }
+}

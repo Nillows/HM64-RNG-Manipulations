@@ -1,0 +1,46 @@
+{
+ "name": "zones-married-horse",
+ "version": "2026-11-27a",
+ "title": "Game file married-horse (sunny + rainy): pier zones - the gate, then the casts that can differ (plan made by auto_plan.py)",
+ "image": {
+  "tag": "hm64-lab:arm64",
+  "id": "sha256:9b61e93aed507f7022f55fb1112e4c9cc484049ee8cd5d58837efb18963341cf"
+ },
+ "rom_sha256": "15c570120bfaa97b4580762f5ee5939a56ba054e696925ea81ccfa55a022d2a6",
+ "base_sha256": "",
+ "saves": [],
+ "needs": [
+  "results/dogwatch/married-horse-lineup2-sunny-0f33f322",
+  "states/dogwatch/married-horse-lineup2-sunny-0f33f322/b",
+  "results/dogwatch/married-horse-lineup2-rainy-8cbe43a5",
+  "states/dogwatch/married-horse-lineup2-rainy-8cbe43a5/b"
+ ],
+ "needs_when": {
+  "results/dogwatch/married-horse-lineup2-sunny-0f33f322": "results/dogwatch/married-horse-lineup2-sunny-0f33f322/.done_phase3",
+  "states/dogwatch/married-horse-lineup2-sunny-0f33f322/b": "results/dogwatch/married-horse-lineup2-sunny-0f33f322/.done_phase3",
+  "results/dogwatch/married-horse-lineup2-rainy-8cbe43a5": "results/dogwatch/married-horse-lineup2-rainy-8cbe43a5/.done_phase3",
+  "states/dogwatch/married-horse-lineup2-rainy-8cbe43a5/b": "results/dogwatch/married-horse-lineup2-rainy-8cbe43a5/.done_phase3"
+ },
+ "shared": "one list per save (gaps-<label>.A), 50 parts, claims on branch lab-coord; the gate is run by every machine for itself",
+ "runner": "run_hm64_zones.sh",
+ "plan_counts": {
+  "sunny": {
+   "jobs": 4
+  },
+  "rainy": {
+   "jobs": 4
+  }
+ },
+ "presets": {
+  "preset": "dogwatch",
+  "zones": {
+   "middle": 176.4,
+   "south": 194.4
+  },
+  "plans": "plans/gap_plan_<label>.json.gz",
+  "parts": [
+   "A"
+  ],
+  "blocks_per_list": 50
+ }
+}
