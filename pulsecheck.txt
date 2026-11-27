@@ -1,5 +1,5 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 17:42 EST by thomass-mac-mini.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 17:50 EST by scotts-m4.
 
 === desktop-4uutk80    reported 2026-11-27 17:41 EST    (pool script 2026-11-27c)
 lab run going:   YES
@@ -17,21 +17,21 @@ newest log: pool-work.log   (last written 17:40)
     | [FD block 2] pool: 3 Mac(s), 30.0 jobs/min (desktop-4uutk80 8.4, scotts-m4 8.4, thomass-mac-mini 13.2) - 144 jobs left in this list: 5 min for the pool
     | [FD block 2] campaign so far: 8 of 8 lists opened, 144 jobs left in them = 5 min at the pool's present speed (rough: jobs differ in length between lists)
 
-=== scotts-m4    reported 2026-11-27 17:40 EST    (pool script 2026-11-27c)
-lab run going:   YES
-work loop:       running (work bottomup)
+=== scotts-m4    reported 2026-11-27 17:50 EST    (pool script 2026-11-27c)
+lab run going:   no
+work loop:       NOT running (this machine takes nothing new from the queue)
 role:            helper (fetches from hm64-main)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    to do
 next from the queue for this machine: married-horse
-newest log: pool-work.log   (last written 17:39)
-    | [FD block 2] campaign so far: 8 of 8 lists opened, 396 jobs left in them = 14 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [FD block 2] block 39 done; 405 jobs here in 42 min (9.7 jobs/min)
-    | [FD block 2] pool: 3 Mac(s), 28.8 jobs/min (desktop-4uutk80 6.0, scotts-m4 9.6, thomass-mac-mini 13.2) - 252 jobs left in this list: 9 min for the pool
-    | [FD block 2] campaign so far: 8 of 8 lists opened, 252 jobs left in them = 9 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [FD block 2] block 38 done; 441 jobs here in 46 min (9.6 jobs/min)
-    | [FD block 2] pool: 3 Mac(s), 30.0 jobs/min (desktop-4uutk80 7.2, scotts-m4 9.6, thomass-mac-mini 13.2) - 144 jobs left in this list: 5 min for the pool
-    | [FD block 2] campaign so far: 8 of 8 lists opened, 144 jobs left in them = 5 min at the pool's present speed (rough: jobs differ in length between lists)
+newest log: pool-work.log   (last written 17:49)
+    | ==> lab data 1/5  is a lab run going? (lab-data script 2026-11-27a)
+    | ==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+    | ==> lab data 3/5  looking for results in /Users/thomaswollin/Documents/hm64/runs and /Users/thomaswollin/Downloads (table: built in; newest copy of each file)
+    | ==> lab data 4/5  README.md + MANIFEST.txt
+    | ==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+    | LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 3f0eded.
+    | ==> WORK DONE on this machine  Fri 17:49
 
 === thomass-mac-mini    reported 2026-11-27 17:42 EST    (pool script 2026-11-27c)
 lab run going:   YES
