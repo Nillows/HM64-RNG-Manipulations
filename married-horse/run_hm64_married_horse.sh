@@ -8,7 +8,8 @@
 #   A. dog-watch phases 1 + 3 (the main Mac only): route recipe, dog lines, cast tables 0.1-40 s
 #   B. dog after the cast: marhorse-<save>-d90 (casts 0.1-40 s, to 90 s), -d140c90 (40-90 s, to 140 s),
 #      -d170c120 (90-120 s, to 170 s); the cast blocks are shared between Macs (claims on branch lab-coord)
-# Native ARM image only (hm64-lab:arm64): Macs. Labels married-horse-lineup2-sunny-0f33f322 /
+# Macs: the native ARM image. A Linux x86-64 machine (2026-11-27b): the container the pool script names
+# (hm64-lab:amd64-nd), as a HELPER only (bottomup / middleout: cast blocks; the dog-watch stays on the main Mac). Labels married-horse-lineup2-sunny-0f33f322 /
 # married-horse-lineup2-rainy-8cbe43a5; results/dogwatch/<label>, states/dogwatch/<label>, results/fullday/marhorse-*.
 # Nothing of the other runs is touched.
 #   bash run_hm64_married_horse.sh topdown [workers]      (the main Mac; bottomup / middleout = a helper Mac that
@@ -60,6 +61,13 @@ if command -v caffeinate >/dev/null 2>&1; then
   caffeinate -dims -w $$ &
   CAF=$!
 fi
+IMAGE=${HM64_LAB_IMAGE:-hm64-lab:arm64}
+PLATFORM=${HM64_LAB_PLATFORM:-linux/arm64}
+AS_USER=()
+if [ "$(uname -s)" = Linux ]; then
+  AS_USER=(--user "$(id -u):$(id -g)" -e HOME=/tmp)      # a native Linux engine: the files must stay the user's
+  [ "$ORDER" != up ] || { printf '\nSTOP: on a Linux PC this run is a helper only (bottomup or middleout): the dog-watch is made on the main Mac.\n' >&2; exit 2; }
+fi
 POWER_NOTE=""
 if command -v pmset >/dev/null 2>&1; then
   PM=$(pmset -g 2>/dev/null || true)
@@ -86,7 +94,7 @@ for f in "$HERE/lab/tools/coord.py" "$HERE/lab/tools/pool_bench.py" "$HERE/tools
 [ -f "$LAB/tools/zigzag_campaign.py" ] && [ -f "$LAB/experiments/zigzag_jobs.py" ] || die "$LAB has no dog-watch lab code"
 grep -q '^ZZ_CODE = "zigzag-4f' "$LAB/tools/zigzag_campaign.py" || die "the lab code in $LAB is not zigzag-4f (the code of the lineup2 dog-watch run): $(grep -m1 '^ZZ_CODE' "$LAB/tools/zigzag_campaign.py" | cut -c1-60)"
 grep -q "\"$PRESET\": dict(" "$LAB/tools/zigzag_campaign.py" || die "preset $PRESET is not in $LAB/tools/zigzag_campaign.py"
-docker image inspect hm64-lab:arm64 >/dev/null 2>&1 || die "the image hm64-lab:arm64 is not on this Mac (HM64_ARM=1 bash run_hm64_dogwatch06c.sh builds it)"
+docker image inspect "$IMAGE" >/dev/null 2>&1 || die "the image $IMAGE is not on this machine (the pool script loads or builds it: start this through hm64_pool.sh run)"
 [ -f "$LAB/data/rom/Harvest_Moon_64_USA.z64" ] || die "no ROM in $LAB/data/rom"
 [ "$(sha "$LAB/data/rom/Harvest_Moon_64_USA.z64")" = "$ROM_SHA" ] || die "$LAB/data/rom/Harvest_Moon_64_USA.z64 is not the NYWE rev00 ROM (sha256)"
 
@@ -113,7 +121,7 @@ LOG="$WORK/run-marhorse120-$STAMP.log"
 exec > >(tee -a "$LOG") 2>&1
 T_ALL=$(date +%s)
 say "SHARED run: this Mac = $MACHINE, direction $ORDER ($( [ "$ORDER" = up ] && echo 'main Mac' || echo 'helper: cast blocks only, of the saves whose dog-watch is already here'))"
-say "MARRIED + HORSE tables to 120 s: saves [$NAMES], preset $PRESET, work folder $LAB (native ARM image)  $(date '+%a %H:%M')"
+say "MARRIED + HORSE tables to 120 s: saves [$NAMES], preset $PRESET, work folder $LAB (image $IMAGE)  $(date '+%a %H:%M')"
 echo "  lab code: $(grep -m1 '^ZZ_CODE' "$LAB/tools/zigzag_campaign.py" | cut -c1-80)..."
 if [ -n "$CAF" ]; then echo "  keeping the Mac awake: caffeinate -dims (pid $CAF) until this script ends - display, idle, disk and system sleep held off"
 else echo "  (no caffeinate on this machine: nothing keeps it awake)"; fi
@@ -161,17 +169,18 @@ lab_run() {     # lab_run [-e K=V ...] -- command: one command in the native ARM
   local envs=()
   while [ "$#" -gt 0 ] && [ "$1" != "--" ]; do envs+=("$1"); shift; done
   shift
-  docker run --rm --platform linux/arm64 --shm-size 4g -v "$LAB:/work" -v "$LAB/data:/work/data:ro" -w /work \
+  docker run --rm --platform "$PLATFORM" --shm-size 4g ${AS_USER[@]+"${AS_USER[@]}"} -v "$LAB:/work" -v "$LAB/data:/work/data:ro" -w /work \
     -e HM64_SRAM="/work/data/saves_dogspots/$CUR.SaveRAM" -e M64H_CPU=dynarec -e M64H_RECYCLE="${M64H_RECYCLE:-6}" \
     -e HM64_COORD_DIR=/work/results/fullday/coord -e HM64_COORD_MACHINE="$MACHINE" -e HM64_COORD_ORDER="$ORDER" \
     -e HM64_COORD_CAMPAIGN="$CUR" -e HM64_COORD_BLOCKS="${HM64_COORD_BLOCKS:-50}" -e HM64_COORD_LISTS="${HM64_COORD_LISTS:-8}" \
-    ${envs[@]+"${envs[@]}"} hm64-lab:arm64 "$@" </dev/null
+    ${envs[@]+"${envs[@]}"} "$IMAGE" "$@" </dev/null
 }
 AUTOW=0
 if [ -z "$WORKERS" ]; then
   AUTOW=1
   NCPU=$(lab_run -- nproc 2>/dev/null || echo 2)
   WORKERS=$(( NCPU > 1 ? NCPU - 1 : 1 ))
+  if [ "$(uname -s)" = Linux ] && [ "$NCPU" -gt 3 ] && [ "$WORKERS" -gt $((NCPU - 2)) ]; then WORKERS=$((NCPU - 2)); fi
 fi
 echo "  workers  $WORKERS"
 
@@ -244,14 +253,16 @@ done
 # ---- 3/7 lab health + the reference route on every save ---------------------------------------------------------------
 if [ "$AUTOW" = 1 ] && [ "${HM64_POOL_BENCH:-1}" = 1 ]; then
   CUR=$(get LABEL ${NAMES%% *})
-  IMG=$(docker image inspect hm64-lab:arm64 --format '{{.Id}}' 2>/dev/null | cut -c8-19)
+  IMG=$(docker image inspect "$IMAGE" --format '{{.Id}}' 2>/dev/null | cut -c8-19)
   mkdir -p "$HM64_DIR/pool"
   BF="$HM64_DIR/pool/bench_${IMG:-image}_${NCPU}.json"
   if [ ! -f "$BF" ]; then
     FAST=$(sysctl -n hw.perflevel0.physicalcpu 2>/dev/null || echo "$NCPU")
     say "worker benchmark: which worker count is fastest on this Mac (once per Mac and container; some minutes)"
     rm -f "$LAB/results/.pool_bench.json"
-    lab_run -- python3 tools/pool_bench.py --workers-list "$FAST,$((NCPU - 1)),$NCPU,$((NCPU + NCPU / 3))" --out /work/results/.pool_bench.json || echo "  (benchmark failed: the usual worker count is used)"
+    WL="$FAST,$((NCPU - 1)),$NCPU,$((NCPU + NCPU / 3))"
+    if [ "$(uname -s)" = Linux ]; then WL="$((NCPU / 2)),$((NCPU * 3 / 4)),$((NCPU - 2))"; fi     # a PC: threads, not cores, and less memory
+    lab_run -- python3 tools/pool_bench.py --workers-list "$WL" --out /work/results/.pool_bench.json || echo "  (benchmark failed: the usual worker count is used)"
     [ ! -f "$LAB/results/.pool_bench.json" ] || mv "$LAB/results/.pool_bench.json" "$BF"
   fi
   if [ -f "$BF" ]; then
@@ -261,8 +272,8 @@ if [ "$AUTOW" = 1 ] && [ "${HM64_POOL_BENCH:-1}" = 1 ]; then
 fi
 say "3/7 lab health + each save's reference route from power-on (twice)"
 if [ "${HM64_MARRIED_SKIP_SMOKE:-0}" != 1 ] && [ "$S9" = 1 ]; then
-  docker run --rm --platform linux/arm64 --shm-size 4g -v "$LAB:/work" -v "$LAB/data:/work/data:ro" -w /work \
-    hm64-lab:arm64 bash -lc 'python3 tools/smoke_test.py' </dev/null || die "lab health test failed - see $LOG (results would not be trustworthy)"
+  docker run --rm --platform "$PLATFORM" --shm-size 4g ${AS_USER[@]+"${AS_USER[@]}"} -v "$LAB:/work" -v "$LAB/data:/work/data:ro" -w /work \
+    "$IMAGE" bash -lc 'python3 tools/smoke_test.py' </dev/null || die "lab health test failed - see $LOG (results would not be trustworthy)"
 else
   echo "  lab health test skipped$( [ "$S9" = 1 ] || echo " (no Spring 9 save in $LAB/data/saves)")"
 fi
@@ -340,7 +351,7 @@ for n in $NAMES; do
   STORE="states/$PRESET/$CUR"
   mkdir -p "$LAB/$RES_L"
   if [ "$ORDER" != up ] && { [ ! -f "$LAB/$RES_L/.done_phase1" ] || [ ! -f "$LAB/$RES_L/.done_phase3" ]; }; then
-    say "[$i: $CUR] SKIPPED on this helper Mac: its dog-watch run is not here (it is made on the main Mac). When the main Mac has finished it, run hm64_cloud_setup.sh there again and start this again."
+    say "[$i: $CUR] SKIPPED on this helper Mac: its dog-watch run is not here (it is made on the main Mac). When the main Mac has finished it: bash hm64_pool.sh pull user@main-mac married-horse  here (or sync from the main Mac), then start this again; hm64_pool.sh work does both by itself."
     continue
   fi
   say "4/7 [$i: $CUR] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY ($(date '+%a %H:%M'))"
