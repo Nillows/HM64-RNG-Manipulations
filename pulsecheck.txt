@@ -1,21 +1,21 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 17:30 EST by scotts-m4.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 17:30 EST by desktop-4uutk80.
 
-=== desktop-4uutk80    reported 2026-11-27 17:20 EST    (pool script 2026-11-27c)
+=== desktop-4uutk80    reported 2026-11-27 17:30 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (268107 bash)
 role:            helper (fetches from hm64-main)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    to do
 next from the queue for this machine: married-horse
-newest log: pool-work.log   (last written 17:20)
-    | [FD block 2] campaign so far: 8 of 8 lists opened, 936 jobs left in them = 33 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [FD block 2] block 27 done; 144 jobs here in 20 min (7.2 jobs/min)
-    | [FD block 2] pool: 3 Mac(s), 28.8 jobs/min (desktop-4uutk80 7.2, scotts-m4 9.5, thomass-mac-mini 12.0) - 900 jobs left in this list: 31 min for the pool
+newest log: pool-work.log   (last written 17:27)
     | [FD block 2] campaign so far: 8 of 8 lists opened, 900 jobs left in them = 31 min at the pool's present speed (rough: jobs differ in length between lists)
     | [FD block 2] block 23 done; 180 jobs here in 27 min (6.8 jobs/min)
     | [FD block 2] pool: 3 Mac(s), 28.6 jobs/min (desktop-4uutk80 6.8, scotts-m4 9.9, thomass-mac-mini 12.0) - 684 jobs left in this list: 24 min for the pool
     | [FD block 2] campaign so far: 8 of 8 lists opened, 684 jobs left in them = 24 min at the pool's present speed (rough: jobs differ in length between lists)
+    | [FD block 2] block 28 done; 216 jobs here in 33 min (6.6 jobs/min)
+    | [FD block 2] pool: 3 Mac(s), 28.8 jobs/min (desktop-4uutk80 7.2, scotts-m4 9.6, thomass-mac-mini 12.0) - 540 jobs left in this list: 19 min for the pool
+    | [FD block 2] campaign so far: 8 of 8 lists opened, 540 jobs left in them = 19 min at the pool's present speed (rough: jobs differ in length between lists)
 
 === scotts-m4    reported 2026-11-27 17:30 EST    (pool script 2026-11-27c)
 lab run going:   YES
