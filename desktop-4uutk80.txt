@@ -1,4 +1,4 @@
-=== desktop-4uutk80    reported 2026-11-27 18:21 EST    (pool script 2026-11-27c)
+=== desktop-4uutk80    reported 2026-11-27 18:31 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (633510 bash)
 role:            helper (fetches from hm64-main)
@@ -6,12 +6,12 @@ queue, as this machine sees it:
     married-horse (2026-11-27c)    finished here 2026-11-27 17:55
     zones-married-horse (2026-11-27a)    to do
 next from the queue for this machine: zones-married-horse
-newest log: pool-work2.log   (last written 18:21)
-    | [GA gate, casts] 250/475  89.6 jobs/min  eta 3 min
-    | [GA gate, casts] 260/475  90.0 jobs/min  eta 2 min
-    | [GA gate, casts] 270/475  90.3 jobs/min  eta 2 min
-    | [GA gate, casts] 280/475  90.4 jobs/min  eta 2 min
-    | [GA gate, casts] 290/475  89.8 jobs/min  eta 2 min
-    | [GA gate, casts] 300/475  89.1 jobs/min  eta 2 min
-    | [GA gate, casts] 310/475  88.4 jobs/min  eta 2 min
+newest log: pool-work2.log   (last written 18:27)
+    | [GA gate, casts] 230/278  105.5 jobs/min  eta 0 min
+    | [GA gate, casts] 240/278  104.6 jobs/min  eta 0 min
+    | [GA gate, casts] 250/278  105.0 jobs/min  eta 0 min
+    | [GA gate, casts] 260/278  104.4 jobs/min  eta 0 min
+    | [GA gate, casts] 270/278  103.7 jobs/min  eta 0 min
+    | [GA gate, casts] 278/278  104.0 jobs/min  eta 0 min
+    | ==> 4/5 the casts that can differ (part A), sunny first
 
