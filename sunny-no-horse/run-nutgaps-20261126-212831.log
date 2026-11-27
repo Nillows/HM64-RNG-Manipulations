@@ -1,0 +1,159 @@
+
+==> the late Nuts of the SUNNY files (the gate, then 36 + 45 casts held to 170 s), SHARED: this machine = desktop-4uutk80, direction middle; saves [nohorse horse], work folder /home/boot_camper/Documents/hm64/runs/dogspots/hm64-lab (container hm64-lab:amd64-nd)  Thu 21:28
+  (no caffeinate on this machine: nothing keeps it awake)
+  free disk: 948 GB
+
+==> 1/5 lab files
+  [coord 21:28:31] machine desktop-4uutk80, branch lab-coord, every 30 s (rev 2026-11-25a)
+  table sync with GitHub (branch lab-coord): running (pid 45840)
+  this Mac's result parts go to GitHub every 30 min (branch lab-parts-desktop-4uutk80; pid 45843)
+  [coord 21:28:32] machine desktop-4uutk80, branch lab-coord, every 30 s (rev 2026-11-25a)
+  [parts 21:28:32] machine desktop-4uutk80, every 30 min (rev 2026-11-25a)
+  spot_jobs.py, gap_jobs.py, spot_campaign.py, gap_campaign.py, the plans -> /home/boot_camper/Documents/hm64/runs/dogspots/hm64-lab
+  workers  14   container hm64-lab:amd64-nd (linux/amd64)
+
+==> 2/5 the saves, their dog-watch runs and beach savestates
+  save     beach-lineup2-52cfd712   (in the lab, sha256 ok)
+           80 beach savestates, lines: results/dogwatch/beach-lineup2-52cfd712/zz_lines.json
+  save     beach-lineup2-horse-b0f2a284   (in the lab, sha256 ok)
+           50 beach savestates, lines: results/dogwatch/beach-lineup2-horse-b0f2a284/zz_lines.json
+
+==> worker benchmark: which worker count is fastest on this Mac (once per Mac and container; some minutes)
+[bench]  8 workers: 64 jobs in    15 s =  251.1 jobs/min
+[bench] 12 workers: 96 jobs in    20 s =  287.2 jobs/min
+[bench] 14 workers: 112 jobs in    21 s =  318.6 jobs/min
+[bench] best: 14 workers
+  workers  14  (this Mac's benchmark: /home/boot_camper/Documents/hm64/pool/bench_3b4ab031b02d_16.json; delete that file to measure again)
+
+==> 3/5 the gate: this machine on the recorded lines and casts (Thu 21:29)
+[GA gate, lines] 22 jobs, 224 already done, 22 to run
+[GA gate, lines] 10/22  80.9 jobs/min  eta 0 min
+[GA gate, lines] 20/22  103.3 jobs/min  eta 0 min
+[GA gate, lines] 22/22  113.5 jobs/min  eta 0 min
+[GA gate, casts] 12 jobs, 387 already done, 12 to run
+[GA gate, casts] 10/12  85.8 jobs/min  eta 0 min
+[GA gate, casts] 12/12  102.9 jobs/min  eta 0 min
+[gate] gateB1:middle:f45e322baa600a73  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:f45e322baa600a73  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:38f94e2363a8b83c  member D 86 B 128 (k_off 28), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 223 of 223  ->  ok
+[gate] gateB1:south:38f94e2363a8b83c  member D 86 B 134 (k_off 34), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 220 of 220  ->  ok
+[gate] gateB1:middle:5ff8eaade721111c  member D 86 B 128 (k_off 28), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 223 of 223  ->  ok
+[gate] gateB1:south:5ff8eaade721111c  member D 86 B 134 (k_off 34), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 220 of 220  ->  ok
+[gate] gateB1:middle:f8ce65dafb66879e  member D 84 B 132 (k_off 6), Jack at [-94.636, 176.364]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:f8ce65dafb66879e  member D 84 B 138 (k_off 12), Jack at [-94.636, 194.364]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:7149ae9b8700afa5  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:7149ae9b8700afa5  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:a3ba9f83965838cc  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:a3ba9f83965838cc  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:b2147d0818ce6918  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:b2147d0818ce6918  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:bbabf75a86be3921  member D 86 B 128 (k_off 28), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 223 of 223  ->  ok
+[gate] gateB1:south:bbabf75a86be3921  member D 86 B 134 (k_off 34), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 220 of 220  ->  ok
+[gate] gateB1:middle:dfcd89548ae6d504  member D 86 B 128 (k_off 44), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 215 of 215  ->  ok
+[gate] gateB1:south:dfcd89548ae6d504  member D 86 B 134 (k_off 50), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 212 of 212  ->  ok
+[gate] gateB1:middle:fcf8ac10fedceacd  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:fcf8ac10fedceacd  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:ff38048dc57b6844  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:ff38048dc57b6844  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] FAST CHECK, middle zone: the no-cast dog is the recorded one to the end of the watch on 11 of 11 lines
+[gate] FAST CHECK, south zone: the no-cast dog is the recorded one to the end of the watch on 11 of 11 lines
+[gate] control casts at the recorded spot: 12 as recorded, 0 not
+[gate] PASSED
+[GA gate, lines] 26 jobs, 296 already done, 26 to run
+[GA gate, lines] 10/26  74.2 jobs/min  eta 0 min
+[GA gate, lines] 20/26  86.6 jobs/min  eta 0 min
+[GA gate, lines] 26/26  111.8 jobs/min  eta 0 min
+[GA gate, casts] 15 jobs, 469 already done, 15 to run
+[GA gate, casts] 10/15  76.1 jobs/min  eta 0 min
+[GA gate, casts] 15/15  85.2 jobs/min  eta 0 min
+[gate] gateB1:middle:6c8387f7d595ac9e  member D 86 B 128 (k_off 10), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 232 of 232  ->  ok
+[gate] gateB1:south:6c8387f7d595ac9e  member D 86 B 134 (k_off 16), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 229 of 229  ->  ok
+[gate] gateB1:middle:6885cfce3bd71180  member D 86 B 128 (k_off 44), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 215 of 215  ->  ok
+[gate] gateB1:south:6885cfce3bd71180  member D 86 B 134 (k_off 50), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 212 of 212  ->  ok
+[gate] gateB1:middle:1aced1f0238cc0ce  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:1aced1f0238cc0ce  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:cc24584b5e863e42  member D 86 B 128 (k_off 18), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 228 of 228  ->  ok
+[gate] gateB1:south:cc24584b5e863e42  member D 86 B 134 (k_off 24), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 225 of 225  ->  ok
+[gate] gateB1:middle:f6a25cf87fec6e27  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:f6a25cf87fec6e27  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:d5f1b74f45c5ae08  member D 86 B 128 (k_off 14), Jack at [-92.0, 176.0]: the recorded dog until label 7210 (120.5 s); cast hashes equal in the first 8 s: 230 of 230  ->  ok
+[gate] gateB1:south:d5f1b74f45c5ae08  member D 86 B 134 (k_off 20), Jack at [-92.0, 194.0]: the recorded dog until label 7210 (120.5 s); cast hashes equal in the first 8 s: 227 of 227  ->  ok
+[gate] gateB1:middle:8a889937c7486f4d  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:8a889937c7486f4d  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:9473c1f785796e4b  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:9473c1f785796e4b  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:982dbe9e3421cf2f  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:982dbe9e3421cf2f  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:b7f98de1cdf02035  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:b7f98de1cdf02035  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:ca88f8f579060df5  member D 86 B 128 (k_off 66), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 204 of 204  ->  ok
+[gate] gateB1:south:ca88f8f579060df5  member D 86 B 134 (k_off 72), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 201 of 201  ->  ok
+[gate] gateB1:middle:da043bd7e73f6ba1  member D 86 B 128 (k_off 6), Jack at [-92.0, 176.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 234 of 234  ->  ok
+[gate] gateB1:south:da043bd7e73f6ba1  member D 86 B 134 (k_off 12), Jack at [-92.0, 194.0]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 231 of 231  ->  ok
+[gate] gateB1:middle:ef435477b7034f13  member D 84 B 132 (k_off 14), Jack at [-94.636, 176.364]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 230 of 230  ->  ok
+[gate] gateB1:south:ef435477b7034f13  member D 84 B 138 (k_off 20), Jack at [-94.636, 194.364]: the recorded dog to the end of the watch (170 s); cast hashes equal in the first 8 s: 227 of 227  ->  ok
+[gate] FAST CHECK, middle zone: the no-cast dog is the recorded one to the end of the watch on 12 of 13 lines
+[gate] FAST CHECK, south zone: the no-cast dog is the recorded one to the end of the watch on 12 of 13 lines
+[gate] control casts at the recorded spot: 15 as recorded, 0 not
+[gate] PASSED
+
+==> 4/5 the casts (part B1)
+
+  --- part B1, beach-lineup2-52cfd712 (Thu 21:30)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  part B1: 36 casts in 36 jobs
+[GB1] 36 jobs, 0 already done, 36 to run
+[GB1] shared run: machine desktop-4uutk80, order middle, 36 jobs in 2 blocks; other machines: none seen yet
+[GB1] block 1/2 (middle out): 18 jobs
+[GB1] block 1 done; 18 jobs here in 1 min (15.3 jobs/min)
+[GB1] pool: 2 Mac(s), 9.0 jobs/min (desktop-4uutk80 9.0, thomass-mac-mini 0.0) - 18 jobs left in this list: 2 min for the pool
+[GB1] campaign so far: 1 of 1 lists opened, 18 jobs left in them = 2 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB1] block 2/2 (middle out): 18 jobs
+[GB1] block 2 done; 36 jobs here in 2 min (16.5 jobs/min)
+[GB1] pool: 2 Mac(s), 16.5 jobs/min (desktop-4uutk80 16.5, thomass-mac-mini 0.0) - 0 jobs left in this list: 0 min for the pool
+[GB1] campaign so far: 1 of 1 lists opened, 0 jobs left in them = 0 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB1] every block is done (36 jobs run here this time)
+  part B1, beach-lineup2-52cfd712: 2 min
+
+  --- part B1, beach-lineup2-horse-b0f2a284 (Thu 21:32)
+spots-1 (2026-11-25: one dog line from other pier spots, labels of the representative)  part B1: 45 casts in 45 jobs
+[GB1] 45 jobs, 0 already done, 45 to run
+[GB1] shared run: machine desktop-4uutk80, order middle, 45 jobs in 2 blocks; other machines: none seen yet
+[GB1] block 1/2 (middle out): 23 jobs
+[GB1] block 1 done; 23 jobs here in 1 min (20.6 jobs/min)
+[GB1] pool: 1 Mac(s), 11.5 jobs/min (desktop-4uutk80 11.5) - 22 jobs left in this list: 2 min for the pool
+[GB1] campaign so far: 1 of 1 lists opened, 22 jobs left in them = 2 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB1] block 2/2 (middle out): 22 jobs
+[GB1] block 2 done; 45 jobs here in 2 min (21.0 jobs/min)
+[GB1] pool: 2 Mac(s), 20.9 jobs/min (desktop-4uutk80 20.9, thomass-mac-mini 0.0) - 0 jobs left in this list: 0 min for the pool
+[GB1] campaign so far: 1 of 1 lists opened, 0 jobs left in them = 0 min at the pool's present speed (rough: jobs differ in length between lists)
+[GB1] every block is done (45 jobs run here this time)
+  part B1, beach-lineup2-horse-b0f2a284: 2 min
+  memory now: 682 MB used of 13975
+
+==> 5/5 zips of this machine's part (the new casts, the gate's verdict, the log)
+  zip      /home/boot_camper/Documents/hm64/runs/hm64-nutgaps-beach-lineup2-52cfd712@desktop-4uutk80.zip
+  zip      /home/boot_camper/Documents/hm64/runs/hm64-nutgaps-beach-lineup2-horse-b0f2a284@desktop-4uutk80.zip
+
+------------------------------------------------------------------------------------------------
+ SUNNY LATE NUTS DONE ON THIS MACHINE   [nohorse horse]   (6 min in all)
+------------------------------------------------------------------------------------------------
+    hm64-nutgaps-beach-lineup2-52cfd712@desktop-4uutk80.zip         0.0 MB
+    hm64-nutgaps-beach-lineup2-horse-b0f2a284@desktop-4uutk80.zip    0.0 MB
+    run-nutgaps-20261126-212831.log                                 0.0 MB
+  folder: /home/boot_camper/Documents/hm64/runs/hm64-nutgaps-20261126-212831   (no ROM / saves / savestates inside)
+  [parts 21:35:01] 8 result files on GitHub (branch lab-parts-desktop-4uutk80)
+  [parts 21:35:01] ended
+  [coord 21:35:24] ended
+  lab-data script 2026-11-26l installed in /home/boot_camper/Documents/hm64/tools
+
+==> lab data 1/5  is a lab run going? (lab-data script 2026-11-26l)
+  no lab run is going
+
+==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+  push access: the release SSH key (/home/boot_camper/.ssh/hm64_github_ed25519)
+  pulled 1 commit(s) from GitHub
+  /home/boot_camper/Documents/hm64/lab-data (branch lab-data, GitHub has 105b53642570d600905e77428b12bd92d9cc36d6)
+
+==> lab data 3/5  looking for results in /home/boot_camper/Documents/hm64/runs and /home/boot_camper/Downloads (table: built in; newest copy of each file)
+  + sunny-no-horse/hm64-nutgaps-beach-lineup2-52cfd712@desktop-4uutk80.zip (0 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-nutgaps-beach-lineup2-52cfd712@desktop-4uutk80.zip
+  + sunny-horse/hm64-nutgaps-beach-lineup2-horse-b0f2a284@desktop-4uutk80.zip (0 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-nutgaps-beach-lineup2-horse-b0f2a284@desktop-4uutk80.zip

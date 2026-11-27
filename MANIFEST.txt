@@ -50,6 +50,7 @@ adf1d172e9f758fb0e0cabd7795657d33ece02c6a659319b8ec84bf65f0defb2      3717986  s
 492d9f474bc615379fba63608768ed8a9d0d302dfe0b4d564f6678db1fd00828     17350360  sunny-horse/hm64-gaps-beach-lineup2-horse-b0f2a284@desktop-4uutk80.zip
 024a2b092471b1f2af917c30f4e6de2e8b5fe66fb186cd2f3defe782bfd88f92     18772492  sunny-horse/hm64-gaps-beach-lineup2-horse-b0f2a284@scotts-m4.zip
 b92975077e91fbbea764b7e51929c5edbd381efab57a1b7d18a5702590a5a4fe     19719456  sunny-horse/hm64-gaps-beach-lineup2-horse-b0f2a284@thomass-mac-mini.zip
+52cddb26c99950caeec1426cd8024f341f231159f21a1724ded5af8436b8ba94         9415  sunny-horse/hm64-nutgaps-beach-lineup2-horse-b0f2a284@desktop-4uutk80.zip
 6a91fc04a8c496aec3bb6811edeb77c5dc83a291bf1125ed113294e171c941ac       144788  sunny-horse/run-horse120-20261123-104115.log
 9741a79809c3f01be726b5cfa7dd7f84a12c3a119340362045e33e976cbe9e79     76072378  sunny-no-horse/hm64-dogwatch-beach-lineup2-52cfd712-20261116-174959.zip
 e409039716a776d0770ebd81722d9de113eb0cf9dd68edaeafa110b73da80b1b       531679  sunny-no-horse/hm64-fullday-d110-b02.zip
@@ -69,6 +70,8 @@ bd784836a20bf1266d5dc912cb9b0eb77cb45b396f9963ac4297204a6b73eafe      3424967  s
 5eeba177fb72b63af864c24a62e23097b325a9160bd13bddef87f78715205f28     13239778  sunny-no-horse/hm64-gaps-beach-lineup2-52cfd712@desktop-4uutk80.zip
 ecd579fbb649f0d82738e414c1217df6a4697e39a69fe67f4585a0b4b3012729     14594972  sunny-no-horse/hm64-gaps-beach-lineup2-52cfd712@scotts-m4.zip
 5de15beea843b39224405aef940e4c8eea1272ae31c2efada985dc07a385113b     15588949  sunny-no-horse/hm64-gaps-beach-lineup2-52cfd712@thomass-mac-mini.zip
+36ae9a85c91d1234c223dcfe5a8ed0b8976603ce357f7abd69433f27f1441efd         7271  sunny-no-horse/hm64-nutgaps-beach-lineup2-52cfd712@desktop-4uutk80.zip
+50d0e5e517f9c8245210c7451b3c77c892be8caf35c3d99d9515c7ec8f952eee        17076  sunny-no-horse/run-nutgaps-20261126-212831.log
 259cd578962594629c978a69a50824c10e53bcfe122db43bca2e9f27f992694c       129313  sunny-no-horse/run-sunspots-20261126-171745.log
 e811434101430095b936e06d593a3b1b1d966a960b3e4f064177059d7b9197fb       120429  sunny-no-horse/run-sunspots-20261126-171746.log
 ad9f925f844d3d2d44de5ac423eeb740e6fa28247f48e2e8bd43c501847af386       115811  sunny-no-horse/run-sunspots-20261126-183058.log
