@@ -1,16 +1,16 @@
-=== desktop-4uutk80    reported 2026-11-27 15:00 EST    (pool script 2026-11-27c)
+=== desktop-4uutk80    reported 2026-11-27 15:10 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (268107 bash)
 role:            helper (fetches from hm64-main)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    to do
 next from the queue for this machine: married-horse
-newest log: pool-work.log   (last written 14:59)
-    | [FD block 4] block 5 done; 630 jobs here in 92 min (6.8 jobs/min)
-    | [FD block 4] pool: 2 Mac(s), 15.2 jobs/min (desktop-4uutk80 5.8, scotts-m4 9.3) - 105 jobs left in this list: 7 min for the pool
-    | [FD block 4] campaign so far: 3 of 8 lists opened, 424 jobs left in them = 28 min; 5 lists not opened yet (about 7.9 h more if they are like the opened ones) at the pool'
-    | [FD block 4] block 2 done; 665 jobs here in 98 min (6.8 jobs/min)
-    | [FD block 4] pool: 2 Mac(s), 16.3 jobs/min (desktop-4uutk80 7.0, scotts-m4 9.3) - 35 jobs left in this list: 2 min for the pool
-    | [FD block 4] campaign so far: 3 of 8 lists opened, 262 jobs left in them = 16 min; 5 lists not opened yet (about 7.4 h more if they are like the opened ones) at the pool'
-    | [FD block 4] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+newest log: pool-work.log   (last written 15:10)
+    | [FD block 5] campaign so far: 4 of 8 lists opened, 129 jobs left in them = 43 min; 4 lists not opened yet (about 24.3 h more if they are like the opened ones) at the pool
+    | [FD block 5] block 16 done; 8 jobs here in 6 min (1.2 jobs/min)
+    | [FD block 5] pool: 2 Mac(s), 2.9 jobs/min (desktop-4uutk80 1.2, scotts-m4 1.6) - 36 jobs left in this list: 13 min for the pool
+    | [FD block 5] campaign so far: 4 of 8 lists opened, 79 jobs left in them = 28 min; 4 lists not opened yet (about 25.5 h more if they are like the opened ones) at the pool'
+    | [FD block 5] block 12 done; 10 jobs here in 8 min (1.3 jobs/min)
+    | [FD block 5] pool: 2 Mac(s), 3.1 jobs/min (desktop-4uutk80 1.3, scotts-m4 1.8) - 30 jobs left in this list: 10 min for the pool
+    | [FD block 5] campaign so far: 5 of 8 lists opened, 673 jobs left in them = 3.7 h; 3 lists not opened yet (about 16.4 h more if they are like the opened ones) at the pool'
 
