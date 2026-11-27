@@ -231,3 +231,31 @@ fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by
   + married-horse-sunny//home/boot_camper/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d90@desktop-4uutk80.zip (4 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-112802/hm64-fullday-marhorse-sunny-d90@desktop-4uutk80.zip
   + married-horse-sunny//home/boot_camper/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d140c90@desktop-4uutk80.zip (6 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-112802/hm64-fullday-marhorse-sunny-d140c90@desktop-4uutk80.zip
   + married-horse-sunny//home/boot_camper/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d170c120@desktop-4uutk80.zip (8 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-112802/hm64-fullday-marhorse-sunny-d170c120@desktop-4uutk80.zip
+  + married-horse-sunny/run-marhorse120-20261127-112802.log (0 MB)   <- /home/boot_camper/Documents/hm64/runs/dogspots/run-marhorse120-20261127-112802.log
+  + married-horse-sunny//home/boot_camper/Documents/hm64/lab-data/married-horse-sunny/run-marhorse120-20261127-110451.log (0 MB)   <- /home/boot_camper/Documents/hm64/runs/dogspots/run-marhorse120-20261127-110451.log
+  5 new or changed, 11 already up to date (1 of them: same files inside as the copy on GitHub, only zipped again - not uploaded again)
+  result zips in runs/ that are not in the table (NOT uploaded; tell Claude if they should be): 5
+    hm64-fullday-marhorse-sunny-d140c90-summary.zip
+    hm64-fullday-marhorse-sunny-d170c120-b04@desktop-4uutk80.zip
+    hm64-fullday-marhorse-sunny-d170c120-b05@desktop-4uutk80.zip
+    hm64-fullday-marhorse-sunny-d170c120-summary.zip
+    hm64-fullday-marhorse-sunny-d90-summary.zip
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  99 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |   9 +-
+ ...lday-marhorse-sunny-d140c90@desktop-4uutk80.zip | Bin 6862953 -> 6866012 bytes
+ ...day-marhorse-sunny-d170c120@desktop-4uutk80.zip | Bin 8984847 -> 8987654 bytes
+ ...-fullday-marhorse-sunny-d90@desktop-4uutk80.zip | Bin 4433740 -> 4436935 bytes
+ .../run-marhorse120-20261127-110451.log            |  28 +++
+ .../run-marhorse120-20261127-112802.log            | 233 +++++++++++++++++++++
+ 6 files changed, 266 insertions(+), 4 deletions(-)
+  committed 9854f30 (19 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+   9fab438..9854f30  lab-data -> lab-data
+branch 'lab-data' set up to track 'origin/lab-data'.
+  pushed: GitHub's lab-data = your copy (9854f30)
+
+LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 9854f30.
