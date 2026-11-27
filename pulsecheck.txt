@@ -1,5 +1,5 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 18:33 EST by thomass-mac-mini.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 18:40 EST by scotts-m4.
 
 === desktop-4uutk80    reported 2026-11-27 18:31 EST    (pool script 2026-11-27c)
 lab run going:   YES
@@ -18,7 +18,7 @@ newest log: pool-work2.log   (last written 18:27)
     | [GA gate, casts] 278/278  104.0 jobs/min  eta 0 min
     | ==> 4/5 the casts that can differ (part A), sunny first
 
-=== scotts-m4    reported 2026-11-27 18:30 EST    (pool script 2026-11-27c)
+=== scotts-m4    reported 2026-11-27 18:40 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (work bottomup)
 role:            helper (fetches from hm64-main)
@@ -26,14 +26,14 @@ queue, as this machine sees it:
     married-horse (2026-11-27c)    finished here 2026-11-27 17:54
     zones-married-horse (2026-11-27a)    to do
 next from the queue for this machine: zones-married-horse
-newest log: pool-work2.log   (last written 18:30)
-    | [GA] campaign so far: 1 of 1 lists opened, 2366 jobs left in them = 51 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [GA] block 29 done; 182 jobs here in 7 min (27.0 jobs/min)
-    | [GA] pool: 3 Mac(s), 43.3 jobs/min (desktop-4uutk80 0.0, scotts-m4 27.0, thomass-mac-mini 16.3) - 2275 jobs left in this list: 53 min for the pool
+newest log: pool-work2.log   (last written 18:35)
     | [GA] campaign so far: 1 of 1 lists opened, 2275 jobs left in them = 53 min at the pool's present speed (rough: jobs differ in length between lists)
     | [GA] block 28 done; 273 jobs here in 9 min (29.7 jobs/min)
     | [GA] pool: 3 Mac(s), 48.7 jobs/min (desktop-4uutk80 0.0, scotts-m4 29.7, thomass-mac-mini 19.0) - 2093 jobs left in this list: 43 min for the pool
     | [GA] campaign so far: 1 of 1 lists opened, 2093 jobs left in them = 43 min at the pool's present speed (rough: jobs differ in length between lists)
+    | [GA] block 27 done; 364 jobs here in 13 min (27.0 jobs/min)
+    | [GA] pool: 3 Mac(s), 46.3 jobs/min (desktop-4uutk80 0.0, scotts-m4 27.0, thomass-mac-mini 19.3) - 1911 jobs left in this list: 41 min for the pool
+    | [GA] campaign so far: 1 of 1 lists opened, 1911 jobs left in them = 41 min at the pool's present speed (rough: jobs differ in length between lists)
 
 === thomass-mac-mini    reported 2026-11-27 18:33 EST    (pool script 2026-11-27c)
 lab run going:   YES
