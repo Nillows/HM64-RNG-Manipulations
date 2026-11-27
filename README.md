@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.27
+# HM64 Power Nut Tool v32.28
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 
@@ -216,7 +216,7 @@ Sparrows box ticked.
 Jack stops; click a row and it counts down to that cast. The Harbingers tab has the same signs with a cast aimed to a
 fraction of a second.</sub>
 
-### On a sunny morning: the pier zones (v32.27)
+### On a sunny morning: the pier zones (v32.27, fully measured since v32.28)
 The end of the pier has three camera zones (North / Middle / South, set by your 2nd cut: game frames 1–3 / 4–8 / 9–11 of
 the pier window). A dog that walks off the camera's grid stops drawing random numbers, so the same cast can catch something
 else from another zone. Every cast was recorded from the north end. The lab then cast again, from the middle and from the
@@ -226,19 +226,20 @@ with it; each held as long as its recording) and a check sample of the rest (2,5
 | cast frames with a Power Nut on bites 1–6 | no horse | horse |
 |---|---|---|
 | North (the recording) | 16,941 | 22,310 |
-| Middle, on the dog lines that reach it | 15,785 of 15,901 recorded | 21,119 of 21,287 |
-| South, on the dog lines that reach it | 15,773 of 15,901 | 21,095 of 21,287 |
-| hold from all three (Not sure) | 16,813 | 22,118 |
+| Middle, on the dog lines that reach it | 15,901 of 15,901 recorded | 21,286 of 21,287 |
+| South, on the dog lines that reach it | 15,889 of 15,901 | 21,262 of 21,287 |
+| hold from all three (Not sure) | 16,929 | 22,285 |
 | a fish in the zone (middle / south) | 0 / 12 | 1 / 25 |
-| not proven outside the north end, shown as fish | 116 | 167 |
+| not proven | 0 | 0 |
 
 So on a sunny morning the Power Nut bars are nearly the same wherever Jack stops. What does change with the zone is later
 bites: about 1 cast frame in 20 has some bite that differs (5.3% middle, 6.0% south without the horse; 5.1% / 5.8% with
 it), mostly on casts later than a minute after READY, and those frames show what was measured in that zone. No Power Nut
-exists only in the middle or only in the south. The “not proven” ones are all 5th- and 6th-bite Nuts of casts 60–90 s
-after READY whose Nut bite comes 142–151 s after READY, later than the recorded part of the cast: they count as fish
-outside the north end until a short lab run settles them. Lines that never stand outside the north end (8 per file) keep
-the recording. The pages open on **Middle**, the biggest zone (about 46% of the lab's plays; North and South 27% each).
+exists only in the middle or only in the south. v32.27 still showed 116 / 167 cast frames as “not proven” outside the
+north end: 5th- and 6th-bite Nuts of casts 60–90 s after READY whose bite comes 142–151 s after READY, later than the
+recorded part of the cast. They come from 12 + 15 casts; a short lab run cast each of them from the north end, the middle
+and the south and held it to 170 s (81 casts): all 81 show exactly the bites the page had, the Nut included, so every one
+holds in every zone. Lines that never stand outside the north end (8 per file) keep the recording. The pages open on **Middle**, the biggest zone (about 46% of the lab's plays; North and South 27% each).
 
 ### On a rainy morning (v32.19; pier zones since v32.23, fully measured since v32.25)
 **Where Jack stops on the end of the pier matters in the rain.** The spot moves the camera, and a dog that walks off the
@@ -265,12 +266,13 @@ and Dog practice pages.
 | table | Nut cast frames, no horse | with the horse | what it is |
 |---|---|---|---|
 | **North** | 16,823 | 11,036 | the recording itself |
-| **Middle** | 14,356 | 9,719 | recorded casts that came out the same there + 1,110 / 743 Nut frames that exist only there |
-| **South** | 13,594 | 9,205 | the same for the south end, + 1,161 / 768 only there |
+| **Middle** | 14,422 | 9,749 | recorded casts that came out the same there + 1,176 / 773 Nut frames that exist only there |
+| **South** | 13,694 | 9,258 | the same for the south end, + 1,261 / 821 only there |
 | **Not sure** (the base) | 13,729 | 9,446 | a Nut only where it comes on the same bite at the same moment from all three |
 
 (Cast frames with a Nut on bites 1–6; Middle and South counted over the dog lines that reach that zone.) For casts in the
-first minute after READY a zone has about as many Nut frames as the north table (99–101%), for casts at 60–120 s 76–93%.
+first minute after READY a zone has about as many Nut frames as the north table (99–101%), for casts at 60–120 s 77–93%.
+(v32.28 added 66 / 100 and 30 / 53 measured zone-only Nut frames, all on casts later than a minute, that earlier builds had left out.)
 
 A recorded Nut that **does not come in your zone** shows as *fish (a Nut only elsewhere on the pier end)* and stays out
 of the odds. **Since v32.25 nothing is left "not proven":** a second lab run (the gap campaign, both Macs, 3 hours) cast the
@@ -529,8 +531,10 @@ matches, including which cast moments grow leaves.
 
 **L1 across game files: two cubes.** Every game file that changes the random numbers before the pier needs tables of its
 own: the weather, the horse, and later a marriage and a baby. Horse × married × baby makes a cube with 8 corners, and the
-weather makes it two cubes: 16 game files in all, four of them filled today. Each corner shows its L1 (the most common dog
-line). Sunny with and without the horse share the **same L1 branch**: every move of the dog and every leaf, 3 game frames
+weather makes it two cubes: 16 game files in all, four of them filled today and two more measured in the lab and waiting
+for their pages (married, no horse, sunny and rainy: the orange dashed corners). Each corner shows its L1 (the most common
+dog line). Being married does not move it: on both married files L1 is the single file's L1, every move of the dog and every
+leaf in the first 40 s, at the same moment and with the same share of the plays (14% sunny, 5% rainy). Sunny with and without the horse share the **same L1 branch**: every move of the dog and every leaf, 3 game frames
 earlier on the horse file. Rainy with and without the horse share one L1 too, and **at the same moment**, because the
 rain swallows the horse's two extra numbers on the farm. Each raindrop that is not falling rolls the dice every frame (one
 in five starts it) and a drop that starts rolls twice more for where it lands, so the rain reads the numbers in chunks of
