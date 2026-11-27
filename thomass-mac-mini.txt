@@ -1,16 +1,16 @@
-=== thomass-mac-mini    reported 2026-11-27 14:21 EST    (pool script 2026-11-27c)
+=== thomass-mac-mini    reported 2026-11-27 14:31 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       NOT running (this machine takes nothing new from the queue)
 role:            main Mac (or a machine with no main set)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    to do
 next from the queue for this machine: married-horse
-newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 14:19)
-    | [FD block 0] campaign so far: 3 of 8 lists opened, 1641 jobs left in them = 1.8 h; 5 lists not opened yet (about 7.9 h more if they are like the opened ones) at the pool'
-    | [FD block 0] block 31 done; 1426 jobs here in 104 min (13.7 jobs/min)
-    | [FD block 0] pool: 1 Mac(s), 15.3 jobs/min (thomass-mac-mini 15.3) - 825 jobs left in this list: 54 min for the pool
-    | [FD block 0] campaign so far: 3 of 8 lists opened, 1560 jobs left in them = 1.7 h; 5 lists not opened yet (about 7.9 h more if they are like the opened ones) at the pool'
-    | [FD block 0] block 32 done; 1472 jobs here in 107 min (13.8 jobs/min)
-    | [FD block 0] pool: 1 Mac(s), 15.3 jobs/min (thomass-mac-mini 15.3) - 779 jobs left in this list: 51 min for the pool
-    | [FD block 0] campaign so far: 3 of 8 lists opened, 1479 jobs left in them = 1.6 h; 5 lists not opened yet (about 7.9 h more if they are like the opened ones) at the pool'
+newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 14:29)
+    | [FD block 0] campaign so far: 3 of 8 lists opened, 1363 jobs left in them = 89 min; 5 lists not opened yet (about 7.9 h more if they are like the opened ones) at the pool
+    | [FD block 0] block 34 done; 1564 jobs here in 114 min (13.7 jobs/min)
+    | [FD block 0] pool: 1 Mac(s), 15.3 jobs/min (thomass-mac-mini 15.3) - 687 jobs left in this list: 45 min for the pool
+    | [FD block 0] campaign so far: 3 of 8 lists opened, 1212 jobs left in them = 79 min; 5 lists not opened yet (about 7.9 h more if they are like the opened ones) at the pool
+    | [FD block 0] block 35 done; 1610 jobs here in 117 min (13.8 jobs/min)
+    | [FD block 0] pool: 1 Mac(s), 15.3 jobs/min (thomass-mac-mini 15.3) - 641 jobs left in this list: 42 min for the pool
+    | [FD block 0] campaign so far: 3 of 8 lists opened, 1131 jobs left in them = 74 min; 5 lists not opened yet (about 7.9 h more if they are like the opened ones) at the pool
 
