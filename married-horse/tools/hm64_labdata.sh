@@ -1,5 +1,5 @@
 set -uo pipefail
-LABDATA_REV="2026-11-27a"
+LABDATA_REV="2026-11-27b"
 MODE="${1:-}"
 ARGS_KEEP="${1:-}"
 HM="$HOME/Documents/hm64"
@@ -92,6 +92,12 @@ married-horse-rainy|hm64-fullday-marhorse-rainy-d170c120@*.zip|0|each
 married-horse-sunny|run-marhorse120-*.log|0|each
 sunny-no-horse|run-nutgaps-*.log|0|each'
 if [ -f "$TOOLS/labdata_map.txt" ]; then MAP=$(grep -v '^[[:space:]]*$' "$TOOLS/labdata_map.txt"); MAPSRC="$TOOLS/labdata_map.txt"; else MAP="$MAP_DEFAULT"; MAPSRC="built in"; fi
+for CM in "$HM"/pool/campaigns/*/labdata_map.txt; do
+  [ -f "$CM" ] || continue
+  MAP="$MAP
+$(grep -v '^[[:space:]]*$' "$CM")"; MAPSRC="$MAPSRC + campaigns"
+done
+MAP=$(printf '%s\n' "$MAP" | awk '!seen[$0]++')
 
 say "lab data 1/5  is a lab run going? (lab-data script $LABDATA_REV)"
 BUSY=no

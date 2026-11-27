@@ -1,7 +1,7 @@
 {
  "name": "married-horse",
  "title": "Married + horse (sunny spring 13 + rainy spring 12): dog-watch on the main Mac, cast blocks to 120 s shared by every machine (helpers: bottomup / middleout)",
- "version": "2026-11-27b",
+ "version": "2026-11-27c",
  "image": {
   "tag": "hm64-lab:arm64",
   "id": "sha256:9b61e93aed507f7022f55fb1112e4c9cc484049ee8cd5d58837efb18963341cf"
