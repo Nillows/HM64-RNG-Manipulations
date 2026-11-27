@@ -1,0 +1,394 @@
+
+==> SHARED run: this Mac = desktop-4uutk80, direction middle (helper: cast blocks only, of the saves whose dog-watch is already here)
+
+==> MARRIED + HORSE tables to 120 s: saves [sunny rainy], preset dogwatch, work folder /home/boot_camper/Documents/hm64/runs/dogspots/hm64-lab (image hm64-lab:amd64-nd)  Fri 17:50
+  lab code: ZZ_CODE = "zigzag-4f (2026-11-16: every bite to 90 s after READY; dogwatch menus...
+  (no caffeinate on this machine: nothing keeps it awake)
+  free disk: 946 GB
+
+==> 1/7 lab files
+  [coord 17:50:58] machine desktop-4uutk80, branch lab-coord, every 30 s (rev 2026-11-25a)
+  table sync with GitHub (branch lab-coord): running (pid 634784)
+  this Mac's result parts go to GitHub every 30 min (branch lab-parts-desktop-4uutk80; pid 634787)
+  [coord 17:50:59] machine desktop-4uutk80, branch lab-coord, every 30 s (rev 2026-11-25a)
+  [parts 17:50:59] machine desktop-4uutk80, every 30 min (rev 2026-11-25a)
+  fullday-2 kit, save_check.py, married_z0_check.py, save_redate.py -> /home/boot_camper/Documents/hm64/runs/dogspots/hm64-lab
+  workers  14
+
+==> 2/7 the saves
+  save     married-horse-lineup2-sunny-0f33f322   <- /home/boot_camper/Documents/hm64/sourcefiles/married/Harvest Moon 64 (USA).beach-lineup2-horse-sunny-married.SaveRAM
+    married-horse-lineup2-sunny-0f33f322.SaveRAM  sha256 0f33f322f655  (bizhawk-saveram, checksum valid)
+      day      year 1 spring 13 (day of week 6), weather sunny, forecast sunny
+      Jack     gold 300, stamina 100/100, tools [24, 1, 3, 4, 5, 0, 0, 0, 24], in hand 24 (fishing rod)
+      dog      beach (map 9) x -197.272 z 222.243  tile 18:23
+      horse    YES (HAVE_HORSE True, ranch cutscene seen True); block: farm (map 82) x 492.879 z -69.384, grown 0, age 3, flags 0x0003
+      family   married True, baby False, wife 4; life events ['MARRIED', 'HAVE_HORSE', 'RANCH_GET_HORSE_CUTSCENE', 16, 62]
+      [PASS] weather  want sunny    got sunny
+      [PASS] horse    want yes      got yes
+      [PASS] married  want yes      got yes
+      [PASS] wife     want karen    got karen
+      [PASS] baby     want no       got no
+      [PASS] dog      want beach    got beach
+      [PASS] tile     want 18:23    got 18:23
+      [PASS] rod      want yes      got yes
+      [PASS] season   want spring   got spring
+      [PASS] day      want 13       got 13
+      [PASS] checksum want valid    got valid
+  save     married-horse-lineup2-rainy-8cbe43a5   <- /home/boot_camper/Documents/hm64/sourcefiles/married/Harvest Moon 64 (USA).beach-lineup2-horse-rainy-married.SaveRAM
+    married-horse-lineup2-rainy-8cbe43a5.SaveRAM  sha256 8cbe43a540e3  (bizhawk-saveram, checksum valid)
+      day      year 1 spring 12 (day of week 5), weather rain, forecast sunny
+      Jack     gold 300, stamina 100/100, tools [24, 1, 3, 4, 5, 0, 0, 0, 24], in hand 24 (fishing rod)
+      dog      beach (map 9) x -197.272 z 222.243  tile 18:23
+      horse    YES (HAVE_HORSE True, ranch cutscene seen True); block: farm (map 82) x 492.879 z -69.384, grown 0, age 2, flags 0x0003
+      family   married True, baby False, wife 4; life events ['MARRIED', 'HAVE_HORSE', 'RANCH_GET_HORSE_CUTSCENE', 16, 62]
+      [PASS] weather  want rain     got rain
+      [PASS] horse    want yes      got yes
+      [PASS] married  want yes      got yes
+      [PASS] wife     want karen    got karen
+      [PASS] baby     want no       got no
+      [PASS] dog      want beach    got beach
+      [PASS] tile     want 18:23    got 18:23
+      [PASS] rod      want yes      got yes
+      [PASS] season   want spring   got spring
+      [PASS] day      want 12       got 12
+      [PASS] checksum want valid    got valid
+  workers  14  (this Mac's benchmark: /home/boot_camper/Documents/hm64/pool/bench_3b4ab031b02d_16.json; delete that file to measure again)
+
+==> 3/7 lab health + each save's reference route from power-on (twice)
+  lab health test skipped (no Spring 9 save in /home/boot_camper/Documents/hm64/runs/dogspots/hm64-lab/data/saves)
+  married-horse-lineup2-sunny-0f33f322:
+  save 0f33f322f655: spring 13 year 1, weather 1, rod in hand True; dog at the beach load: beach x -197.27 z 222.24
+  reference route: {"house": [1036, 499], "farm": [1448, 704], "beach": [2264, 1083], "wake": [213, 1190], "ready": [339, -92.0, 194.0, 1269]}
+  equal to Claude's sandbox record of this save (x86 build): OK
+  married-horse-lineup2-rainy-8cbe43a5:
+  save 8cbe43a540e3: spring 12 year 1, weather 2, rod in hand True; dog at the beach load: beach x -197.27 z 222.24
+  reference route: {"house": [1036, 499], "farm": [1448, 704], "beach": [2264, 7429], "wake": [213, 9382], "ready": [339, -92.0, 194.0, 10593]}
+  equal to Claude's sandbox record of this save (x86 build): OK
+
+==> 4/7 [1: married-horse-lineup2-rainy-8cbe43a5] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY (Fri 17:51)
+  done before
+
+==> 5/7 [1: married-horse-lineup2-rainy-8cbe43a5] dog-watch phase 3: Lucky Timer cast tables (every game frame 0.1-40 s, every bite to 90 s) (Fri 17:51)
+  done before
+  zip      /home/boot_camper/Documents/hm64/runs/hm64-dogwatch-married-horse-lineup2-rainy-8cbe43a5.zip
+
+==> 6/7 [1: married-horse-lineup2-rainy-8cbe43a5] dog after the cast: 3 windows (Fri 17:51)
+
+==> marhorse-rainy-d170c120: casts to 120 s, everything to 170 s after READY, blocks 4-5  (Fri 17:51)
+  lines: done before
+lines followed to 10198 VIs (170 s) after READY; 50 heavy lines (90.6% of the route weight), 18 others; 133230 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 50):  44898 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 18):   8669 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 50):  36005 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 18):   5201 casts
+  block  4: casts  80.2-120.3 s after READY, heavy lines ( 50):  33268 casts  (13256 done)
+  block  5: casts  80.2-120.3 s after READY, other lines ( 18):   5189 casts  (2394 done)
+
+==> marhorse-rainy-d170c120 block 5 of 5  (done before: only telling the other Macs)  (Fri 17:51)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..7198 VIs after READY on the other lines (18), 5189 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 5] 372 jobs, 168 already done, 204 to run
+[FD block 5] shared run: machine desktop-4uutk80, order middle, 372 jobs in 47 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 5] every block is done (0 jobs run here this time)
+  block 5 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 50 | 33268 | 13256 | 0 | 12948 / 0 / 308 | 13256 / 0 / 0 | 4.7 | 708 (5.3%) |
+| 5 | 80.2 – 120.3 · other | 18 | 5189 | 2394 | 0 | 2226 / 0 / 168 | 2394 / 0 / 0 | 4.6 | 100 (4.2%) |
+
+  this Mac's part of block 5: /home/boot_camper/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d170c120-b05@desktop-4uutk80.zip
+
+==> marhorse-rainy-d170c120 block 4 of 5  (done before: only telling the other Macs)  (Fri 17:51)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..7198 VIs after READY on the heavy lines (50), 33268 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 4] 1711 jobs, 665 already done, 1046 to run
+[FD block 4] shared run: machine desktop-4uutk80, order middle, 1711 jobs in 49 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 4] every block is done (0 jobs run here this time)
+  block 4 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 50 | 33268 | 13256 | 0 | 12948 / 0 / 308 | 13256 / 0 / 0 | 4.7 | 708 (5.3%) |
+| 5 | 80.2 – 120.3 · other | 18 | 5189 | 2394 | 0 | 2226 / 0 / 168 | 2394 / 0 / 0 | 4.6 | 100 (4.2%) |
+
+  this Mac's part of block 4: /home/boot_camper/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d170c120-b04@desktop-4uutk80.zip
+
+==> marhorse-rainy-d140c90: casts to 90 s, everything to 140 s after READY, blocks 2-5  (Fri 17:51)
+  lines: done before
+lines followed to 8398 VIs (140 s) after READY; 50 heavy lines (90.6% of the route weight), 18 others; 104390 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 50):  44898 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 18):   8669 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 50):  36005 casts  (6420 done)
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 18):   5201 casts  (2494 done)
+  block  4: casts  80.2- 90.3 s after READY, heavy lines ( 41):   8401 casts  (4463 done)
+  block  5: casts  80.2- 90.3 s after READY, other lines (  8):   1216 casts  (660 done)
+
+==> marhorse-rainy-d140c90 block 5 of 5  (done before: only telling the other Macs)  (Fri 17:51)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..5398 VIs after READY on the other lines (8), 1216 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 5] 56 jobs, 28 already done, 28 to run
+[FD block 5] shared run: machine desktop-4uutk80, order middle, 56 jobs in 28 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 5] every block is done (0 jobs run here this time)
+  block 5 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 2 | 40.1 – 80.2 · heavy | 50 | 36005 | 6420 | 0 | 6159 / 0 / 261 | 6420 / 0 / 0 | 6.0 | 285 (4.4%) |
+| 3 | 40.1 – 80.2 · other | 18 | 5201 | 2494 | 0 | 2308 / 0 / 186 | 2494 / 0 / 0 | 5.3 | 62 (2.5%) |
+| 4 | 80.2 – 90.3 · heavy | 41 | 8401 | 4463 | 0 | 4463 / 0 / 0 | 4463 / 0 / 0 | 3.7 | 170 (3.8%) |
+| 5 | 80.2 – 90.3 · other | 8 | 1216 | 660 | 0 | 660 / 0 / 0 | 660 / 0 / 0 | 3.5 | 24 (3.6%) |
+
+  this Mac's part of block 5: /home/boot_camper/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d140c90-b05@desktop-4uutk80.zip
+
+==> marhorse-rainy-d140c90 block 4 of 5  (done before: only telling the other Macs)  (Fri 17:51)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..5398 VIs after READY on the heavy lines (41), 8401 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 4] 375 jobs, 200 already done, 175 to run
+[FD block 4] shared run: machine desktop-4uutk80, order middle, 375 jobs in 47 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 4] every block is done (0 jobs run here this time)
+  block 4 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 2 | 40.1 – 80.2 · heavy | 50 | 36005 | 6420 | 0 | 6159 / 0 / 261 | 6420 / 0 / 0 | 6.0 | 285 (4.4%) |
+| 3 | 40.1 – 80.2 · other | 18 | 5201 | 2494 | 0 | 2308 / 0 / 186 | 2494 / 0 / 0 | 5.3 | 62 (2.5%) |
+| 4 | 80.2 – 90.3 · heavy | 41 | 8401 | 4463 | 0 | 4463 / 0 / 0 | 4463 / 0 / 0 | 3.7 | 170 (3.8%) |
+| 5 | 80.2 – 90.3 · other | 8 | 1216 | 660 | 0 | 660 / 0 / 0 | 660 / 0 / 0 | 3.5 | 24 (3.6%) |
+
+  this Mac's part of block 4: /home/boot_camper/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d140c90-b04@desktop-4uutk80.zip
+
+==> marhorse-rainy-d140c90 block 3 of 5  (done before: only telling the other Macs)  (Fri 17:51)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 3: casts 2400..4798 VIs after READY on the other lines (18), 5201 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 3] 343 jobs, 168 already done, 175 to run
+[FD block 3] shared run: machine desktop-4uutk80, order middle, 343 jobs in 49 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 3] every block is done (0 jobs run here this time)
+  block 3 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 2 | 40.1 – 80.2 · heavy | 50 | 36005 | 6420 | 0 | 6159 / 0 / 261 | 6420 / 0 / 0 | 6.0 | 285 (4.4%) |
+| 3 | 40.1 – 80.2 · other | 18 | 5201 | 2494 | 0 | 2308 / 0 / 186 | 2494 / 0 / 0 | 5.3 | 62 (2.5%) |
+| 4 | 80.2 – 90.3 · heavy | 41 | 8401 | 4463 | 0 | 4463 / 0 / 0 | 4463 / 0 / 0 | 3.7 | 170 (3.8%) |
+| 5 | 80.2 – 90.3 · other | 8 | 1216 | 660 | 0 | 660 / 0 / 0 | 660 / 0 / 0 | 3.5 | 24 (3.6%) |
+
+  this Mac's part of block 3: /home/boot_camper/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d140c90-b03@desktop-4uutk80.zip
+
+==> marhorse-rainy-d140c90 block 2 of 5  (done before: only telling the other Macs)  (Fri 17:51)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 2: casts 2400..4798 VIs after READY on the heavy lines (50), 36005 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 2] 1773 jobs, 360 already done, 1413 to run
+[FD block 2] shared run: machine desktop-4uutk80, order middle, 1773 jobs in 50 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 2] every block is done (0 jobs run here this time)
+  block 2 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 2 | 40.1 – 80.2 · heavy | 50 | 36005 | 6420 | 0 | 6159 / 0 / 261 | 6420 / 0 / 0 | 6.0 | 285 (4.4%) |
+| 3 | 40.1 – 80.2 · other | 18 | 5201 | 2494 | 0 | 2308 / 0 / 186 | 2494 / 0 / 0 | 5.3 | 62 (2.5%) |
+| 4 | 80.2 – 90.3 · heavy | 41 | 8401 | 4463 | 0 | 4463 / 0 / 0 | 4463 / 0 / 0 | 3.7 | 170 (3.8%) |
+| 5 | 80.2 – 90.3 · other | 8 | 1216 | 660 | 0 | 660 / 0 / 0 | 660 / 0 / 0 | 3.5 | 24 (3.6%) |
+
+  this Mac's part of block 2: /home/boot_camper/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d140c90-b02@desktop-4uutk80.zip
+
+==> marhorse-rainy-d90: casts to 40 s, everything to 90 s after READY, blocks 0-1  (Fri 17:51)
+  lines: done before
+lines followed to 5398 VIs (90 s) after READY; 50 heavy lines (90.6% of the route weight), 18 others; 53567 casts in 2 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 50):  44898 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 18):   8669 casts
+
+==> marhorse-rainy-d90 block 1 of 1  (done before: only telling the other Macs)  (Fri 17:51)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 1: casts 6..2398 VIs after READY on the other lines (18), 8669 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 1] 643 jobs, 0 already done, 643 to run
+[FD block 1] shared run: machine desktop-4uutk80, order middle, 643 jobs in 50 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 1] every block is done (0 jobs run here this time)
+  block 1 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-rainy-d90 block 0 of 1  (done before: only telling the other Macs)  (Fri 17:51)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 0: casts 6..2398 VIs after READY on the heavy lines (50), 44898 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 0] 2251 jobs, 0 already done, 2251 to run
+[FD block 0] shared run: machine desktop-4uutk80, order middle, 2251 jobs in 49 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 0] every block is done (0 jobs run here this time)
+  block 0 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> 7/7 [1: married-horse-lineup2-rainy-8cbe43a5] the zips to send
+  married-horse-lineup2-rainy-8cbe43a5 done: its zips are in /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-175058
+
+==> 4/7 [2: married-horse-lineup2-sunny-0f33f322] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY (Fri 17:52)
+  done before
+
+==> 5/7 [2: married-horse-lineup2-sunny-0f33f322] dog-watch phase 3: Lucky Timer cast tables (every game frame 0.1-40 s, every bite to 90 s) (Fri 17:52)
+  done before
+  zip      /home/boot_camper/Documents/hm64/runs/hm64-dogwatch-married-horse-lineup2-sunny-0f33f322.zip
+
+==> 6/7 [2: married-horse-lineup2-sunny-0f33f322] dog after the cast: 3 windows (Fri 17:52)
+
+==> marhorse-sunny-d170c120: casts to 120 s, everything to 170 s after READY, blocks 4-5  (Fri 17:52)
+  lines: done before
+lines followed to 10198 VIs (170 s) after READY; 57 heavy lines (90.0% of the route weight), 99 others; 87727 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 57):  27674 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 99):  19072 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 57):  15502 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 99):   6785 casts
+  block  4: casts  80.2-120.3 s after READY, heavy lines ( 57):  12800 casts  (1696 done)
+  block  5: casts  80.2-120.3 s after READY, other lines ( 99):   5894 casts  (3330 done)
+
+==> marhorse-sunny-d170c120 block 5 of 5  (done before: only telling the other Macs)  (Fri 17:52)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..7198 VIs after READY on the other lines (99), 5894 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 5] 570 jobs, 276 already done, 294 to run
+[FD block 5] shared run: machine desktop-4uutk80, order middle, 570 jobs in 48 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 5] every block is done (0 jobs run here this time)
+  block 5 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 57 | 12800 | 1696 | 0 | 1465 / 0 / 231 | 1696 / 0 / 0 | 4.8 | 0 (0.0%) |
+| 5 | 80.2 – 120.3 · other | 99 | 5894 | 3330 | 0 | 2395 / 0 / 935 | 3330 / 0 / 0 | 5.0 | 1 (0.0%) |
+
+  this Mac's part of block 5: /home/boot_camper/Documents/hm64/runs/hm64-fullday-marhorse-sunny-d170c120-b05@desktop-4uutk80.zip
+
+==> marhorse-sunny-d170c120 block 4 of 5  (done before: only telling the other Macs)  (Fri 17:52)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..7198 VIs after READY on the heavy lines (57), 12800 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 4] 1083 jobs, 110 already done, 973 to run
+[FD block 4] shared run: machine desktop-4uutk80, order middle, 1083 jobs in 50 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 4] every block is done (0 jobs run here this time)
+  block 4 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 57 | 12800 | 1696 | 0 | 1465 / 0 / 231 | 1696 / 0 / 0 | 4.8 | 0 (0.0%) |
+| 5 | 80.2 – 120.3 · other | 99 | 5894 | 3330 | 0 | 2395 / 0 / 935 | 3330 / 0 / 0 | 5.0 | 1 (0.0%) |
+
+  this Mac's part of block 4: /home/boot_camper/Documents/hm64/runs/hm64-fullday-marhorse-sunny-d170c120-b04@desktop-4uutk80.zip
+
+==> marhorse-sunny-d140c90: casts to 90 s, everything to 140 s after READY, blocks 2-5  (Fri 17:52)
+  lines: done before
+lines followed to 8398 VIs (140 s) after READY; 57 heavy lines (90.0% of the route weight), 99 others; 72933 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 57):  27674 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 99):  19072 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 57):  15502 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 99):   6785 casts
+  block  4: casts  80.2- 90.3 s after READY, heavy lines ( 16):   2921 casts
+  block  5: casts  80.2- 90.3 s after READY, other lines ( 10):    979 casts
+
+==> marhorse-sunny-d140c90 block 5 of 5  (done before: only telling the other Macs)  (Fri 17:52)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..5398 VIs after READY on the other lines (10), 979 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 5] 46 jobs, 0 already done, 46 to run
+[FD block 5] shared run: machine desktop-4uutk80, order middle, 46 jobs in 46 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 5] every block is done (0 jobs run here this time)
+  block 5 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d140c90 block 4 of 5  (done before: only telling the other Macs)  (Fri 17:53)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..5398 VIs after READY on the heavy lines (16), 2921 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 4] 129 jobs, 0 already done, 129 to run
+[FD block 4] shared run: machine desktop-4uutk80, order middle, 129 jobs in 43 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 4] every block is done (0 jobs run here this time)
+  block 4 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d140c90 block 3 of 5  (done before: only telling the other Macs)  (Fri 17:53)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 3: casts 2400..4798 VIs after READY on the other lines (99), 6785 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 3] 502 jobs, 0 already done, 502 to run
+[FD block 3] shared run: machine desktop-4uutk80, order middle, 502 jobs in 46 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 3] every block is done (0 jobs run here this time)
+  block 3 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d140c90 block 2 of 5  (done before: only telling the other Macs)  (Fri 17:53)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 2: casts 2400..4798 VIs after READY on the heavy lines (57), 15502 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 2] 898 jobs, 0 already done, 898 to run
+[FD block 2] shared run: machine desktop-4uutk80, order middle, 898 jobs in 50 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 2] every block is done (0 jobs run here this time)
+  block 2 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d90: casts to 40 s, everything to 90 s after READY, blocks 0-1  (Fri 17:53)
+  lines: done before
+lines followed to 5398 VIs (90 s) after READY; 57 heavy lines (90.0% of the route weight), 99 others; 46746 casts in 2 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 57):  27674 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 99):  19072 casts
+
+==> marhorse-sunny-d90 block 1 of 1  (done before: only telling the other Macs)  (Fri 17:53)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 1: casts 6..2398 VIs after READY on the other lines (99), 19072 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 1] 3060 jobs, 0 already done, 3060 to run
+[FD block 1] shared run: machine desktop-4uutk80, order middle, 3060 jobs in 50 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 1] every block is done (0 jobs run here this time)
+  block 1 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d90 block 0 of 1  (done before: only telling the other Macs)  (Fri 17:53)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 0: casts 6..2398 VIs after READY on the heavy lines (57), 27674 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 0] 2303 jobs, 0 already done, 2303 to run
+[FD block 0] shared run: machine desktop-4uutk80, order middle, 2303 jobs in 49 blocks; other machines: scotts-m4, thomass-mac-mini
+[FD block 0] every block is done (0 jobs run here this time)
+  block 0 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> 7/7 [2: married-horse-lineup2-sunny-0f33f322] the zips to send
+  married-horse-lineup2-sunny-0f33f322 done: its zips are in /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-175058
+
+------------------------------------------------------------------------------------------------
+ MARRIED TABLES DONE   [rainy sunny ]   (2 min in all)
+------------------------------------------------------------------------------------------------
+  married-horse-lineup2-rainy-8cbe43a5:
+    # Dog-watch report: married-horse-lineup2-rainy-8cbe43a5
+    
+    68 dog lines with traces (40 s after READY), 613 (line, READY offset) variants; route-weighted. Clock = the dock-end tap ±3 VI; logs from 1.0 s after READY; runner: changes >= 12 VI, reaction 10-25 VI, 15% missed. Odds: cast >= 2 s after the window, ±150 ms.
+    
+    ## What the dog does while you wait (after READY, route-weighted)
+    
+    - dog's tile on the visibility grid (it animates only then): 99% of the time
+    - visible changes per minute: 61; changes lasting >= 12 VI: 88%
+    - facing on screen (share of the wait): SW 40%, NE 17%, SE 14%, W 9%, NW 9%, E 6%, N 5%; animations readable (dog faces S / N / NE / E / SE): 42%
+    - the dog moves (units, max over the trace): median 0.0
+    - decision (actionState change) -> next visible change: median 0 VI (p10 0, p90 30); animation set -> displayed: median 0 VI
+    
+  married-horse-lineup2-sunny-0f33f322:
+    # Dog-watch report: married-horse-lineup2-sunny-0f33f322
+    
+    156 dog lines with traces (40 s after READY), 1959 (line, READY offset) variants; route-weighted. Clock = the dock-end tap ±3 VI; logs from 1.0 s after READY; runner: changes >= 12 VI, reaction 10-25 VI, 15% missed. Odds: cast >= 2 s after the window, ±150 ms.
+    
+    ## What the dog does while you wait (after READY, route-weighted)
+    
+    - dog's tile on the visibility grid (it animates only then): 100% of the time
+    - visible changes per minute: 59; changes lasting >= 12 VI: 90%
+    - facing on screen (share of the wait): SW 36%, NE 15%, E 15%, SE 14%, N 10%, NW 8%, W 2%; animations readable (dog faces S / N / NE / E / SE): 54%
+    - the dog moves (units, max over the trace): median 0.0
+    - decision (actionState change) -> next visible change: median 0 VI (p10 0, p90 30); animation set -> displayed: median 0 VI
+    
+
+  send these (no ROM / saves / savestates inside):
+    hm64-fullday-marhorse-rainy-d140c90@desktop-4uutk80.zip         4.9 MB
+    hm64-fullday-marhorse-rainy-d170c120@desktop-4uutk80.zip        5.4 MB
+    hm64-fullday-marhorse-rainy-d90@desktop-4uutk80.zip             1.9 MB
+    hm64-fullday-marhorse-sunny-d140c90@desktop-4uutk80.zip         6.6 MB
+    hm64-fullday-marhorse-sunny-d170c120@desktop-4uutk80.zip        8.6 MB
+    hm64-fullday-marhorse-sunny-d90@desktop-4uutk80.zip             4.3 MB
+    run-marhorse120-20261127-175058.log                             0.0 MB
+  folder: /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-175058
+  [parts 17:54:10] 14 result files on GitHub (branch lab-parts-desktop-4uutk80)
+  [parts 17:54:10] ended
+  [coord 17:54:39] ended
+  lab-data script 2026-11-27b installed in /home/boot_camper/Documents/hm64/tools
+
+==> lab data 1/5  is a lab run going? (lab-data script 2026-11-27b)
+  no lab run is going
+
+==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+  push access: the release SSH key (/home/boot_camper/.ssh/hm64_github_ed25519)
+  pulled 1 commit(s) from GitHub
+  /home/boot_camper/Documents/hm64/lab-data (branch lab-data, GitHub has 0fb44068bb6d48fdef9e7fc0164327ea40aff4af)
+
+==> lab data 3/5  looking for results in /home/boot_camper/Documents/hm64/runs and /home/boot_camper/Downloads (table: built in; newest copy of each file)
+  + married-horse-sunny//home/boot_camper/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d90@desktop-4uutk80.zip (4 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-175058/hm64-fullday-marhorse-sunny-d90@desktop-4uutk80.zip
+  + married-horse-sunny//home/boot_camper/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d140c90@desktop-4uutk80.zip (6 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-175058/hm64-fullday-marhorse-sunny-d140c90@desktop-4uutk80.zip
+  + married-horse-sunny//home/boot_camper/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d170c120@desktop-4uutk80.zip (8 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-175058/hm64-fullday-marhorse-sunny-d170c120@desktop-4uutk80.zip
+  + married-horse-rainy//home/boot_camper/Documents/hm64/lab-data/married-horse-rainy/hm64-fullday-marhorse-rainy-d90@desktop-4uutk80.zip (1 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-175058/hm64-fullday-marhorse-rainy-d90@desktop-4uutk80.zip
+  + married-horse-rainy//home/boot_camper/Documents/hm64/lab-data/married-horse-rainy/hm64-fullday-marhorse-rainy-d140c90@desktop-4uutk80.zip (4 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-175058/hm64-fullday-marhorse-rainy-d140c90@desktop-4uutk80.zip
+  + married-horse-rainy//home/boot_camper/Documents/hm64/lab-data/married-horse-rainy/hm64-fullday-marhorse-rainy-d170c120@desktop-4uutk80.zip (5 MB)   <- /home/boot_camper/Documents/hm64/runs/hm64-marhorse120-20261127-175058/hm64-fullday-marhorse-rainy-d170c120@desktop-4uutk80.zip
