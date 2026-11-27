@@ -1,16 +1,16 @@
-=== thomass-mac-mini    reported 2026-11-27 12:08 EST    (pool script 2026-11-27c)
+=== thomass-mac-mini    reported 2026-11-27 12:18 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       NOT running (this machine takes nothing new from the queue)
 role:            main Mac (or a machine with no main set)
 queue, as this machine sees it:
     married-horse (2026-11-27b)    to do
 next from the queue for this machine: married-horse
-newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 12:08)
-    | [Z7 casts 20-40 s] 370/961  0.34 jobs/s  eta 28.9 min
-    | [Z7 casts 20-40 s] 380/961  0.34 jobs/s  eta 28.7 min
-    | [Z7 casts 20-40 s] 390/961  0.34 jobs/s  eta 27.9 min
-    | [Z7 casts 20-40 s] 400/961  0.34 jobs/s  eta 27.5 min
-    | [Z7 casts 20-40 s] 410/961  0.34 jobs/s  eta 27.1 min
-    | [Z7 casts 20-40 s] 420/961  0.34 jobs/s  eta 26.6 min
-    | [Z7 casts 20-40 s] 430/961  0.34 jobs/s  eta 26.2 min
+newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 12:18)
+    | [Z7 casts 20-40 s] 590/961  0.34 jobs/s  eta 18.0 min
+    | [Z7 casts 20-40 s] 600/961  0.34 jobs/s  eta 17.5 min
+    | [Z7 casts 20-40 s] 610/961  0.34 jobs/s  eta 17.1 min
+    | [Z7 casts 20-40 s] 620/961  0.34 jobs/s  eta 16.5 min
+    | [Z7 casts 20-40 s] 630/961  0.34 jobs/s  eta 16.2 min
+    | [Z7 casts 20-40 s] 640/961  0.34 jobs/s  eta 15.6 min
+    | [Z7 casts 20-40 s] 650/961  0.34 jobs/s  eta 15.1 min
 
