@@ -38,8 +38,25 @@
 #   campaign.json "needs_when": {"<need>": "<file in the lab folder>"}: sync / pull leave a need alone until that file
 #       exists on the main Mac (a dog-watch folder is only copied once its run has finished).
 #
+# 2026-11-27b: the whole pipeline of a new game file, unattended.
+#   bash hm64_pool.sh newfile NAME [--sunny SAVE] [--rainy SAVE]      (main Mac) checks the save(s), makes the campaign
+#       casts-NAME (dog-watch + casts) from kit/casts-template, pushes it and adds it to the queue. When the main Mac
+#       has finished its casts it merges every machine's rows, builds the pier-zone plan and queues zones-NAME itself.
+#   bash hm64_pool.sh queue-add NAME ... | queue-remove NAME ... | queue      (main Mac) the queue on GitHub
+#   "work" with no campaign named now runs as a standing loop: it reads the queue again on every pass, leaves out what
+#       this machine has finished (pool/work-done/), and when nothing is left it looks again every 20 min for up to
+#       HM64_POOL_WORK_HOURS (240). Stop it with Ctrl-C or  touch ~/Documents/hm64/pool/work.stop
+#   tools-push also puts the kit (the folder kit/ next to this script) on GitHub.
+#
+# 2026-11-27c: the pulse. Every machine writes what it is doing to the branch lab-pulse every 10 min:
+#   <machine>.txt (its own section) and pulsecheck.txt (the queue + every machine's section), readable at
+#   https://github.com/Nillows/HM64-RNG-Manipulations/blob/lab-pulse/pulsecheck.txt
+#   bash hm64_pool.sh pulse        one report now        bash hm64_pool.sh pulse-loop   every HM64_PULSE_MIN (10) min
+#   "work" starts the loop itself when none is running. The report is read from what is on the machine (lock folder,
+#   newest logs, work loop, queue, finished list); it changes nothing in a run.
+#
 # ROM, saves in sourcefiles/ and savestates travel only over the LAN (sync) or by hand; never to GitHub.
-POOL_REV="2026-11-27a"
+POOL_REV="2026-11-27c"
 set -u
 CMD=${1:-}
 [ $# -gt 0 ] && shift
@@ -171,7 +188,29 @@ for p in json.load(open(sys.argv[1]))["parts"]: print(p["name"], p["sha256"])' "
   [ "$have" = "$want" ] || die "the loaded container is $have, not $want"
   echo "  container: loaded ($have)"
 }
+GLOCK="$POOL/.campaigns.lock"; GHELD=0
+glock() {        # one process at a time in the clone $POOL/campaigns (a work loop and a push can meet)
+  local i=0
+  [ "$GHELD" = 0 ] || return 0
+  mkdir -p "$POOL"
+  until mkdir "$GLOCK" 2>/dev/null; do
+    i=$((i + 1))
+    if [ "$i" -gt 150 ]; then echo "  (the lock $GLOCK is older than 5 min: taken over)"; rmdir "$GLOCK" 2>/dev/null || true; fi
+    sleep 2
+  done
+  GHELD=1
+}
+gunlock() { if [ "$GHELD" = 1 ]; then rmdir "$GLOCK" 2>/dev/null || true; GHELD=0; fi; }
+CAF=""; WIN=""
+on_exit() { gunlock; [ -z "$CAF" ] || kill "$CAF" 2>/dev/null; [ -z "$WIN" ] || kill "$WIN" 2>/dev/null; }
+trap on_exit EXIT
 camp_clone() {   # the lab-campaigns branch with history, pushable -> $POOL/campaigns
+  local held=$GHELD rc
+  glock; camp_clone_locked; rc=$?
+  [ "$held" = 1 ] || gunlock
+  return $rc
+}
+camp_clone_locked() {
   local d="$POOL/campaigns"
   if [ -d "$d/.git" ]; then git -C "$d" fetch -q origin lab-campaigns </dev/null 2>/dev/null && git -C "$d" reset -q --hard origin/lab-campaigns && return 0; fi
   rm -rf "$d"; mkdir -p "$POOL"
@@ -183,6 +222,12 @@ camp_clone() {   # the lab-campaigns branch with history, pushable -> $POOL/camp
   git -C "$d" push -q -u origin lab-campaigns </dev/null || die "push to lab-campaigns failed"
 }
 put_folder() {   # put_folder SRC NAME: SRC becomes campaigns/NAME with a manifest, committed and pushed
+  local held=$GHELD rc
+  glock; put_folder_locked "$@"; rc=$?
+  [ "$held" = 1 ] || gunlock
+  return $rc
+}
+put_folder_locked() {
   local src=$1 name=$2 d
   camp_clone; d="$POOL/campaigns/$name"
   if ( cd "$src" && find . -type f ) | forbidden | grep -q .; then die "$src holds a ROM / save / savestate file: not uploaded. $( (cd "$src" && find . -type f) | forbidden | head -n 3 | tr '\n' ' ')"; fi
@@ -273,44 +318,140 @@ run_campaign() {
 }
 need_when() { python3 -I -c 'import json,sys; print(json.load(open(sys.argv[1])).get("needs_when",{}).get(sys.argv[2],""))' "$1" "$2" 2>/dev/null || true; }
 work_loop() {
-  local order=${1:-} camps main hours every t0 pass waiting c log rc tries_file n left WPS=/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
-  CAF=""; WIN=""
+  local order=${1:-} explicit camps main hours every t0 pass waiting c log rc n v todo idle=0 WPS=/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
   case "$order" in topdown|bottomup|middleout) ;; *) die "usage: bash hm64_pool.sh work topdown|bottomup|middleout [campaign ...]" ;; esac
   shift
-  camp_clone
-  camps="$*"
-  if [ -z "$camps" ] && [ -f "$POOL/campaigns/tools/queue.txt" ]; then camps=$(grep -v -E '^[[:space:]]*(#|$)' "$POOL/campaigns/tools/queue.txt" | tr '\n' ' '); fi
-  [ -n "$camps" ] || die "no campaigns to work on: name them, or on the main Mac run  bash hm64_pool.sh tools-push <campaign> ..."
-  for c in $camps; do [ -f "$POOL/campaigns/$c/campaign.json" ] || die "no campaign '$c' on GitHub"; done
+  explicit="$*"
   main=""; if [ -f "$POOL/main.txt" ]; then main=$(head -n 1 "$POOL/main.txt"); fi
-  hours=${HM64_POOL_WORK_HOURS:-36}; every=${HM64_POOL_WORK_WAIT_MIN:-20}
+  hours=${HM64_POOL_WORK_HOURS:-240}; every=${HM64_POOL_WORK_WAIT_MIN:-20}
   if command -v caffeinate >/dev/null 2>&1; then caffeinate -ims -w $$ & CAF=$!
   elif grep -qi microsoft /proc/version 2>/dev/null && [ -x "$WPS" ]; then "$WPS" -NoProfile -NonInteractive -EncodedCommand QQBkAGQALQBUAHkAcABlACAALQBOAGEAbQBlAHMAcABhAGMAZQAgAEgATQAgAC0ATgBhAG0AZQAgAEEAdwBhAGsAZQAgAC0ATQBlAG0AYgBlAHIARABlAGYAaQBuAGkAdABpAG8AbgAgACcAWwBEAGwAbABJAG0AcABvAHIAdAAoACIAawBlAHIAbgBlAGwAMwAyAC4AZABsAGwAIgApAF0AIABwAHUAYgBsAGkAYwAgAHMAdABhAHQAaQBjACAAZQB4AHQAZQByAG4AIAB1AGkAbgB0ACAAUwBlAHQAVABoAHIAZQBhAGQARQB4AGUAYwB1AHQAaQBvAG4AUwB0AGEAdABlACgAdQBpAG4AdAAgAGYAKQA7ACcAOwAgAFsAdgBvAGkAZABdAFsASABNAC4AQQB3AGEAawBlAF0AOgA6AFMAZQB0AFQAaAByAGUAYQBkAEUAeABlAGMAdQB0AGkAbwBuAFMAdABhAHQAZQAoAFsAdQBpAG4AdAAzADIAXQAyADEANAA3ADQAOAAzADYANAA5ACkAOwAgAHcAaABpAGwAZQAgACgAJAB0AHIAdQBlACkAIAB7ACAAUwB0AGEAcgB0AC0AUwBsAGUAZQBwACAALQBTAGUAYwBvAG4AZABzACAANgAwACAAfQA= </dev/null >/dev/null 2>&1 & WIN=$!; fi
-  trap '[ -z "$CAF" ] || kill "$CAF" 2>/dev/null; [ -z "$WIN" ] || kill "$WIN" 2>/dev/null' EXIT
-  say "work ($order) on $(scutil --get LocalHostName 2>/dev/null || hostname -s): campaigns [$camps]   main Mac: ${main:-none set (nothing is fetched)}   pool script $POOL_REV"
-  tries_file="$POOL/.work_tries"; : > "$tries_file"
+  mkdir -p "$POOL/work-done"; rm -f "$POOL/work.stop"; : > "$POOL/.work_tries"
+  pulse_start || true
+  say "work ($order) on $(scutil --get LocalHostName 2>/dev/null || hostname -s): ${explicit:-the queue on GitHub}   main Mac: ${main:-none set (this is the main Mac, or nothing is fetched)}   pool script $POOL_REV"
   t0=$(date +%s); pass=0
   while :; do
-    pass=$((pass + 1)); waiting=""
+    if [ -f "$POOL/work.stop" ]; then say "work.stop found: stopping"; break; fi
+    if [ $(( ($(date +%s) - t0) / 3600 )) -ge "$hours" ]; then say "$hours h are over: stopping"; break; fi
+    camp_clone
+    camps=$explicit
+    if [ -z "$camps" ] && [ -f "$POOL/campaigns/tools/queue.txt" ]; then camps=$(grep -v -E '^[[:space:]]*(#|$)' "$POOL/campaigns/tools/queue.txt" | tr '\n' ' '); fi
+    todo=""
     for c in $camps; do
-      n=$(grep -c "^$c\$" "$tries_file" || true)
-      if [ "$n" -ge 3 ]; then echo "  campaign $c stopped with an error 3 times: left out (see $POOL/work-$c.log)"; continue; fi
-      say "work pass $pass: campaign $c"
+      if [ ! -f "$POOL/campaigns/$c/campaign.json" ]; then echo "  (queue names $c, which is not on GitHub: left out)"; continue; fi
+      v=$(jget "$POOL/campaigns/$c/campaign.json" version)
+      [ ! -f "$POOL/work-done/$c@$v" ] || continue
+      n=$(grep -c "^$c@$v\$" "$POOL/.work_tries" || true)
+      [ "$n" -lt 3 ] || continue
+      todo="$todo $c"
+    done
+    if [ -z "$todo" ]; then
+      if [ -n "$explicit" ]; then break; fi
+      if [ "$idle" = 0 ]; then say "nothing to do in the queue for this machine: looking again every $every min  ($(date '+%a %H:%M'); stop: touch $POOL/work.stop)"; idle=1; fi
+      sleep $((every * 60)); continue
+    fi
+    idle=0; pass=$((pass + 1)); waiting=""
+    for c in $todo; do
+      [ ! -f "$POOL/work.stop" ] || break
+      v=$(jget "$POOL/campaigns/$c/campaign.json" version)
+      say "work pass $pass: campaign $c ($v)"
       if [ -n "$main" ]; then ( HM64_POOL_BATCH=1; export HM64_POOL_BATCH; pull_lan "$main" "$c" ) </dev/null || echo "  (could not fetch from $main: going on with what is here)"; fi
       log="$POOL/work-$c.log"
       ${HM64_POOL_RUN_CMD:-bash "$0" run} "$c" "$order" </dev/null 2>&1 | tee "$log"      # HM64_POOL_RUN_CMD: test hook
       rc=${PIPESTATUS[0]}
-      if [ "$rc" != 0 ]; then echo "  campaign $c stopped with an error (exit $rc)"; echo "$c" >> "$tries_file"; waiting="$waiting $c"
-      elif grep -q "SKIPPED on this helper" "$log"; then echo "  campaign $c: part of it is waiting for the main Mac"; waiting="$waiting $c"; fi
+      if [ "$rc" != 0 ]; then echo "  campaign $c stopped with an error (exit $rc; log $log)"; echo "$c@$v" >> "$POOL/.work_tries"; cp "$log" "$POOL/work-$c.failed-$(date +%H%M%S).log" 2>/dev/null || true; waiting="$waiting $c"
+      elif grep -q "SKIPPED on this helper" "$log"; then echo "  campaign $c: part of it is waiting for the main Mac"; waiting="$waiting $c"
+      else date '+%Y-%m-%d %H:%M' > "$POOL/work-done/$c@$v"; echo "  campaign $c: finished on this machine"; fi
     done
-    camps=$waiting
-    left=""; for c in $camps; do n=$(grep -c "^$c\$" "$tries_file" || true); [ "$n" -ge 3 ] || left="$left $c"; done
-    [ -n "$left" ] || break
-    if [ $(( ($(date +%s) - t0) / 3600 )) -ge "$hours" ]; then echo "  $hours h are over: stopping with [$left] unfinished on this machine"; break; fi
-    say "waiting for [$left]: trying again in $every min  ($(date '+%a %H:%M'))"
-    sleep $((every * 60))
+    if [ -n "$waiting" ]; then say "waiting for [$waiting ]: next pass in $every min  ($(date '+%a %H:%M'))"; sleep $((every * 60)); fi
   done
-  say "WORK DONE on this machine  $(date '+%a %H:%M')"
+  say "WORK ENDED on this machine  $(date '+%a %H:%M')"
+}
+queue_edit() {   # queue_edit add|remove NAME...: the queue file in lab-campaigns/tools, everything else there kept
+  local how=$1 w c; shift
+  [ $# -gt 0 ] || die "usage: bash hm64_pool.sh queue-$how <campaign> ..."
+  glock; camp_clone; w="$POOL/tools-out"; rm -rf "$w"; mkdir -p "$w"
+  if [ -d "$POOL/campaigns/tools" ]; then ( cd "$POOL/campaigns/tools" && tar cf - --exclude MANIFEST.sha256 . ) | ( cd "$w" && tar xf - ); fi
+  touch "$w/queue.txt"
+  for c in "$@"; do
+    if [ "$how" = add ]; then
+      [ -f "$POOL/campaigns/$c/campaign.json" ] || die "no campaign '$c' on GitHub (campaign-push it first)"
+      grep -q -x "$c" "$w/queue.txt" || printf '%s\n' "$c" >> "$w/queue.txt"
+    else grep -v -x "$c" "$w/queue.txt" > "$w/queue.new" || true; mv "$w/queue.new" "$w/queue.txt"; fi
+  done
+  say "queue: $(tr '\n' ' ' < "$w/queue.txt")"
+  put_folder "$w" tools; rm -rf "$w"; gunlock
+}
+pulse_text() {   # this machine's section
+  local me now f c v q st n next="" L="$HM64_DIR/runs/dogspots"
+  me=$(scutil --get LocalHostName 2>/dev/null || hostname -s); me=$(printf '%s' "$me" | tr 'A-Z' 'a-z')
+  now=$(date '+%Y-%m-%d %H:%M %Z')
+  echo "=== $me    reported $now    (pool script $POOL_REV)"
+  if [ -d "$L/.running" ]; then echo "lab run going:   YES"; else echo "lab run going:   no"; fi
+  if pgrep -f "[h]m64_pool_work.sh work" >/dev/null 2>&1; then echo "work loop:       running ($(pgrep -fl "[h]m64_pool_work.sh work" 2>/dev/null | head -n 1 | sed 's/.*hm64_pool_work.sh //'))"; else echo "work loop:       NOT running (this machine takes nothing new from the queue)"; fi
+  if [ -f "$POOL/main.txt" ]; then echo "role:            helper (fetches from $(head -n 1 "$POOL/main.txt"))"; else echo "role:            main Mac (or a machine with no main set)"; fi
+  q=""; [ ! -f "$POOL/campaigns/tools/queue.txt" ] || q=$(grep -v -E '^[[:space:]]*(#|$)' "$POOL/campaigns/tools/queue.txt" | tr '\n' ' ')
+  echo "queue, as this machine sees it:"
+  if [ -z "$q" ]; then echo "    (empty)"; fi
+  for c in $q; do
+    if [ ! -f "$POOL/campaigns/$c/campaign.json" ]; then echo "    $c    NOT ON GITHUB"; continue; fi
+    v=$(jget "$POOL/campaigns/$c/campaign.json" version); st="to do"
+    n=0; [ ! -f "$POOL/.work_tries" ] || n=$(grep -c "^$c@$v\$" "$POOL/.work_tries" || true)
+    if [ -f "$POOL/work-done/$c@$v" ]; then st="finished here $(cat "$POOL/work-done/$c@$v")"
+    elif [ "$n" -ge 3 ]; then st="LEFT OUT here after 3 errors (see pool/work-$c.failed-*.log)"
+    elif [ -f "$POOL/work-$c.log" ] && grep -q "SKIPPED on this helper" "$POOL/work-$c.log"; then st="started; part of it waits for the main Mac"; [ -n "$next" ] || next=$c
+    else [ -n "$next" ] || next=$c; fi
+    echo "    $c ($v)    $st"
+  done
+  echo "next from the queue for this machine: ${next:-nothing}"
+  for f in "$POOL"/autoplan/*.status; do [ -f "$f" ] || continue; echo "pier-zone plan $(basename "$f" .status): $(cat "$f")"; done
+  f=$(ls -t "$L"/run-*.log "$POOL"/work-*.log "$HM64_DIR"/pool-work*.log "$HM64_DIR"/pool-run.log 2>/dev/null | head -n 1)
+  if [ -n "$f" ]; then
+    echo "newest log: ${f#$HM64_DIR/}   (last written $(if [ "$(uname -s)" = Darwin ]; then stat -f '%Sm' -t '%H:%M' "$f" 2>/dev/null; else date -r "$f" '+%H:%M' 2>/dev/null; fi))"
+    tail -n 400 "$f" | tr -d '\r' | grep -E '==>|eta |jobs left|campaign so far|waiting|SKIPPED|STOP|NOTE|DONE|done;|finished|\[plan ' | tail -n 7 | cut -c1-170 | sed 's/^/    | /'
+  else echo "newest log: none"; fi
+  echo
+}
+pulse_once() {
+  local me d="$POOL/pulse" i f
+  me=$(scutil --get LocalHostName 2>/dev/null || hostname -s); me=$(printf '%s' "$me" | tr 'A-Z' 'a-z')
+  ( camp_clone ) >/dev/null 2>&1 || true
+  pulse_text > "$POOL/.pulse_me.txt" 2>/dev/null
+  i=0
+  while [ "$i" -lt 4 ]; do
+    i=$((i + 1))
+    if [ ! -d "$d/.git" ]; then rm -rf "$d"; git clone -q --single-branch --branch lab-pulse "$REMOTE" "$d" </dev/null 2>/dev/null || { rm -rf "$d"; mkdir -p "$d"; git -C "$d" init -q; git -C "$d" checkout -q --orphan lab-pulse; git -C "$d" remote add origin "$REMOTE"; }; fi
+    if git -C "$d" fetch -q origin lab-pulse </dev/null 2>/dev/null; then git -C "$d" reset -q --hard origin/lab-pulse; fi
+    cp "$POOL/.pulse_me.txt" "$d/$me.txt"
+    {
+      echo "HM64 lab pulse. Each machine reports every ${HM64_PULSE_MIN:-10} min; a section older than 30 min means that machine's"
+      echo "pulse is not running (asleep, off, or never started). This file was put together $(date '+%Y-%m-%d %H:%M %Z') by $me."
+      echo
+      for f in "$d"/*.txt; do case "$(basename "$f")" in pulsecheck.txt) ;; *) cat "$f" ;; esac; done
+    } > "$d/pulsecheck.txt"
+    git -C "$d" add -A
+    if git -C "$d" diff --cached --quiet; then return 0; fi
+    gitc -C "$d" commit -q -m "pulse $me $(date '+%Y-%m-%d %H:%M')" || return 1
+    if git -C "$d" push -q origin lab-pulse </dev/null 2>/dev/null; then return 0; fi
+    sleep $((i * 3))
+  done
+  return 1
+}
+pulse_loop() {
+  mkdir -p "$POOL"; echo $$ > "$POOL/.pulse.pid"
+  while :; do
+    pulse_once || echo "  [pulse $(date +%H:%M)] not pushed (network or key?); next try in ${HM64_PULSE_MIN:-10} min"
+    [ ! -f "$POOL/pulse.stop" ] || { rm -f "$POOL/pulse.stop"; break; }
+    sleep $(( ${HM64_PULSE_MIN:-10} * 60 ))
+  done
+}
+pulse_start() {  # start the loop in the background unless one is alive
+  local p=""
+  [ ! -f "$POOL/.pulse.pid" ] || p=$(cat "$POOL/.pulse.pid" 2>/dev/null)
+  if [ -n "$p" ] && kill -0 "$p" 2>/dev/null; then return 0; fi
+  cp "$0" "$POOL/.hm64_pool_pulse.sh"
+  nohup bash "$POOL/.hm64_pool_pulse.sh" pulse-loop </dev/null >> "$POOL/pulse.log" 2>&1 &
+  echo "  pulse: started (every ${HM64_PULSE_MIN:-10} min -> branch lab-pulse, pulsecheck.txt)"
 }
 manifest_of() { ( cd "$1" 2>/dev/null && find . -type f ! -name '.DS_Store' | sort | while IFS= read -r f; do printf '%s  %s\n' "$(shasum -a 256 "$f" | cut -d' ' -f1)" "$f"; done ); }
 sync_lan() {
@@ -414,9 +555,18 @@ PY
 case "$CMD" in
   image-build) [ "$X86" = yes ] || die "image-build is for Linux x86-64 machines; the Macs load the ARM container (run does it)"; camp_clone; if [ "$TAG" = hm64-lab:amd64 ]; then image_build_x86; else image_build_x86_nd; fi ;;
   tools-push) [ "$X86" = no ] || die "tools-push is for the main Mac"; say "this script ($POOL_REV) -> lab-campaigns/tools"; camp_clone; w="$POOL/tools-out"; rm -rf "$w"; mkdir -p "$w"; cp "$0" "$w/hm64_pool.sh"
+    if [ -d "$(dirname "$0")/kit" ]; then ( cd "$(dirname "$0")" && tar cf - --exclude __pycache__ --exclude .DS_Store kit ) | ( cd "$w" && tar xf - ); echo "  with the kit"
+    elif [ -d "$POOL/campaigns/tools/kit" ]; then ( cd "$POOL/campaigns/tools" && tar cf - kit ) | ( cd "$w" && tar xf - ); echo "  kit kept"; fi
     if [ $# -gt 0 ]; then for c in "$@"; do [ -f "$POOL/campaigns/$c/campaign.json" ] || die "no campaign '$c' on GitHub (campaign-push it first)"; printf '%s\n' "$c"; done > "$w/queue.txt"; echo "  queue: $*"
     elif [ -f "$POOL/campaigns/tools/queue.txt" ]; then cp "$POOL/campaigns/tools/queue.txt" "$w/queue.txt"; echo "  queue kept: $(tr '\n' ' ' < "$w/queue.txt")"; fi
     put_folder "$w" tools; rm -rf "$w" ;;
+  pulse) pulse_once && cat "$POOL/pulse/pulsecheck.txt" ;;
+  pulse-loop) pulse_loop ;;
+  pulse-start) pulse_start ;;
+  queue-add) [ "$X86" = no ] || die "queue-add is for the main Mac"; queue_edit add "$@" ;;
+  queue-remove) [ "$X86" = no ] || die "queue-remove is for the main Mac"; queue_edit remove "$@" ;;
+  queue) camp_clone; if [ -f "$POOL/campaigns/tools/queue.txt" ]; then echo "  queue: $(tr '\n' ' ' < "$POOL/campaigns/tools/queue.txt")"; else echo "  queue: (none yet)"; fi; ls "$POOL/work-done" 2>/dev/null | sed 's/^/  finished on this machine: /' ;;
+  newfile) [ "$X86" = no ] || die "newfile is for the main Mac"; k="$(dirname "$0")/kit"; [ -f "$k/newfile.py" ] || die "no kit next to this script ($k)"; camp_clone; python3 -I "$k/newfile.py" --pool "$0" --hm64 "$HM64_DIR" "$@" </dev/null ;;
   set-main) [ -n "${1:-}" ] || die "usage: bash hm64_pool.sh set-main user@main-mac"; mkdir -p "$POOL"; printf '%s\n' "$1" > "$POOL/main.txt"; echo "  main Mac for this machine: $1" ;;
   work) if [ -z "${HM64_POOL_WORKCOPY:-}" ]; then mkdir -p "$POOL"; cp "$0" "$POOL/.hm64_pool_work.sh"; HM64_POOL_WORKCOPY=1; export HM64_POOL_WORKCOPY; exec bash "$POOL/.hm64_pool_work.sh" work "$@"; fi; work_loop "$@" ;;
   pull) pull_lan "$@" ;;
