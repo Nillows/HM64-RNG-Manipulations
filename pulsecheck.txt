@@ -1,21 +1,21 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 13:28 EST by scotts-m4.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 13:29 EST by desktop-4uutk80.
 
-=== desktop-4uutk80    reported 2026-11-27 13:19 EST    (pool script 2026-11-27c)
+=== desktop-4uutk80    reported 2026-11-27 13:29 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (268107 bash)
 role:            helper (fetches from hm64-main)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    to do
 next from the queue for this machine: married-horse
-newest log: pool-work.log   (last written 13:18)
-    | [FD block 5] campaign so far: 2 of 8 lists opened, 1801 jobs left in them = 3.1 h; 6 lists not opened yet (about 13.7 h more if they are like the opened ones) at the pool
-    | [FD block 5] block 6 done; 152 jobs here in 33 min (4.6 jobs/min)
-    | [FD block 5] pool: 2 Mac(s), 9.1 jobs/min (desktop-4uutk80 4.5, scotts-m4 4.5) - 40 jobs left in this list: 4 min for the pool
-    | [FD block 5] campaign so far: 2 of 8 lists opened, 1785 jobs left in them = 3.3 h; 6 lists not opened yet (about 14.5 h more if they are like the opened ones) at the pool
-    | [FD block 5] block 4 done; 160 jobs here in 35 min (4.5 jobs/min)
-    | [FD block 5] pool: 2 Mac(s), 8.8 jobs/min (desktop-4uutk80 4.3, scotts-m4 4.5) - 24 jobs left in this list: 3 min for the pool
-    | [FD block 5] campaign so far: 2 of 8 lists opened, 1723 jobs left in them = 3.3 h; 6 lists not opened yet (about 14.9 h more if they are like the opened ones) at the pool
+newest log: pool-work.log   (last written 13:27)
+    | [FD block 5] campaign so far: 2 of 8 lists opened, 1707 jobs left in them = 3.3 h; 6 lists not opened yet (about 15.4 h more if they are like the opened ones) at the pool
+    | [FD block 5] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [FD block 5] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | ==> marhorse-rainy-d170c120 block 4 of 5  (Fri 13:21)
+    | [FD block 4] block 25 done; 35 jobs here in 5 min (6.8 jobs/min)
+    | [FD block 4] pool: 2 Mac(s), 11.6 jobs/min (desktop-4uutk80 6.8, scotts-m4 4.8) - 1645 jobs left in this list: 2.4 h for the pool
+    | [FD block 4] campaign so far: 3 of 8 lists opened, 3206 jobs left in them = 4.6 h; 5 lists not opened yet (about 10.4 h more if they are like the opened ones) at the pool
 
 === scotts-m4    reported 2026-11-27 13:28 EST    (pool script 2026-11-27c)
 lab run going:   YES
