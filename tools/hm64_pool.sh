@@ -7,9 +7,23 @@
 #   bash hm64_pool.sh list                            the campaigns on GitHub
 #   bash hm64_pool.sh run <campaign> topdown|bottomup|middleout [workers]
 #   bash hm64_pool.sh sync user@other-mac [campaign]  LAN: compare and copy sourcefiles/ and what a campaign needs from the main Mac
+#   bash hm64_pool.sh pull user@main-mac [campaign]   LAN, started on the HELPER (for a machine the main Mac cannot ssh into,
+#                                                     e.g. Ubuntu under Windows): fetch missing sourcefiles and the campaign's needs
+#   bash hm64_pool.sh image-build                     (Linux x86-64 only) build the x86 container from the lab code on GitHub
+#   bash hm64_pool.sh tools-push                      (main Mac) put THIS script on lab-campaigns/tools (no lab code is touched)
+#
+# 2026-11-26b: Linux x86-64 machines. There the container is hm64-lab:amd64 = the x86 mupen64plus 2.6.0 bundle image of
+# the first lab (top-level Dockerfile of the lab code; compared with the ARM image on 2026-11-16: 0 differing rows),
+# built on the machine itself; the runners get HM64_LAB_IMAGE / HM64_LAB_PLATFORM. Macs: nothing changes.
+#
+# 2026-11-26c: on Linux x86-64 the default container is hm64-lab:amd64-nd = mupen64plus 2.6.0 built from the pinned
+# source with the "new dynarec" (the Macs' translator, for x86-64): on Thomas's PC 311.6 jobs/min against 123.1 of the
+# bundle image, and the sunny no-horse gate as recorded (642 control casts, the same fast-check counts). It is built
+# on the machine when missing. HM64_LAB_IMAGE=hm64-lab:amd64 still gives the bundle image. New: tools-push, and "run"
+# hands over to a newer copy of this script when GitHub (lab-campaigns/tools) has one.
 #
 # ROM, saves in sourcefiles/ and savestates travel only over the LAN (sync) or by hand; never to GitHub.
-POOL_REV="2026-11-25a"
+POOL_REV="2026-11-26c"
 set -u
 CMD=${1:-}
 [ $# -gt 0 ] && shift
@@ -19,6 +33,10 @@ POOL="$HM64_DIR/pool"
 REMOTE=${HM64_POOL_REMOTE:-git@github.com:Nillows/HM64-RNG-Manipulations.git}
 RAW=${HM64_POOL_RAW:-https://raw.githubusercontent.com/Nillows/HM64-RNG-Manipulations/main}
 TAG=hm64-lab:arm64
+PLAT=linux/arm64
+X86=no
+if [ "$(uname -s)" = Linux ] && [ "$(uname -m)" = x86_64 ]; then X86=yes; TAG=${HM64_LAB_IMAGE:-hm64-lab:amd64-nd}; PLAT=linux/amd64; fi
+HM64_LAB_IMAGE=$TAG; HM64_LAB_PLATFORM=$PLAT; export HM64_LAB_IMAGE HM64_LAB_PLATFORM
 KEY="$HOME/.ssh/hm64_github_ed25519"
 PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin:/usr/local/bin:/opt/homebrew/bin"; export PATH
 COPYFILE_DISABLE=1; export COPYFILE_DISABLE
@@ -77,9 +95,49 @@ image_push() {
   push_orphan lab-image "$w" "container $id"
   echo "  pushed: $(ls "$w" | grep -c part-) parts, $(du -sh "$w" | cut -f1)"; rm -rf "$w"
 }
+image_build_x86() {   # the x86 container, built here from the lab code on GitHub (no ROM, no saves in it)
+  docker_up
+  local t="$POOL/campaigns/base/hm64-lab-code.tar.gz" w="$POOL/x86-build" bs
+  [ -f "$t" ] || die "no lab code on GitHub (lab-campaigns/base)"
+  check_manifest "$POOL/campaigns/base"
+  bs=$(sha "$t")
+  rm -rf "$w"; mkdir -p "$w"
+  ( cd "$w" && tar xzf "$t" ./Dockerfile ./.dockerignore ./native ./vendor/mupen64plus-bundle-linux64-2.6.0.tar.gz 2>/dev/null; [ -f Dockerfile ] && [ -d native ] && [ -f vendor/mupen64plus-bundle-linux64-2.6.0.tar.gz ] ) || die "the lab code on GitHub has no x86 container recipe (Dockerfile, native/, vendor/ bundle)"
+  rm -rf "$w/native/build"
+  if ( cd "$w" && find . -type f ) | forbidden | grep -q .; then die "the container recipe holds a ROM / save / savestate file: not built. Tell Claude."; fi
+  echo "  building $TAG from the lab code ${bs:0:12}... (first time: 5 to 15 minutes, needs the internet for Ubuntu packages)"
+  docker build --platform "$PLAT" --build-arg INSTALL_CLAUDE=0 --build-arg USER_UID="$(id -u)" --build-arg USER_GID="$(id -g)" --label "hm64.base=$bs" -t "$TAG" "$w" > "$POOL/x86-build.log" 2>&1 </dev/null || { tail -n 25 "$POOL/x86-build.log"; die "the container build failed (whole log: $POOL/x86-build.log)"; }
+  docker run --rm --platform "$PLAT" "$TAG" python3 -c "import ctypes, platform; [ctypes.CDLL('/opt/m64h/native/build/' + n) for n in ('mupen64plus-video-hook.so', 'mupen64plus-input-script.so')]; ctypes.CDLL('/opt/mupen64plus/libmupen64plus.so.2'); print('  emulator core and plugins load on', platform.machine())" </dev/null || die "the emulator does not load in the built container"
+  rm -rf "$w"
+  echo "  container: built $(docker image inspect "$TAG" --format '{{.Id}}')"
+}
+image_build_x86_nd() {   # the fast x86 container: the ARM recipe of the lab code, for x86-64, with the new dynarec
+  docker_up
+  local t="$POOL/campaigns/base/hm64-lab-code.tar.gz" w="$POOL/x86-nd-build" bs
+  [ -f "$t" ] || die "no lab code on GitHub (lab-campaigns/base)"
+  check_manifest "$POOL/campaigns/base"
+  bs=$(sha "$t")
+  rm -rf "$w"; mkdir -p "$w"
+  ( cd "$w" && tar xzf "$t" ./docker/Dockerfile.arm64 ./.dockerignore ./native ./vendor/mupen64plus-core-2.6.0-b0d68c20.tar.gz ./vendor/mupen64plus-rsp-hle-2.6.0-2798e65d.tar.gz 2>/dev/null; [ -f docker/Dockerfile.arm64 ] && [ -d native ] && [ -f vendor/mupen64plus-core-2.6.0-b0d68c20.tar.gz ] && [ -f vendor/mupen64plus-rsp-hle-2.6.0-2798e65d.tar.gz ] ) || die "the lab code on GitHub lacks the emulator sources (docker/Dockerfile.arm64, native/, vendor/)"
+  rm -rf "$w/native/build"
+  sed -e 's#^FROM --platform=linux/arm64 ubuntu:24.04#FROM --platform=linux/amd64 ubuntu:24.04#' -e 's#libsdl2-dev libpng-dev zlib1g-dev libgl-dev \\#libsdl2-dev libpng-dev zlib1g-dev libgl-dev nasm \\#' -e 's#all OSD=0 VULKAN=0 OPTFLAGS=#all OSD=0 VULKAN=0 NEW_DYNAREC=1 OPTFLAGS=#' "$w/docker/Dockerfile.arm64" > "$w/Dockerfile.nd"
+  grep -q 'platform=linux/amd64' "$w/Dockerfile.nd" && grep -q 'NEW_DYNAREC=1' "$w/Dockerfile.nd" && grep -q 'libgl-dev nasm' "$w/Dockerfile.nd" || die "the container recipe could not be adapted (the lab code's ARM recipe changed). Tell Claude."
+  if ( cd "$w" && find . -type f ) | forbidden | grep -q .; then die "the container recipe holds a ROM / save / savestate file: not built. Tell Claude."; fi
+  echo "  building $TAG from the lab code ${bs:0:12}... (the emulator from source; 3 to 10 minutes, needs the internet for Ubuntu packages)"
+  docker build --platform "$PLAT" --label "hm64.base=$bs" -t "$TAG" -f "$w/Dockerfile.nd" "$w" > "$POOL/x86-nd-build.log" 2>&1 </dev/null || { tail -n 25 "$POOL/x86-nd-build.log"; die "the container build failed (whole log: $POOL/x86-nd-build.log)"; }
+  docker run --rm --platform "$PLAT" "$TAG" python3 -c "import ctypes, platform; [ctypes.CDLL('/opt/m64h/native/build/' + n) for n in ('mupen64plus-video-hook.so', 'mupen64plus-input-script.so')]; ctypes.CDLL('/opt/mupen64plus/libmupen64plus.so.2'); print('  emulator core and plugins load on', platform.machine())" </dev/null || die "the emulator does not load in the built container"
+  rm -rf "$w"
+  echo "  container: built $(docker image inspect "$TAG" --format '{{.Id}}')"
+}
 image_ensure() {   # image_ensure [wanted id]
   docker_up
   local want=${1:-} have d f p s
+  if [ "$X86" = yes ]; then
+    have=$(docker image inspect "$TAG" --format '{{.Id}}' 2>/dev/null || true)
+    if [ -n "$have" ]; then echo "  container: x86 image $TAG ($have), built on this machine (the campaign's ARM container $want is for the Macs)"; return 0; fi
+    if [ "$TAG" = hm64-lab:amd64 ]; then image_build_x86; else image_build_x86_nd; fi
+    return 0
+  fi
   have=$(docker image inspect "$TAG" --format '{{.Id}}' 2>/dev/null || true)
   d="$POOL/image-in"
   if [ -n "$want" ] && [ "$have" = "$want" ]; then echo "  container: up to date ($have)"; return 0; fi
@@ -143,6 +201,15 @@ run_campaign() {
   [ ! -d "$HM64_DIR/runs/dogspots/.running" ] || die "a lab run is going on this Mac ($HM64_DIR/runs/dogspots/.running): one at a time. If none is running, delete that folder."
   say "campaign $name ($order) on $(scutil --get LocalHostName 2>/dev/null || hostname -s)   pool script $POOL_REV"
   camp_clone; c="$POOL/campaigns/$name"; j="$c/campaign.json"
+  f="$POOL/campaigns/tools/hm64_pool.sh"
+  if [ -z "${HM64_POOL_HANDED:-}" ] && [ -f "$f" ]; then
+    s=$(grep -m1 '^POOL_REV=' "$f" | cut -d'"' -f2 || true)
+    if [ -n "$s" ] && [[ "$s" > "$POOL_REV" ]]; then
+      echo "  GitHub has a newer pool script ($s): handing over to it"
+      HM64_POOL_HANDED=1; export HM64_POOL_HANDED
+      exec bash "$f" run "$name" "$order" $workers </dev/null
+    fi
+  fi
   [ -f "$j" ] || die "no campaign '$name' on GitHub. There are: $(cd "$POOL/campaigns" && ls -d */ 2>/dev/null | tr -d / | grep -v -E '^(base|tools)$' | tr '\n' ' ')"
   check_manifest "$c"
   echo "  $(jget "$j" title)   (version $(jget "$j" version))"
@@ -156,7 +223,7 @@ run_campaign() {
   mkdir -p "$LAB"
   if [ -f "$LAB/.pool_base" ] && [ "$(cat "$LAB/.pool_base")" = "$(sha "$POOL/campaigns/base/hm64-lab-code.tar.gz")" ]; then echo "  lab code: up to date"
   elif [ -f "$LAB/tools/zigzag_campaign.py" ] && [ ! -f "$LAB/.pool_base" ] && [ "${HM64_POOL_KEEP_LAB:-1}" = 1 ]; then echo "  lab code: this Mac has its own lab folder (not from GitHub): kept as it is"
-  else ( cd "$LAB" && tar xzf "$POOL/campaigns/base/hm64-lab-code.tar.gz" ) || die "unpacking the lab code failed"; sha "$POOL/campaigns/base/hm64-lab-code.tar.gz" > "$LAB/.pool_base"; echo "  lab code: installed from GitHub"; fi
+  else ( cd "$LAB" && tar xzf "$POOL/campaigns/base/hm64-lab-code.tar.gz" 2>/dev/null; [ -f tools/zigzag_campaign.py ] ) || die "unpacking the lab code failed"; sha "$POOL/campaigns/base/hm64-lab-code.tar.gz" > "$LAB/.pool_base"; echo "  lab code: installed from GitHub"; fi
   say "3/4 ROM, saves, and what this campaign needs from the main Mac"
   want=$(jget "$j" rom_sha256)
   rom=$(find_rom "$want") || die "the ROM (sha256 ${want:0:12}...) is not on this Mac: put it into ~/Documents/hm64/sourcefiles/ and run this again"
@@ -234,8 +301,57 @@ PY
     echo "  $p: copied ($(du -sh "$LAB/$p" | cut -f1))"
   done
 }
+pull_lan() {    # started on the helper: what the main Mac would push with "sync"
+  local R=${1:-} name=${2:-} RL='Documents/hm64' a b n p i
+  [ -n "$R" ] || die "usage: bash hm64_pool.sh pull user@main-mac [campaign]"
+  mkdir -p "$HOME/.ssh" "$POOL" "$HM64_DIR/sourcefiles"
+  rs() { ssh -o ConnectTimeout=15 -o ControlMaster=auto -o ControlPath="$HOME/.ssh/hm64-cm-%C" -o ControlPersist=600 "$R" "$@"; }
+  say "sourcefiles: $R -> this machine (only files this machine does not have)"
+  rs 'echo "  reached $(hostname -s)"' </dev/null || die "cannot reach $R over ssh (is Remote Login on there, is the address right?)"
+  a="$POOL/.sf_here"; b="$POOL/.sf_there"
+  manifest_of "$HM64_DIR/sourcefiles" > "$a"
+  rs "cd '$RL/sourcefiles' && find . -type f ! -name '.DS_Store' ! -path './pool/*' | sort | while IFS= read -r f; do printf '%s  %s\n' \"\$(shasum -a 256 \"\$f\" | cut -d' ' -f1)\" \"\$f\"; done" </dev/null > "$b" || die "could not list sourcefiles on $R"
+  python3 -I - "$a" "$b" "$POOL/.sf_plan" <<'PY' || die "could not compare the sourcefiles lists"
+import sys
+def L(p):
+    d = {}
+    for ln in open(p, encoding="utf-8", errors="replace"):
+        ln = ln.rstrip("\n")
+        if "  " in ln:
+            h, f = ln.split("  ", 1); d[f] = h
+    return d
+a, b = L(sys.argv[1]), L(sys.argv[2])
+have = set(a.values())
+frm = sorted(f for f in b if f not in a and b[f] not in have)
+clash = sorted(f for f in a if f in b and a[f] != b[f])
+print(f"  there: {len(b)} files   already here: {sum(1 for f in b if b[f] in have)}   to fetch: {len(frm)}   same name, other content (NOT fetched): {len(clash)}")
+for f in clash: print(f"  DIFFERENT: {f}")
+open(sys.argv[3] + ".from", "w").write("".join(f + "\n" for f in frm))
+PY
+  if [ -s "$POOL/.sf_plan.from" ]; then rs "cd '$RL/sourcefiles' && tar cf - -T -" < "$POOL/.sf_plan.from" | ( cd "$HM64_DIR/sourcefiles" && tar xf - ) || die "copy from $R failed"; echo "  fetched: $(wc -l < "$POOL/.sf_plan.from" | tr -d ' ') files"; fi
+  [ -n "$name" ] || return 0
+  camp_clone; [ -f "$POOL/campaigns/$name/campaign.json" ] || die "no campaign '$name' on GitHub"
+  say "what campaign $name needs: $R -> this machine"
+  n=$(python3 -I -c 'import json,sys; print(len(json.load(open(sys.argv[1])).get("needs",[])))' "$POOL/campaigns/$name/campaign.json")
+  i=0
+  mkdir -p "$LAB"
+  while [ "$i" -lt "$n" ]; do
+    p=$(jget "$POOL/campaigns/$name/campaign.json" "needs.$i"); i=$((i + 1))
+    b=$(rs "cd '$RL/runs/dogspots/hm64-lab/$p' 2>/dev/null && find . -type f ! -name '.DS_Store' | sort | while IFS= read -r f; do printf '%s  %s\n' \"\$(shasum -a 256 \"\$f\" | cut -d' ' -f1)\" \"\$f\"; done | shasum -a 256 | cut -d' ' -f1" </dev/null || true)
+    if [ -z "$b" ] || [ "$b" = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855" ]; then echo "  $p: not on $R"; continue; fi
+    a=""; [ ! -e "$LAB/$p" ] || a=$(manifest_of "$LAB/$p" | shasum -a 256 | cut -d' ' -f1)
+    if [ "$a" = "$b" ]; then echo "  $p: identical on both"; continue; fi
+    rs "cd '$RL/runs/dogspots/hm64-lab' && tar cf - '$p'" </dev/null | ( cd "$LAB" && tar xf - ) || die "copy of $p failed"
+    a=$(manifest_of "$LAB/$p" | shasum -a 256 | cut -d' ' -f1)
+    [ "$a" = "$b" ] || die "$p arrived damaged (the two lists of sha256 differ)"
+    echo "  $p: fetched and checked ($(du -sh "$LAB/$p" | cut -f1))"
+  done
+}
 case "$CMD" in
-  image-push) image_push ;;
+  image-build) [ "$X86" = yes ] || die "image-build is for Linux x86-64 machines; the Macs load the ARM container (run does it)"; camp_clone; if [ "$TAG" = hm64-lab:amd64 ]; then image_build_x86; else image_build_x86_nd; fi ;;
+  tools-push) [ "$X86" = no ] || die "tools-push is for the main Mac"; say "this script ($POOL_REV) -> lab-campaigns/tools"; w="$POOL/tools-out"; rm -rf "$w"; mkdir -p "$w"; cp "$0" "$w/hm64_pool.sh"; put_folder "$w" tools; rm -rf "$w" ;;
+  pull) pull_lan "$@" ;;
+  image-push) [ "$X86" = no ] || die "image-push is for the main Mac (the ARM container); this machine builds its own x86 container"; image_push ;;
   base-push) base_push ;;
   campaign-push) [ -f "${1:-}/campaign.json" ] || die "usage: bash hm64_pool.sh campaign-push <folder with campaign.json>"; n=$(jget "$1/campaign.json" name); [ -n "$n" ] || die "campaign.json has no name"; say "campaign $n -> lab-campaigns"; put_folder "$1" "$n" ;;
   list) camp_clone; for d in "$POOL/campaigns"/*/; do [ -f "$d/campaign.json" ] && echo "  $(jget "$d/campaign.json" name)   $(jget "$d/campaign.json" version)   $(jget "$d/campaign.json" title)"; done ;;
