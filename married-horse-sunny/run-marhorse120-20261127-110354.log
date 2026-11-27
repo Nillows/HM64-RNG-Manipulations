@@ -242,3 +242,38 @@ fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by
   + married-horse-sunny//Users/thomaswollin/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d90@scotts-m4.zip (4 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-110354/hm64-fullday-marhorse-sunny-d90@scotts-m4.zip
   + married-horse-sunny//Users/thomaswollin/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d140c90@scotts-m4.zip (6 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-110354/hm64-fullday-marhorse-sunny-d140c90@scotts-m4.zip
   + married-horse-sunny//Users/thomaswollin/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d170c120@scotts-m4.zip (8 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-110354/hm64-fullday-marhorse-sunny-d170c120@scotts-m4.zip
+  + married-horse-sunny/run-marhorse120-20261127-110354.log (0 MB)   <- /Users/thomaswollin/Documents/hm64/runs/dogspots/run-marhorse120-20261127-110354.log
+  + married-horse-sunny//Users/thomaswollin/Documents/hm64/lab-data/married-horse-sunny/run-marhorse120-20261127-093731.log (0 MB)   <- /Users/thomaswollin/Documents/hm64/runs/dogspots/run-marhorse120-20261127-093731.log
+  5 new or changed, 19 already up to date (2 of them: same files inside as the copy on GitHub, only zipped again - not uploaded again)
+  result zips in runs/ that are not in the table (NOT uploaded; tell Claude if they should be): 13
+    hm64-fullday-marhorse-sunny-d140c90-summary.zip
+    hm64-fullday-marhorse-sunny-d170c120-b04@scotts-m4.zip
+    hm64-fullday-marhorse-sunny-d170c120-b05@scotts-m4.zip
+    hm64-fullday-marhorse-sunny-d170c120-summary.zip
+    hm64-fullday-marhorse-sunny-d90-summary.zip
+    hm64-fullday-married-rainy-d140c90-summary.zip
+    hm64-fullday-married-rainy-d170c120-b04@scotts-m4.zip
+    hm64-fullday-married-rainy-d170c120-b05@scotts-m4.zip
+    hm64-fullday-married-rainy-d170c120-summary.zip
+    hm64-fullday-married-rainy-d90-summary.zip
+    hm64-fullday-married-sunny-d140c90-summary.zip
+    hm64-fullday-married-sunny-d170c120-summary.zip
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  96 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |   9 +-
+ ...64-fullday-marhorse-sunny-d140c90@scotts-m4.zip | Bin 6860510 -> 6863924 bytes
+ ...4-fullday-marhorse-sunny-d170c120@scotts-m4.zip | Bin 8939801 -> 8942964 bytes
+ .../hm64-fullday-marhorse-sunny-d90@scotts-m4.zip  | Bin 4431226 -> 4434778 bytes
+ .../run-marhorse120-20261127-093731.log            |  37 ++++
+ .../run-marhorse120-20261127-110354.log            | 244 +++++++++++++++++++++
+ 6 files changed, 286 insertions(+), 4 deletions(-)
+  committed 3193409 (19 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+   0f06a38..3193409  lab-data -> lab-data
+branch 'lab-data' set up to track 'origin/lab-data'.
+  pushed: GitHub's lab-data = your copy (3193409)
+
+LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 3193409.
