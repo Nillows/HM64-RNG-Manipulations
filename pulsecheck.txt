@@ -1,5 +1,5 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 18:13 EST by thomass-mac-mini.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 18:20 EST by scotts-m4.
 
 === desktop-4uutk80    reported 2026-11-27 18:11 EST    (pool script 2026-11-27c)
 lab run going:   no
@@ -18,22 +18,22 @@ newest log: pool-work2.log   (last written 17:55)
     |   campaign married-horse: finished on this machine
     | ==> nothing to do in the queue for this machine: looking again every 20 min  (Fri 17:55; stop: touch /home/boot_camper/Documents/hm64/pool/work.stop)
 
-=== scotts-m4    reported 2026-11-27 18:10 EST    (pool script 2026-11-27c)
-lab run going:   no
+=== scotts-m4    reported 2026-11-27 18:20 EST    (pool script 2026-11-27c)
+lab run going:   YES
 work loop:       running (work bottomup)
 role:            helper (fetches from hm64-main)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    finished here 2026-11-27 17:54
     zones-married-horse (2026-11-27a)    to do
 next from the queue for this machine: zones-married-horse
-newest log: pool-work2.log   (last written 17:54)
-    | ==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
-    | ==> lab data 3/5  looking for results in /Users/thomaswollin/Documents/hm64/runs and /Users/thomaswollin/Downloads (table: built in; newest copy of each file)
-    | ==> lab data 4/5  README.md + MANIFEST.txt
-    | ==> lab data 5/5  commit and push to GitHub (branch lab-data only)
-    | LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 0fb4406.
-    |   campaign married-horse: finished on this machine
-    | ==> nothing to do in the queue for this machine: looking again every 20 min  (Fri 17:54; stop: touch /Users/thomaswollin/Documents/hm64/pool/work.stop)
+newest log: pool-work2.log   (last written 18:20)
+    | [GA gate, casts] 180/278  192.4 jobs/min  eta 1 min
+    | [GA gate, casts] 190/278  193.3 jobs/min  eta 0 min
+    | [GA gate, casts] 200/278  191.7 jobs/min  eta 0 min
+    | [GA gate, casts] 210/278  188.0 jobs/min  eta 0 min
+    | [GA gate, casts] 220/278  182.0 jobs/min  eta 0 min
+    | [GA gate, casts] 230/278  183.2 jobs/min  eta 0 min
+    | [GA gate, casts] 240/278  181.6 jobs/min  eta 0 min
 
 === thomass-mac-mini    reported 2026-11-27 18:13 EST    (pool script 2026-11-27c)
 lab run going:   YES
