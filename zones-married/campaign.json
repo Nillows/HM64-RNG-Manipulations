@@ -1,0 +1,43 @@
+{
+ "name": "zones-married",
+ "title": "Married, no horse (sunny + rainy): pier zones - every dog line from the middle and south zones to 170 s (fast check), then the casts that can differ (39,258 + 141,614)",
+ "version": "2026-11-27a",
+ "image": {
+  "tag": "hm64-lab:arm64",
+  "id": "sha256:9b61e93aed507f7022f55fb1112e4c9cc484049ee8cd5d58837efb18963341cf"
+ },
+ "rom_sha256": "15c570120bfaa97b4580762f5ee5939a56ba054e696925ea81ccfa55a022d2a6",
+ "base_sha256": "",
+ "saves": [
+  {
+   "file": "Harvest Moon 64 (USA).beach-lineup2-nohorse-married-sunny-spring9.SaveRAM",
+   "sha256": "237e3d1dfe5d220e28015cc865409fdcf467ed8423d258f6bde302e03fa2ab09",
+   "repo_path": "SaveRAM/married-sunny-no-horse/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-sunny-spring9.SaveRAM"
+  },
+  {
+   "file": "Harvest Moon 64 (USA).beach-lineup2-nohorse-married-rainy.SaveRAM",
+   "sha256": "629912496c6211d0da630c895176336c45c57ffccf4f1451d83d932e9f34b03c",
+   "repo_path": "SaveRAM/married-rainy-no-horse/Harvest Moon 64 (USA).beach-lineup2-nohorse-married-rainy.SaveRAM"
+  }
+ ],
+ "needs": [
+  "results/dogwatch/married-lineup2-sunny-237e3d1d",
+  "states/dogwatch/married-lineup2-sunny-237e3d1d/b",
+  "results/dogwatch/married-lineup2-rainy-62991249",
+  "states/dogwatch/married-lineup2-rainy-62991249/b"
+ ],
+ "shared": "one list per save (gaps-<label>.A), 50 parts, claims on branch lab-coord; the gate is run by every machine for itself",
+ "runner": "run_hm64_marzones.sh",
+ "presets": {
+  "preset": "dogwatch",
+  "zones": {
+   "middle": 176.4,
+   "south": 194.4
+  },
+  "plans": "plans/gap_plan_<label>.json.gz",
+  "parts": [
+   "A"
+  ],
+  "blocks_per_list": 50
+ }
+}
