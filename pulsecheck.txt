@@ -1,5 +1,5 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 17:51 EST by desktop-4uutk80.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 17:52 EST by thomass-mac-mini.
 
 === desktop-4uutk80    reported 2026-11-27 17:51 EST    (pool script 2026-11-27c)
 lab run going:   YES
@@ -33,19 +33,19 @@ newest log: pool-work.log   (last written 17:49)
     | LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 3f0eded.
     | ==> WORK DONE on this machine  Fri 17:49
 
-=== thomass-mac-mini    reported 2026-11-27 17:42 EST    (pool script 2026-11-27c)
-lab run going:   YES
+=== thomass-mac-mini    reported 2026-11-27 17:52 EST    (pool script 2026-11-27c)
+lab run going:   no
 work loop:       NOT running (this machine takes nothing new from the queue)
 role:            main Mac (or a machine with no main set)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    to do
 next from the queue for this machine: married-horse
-newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 17:42)
-    | [FD block 2] campaign so far: 8 of 8 lists opened, 180 jobs left in them = 6 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [FD block 2] block 35 done; 936 jobs here in 75 min (12.5 jobs/min)
-    | [FD block 2] pool: 3 Mac(s), 31.2 jobs/min (desktop-4uutk80 8.4, scotts-m4 9.6, thomass-mac-mini 13.2) - 72 jobs left in this list: 2 min for the pool
-    | [FD block 2] campaign so far: 8 of 8 lists opened, 72 jobs left in them = 2 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [FD block 2] 2 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
-    | [FD block 2] 2 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
-    | [FD block 2] 2 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+newest log: pool-work.log   (last written 17:51)
+    | ==> marhorse-rainy-d170c120 block 4 of 5  (done before: only telling the other Macs)  (Fri 17:50)
+    | ==> marhorse-rainy-d170c120 block 5 of 5  (done before: only telling the other Macs)  (Fri 17:50)
+    | ==> 7/7 [2: married-horse-lineup2-rainy-8cbe43a5] the zips to send
+    |  MARRIED TABLES DONE   [sunny rainy]   (2 min in all)
+    | ==> lab data 1/5  is a lab run going? (lab-data script 2026-11-27b)
+    | ==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+    | ==> lab data 3/5  looking for results in /Users/thomwollin/Documents/hm64/runs and /Users/thomwollin/Downloads (table: built in; newest copy of each file)
 
