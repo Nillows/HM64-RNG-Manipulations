@@ -1,5 +1,5 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 18:11 EST by desktop-4uutk80.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 18:13 EST by thomass-mac-mini.
 
 === desktop-4uutk80    reported 2026-11-27 18:11 EST    (pool script 2026-11-27c)
 lab run going:   no
@@ -35,19 +35,21 @@ newest log: pool-work2.log   (last written 17:54)
     |   campaign married-horse: finished on this machine
     | ==> nothing to do in the queue for this machine: looking again every 20 min  (Fri 17:54; stop: touch /Users/thomaswollin/Documents/hm64/pool/work.stop)
 
-=== thomass-mac-mini    reported 2026-11-27 18:02 EST    (pool script 2026-11-27c)
-lab run going:   no
-work loop:       NOT running (this machine takes nothing new from the queue)
+=== thomass-mac-mini    reported 2026-11-27 18:13 EST    (pool script 2026-11-27c)
+lab run going:   YES
+work loop:       running (work topdown)
 role:            main Mac (or a machine with no main set)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    finished here 2026-11-27 18:02
-next from the queue for this machine: nothing
-newest log: pool-work.log   (last written 18:02)
-    | ==> lab data 1/5  is a lab run going? (lab-data script 2026-11-27b)
-    | ==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
-    | ==> lab data 3/5  looking for results in /Users/thomwollin/Documents/hm64/runs and /Users/thomwollin/Downloads (table: built in; newest copy of each file)
-    | ==> lab data 4/5  README.md + MANIFEST.txt
-    | ==> lab data 5/5  commit and push to GitHub (branch lab-data only)
-    | LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 8cc6fee.
-    | married-horse finished on this Mac Fri 18:02: the pier-zone plan (waits for the helpers' casts on lab-data)
+    zones-married-horse (2026-11-27a)    to do
+next from the queue for this machine: zones-married-horse
+pier-zone plan married-horse: 2026-11-27 18:06 zones-married-horse is on GitHub and in the queue
+newest log: pool-work.log   (last written 18:11)
+    | [GA gate, casts] 230/278  283.6 jobs/min  eta 0 min
+    | [GA gate, casts] 240/278  286.6 jobs/min  eta 0 min
+    | [GA gate, casts] 250/278  285.4 jobs/min  eta 0 min
+    | [GA gate, casts] 260/278  283.9 jobs/min  eta 0 min
+    | [GA gate, casts] 270/278  283.5 jobs/min  eta 0 min
+    | [GA gate, casts] 278/278  281.6 jobs/min  eta 0 min
+    | ==> 4/5 the casts that can differ (part A), sunny first
 
