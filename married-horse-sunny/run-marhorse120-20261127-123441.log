@@ -1,0 +1,1008 @@
+
+==> SHARED run: this Mac = scotts-m4, direction down (helper: cast blocks only, of the saves whose dog-watch is already here)
+
+==> MARRIED + HORSE tables to 120 s: saves [sunny rainy], preset dogwatch, work folder /Users/thomaswollin/Documents/hm64/runs/dogspots/hm64-lab (image hm64-lab:arm64)  Fri 12:34
+  lab code: ZZ_CODE = "zigzag-4f (2026-11-16: every bite to 90 s after READY; dogwatch menus...
+  keeping the Mac awake: caffeinate -dims (pid 60492) until this script ends - display, idle, disk and system sleep held off
+  free disk: 108 GB
+
+==> 1/7 lab files
+  [coord 12:34:41] machine scotts-m4, branch lab-coord, every 30 s (rev 2026-11-25a)
+  table sync with GitHub (branch lab-coord): running (pid 60895)
+  this Mac's result parts go to GitHub every 30 min (branch lab-parts-scotts-m4; pid 60898)
+  [coord 12:34:42] machine scotts-m4, branch lab-coord, every 30 s (rev 2026-11-25a)
+  [parts 12:34:42] machine scotts-m4, every 30 min (rev 2026-11-25a)
+  fullday-2 kit, save_check.py, married_z0_check.py, save_redate.py -> /Users/thomaswollin/Documents/hm64/runs/dogspots/hm64-lab
+  workers  9
+
+==> 2/7 the saves
+  save     married-horse-lineup2-sunny-0f33f322   <- /Users/thomaswollin/Documents/hm64/sourcefiles/married/Harvest Moon 64 (USA).beach-lineup2-horse-sunny-married.SaveRAM
+    married-horse-lineup2-sunny-0f33f322.SaveRAM  sha256 0f33f322f655  (bizhawk-saveram, checksum valid)
+      day      year 1 spring 13 (day of week 6), weather sunny, forecast sunny
+      Jack     gold 300, stamina 100/100, tools [24, 1, 3, 4, 5, 0, 0, 0, 24], in hand 24 (fishing rod)
+      dog      beach (map 9) x -197.272 z 222.243  tile 18:23
+      horse    YES (HAVE_HORSE True, ranch cutscene seen True); block: farm (map 82) x 492.879 z -69.384, grown 0, age 3, flags 0x0003
+      family   married True, baby False, wife 4; life events ['MARRIED', 'HAVE_HORSE', 'RANCH_GET_HORSE_CUTSCENE', 16, 62]
+      [PASS] weather  want sunny    got sunny
+      [PASS] horse    want yes      got yes
+      [PASS] married  want yes      got yes
+      [PASS] wife     want karen    got karen
+      [PASS] baby     want no       got no
+      [PASS] dog      want beach    got beach
+      [PASS] tile     want 18:23    got 18:23
+      [PASS] rod      want yes      got yes
+      [PASS] season   want spring   got spring
+      [PASS] day      want 13       got 13
+      [PASS] checksum want valid    got valid
+  save     married-horse-lineup2-rainy-8cbe43a5   <- /Users/thomaswollin/Documents/hm64/sourcefiles/married/Harvest Moon 64 (USA).beach-lineup2-horse-rainy-married.SaveRAM
+    married-horse-lineup2-rainy-8cbe43a5.SaveRAM  sha256 8cbe43a540e3  (bizhawk-saveram, checksum valid)
+      day      year 1 spring 12 (day of week 5), weather rain, forecast sunny
+      Jack     gold 300, stamina 100/100, tools [24, 1, 3, 4, 5, 0, 0, 0, 24], in hand 24 (fishing rod)
+      dog      beach (map 9) x -197.272 z 222.243  tile 18:23
+      horse    YES (HAVE_HORSE True, ranch cutscene seen True); block: farm (map 82) x 492.879 z -69.384, grown 0, age 2, flags 0x0003
+      family   married True, baby False, wife 4; life events ['MARRIED', 'HAVE_HORSE', 'RANCH_GET_HORSE_CUTSCENE', 16, 62]
+      [PASS] weather  want rain     got rain
+      [PASS] horse    want yes      got yes
+      [PASS] married  want yes      got yes
+      [PASS] wife     want karen    got karen
+      [PASS] baby     want no       got no
+      [PASS] dog      want beach    got beach
+      [PASS] tile     want 18:23    got 18:23
+      [PASS] rod      want yes      got yes
+      [PASS] season   want spring   got spring
+      [PASS] day      want 12       got 12
+      [PASS] checksum want valid    got valid
+  workers  13  (this Mac's benchmark: /Users/thomaswollin/Documents/hm64/pool/bench_9b61e93aed50_10.json; delete that file to measure again)
+
+==> 3/7 lab health + each save's reference route from power-on (twice)
+[PASS] lcg        index(0x705EE83C)=1716
+[PASS] save       Harvest_Moon_64_USA3.SaveRAM: bizhawk-saveram, diary slots [0]
+[PASS] boot       load anchor VI 922 idx 503; control anchor VI 1184 idx 650
+[PASS] roundtrip  900 VIs
+[PASS] dogmodel   100 decisions explained, 1 whistle resets, 0 unexplained
+[PASS] poke       diary+4 (idx 505) vs load_d0+poke over 1800 VIs
+[SKIP] visual     xvfb-run not installed
+[SKIP] qs2        states/qs2.st missing (convert QuickSave2(1) with tools/convert_bizhawk_state.py)
+[PASS] route      fishing_ready VI 2668 draw 1312
+[PASS] ladder     cast 130 whistle [] from rung 120: bite 1148 vs 1148; cast 200 whistle [140] from rung 120: bite 1462 vs 1462
+
+SMOKE: ALL PASSED
+  married-horse-lineup2-sunny-0f33f322:
+  save 0f33f322f655: spring 13 year 1, weather 1, rod in hand True; dog at the beach load: beach x -197.27 z 222.24
+  reference route: {"house": [1036, 499], "farm": [1448, 704], "beach": [2264, 1083], "wake": [213, 1190], "ready": [339, -92.0, 194.0, 1269]}
+  equal to Claude's sandbox record of this save (x86 build): OK
+  married-horse-lineup2-rainy-8cbe43a5:
+  save 8cbe43a540e3: spring 12 year 1, weather 2, rod in hand True; dog at the beach load: beach x -197.27 z 222.24
+  reference route: {"house": [1036, 499], "farm": [1448, 704], "beach": [2264, 7429], "wake": [213, 9382], "ready": [339, -92.0, 194.0, 10593]}
+  equal to Claude's sandbox record of this save (x86 build): OK
+
+==> 4/7 [1: married-horse-lineup2-rainy-8cbe43a5] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY (Fri 12:35)
+  done before
+
+==> 5/7 [1: married-horse-lineup2-rainy-8cbe43a5] dog-watch phase 3: Lucky Timer cast tables (every game frame 0.1-40 s, every bite to 90 s) (Fri 12:35)
+  done before
+  zip      /Users/thomaswollin/Documents/hm64/runs/hm64-dogwatch-married-horse-lineup2-rainy-8cbe43a5.zip
+
+==> 6/7 [1: married-horse-lineup2-rainy-8cbe43a5] dog after the cast: 3 windows (Fri 12:35)
+
+==> marhorse-rainy-d170c120: casts to 120 s, everything to 170 s after READY, blocks 4-5  (Fri 12:35)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-horse-lineup2-rainy-8cbe43a5  save /work/data/saves_dogspots/married-horse-lineup2-rainy-8cbe43a5.SaveRAM  workers 13  dog at [-197.27, 222.24]
+  followed to 10198 VIs after READY
+[FD1 lines] 68 jobs, 0 already done, 68 to run
+[FD1 lines] 5/68  110.2 jobs/min  eta 1 min
+[FD1 lines] 10/68  178.3 jobs/min  eta 0 min
+[FD1 lines] 15/68  182.8 jobs/min  eta 0 min
+[FD1 lines] 20/68  208.9 jobs/min  eta 0 min
+[FD1 lines] 25/68  228.3 jobs/min  eta 0 min
+[FD1 lines] 30/68  221.4 jobs/min  eta 0 min
+[FD1 lines] 35/68  239.6 jobs/min  eta 0 min
+[FD1 lines] 40/68  231.6 jobs/min  eta 0 min
+[FD1 lines] 45/68  244.3 jobs/min  eta 0 min
+[FD1 lines] 50/68  242.9 jobs/min  eta 0 min
+[FD1 lines] 55/68  246.5 jobs/min  eta 0 min
+[FD1 lines] 60/68  255.2 jobs/min  eta 0 min
+[FD1 lines] 65/68  260.3 jobs/min  eta 0 min
+[FD1 lines] 68/68  269.7 jobs/min  eta 0 min
+[FD1] 68 of 68 lines ran as planned; hashes against the dog-watch run: 67660 equal, 0 different; ended: [('limit', 10198)]
+lines followed to 10198 VIs (170 s) after READY; 50 heavy lines (90.6% of the route weight), 18 others; 133230 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 50):  44898 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 18):   8669 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 50):  36005 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 18):   5201 casts
+  block  4: casts  80.2-120.3 s after READY, heavy lines ( 50):  33268 casts
+  block  5: casts  80.2-120.3 s after READY, other lines ( 18):   5189 casts
+
+==> marhorse-rainy-d170c120 block 5 of 5  (Fri 12:35)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..7198 VIs after READY on the other lines (18), 5189 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 5] 372 jobs, 0 already done, 372 to run
+[FD block 5] shared run: machine scotts-m4, order down, 372 jobs in 47 blocks; other machines: none seen yet
+[FD block 5] block 47/47 (bottom up): 4 jobs
+[FD block 5] block 47 done; 4 jobs here in 1 min (3.6 jobs/min)
+[FD block 5] pool: 1 Mac(s), 2.0 jobs/min (scotts-m4 2.0) - 368 jobs left in this list: 3.1 h for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2573 jobs left in them = 21.4 h; 6 lists not opened yet (about 65.6 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 46/47 (bottom up): 8 jobs
+[FD block 5] block 46 done; 12 jobs here in 2 min (5.5 jobs/min)
+[FD block 5] pool: 1 Mac(s), 5.5 jobs/min (scotts-m4 5.5) - 360 jobs left in this list: 65 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2565 jobs left in them = 7.8 h; 6 lists not opened yet (about 23.8 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 45/47 (bottom up): 8 jobs
+[FD block 5] block 45 done; 20 jobs here in 3 min (6.2 jobs/min)
+[FD block 5] pool: 1 Mac(s), 6.2 jobs/min (scotts-m4 6.2) - 352 jobs left in this list: 57 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2557 jobs left in them = 6.9 h; 6 lists not opened yet (about 21.2 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 44/47 (bottom up): 8 jobs
+[FD block 5] block 44 done; 28 jobs here in 5 min (6.1 jobs/min)
+[FD block 5] pool: 1 Mac(s), 6.1 jobs/min (scotts-m4 6.1) - 344 jobs left in this list: 57 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2549 jobs left in them = 7.0 h; 6 lists not opened yet (about 21.6 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 43/47 (bottom up): 8 jobs
+[FD block 5] block 43 done; 36 jobs here in 5 min (6.8 jobs/min)
+[FD block 5] pool: 1 Mac(s), 6.8 jobs/min (scotts-m4 6.8) - 336 jobs left in this list: 50 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2541 jobs left in them = 6.3 h; 6 lists not opened yet (about 19.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 42/47 (bottom up): 8 jobs
+[FD block 5] block 42 done; 44 jobs here in 6 min (6.8 jobs/min)
+[FD block 5] pool: 1 Mac(s), 6.8 jobs/min (scotts-m4 6.8) - 328 jobs left in this list: 48 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2487 jobs left in them = 6.1 h; 6 lists not opened yet (about 19.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 41/47 (bottom up): 8 jobs
+[FD block 5] block 41 done; 52 jobs here in 8 min (6.6 jobs/min)
+[FD block 5] pool: 2 Mac(s), 6.6 jobs/min (desktop-4uutk80 0.0, scotts-m4 6.6) - 320 jobs left in this list: 48 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2479 jobs left in them = 6.3 h; 6 lists not opened yet (about 19.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 40/47 (bottom up): 8 jobs
+[FD block 5] block 40 done; 60 jobs here in 9 min (6.6 jobs/min)
+[FD block 5] pool: 2 Mac(s), 9.9 jobs/min (desktop-4uutk80 3.3, scotts-m4 6.6) - 304 jobs left in this list: 31 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2417 jobs left in them = 4.1 h; 6 lists not opened yet (about 13.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 39/47 (bottom up): 8 jobs
+[FD block 5] block 39 done; 68 jobs here in 11 min (6.4 jobs/min)
+[FD block 5] pool: 2 Mac(s), 10.3 jobs/min (desktop-4uutk80 3.9, scotts-m4 6.4) - 288 jobs left in this list: 28 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2401 jobs left in them = 3.9 h; 6 lists not opened yet (about 12.8 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 38/47 (bottom up): 8 jobs
+[FD block 5] block 38 done; 76 jobs here in 12 min (6.2 jobs/min)
+[FD block 5] pool: 2 Mac(s), 11.7 jobs/min (desktop-4uutk80 5.6, scotts-m4 6.2) - 264 jobs left in this list: 23 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2331 jobs left in them = 3.3 h; 6 lists not opened yet (about 11.2 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 37/47 (bottom up): 8 jobs
+[FD block 5] block 37 done; 84 jobs here in 14 min (6.0 jobs/min)
+[FD block 5] pool: 2 Mac(s), 11.5 jobs/min (desktop-4uutk80 5.4, scotts-m4 6.0) - 248 jobs left in this list: 22 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2315 jobs left in them = 3.4 h; 6 lists not opened yet (about 11.5 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 36/47 (bottom up): 8 jobs
+[FD block 5] block 36 done; 92 jobs here in 16 min (5.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 11.2 jobs/min (desktop-4uutk80 5.3, scotts-m4 5.9) - 232 jobs left in this list: 21 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2253 jobs left in them = 3.4 h; 6 lists not opened yet (about 11.7 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 35/47 (bottom up): 8 jobs
+[FD block 5] block 35 done; 100 jobs here in 17 min (5.8 jobs/min)
+[FD block 5] pool: 2 Mac(s), 11.0 jobs/min (desktop-4uutk80 5.2, scotts-m4 5.8) - 216 jobs left in this list: 20 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2237 jobs left in them = 3.4 h; 6 lists not opened yet (about 11.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 34/47 (bottom up): 8 jobs
+[FD block 5] block 34 done; 108 jobs here in 18 min (6.0 jobs/min)
+[FD block 5] pool: 2 Mac(s), 10.8 jobs/min (desktop-4uutk80 4.9, scotts-m4 6.0) - 208 jobs left in this list: 19 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2229 jobs left in them = 3.4 h; 6 lists not opened yet (about 12.1 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 33/47 (bottom up): 8 jobs
+[FD block 5] block 33 done; 116 jobs here in 19 min (6.1 jobs/min)
+[FD block 5] pool: 2 Mac(s), 11.1 jobs/min (desktop-4uutk80 5.1, scotts-m4 6.0) - 192 jobs left in this list: 17 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2213 jobs left in them = 3.3 h; 6 lists not opened yet (about 11.8 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 32/47 (bottom up): 8 jobs
+[FD block 5] block 32 done; 124 jobs here in 20 min (6.1 jobs/min)
+[FD block 5] pool: 2 Mac(s), 11.4 jobs/min (desktop-4uutk80 5.3, scotts-m4 6.1) - 176 jobs left in this list: 15 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2151 jobs left in them = 3.1 h; 6 lists not opened yet (about 11.5 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 31/47 (bottom up): 8 jobs
+[FD block 5] block 31 done; 132 jobs here in 22 min (6.1 jobs/min)
+[FD block 5] pool: 2 Mac(s), 10.9 jobs/min (desktop-4uutk80 4.8, scotts-m4 6.1) - 168 jobs left in this list: 15 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2143 jobs left in them = 3.3 h; 6 lists not opened yet (about 12.1 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 30/47 (bottom up): 8 jobs
+[FD block 5] block 30 done; 140 jobs here in 22 min (6.3 jobs/min)
+[FD block 5] pool: 2 Mac(s), 11.4 jobs/min (desktop-4uutk80 5.1, scotts-m4 6.3) - 152 jobs left in this list: 13 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2127 jobs left in them = 3.1 h; 6 lists not opened yet (about 11.5 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 17/47 (bottom up): 8 jobs
+[FD block 5] block 17 done; 148 jobs here in 25 min (5.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 10.7 jobs/min (desktop-4uutk80 4.8, scotts-m4 5.9) - 136 jobs left in this list: 13 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 2065 jobs left in them = 3.2 h; 6 lists not opened yet (about 12.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 15/47 (bottom up): 8 jobs
+[FD block 5] block 15 done; 156 jobs here in 28 min (5.6 jobs/min)
+[FD block 5] pool: 2 Mac(s), 10.5 jobs/min (desktop-4uutk80 4.9, scotts-m4 5.6) - 112 jobs left in this list: 11 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 1995 jobs left in them = 3.2 h; 6 lists not opened yet (about 12.5 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 14/47 (bottom up): 8 jobs
+[FD block 5] block 14 done; 164 jobs here in 29 min (5.6 jobs/min)
+[FD block 5] pool: 2 Mac(s), 10.2 jobs/min (desktop-4uutk80 4.6, scotts-m4 5.6) - 104 jobs left in this list: 10 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 1987 jobs left in them = 3.3 h; 6 lists not opened yet (about 12.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+  [parts 13:04:49] 7 result files on GitHub (branch lab-parts-scotts-m4)
+[FD block 5] block 12/47 (bottom up): 8 jobs
+[FD block 5] block 12 done; 172 jobs here in 32 min (5.4 jobs/min)
+[FD block 5] pool: 2 Mac(s), 10.3 jobs/min (desktop-4uutk80 4.7, scotts-m4 5.6) - 88 jobs left in this list: 9 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 1925 jobs left in them = 3.1 h; 6 lists not opened yet (about 12.7 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 11/47 (bottom up): 8 jobs
+[FD block 5] block 11 done; 180 jobs here in 34 min (5.3 jobs/min)
+[FD block 5] pool: 2 Mac(s), 9.8 jobs/min (desktop-4uutk80 4.4, scotts-m4 5.3) - 80 jobs left in this list: 8 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 1871 jobs left in them = 3.2 h; 6 lists not opened yet (about 13.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 9/47 (bottom up): 8 jobs
+[FD block 5] block 9 done; 188 jobs here in 36 min (5.2 jobs/min)
+[FD block 5] pool: 2 Mac(s), 9.4 jobs/min (desktop-4uutk80 4.6, scotts-m4 4.8) - 64 jobs left in this list: 7 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 1855 jobs left in them = 3.3 h; 6 lists not opened yet (about 14.0 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 7/47 (bottom up): 8 jobs
+[FD block 5] block 7 done; 196 jobs here in 38 min (5.2 jobs/min)
+[FD block 5] pool: 2 Mac(s), 9.6 jobs/min (desktop-4uutk80 4.5, scotts-m4 5.1) - 56 jobs left in this list: 6 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 1801 jobs left in them = 3.1 h; 6 lists not opened yet (about 13.7 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 5/47 (bottom up): 8 jobs
+[FD block 5] block 5 done; 204 jobs here in 41 min (5.0 jobs/min)
+[FD block 5] pool: 2 Mac(s), 9.1 jobs/min (desktop-4uutk80 4.3, scotts-m4 4.8) - 32 jobs left in this list: 4 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 1777 jobs left in them = 3.3 h; 6 lists not opened yet (about 14.5 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 3/47 (bottom up): 8 jobs
+[FD block 5] block 3 done; 212 jobs here in 42 min (5.0 jobs/min)
+[FD block 5] pool: 2 Mac(s), 8.8 jobs/min (desktop-4uutk80 4.0, scotts-m4 4.8) - 24 jobs left in this list: 3 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 1723 jobs left in them = 3.3 h; 6 lists not opened yet (about 14.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 1/47 (bottom up): 8 jobs
+[FD block 5] block 1 done; 220 jobs here in 45 min (4.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 8.5 jobs/min (desktop-4uutk80 4.0, scotts-m4 4.5) - 0 jobs left in this list: 0 min for the pool
+[FD block 5] campaign so far: 2 of 8 lists opened, 1653 jobs left in them = 3.2 h; 6 lists not opened yet (about 15.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] every block is done (220 jobs run here this time)
+  block 5 done in 45 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 5 | 80.2 – 120.3 · other | 18 | 5189 | 3179 | 0 | 2969 / 0 / 210 | 3179 / 0 / 0 | 4.8 | 162 (5.1%) |
+
+  this Mac's part of block 5: /Users/thomaswollin/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d170c120-b05@scotts-m4.zip
+
+==> marhorse-rainy-d170c120 block 4 of 5  (Fri 13:20)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..7198 VIs after READY on the heavy lines (50), 33268 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 4] 1711 jobs, 0 already done, 1711 to run
+[FD block 4] shared run: machine scotts-m4, order down, 1711 jobs in 49 blocks; other machines: none seen yet
+[FD block 4] block 49/49 (bottom up): 31 jobs
+[FD block 4] block 49 done; 31 jobs here in 3 min (9.6 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.7 jobs/min (desktop-4uutk80 0.0, scotts-m4 9.7) - 1680 jobs left in this list: 2.9 h for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 3287 jobs left in them = 5.7 h; 5 lists not opened yet (about 12.5 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 48/49 (bottom up): 35 jobs
+[FD block 4] block 48 done; 66 jobs here in 6 min (10.7 jobs/min)
+[FD block 4] pool: 2 Mac(s), 10.7 jobs/min (desktop-4uutk80 0.0, scotts-m4 10.7) - 1645 jobs left in this list: 2.6 h for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 3206 jobs left in them = 5.0 h; 5 lists not opened yet (about 11.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 47/49 (bottom up): 35 jobs
+[FD block 4] block 47 done; 101 jobs here in 7 min (13.8 jobs/min)
+[FD block 4] pool: 2 Mac(s), 19.6 jobs/min (desktop-4uutk80 5.8, scotts-m4 13.8) - 1575 jobs left in this list: 80 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 3136 jobs left in them = 2.7 h; 5 lists not opened yet (about 6.1 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 46/49 (bottom up): 35 jobs
+[FD block 4] block 46 done; 136 jobs here in 9 min (15.7 jobs/min)
+[FD block 4] pool: 2 Mac(s), 20.5 jobs/min (desktop-4uutk80 4.7, scotts-m4 15.7) - 1540 jobs left in this list: 75 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 3101 jobs left in them = 2.5 h; 5 lists not opened yet (about 5.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 45/49 (bottom up): 35 jobs
+[FD block 4] block 45 done; 171 jobs here in 11 min (16.3 jobs/min)
+[FD block 4] pool: 2 Mac(s), 20.1 jobs/min (desktop-4uutk80 3.8, scotts-m4 16.3) - 1505 jobs left in this list: 75 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 3020 jobs left in them = 2.5 h; 5 lists not opened yet (about 6.0 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 44/49 (bottom up): 35 jobs
+[FD block 4] block 44 done; 206 jobs here in 14 min (14.8 jobs/min)
+[FD block 4] pool: 2 Mac(s), 20.3 jobs/min (desktop-4uutk80 5.5, scotts-m4 14.8) - 1435 jobs left in this list: 71 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 2904 jobs left in them = 2.4 h; 5 lists not opened yet (about 5.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+  [parts 13:34:59] 8 result files on GitHub (branch lab-parts-scotts-m4)
+[FD block 4] block 43/49 (bottom up): 35 jobs
+[FD block 4] block 43 done; 241 jobs here in 17 min (13.9 jobs/min)
+[FD block 4] pool: 2 Mac(s), 20.4 jobs/min (desktop-4uutk80 6.5, scotts-m4 13.9) - 1365 jobs left in this list: 67 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 2788 jobs left in them = 2.3 h; 5 lists not opened yet (about 5.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 42/49 (bottom up): 35 jobs
+[FD block 4] block 42 done; 276 jobs here in 21 min (13.0 jobs/min)
+[FD block 4] pool: 2 Mac(s), 20.0 jobs/min (desktop-4uutk80 7.0, scotts-m4 13.0) - 1295 jobs left in this list: 65 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 2672 jobs left in them = 2.2 h; 5 lists not opened yet (about 6.0 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 41/49 (bottom up): 35 jobs
+[FD block 4] block 41 done; 311 jobs here in 25 min (12.5 jobs/min)
+[FD block 4] pool: 2 Mac(s), 19.9 jobs/min (desktop-4uutk80 7.4, scotts-m4 12.5) - 1225 jobs left in this list: 61 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 2556 jobs left in them = 2.1 h; 5 lists not opened yet (about 6.0 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 40/49 (bottom up): 35 jobs
+[FD block 4] block 40 done; 346 jobs here in 29 min (12.1 jobs/min)
+[FD block 4] pool: 2 Mac(s), 19.7 jobs/min (desktop-4uutk80 7.7, scotts-m4 12.1) - 1155 jobs left in this list: 59 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 2394 jobs left in them = 2.0 h; 5 lists not opened yet (about 6.1 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 39/49 (bottom up): 35 jobs
+[FD block 4] block 39 done; 381 jobs here in 32 min (11.8 jobs/min)
+[FD block 4] pool: 2 Mac(s), 19.7 jobs/min (desktop-4uutk80 7.0, scotts-m4 12.7) - 1120 jobs left in this list: 57 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 2313 jobs left in them = 2.0 h; 5 lists not opened yet (about 6.1 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 38/49 (bottom up): 35 jobs
+[FD block 4] block 38 done; 416 jobs here in 35 min (11.7 jobs/min)
+[FD block 4] pool: 2 Mac(s), 21.0 jobs/min (desktop-4uutk80 8.2, scotts-m4 12.8) - 1050 jobs left in this list: 50 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 2197 jobs left in them = 1.7 h; 5 lists not opened yet (about 5.7 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 37/49 (bottom up): 35 jobs
+[FD block 4] block 37 done; 451 jobs here in 39 min (11.6 jobs/min)
+[FD block 4] pool: 2 Mac(s), 18.7 jobs/min (desktop-4uutk80 8.2, scotts-m4 10.5) - 980 jobs left in this list: 53 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 2081 jobs left in them = 1.9 h; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 36/49 (bottom up): 35 jobs
+[FD block 4] block 36 done; 486 jobs here in 43 min (11.3 jobs/min)
+[FD block 4] pool: 2 Mac(s), 18.7 jobs/min (desktop-4uutk80 8.2, scotts-m4 10.5) - 910 jobs left in this list: 49 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1965 jobs left in them = 1.8 h; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 35/49 (bottom up): 35 jobs
+  [parts 14:05:07] 8 result files on GitHub (branch lab-parts-scotts-m4)
+[FD block 4] block 35 done; 521 jobs here in 46 min (11.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 7.0, scotts-m4 10.5) - 875 jobs left in this list: 50 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1884 jobs left in them = 1.8 h; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 34/49 (bottom up): 35 jobs
+[FD block 4] block 34 done; 556 jobs here in 48 min (11.6 jobs/min)
+[FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 7.0, scotts-m4 10.5) - 840 jobs left in this list: 48 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1849 jobs left in them = 1.8 h; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 33/49 (bottom up): 35 jobs
+[FD block 4] block 33 done; 591 jobs here in 51 min (11.6 jobs/min)
+[FD block 4] pool: 2 Mac(s), 18.7 jobs/min (desktop-4uutk80 7.0, scotts-m4 11.7) - 770 jobs left in this list: 41 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1687 jobs left in them = 1.5 h; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 32/49 (bottom up): 35 jobs
+[FD block 4] block 32 done; 626 jobs here in 54 min (11.5 jobs/min)
+[FD block 4] pool: 2 Mac(s), 18.7 jobs/min (desktop-4uutk80 7.0, scotts-m4 11.7) - 700 jobs left in this list: 38 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1571 jobs left in them = 84 min; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 31/49 (bottom up): 35 jobs
+[FD block 4] block 31 done; 661 jobs here in 58 min (11.4 jobs/min)
+[FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 5.8, scotts-m4 11.7) - 665 jobs left in this list: 38 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1490 jobs left in them = 85 min; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 18/49 (bottom up): 35 jobs
+[FD block 4] block 18 done; 696 jobs here in 61 min (11.3 jobs/min)
+[FD block 4] pool: 2 Mac(s), 18.7 jobs/min (desktop-4uutk80 7.0, scotts-m4 11.7) - 595 jobs left in this list: 32 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1374 jobs left in them = 74 min; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 16/49 (bottom up): 35 jobs
+[FD block 4] block 16 done; 731 jobs here in 63 min (11.6 jobs/min)
+[FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 5.8, scotts-m4 11.7) - 560 jobs left in this list: 32 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1293 jobs left in them = 74 min; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 15/49 (bottom up): 35 jobs
+[FD block 4] block 15 done; 766 jobs here in 66 min (11.5 jobs/min)
+[FD block 4] pool: 2 Mac(s), 18.7 jobs/min (desktop-4uutk80 7.0, scotts-m4 11.7) - 490 jobs left in this list: 26 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1177 jobs left in them = 63 min; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 14/49 (bottom up): 35 jobs
+[FD block 4] block 14 done; 801 jobs here in 70 min (11.4 jobs/min)
+[FD block 4] pool: 2 Mac(s), 18.7 jobs/min (desktop-4uutk80 7.0, scotts-m4 11.7) - 455 jobs left in this list: 24 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1096 jobs left in them = 59 min; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 12/49 (bottom up): 35 jobs
+[FD block 4] block 12 done; 836 jobs here in 74 min (11.3 jobs/min)
+[FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 5.8, scotts-m4 11.7) - 420 jobs left in this list: 24 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 1015 jobs left in them = 58 min; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+  [parts 14:35:15] 8 result files on GitHub (branch lab-parts-scotts-m4)
+[FD block 4] block 11/49 (bottom up): 35 jobs
+[FD block 4] block 11 done; 871 jobs here in 78 min (11.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 18.7 jobs/min (desktop-4uutk80 7.0, scotts-m4 11.7) - 350 jobs left in this list: 19 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 899 jobs left in them = 48 min; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 9/49 (bottom up): 35 jobs
+[FD block 4] block 9 done; 906 jobs here in 80 min (11.3 jobs/min)
+[FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 5.8, scotts-m4 11.7) - 315 jobs left in this list: 18 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 818 jobs left in them = 47 min; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 8/49 (bottom up): 35 jobs
+[FD block 4] block 8 done; 941 jobs here in 84 min (11.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 5.8, scotts-m4 11.7) - 245 jobs left in this list: 14 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 702 jobs left in them = 40 min; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 6/49 (bottom up): 35 jobs
+[FD block 4] block 6 done; 976 jobs here in 87 min (11.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 5.8, scotts-m4 11.7) - 210 jobs left in this list: 12 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 621 jobs left in them = 35 min; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 4/49 (bottom up): 35 jobs
+[FD block 4] block 4 done; 1011 jobs here in 92 min (11.0 jobs/min)
+[FD block 4] pool: 2 Mac(s), 16.3 jobs/min (desktop-4uutk80 5.8, scotts-m4 10.5) - 140 jobs left in this list: 9 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 459 jobs left in them = 28 min; 5 lists not opened yet (about 7.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 3/49 (bottom up): 35 jobs
+[FD block 4] block 3 done; 1046 jobs here in 96 min (10.9 jobs/min)
+[FD block 4] pool: 2 Mac(s), 16.3 jobs/min (desktop-4uutk80 5.8, scotts-m4 10.5) - 70 jobs left in this list: 4 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 343 jobs left in them = 21 min; 5 lists not opened yet (about 7.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 1/49 (bottom up): 35 jobs
+[FD block 4] block 1 done; 1081 jobs here in 99 min (10.9 jobs/min)
+[FD block 4] pool: 2 Mac(s), 16.3 jobs/min (desktop-4uutk80 5.8, scotts-m4 10.5) - 35 jobs left in this list: 2 min for the pool
+[FD block 4] campaign so far: 3 of 8 lists opened, 262 jobs left in them = 16 min; 5 lists not opened yet (about 7.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[FD block 4] every block is done (1081 jobs run here this time)
+  block 4 done in 100 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 50 | 33268 | 20852 | 0 | 20089 / 0 / 763 | 20852 / 0 / 0 | 4.7 | 1050 (5.0%) |
+| 5 | 80.2 – 120.3 · other | 18 | 5189 | 3179 | 0 | 2969 / 0 / 210 | 3179 / 0 / 0 | 4.8 | 162 (5.1%) |
+
+  this Mac's part of block 4: /Users/thomaswollin/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d170c120-b04@scotts-m4.zip
+
+==> marhorse-rainy-d140c90: casts to 90 s, everything to 140 s after READY, blocks 2-5  (Fri 15:01)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-horse-lineup2-rainy-8cbe43a5  save /work/data/saves_dogspots/married-horse-lineup2-rainy-8cbe43a5.SaveRAM  workers 13  dog at [-197.27, 222.24]
+  followed to 8398 VIs after READY
+[FD1 lines] 68 jobs, 0 already done, 68 to run
+[FD1 lines] 5/68  132.5 jobs/min  eta 0 min
+[FD1 lines] 10/68  205.7 jobs/min  eta 0 min
+[FD1 lines] 15/68  215.4 jobs/min  eta 0 min
+[FD1 lines] 20/68  247.4 jobs/min  eta 0 min
+[FD1 lines] 25/68  276.5 jobs/min  eta 0 min
+[FD1 lines] 30/68  277.2 jobs/min  eta 0 min
+[FD1 lines] 35/68  287.4 jobs/min  eta 0 min
+[FD1 lines] 40/68  281.2 jobs/min  eta 0 min
+[FD1 lines] 45/68  299.7 jobs/min  eta 0 min
+[FD1 lines] 50/68  312.0 jobs/min  eta 0 min
+[FD1 lines] 55/68  300.5 jobs/min  eta 0 min
+[FD1 lines] 60/68  314.2 jobs/min  eta 0 min
+[FD1 lines] 65/68  320.4 jobs/min  eta 0 min
+[FD1 lines] 68/68  328.2 jobs/min  eta 0 min
+[FD1] 68 of 68 lines ran as planned; hashes against the dog-watch run: 67660 equal, 0 different; ended: [('limit', 8398)]
+lines followed to 8398 VIs (140 s) after READY; 50 heavy lines (90.6% of the route weight), 18 others; 104390 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 50):  44898 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 18):   8669 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 50):  36005 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 18):   5201 casts
+  block  4: casts  80.2- 90.3 s after READY, heavy lines ( 41):   8401 casts
+  block  5: casts  80.2- 90.3 s after READY, other lines (  8):   1216 casts
+
+==> marhorse-rainy-d140c90 block 5 of 5  (Fri 15:01)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..5398 VIs after READY on the other lines (8), 1216 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 5] 56 jobs, 0 already done, 56 to run
+[FD block 5] shared run: machine scotts-m4, order down, 56 jobs in 28 blocks; other machines: none seen yet
+[FD block 5] block 28/28 (bottom up): 2 jobs
+[FD block 5] block 28 done; 2 jobs here in 1 min (2.2 jobs/min)
+[FD block 5] pool: 1 Mac(s), 1.0 jobs/min (scotts-m4 1.0) - 54 jobs left in this list: 54 min for the pool
+[FD block 5] campaign so far: 4 of 8 lists opened, 189 jobs left in them = 3.1 h; 4 lists not opened yet (about 73.2 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 27/28 (bottom up): 2 jobs
+[FD block 5] block 27 done; 4 jobs here in 2 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 1.9 jobs/min (desktop-4uutk80 0.0, scotts-m4 1.9) - 52 jobs left in this list: 28 min for the pool
+[FD block 5] campaign so far: 4 of 8 lists opened, 187 jobs left in them = 1.7 h; 4 lists not opened yet (about 38.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 26/28 (bottom up): 2 jobs
+[FD block 5] block 26 done; 6 jobs here in 3 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 1.9 jobs/min (desktop-4uutk80 0.0, scotts-m4 1.9) - 50 jobs left in this list: 27 min for the pool
+[FD block 5] campaign so far: 4 of 8 lists opened, 185 jobs left in them = 1.7 h; 4 lists not opened yet (about 39.2 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 25/28 (bottom up): 2 jobs
+  [parts 15:05:23] 10 result files on GitHub (branch lab-parts-scotts-m4)
+[FD block 5] block 25 done; 8 jobs here in 4 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 2.5 jobs/min (desktop-4uutk80 0.6, scotts-m4 1.9) - 46 jobs left in this list: 19 min for the pool
+[FD block 5] campaign so far: 4 of 8 lists opened, 135 jobs left in them = 55 min; 4 lists not opened yet (about 29.7 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 24/28 (bottom up): 2 jobs
+[FD block 5] block 24 done; 10 jobs here in 5 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 2.8 jobs/min (desktop-4uutk80 0.9, scotts-m4 1.9) - 42 jobs left in this list: 15 min for the pool
+[FD block 5] campaign so far: 4 of 8 lists opened, 131 jobs left in them = 47 min; 4 lists not opened yet (about 26.2 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 23/28 (bottom up): 2 jobs
+[FD block 5] block 23 done; 12 jobs here in 6 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 2.6 jobs/min (desktop-4uutk80 0.7, scotts-m4 1.9) - 40 jobs left in this list: 15 min for the pool
+[FD block 5] campaign so far: 4 of 8 lists opened, 129 jobs left in them = 50 min; 4 lists not opened yet (about 28.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 22/28 (bottom up): 2 jobs
+[FD block 5] block 22 done; 14 jobs here in 8 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 2.8 jobs/min (desktop-4uutk80 0.9, scotts-m4 1.9) - 36 jobs left in this list: 13 min for the pool
+[FD block 5] campaign so far: 4 of 8 lists opened, 79 jobs left in them = 28 min; 4 lists not opened yet (about 26.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 21/28 (bottom up): 2 jobs
+[FD block 5] block 21 done; 16 jobs here in 8 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 3.0 jobs/min (desktop-4uutk80 1.1, scotts-m4 1.9) - 32 jobs left in this list: 11 min for the pool
+[FD block 5] campaign so far: 4 of 8 lists opened, 75 jobs left in them = 25 min; 4 lists not opened yet (about 24.5 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 20/28 (bottom up): 2 jobs
+[FD block 5] block 20 done; 18 jobs here in 9 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 2.8 jobs/min (desktop-4uutk80 0.9, scotts-m4 1.9) - 30 jobs left in this list: 11 min for the pool
+[FD block 5] campaign so far: 5 of 8 lists opened, 673 jobs left in them = 3.9 h; 3 lists not opened yet (about 17.7 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 19/28 (bottom up): 2 jobs
+[FD block 5] block 19 done; 20 jobs here in 11 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 2.9 jobs/min (desktop-4uutk80 1.0, scotts-m4 1.9) - 26 jobs left in this list: 9 min for the pool
+[FD block 5] campaign so far: 5 of 8 lists opened, 656 jobs left in them = 3.8 h; 3 lists not opened yet (about 17.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 18/28 (bottom up): 2 jobs
+[FD block 5] block 18 done; 22 jobs here in 12 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 3.0 jobs/min (desktop-4uutk80 1.1, scotts-m4 1.9) - 22 jobs left in this list: 7 min for the pool
+[FD block 5] campaign so far: 5 of 8 lists opened, 652 jobs left in them = 3.6 h; 3 lists not opened yet (about 16.9 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 10/28 (bottom up): 2 jobs
+[FD block 5] block 10 done; 24 jobs here in 13 min (1.9 jobs/min)
+[FD block 5] pool: 2 Mac(s), 2.9 jobs/min (desktop-4uutk80 1.0, scotts-m4 1.9) - 20 jobs left in this list: 7 min for the pool
+[FD block 5] campaign so far: 5 of 8 lists opened, 637 jobs left in them = 3.7 h; 3 lists not opened yet (about 17.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 7/28 (bottom up): 2 jobs
+[FD block 5] block 7 done; 26 jobs here in 16 min (1.6 jobs/min)
+[FD block 5] pool: 2 Mac(s), 2.7 jobs/min (desktop-4uutk80 1.1, scotts-m4 1.6) - 14 jobs left in this list: 5 min for the pool
+[FD block 5] campaign so far: 5 of 8 lists opened, 605 jobs left in them = 3.7 h; 3 lists not opened yet (about 18.7 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 4/28 (bottom up): 2 jobs
+[FD block 5] block 4 done; 28 jobs here in 19 min (1.5 jobs/min)
+[FD block 5] pool: 2 Mac(s), 2.5 jobs/min (desktop-4uutk80 1.1, scotts-m4 1.5) - 8 jobs left in this list: 3 min for the pool
+[FD block 5] campaign so far: 5 of 8 lists opened, 573 jobs left in them = 3.7 h; 3 lists not opened yet (about 19.7 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] block 1/28 (bottom up): 2 jobs
+[FD block 5] block 1 done; 30 jobs here in 22 min (1.3 jobs/min)
+[FD block 5] pool: 2 Mac(s), 2.5 jobs/min (desktop-4uutk80 1.1, scotts-m4 1.3) - 2 jobs left in this list: 1 min for the pool
+[FD block 5] campaign so far: 5 of 8 lists opened, 541 jobs left in them = 3.7 h; 3 lists not opened yet (about 20.5 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 5] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[FD block 5] every block is done (30 jobs run here this time)
+  block 5 done in 23 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 5 | 80.2 – 90.3 · other | 8 | 1216 | 604 | 0 | 604 / 0 / 0 | 604 / 0 / 0 | 3.6 | 48 (7.9%) |
+
+  this Mac's part of block 5: /Users/thomaswollin/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d140c90-b05@scotts-m4.zip
+
+==> marhorse-rainy-d140c90 block 4 of 5  (Fri 15:24)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..5398 VIs after READY on the heavy lines (41), 8401 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 4] 375 jobs, 0 already done, 375 to run
+[FD block 4] shared run: machine scotts-m4, order down, 375 jobs in 47 blocks; other machines: none seen yet
+[FD block 4] block 47/47 (bottom up): 7 jobs
+[FD block 4] block 47 done; 7 jobs here in 1 min (5.9 jobs/min)
+[FD block 4] pool: 2 Mac(s), 3.5 jobs/min (desktop-4uutk80 0.0, scotts-m4 3.5) - 368 jobs left in this list: 1.8 h for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 894 jobs left in them = 4.3 h; 2 lists not opened yet (about 8.6 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 46/47 (bottom up): 8 jobs
+[FD block 4] block 46 done; 15 jobs here in 2 min (6.4 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.8 jobs/min (desktop-4uutk80 3.3, scotts-m4 6.4) - 352 jobs left in this list: 36 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 865 jobs left in them = 89 min; 2 lists not opened yet (about 3.1 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 45/47 (bottom up): 8 jobs
+[FD block 4] block 45 done; 23 jobs here in 4 min (5.8 jobs/min)
+[FD block 4] pool: 2 Mac(s), 7.8 jobs/min (desktop-4uutk80 2.0, scotts-m4 5.8) - 344 jobs left in this list: 44 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 844 jobs left in them = 1.8 h; 2 lists not opened yet (about 3.8 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 44/47 (bottom up): 8 jobs
+[FD block 4] block 44 done; 31 jobs here in 6 min (5.5 jobs/min)
+[FD block 4] pool: 2 Mac(s), 8.4 jobs/min (desktop-4uutk80 2.8, scotts-m4 5.5) - 328 jobs left in this list: 39 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 815 jobs left in them = 1.6 h; 2 lists not opened yet (about 3.6 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 43/47 (bottom up): 8 jobs
+[FD block 4] block 43 done; 39 jobs here in 7 min (5.5 jobs/min)
+[FD block 4] pool: 2 Mac(s), 8.8 jobs/min (desktop-4uutk80 3.3, scotts-m4 5.5) - 312 jobs left in this list: 35 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 786 jobs left in them = 89 min; 2 lists not opened yet (about 3.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 42/47 (bottom up): 8 jobs
+[FD block 4] block 42 done; 47 jobs here in 9 min (5.4 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.0 jobs/min (desktop-4uutk80 3.6, scotts-m4 5.4) - 296 jobs left in this list: 33 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 757 jobs left in them = 84 min; 2 lists not opened yet (about 3.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 41/47 (bottom up): 8 jobs
+[FD block 4] block 41 done; 55 jobs here in 10 min (5.3 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.1 jobs/min (desktop-4uutk80 3.8, scotts-m4 5.3) - 280 jobs left in this list: 31 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 728 jobs left in them = 80 min; 2 lists not opened yet (about 3.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+  [parts 15:35:31] 11 result files on GitHub (branch lab-parts-scotts-m4)
+[FD block 4] block 40/47 (bottom up): 8 jobs
+[FD block 4] block 40 done; 63 jobs here in 12 min (5.3 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.3 jobs/min (desktop-4uutk80 4.0, scotts-m4 5.3) - 264 jobs left in this list: 28 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 699 jobs left in them = 75 min; 2 lists not opened yet (about 3.2 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 39/47 (bottom up): 8 jobs
+[FD block 4] block 39 done; 71 jobs here in 14 min (5.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 8.8 jobs/min (desktop-4uutk80 3.5, scotts-m4 5.2) - 256 jobs left in this list: 29 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 678 jobs left in them = 77 min; 2 lists not opened yet (about 3.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 38/47 (bottom up): 8 jobs
+[FD block 4] block 38 done; 79 jobs here in 15 min (5.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 8.9 jobs/min (desktop-4uutk80 3.7, scotts-m4 5.2) - 240 jobs left in this list: 27 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 649 jobs left in them = 73 min; 2 lists not opened yet (about 3.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 37/47 (bottom up): 8 jobs
+[FD block 4] block 37 done; 87 jobs here in 17 min (5.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.0 jobs/min (desktop-4uutk80 3.8, scotts-m4 5.2) - 224 jobs left in this list: 25 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 620 jobs left in them = 69 min; 2 lists not opened yet (about 3.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 36/47 (bottom up): 8 jobs
+[FD block 4] block 36 done; 95 jobs here in 18 min (5.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.1 jobs/min (desktop-4uutk80 3.9, scotts-m4 5.2) - 208 jobs left in this list: 23 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 591 jobs left in them = 65 min; 2 lists not opened yet (about 3.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 35/47 (bottom up): 8 jobs
+[FD block 4] block 35 done; 103 jobs here in 20 min (5.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.2 jobs/min (desktop-4uutk80 4.0, scotts-m4 5.2) - 192 jobs left in this list: 21 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 562 jobs left in them = 61 min; 2 lists not opened yet (about 3.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 34/47 (bottom up): 8 jobs
+[FD block 4] block 34 done; 111 jobs here in 21 min (5.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.3 jobs/min (desktop-4uutk80 4.1, scotts-m4 5.2) - 176 jobs left in this list: 19 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 533 jobs left in them = 58 min; 2 lists not opened yet (about 3.2 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 33/47 (bottom up): 8 jobs
+[FD block 4] block 33 done; 119 jobs here in 23 min (5.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.3 jobs/min (desktop-4uutk80 4.2, scotts-m4 5.2) - 160 jobs left in this list: 17 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 504 jobs left in them = 54 min; 2 lists not opened yet (about 3.2 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 32/47 (bottom up): 8 jobs
+[FD block 4] block 32 done; 127 jobs here in 25 min (5.1 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.3 jobs/min (desktop-4uutk80 4.2, scotts-m4 5.1) - 144 jobs left in this list: 15 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 475 jobs left in them = 51 min; 2 lists not opened yet (about 3.2 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 16/47 (bottom up): 8 jobs
+[FD block 4] block 16 done; 135 jobs here in 27 min (4.9 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.3 jobs/min (desktop-4uutk80 4.4, scotts-m4 4.9) - 120 jobs left in this list: 13 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 425 jobs left in them = 46 min; 2 lists not opened yet (about 3.2 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 14/47 (bottom up): 8 jobs
+[FD block 4] block 14 done; 143 jobs here in 29 min (4.9 jobs/min)
+[FD block 4] pool: 2 Mac(s), 9.1 jobs/min (desktop-4uutk80 4.1, scotts-m4 4.9) - 112 jobs left in this list: 12 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 404 jobs left in them = 45 min; 2 lists not opened yet (about 3.3 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 11/47 (bottom up): 8 jobs
+[FD block 4] block 11 done; 151 jobs here in 33 min (4.6 jobs/min)
+[FD block 4] pool: 2 Mac(s), 8.8 jobs/min (desktop-4uutk80 4.3, scotts-m4 4.5) - 88 jobs left in this list: 10 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 341 jobs left in them = 39 min; 2 lists not opened yet (about 3.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 8/47 (bottom up): 8 jobs
+[FD block 4] block 8 done; 159 jobs here in 36 min (4.4 jobs/min)
+[FD block 4] pool: 2 Mac(s), 8.8 jobs/min (desktop-4uutk80 4.5, scotts-m4 4.3) - 56 jobs left in this list: 6 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 283 jobs left in them = 32 min; 2 lists not opened yet (about 3.4 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] block 6/47 (bottom up): 8 jobs
+[FD block 4] block 6 done; 167 jobs here in 38 min (4.4 jobs/min)
+[FD block 4] pool: 2 Mac(s), 8.5 jobs/min (desktop-4uutk80 4.3, scotts-m4 4.3) - 48 jobs left in this list: 6 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 262 jobs left in them = 31 min; 2 lists not opened yet (about 3.5 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+  [parts 16:05:39] 11 result files on GitHub (branch lab-parts-scotts-m4)
+[FD block 4] block 3/47 (bottom up): 8 jobs
+[FD block 4] block 3 done; 175 jobs here in 42 min (4.2 jobs/min)
+[FD block 4] pool: 2 Mac(s), 8.3 jobs/min (desktop-4uutk80 4.3, scotts-m4 4.0) - 24 jobs left in this list: 3 min for the pool
+[FD block 4] campaign so far: 6 of 8 lists opened, 199 jobs left in them = 24 min; 2 lists not opened yet (about 3.6 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 4] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[FD block 4] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[FD block 4] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[FD block 4] every block is done (175 jobs run here this time)
+  block 4 done in 46 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 90.3 · heavy | 41 | 8401 | 3938 | 0 | 3938 / 0 / 0 | 3938 / 0 / 0 | 3.7 | 146 (3.7%) |
+| 5 | 80.2 – 90.3 · other | 8 | 1216 | 604 | 0 | 604 / 0 / 0 | 604 / 0 / 0 | 3.6 | 48 (7.9%) |
+
+  this Mac's part of block 4: /Users/thomaswollin/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d140c90-b04@scotts-m4.zip
+
+==> marhorse-rainy-d140c90 block 3 of 5  (Fri 16:11)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 3: casts 2400..4798 VIs after READY on the other lines (18), 5201 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 3] 343 jobs, 0 already done, 343 to run
+[FD block 3] shared run: machine scotts-m4, order down, 343 jobs in 49 blocks; other machines: desktop-4uutk80
+[FD block 3] block 49/49 (bottom up): 7 jobs
+[FD block 3] block 49 done; 7 jobs here in 1 min (9.7 jobs/min)
+[FD block 3] pool: 2 Mac(s), 6.4 jobs/min (desktop-4uutk80 2.9, scotts-m4 3.5) - 329 jobs left in this list: 52 min for the pool
+[FD block 3] campaign so far: 7 of 8 lists opened, 452 jobs left in them = 71 min; 1 lists not opened yet (about 2.1 h more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 48/49 (bottom up): 7 jobs
+[FD block 3] block 48 done; 14 jobs here in 2 min (7.9 jobs/min)
+[FD block 3] pool: 2 Mac(s), 11.0 jobs/min (desktop-4uutk80 4.0, scotts-m4 7.0) - 315 jobs left in this list: 29 min for the pool
+[FD block 3] campaign so far: 7 of 8 lists opened, 438 jobs left in them = 40 min; 1 lists not opened yet (about 75 min more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 47/49 (bottom up): 7 jobs
+[FD block 3] block 47 done; 21 jobs here in 3 min (7.2 jobs/min)
+[FD block 3] pool: 2 Mac(s), 11.8 jobs/min (desktop-4uutk80 4.5, scotts-m4 7.2) - 301 jobs left in this list: 26 min for the pool
+[FD block 3] campaign so far: 7 of 8 lists opened, 411 jobs left in them = 35 min; 1 lists not opened yet (about 70 min more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 46/49 (bottom up): 7 jobs
+[FD block 3] block 46 done; 28 jobs here in 4 min (6.3 jobs/min)
+[FD block 3] pool: 2 Mac(s), 10.8 jobs/min (desktop-4uutk80 4.5, scotts-m4 6.3) - 287 jobs left in this list: 27 min for the pool
+[FD block 3] campaign so far: 7 of 8 lists opened, 384 jobs left in them = 36 min; 1 lists not opened yet (about 76 min more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 45/49 (bottom up): 7 jobs
+[FD block 3] block 45 done; 35 jobs here in 6 min (5.7 jobs/min)
+[FD block 3] pool: 2 Mac(s), 10.2 jobs/min (desktop-4uutk80 4.5, scotts-m4 5.7) - 273 jobs left in this list: 27 min for the pool
+[FD block 3] campaign so far: 7 of 8 lists opened, 357 jobs left in them = 35 min; 1 lists not opened yet (about 81 min more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 44/49 (bottom up): 7 jobs
+[FD block 3] block 44 done; 42 jobs here in 8 min (5.4 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.8 jobs/min (desktop-4uutk80 4.4, scotts-m4 5.4) - 259 jobs left in this list: 26 min for the pool
+[FD block 3] campaign so far: 7 of 8 lists opened, 330 jobs left in them = 34 min; 1 lists not opened yet (about 84 min more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 43/49 (bottom up): 7 jobs
+[FD block 3] block 43 done; 49 jobs here in 9 min (5.2 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.6 jobs/min (desktop-4uutk80 4.4, scotts-m4 5.2) - 245 jobs left in this list: 26 min for the pool
+[FD block 3] campaign so far: 7 of 8 lists opened, 303 jobs left in them = 32 min; 1 lists not opened yet (about 86 min more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 42/49 (bottom up): 7 jobs
+[FD block 3] block 42 done; 56 jobs here in 11 min (5.0 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.4 jobs/min (desktop-4uutk80 4.4, scotts-m4 5.0) - 231 jobs left in this list: 25 min for the pool
+[FD block 3] campaign so far: 7 of 8 lists opened, 263 jobs left in them = 28 min; 1 lists not opened yet (about 88 min more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 41/49 (bottom up): 7 jobs
+[FD block 3] block 41 done; 63 jobs here in 13 min (5.0 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.3 jobs/min (desktop-4uutk80 4.4, scotts-m4 5.0) - 217 jobs left in this list: 23 min for the pool
+[FD block 3] campaign so far: 7 of 8 lists opened, 236 jobs left in them = 25 min; 1 lists not opened yet (about 88 min more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 40/49 (bottom up): 7 jobs
+[FD block 3] block 40 done; 70 jobs here in 14 min (4.9 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.2 jobs/min (desktop-4uutk80 4.4, scotts-m4 4.9) - 203 jobs left in this list: 22 min for the pool
+[FD block 3] campaign so far: 7 of 8 lists opened, 203 jobs left in them = 22 min; 1 lists not opened yet (about 89 min more if they are like the opened ones) at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 39/49 (bottom up): 7 jobs
+[FD block 3] block 39 done; 77 jobs here in 16 min (4.8 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.1 jobs/min (desktop-4uutk80 4.3, scotts-m4 4.8) - 189 jobs left in this list: 21 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1962 jobs left in them = 3.6 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 38/49 (bottom up): 7 jobs
+[FD block 3] block 38 done; 84 jobs here in 17 min (5.0 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.2 jobs/min (desktop-4uutk80 4.2, scotts-m4 5.0) - 182 jobs left in this list: 20 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1955 jobs left in them = 3.5 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 37/49 (bottom up): 7 jobs
+[FD block 3] block 37 done; 91 jobs here in 18 min (5.1 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.4 jobs/min (desktop-4uutk80 4.3, scotts-m4 5.1) - 168 jobs left in this list: 18 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1941 jobs left in them = 3.4 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 36/49 (bottom up): 7 jobs
+[FD block 3] block 36 done; 98 jobs here in 19 min (5.2 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.3 jobs/min (desktop-4uutk80 4.1, scotts-m4 5.2) - 161 jobs left in this list: 17 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1898 jobs left in them = 3.4 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 35/49 (bottom up): 7 jobs
+[FD block 3] block 35 done; 105 jobs here in 20 min (5.1 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.3 jobs/min (desktop-4uutk80 4.1, scotts-m4 5.1) - 147 jobs left in this list: 16 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1884 jobs left in them = 3.4 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 34/49 (bottom up): 7 jobs
+[FD block 3] block 34 done; 112 jobs here in 22 min (5.2 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.1 jobs/min (desktop-4uutk80 3.9, scotts-m4 5.2) - 140 jobs left in this list: 15 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1841 jobs left in them = 3.4 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 33/49 (bottom up): 7 jobs
+[FD block 3] block 33 done; 119 jobs here in 23 min (5.3 jobs/min)
+[FD block 3] pool: 2 Mac(s), 9.3 jobs/min (desktop-4uutk80 4.0, scotts-m4 5.3) - 126 jobs left in this list: 14 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1827 jobs left in them = 3.3 h at the pool's present speed (rough: jobs differ in length between lists)
+  [parts 16:35:47] 12 result files on GitHub (branch lab-parts-scotts-m4)
+[FD block 3] block 16/49 (bottom up): 7 jobs
+[FD block 3] block 16 done; 126 jobs here in 26 min (4.9 jobs/min)
+[FD block 3] pool: 2 Mac(s), 8.8 jobs/min (desktop-4uutk80 3.8, scotts-m4 4.9) - 112 jobs left in this list: 13 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1777 jobs left in them = 3.4 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 13/49 (bottom up): 7 jobs
+[FD block 3] block 13 done; 133 jobs here in 29 min (4.6 jobs/min)
+[FD block 3] pool: 2 Mac(s), 8.8 jobs/min (desktop-4uutk80 4.2, scotts-m4 4.6) - 84 jobs left in this list: 10 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1713 jobs left in them = 3.3 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 11/49 (bottom up): 7 jobs
+[FD block 3] block 11 done; 140 jobs here in 31 min (4.6 jobs/min)
+[FD block 3] pool: 2 Mac(s), 8.6 jobs/min (desktop-4uutk80 4.0, scotts-m4 4.7) - 70 jobs left in this list: 8 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1663 jobs left in them = 3.2 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 9/49 (bottom up): 7 jobs
+[FD block 3] block 9 done; 147 jobs here in 32 min (4.5 jobs/min)
+[FD block 3] pool: 2 Mac(s), 8.4 jobs/min (desktop-4uutk80 4.0, scotts-m4 4.4) - 63 jobs left in this list: 8 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1656 jobs left in them = 3.3 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 7/49 (bottom up): 7 jobs
+[FD block 3] block 7 done; 154 jobs here in 35 min (4.4 jobs/min)
+[FD block 3] pool: 2 Mac(s), 7.9 jobs/min (desktop-4uutk80 3.7, scotts-m4 4.2) - 42 jobs left in this list: 5 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1599 jobs left in them = 3.4 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 5/49 (bottom up): 7 jobs
+[FD block 3] block 5 done; 161 jobs here in 37 min (4.4 jobs/min)
+[FD block 3] pool: 2 Mac(s), 7.7 jobs/min (desktop-4uutk80 3.5, scotts-m4 4.2) - 35 jobs left in this list: 5 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1556 jobs left in them = 3.4 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 3/49 (bottom up): 7 jobs
+[FD block 3] block 3 done; 168 jobs here in 39 min (4.3 jobs/min)
+[FD block 3] pool: 2 Mac(s), 7.9 jobs/min (desktop-4uutk80 3.7, scotts-m4 4.2) - 14 jobs left in this list: 2 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1499 jobs left in them = 3.1 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] block 1/49 (bottom up): 7 jobs
+[FD block 3] block 1 done; 175 jobs here in 41 min (4.3 jobs/min)
+[FD block 3] pool: 2 Mac(s), 7.5 jobs/min (desktop-4uutk80 3.3, scotts-m4 4.2) - 7 jobs left in this list: 1 min for the pool
+[FD block 3] campaign so far: 8 of 8 lists opened, 1492 jobs left in them = 3.3 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 3] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[FD block 3] every block is done (175 jobs run here this time)
+  block 3 done in 42 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 3 | 40.1 – 80.2 · other | 18 | 5201 | 2707 | 0 | 2515 / 0 / 192 | 2707 / 0 / 0 | 5.8 | 78 (2.9%) |
+| 4 | 80.2 – 90.3 · heavy | 41 | 8401 | 3938 | 0 | 3938 / 0 / 0 | 3938 / 0 / 0 | 3.7 | 146 (3.7%) |
+| 5 | 80.2 – 90.3 · other | 8 | 1216 | 604 | 0 | 604 / 0 / 0 | 604 / 0 / 0 | 3.6 | 48 (7.9%) |
+
+  this Mac's part of block 3: /Users/thomaswollin/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d140c90-b03@scotts-m4.zip
+
+==> marhorse-rainy-d140c90 block 2 of 5  (Fri 16:53)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 2: casts 2400..4798 VIs after READY on the heavy lines (50), 36005 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 2] 1773 jobs, 0 already done, 1773 to run
+[FD block 2] shared run: machine scotts-m4, order down, 1773 jobs in 50 blocks; other machines: thomass-mac-mini
+[FD block 2] block 50/50 (bottom up): 9 jobs
+[FD block 2] block 50 done; 9 jobs here in 1 min (6.3 jobs/min)
+[FD block 2] pool: 3 Mac(s), 15.4 jobs/min (desktop-4uutk80 0.0, scotts-m4 4.5, thomass-mac-mini 10.9) - 1440 jobs left in this list: 1.6 h for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 1440 jobs left in them = 1.6 h at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 49/50 (bottom up): 36 jobs
+[FD block 2] block 49 done; 45 jobs here in 5 min (8.2 jobs/min)
+[FD block 2] pool: 3 Mac(s), 20.2 jobs/min (desktop-4uutk80 0.0, scotts-m4 8.2, thomass-mac-mini 12.0) - 1332 jobs left in this list: 66 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 1332 jobs left in them = 66 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 48/50 (bottom up): 36 jobs
+[FD block 2] block 48 done; 81 jobs here in 7 min (11.1 jobs/min)
+[FD block 2] pool: 3 Mac(s), 27.9 jobs/min (desktop-4uutk80 4.9, scotts-m4 11.1, thomass-mac-mini 12.0) - 1260 jobs left in this list: 45 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 1260 jobs left in them = 45 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 47/50 (bottom up): 36 jobs
+[FD block 2] block 47 done; 117 jobs here in 11 min (10.3 jobs/min)
+[FD block 2] pool: 3 Mac(s), 25.5 jobs/min (desktop-4uutk80 3.2, scotts-m4 10.3, thomass-mac-mini 12.0) - 1152 jobs left in this list: 45 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 1152 jobs left in them = 45 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 46/50 (bottom up): 36 jobs
+  [parts 17:05:57] 13 result files on GitHub (branch lab-parts-scotts-m4)
+[FD block 2] block 46 done; 153 jobs here in 14 min (10.6 jobs/min)
+[FD block 2] pool: 3 Mac(s), 27.6 jobs/min (desktop-4uutk80 5.0, scotts-m4 10.6, thomass-mac-mini 12.0) - 1044 jobs left in this list: 38 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 1044 jobs left in them = 38 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 45/50 (bottom up): 36 jobs
+[FD block 2] block 45 done; 189 jobs here in 17 min (11.2 jobs/min)
+[FD block 2] pool: 3 Mac(s), 28.6 jobs/min (desktop-4uutk80 4.2, scotts-m4 11.2, thomass-mac-mini 13.2) - 972 jobs left in this list: 34 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 972 jobs left in them = 34 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 44/50 (bottom up): 36 jobs
+[FD block 2] block 44 done; 225 jobs here in 21 min (10.5 jobs/min)
+[FD block 2] pool: 3 Mac(s), 29.2 jobs/min (desktop-4uutk80 6.7, scotts-m4 10.5, thomass-mac-mini 12.0) - 828 jobs left in this list: 28 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 828 jobs left in them = 28 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 43/50 (bottom up): 36 jobs
+[FD block 2] block 43 done; 261 jobs here in 25 min (10.3 jobs/min)
+[FD block 2] pool: 3 Mac(s), 28.0 jobs/min (desktop-4uutk80 5.7, scotts-m4 10.3, thomass-mac-mini 12.0) - 756 jobs left in this list: 27 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 756 jobs left in them = 27 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 42/50 (bottom up): 36 jobs
+[FD block 2] block 42 done; 297 jobs here in 29 min (10.1 jobs/min)
+[FD block 2] pool: 3 Mac(s), 29.4 jobs/min (desktop-4uutk80 6.1, scotts-m4 10.1, thomass-mac-mini 13.2) - 612 jobs left in this list: 21 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 612 jobs left in them = 21 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 41/50 (bottom up): 36 jobs
+[FD block 2] block 41 done; 333 jobs here in 34 min (9.9 jobs/min)
+[FD block 2] pool: 3 Mac(s), 30.0 jobs/min (desktop-4uutk80 7.2, scotts-m4 10.8, thomass-mac-mini 12.0) - 504 jobs left in this list: 17 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 504 jobs left in them = 17 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 40/50 (bottom up): 36 jobs
+[FD block 2] block 40 done; 369 jobs here in 38 min (9.7 jobs/min)
+[FD block 2] pool: 3 Mac(s), 27.6 jobs/min (desktop-4uutk80 6.0, scotts-m4 9.6, thomass-mac-mini 12.0) - 396 jobs left in this list: 14 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 396 jobs left in them = 14 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 39/50 (bottom up): 36 jobs
+[FD block 2] block 39 done; 405 jobs here in 42 min (9.7 jobs/min)
+[FD block 2] pool: 3 Mac(s), 28.8 jobs/min (desktop-4uutk80 6.0, scotts-m4 9.6, thomass-mac-mini 13.2) - 252 jobs left in this list: 9 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 252 jobs left in them = 9 min at the pool's present speed (rough: jobs differ in length between lists)
+  [parts 17:36:09] 13 result files on GitHub (branch lab-parts-scotts-m4)
+[FD block 2] block 38/50 (bottom up): 36 jobs
+[FD block 2] block 38 done; 441 jobs here in 46 min (9.6 jobs/min)
+[FD block 2] pool: 3 Mac(s), 30.0 jobs/min (desktop-4uutk80 7.2, scotts-m4 9.6, thomass-mac-mini 13.2) - 144 jobs left in this list: 5 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 144 jobs left in them = 5 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] block 37/50 (bottom up): 36 jobs
+[FD block 2] block 37 done; 477 jobs here in 50 min (9.5 jobs/min)
+[FD block 2] pool: 3 Mac(s), 27.6 jobs/min (desktop-4uutk80 6.0, scotts-m4 9.6, thomass-mac-mini 12.0) - 36 jobs left in this list: 1 min for the pool
+[FD block 2] campaign so far: 8 of 8 lists opened, 36 jobs left in them = 1 min at the pool's present speed (rough: jobs differ in length between lists)
+[FD block 2] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[FD block 2] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[FD block 2] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+[FD block 2] every block is done (477 jobs run here this time)
+  block 2 done in 53 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 2 | 40.1 – 80.2 · heavy | 50 | 36005 | 9746 | 0 | 9368 / 0 / 378 | 9746 / 0 / 0 | 6.3 | 333 (3.4%) |
+| 3 | 40.1 – 80.2 · other | 18 | 5201 | 2707 | 0 | 2515 / 0 / 192 | 2707 / 0 / 0 | 5.8 | 78 (2.9%) |
+| 4 | 80.2 – 90.3 · heavy | 41 | 8401 | 3938 | 0 | 3938 / 0 / 0 | 3938 / 0 / 0 | 3.7 | 146 (3.7%) |
+| 5 | 80.2 – 90.3 · other | 8 | 1216 | 604 | 0 | 604 / 0 / 0 | 604 / 0 / 0 | 3.6 | 48 (7.9%) |
+
+  this Mac's part of block 2: /Users/thomaswollin/Documents/hm64/runs/hm64-fullday-marhorse-rainy-d140c90-b02@scotts-m4.zip
+
+==> marhorse-rainy-d90: casts to 40 s, everything to 90 s after READY, blocks 0-1  (Fri 17:47)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  lines of results/dogwatch/married-horse-lineup2-rainy-8cbe43a5  save /work/data/saves_dogspots/married-horse-lineup2-rainy-8cbe43a5.SaveRAM  workers 13  dog at [-197.27, 222.24]
+  followed to 5398 VIs after READY
+[FD1 lines] 68 jobs, 0 already done, 68 to run
+[FD1 lines] 5/68  190.0 jobs/min  eta 0 min
+[FD1 lines] 10/68  318.5 jobs/min  eta 0 min
+[FD1 lines] 15/68  317.8 jobs/min  eta 0 min
+[FD1 lines] 20/68  381.6 jobs/min  eta 0 min
+[FD1 lines] 25/68  403.4 jobs/min  eta 0 min
+[FD1 lines] 30/68  408.1 jobs/min  eta 0 min
+[FD1 lines] 35/68  411.3 jobs/min  eta 0 min
+[FD1 lines] 40/68  420.3 jobs/min  eta 0 min
+[FD1 lines] 45/68  448.2 jobs/min  eta 0 min
+[FD1 lines] 50/68  445.8 jobs/min  eta 0 min
+[FD1 lines] 55/68  451.4 jobs/min  eta 0 min
+[FD1 lines] 60/68  463.4 jobs/min  eta 0 min
+[FD1 lines] 65/68  475.8 jobs/min  eta 0 min
+[FD1 lines] 68/68  485.1 jobs/min  eta 0 min
+[FD1] 68 of 68 lines ran as planned; hashes against the dog-watch run: 67660 equal, 0 different; ended: [('limit', 5398)]
+lines followed to 5398 VIs (90 s) after READY; 50 heavy lines (90.6% of the route weight), 18 others; 53567 casts in 2 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 50):  44898 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 18):   8669 casts
+
+==> marhorse-rainy-d90 block 1 of 1  (Fri 17:47)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 1: casts 6..2398 VIs after READY on the other lines (18), 8669 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 1] 643 jobs, 0 already done, 643 to run
+[FD block 1] shared run: machine scotts-m4, order down, 643 jobs in 50 blocks; other machines: desktop-4uutk80, thomass-mac-mini
+[FD block 1] every block is done (0 jobs run here this time)
+  block 1 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-rainy-d90 block 0 of 1  (Fri 17:47)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 0: casts 6..2398 VIs after READY on the heavy lines (50), 44898 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 0] 2251 jobs, 0 already done, 2251 to run
+[FD block 0] shared run: machine scotts-m4, order down, 2251 jobs in 49 blocks; other machines: desktop-4uutk80, thomass-mac-mini
+[FD block 0] every block is done (0 jobs run here this time)
+  block 0 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> 7/7 [1: married-horse-lineup2-rainy-8cbe43a5] the zips to send
+  married-horse-lineup2-rainy-8cbe43a5 done: its zips are in /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441
+
+==> 4/7 [2: married-horse-lineup2-sunny-0f33f322] dog-watch phase 1: route recipe + dog lines + what the dog shows after READY (Fri 17:47)
+  done before
+
+==> 5/7 [2: married-horse-lineup2-sunny-0f33f322] dog-watch phase 3: Lucky Timer cast tables (every game frame 0.1-40 s, every bite to 90 s) (Fri 17:47)
+  done before
+  zip      /Users/thomaswollin/Documents/hm64/runs/hm64-dogwatch-married-horse-lineup2-sunny-0f33f322.zip
+
+==> 6/7 [2: married-horse-lineup2-sunny-0f33f322] dog after the cast: 3 windows (Fri 17:47)
+
+==> marhorse-sunny-d170c120: casts to 120 s, everything to 170 s after READY, blocks 4-5  (Fri 17:47)
+  lines: done before
+lines followed to 10198 VIs (170 s) after READY; 57 heavy lines (90.0% of the route weight), 99 others; 87727 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 57):  27674 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 99):  19072 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 57):  15502 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 99):   6785 casts
+  block  4: casts  80.2-120.3 s after READY, heavy lines ( 57):  12800 casts  (2250 done)
+  block  5: casts  80.2-120.3 s after READY, other lines ( 99):   5894 casts  (2564 done)
+
+==> marhorse-sunny-d170c120 block 5 of 5  (done before: only telling the other Macs)  (Fri 17:47)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..7198 VIs after READY on the other lines (99), 5894 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 5] 570 jobs, 294 already done, 276 to run
+[FD block 5] shared run: machine scotts-m4, order down, 570 jobs in 48 blocks; other machines: desktop-4uutk80, thomass-mac-mini
+[FD block 5] every block is done (0 jobs run here this time)
+  block 5 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 57 | 12800 | 2250 | 0 | 2103 / 0 / 147 | 2250 / 0 / 0 | 4.8 | 0 (0.0%) |
+| 5 | 80.2 – 120.3 · other | 99 | 5894 | 2564 | 0 | 1420 / 0 / 1144 | 2564 / 0 / 0 | 4.7 | 0 (0.0%) |
+
+  this Mac's part of block 5: /Users/thomaswollin/Documents/hm64/runs/hm64-fullday-marhorse-sunny-d170c120-b05@scotts-m4.zip
+
+==> marhorse-sunny-d170c120 block 4 of 5  (done before: only telling the other Macs)  (Fri 17:47)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..7198 VIs after READY on the heavy lines (57), 12800 casts, each held to 10198 VIs after READY (and to its 2nd bite)
+[FD block 4] 1083 jobs, 115 already done, 968 to run
+[FD block 4] shared run: machine scotts-m4, order down, 1083 jobs in 50 blocks; other machines: desktop-4uutk80, thomass-mac-mini
+[FD block 4] every block is done (0 jobs run here this time)
+  block 4 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+| 4 | 80.2 – 120.3 · heavy | 57 | 12800 | 2250 | 0 | 2103 / 0 / 147 | 2250 / 0 / 0 | 4.8 | 0 (0.0%) |
+| 5 | 80.2 – 120.3 · other | 99 | 5894 | 2564 | 0 | 1420 / 0 / 1144 | 2564 / 0 / 0 | 4.7 | 0 (0.0%) |
+
+  this Mac's part of block 4: /Users/thomaswollin/Documents/hm64/runs/hm64-fullday-marhorse-sunny-d170c120-b04@scotts-m4.zip
+
+==> marhorse-sunny-d140c90: casts to 90 s, everything to 140 s after READY, blocks 2-5  (Fri 17:47)
+  lines: done before
+lines followed to 8398 VIs (140 s) after READY; 57 heavy lines (90.0% of the route weight), 99 others; 72933 casts in 6 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 57):  27674 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 99):  19072 casts
+  block  2: casts  40.1- 80.2 s after READY, heavy lines ( 57):  15502 casts
+  block  3: casts  40.1- 80.2 s after READY, other lines ( 99):   6785 casts
+  block  4: casts  80.2- 90.3 s after READY, heavy lines ( 16):   2921 casts
+  block  5: casts  80.2- 90.3 s after READY, other lines ( 10):    979 casts
+
+==> marhorse-sunny-d140c90 block 5 of 5  (done before: only telling the other Macs)  (Fri 17:47)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 5: casts 4800..5398 VIs after READY on the other lines (10), 979 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 5] 46 jobs, 0 already done, 46 to run
+[FD block 5] shared run: machine scotts-m4, order down, 46 jobs in 46 blocks; other machines: desktop-4uutk80, thomass-mac-mini
+[FD block 5] every block is done (0 jobs run here this time)
+  block 5 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d140c90 block 4 of 5  (done before: only telling the other Macs)  (Fri 17:47)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 4: casts 4800..5398 VIs after READY on the heavy lines (16), 2921 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 4] 129 jobs, 0 already done, 129 to run
+[FD block 4] shared run: machine scotts-m4, order down, 129 jobs in 43 blocks; other machines: desktop-4uutk80, thomass-mac-mini
+[FD block 4] every block is done (0 jobs run here this time)
+  block 4 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d140c90 block 3 of 5  (done before: only telling the other Macs)  (Fri 17:47)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 3: casts 2400..4798 VIs after READY on the other lines (99), 6785 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 3] 502 jobs, 0 already done, 502 to run
+[FD block 3] shared run: machine scotts-m4, order down, 502 jobs in 46 blocks; other machines: desktop-4uutk80, thomass-mac-mini
+[FD block 3] every block is done (0 jobs run here this time)
+  block 3 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d140c90 block 2 of 5  (done before: only telling the other Macs)  (Fri 17:47)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 2: casts 2400..4798 VIs after READY on the heavy lines (57), 15502 casts, each held to 8398 VIs after READY (and to its 2nd bite)
+[FD block 2] 898 jobs, 0 already done, 898 to run
+[FD block 2] shared run: machine scotts-m4, order down, 898 jobs in 50 blocks; other machines: desktop-4uutk80, thomass-mac-mini
+[FD block 2] every block is done (0 jobs run here this time)
+  block 2 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d90: casts to 40 s, everything to 90 s after READY, blocks 0-1  (Fri 17:47)
+  lines: done before
+lines followed to 5398 VIs (90 s) after READY; 57 heavy lines (90.0% of the route weight), 99 others; 46746 casts in 2 blocks
+  block  0: casts   0.1- 40.1 s after READY, heavy lines ( 57):  27674 casts
+  block  1: casts   0.1- 40.1 s after READY, other lines ( 99):  19072 casts
+
+==> marhorse-sunny-d90 block 1 of 1  (done before: only telling the other Macs)  (Fri 17:48)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 1: casts 6..2398 VIs after READY on the other lines (99), 19072 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 1] 3060 jobs, 0 already done, 3060 to run
+[FD block 1] shared run: machine scotts-m4, order down, 3060 jobs in 50 blocks; other machines: desktop-4uutk80, thomass-mac-mini
+[FD block 1] every block is done (0 jobs run here this time)
+  block 1 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> marhorse-sunny-d90 block 0 of 1  (done before: only telling the other Macs)  (Fri 17:48)
+fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by default)  block 0: casts 6..2398 VIs after READY on the heavy lines (57), 27674 casts, each held to 5398 VIs after READY (and to its 2nd bite)
+[FD block 0] 2303 jobs, 0 already done, 2303 to run
+[FD block 0] shared run: machine scotts-m4, order down, 2303 jobs in 49 blocks; other machines: desktop-4uutk80, thomass-mac-mini
+[FD block 0] every block is done (0 jobs run here this time)
+  block 0 done in 0 min
+| block | cast frames (s after READY) | lines | casts planned | done | job errors | hash check ok / failed / none | ended: as planned / beach check / other | bites per cast | casts with a Nut on some bite |
+|---|---|---|---|---|---|---|---|---|---|
+
+
+==> 7/7 [2: married-horse-lineup2-sunny-0f33f322] the zips to send
+  married-horse-lineup2-sunny-0f33f322 done: its zips are in /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441
+
+------------------------------------------------------------------------------------------------
+ MARRIED TABLES DONE   [rainy sunny ]   (313 min in all)
+------------------------------------------------------------------------------------------------
+  married-horse-lineup2-rainy-8cbe43a5:
+    # Dog-watch report: married-horse-lineup2-rainy-8cbe43a5
+    
+    68 dog lines with traces (40 s after READY), 613 (line, READY offset) variants; route-weighted. Clock = the dock-end tap ±3 VI; logs from 1.0 s after READY; runner: changes >= 12 VI, reaction 10-25 VI, 15% missed. Odds: cast >= 2 s after the window, ±150 ms.
+    
+    ## What the dog does while you wait (after READY, route-weighted)
+    
+    - dog's tile on the visibility grid (it animates only then): 99% of the time
+    - visible changes per minute: 61; changes lasting >= 12 VI: 88%
+    - facing on screen (share of the wait): SW 40%, NE 17%, SE 14%, W 9%, NW 9%, E 6%, N 5%; animations readable (dog faces S / N / NE / E / SE): 42%
+    - the dog moves (units, max over the trace): median 0.0
+    - decision (actionState change) -> next visible change: median 0 VI (p10 0, p90 30); animation set -> displayed: median 0 VI
+    
+  married-horse-lineup2-sunny-0f33f322:
+    # Dog-watch report: married-horse-lineup2-sunny-0f33f322
+    
+    156 dog lines with traces (40 s after READY), 1959 (line, READY offset) variants; route-weighted. Clock = the dock-end tap ±3 VI; logs from 1.0 s after READY; runner: changes >= 12 VI, reaction 10-25 VI, 15% missed. Odds: cast >= 2 s after the window, ±150 ms.
+    
+    ## What the dog does while you wait (after READY, route-weighted)
+    
+    - dog's tile on the visibility grid (it animates only then): 100% of the time
+    - visible changes per minute: 59; changes lasting >= 12 VI: 90%
+    - facing on screen (share of the wait): SW 36%, NE 15%, E 15%, SE 14%, N 10%, NW 8%, W 2%; animations readable (dog faces S / N / NE / E / SE): 54%
+    - the dog moves (units, max over the trace): median 0.0
+    - decision (actionState change) -> next visible change: median 0 VI (p10 0, p90 30); animation set -> displayed: median 0 VI
+    
+
+  send these (no ROM / saves / savestates inside):
+    hm64-fullday-marhorse-rainy-d140c90@scotts-m4.zip               5.5 MB
+    hm64-fullday-marhorse-rainy-d170c120@scotts-m4.zip              6.6 MB
+    hm64-fullday-marhorse-rainy-d90@scotts-m4.zip                   1.9 MB
+    hm64-fullday-marhorse-sunny-d140c90@scotts-m4.zip               6.6 MB
+    hm64-fullday-marhorse-sunny-d170c120@scotts-m4.zip              8.5 MB
+    hm64-fullday-marhorse-sunny-d90@scotts-m4.zip                   4.2 MB
+    run-marhorse120-20261127-123441.log                             0.1 MB
+  folder: /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441
+  [parts 17:48:37] 14 result files on GitHub (branch lab-parts-scotts-m4)
+  [parts 17:48:37] ended
+  [coord 17:48:47] ended
+
+==> lab data 1/5  is a lab run going? (lab-data script 2026-11-27a)
+  no lab run is going
+
+==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+  push access: the release SSH key (/Users/thomaswollin/.ssh/hm64_github_ed25519)
+  pulled 1 commit(s) from GitHub
+  /Users/thomaswollin/Documents/hm64/lab-data (branch lab-data, GitHub has a8923c674f7724b79bc6058967976f03d28eb198)
+
+==> lab data 3/5  looking for results in /Users/thomaswollin/Documents/hm64/runs and /Users/thomaswollin/Downloads (table: built in; newest copy of each file)
+  + married-horse-rainy/hm64-dogwatch-married-horse-lineup2-rainy-8cbe43a5.zip (15 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-dogwatch-married-horse-lineup2-rainy-8cbe43a5.zip
+  + married-horse-sunny//Users/thomaswollin/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d90@scotts-m4.zip (4 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441/hm64-fullday-marhorse-sunny-d90@scotts-m4.zip
+  + married-horse-sunny//Users/thomaswollin/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d140c90@scotts-m4.zip (6 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441/hm64-fullday-marhorse-sunny-d140c90@scotts-m4.zip
+  + married-horse-sunny//Users/thomaswollin/Documents/hm64/lab-data/married-horse-sunny/hm64-fullday-marhorse-sunny-d170c120@scotts-m4.zip (8 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441/hm64-fullday-marhorse-sunny-d170c120@scotts-m4.zip
+  + married-horse-rainy/hm64-fullday-marhorse-rainy-d90@scotts-m4.zip (1 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441/hm64-fullday-marhorse-rainy-d90@scotts-m4.zip
+  + married-horse-rainy/hm64-fullday-marhorse-rainy-d140c90@scotts-m4.zip (5 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441/hm64-fullday-marhorse-rainy-d140c90@scotts-m4.zip
+  + married-horse-rainy/hm64-fullday-marhorse-rainy-d170c120@scotts-m4.zip (6 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441/hm64-fullday-marhorse-rainy-d170c120@scotts-m4.zip
