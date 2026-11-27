@@ -1,16 +1,16 @@
-=== thomass-mac-mini    reported 2026-11-27 17:32 EST    (pool script 2026-11-27c)
+=== thomass-mac-mini    reported 2026-11-27 17:42 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       NOT running (this machine takes nothing new from the queue)
 role:            main Mac (or a machine with no main set)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    to do
 next from the queue for this machine: married-horse
-newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 17:32)
-    | [FD block 2] campaign so far: 8 of 8 lists opened, 504 jobs left in them = 17 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [FD block 2] block 29 done; 792 jobs here in 64 min (12.3 jobs/min)
-    | [FD block 2] pool: 3 Mac(s), 30.0 jobs/min (desktop-4uutk80 7.2, scotts-m4 9.6, thomass-mac-mini 13.2) - 432 jobs left in this list: 14 min for the pool
-    | [FD block 2] campaign so far: 8 of 8 lists opened, 432 jobs left in them = 14 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [FD block 2] block 30 done; 828 jobs here in 66 min (12.6 jobs/min)
-    | [FD block 2] pool: 3 Mac(s), 28.8 jobs/min (desktop-4uutk80 6.0, scotts-m4 8.4, thomass-mac-mini 14.4) - 396 jobs left in this list: 14 min for the pool
-    | [FD block 2] campaign so far: 8 of 8 lists opened, 396 jobs left in them = 14 min at the pool's present speed (rough: jobs differ in length between lists)
+newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 17:42)
+    | [FD block 2] campaign so far: 8 of 8 lists opened, 180 jobs left in them = 6 min at the pool's present speed (rough: jobs differ in length between lists)
+    | [FD block 2] block 35 done; 936 jobs here in 75 min (12.5 jobs/min)
+    | [FD block 2] pool: 3 Mac(s), 31.2 jobs/min (desktop-4uutk80 8.4, scotts-m4 9.6, thomass-mac-mini 13.2) - 72 jobs left in this list: 2 min for the pool
+    | [FD block 2] campaign so far: 8 of 8 lists opened, 72 jobs left in them = 2 min at the pool's present speed (rough: jobs differ in length between lists)
+    | [FD block 2] 2 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [FD block 2] 2 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [FD block 2] 2 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
 
