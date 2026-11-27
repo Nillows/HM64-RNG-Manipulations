@@ -1,21 +1,21 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 12:38 EST by scotts-m4.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 12:39 EST by desktop-4uutk80.
 
-=== desktop-4uutk80    reported 2026-11-27 12:29 EST    (pool script 2026-11-27c)
+=== desktop-4uutk80    reported 2026-11-27 12:39 EST    (pool script 2026-11-27c)
 lab run going:   no
 work loop:       running (268107 bash)
 role:            helper (fetches from hm64-main)
 queue, as this machine sees it:
     married-horse (2026-11-27b)    started; part of it waits for the main Mac
 next from the queue for this machine: married-horse
-newest log: pool-work.log   (last written 12:17)
-    | ==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
-    | ==> lab data 3/5  looking for results in /home/boot_camper/Documents/hm64/runs and /home/boot_camper/Downloads (table: built in; newest copy of each file)
-    | ==> lab data 4/5  README.md + MANIFEST.txt
+newest log: pool-work.log   (last written 12:37)
     | ==> lab data 5/5  commit and push to GitHub (branch lab-data only)
     | LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at a8923c6.
     |   campaign married-horse: part of it is waiting for the main Mac
     | ==> waiting for [ married-horse]: trying again in 20 min  (Fri 12:17)
+    | ==> work pass 6: campaign married-horse
+    | ==> sourcefiles: hm64-main -> this machine (only files this machine does not have)
+    | ==> what campaign married-horse needs: hm64-main -> this machine
 
 === scotts-m4    reported 2026-11-27 12:38 EST    (pool script 2026-11-27c)
 lab run going:   YES
