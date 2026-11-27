@@ -1,4 +1,4 @@
-=== desktop-4uutk80    reported 2026-11-27 18:41 EST    (pool script 2026-11-27c)
+=== desktop-4uutk80    reported 2026-11-27 18:51 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (633510 bash)
 role:            helper (fetches from hm64-main)
@@ -6,12 +6,12 @@ queue, as this machine sees it:
     married-horse (2026-11-27c)    finished here 2026-11-27 17:55
     zones-married-horse (2026-11-27a)    to do
 next from the queue for this machine: zones-married-horse
-newest log: pool-work2.log   (last written 18:39)
-    | [GA gate, casts] 260/278  104.4 jobs/min  eta 0 min
-    | [GA gate, casts] 270/278  103.7 jobs/min  eta 0 min
-    | [GA gate, casts] 278/278  104.0 jobs/min  eta 0 min
+newest log: pool-work2.log   (last written 18:50)
     | ==> 4/5 the casts that can differ (part A), sunny first
     | [GA] block 15 done; 91 jobs here in 12 min (7.7 jobs/min)
     | [GA] pool: 3 Mac(s), 51.0 jobs/min (desktop-4uutk80 7.7, scotts-m4 20.4, thomass-mac-mini 22.9) - 1638 jobs left in this list: 32 min for the pool
     | [GA] campaign so far: 1 of 1 lists opened, 1638 jobs left in them = 32 min at the pool's present speed (rough: jobs differ in length between lists)
+    | [GA] block 16 done; 182 jobs here in 24 min (7.7 jobs/min)
+    | [GA] pool: 3 Mac(s), 50.5 jobs/min (desktop-4uutk80 7.7, scotts-m4 21.5, thomass-mac-mini 21.2) - 1092 jobs left in this list: 22 min for the pool
+    | [GA] campaign so far: 1 of 1 lists opened, 1092 jobs left in them = 22 min at the pool's present speed (rough: jobs differ in length between lists)
 
