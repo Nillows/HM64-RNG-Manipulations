@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
-<title>Guide · HM64 Power Nut Tool v32.26</title>
+<title>Guide · HM64 Power Nut Tool v32.27</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <style>
 :root{--bg:#0d1720;--panel:#13222f;--line:#2b3f4f;--ink:#dce6ec;--mut:#8ea3b2;--acc:#6fb7ff;--ok:#5fd38d;--warn:#f0b35a;--gold:#e7c14a}
@@ -43,7 +43,7 @@ footer{margin-top:40px;border-top:1px solid var(--line);padding-top:10px}
 </script>
 <nav class="top"><a href="index.html">⌂ Hub</a><span class="here">Guide</span><a class="nw" data-keep href="not-working.html">Not working?</a><a data-keep href="how-it-works.html">How it works</a><a href="settings.html">Settings</a><a href="problem.html">The problem</a><a href="deck.html">The deck</a></nav>
 <div class="wrap">
-<h1>Guide <span class="mut small">HM64 Power Nut Tool v32.26</span></h1>
+<h1>Guide <span class="mut small">HM64 Power Nut Tool v32.27</span></h1>
 <div class="mut">How to set up your game file and walk the route to the end of the pier. Every page of the tool (Lucky Timer,
 Casting tables, Dog practice) assumes this setup and this route. Something wrong? <a class="nw" data-keep href="not-working.html">Not working?</a>
 How the tool finds your cast: <a data-keep href="how-it-works.html">How it works</a>.</div>
@@ -128,14 +128,14 @@ so check the door every attempt.</p>
  turn"). Then <b>hug the back wall</b> going down-left. Turned a little late and Jack drifts off the wall? Press up a moment and carry
  on: it costs up to half a second, and the tables cover it (the <i>Small fix</i> and <i>Big fix</i> presets).</li>
 <li><b>Second cut, down-right, onto the pier:</b> anywhere across the pier's width. Where you cut decides where Jack stops at the
- end: <b>Early</b> = near edge, <b>Middle</b>, <b>Late</b> = far edge; all are in the tables. Cut outside the pier's window (too
+ end: <b>North</b> = the edge nearest the beach (the cut in the first 3 game frames it is possible), <b>Middle</b> (frames 4–8), <b>South</b> = far edge (frames 9–11); each has its own table. Cut outside the pier's window (too
  early or too late) and Jack does not make it onto the pier: that attempt is not in the tables, restart.</li>
 <li><b>Hold down-right</b> until Jack stops at the water at the end of the pier, facing the sea. This moment is <b>READY</b>.</li>
 </ol>
 <figure><img src="media/beach.gif" width="400" loading="lazy" alt="The beach zigzag to READY"><figcaption>Keep ↘ through the fade-in, ↙ the moment Jack clears the small wall, slide down the back wall, ↘ onto the pier at the bottom of the wall, and hold it until Jack stops: <b>READY</b>. The tables allow your first step up to <b>half a second</b> late; the cut onto the pier has a window of about <b>a third of a second</b> (11 game frames).</figcaption></figure>
 <div class="two">
 <figure><img src="media/dog_wake.png" loading="lazy" alt="The moment the dog wakes"><figcaption><b>The moment the dog wakes:</b> when Jack reaches the bottom of the back wall. Everything up to here decides your dog line, so fix a drift straight away: a fix only counts until here. After it, nothing Jack does changes the dog; the cut onto the pier only changes when you reach READY, and the tables cover that.</figcaption></figure>
-<figure><img src="media/pier_cuts.png" loading="lazy" alt="Where Jack stops: Early, Middle, Late"><figcaption>Where the cut onto the pier leaves Jack: <b>Early</b> = near (upper) edge, <b>Middle</b>, <b>Late</b> = far (lower) edge, by the dog. Pick yours under <i>2nd cut</i> in the Lucky plan if you know it, or leave <i>Any</i>.</figcaption></figure>
+<figure><img src="media/pier_cuts.png" loading="lazy" alt="Where Jack stops: Early, Middle, Late"><figcaption>Where the cut onto the pier leaves Jack (the picture's labels are older: its Early is the near, upper edge and its Late the far, lower edge, by the dog; the tables now go by the three camera zones <b>North</b> / <b>Middle</b> / <b>South</b>, and North is only the first part of the picture's Early). Pick yours under <i>2nd cut</i> in the Lucky plan if you know it, or leave <i>Any</i>.</figcaption></figure>
 </div>
 
 <h3 id="space">3.1 Space at the end of the pier</h3>
@@ -158,6 +158,17 @@ have cast; fishing keeps him awake.</p>
 106 s needs a third push of the stick at about 100 s). Their <b>Wide windows</b> tab lists each line's runs of 3 or more frames in a
 row with the Nut on one bite, and the Lucky Timer's freestyle gives every bite its own colour — green 1st, gold 2nd,
 purple 3rd, red 4th, orange 5th, blue 6th — with the bite number on the bars of bite 3 and later.</p>
+<p><b>Sunny mornings: the same three zones (v32.27).</b> The end of the pier has three camera zones, set by your <b>2nd cut</b>:
+<b>North</b> = the cut in the first 3 game frames it is possible, <b>Middle</b> = frames 4–8, <b>South</b> = frames 9–11. A dog that walks
+off the camera's grid stops drawing random numbers, so a cast can catch something else from another zone. On a sunny morning the dog
+seldom walks that far in the first minute: the lab cast again from the middle and the south end every recorded cast whose dog comes near
+a tile the zones see differently (22,814 casts without the horse, 21,058 with it) plus a check sample of the rest (2,567 casts, all
+exactly as recorded). Result: about 1 cast frame in 20 has some bite that changes with the zone, mostly later bites of casts after the
+first minute, and almost no Power Nut does. Without the horse 16,941 cast frames have a Nut from the north end; from the south end 12
+of them are fish, from the middle none; with the horse 22,310, of which 25 are fish from the south end and 1 from the middle. Another
+116 / 167 late-bite Nuts (5th and 6th bites far past the recorded part) are shown as fish outside the north end until they are measured.
+The sunny pages open on <b>Middle</b>; pick yours with the Lucky Timer's <i>2nd cut</i> or the <i>where Jack stops on the pier
+end</i> buttons, or <b>Not sure</b> for the casts that hold from all three.</p>
 <p><b>Where Jack stops on the pier: the three zones (v32.23).</b> In the rain the spot matters: it moves the camera, and a dog that
 walks off the camera's grid stops drawing random numbers until it is back. The end of the pier has three camera zones, and every spot
 inside a zone plays the same. Which one you stand in is set by your <b>2nd cut</b>, the down-right turn onto the pier:
@@ -180,7 +191,7 @@ table, so nothing is marked <i>not proven here</i> any more.</p>
 casts for your file and timing spread.</p>
 </div>
 
-<footer class="small mut">HM64 Power Nut Tool v32.26 · built 2026-11-26 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
+<footer class="small mut">HM64 Power Nut Tool v32.27 · built 2026-11-26 · <a href="index.html">hub</a> · <a href="https://github.com/Nillows/HM64-RNG-Manipulations">source, README and files</a> ·
 the odds on every page are emulator data, not measured on a console.</footer>
 </div>
 <script>

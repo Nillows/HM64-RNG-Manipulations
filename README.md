@@ -1,4 +1,4 @@
-# HM64 Power Nut Tool v32.26
+# HM64 Power Nut Tool v32.27
 
 A timing aid for catching the **Power Nut** from the ocean pier in **Harvest Moon 64 (USA, NTSC)** on a real N64.
 
@@ -215,6 +215,30 @@ Sparrows box ticked.
 <sub><b>The same list in the app</b>: the first tab of the <b>Casting tables</b> page (hub → Sunny → No horse). Space starts its stopwatch when
 Jack stops; click a row and it counts down to that cast. The Harbingers tab has the same signs with a cast aimed to a
 fraction of a second.</sub>
+
+### On a sunny morning: the pier zones (v32.27)
+The end of the pier has three camera zones (North / Middle / South, set by your 2nd cut: game frames 1–3 / 4–8 / 9–11 of
+the pier window). A dog that walks off the camera's grid stops drawing random numbers, so the same cast can catch something
+else from another zone. Every cast was recorded from the north end. The lab then cast again, from the middle and from the
+south end, every recorded cast whose dog comes near a tile the zones see differently (22,814 casts without the horse, 21,058
+with it; each held as long as its recording) and a check sample of the rest (2,567 casts: every one exactly as recorded).
+
+| cast frames with a Power Nut on bites 1–6 | no horse | horse |
+|---|---|---|
+| North (the recording) | 16,941 | 22,310 |
+| Middle, on the dog lines that reach it | 15,785 of 15,901 recorded | 21,119 of 21,287 |
+| South, on the dog lines that reach it | 15,773 of 15,901 | 21,095 of 21,287 |
+| hold from all three (Not sure) | 16,813 | 22,118 |
+| a fish in the zone (middle / south) | 0 / 12 | 1 / 25 |
+| not proven outside the north end, shown as fish | 116 | 167 |
+
+So on a sunny morning the Power Nut bars are nearly the same wherever Jack stops. What does change with the zone is later
+bites: about 1 cast frame in 20 has some bite that differs (5.3% middle, 6.0% south without the horse; 5.1% / 5.8% with
+it), mostly on casts later than a minute after READY, and those frames show what was measured in that zone. No Power Nut
+exists only in the middle or only in the south. The “not proven” ones are all 5th- and 6th-bite Nuts of casts 60–90 s
+after READY whose Nut bite comes 142–151 s after READY, later than the recorded part of the cast: they count as fish
+outside the north end until a short lab run settles them. Lines that never stand outside the north end (8 per file) keep
+the recording. The pages open on **Middle**, the biggest zone (about 46% of the lab's plays; North and South 27% each).
 
 ### On a rainy morning (v32.19; pier zones since v32.23, fully measured since v32.25)
 **Where Jack stops on the end of the pier matters in the rain.** The spot moves the camera, and a dog that walks off the
@@ -735,7 +759,8 @@ The beach is three legs and two turns. Never stop and never walk straight down.
    - Turned a little late (Jack drifts off the wall)? Correct by pressing up a moment and carry on. It costs up to half
      a second, and the tables cover it: those are the **Small fix** and **Big fix** presets (section 5).
 3. **Second cut, down-right, onto the pier:** anywhere across the pier's width. Where you cut decides where Jack stops
-   at the end: **Early** = near edge, **Middle**, **Late** = far edge. All of them are in the tables.
+   at the end: **North** = the edge nearest the beach (the cut in the first 3 game frames it is possible), **Middle**
+   (frames 4–8), **South** = far edge (frames 9–11). Each has its own table (v32.27: on sunny mornings too).
    - Cut outside the pier's window (too early or too late) and Jack does not make it onto the pier. That attempt is not
      in the tables: restart.
 4. **Hold down-right** until Jack stops at the water at the end of the pier. He is now facing the sea, ready to cast.
@@ -751,7 +776,7 @@ The beach is three legs and two turns. Never stop and never walk straight down.
 
 ![Where Jack stops: Early, Middle, Late](media/pier_cuts.png)
 
-<sub>Where the cut onto the pier leaves Jack at the dock end: <b>Early</b> = near (upper) edge, <b>Middle</b>, <b>Late</b> = far (lower) edge, by the dog. All are in the tables; pick yours under <b>2nd cut</b> in the Lucky plan if you know it (section 5), or leave Any.</sub>
+<sub>Where the cut onto the pier leaves Jack at the dock end. The picture's labels are older (Early = near, upper edge; Late = far, lower edge, by the dog); since v32.27 every page goes by the three camera zones <b>North</b> / <b>Middle</b> / <b>South</b>, and North is only the first part of the picture's Early. Pick yours under <b>2nd cut</b> in the Lucky plan if you know it (section 5), or leave Any.</sub>
 
 ### 3.5 Space at the end of the pier (the control)
 **Tap Space once, the moment Jack stops at the water.** That one tap starts the tool's stopwatch. Everything after it,
@@ -837,22 +862,22 @@ Lucky plan, and the picture of Jack with the key list.
 **The Lucky plan panel** shows the route name and **Cast at X after READY**, with − / + / best to move it, and
 **Auto ✓ / Back to best** (lit when you moved something by hand: click it to go back to the best plan). It also has two
 rows of buttons describing your run, each with its own best cast and odds:
-- **Your first step on the beach:** Any / **Clean** (tight first turn, no correction) / **Small fix** (a small correction,
-  0.17–0.30 s late) / **Big fix** (a bigger one, 0.33–0.50 s late).
-- **2nd cut:** Any / **Early** / **Middle** / **Late** (where Jack stopped across the end of the pier).
+- **2nd cut:** Any / **North** / **Middle** / **South** (where Jack stopped across the end of the pier: game frames
+  1–3 / 4–8 / 9–11 of the pier window). The 2nd cut picks the table (rainy pages since v32.23, sunny pages since v32.27;
+  see “On a sunny morning: the pier zones” and “On a rainy morning”). The pages open on Middle.
+- **Your first step on the beach** (after a 2nd cut is picked): **Clean** (tight first turn, no correction) / **Small fix**
+  (a small correction, 0.17–0.30 s late) / **Big fix** (a bigger one, 0.33–0.50 s late).
 
-On the **rainy pages** (v32.23) the two rows are the other way round, because there the 2nd cut picks the table: first
-**2nd cut: Any / North / Middle / South** (game frames 1–3 / 4–8 / 9–11 of the pier window; see “On a rainy morning”), then,
-if you know it, your first step. Under the rows the panel says which table is in use and what it holds.
+Under the rows the panel says which table is in use and what it holds.
 
 Pick what you actually did if you know it, or leave Any: a preset only keeps the lab's plays that went that way, so its odds
-are those plays' odds. ★ marks the best 2nd cut for that first step. With the
+are those plays' odds. With the
 pier-end start the plain suggestion is roughly **20 s after your tap at about 11 %** (shown live in the app; it
 depends on the presets).
 
 ![Clicking through the presets of the Lucky plan](media/app_presets.gif)
 
-<sub><b>Each pick has its own best cast.</b> Any: <b>20.07 s · 11.0 %</b> → Clean: <b>36.96 s · 12.1 %</b> → Small fix: <b>20.14 s · 11.3 %</b> → Big fix: <b>36.77 s · 11.5 %</b>; with Clean, the 2nd cut: Early <b>37.01 s · 12.9 %</b>, Middle ★ <b>36.91 s · 13.1 %</b>, Late <b>36.79 s · 12.7 %</b>. The histogram is redrawn for every pick. If you are not sure how your run went, leave Any: it covers every timing in the tables.</sub>
+<sub><b>Each pick has its own best cast</b> (picture and figures from before v32.27, when the first step was picked first). Any: <b>20.07 s · 11.0 %</b> → Clean: <b>36.96 s · 12.1 %</b> → Small fix: <b>20.14 s · 11.3 %</b> → Big fix: <b>36.77 s · 11.5 %</b>; with Clean, the 2nd cut: Early <b>37.01 s · 12.9 %</b>, Middle ★ <b>36.91 s · 13.1 %</b>, Late <b>36.79 s · 12.7 %</b>. The histogram is redrawn for every pick. If you are not sure how your run went, leave Any: it covers every timing in the tables.</sub>
 
 **After the cast** the lamp reads the bites for you:
 - **RELEASE** (e.g. **BITE 1 = NUT: RELEASE**, **RELEASE ON A BITE**) = let go of B at this bite.
