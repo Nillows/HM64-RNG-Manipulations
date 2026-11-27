@@ -1,18 +1,18 @@
 HM64 raw lab results: sha256, bytes, file
 8c8bee357677d09df46ceae27e87a42b1f4cb19d3ba0cce89d4fce796325b62f     16385440  married-horse-rainy/hm64-dogwatch-married-horse-lineup2-rainy-8cbe43a5.zip
 001c2b3241a062e7c37617624a98cbd7cb605582d8cf68f05c7f2e78d3c53fd4      5167568  married-horse-rainy/hm64-fullday-marhorse-rainy-d140c90@desktop-4uutk80.zip
-0b4348ec643d66208233fa5f1011d822dc1478c9f341c1be099fe4269e062115      5800536  married-horse-rainy/hm64-fullday-marhorse-rainy-d140c90@scotts-m4.zip
+05ebc587f804436843a6aded112e9ec6a4fe3e51ce2f5542b6ccc5e4d60bce39      5804037  married-horse-rainy/hm64-fullday-marhorse-rainy-d140c90@scotts-m4.zip
 a18bec59ed30b44d29f9913fd9159d49eda02108d1efe5088a6a7f4ab7abf7d5      5706432  married-horse-rainy/hm64-fullday-marhorse-rainy-d170c120@desktop-4uutk80.zip
-98faffd86882452b9093485aa06a22f9b51cd958015fd5fb6dd01c2cd5bd357d      6949995  married-horse-rainy/hm64-fullday-marhorse-rainy-d170c120@scotts-m4.zip
+5294049bcf3713817206b39f1adc88d31d5b9847984c66fef03ab1acd39f14a3      6953037  married-horse-rainy/hm64-fullday-marhorse-rainy-d170c120@scotts-m4.zip
 5fb9a4ce657b32e92a48230a1ecb9fd512c2ef7c26a017d18a3e56c1d407a103      1940343  married-horse-rainy/hm64-fullday-marhorse-rainy-d90@desktop-4uutk80.zip
-2b587bd73b884da1dc05780003ad021aa45d0eafdfff257a77f267d03429087f      1941402  married-horse-rainy/hm64-fullday-marhorse-rainy-d90@scotts-m4.zip
+8034be9bdb5ad3956c88e2e1a741628adcb606c5a251842be98c4c0e62a1e7fa      1945038  married-horse-rainy/hm64-fullday-marhorse-rainy-d90@scotts-m4.zip
 7601a5501d7c9d87de5500c078c815a1a360b697b39a046aae7538dcc21e5501     60829795  married-horse-sunny/hm64-dogwatch-married-horse-lineup2-sunny-0f33f322.zip
 e3b15a634d2a6b558e6deba3879fd367eaab2756fe05989c4ed7eb1415f25de5      6881654  married-horse-sunny/hm64-fullday-marhorse-sunny-d140c90@desktop-4uutk80.zip
-7186b10848d3ded4f3cfb5721e33f00f9cc0497900e5e868d412f132757af78a      6884914  married-horse-sunny/hm64-fullday-marhorse-sunny-d140c90@scotts-m4.zip
+17c304b48f5ea450597d5487dfd719bda5b4437112de2963cc444860f86942a6      6889086  married-horse-sunny/hm64-fullday-marhorse-sunny-d140c90@scotts-m4.zip
 188c0e7c7342690288d4f4837eaba180436ec94428a2251d615554e9a735829d      9002563  married-horse-sunny/hm64-fullday-marhorse-sunny-d170c120@desktop-4uutk80.zip
-27f3dfa84d59eea3349b248a934c6a48852523ecbb2d9155dbf9b0cc2c1f88fd      8962975  married-horse-sunny/hm64-fullday-marhorse-sunny-d170c120@scotts-m4.zip
+e9a2dae85b1db6bea5aeedfcd684e9748fc620156ec6b4c50a3ffc6f73b49cf1      8966951  married-horse-sunny/hm64-fullday-marhorse-sunny-d170c120@scotts-m4.zip
 3f5eebe6ebc99fa3970779803a5be9e497a4fba200b2765723c2f870ff24fcc8      4452947  married-horse-sunny/hm64-fullday-marhorse-sunny-d90@desktop-4uutk80.zip
-9828569add73ad9c9861e77d686bf4189c5f794c20cb593fb0013836e7dcffcf      4456272  married-horse-sunny/hm64-fullday-marhorse-sunny-d90@scotts-m4.zip
+27fa566f55acecc4e124c925b10bbc202efd6023772cbf0f0c04cebc3cc757d3      4460523  married-horse-sunny/hm64-fullday-marhorse-sunny-d90@scotts-m4.zip
 1adeefe5451197ce2ca371eec446c3ebc40dc7d1ab8c777b25bae7e24adadd7a        39821  married-horse-sunny/run-marhorse120-20261127-093731.log
 dc75af7f7b31f324b73c1bb1825cd5c76e37115b88a30304a9225797b8277a7c        36828  married-horse-sunny/run-marhorse120-20261127-093907.log
 4b24823cebc0a19762de521ee757e92f4bb2d05f8e3f59a6e17a75abb08044d8        20978  married-horse-sunny/run-marhorse120-20261127-110354.log
@@ -23,8 +23,9 @@ bba196fc07030565c1ca7a35a418cd81e1edbbb765d8cd95a091c12127571701        20978  m
 491571e715e662492030391514bfa603c624943c93f95d9d80fd49b14ad091a3        20024  married-horse-sunny/run-marhorse120-20261127-115111.log
 0496803d45e07ac271f6d600c80c1a4786d922489ddd67aeb47e4ed20de74887        20978  married-horse-sunny/run-marhorse120-20261127-121018.log
 974a4ac698b59fdc988845b487d569978c18949e605dd63d18bd510595973fa4        20024  married-horse-sunny/run-marhorse120-20261127-121422.log
-69d13a674cf271c6623130c5fde86540cc7ccbf4f12e94490a6db55d63a65ec7        97991  married-horse-sunny/run-marhorse120-20261127-123441.log
+dd4ee58c7c8233c76261d11e66290d083790adf464918743cfdf338f0f442137       100553  married-horse-sunny/run-marhorse120-20261127-123441.log
 4d997597fbffc27a7a83ac3f0eecfbd0cfd32cc9db2b2c11ed5620ca2ef92ec9        86981  married-horse-sunny/run-marhorse120-20261127-124109.log
+c738031fe29520bcf6e23290af2105643507f126171a737621346fc5e949f485        32635  married-horse-sunny/run-marhorse120-20261127-175056.log
 08a7c24ec4badd5ec0bfc47b5a55b93cb2c0caa2805f3254a0819532b66e3ba3     23069653  married-rainy/hm64-dogwatch-married-lineup2-rainy-62991249.zip
 fd56efe596880bd2135819ab16a07e4a6155fa08381a900cf1811dbf01602aa8      4361233  married-rainy/hm64-fullday-married-rainy-d140c90@scotts-m4.zip
 bf7fea72c54e6cf4ef8a0a221c461177dd1a18a26d1292855fdf21fa8e5fae6b     15353192  married-rainy/hm64-fullday-married-rainy-d140c90@thomass-mac-mini.zip

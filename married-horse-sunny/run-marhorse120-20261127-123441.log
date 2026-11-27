@@ -1006,3 +1006,42 @@ fullday-2 (2026-11-20: limits - casts to 40 s, everything to 90 s after READY by
   + married-horse-rainy/hm64-fullday-marhorse-rainy-d90@scotts-m4.zip (1 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441/hm64-fullday-marhorse-rainy-d90@scotts-m4.zip
   + married-horse-rainy/hm64-fullday-marhorse-rainy-d140c90@scotts-m4.zip (5 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441/hm64-fullday-marhorse-rainy-d140c90@scotts-m4.zip
   + married-horse-rainy/hm64-fullday-marhorse-rainy-d170c120@scotts-m4.zip (6 MB)   <- /Users/thomaswollin/Documents/hm64/runs/hm64-marhorse120-20261127-123441/hm64-fullday-marhorse-rainy-d170c120@scotts-m4.zip
+  + married-horse-sunny/run-marhorse120-20261127-123441.log (0 MB)   <- /Users/thomaswollin/Documents/hm64/runs/dogspots/run-marhorse120-20261127-123441.log
+  + married-horse-sunny//Users/thomaswollin/Documents/hm64/lab-data/married-horse-sunny/run-marhorse120-20261127-121018.log (0 MB)   <- /Users/thomaswollin/Documents/hm64/runs/dogspots/run-marhorse120-20261127-121018.log
+  9 new or changed, 23 already up to date (2 of them: same files inside as the copy on GitHub, only zipped again - not uploaded again)
+  result zips in runs/ that are not in the table (NOT uploaded; tell Claude if they should be): 22
+    hm64-fullday-marhorse-rainy-d140c90-b02@scotts-m4.zip
+    hm64-fullday-marhorse-rainy-d140c90-b03@scotts-m4.zip
+    hm64-fullday-marhorse-rainy-d140c90-b04@scotts-m4.zip
+    hm64-fullday-marhorse-rainy-d140c90-b05@scotts-m4.zip
+    hm64-fullday-marhorse-rainy-d140c90-summary.zip
+    hm64-fullday-marhorse-rainy-d170c120-b04@scotts-m4.zip
+    hm64-fullday-marhorse-rainy-d170c120-b05@scotts-m4.zip
+    hm64-fullday-marhorse-rainy-d170c120-summary.zip
+    hm64-fullday-marhorse-rainy-d90-summary.zip
+    hm64-fullday-marhorse-sunny-d140c90-summary.zip
+    hm64-fullday-marhorse-sunny-d170c120-b04@scotts-m4.zip
+    hm64-fullday-marhorse-sunny-d170c120-b05@scotts-m4.zip
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  108 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |   13 +-
+ ...gwatch-married-horse-lineup2-rainy-8cbe43a5.zip |  Bin 0 -> 16385440 bytes
+ ...64-fullday-marhorse-rainy-d140c90@scotts-m4.zip |  Bin 0 -> 5800536 bytes
+ ...4-fullday-marhorse-rainy-d170c120@scotts-m4.zip |  Bin 0 -> 6949995 bytes
+ .../hm64-fullday-marhorse-rainy-d90@scotts-m4.zip  |  Bin 0 -> 1941402 bytes
+ ...64-fullday-marhorse-sunny-d140c90@scotts-m4.zip |  Bin 6874176 -> 6884914 bytes
+ ...4-fullday-marhorse-sunny-d170c120@scotts-m4.zip |  Bin 8952453 -> 8962975 bytes
+ .../hm64-fullday-marhorse-sunny-d90@scotts-m4.zip  |  Bin 4445447 -> 4456272 bytes
+ .../run-marhorse120-20261127-121018.log            |   35 +
+ .../run-marhorse120-20261127-123441.log            | 1008 ++++++++++++++++++++
+ 10 files changed, 1052 insertions(+), 4 deletions(-)
+  committed 3f0eded (49 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+   a8923c6..3f0eded  lab-data -> lab-data
+branch 'lab-data' set up to track 'origin/lab-data'.
+  pushed: GitHub's lab-data = your copy (3f0eded)
+
+LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 3f0eded.
