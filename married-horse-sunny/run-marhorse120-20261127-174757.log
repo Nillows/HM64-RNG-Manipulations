@@ -510,3 +510,40 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
   /Users/thomwollin/Documents/hm64/lab-data (branch lab-data, GitHub has f70d969b50a3b59643fbc7649dbc6039371dbea0)
 
 ==> lab data 3/5  looking for results in /Users/thomwollin/Documents/hm64/runs and /Users/thomwollin/Downloads (table: built in; newest copy of each file)
+  + married-horse-sunny//Users/thomwollin/Documents/hm64/lab-data/married-horse-sunny/run-marhorse120-20261127-174757.log (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/dogspots/run-marhorse120-20261127-174757.log
+  1 new or changed, 69 already up to date (2 of them: same files inside as the copy on GitHub, only zipped again - not uploaded again)
+  result zips in runs/ that are not in the table (NOT uploaded; tell Claude if they should be): 94
+    hm64-dogwatch-beach-lineup2-52cfd712-20261116-145829.zip
+    hm64-dogwatch-early-beach-lineup2-52cfd712-20261116-145829.zip
+    hm64-dogwatch-early-beach-lineup2-52cfd712-20261116-174959.zip
+    hm64-dogwatch-early-beach-lineup2-horse-b0f2a284-20261123-104115.zip
+    hm64-dogwatch-early-married-horse-lineup2-rainy-8cbe43a5-20261127-002410.zip
+    hm64-dogwatch-early-married-horse-lineup2-sunny-0f33f322-20261127-002410.zip
+    hm64-dogwatch-early-married-lineup2-rainy-62991249-20261125-063853.zip
+    hm64-dogwatch-early-married-lineup2-sunny-237e3d1d-20261125-063853.zip
+    hm64-dogwatch-early-rain-lineup2-horse-287c11a6-20261123-181229.zip
+    hm64-dogwatch-early-rain-lineup2-nohorse-8e972d75-20261123-181229.zip
+    hm64-fullday-horse-d140c90-b02.zip
+    hm64-fullday-horse-d140c90-b03.zip
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  122 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |    8 +
+ ...day-marhorse-rainy-d140c90@thomass-mac-mini.zip |  Bin 0 -> 6460557 bytes
+ ...ay-marhorse-rainy-d170c120@thomass-mac-mini.zip |  Bin 0 -> 3667768 bytes
+ ...fullday-marhorse-rainy-d90@thomass-mac-mini.zip |  Bin 0 -> 11031489 bytes
+ ...day-marhorse-sunny-d140c90@thomass-mac-mini.zip |  Bin 0 -> 10817658 bytes
+ ...ay-marhorse-sunny-d170c120@thomass-mac-mini.zip |  Bin 0 -> 9686795 bytes
+ ...fullday-marhorse-sunny-d90@thomass-mac-mini.zip |  Bin 0 -> 11514925 bytes
+ .../run-marhorse120-20261127-002410.log            | 3581 ++++++++++++++++++++
+ .../run-marhorse120-20261127-174757.log            |  512 +++
+ 9 files changed, 4101 insertions(+)
+  committed 8cc6fee (51 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+   f70d969..8cc6fee  lab-data -> lab-data
+branch 'lab-data' set up to track 'origin/lab-data'.
+  pushed: GitHub's lab-data = your copy (8cc6fee)
+
+LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 8cc6fee.
