@@ -1,5 +1,5 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 12:28 EST by scotts-m4.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 12:29 EST by thomass-mac-mini.
 
 === desktop-4uutk80    reported 2026-11-27 12:19 EST    (pool script 2026-11-27c)
 lab run going:   no
@@ -33,19 +33,19 @@ newest log: pool-work.log   (last written 12:12)
     |   campaign married-horse: part of it is waiting for the main Mac
     | ==> waiting for [ married-horse]: trying again in 20 min  (Fri 12:12)
 
-=== thomass-mac-mini    reported 2026-11-27 12:18 EST    (pool script 2026-11-27c)
+=== thomass-mac-mini    reported 2026-11-27 12:29 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       NOT running (this machine takes nothing new from the queue)
 role:            main Mac (or a machine with no main set)
 queue, as this machine sees it:
     married-horse (2026-11-27b)    to do
 next from the queue for this machine: married-horse
-newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 12:18)
-    | [Z7 casts 20-40 s] 590/961  0.34 jobs/s  eta 18.0 min
-    | [Z7 casts 20-40 s] 600/961  0.34 jobs/s  eta 17.5 min
-    | [Z7 casts 20-40 s] 610/961  0.34 jobs/s  eta 17.1 min
-    | [Z7 casts 20-40 s] 620/961  0.34 jobs/s  eta 16.5 min
-    | [Z7 casts 20-40 s] 630/961  0.34 jobs/s  eta 16.2 min
-    | [Z7 casts 20-40 s] 640/961  0.34 jobs/s  eta 15.6 min
-    | [Z7 casts 20-40 s] 650/961  0.34 jobs/s  eta 15.1 min
+newest log: runs/dogspots/run-marhorse120-20261127-002410.log   (last written 12:28)
+    | [Z7 casts 20-40 s] 800/961  0.34 jobs/s  eta 7.8 min
+    | [Z7 casts 20-40 s] 810/961  0.34 jobs/s  eta 7.4 min
+    | [Z7 casts 20-40 s] 820/961  0.34 jobs/s  eta 6.9 min
+    | [Z7 casts 20-40 s] 830/961  0.34 jobs/s  eta 6.4 min
+    | [Z7 casts 20-40 s] 840/961  0.34 jobs/s  eta 5.9 min
+    | [Z7 casts 20-40 s] 850/961  0.34 jobs/s  eta 5.4 min
+    | [Z7 casts 20-40 s] 860/961  0.34 jobs/s  eta 4.9 min
 
