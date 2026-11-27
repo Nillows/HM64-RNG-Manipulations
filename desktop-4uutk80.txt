@@ -1,16 +1,16 @@
-=== desktop-4uutk80    reported 2026-11-27 16:50 EST    (pool script 2026-11-27c)
+=== desktop-4uutk80    reported 2026-11-27 17:00 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (268107 bash)
 role:            helper (fetches from hm64-main)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    to do
 next from the queue for this machine: married-horse
-newest log: pool-work.log   (last written 16:50)
-    | [FD block 3] campaign so far: 8 of 8 lists opened, 1606 jobs left in them = 3.5 h at the pool's present speed (rough: jobs differ in length between lists)
-    | [FD block 3] block 6 done; 154 jobs here in 38 min (4.0 jobs/min)
-    | [FD block 3] pool: 2 Mac(s), 7.7 jobs/min (desktop-4uutk80 3.7, scotts-m4 4.0) - 35 jobs left in this list: 5 min for the pool
-    | [FD block 3] campaign so far: 8 of 8 lists opened, 1556 jobs left in them = 3.4 h at the pool's present speed (rough: jobs differ in length between lists)
-    | [FD block 3] block 4 done; 161 jobs here in 40 min (4.0 jobs/min)
-    | [FD block 3] pool: 2 Mac(s), 7.7 jobs/min (desktop-4uutk80 3.7, scotts-m4 4.0) - 21 jobs left in this list: 3 min for the pool
-    | [FD block 3] campaign so far: 8 of 8 lists opened, 1542 jobs left in them = 3.3 h at the pool's present speed (rough: jobs differ in length between lists)
+newest log: pool-work.log   (last written 17:00)
+    | [FD block 3] pool: 2 Mac(s), 7.5 jobs/min (desktop-4uutk80 3.5, scotts-m4 4.0) - 7 jobs left in this list: 1 min for the pool
+    | [FD block 3] campaign so far: 8 of 8 lists opened, 1492 jobs left in them = 3.3 h at the pool's present speed (rough: jobs differ in length between lists)
+    | [FD block 3] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | ==> marhorse-rainy-d140c90 block 2 of 5  (Fri 16:53)
+    | [FD block 2] block 25 done; 36 jobs here in 7 min (5.4 jobs/min)
+    | [FD block 2] pool: 3 Mac(s), 24.2 jobs/min (desktop-4uutk80 5.4, scotts-m4 6.8, thomass-mac-mini 12.0) - 1296 jobs left in this list: 54 min for the pool
+    | [FD block 2] campaign so far: 8 of 8 lists opened, 1296 jobs left in them = 54 min at the pool's present speed (rough: jobs differ in length between lists)
 
