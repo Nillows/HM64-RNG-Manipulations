@@ -3,7 +3,7 @@
 Raw results of the Power Nut lab runs on Thomas's Mac, for rebuilding and re-verifying the tool's data
 (route tables, cast packs). Not part of the website: GitHub Pages serves the `main` branch only.
 No ROM, saves or savestates in any file. sha256 of every file: `MANIFEST.txt`.
-Kept up to date by `~/Documents/hm64/tools/hm64_labdata.sh` (2026-11-26j), which every release runs.
+Kept up to date by `~/Documents/hm64/tools/hm64_labdata.sh` (2026-11-26k), which every release runs.
 
 | folder | run | save |
 |---|---|---|

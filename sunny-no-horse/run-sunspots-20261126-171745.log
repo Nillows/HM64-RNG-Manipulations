@@ -895,3 +895,35 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
   /Users/thomwollin/Documents/hm64/lab-data (branch lab-data, GitHub has d842b3e5d4a11c17e25dc8d4b33d31dc3b4a8135)
 
 ==> lab data 3/5  looking for results in /Users/thomwollin/Documents/hm64/runs and /Users/thomwollin/Downloads (table: built in; newest copy of each file)
+  + sunny-no-horse//Users/thomwollin/Documents/hm64/lab-data/sunny-no-horse/run-sunspots-20261126-171745.log (0 MB)   <- /Users/thomwollin/Documents/hm64/runs/dogspots/run-sunspots-20261126-171745.log
+  1 new or changed, 56 already up to date
+  result zips in runs/ that are not in the table (NOT uploaded; tell Claude if they should be): 76
+    hm64-dogwatch-beach-lineup2-52cfd712-20261116-145829.zip
+    hm64-dogwatch-early-beach-lineup2-52cfd712-20261116-145829.zip
+    hm64-dogwatch-early-beach-lineup2-52cfd712-20261116-174959.zip
+    hm64-dogwatch-early-beach-lineup2-horse-b0f2a284-20261123-104115.zip
+    hm64-dogwatch-early-married-lineup2-rainy-62991249-20261125-063853.zip
+    hm64-dogwatch-early-married-lineup2-sunny-237e3d1d-20261125-063853.zip
+    hm64-dogwatch-early-rain-lineup2-horse-287c11a6-20261123-181229.zip
+    hm64-dogwatch-early-rain-lineup2-nohorse-8e972d75-20261123-181229.zip
+    hm64-fullday-horse-d140c90-b02.zip
+    hm64-fullday-horse-d140c90-b03.zip
+    hm64-fullday-horse-d140c90-b04.zip
+    hm64-fullday-horse-d140c90-b05.zip
+
+==> lab data 4/5  README.md + MANIFEST.txt
+  70 files listed
+
+==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+ MANIFEST.txt                                       |   3 +
+ ...ach-lineup2-horse-b0f2a284@thomass-mac-mini.zip | Bin 0 -> 19719456 bytes
+ ...aps-beach-lineup2-52cfd712@thomass-mac-mini.zip | Bin 0 -> 15588949 bytes
+ sunny-no-horse/run-sunspots-20261126-171745.log    | 897 +++++++++++++++++++++
+ 4 files changed, 900 insertions(+)
+  committed e2d6d95 (33 MB of files)
+To github.com:Nillows/HM64-RNG-Manipulations.git
+   d842b3e..e2d6d95  lab-data -> lab-data
+branch 'lab-data' set up to track 'origin/lab-data'.
+  pushed: GitHub's lab-data = your copy (e2d6d95)
+
+LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at e2d6d95.
