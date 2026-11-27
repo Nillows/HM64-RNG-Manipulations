@@ -1,0 +1,19 @@
+HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 11:48 EST by scotts-m4.
+
+=== scotts-m4    reported 2026-11-27 11:48 EST    (pool script 2026-11-27c)
+lab run going:   YES
+work loop:       running (work bottomup)
+role:            helper (fetches from hm64-main)
+queue, as this machine sees it:
+    married-horse (2026-11-27b)    to do
+next from the queue for this machine: married-horse
+newest log: pool-work.log   (last written 11:48)
+    | ==> 3/4 ROM, saves, and what this campaign needs from the main Mac
+    | ==> 4/4 the run
+    | ==> SHARED run: this Mac = scotts-m4, direction down (helper: cast blocks only, of the saves whose dog-watch is already here)
+    | ==> MARRIED + HORSE tables to 120 s: saves [sunny rainy], preset dogwatch, work folder /Users/thomaswollin/Documents/hm64/runs/dogspots/hm64-lab (image hm64-lab:arm64)  F
+    | ==> 1/7 lab files
+    | ==> 2/7 the saves
+    | ==> 3/7 lab health + each save's reference route from power-on (twice)
+
