@@ -1,10 +1,11 @@
-=== desktop-4uutk80    reported 2026-11-27 18:01 EST    (pool script 2026-11-27c)
+=== desktop-4uutk80    reported 2026-11-27 18:11 EST    (pool script 2026-11-27c)
 lab run going:   no
 work loop:       running (633510 bash)
 role:            helper (fetches from hm64-main)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    finished here 2026-11-27 17:55
-next from the queue for this machine: nothing
+    zones-married-horse (2026-11-27a)    to do
+next from the queue for this machine: zones-married-horse
 newest log: pool-work2.log   (last written 17:55)
     | ==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
     | ==> lab data 3/5  looking for results in /home/boot_camper/Documents/hm64/runs and /home/boot_camper/Downloads (table: built in; newest copy of each file)
