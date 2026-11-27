@@ -1,5 +1,5 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 14:11 EST by thomass-mac-mini.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 14:19 EST by scotts-m4.
 
 === desktop-4uutk80    reported 2026-11-27 14:09 EST    (pool script 2026-11-27c)
 lab run going:   YES
@@ -17,21 +17,21 @@ newest log: pool-work.log   (last written 14:09)
     | [FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 8.2, scotts-m4 9.3) - 840 jobs left in this list: 48 min for the pool
     | [FD block 4] campaign so far: 3 of 8 lists opened, 1849 jobs left in them = 1.8 h; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool'
 
-=== scotts-m4    reported 2026-11-27 14:09 EST    (pool script 2026-11-27c)
+=== scotts-m4    reported 2026-11-27 14:19 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (work bottomup)
 role:            helper (fetches from hm64-main)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    to do
 next from the queue for this machine: married-horse
-newest log: pool-work.log   (last written 14:08)
-    | [FD block 4] campaign so far: 3 of 8 lists opened, 1965 jobs left in them = 1.8 h; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool'
-    | [FD block 4] block 35 done; 521 jobs here in 46 min (11.2 jobs/min)
-    | [FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 7.0, scotts-m4 10.5) - 875 jobs left in this list: 50 min for the pool
-    | [FD block 4] campaign so far: 3 of 8 lists opened, 1884 jobs left in them = 1.8 h; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool'
-    | [FD block 4] block 34 done; 556 jobs here in 48 min (11.6 jobs/min)
-    | [FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 7.0, scotts-m4 10.5) - 840 jobs left in this list: 48 min for the pool
-    | [FD block 4] campaign so far: 3 of 8 lists opened, 1849 jobs left in them = 1.8 h; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool'
+newest log: pool-work.log   (last written 14:18)
+    | [FD block 4] campaign so far: 3 of 8 lists opened, 1687 jobs left in them = 1.5 h; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool'
+    | [FD block 4] block 32 done; 626 jobs here in 54 min (11.5 jobs/min)
+    | [FD block 4] pool: 2 Mac(s), 18.7 jobs/min (desktop-4uutk80 7.0, scotts-m4 11.7) - 700 jobs left in this list: 38 min for the pool
+    | [FD block 4] campaign so far: 3 of 8 lists opened, 1571 jobs left in them = 84 min; 5 lists not opened yet (about 6.4 h more if they are like the opened ones) at the pool
+    | [FD block 4] block 31 done; 661 jobs here in 58 min (11.4 jobs/min)
+    | [FD block 4] pool: 2 Mac(s), 17.5 jobs/min (desktop-4uutk80 5.8, scotts-m4 11.7) - 665 jobs left in this list: 38 min for the pool
+    | [FD block 4] campaign so far: 3 of 8 lists opened, 1490 jobs left in them = 85 min; 5 lists not opened yet (about 6.9 h more if they are like the opened ones) at the pool
 
 === thomass-mac-mini    reported 2026-11-27 14:11 EST    (pool script 2026-11-27c)
 lab run going:   YES
