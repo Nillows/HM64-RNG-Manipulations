@@ -1,5 +1,5 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 12:19 EST by desktop-4uutk80.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 12:28 EST by scotts-m4.
 
 === desktop-4uutk80    reported 2026-11-27 12:19 EST    (pool script 2026-11-27c)
 lab run going:   no
@@ -17,7 +17,7 @@ newest log: pool-work.log   (last written 12:17)
     |   campaign married-horse: part of it is waiting for the main Mac
     | ==> waiting for [ married-horse]: trying again in 20 min  (Fri 12:17)
 
-=== scotts-m4    reported 2026-11-27 12:18 EST    (pool script 2026-11-27c)
+=== scotts-m4    reported 2026-11-27 12:28 EST    (pool script 2026-11-27c)
 lab run going:   no
 work loop:       running (work bottomup)
 role:            helper (fetches from hm64-main)
