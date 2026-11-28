@@ -1,5 +1,5 @@
-=== thomass-mac-mini    reported 2026-11-27 21:04 EST    (pool script 2026-11-27c)
-lab run going:   YES
+=== thomass-mac-mini    reported 2026-11-27 21:14 EST    (pool script 2026-11-27c)
+lab run going:   no
 work loop:       running (work topdown)
 role:            main Mac (or a machine with no main set)
 queue, as this machine sees it:
@@ -7,12 +7,12 @@ queue, as this machine sees it:
     zones-married-horse (2026-11-27a)    to do
 next from the queue for this machine: zones-married-horse
 pier-zone plan married-horse: 2026-11-27 18:06 zones-married-horse is on GitHub and in the queue
-newest log: pool-work.log   (last written 21:01)
-    | [GA] campaign so far: 1 of 1 lists opened, 1120 jobs left in them = 26 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [GA] block 12 done; 1920 jobs here in 97 min (19.8 jobs/min)
-    | [GA] pool: 3 Mac(s), 37.3 jobs/min (desktop-4uutk80 5.3, scotts-m4 10.7, thomass-mac-mini 21.3) - 960 jobs left in this list: 26 min for the pool
-    | [GA] campaign so far: 1 of 1 lists opened, 960 jobs left in them = 26 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [GA] block 19 done; 2080 jobs here in 107 min (19.5 jobs/min)
-    | [GA] pool: 3 Mac(s), 42.7 jobs/min (desktop-4uutk80 10.7, scotts-m4 10.7, thomass-mac-mini 21.3) - 480 jobs left in this list: 11 min for the pool
-    | [GA] campaign so far: 1 of 1 lists opened, 480 jobs left in them = 11 min at the pool's present speed (rough: jobs differ in length between lists)
+newest log: pool-work.log   (last written 21:14)
+    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | ==> 5/5 zips of this machine's part (the new casts, the gate's verdict, the log)
+    |  PIER ZONES OF married-horse DONE ON THIS MACHINE   [sunny rainy]   (187 min in all)
 
