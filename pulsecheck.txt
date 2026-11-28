@@ -1,22 +1,22 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 21:21 EST by scotts-m4.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 21:22 EST by desktop-4uutk80.
 
-=== desktop-4uutk80    reported 2026-11-27 21:12 EST    (pool script 2026-11-27c)
-lab run going:   YES
+=== desktop-4uutk80    reported 2026-11-27 21:22 EST    (pool script 2026-11-27c)
+lab run going:   no
 work loop:       running (633510 bash)
 role:            helper (fetches from hm64-main)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    finished here 2026-11-27 17:55
-    zones-married-horse (2026-11-27a)    to do
-next from the queue for this machine: zones-married-horse
-newest log: pool-work2.log   (last written 20:51)
-    | [GA] campaign so far: 1 of 1 lists opened, 2400 jobs left in them = 50 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [GA] block 17 done; 640 jobs here in 79 min (8.1 jobs/min)
-    | [GA] pool: 3 Mac(s), 48.0 jobs/min (desktop-4uutk80 10.7, scotts-m4 16.0, thomass-mac-mini 21.3) - 1600 jobs left in this list: 33 min for the pool
-    | [GA] campaign so far: 1 of 1 lists opened, 1600 jobs left in them = 33 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [GA] block 13 done; 800 jobs here in 98 min (8.2 jobs/min)
-    | [GA] pool: 3 Mac(s), 42.7 jobs/min (desktop-4uutk80 10.7, scotts-m4 16.0, thomass-mac-mini 16.0) - 800 jobs left in this list: 19 min for the pool
-    | [GA] campaign so far: 1 of 1 lists opened, 800 jobs left in them = 19 min at the pool's present speed (rough: jobs differ in length between lists)
+    zones-married-horse (2026-11-27a)    finished here 2026-11-27 21:14
+next from the queue for this machine: nothing
+newest log: pool-work2.log   (last written 21:14)
+    | ==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+    | ==> lab data 3/5  looking for results in /home/boot_camper/Documents/hm64/runs and /home/boot_camper/Downloads (table: built in + campaigns; newest copy of each file)
+    | ==> lab data 4/5  README.md + MANIFEST.txt
+    | ==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+    | LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 6455fb0.
+    |   campaign zones-married-horse: finished on this machine
+    | ==> nothing to do in the queue for this machine: looking again every 20 min  (Fri 21:14; stop: touch /home/boot_camper/Documents/hm64/pool/work.stop)
 
 === scotts-m4    reported 2026-11-27 21:21 EST    (pool script 2026-11-27c)
 lab run going:   no
