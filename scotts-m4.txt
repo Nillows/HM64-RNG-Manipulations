@@ -1,4 +1,4 @@
-=== scotts-m4    reported 2026-11-27 21:01 EST    (pool script 2026-11-27c)
+=== scotts-m4    reported 2026-11-27 21:11 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (work bottomup)
 role:            helper (fetches from hm64-main)
@@ -6,12 +6,12 @@ queue, as this machine sees it:
     married-horse (2026-11-27c)    finished here 2026-11-27 17:54
     zones-married-horse (2026-11-27a)    to do
 next from the queue for this machine: zones-married-horse
-newest log: pool-work2.log   (last written 20:51)
-    | [GA] campaign so far: 1 of 1 lists opened, 1920 jobs left in them = 51 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [GA] block 23 done; 1263 jobs here in 86 min (14.7 jobs/min)
-    | [GA] pool: 3 Mac(s), 48.0 jobs/min (desktop-4uutk80 10.7, scotts-m4 16.0, thomass-mac-mini 21.3) - 1280 jobs left in this list: 27 min for the pool
-    | [GA] campaign so far: 1 of 1 lists opened, 1280 jobs left in them = 27 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [GA] block 22 done; 1423 jobs here in 98 min (14.5 jobs/min)
-    | [GA] pool: 3 Mac(s), 37.3 jobs/min (desktop-4uutk80 5.3, scotts-m4 16.0, thomass-mac-mini 16.0) - 960 jobs left in this list: 26 min for the pool
-    | [GA] campaign so far: 1 of 1 lists opened, 960 jobs left in them = 26 min at the pool's present speed (rough: jobs differ in length between lists)
+newest log: pool-work2.log   (last written 21:11)
+    | [GA] 2 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [GA] 2 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
+    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
 
