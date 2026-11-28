@@ -1,4 +1,4 @@
-=== thomass-mac-mini    reported 2026-11-27 19:33 EST    (pool script 2026-11-27c)
+=== thomass-mac-mini    reported 2026-11-27 19:43 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (work topdown)
 role:            main Mac (or a machine with no main set)
@@ -7,12 +7,12 @@ queue, as this machine sees it:
     zones-married-horse (2026-11-27a)    to do
 next from the queue for this machine: zones-married-horse
 pier-zone plan married-horse: 2026-11-27 18:06 zones-married-horse is on GitHub and in the queue
-newest log: pool-work.log   (last written 19:30)
-    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
-    | [GA] block 1 done; 160 jobs here in 8 min (20.0 jobs/min)
-    | [GA] pool: 3 Mac(s), 35.8 jobs/min (desktop-4uutk80 0.0, scotts-m4 15.8, thomass-mac-mini 20.0) - 4480 jobs left in this list: 2.1 h for the pool
+newest log: pool-work.log   (last written 19:40)
     | [GA] campaign so far: 1 of 1 lists opened, 4480 jobs left in them = 2.1 h at the pool's present speed (rough: jobs differ in length between lists)
     | [GA] block 2 done; 320 jobs here in 16 min (19.8 jobs/min)
     | [GA] pool: 3 Mac(s), 28.2 jobs/min (desktop-4uutk80 0.0, scotts-m4 8.3, thomass-mac-mini 19.8) - 4320 jobs left in this list: 2.6 h for the pool
     | [GA] campaign so far: 1 of 1 lists opened, 4320 jobs left in them = 2.6 h at the pool's present speed (rough: jobs differ in length between lists)
+    | [GA] block 3 done; 480 jobs here in 24 min (19.9 jobs/min)
+    | [GA] pool: 3 Mac(s), 38.5 jobs/min (desktop-4uutk80 6.6, scotts-m4 12.1, thomass-mac-mini 19.9) - 3840 jobs left in this list: 1.7 h for the pool
+    | [GA] campaign so far: 1 of 1 lists opened, 3840 jobs left in them = 1.7 h at the pool's present speed (rough: jobs differ in length between lists)
 
