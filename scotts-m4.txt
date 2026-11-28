@@ -1,4 +1,4 @@
-=== scotts-m4    reported 2026-11-28 04:23 EST    (pool script 2026-11-27c)
+=== scotts-m4    reported 2026-11-28 04:34 EST    (pool script 2026-11-27c)
 lab run going:   no
 work loop:       running (work bottomup)
 role:            helper (fetches from hm64-main)
