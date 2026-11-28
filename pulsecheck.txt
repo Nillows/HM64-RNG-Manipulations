@@ -1,5 +1,5 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 21:22 EST by desktop-4uutk80.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 21:24 EST by thomass-mac-mini.
 
 === desktop-4uutk80    reported 2026-11-27 21:22 EST    (pool script 2026-11-27c)
 lab run going:   no
@@ -35,21 +35,21 @@ newest log: pool-work2.log   (last written 21:15)
     |   campaign zones-married-horse: finished on this machine
     | ==> nothing to do in the queue for this machine: looking again every 20 min  (Fri 21:15; stop: touch /Users/thomaswollin/Documents/hm64/pool/work.stop)
 
-=== thomass-mac-mini    reported 2026-11-27 21:14 EST    (pool script 2026-11-27c)
+=== thomass-mac-mini    reported 2026-11-27 21:24 EST    (pool script 2026-11-27c)
 lab run going:   no
 work loop:       running (work topdown)
 role:            main Mac (or a machine with no main set)
 queue, as this machine sees it:
     married-horse (2026-11-27c)    finished here 2026-11-27 18:02
-    zones-married-horse (2026-11-27a)    to do
-next from the queue for this machine: zones-married-horse
+    zones-married-horse (2026-11-27a)    finished here 2026-11-27 21:18
+next from the queue for this machine: nothing
 pier-zone plan married-horse: 2026-11-27 18:06 zones-married-horse is on GitHub and in the queue
-newest log: pool-work.log   (last written 21:14)
-    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
-    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
-    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
-    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
-    | [GA] 1 blocks left, all held by other machines: waiting (taken over if a machine goes silent for 90 min)
-    | ==> 5/5 zips of this machine's part (the new casts, the gate's verdict, the log)
-    |  PIER ZONES OF married-horse DONE ON THIS MACHINE   [sunny rainy]   (187 min in all)
+newest log: pool-work.log   (last written 21:18)
+    | ==> lab data 2/5  the lab-data branch (your site clone and its main branch are not touched)
+    | ==> lab data 3/5  looking for results in /Users/thomwollin/Documents/hm64/runs and /Users/thomwollin/Downloads (table: built in + campaigns; newest copy of each file)
+    | ==> lab data 4/5  README.md + MANIFEST.txt
+    | ==> lab data 5/5  commit and push to GitHub (branch lab-data only)
+    | LAB DATA DONE. For Claude: branch lab-data of Nillows/HM64-RNG-Manipulations is at 8434012.
+    |   campaign zones-married-horse: finished on this machine
+    | ==> nothing to do in the queue for this machine: looking again every 20 min  (Fri 21:18; stop: touch /Users/thomwollin/Documents/hm64/pool/work.stop)
 
