@@ -1,4 +1,4 @@
-=== thomass-mac-mini    reported 2026-11-28 01:36 EST    (pool script 2026-11-27c)
+=== thomass-mac-mini    reported 2026-11-28 01:46 EST    (pool script 2026-11-27c)
 lab run going:   no
 work loop:       running (work topdown)
 role:            main Mac (or a machine with no main set)
