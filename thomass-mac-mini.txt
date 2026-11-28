@@ -1,4 +1,4 @@
-=== thomass-mac-mini    reported 2026-11-27 20:34 EST    (pool script 2026-11-27c)
+=== thomass-mac-mini    reported 2026-11-27 20:44 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (work topdown)
 role:            main Mac (or a machine with no main set)
@@ -7,12 +7,12 @@ queue, as this machine sees it:
     zones-married-horse (2026-11-27a)    to do
 next from the queue for this machine: zones-married-horse
 pier-zone plan married-horse: 2026-11-27 18:06 zones-married-horse is on GitHub and in the queue
-newest log: pool-work.log   (last written 20:27)
-    | [GA] campaign so far: 1 of 1 lists opened, 2560 jobs left in them = 60 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [GA] block 8 done; 1280 jobs here in 66 min (19.5 jobs/min)
-    | [GA] pool: 3 Mac(s), 48.0 jobs/min (desktop-4uutk80 10.7, scotts-m4 16.0, thomass-mac-mini 21.3) - 2080 jobs left in this list: 43 min for the pool
-    | [GA] campaign so far: 1 of 1 lists opened, 2080 jobs left in them = 43 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [GA] block 9 done; 1440 jobs here in 74 min (19.5 jobs/min)
-    | [GA] pool: 3 Mac(s), 37.3 jobs/min (desktop-4uutk80 5.3, scotts-m4 10.7, thomass-mac-mini 21.3) - 1920 jobs left in this list: 51 min for the pool
+newest log: pool-work.log   (last written 20:43)
     | [GA] campaign so far: 1 of 1 lists opened, 1920 jobs left in them = 51 min at the pool's present speed (rough: jobs differ in length between lists)
+    | [GA] block 10 done; 1600 jobs here in 81 min (19.7 jobs/min)
+    | [GA] pool: 3 Mac(s), 48.0 jobs/min (desktop-4uutk80 10.7, scotts-m4 16.0, thomass-mac-mini 21.3) - 1440 jobs left in this list: 30 min for the pool
+    | [GA] campaign so far: 1 of 1 lists opened, 1440 jobs left in them = 30 min at the pool's present speed (rough: jobs differ in length between lists)
+    | [GA] block 11 done; 1760 jobs here in 89 min (19.8 jobs/min)
+    | [GA] pool: 3 Mac(s), 42.7 jobs/min (desktop-4uutk80 5.3, scotts-m4 16.0, thomass-mac-mini 21.3) - 1120 jobs left in this list: 26 min for the pool
+    | [GA] campaign so far: 1 of 1 lists opened, 1120 jobs left in them = 26 min at the pool's present speed (rough: jobs differ in length between lists)
 
