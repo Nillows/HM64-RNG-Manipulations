@@ -1,7 +1,7 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 22:12 EST by scotts-m4.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 22:12 EST by desktop-4uutk80.
 
-=== desktop-4uutk80    reported 2026-11-27 22:02 EST    (pool script 2026-11-27c)
+=== desktop-4uutk80    reported 2026-11-27 22:12 EST    (pool script 2026-11-27c)
 lab run going:   no
 work loop:       running (633510 bash)
 role:            helper (fetches from hm64-main)
