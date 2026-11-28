@@ -1,7 +1,7 @@
 HM64 lab pulse. Each machine reports every 10 min; a section older than 30 min means that machine's
-pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 20:51 EST by scotts-m4.
+pulse is not running (asleep, off, or never started). This file was put together 2026-11-27 20:52 EST by desktop-4uutk80.
 
-=== desktop-4uutk80    reported 2026-11-27 20:42 EST    (pool script 2026-11-27c)
+=== desktop-4uutk80    reported 2026-11-27 20:52 EST    (pool script 2026-11-27c)
 lab run going:   YES
 work loop:       running (633510 bash)
 role:            helper (fetches from hm64-main)
@@ -9,14 +9,14 @@ queue, as this machine sees it:
     married-horse (2026-11-27c)    finished here 2026-11-27 17:55
     zones-married-horse (2026-11-27a)    to do
 next from the queue for this machine: zones-married-horse
-newest log: pool-work2.log   (last written 20:32)
-    | [GA] campaign so far: 1 of 1 lists opened, 3360 jobs left in them = 79 min at the pool's present speed (rough: jobs differ in length between lists)
-    | [GA] block 14 done; 480 jobs here in 59 min (8.1 jobs/min)
-    | [GA] pool: 3 Mac(s), 48.0 jobs/min (desktop-4uutk80 10.7, scotts-m4 16.0, thomass-mac-mini 21.3) - 2400 jobs left in this list: 50 min for the pool
+newest log: pool-work2.log   (last written 20:51)
     | [GA] campaign so far: 1 of 1 lists opened, 2400 jobs left in them = 50 min at the pool's present speed (rough: jobs differ in length between lists)
     | [GA] block 17 done; 640 jobs here in 79 min (8.1 jobs/min)
     | [GA] pool: 3 Mac(s), 48.0 jobs/min (desktop-4uutk80 10.7, scotts-m4 16.0, thomass-mac-mini 21.3) - 1600 jobs left in this list: 33 min for the pool
     | [GA] campaign so far: 1 of 1 lists opened, 1600 jobs left in them = 33 min at the pool's present speed (rough: jobs differ in length between lists)
+    | [GA] block 13 done; 800 jobs here in 98 min (8.2 jobs/min)
+    | [GA] pool: 3 Mac(s), 42.7 jobs/min (desktop-4uutk80 10.7, scotts-m4 16.0, thomass-mac-mini 16.0) - 800 jobs left in this list: 19 min for the pool
+    | [GA] campaign so far: 1 of 1 lists opened, 800 jobs left in them = 19 min at the pool's present speed (rough: jobs differ in length between lists)
 
 === scotts-m4    reported 2026-11-27 20:51 EST    (pool script 2026-11-27c)
 lab run going:   YES
